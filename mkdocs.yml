@@ -18,7 +18,7 @@ theme:
     - scheme: default
       toggle:
         icon: material/weather-night
-        name: Light mode
+        name: Light mode  
       primary: blue
       accent: deep orange
   font:
@@ -28,7 +28,7 @@ theme:
     logo: fontawesome/solid/w
 
 extra_css:
-  - css/custom.css
+  - assets/stylesheets/extra.css
 
 markdown_extensions:
   - pymdownx.superfences:

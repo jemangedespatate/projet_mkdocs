@@ -1,4 +1,4 @@
-* [cours](SNT/Donnees_Structurees/cours/)
-* [travaux diriger](SNT/Donnees_Structurees/travaux_diriger/)
-* [travaux pratique](SNT/Donnees_Structurees/travaux_pratique/)
-* [exercice complementaire](SNT/Donnees_Structurees/exo_comp/)
+* [cours](../cours/)
+* [travaux diriger](../travaux_diriger/)
+* [travaux pratique](../travaux_pratique/)
+* [exercice complementaire](../exo_comp/)

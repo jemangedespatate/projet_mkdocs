@@ -1,4 +1,4 @@
-* [cours](SNT/Web/cours/)
-* [travaux diriger](SNT/Web/travaux_diriger/)
-* [travaux pratique](SNT/Web/travaux_pratique/)
-* [exercice complementaire](SNT/Web/exo_comp/)
+* [cours](../cours/)
+* [travaux diriger](../travaux_diriger/)
+* [travaux pratique](../travaux_pratique/)
+* [exercice complementaire](../exo_comp/)

@@ -1,4 +1,4 @@
-* [cours](SNT/Geolocalisation/cours/)
-* [travaux diriger](SNT/Geolocalisation/travaux_diriger/)
-* [travaux pratique](SNT/Geolocalisation/travaux_pratique/)
-* [exercice complementaire](SNT/Geolocalisation/exo_comp/)
+* [cours](../cours/)
+* [travaux diriger](../travaux_diriger/)
+* [travaux pratique](../travaux_pratique/)
+* [exercice complementaire](../exo_comp/)
