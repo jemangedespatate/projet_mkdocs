@@ -3,8 +3,8 @@
   align-items: center;
   gap: 8px;
   padding: 10px 18px;
-  background-color: #083B32; /* bleu Material Design */
-  color: #aaaaaa;
+  background-color: #4CAE4F; /* bleu Material Design */
+  color: #FFFFFF;
   text-decoration: none;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -13,7 +13,7 @@
 }
 
 .custom-home-button:hover {
-  background-color: #087e68;
+  background-color: #64f069;
   transform: translateY(-2px);
   text-decoration: none;
 }
@@ -25,5 +25,9 @@
 }
 
 .md-nav {
+  display: none !important;
+}
+
+.md-header__button{
   display: none !important;
 }
