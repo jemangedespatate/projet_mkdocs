@@ -1,7 +1,5 @@
 # acceuil
 
-### programme
-
 === "SNT"
 
     ## objectif de la SNT
@@ -10,14 +8,14 @@
 
     ## programme
 
-    * [internet](SNT/Internet/sommaire/)
-    * [Web](SNT/#Web)
-    * [Réseaux sociaux](SNT/#Réseaux sociaux)
-    * [Programmation Python](SNT/#Programmation Python)
-    * [Photographie Numérique](SNT/#Photographie Numérique)
-    * [Géolocalisation](SNT/#Géolocalisation)
-    * [Données Structurées](SNT/#Données Structurées)
-    * [Objets Connectés](SNT/#Objets Connectés)
+    * [Internet](SNT/Internet/sommaire/)
+    * [Web](SNT/Web/sommaire/)
+    * [Réseaux sociaux](SNT/Reseaux_sociaux/sommaire/)
+    * [Programmation Python](SNT/Programmation_Python/sommaire/)
+    * [Photographie Numérique](SNT/Photographie_Numerique/sommaire/)
+    * [Géolocalisation](SNT/Geolocalisation/sommaire/)
+    * [Données Structurées](SNT/Donnees_Structurees/sommaire/)
+    * [Objets Connectés](SNT/Objets_Connectes/sommaire/)
 
 
 
