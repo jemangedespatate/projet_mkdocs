@@ -1746,13 +1746,15 @@
 <p>chaque carte possede un identifiant unique appeler l'adresse MAC (Media Access Control)</p>
 <p>une adresse mac est composer de 6 blocs de 2 caractères hexadécimaux.</p>
 <p><span style="color: #26B260">Exemple:</span></p>
-<p>a1:b2:c3:d4:e5:f6</p>
+<p>
+<script type="math/tex; mode=display">a1:b2:c3:d4:e5:f6</script>
+</p>
 <blockquote>
 <p>La base hexadécimale correspond à une représentation en 16 caractères de chiffres ou de nombres. les chiffres qui la compose vont de 0 a F (F representant 15 en base decimal) avec les caractere suivant: 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E et F</p>
 </blockquote>
 <h3 id="second-niveaux-ladresse-ip"><u>second niveaux l'adresse ip</u></h3>
 <p>l'adresse mac permet de connaitre l'identifiant precis d'une machine, cependant elle ne donne aucune informations suplementaire. il existe donc une seconde adresse attribuer au machine qui est l'adresse ip.</p>
-<p>l'adresse ip est attribuer par le resaux afin de pouvoir etre identifier en dehors de cellui-ci</p>
+<p>l'adresse ip est attribuer aux machines presente sur le resaux afin de pouvoir etre identifier en dehors de cellui-ci</p>
 <p>L'adresse IP est constituée de 2 parties :</p>
 <ul>
 <li>La partie Réseau : elle permet d'identifier un réseau sur Internet.</li>
@@ -1760,7 +1762,21 @@
 </ul>
 <p>Une adresse IP est constituée de 4 nombres allant de 0 à 255.</p>
 <p><span style="color: #26B260">Exemple:</span></p>
-<p>127.0.0.1</p>
+<p>sous forme decimale</p>
+<p>
+<script type="math/tex; mode=display">127.0.0.1</script>
+</p>
+<p>sous forme binaire</p>
+<p>
+<script type="math/tex; mode=display">01111111.00000000.00000000.00000001</script>
+</p>
+<p>afin de delimiter la partie resau de la partie machine on utilise un masque</p>
+<p><span style="color: #26B260">Exemple:</span></p>
+<p>On dispose de l'adresse 128.40.94.3 qui dispose d'un masque de 16 bits.</p>
+<p>Cela correspond en binaire à <script type="math/tex; mode=display">10000000.00101000.01011110.00000100_2</script>
+</p>
+<p>Cela veut dire que le masque est <script type="math/tex; mode=display">11111111.11111111.00000000.00000000_2</script>
+</p>
 
 
 
@@ -1800,6 +1816,8 @@
     
     
       <script src="../../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
       
     
   </body>

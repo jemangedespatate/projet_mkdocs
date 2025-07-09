@@ -49,7 +49,7 @@ une adresse mac est composer de 6 blocs de 2 caractères hexadécimaux.
 
 <span style="color: #26B260">Exemple:</span>
 
-a1:b2:c3:d4:e5:f6
+$$a1:b2:c3:d4:e5:f6$$
 
 > La base hexadécimale correspond à une représentation en 16 caractères de chiffres ou de nombres. les chiffres qui la compose vont de 0 a F (F representant 15 en base decimal) avec les caractere suivant: 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E et F
 
@@ -57,7 +57,7 @@ a1:b2:c3:d4:e5:f6
 
 l'adresse mac permet de connaitre l'identifiant precis d'une machine, cependant elle ne donne aucune informations suplementaire. il existe donc une seconde adresse attribuer au machine qui est l'adresse ip.
 
-l'adresse ip est attribuer par le resaux afin de pouvoir etre identifier en dehors de cellui-ci
+l'adresse ip est attribuer aux machines presente sur le resaux afin de pouvoir etre identifier en dehors de cellui-ci
 
 L'adresse IP est constituée de 2 parties :
 
@@ -68,4 +68,22 @@ Une adresse IP est constituée de 4 nombres allant de 0 à 255.
 
 <span style="color: #26B260">Exemple:</span>
 
-127.0.0.1
+sous forme decimale
+
+$$127.0.0.1$$
+
+sous forme binaire
+
+$$01111111.00000000.00000000.00000001$$
+
+afin de delimiter la partie resau de la partie machine on utilise un masque
+
+<span style="color: #26B260">Exemple:</span>
+
+On dispose de l'adresse 128.40.94.3 qui dispose d'un masque de 16 bits.
+
+Cela correspond en binaire à $$10000000.00101000.01011110.00000100_2$$
+
+Cela veut dire que le masque est $$11111111.11111111.00000000.00000000_2$$
+
+
