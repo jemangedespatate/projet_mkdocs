@@ -26,5 +26,5 @@ jobs:
           restore-keys: |
             mkdocs-material-
       - run: pip install mkdocs-material
-      - run: pip install mdx_math
+      - run: pip install python-markdown-math
       - run: mkdocs gh-deploy --force
