@@ -11,7 +11,7 @@
         <link rel="canonical" href="https://sitename.example/SNT/Internet/cours/">
       
       
-        <link rel="prev" href="../../Geolocalisation/travaux_pratique/">
+        <link rel="prev" href="../convertions_de_base/">
       
       
         <link rel="next" href="../exo_comp/">
@@ -613,6 +613,27 @@
             Internet
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../convertions_de_base/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Convertions de base
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -1714,7 +1735,7 @@
 <h1 id="internet"><u>Internet</u></h1>
 <h2 id="introduction"><u>🤔 Introduction</u></h2>
 <p>Internet fait aujourd’hui partie de notre quotidien : on l’utilise pour envoyer des messages, regarder des vidéos, jouer en ligne, faire des recherches… Mais comment ça fonctionne vraiment ?</p>
-<p>Voici quelques questions que tu t’es peut-être déjà posées :</p>
+<p>Voici quelques questions que vous vous êtes peut-être déjà posées :</p>
 <ul>
 <li>
 <p>Comment mon téléphone arrive-t-il à parler avec un autre à l’autre bout du monde ?</p>
@@ -1741,11 +1762,14 @@
 <h2 id="definitions"><u>Définitions</u></h2>
 <p><span style="color: #FF0000">Définition : réseau</span></p>
 <p><strong>Ensemble de machines reliées entre elles de telle sorte qu'elles puissent communiquer ensemble.</strong></p>
+<div class="admonition note">
+<p class="admonition-title">types de réseaux</p>
 <p>On distingue plusieurs types de réseaux, dont le réseau local.</p>
 <p><span style="color: #FF0000">Définition : réseau local</span></p>
 <p><strong>Un réseau où les machines peuvent communiquer directement entre elles sans passer par d'autres réseaux.</strong></p>
 <p><span style="color: #26B260">Exemple : un réseau domestique</span></p>
 <p><img alt="réseau local" src="../../../assets/seconde/internet/rsx_local.png" /></p>
+</div>
 <p><span style="color: #FF0000">Définition : Internet</span></p>
 <p><strong>Un immense réseau qui relie tous les petits réseaux du monde pour que les machines puissent s’envoyer des messages, partager des fichiers, ou afficher des sites web.</strong></p>
 <h2 id="composants-dun-reseau"><u>🧩 Composants d’un réseau</u></h2>
@@ -1781,18 +1805,50 @@
 </tr>
 </tbody>
 </table>
-<p><img alt="réseau local" src="../../../assets/seconde/internet/element_rsx.png" /></p>
 <h2 id="identifiants-des-machines-sur-un-reseau"><u>🆔 Identifiants des machines sur un réseau</u></h2>
 <h3 id="premier-niveau-ladresse-mac"><u>Premier niveau : l'adresse MAC</u></h3>
 <p>Chaque machine dispose d’une ou plusieurs <strong>cartes réseau</strong>. Ces cartes permettent de communiquer localement ou globalement.</p>
 <p>Chaque carte possède un identifiant unique appelé <strong>adresse MAC</strong> (Media Access Control).</p>
 <p>Une adresse MAC est composée de 6 blocs de 2 caractères hexadécimaux.</p>
+<p>&nbsp;
+&nbsp;</p>
 <p><span style="color: #26B260">Exemple :</span>
 <script type="math/tex; mode=display">a1:b2:c3:d4:e5:f6</script>
 </p>
-<blockquote>
-<p>La base hexadécimale correspond à une représentation en 16 caractères de chiffres ou de lettres des nombres. Les caractères vont de 0 à F (F représentant 15 en base décimale), avec : 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F.</p>
-</blockquote>
+<div class="admonition note">
+<p class="admonition-title">La base hexadécimale</p>
+<p>La base hexadécimale correspond à une représentation en 16 caractères de chiffres ou de lettres des nombres. Les caractères vont de 0 à F (F représentant 15 en base décimale).</p>
+<table>
+<thead>
+<tr>
+<th>nombre hexadécimal</th>
+<th>0</th>
+<th>...</th>
+<th>9</th>
+<th>A</th>
+<th>B</th>
+<th>C</th>
+<th>D</th>
+<th>E</th>
+<th>F</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>nombre décimal</td>
+<td>0</td>
+<td>...</td>
+<td>9</td>
+<td>10</td>
+<td>11</td>
+<td>12</td>
+<td>13</td>
+<td>14</td>
+<td>15</td>
+</tr>
+</tbody>
+</table>
+</div>
 <h3 id="second-niveau-ladresse-ip"><u>Second niveau : l'adresse IP</u></h3>
 <p>L’adresse MAC permet d’identifier précisément une machine, mais ne donne aucune information sur son emplacement dans un réseau. Il existe donc une seconde adresse attribuée à chaque machine : <strong>l’adresse IP</strong>.</p>
 <p>L'adresse IP est attribuée aux machines présentes sur un réseau afin qu’elles puissent être identifiées de manière plus globale.</p>
@@ -1802,6 +1858,8 @@
 <li>La <strong>partie machine</strong> : elle permet d’identifier une machine sur ce réseau.</li>
 </ul>
 <p>Une adresse IP est composée de 4 nombres allant de 0 à 255 sous forme binaire.</p>
+<p>&nbsp;
+&nbsp;</p>
 <p><span style="color: #26B260">Exemple :</span></p>
 <p>Sous forme décimale :
 <script type="math/tex; mode=display">127.0.0.1</script>
@@ -1809,15 +1867,61 @@
 <p>Sous forme binaire :
 <script type="math/tex; mode=display">01111111.00000000.00000000.00000001</script>
 </p>
+<div class="admonition note">
+<p class="admonition-title">La base hexadécimale</p>
+<p>La base hexadécimale correspond à une représentation en 2 caractères de chiffres des nombres. Les caractères vont de 0 à 1.</p>
+<table>
+<thead>
+<tr>
+<th>nombre décimal</th>
+<th>0</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+<th>6</th>
+<th>7</th>
+<th>8</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>nombre binaire</td>
+<td>0</td>
+<td>1</td>
+<td>10</td>
+<td>11</td>
+<td>100</td>
+<td>101</td>
+<td>110</td>
+<td>111</td>
+<td>1000</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>&nbsp;
+&nbsp;</p>
 <p>Afin de délimiter la partie réseau de la partie machine, on utilise un <strong>masque de sous-réseau</strong>.</p>
+<p>&nbsp;
+&nbsp;</p>
 <p><span style="color: #26B260">Exemple :</span></p>
 <p>On dispose de l'adresse <code>128.40.94.3</code> avec un masque de 16 bits(soit les 16 premier bit de l'adresse coresponde à la partie réseau et le reste des bits à la partie machine)</p>
 <p>Cela correspond en binaire à :
-<script type="math/tex; mode=display">10000000.00101000.01011110.00000100_2</script>
+<script type="math/tex; mode=display">128.40.94.3_{10} = 10000000.00101000.01011110.00000100_2</script>
 </p>
-<p>Le masque est donc :
+<p>Le masque de sous-réseau etant de 16 bits il correspond donc à:
 <script type="math/tex; mode=display">11111111.11111111.00000000.00000000_2</script>
 </p>
+<p>si maintenant on apllique le masque de sous resaux sur l'adresse ip:
+<script type="math/tex; mode=display"> \ \ \ \  \underline{10000000.00101000}.01011110.00000100_2 </script>
+<script type="math/tex; mode=display"> \& \  \underline{11111111.11111111}.00000000.00000000_2 </script>
+<script type="math/tex; mode=display"> = \underline{10000000.00101000}.00000000.00000000_2 </script>
+</p>
+<p>donc la partie resaux de cette adresse est <code>128.40.0.0</code></p>
+<p>&nbsp;
+&nbsp;</p>
 <h2 id="echange-dinformations"><u>🔁 Échange d’informations</u></h2>
 <p>Maintenant que nous savons comment les machines s’identifient entre elles, intéressons-nous à la manière dont elles échangent des informations.</p>
 <p><span style="color: #FF0000">Définition : protocole</span>
@@ -1829,6 +1933,8 @@ Le <strong>protocole TCP/IP</strong> permet la communication et l’échange de 
 <li>Le <strong>protocole TCP</strong> permet le contrôle et la sécurité de l’envoi des paquets. Il permet de s’assurer qu’un paquet est bien arrivé à destination à l’aide d’accusés de réception.</li>
 <li>Le <strong>protocole IP</strong> permet d’identifier quelles machines sur quels réseaux communiquent, à l’aide de leur adresse IP.</li>
 </ul>
+<div class="admonition note">
+<p class="admonition-title">fonctionnement protocole</p>
 <p>Le protocole TCP/IP fonctionne en plusieurs étapes :</p>
 <ol>
 <li>Les données à échanger sont découpées en plusieurs <strong>paquets</strong> (séquences de 0 et 1) de taille définie et numérotés.</li>
@@ -1836,6 +1942,7 @@ Le <strong>protocole TCP/IP</strong> permet la communication et l’échange de 
 <li>Tous les paquets sont reconstruits à l’aide de leur numérotation.</li>
 <li>Un <strong>contrôle d’intégrité</strong> est effectué par la machine réceptrice pour s’assurer que les données sont complètes et correctes. Si ce n’est pas le cas, la machine demande la retransmission des paquets défectueux.</li>
 </ol>
+</div>
 
 
 
