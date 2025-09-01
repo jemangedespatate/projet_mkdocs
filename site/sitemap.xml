@@ -172,4 +172,8 @@
          <loc>https://sitename.example/SNT/Web/travaux_pratique/</loc>
          <lastmod>2025-09-01</lastmod>
     </url>
+    <url>
+         <loc>https://sitename.example/SNT/introduction_snt/activiter_introductif/</loc>
+         <lastmod>2025-09-01</lastmod>
+    </url>
 </urlset>

@@ -13,6 +13,7 @@ Ce site a pour objectif de guider les élèves tout au long de l'année scolaire
 
     ## 📘 programme
 
+    * [ℹ️ Introduction SNT](SNT/introduction_snt/activiter_introductif/)
     * [🐍 Programmation Python](SNT/Programmation_Python/sommaire/)
     * 🌐 Internet
     * 📄 Web
