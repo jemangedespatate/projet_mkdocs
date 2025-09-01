@@ -1,5 +1,0 @@
-# Cours sur Internet
-
-## Internet
-
-...

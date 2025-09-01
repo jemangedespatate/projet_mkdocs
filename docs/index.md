@@ -13,10 +13,10 @@ Ce site a pour objectif de guider les élèves tout au long de l'année scolaire
 
     ## 📘 programme
 
+    * [🐍 Programmation Python](SNT/Programmation_Python/sommaire/)
     * [🌐 Internet](SNT/Internet/sommaire/)
     * [📄 Web](SNT/Web/sommaire/)
     * [💬 Réseaux sociaux](SNT/Reseaux_sociaux/sommaire/)
-    * [🐍 Programmation Python](SNT/Programmation_Python/sommaire/)
     * [📸 Photographie Numérique](SNT/Photographie_Numerique/sommaire/)
     * [📍 Géolocalisation](SNT/Geolocalisation/sommaire/)
     * [📊 Données Structurées](SNT/Donnees_Structurees/sommaire/)
