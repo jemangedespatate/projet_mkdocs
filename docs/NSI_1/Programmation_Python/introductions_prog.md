@@ -79,17 +79,17 @@ il est possible de visualiser ces type a l'aide de `type(...)`
 
 !!! example "Exemple :"
     
-    `type(5)` -> `<class ‘int’>`
-    `type(3.14)` -> `<class ‘float’>`
-    `type("Bonjour")` -> `<class ‘str’>`
-    `type(True)` -> `<class ‘bool’>`
+    * `type(5)` -> `<class ‘int’>`
+    * `type(3.14)` -> `<class ‘float’>`
+    * `type("Bonjour")` -> `<class ‘str’>`
+    * `type(True)` -> `<class ‘bool’>`
 
 Il est également possible de changer le type de certaines variables à l’aide de `str()` ou `int()`, par exemple.
 
 !!! example "Exemple :"
     
-    `int("5")` -> `5`
-    `str(5)` -> `"5"`
+    * `int("5")` -> `5`
+    * `str(5)` -> `"5"`
 
 
 ### <u>2.3. Les opérateurs</u>
