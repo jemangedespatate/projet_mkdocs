@@ -127,9 +127,9 @@ color("blue")
 # avec "blue" correspondant à la couleur (en anglais) utilisée par la tortue pour dessiner la suite
 ```
 
-!!! note "Première activité"
+!!! note "activité 1"
 
-    Réalisez l’image suivante, où l’ensemble des traits est de longueur 100.  
+    Réalisez l’image suivante, où l’ensemble des traits est de longueur 100 à l'aide de Turtle.  
 
     ![activité 1](../../assets/seconde/introduction_prog/turtle_act1.png)  
 
@@ -162,13 +162,56 @@ x = 100
 forward(x)
 ```
 
-!!! note "Seconde activité"
+!!! note "activité 2"
 
-    Réalisez l’image suivante, où le premier trait est égal à 10 et double à chaque nouveau trait.  
+    Réalisez l’image suivante, où le premier trait est égal à 10 et double à chaque nouveau trait à l'aide de Turtle.  
 
     ![activité 2](../../assets/seconde/introduction_prog/turtle_act2.png)  
 
     Indice : la multiplication entre deux nombres s’effectue avec l’opérateur `*`  
+
+!!! note "activité 3"
+
+    Tu viens de souscrire à un abonnement téléphonique pour ton téléphone portable. Chaque mois, l’opérateur te facture :
+
+    - **Frais fixes mensuels** : 10 €
+    - **Prix par minute d’appel** : 0,05 €
+    - **Prix par SMS** : 0,02 €
+
+    Tu souhaites savoir combien va te coûter ton forfait en fonction de ton utilisation. Pour cela, tu décides de faire un petit programme Python.
+
+    1. Définis des **variables** pour représenter :
+
+        * le nombre de minutes (`minutes`)
+        * le nombre de SMS (`sms`)
+
+    2. Écris une formule (ou un petit programme Python) qui calcule le **coût total** du mois en fonction de ces variables.
+
+    3. Calcule le coût pour :
+
+        * 120 minutes et 50 SMS
+        * 300 minutes et 10 SMS
+
+!!! note "activité 4"
+
+    On considère le programme suivant :
+
+    ```python
+    distance = 150   # en kilomètres
+    temps = 3        # en heures
+    vitesse = distance / temps
+    print("La vitesse moyenne est de", vitesse, "km/h")
+    ```
+
+    ### Questions
+
+    1. Quelle est la valeur de la variable `distance` ?
+    2. Quelle est la valeur de la variable `temps` ?
+    3. Quelle opération est effectuée pour calculer la variable `vitesse` ?
+    4. Quelle est la valeur finale de `vitesse` ?
+    5. Quel sera le message affiché par le programme ?
+
+
 
 ### Boucles
 
@@ -209,14 +252,29 @@ for i in range(3):
     right(90)
 ```
 
-!!! note "Troisième activité"
+!!! note "activité 5"
 
-    Réalisez l’image suivante en utilisant une boucle `for`.  
+    Réalisez l’image suivante en utilisant une boucle `for` à l'aide de Turtle.  
 
     ![carré](../../assets/seconde/introduction_prog/carée.png)  
     
+!!! note "activité 6"
 
-Regardons maintenant de plus près la ligne de commande suivante :
+    On considère le programme suivant :
+
+    ```python
+    for i in range(4):
+        print("SNT est génial !")
+    ```
+
+    ### Questions
+
+    1. Combien de fois la boucle s’exécute-t-elle ?
+    3. Quelle est la phrase affichée par le programme ?
+    4. Recopie exactement ce que le programme affichera à l’écran (ligne par ligne).
+
+
+Regardons maintenant de plus près la ligne suivante :
 
 ```py
 for i in range(3):
@@ -248,14 +306,37 @@ for i in range(10):
 
 Ici, `resultat` va être égal à la somme des éléments de 0 à 9 (10 étant exclu), soit :
 
-$0 + 1 + 2 + 3 + \dots + 8 + 9 = 45$
+$$0 + 1 + 2 + 3 + \dots + 8 + 9 = 45$$
 
-!!! note "Quatrième activité"
+!!! note "activité 7"
 
-    Réalisez l’image suivante en utilisant une boucle `for` et en exploitant la variable `i`.  
+    Réalisez l’image suivante en utilisant une boucle `for` et en exploitant la variable `i` à l'aide de Turtle.  
 
     ![act4](../../assets/seconde/introduction_prog/turtle_act4.png)  
-    
+
+!!! note "activité 8"
+
+    Écris un programme en Python qui :
+
+    1. Affiche les nombres de 1 à 5.
+    2. Pour chaque nombre, affiche aussi son carré (le nombre multiplié par lui-même).
+
+    Le résultat attendu doit être de la forme :
+
+    ```
+    Le carré de 1 est 1
+    Le carré de 2 est 4
+    Le carré de 3 est 9
+    Le carré de 4 est 16
+    Le carré de 5 est 25
+    ```
+
+    ### Aide
+
+    * Utilise une **boucle `for`** avec `range(1, 6)`.
+    * Utilise une variable (par exemple `carre`) pour stocker le résultat du calcul.
+    * Utilise `print()` pour afficher le texte au format suivant `print("le carré de",?,"est",?)` en remplacant les ?
+
 
 ### Conditions
 
@@ -296,11 +377,71 @@ else:
 
 Essayez ce programme en modifiant la valeur de `x` pour comprendre comment fonctionnent les conditions.
 
-!!! note "Cinquième activité"
+!!! note "activité 9"
 
-    Reprenez votre code précédent en faisant en sorte que la couleur de votre pinceau soit **rouge** lorsque `i < 50`, et **bleue** sinon.  
+    Reprenez votre code précédent en faisant en sorte que la couleur de votre pinceau soit **rouge** lorsque `i < 50`, et **bleue** sinon à l'aide de Turtle.
 
     ![act5](../../assets/seconde/introduction_prog/turtle_act5.png)  
+
+!!! note "activité 10"
+
+    Écris un programme en Python qui :
+
+    1. Demande à l’utilisateur de saisir son âge (utilise `input()`).
+    2. Si l’âge est **supérieur ou égal à 18**, affiche :
+
+    ```
+    Tu es majeur.
+    ```
+    3. Sinon, affiche :
+
+    ```
+    Tu es mineur.
+    ```
+
+    ### Exemple d’exécution
+
+    ```
+    Entre ton âge : 16
+    Tu es mineur.
+    ```
+
+    ```
+    Entre ton âge : 20
+    Tu es majeur.
+    ```
+
+    ### Aide
+
+    * Utilise la fonction `input()` de ma maniere suivante: input("Entre ton âge : ") pour pouvoir interroger l'utilisateur.
+    * Utilise une condition `if ... else`.
+
+!!! note "activité 11"
+
+    On considère le programme suivant :
+
+    ```python
+    note = 14
+
+    if note >= 16:
+        print("Mention Très Bien")
+    elif note >= 14:
+        print("Mention Bien")
+    elif note >= 12:
+        print("Mention Assez Bien")
+    elif note >= 10:
+        print("Mention Passable")
+    else:
+        print("Échec")
+    ```
+
+    ### Questions
+
+    1. Quelle est la valeur de la variable `note` au début du programme ?
+    2. Quelle est la première condition testée par le programme ? Est-elle vraie ou fausse ici ?
+    3. Quelle condition sera vraie dans ce cas précis ?
+    4. Quel sera le message affiché par le programme ?
+    5. Que se passerait-il si `note = 9` ?
 
 
 ### Fonctions
@@ -356,11 +497,33 @@ color('red')
 fonction_1()
 ```
 
-!!! note "Sixième activité"
+!!! note "activité 12"
 
-    Créez une fonction `carre` qui dessine un carré dont les côtés sont de longueur 100, puis utilisez-la afin de refaire l’image suivante :  
+    Créez une fonction `carre` qui dessine un carré dont les côtés sont de longueur 100, puis utilisez-la afin de refaire l’image suivante à l'aide de Turtle:  
 
     ![act6](../../assets/seconde/introduction_prog/turtle_act6.png)  
+
+!!! note "activité 13"
+
+    On considère le programme suivant :
+
+    ```python
+    def message_bienvenue():
+        print("Bienvenue en SNT !")
+        print("Amuse-toi bien avec le code !")
+
+    message_bienvenue()
+    message_bienvenue()
+    ```
+
+    ### Questions
+
+    1. Quel est le nom de la fonction définie dans ce programme ?
+    2. Cette fonction prend-elle des paramètres ?
+    3. Que fait cette fonction lorsqu’elle est appelée ?
+    4. Combien de fois la fonction est-elle exécutée ici ?
+    5. Que sera affiché exactement à l’écran après l’exécution complète du programme ?
+
 
 Il est également possible d’utiliser une autre fonctionnalité des fonctions : les **paramètres**.
 
@@ -378,7 +541,7 @@ On veut maintenant préciser la longueur des traits lorsque l’on utilise la fo
 Pour cela, on va créer un paramètre `longueur` dans notre fonction :
 
 ```py
-def fonction_1(longueur):
+def fonction_2(longueur):
     forward(longueur)
     left(90)
     forward(longueur)
@@ -388,17 +551,17 @@ def fonction_1(longueur):
 Nous pouvons maintenant l’utiliser en appelant la fonction avec une valeur :
 
 ```py
-def fonction_1(longueur):
+def fonction_2(longueur):
     forward(longueur)
     left(90)
     forward(longueur)
     right(90)
 
-fonction_1(50)
+fonction_2(50)
 color('blue')
-fonction_1(100)
+fonction_2(100)
 color('red')
-fonction_1(200)
+fonction_2(200)
 ```
 
 Enfin, il est possible d’utiliser **plusieurs paramètres en même temps** :
@@ -413,12 +576,43 @@ def fonction_3(longueur, angle):
 fonction_3(100, 90)
 ```
 
-!!! note "Septième activité"
+!!! note "activité 14"
 
     Reprenez votre fonction `carre` créée précédemment en y ajoutant un paramètre pour la longueur des côtés.  
-    Écrivez ensuite un code permettant de refaire l’image suivante :  
+    Écrivez ensuite un code permettant de refaire l’image suivante à l'aide de Turtle :  
 
     ![act7](../../assets/seconde/introduction_prog/turtle_act7.png)  
+
+!!! note "activité 15"
+
+    1. Écris une **fonction** appelée `carre` qui :
+
+        * prend un nombre en entrée,
+        * renvoie le **carré** de ce nombre.
+
+    2. Ensuite, utilise cette fonction pour :
+
+        * calculer le carré de 5,
+        * afficher le résultat avec `print()`.
+
+
+    ### Exemple d’exécution attendue
+
+    ```
+    Le carré de 5 est 25
+    ```
+
+    ### Aide
+
+    * Une fonction se définit avec `def nom_de_fonction(parametre):`
+    * Pour renvoyer une valeur, utilise `return`.
+    * Exemple de structure :
+
+    ```python
+    def carre(nombre):
+        # calcul du carré
+        return ...
+    ```
 
 ### pour allée plus loin
 

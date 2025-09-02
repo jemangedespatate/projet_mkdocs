@@ -57,25 +57,27 @@ créez une fonction `carre(x)` qui renvoie le carré d’un nombre.
 
 Testez-la avec plusieurs nombres et affichez les résultats.
 
-## <u>Exercice complémentaire</u>
+## <u>Exercices complets</u>
 
-1. Demande à l’utilisateur combien de notes il veut entrer.
-2. Utilise une **boucle** pour demander chaque note une par une.
+### calcul de moyenne
+
+1. Demandez à l’utilisateur combien de notes il veut entrer.
+2. Utilisez une **boucle** pour demander chaque note une par une. (indice: utilisez `input`)
 3. À chaque note saisie :
 
-   * ajoute-la à un **total** pour calculer la moyenne
-   * vérifie si elle est supérieure à la moyenne courante (facultatif pour avancer pas à pas).
+   * ajoutez-la à un **total** pour calculer la moyenne
+   * vérifiez si elle est supérieure à la moyenne courante (facultatif pour avancer pas à pas).
 
-4. Crée une **fonction** `mention(note)` qui renvoie :
+4. Créez une **fonction** `mention(note)` qui renvoie :
 
    * `"Très bien"` si la note ≥ 16
    * `"Assez bien"` si la note ≥ 12
    * `"Passable"` si la note ≥ 10
    * `"Insuffisant"` sinon
 
-5. Après la saisie de toutes les notes, calcule la **moyenne** et affiche la **mention correspondante**.
+5. Après la saisie de toutes les notes, calculez la **moyenne** et affichez la **mention correspondante**.
 
-6. Affiche ensuite combien de notes sont **supérieures à la moyenne**.
+6. Affichez ensuite combien de notes sont **supérieures à la moyenne**.
 
 **Exemple d’exécution :**
 
@@ -90,5 +92,4 @@ Note 5 : 16
 Moyenne : 13.8 → Assez bien
 Nombre de notes supérieures à la moyenne : 3
 ```
-
 
