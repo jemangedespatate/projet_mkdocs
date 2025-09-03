@@ -36,6 +36,7 @@ Ce site a pour objectif de guider les élèves tout au long de l'année scolaire
     ## 📘 programme
 
     * [🐍 Programmation Python](NSI_1/Programmation_Python/sommaire/)
+    * [type et valeur de base](NSI_1/type_et_valeur_de_base/sommaire/)
 
 === "NSI terminale"
 
