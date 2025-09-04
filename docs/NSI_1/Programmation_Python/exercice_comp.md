@@ -1,7 +1,3 @@
-Voici une version corrigée de ton énoncé (orthographe, grammaire et cohérence) :
-
----
-
 # Exercice complémentaire
 
 ## Exercice 1
@@ -126,7 +122,7 @@ Affichez chaque caractère de la chaîne avec sa position (indice).
 
 ---
 
-### bonus
+## bonus
 
    Écrivez un programme qui inverse la chaîne `"informatique"`.
 
