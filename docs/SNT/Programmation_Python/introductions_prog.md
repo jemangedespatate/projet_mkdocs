@@ -182,8 +182,8 @@ forward(x)
 
     1. Définis des **variables** pour représenter :
 
-        * le nombre de minutes (`minutes`)
-        * le nombre de SMS (`sms`)
+        * le nombre de minutes (`minutes`) égales à 0
+        * le nombre de SMS (`sms`) égales à 0
 
     2. Écris une formule (ou un petit programme Python) qui calcule le **coût total** du mois en fonction de ces variables.
 
