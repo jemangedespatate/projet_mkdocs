@@ -14,7 +14,7 @@
         <link rel="prev" href="../../..">
       
       
-        <link rel="next" href="../exercice_comp/">
+        <link rel="next" href="../introductions_prog/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -371,26 +371,11 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#exercices-complets" class="md-nav__link">
-    <span class="md-ellipsis">
-      Exercices complets
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Exercices complets">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#calcul-de-moyenne" class="md-nav__link">
     <span class="md-ellipsis">
       calcul de moyenne
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -410,11 +395,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../exercice_comp/" class="md-nav__link">
+      <a href="../introductions_prog/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Exercice complémentaire
+    🖥️ Introduction à la programmation
   </span>
   
 
@@ -431,11 +416,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../introductions_prog/" class="md-nav__link">
+      <a href="../mini-projet/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    🖥️ Introduction à la programmation
+    📝 Mini-projet : Jeu du Pendu en Python
   </span>
   
 
@@ -1425,6 +1410,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../SNT/Programmation_Python/evaluation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    évaluation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../SNT/Programmation_Python/introductions_prog/" class="md-nav__link">
         
   
@@ -1883,26 +1889,11 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#exercices-complets" class="md-nav__link">
-    <span class="md-ellipsis">
-      Exercices complets
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Exercices complets">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#calcul-de-moyenne" class="md-nav__link">
     <span class="md-ellipsis">
       calcul de moyenne
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1961,7 +1952,6 @@ Affiche le type de chaque variable avec la fonction <code>type()</code>.</p>
 <p><strong><u>6. Fonctions</strong></u></p>
 <p>créez une fonction <code>carre(x)</code> qui renvoie le carré d’un nombre.</p>
 <p>Testez-la avec plusieurs nombres et affichez les résultats.</p>
-<h2 id="exercices-complets"><u>Exercices complets</u></h2>
 <h3 id="calcul-de-moyenne">calcul de moyenne</h3>
 <ol>
 <li>Demandez à l’utilisateur combien de notes il veut entrer.</li>
@@ -2003,6 +1993,108 @@ Note 5 : 16
 
 Moyenne : 13.8 → Assez bien
 Nombre de notes supérieures à la moyenne : 3
+</code></pre></div>
+<h1 id="exercice-complementaire">Exercice complémentaire</h1>
+<h2 id="exercice-1">Exercice 1</h2>
+<p>Analyse de code :</p>
+<div class="highlight"><pre><span></span><code><span class="n">nombre</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">condition</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="k">while</span> <span class="n">condition</span> <span class="o">==</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">nombre</span> <span class="o">==</span> <span class="mi">10</span><span class="p">:</span>
+        <span class="n">condition</span> <span class="o">=</span> <span class="kc">False</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">nombre</span><span class="p">)</span>
+    <span class="n">nombre</span> <span class="o">=</span> <span class="n">nombre</span> <span class="o">+</span> <span class="mi">1</span>
+</code></pre></div>
+<ol>
+<li>Quelles sont les variables utilisées ici ?</li>
+<li>Quelles valeurs contiennent-elles ?</li>
+<li>De quel type de boucle s’agit-il ici ? Quelle est la condition nécessaire pour que cette boucle s’arrête ?</li>
+<li>À quel moment cette condition intervient-elle ?</li>
+<li>Qu’affiche le programme ? Donnez le premier et le dernier élément affichés par le programme.</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="n">nombre</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">condition</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="k">while</span> <span class="n">condition</span> <span class="o">==</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="n">nombre</span> <span class="o">=</span> <span class="n">nombre</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="k">if</span> <span class="n">nombre</span> <span class="o">==</span> <span class="mi">10</span><span class="p">:</span>
+        <span class="n">condition</span> <span class="o">=</span> <span class="kc">False</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">nombre</span><span class="p">)</span>
+</code></pre></div>
+<ol>
+<li>Et maintenant, que va afficher le programme ?</li>
+<li>Transformez le premier programme pour le simplifier.</li>
+<li>Recréez le premier programme avec une boucle <strong>for</strong> (en 2 lignes).</li>
+</ol>
+<h2 id="exercice-2">Exercice 2</h2>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">random</span>
+
+<span class="k">def</span> <span class="nf">reste</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">a</span> <span class="o">%</span> <span class="n">b</span>
+
+<span class="k">def</span> <span class="nf">quotient</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">a</span> <span class="o">//</span> <span class="n">b</span>
+
+<span class="k">def</span> <span class="nf">affichage</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">reste</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+    <span class="n">q</span> <span class="o">=</span> <span class="n">quotient</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="s2">&quot; = &quot;</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="s2">&quot; × &quot;</span><span class="p">,</span> <span class="n">q</span><span class="p">,</span> <span class="s2">&quot; + &quot;</span><span class="p">,</span> <span class="n">r</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>  <span class="c1"># évite b=0</span>
+    <span class="n">b</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+    <span class="n">affichage</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+</code></pre></div>
+<ol>
+<li>Citez le nom de toutes les fonctions présentes dans ce code.</li>
+<li>Que fait la fonction <code>reste</code> ?</li>
+<li>Que fait la fonction <code>quotient</code> ?</li>
+<li>Que fait la fonction <code>affichage</code> ?</li>
+<li>Dans la fonction <code>affichage</code>, dans quelles variables sont stockés le quotient et le reste ?</li>
+<li>Combien d’itérations (tours) la boucle <code>for</code> va-t-elle effectuer ?</li>
+<li>Donnez les valeurs que <code>i</code> va prendre au fur et à mesure.</li>
+<li>Que fait la fonction <code>random.randint</code> ?</li>
+<li>Finalement, que va faire le programme ?</li>
+</ol>
+<h2 id="exercice-3">Exercice 3</h2>
+<p>On considère la chaîne suivante :</p>
+<div class="highlight"><pre><span></span><code><span class="n">texte</span> <span class="o">=</span> <span class="s2">&quot;informatique&quot;</span>
+</code></pre></div>
+<hr />
+<p>Écrivez un programme qui affiche chaque caractère de la chaîne sur une nouvelle ligne.</p>
+<p><strong>Exemple attendu :</strong></p>
+<div class="highlight"><pre><span></span><code>i
+n
+f
+o
+r
+m
+a
+t
+i
+q
+u
+e
+</code></pre></div>
+<hr />
+<p>Affichez chaque caractère de la chaîne avec sa position (indice).</p>
+<p><strong>Exemple attendu :</strong></p>
+<div class="highlight"><pre><span></span><code>0 : i
+1 : n
+2 : f
+3 : o
+...
+10 : e
+</code></pre></div>
+<hr />
+<p>Écrivez un programme qui compte combien de fois la lettre <code>"i"</code> apparaît dans la chaîne <code>"informatique"</code>.</p>
+<p><strong>Exemple attendu :</strong></p>
+<div class="highlight"><pre><span></span><code>La lettre i apparaît 2 fois.
+</code></pre></div>
+<hr />
+<h2 id="bonus">bonus</h2>
+<p>Écrivez un programme qui inverse la chaîne <code>"informatique"</code>.</p>
+<p><strong>Exemple attendu :</strong></p>
+<div class="highlight"><pre><span></span><code>euqitamrofni
 </code></pre></div>
 
 
