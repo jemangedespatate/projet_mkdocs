@@ -1,5 +1,5 @@
-site_name: Mr Leal SNT/NSI
-site_url: https://sitename.example
+site_name: prof leal
+site_url: https://www.prof-leal.fr
 theme:
   name: material
   custom_dir: overrides
@@ -49,3 +49,5 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+
+custom_dir: docs
