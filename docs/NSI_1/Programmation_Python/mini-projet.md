@@ -204,7 +204,7 @@ Pour démarrer le jeu, exécutez le fichier `interface.py`.
     Quelle est votre lettre ? ...
     ```
 
-    Ici, `...` représente les lettres non trouvées et la zone après le `?` attend la lettre saisie par l'utilisateur.
+    Ici, `_` représente les lettres non trouvées et la zone après le `?` attend la lettre saisie par l'utilisateur.
 
 ??? example "Exemple:"
 
