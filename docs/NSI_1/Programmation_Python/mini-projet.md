@@ -14,7 +14,7 @@ Dans ce TP, vous compléterez les fonctions manquantes dans le fichier Python do
 Pour que votre projet fonctionne correctement, vous devez placer tous les fichiers dans **un même répertoire** (dossier).  
 
 Les fichiers nécessaires sont :  
-- [interface.py](../mini_projet/interface.py){:download="interface.py"} : contient les fonctions que vous devez compléter.  
+- [pendu.py](../mini_projet/pendu.py){:download="pendu.py"} : contient les fonctions que vous devez compléter.  
 - [pendu_dico.txt](../mini_projet/pendu_dico.txt){:download="pendu_dico.txt"} : dictionnaire de mots utilisés pour le pendu.  
 
 👉 Arborescence attendue :  
