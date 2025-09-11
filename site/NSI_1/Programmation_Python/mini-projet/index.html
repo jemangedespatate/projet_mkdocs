@@ -484,6 +484,39 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#pour-aller-plus-loin" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pour aller plus loin
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pour aller plus loin">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exemple-quand-le-joueur-perd-6-erreurs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemple quand le joueur perd (6 erreurs):
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemple-quand-le-joueur-gagne" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemple quand le joueur gagne :
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2023,6 +2056,39 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#pour-aller-plus-loin" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pour aller plus loin
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pour aller plus loin">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exemple-quand-le-joueur-perd-6-erreurs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemple quand le joueur perd (6 erreurs):
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemple-quand-le-joueur-gagne" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemple quand le joueur gagne :
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2178,6 +2244,34 @@ caractere   = &quot;E&quot;
 <p>Pour démarrer le jeu, exécutez le fichier <code>interface.py</code>.</p>
 <p>👉 <strong>Question 3 :</strong> Selon vous, à quoi sert l’interface dans ce projet ?  </p>
 <p>👉 <strong>Question 4 :</strong> Quelles sont les informations qui doivent être envoyées par <code>pendu.py</code> vers <code>interface.py</code> ?  </p>
+<h2 id="pour-aller-plus-loin">Pour aller plus loin</h2>
+<p>👉 Créez votre propre interface console dans le fichier <code>pendu.py</code>. L'affichage doit être mis à jour et affiché à chaque saisie de lettre.</p>
+<details class="example">
+<summary>Exemple:</summary>
+<div class="highlight"><pre><span></span><code>Mot à trouver : _ _ _ _
+Nombre d’erreurs : 3
+Quelle est votre lettre ? ...
+</code></pre></div>
+<p>Ici, <code>...</code> représente les lettres non trouvées et la zone après le <code>?</code> attend la lettre saisie par l'utilisateur.</p>
+</details>
+<details class="example">
+<summary>Exemple:</summary>
+<h3 id="exemple-quand-le-joueur-perd-6-erreurs">Exemple quand le joueur perd (6 erreurs):</h3>
+<div class="highlight"><pre><span></span><code>Mot à trouver : _ _ _ _
+Nombre d’erreurs : 6
+Quelle est votre lettre ? x
+
+Dommage ! Vous avez perdu.
+Le mot était : CHAT
+</code></pre></div>
+<h3 id="exemple-quand-le-joueur-gagne">Exemple quand le joueur <strong>gagne</strong> :</h3>
+<div class="highlight"><pre><span></span><code>Mot à trouver : C H A _
+Nombre d’erreurs : 2
+Quelle est votre lettre ? T
+
+Bravo ! Vous avez trouvé le mot : CHAT
+</code></pre></div>
+</details>
 
 
 

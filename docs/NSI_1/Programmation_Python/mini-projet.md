@@ -191,3 +191,40 @@ Pour démarrer le jeu, exécutez le fichier `interface.py`.
 👉 **Question 3 :** Selon vous, à quoi sert l’interface dans ce projet ?  
 
 👉 **Question 4 :** Quelles sont les informations qui doivent être envoyées par `pendu.py` vers `interface.py` ?  
+
+## Pour aller plus loin
+
+👉 Créez votre propre interface console dans le fichier `pendu.py`. L'affichage doit être mis à jour et affiché à chaque saisie de lettre.
+
+??? example "Exemple:"
+
+    ```
+    Mot à trouver : _ _ _ _
+    Nombre d’erreurs : 3
+    Quelle est votre lettre ? ...
+    ```
+
+    Ici, `...` représente les lettres non trouvées et la zone après le `?` attend la lettre saisie par l'utilisateur.
+
+??? example "Exemple:"
+
+    ### Exemple quand le joueur perd (6 erreurs):
+
+    ```
+    Mot à trouver : _ _ _ _
+    Nombre d’erreurs : 6
+    Quelle est votre lettre ? x
+
+    Dommage ! Vous avez perdu.
+    Le mot était : CHAT
+    ```
+
+    ### Exemple quand le joueur **gagne** :
+
+    ```
+    Mot à trouver : C H A _
+    Nombre d’erreurs : 2
+    Quelle est votre lettre ? T
+
+    Bravo ! Vous avez trouvé le mot : CHAT
+    ```
