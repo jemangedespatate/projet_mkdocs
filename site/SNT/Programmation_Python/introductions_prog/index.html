@@ -384,6 +384,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../NSI_1/Programmation_Python/mini-projet_2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mini projet 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../NSI_1/Programmation_Python/sommaire/" class="md-nav__link">
         
   
@@ -1507,33 +1528,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#boucles" class="md-nav__link">
-    <span class="md-ellipsis">
-      Boucles
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#questions_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Questions
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#aide" class="md-nav__link">
-    <span class="md-ellipsis">
-      Aide
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#conditions" class="md-nav__link">
     <span class="md-ellipsis">
       Conditions
@@ -1552,9 +1546,27 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#aide_1" class="md-nav__link">
+  <a href="#aide" class="md-nav__link">
     <span class="md-ellipsis">
       Aide
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#questions_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Questions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#boucles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Boucles
     </span>
   </a>
   
@@ -1564,6 +1576,15 @@
   <a href="#questions_2" class="md-nav__link">
     <span class="md-ellipsis">
       Questions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aide_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aide
     </span>
   </a>
   
@@ -2151,33 +2172,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#boucles" class="md-nav__link">
-    <span class="md-ellipsis">
-      Boucles
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#questions_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Questions
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#aide" class="md-nav__link">
-    <span class="md-ellipsis">
-      Aide
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#conditions" class="md-nav__link">
     <span class="md-ellipsis">
       Conditions
@@ -2196,9 +2190,27 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#aide_1" class="md-nav__link">
+  <a href="#aide" class="md-nav__link">
     <span class="md-ellipsis">
       Aide
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#questions_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Questions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#boucles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Boucles
     </span>
   </a>
   
@@ -2208,6 +2220,15 @@
   <a href="#questions_2" class="md-nav__link">
     <span class="md-ellipsis">
       Questions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aide_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aide
     </span>
   </a>
   
@@ -2442,6 +2463,147 @@ Ces variables permettent de stocker une donnée (une information).</p>
 <li>Quel sera le message affiché par le programme ?</li>
 </ol>
 </div>
+<h3 id="conditions">Conditions</h3>
+<p>En Python (et en informatique en général), il est possible de faire des choix entre plusieurs possibilités. Pour cela, on utilise ce qu’on appelle des conditions.</p>
+<p>Mais avant d’aller plus loin, il faut comprendre une notion très importante : les booléens.</p>
+<p>Un booléen est une valeur logique qui ne peut être que :</p>
+<ul>
+<li>
+<p>True (vrai)</p>
+</li>
+<li>
+<p>False (faux)</p>
+</li>
+</ul>
+<p>C’est une réponse à une question fermée</p>
+<div class="admonition example">
+<p class="admonition-title">exemple :</p>
+<p>Est-ce que 5 est plus grand que 3 ? → True</p>
+<p>Est-ce que 10 est plus petit que 2 ? → False</p>
+</div>
+<p>En Python, on peut tester cela directement avec les operateurs utilisé en mathématique.</p>
+<div class="admonition example">
+<p class="admonition-title">exemple :</p>
+<div class="highlight"><pre><span></span><code>print(5 &gt; 3)    # Affiche True
+print(10 &lt; 2)   # Affiche False
+print(100 == 100)  # Affiche True
+</code></pre></div>
+<p>Ici, les symboles comme &gt;, &lt; ou == sont appelés opérateurs de comparaison.</p>
+<p>Ils permettent de comparer deux valeurs et de renvoyer un booléen (True ou False).</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">activité 5 :</p>
+<p>Pour chaque proposition suivante, dis si elle est vraie ou fausse :</p>
+<ol>
+<li>
+<p><code>100 &gt; 99</code></p>
+</li>
+<li>
+<p><code>100 &lt; 99</code></p>
+</li>
+<li>
+<p><code>100 &gt; 100</code></p>
+</li>
+<li>
+<p><code>100 == 99</code></p>
+</li>
+</ol>
+</div>
+<p>Une condition en Python s’écrit avec un mot-clé suivi d’un booléen (ou d’une expression qui produit un booléen).</p>
+<p>La syntaxe est la suivante :</p>
+<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="n">condition_1</span><span class="p">:</span>
+    <span class="c1"># faire cette partie</span>
+<span class="k">elif</span> <span class="n">condition_2</span><span class="p">:</span>
+    <span class="c1"># faire cette partie</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="c1"># faire cette partie</span>
+</code></pre></div>
+<p>Trois termes sont utilisés ici :</p>
+<ul>
+<li>
+<p><strong>if</strong> : signifie <em>si</em> en français.
+  → Si la condition qui suit est vraie, alors la partie en dessous est exécutée.</p>
+</li>
+<li>
+<p><strong>elif</strong> : signifie <em>sinon si</em> en français.
+  → Si la condition précédente est fausse et que la condition qui suit est vraie, alors la partie en dessous est exécutée.</p>
+</li>
+<li>
+<p><strong>else</strong> : signifie <em>sinon</em> en français.
+  → Si toutes les conditions précédentes sont fausses, alors la partie en dessous est exécutée.</p>
+</li>
+</ul>
+<p><strong>Exemple :</strong></p>
+<div class="highlight"><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="k">if</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">20</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;x est inférieur à 20&quot;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">20</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;x est supérieur à 20&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;x est égal à 20&quot;</span><span class="p">)</span>
+</code></pre></div>
+<p>Essayez ce programme en modifiant la valeur de <code>x</code> pour comprendre comment fonctionnent les conditions.</p>
+<div class="admonition note">
+<p class="admonition-title">activité 6</p>
+<p>Écris un programme en Python qui :</p>
+<ol>
+<li>Demande à l’utilisateur de saisir son âge (utilise <code>input()</code>).</li>
+<li>Si l’âge est <strong>supérieur ou égal à 18</strong>, affiche :</li>
+</ol>
+<p><div class="highlight"><pre><span></span><code>Tu es majeur.
+</code></pre></div>
+3. Sinon, affiche :</p>
+<div class="highlight"><pre><span></span><code>Tu es mineur.
+</code></pre></div>
+<h3 id="exemple-dexecution">Exemple d’exécution</h3>
+<div class="highlight"><pre><span></span><code>Entre ton âge : 16
+Tu es mineur.
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>Entre ton âge : 20
+Tu es majeur.
+</code></pre></div>
+<h3 id="aide">Aide</h3>
+<ul>
+<li>Utilise la fonction <code>input()</code> de ma maniere suivante: input("Entre ton âge : ") pour pouvoir interroger l'utilisateur.</li>
+<li>Utilise une condition <code>if</code> et <code>else</code>.</li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">activité 7</p>
+<p>On considère le programme suivant :</p>
+<div class="highlight"><pre><span></span><code><span class="n">note</span> <span class="o">=</span> <span class="mi">14</span>
+
+<span class="k">if</span> <span class="n">note</span> <span class="o">&gt;=</span> <span class="mi">16</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Mention Très Bien&quot;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">note</span> <span class="o">&gt;=</span> <span class="mi">14</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Mention Bien&quot;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">note</span> <span class="o">&gt;=</span> <span class="mi">12</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Mention Assez Bien&quot;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">note</span> <span class="o">&gt;=</span> <span class="mi">10</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Mention Passable&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Échec&quot;</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="questions_1">Questions</h3>
+<ol>
+<li>Quelle est la valeur de la variable <code>note</code> au début du programme ?</li>
+<li>Quelle est la première condition testée par le programme ? Est-elle vraie ou fausse ici ?</li>
+<li>Quelle condition sera vraie dans ce cas précis ?</li>
+<li>Quel sera le message affiché par le programme ?</li>
+<li>Que se passerait-il si <code>note = 9</code> ?</li>
+</ol>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Activité 8</p>
+<p>Écris un programme en Python en utilisant Turtle qui :  </p>
+<ol>
+<li>Déclare une variable <code>x</code> égale à 100.  </li>
+<li>Dessine un trait de longueur <code>x</code> puis tourne à gauche.  </li>
+<li>Ajoute 10 à <code>x</code>.  </li>
+<li>Si <code>x</code> est supérieur à 110, change la couleur de la tortue en rouge (<code>"red"</code>).  </li>
+<li>Recommence à partir de l’étape 2 pour le faire 10 fois (en utilisant du copier-coller).  </li>
+</ol>
+</div>
 <h3 id="boucles">Boucles</h3>
 <p>Supposons que l’on veuille effectuer plusieurs fois la même action : il est possible d’utiliser une <strong>boucle</strong>.
 Celle-ci nous permet de ne pas écrire plusieurs fois la même chose.</p>
@@ -2474,17 +2636,17 @@ Celle-ci nous permet de ne pas écrire plusieurs fois la même chose.</p>
     <span class="n">right</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
 </code></pre></div>
 <div class="admonition note">
-<p class="admonition-title">activité 5</p>
+<p class="admonition-title">activité 9</p>
 <p>Réalisez l’image suivante en utilisant une boucle <code>for</code> à l'aide de Turtle.  </p>
 <p><img alt="carré" src="../../../assets/seconde/introduction_prog/car%C3%A9e.png" />  </p>
 </div>
 <div class="admonition note">
-<p class="admonition-title">activité 6</p>
+<p class="admonition-title">activité 10</p>
 <p>On considère le programme suivant :</p>
 <div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;SNT est génial !&quot;</span><span class="p">)</span>
 </code></pre></div>
-<h3 id="questions_1">Questions</h3>
+<h3 id="questions_2">Questions</h3>
 <ol>
 <li>Combien de fois la boucle s’exécute-t-elle ?</li>
 <li>Quelle est la phrase affichée par le programme ?</li>
@@ -2544,12 +2706,12 @@ Celle-ci nous permet de ne pas écrire plusieurs fois la même chose.</p>
 <script type="math/tex; mode=display">0 + 1 + 2 + 3 + \dots + 8 + 9 = 45</script>
 </p>
 <div class="admonition note">
-<p class="admonition-title">activité 7</p>
+<p class="admonition-title">activité 11</p>
 <p>Réalisez l’image suivante en utilisant une boucle <code>for</code> et en exploitant la variable <code>i</code> à l'aide de Turtle.  </p>
 <p><img alt="act4" src="../../../assets/seconde/introduction_prog/turtle_act4.png" />  </p>
 </div>
 <div class="admonition note">
-<p class="admonition-title">activité 8</p>
+<p class="admonition-title">activité 12</p>
 <p>Écris un programme en Python qui :</p>
 <ol>
 <li>Affiche les nombres de 1 à 5.</li>
@@ -2562,102 +2724,12 @@ Le carré de 3 est 9
 Le carré de 4 est 16
 Le carré de 5 est 25
 </code></pre></div>
-<h3 id="aide">Aide</h3>
+<h3 id="aide_1">Aide</h3>
 <ul>
 <li>Utilise une <strong>boucle <code>for</code></strong> avec <code>range(1, 6)</code>.</li>
 <li>Utilise une variable (par exemple <code>carre</code>) pour stocker le résultat du calcul.</li>
 <li>Utilise <code>print()</code> pour afficher le texte au format suivant <code>print("le carré de",?,"est",?)</code> en remplacant les ?</li>
 </ul>
-</div>
-<h3 id="conditions">Conditions</h3>
-<p>En Python, il est également possible de faire des choix entre plusieurs possibilités. Cela s’appelle les <strong>conditions</strong>.
-La syntaxe est la suivante :</p>
-<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="n">condition_1</span><span class="p">:</span>
-    <span class="c1"># faire cette partie</span>
-<span class="k">elif</span> <span class="n">condition_2</span><span class="p">:</span>
-    <span class="c1"># faire cette partie</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="c1"># faire cette partie</span>
-</code></pre></div>
-<p>Trois termes sont utilisés ici :</p>
-<ul>
-<li>
-<p><strong>if</strong> : signifie <em>si</em> en français.
-  → Si la condition qui suit est vraie, alors la partie en dessous est exécutée.</p>
-</li>
-<li>
-<p><strong>elif</strong> : signifie <em>sinon si</em> en français.
-  → Si la condition précédente est fausse et que la condition qui suit est vraie, alors la partie en dessous est exécutée.</p>
-</li>
-<li>
-<p><strong>else</strong> : signifie <em>sinon</em> en français.
-  → Si toutes les conditions précédentes sont fausses, alors la partie en dessous est exécutée.</p>
-</li>
-</ul>
-<p><strong>Exemple :</strong></p>
-<div class="highlight"><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="mi">100</span>
-<span class="k">if</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">20</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;x est inférieur à 20&quot;</span><span class="p">)</span>
-<span class="k">elif</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">20</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;x est supérieur à 20&quot;</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;x est égal à 20&quot;</span><span class="p">)</span>
-</code></pre></div>
-<p>Essayez ce programme en modifiant la valeur de <code>x</code> pour comprendre comment fonctionnent les conditions.</p>
-<div class="admonition note">
-<p class="admonition-title">activité 9</p>
-<p>Reprenez votre code précédent en faisant en sorte que la couleur de votre pinceau soit <strong>rouge</strong> lorsque <code>i &lt; 50</code>, et <strong>bleue</strong> sinon à l'aide de Turtle.</p>
-<p><img alt="act5" src="../../../assets/seconde/introduction_prog/turtle_act5.png" />  </p>
-</div>
-<div class="admonition note">
-<p class="admonition-title">activité 10</p>
-<p>Écris un programme en Python qui :</p>
-<ol>
-<li>Demande à l’utilisateur de saisir son âge (utilise <code>input()</code>).</li>
-<li>Si l’âge est <strong>supérieur ou égal à 18</strong>, affiche :</li>
-</ol>
-<p><div class="highlight"><pre><span></span><code>Tu es majeur.
-</code></pre></div>
-3. Sinon, affiche :</p>
-<div class="highlight"><pre><span></span><code>Tu es mineur.
-</code></pre></div>
-<h3 id="exemple-dexecution">Exemple d’exécution</h3>
-<div class="highlight"><pre><span></span><code>Entre ton âge : 16
-Tu es mineur.
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>Entre ton âge : 20
-Tu es majeur.
-</code></pre></div>
-<h3 id="aide_1">Aide</h3>
-<ul>
-<li>Utilise la fonction <code>input()</code> de ma maniere suivante: input("Entre ton âge : ") pour pouvoir interroger l'utilisateur.</li>
-<li>Utilise une condition <code>if ... else</code>.</li>
-</ul>
-</div>
-<div class="admonition note">
-<p class="admonition-title">activité 11</p>
-<p>On considère le programme suivant :</p>
-<div class="highlight"><pre><span></span><code><span class="n">note</span> <span class="o">=</span> <span class="mi">14</span>
-
-<span class="k">if</span> <span class="n">note</span> <span class="o">&gt;=</span> <span class="mi">16</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Mention Très Bien&quot;</span><span class="p">)</span>
-<span class="k">elif</span> <span class="n">note</span> <span class="o">&gt;=</span> <span class="mi">14</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Mention Bien&quot;</span><span class="p">)</span>
-<span class="k">elif</span> <span class="n">note</span> <span class="o">&gt;=</span> <span class="mi">12</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Mention Assez Bien&quot;</span><span class="p">)</span>
-<span class="k">elif</span> <span class="n">note</span> <span class="o">&gt;=</span> <span class="mi">10</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Mention Passable&quot;</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Échec&quot;</span><span class="p">)</span>
-</code></pre></div>
-<h3 id="questions_2">Questions</h3>
-<ol>
-<li>Quelle est la valeur de la variable <code>note</code> au début du programme ?</li>
-<li>Quelle est la première condition testée par le programme ? Est-elle vraie ou fausse ici ?</li>
-<li>Quelle condition sera vraie dans ce cas précis ?</li>
-<li>Quel sera le message affiché par le programme ?</li>
-<li>Que se passerait-il si <code>note = 9</code> ?</li>
-</ol>
 </div>
 <h3 id="fonctions">Fonctions</h3>
 <p>Pour conclure cette partie, Python permet la création et l’utilisation de <strong>fonctions</strong>, qui sont des blocs de code réutilisables plusieurs fois par la suite.</p>
@@ -2702,12 +2774,12 @@ Tu es majeur.
 <span class="n">fonction_1</span><span class="p">()</span>
 </code></pre></div>
 <div class="admonition note">
-<p class="admonition-title">activité 12</p>
+<p class="admonition-title">activité 13</p>
 <p>Créez une fonction <code>carre</code> qui dessine un carré dont les côtés sont de longueur 100, puis utilisez-la afin de refaire l’image suivante à l'aide de Turtle:  </p>
 <p><img alt="act6" src="../../../assets/seconde/introduction_prog/turtle_act6.png" />  </p>
 </div>
 <div class="admonition note">
-<p class="admonition-title">activité 13</p>
+<p class="admonition-title">activité 14</p>
 <p>On considère le programme suivant :</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">message_bienvenue</span><span class="p">():</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Bienvenue en SNT !&quot;</span><span class="p">)</span>
@@ -2764,13 +2836,13 @@ Pour cela, on va créer un paramètre <code>longueur</code> dans notre fonction 
 <span class="n">fonction_3</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">90</span><span class="p">)</span>
 </code></pre></div>
 <div class="admonition note">
-<p class="admonition-title">activité 14</p>
+<p class="admonition-title">activité 15</p>
 <p>Reprenez votre fonction <code>carre</code> créée précédemment en y ajoutant un paramètre pour la longueur des côtés.<br />
 Écrivez ensuite un code permettant de refaire l’image suivante à l'aide de Turtle :  </p>
 <p><img alt="act7" src="../../../assets/seconde/introduction_prog/turtle_act7.png" />  </p>
 </div>
 <div class="admonition note">
-<p class="admonition-title">activité 15</p>
+<p class="admonition-title">activité 16</p>
 <ol>
 <li>
 <p>Écris une <strong>fonction</strong> appelée <code>carre</code> qui :</p>

@@ -211,6 +211,163 @@ forward(x)
     4. Quelle est la valeur finale de `vitesse` ?
     5. Quel sera le message affiché par le programme ?
 
+### Conditions
+
+En Python (et en informatique en général), il est possible de faire des choix entre plusieurs possibilités. Pour cela, on utilise ce qu’on appelle des conditions.
+
+Mais avant d’aller plus loin, il faut comprendre une notion très importante : les booléens.
+
+Un booléen est une valeur logique qui ne peut être que :
+
+* True (vrai)
+
+* False (faux)
+
+C’est une réponse à une question fermée
+
+!!! example "exemple :"
+
+    Est-ce que 5 est plus grand que 3 ? → True
+
+    Est-ce que 10 est plus petit que 2 ? → False
+
+En Python, on peut tester cela directement avec les operateurs utilisé en mathématique.
+
+!!! example "exemple :"
+    ```
+    print(5 > 3)    # Affiche True
+    print(10 < 2)   # Affiche False
+    print(100 == 100)  # Affiche True
+    ```
+    
+    Ici, les symboles comme >, < ou == sont appelés opérateurs de comparaison.
+
+    Ils permettent de comparer deux valeurs et de renvoyer un booléen (True ou False).
+
+!!! note "activité 5 :"
+
+    Pour chaque proposition suivante, dis si elle est vraie ou fausse :
+
+    1. 
+    ```100 > 99```
+
+    2. 
+    ```100 < 99```
+
+    3. 
+    ```100 > 100```
+
+    4. 
+    ```100 == 99```
+
+Une condition en Python s’écrit avec un mot-clé suivi d’un booléen (ou d’une expression qui produit un booléen).
+
+La syntaxe est la suivante :
+
+```py
+if condition_1:
+    # faire cette partie
+elif condition_2:
+    # faire cette partie
+else:
+    # faire cette partie
+```
+
+Trois termes sont utilisés ici :
+
+* **if** : signifie *si* en français.
+  → Si la condition qui suit est vraie, alors la partie en dessous est exécutée.
+
+* **elif** : signifie *sinon si* en français.
+  → Si la condition précédente est fausse et que la condition qui suit est vraie, alors la partie en dessous est exécutée.
+
+* **else** : signifie *sinon* en français.
+  → Si toutes les conditions précédentes sont fausses, alors la partie en dessous est exécutée.
+
+**Exemple :**
+
+```py
+x = 100
+if x < 20:
+    print("x est inférieur à 20")
+elif x > 20:
+    print("x est supérieur à 20")
+else:
+    print("x est égal à 20")
+```
+
+Essayez ce programme en modifiant la valeur de `x` pour comprendre comment fonctionnent les conditions.
+
+!!! note "activité 6"
+
+    Écris un programme en Python qui :
+
+    1. Demande à l’utilisateur de saisir son âge (utilise `input()`).
+    2. Si l’âge est **supérieur ou égal à 18**, affiche :
+    
+    ```
+    Tu es majeur.
+    
+    ```
+    3. Sinon, affiche :
+
+    ```
+    Tu es mineur.
+    ```
+
+    ### Exemple d’exécution
+
+    ```
+    Entre ton âge : 16
+    Tu es mineur.
+    ```
+
+    ```
+    Entre ton âge : 20
+    Tu es majeur.
+    ```
+
+    ### Aide
+
+    * Utilise la fonction `input()` de ma maniere suivante: input("Entre ton âge : ") pour pouvoir interroger l'utilisateur.
+    * Utilise une condition `if` et `else`.
+
+!!! note "activité 7"
+
+    On considère le programme suivant :
+
+    ```python
+    note = 14
+
+    if note >= 16:
+        print("Mention Très Bien")
+    elif note >= 14:
+        print("Mention Bien")
+    elif note >= 12:
+        print("Mention Assez Bien")
+    elif note >= 10:
+        print("Mention Passable")
+    else:
+        print("Échec")
+    ```
+
+    ### Questions
+
+    1. Quelle est la valeur de la variable `note` au début du programme ?
+    2. Quelle est la première condition testée par le programme ? Est-elle vraie ou fausse ici ?
+    3. Quelle condition sera vraie dans ce cas précis ?
+    4. Quel sera le message affiché par le programme ?
+    5. Que se passerait-il si `note = 9` ?
+
+!!! note "Activité 8"
+
+    Écris un programme en Python en utilisant Turtle qui :  
+
+    1. Déclare une variable `x` égale à 100.  
+    2. Dessine un trait de longueur `x` puis tourne à gauche.  
+    3. Ajoute 10 à `x`.  
+    4. Si `x` est supérieur à 110, change la couleur de la tortue en rouge (`"red"`).  
+    5. Recommence à partir de l’étape 2 pour le faire 10 fois (en utilisant du copier-coller).  
 
 
 ### Boucles
@@ -252,13 +409,13 @@ for i in range(3):
     right(90)
 ```
 
-!!! note "activité 5"
+!!! note "activité 9"
 
     Réalisez l’image suivante en utilisant une boucle `for` à l'aide de Turtle.  
 
     ![carré](../../assets/seconde/introduction_prog/carée.png)  
     
-!!! note "activité 6"
+!!! note "activité 10"
 
     On considère le programme suivant :
 
@@ -308,13 +465,13 @@ Ici, `resultat` va être égal à la somme des éléments de 0 à 9 (10 étant e
 
 $$0 + 1 + 2 + 3 + \dots + 8 + 9 = 45$$
 
-!!! note "activité 7"
+!!! note "activité 11"
 
     Réalisez l’image suivante en utilisant une boucle `for` et en exploitant la variable `i` à l'aide de Turtle.  
 
     ![act4](../../assets/seconde/introduction_prog/turtle_act4.png)  
 
-!!! note "activité 8"
+!!! note "activité 12"
 
     Écris un programme en Python qui :
 
@@ -336,113 +493,6 @@ $$0 + 1 + 2 + 3 + \dots + 8 + 9 = 45$$
     * Utilise une **boucle `for`** avec `range(1, 6)`.
     * Utilise une variable (par exemple `carre`) pour stocker le résultat du calcul.
     * Utilise `print()` pour afficher le texte au format suivant `print("le carré de",?,"est",?)` en remplacant les ?
-
-
-### Conditions
-
-En Python, il est également possible de faire des choix entre plusieurs possibilités. Cela s’appelle les **conditions**.
-La syntaxe est la suivante :
-
-```py
-if condition_1:
-    # faire cette partie
-elif condition_2:
-    # faire cette partie
-else:
-    # faire cette partie
-```
-
-Trois termes sont utilisés ici :
-
-* **if** : signifie *si* en français.
-  → Si la condition qui suit est vraie, alors la partie en dessous est exécutée.
-
-* **elif** : signifie *sinon si* en français.
-  → Si la condition précédente est fausse et que la condition qui suit est vraie, alors la partie en dessous est exécutée.
-
-* **else** : signifie *sinon* en français.
-  → Si toutes les conditions précédentes sont fausses, alors la partie en dessous est exécutée.
-
-**Exemple :**
-
-```py
-x = 100
-if x < 20:
-    print("x est inférieur à 20")
-elif x > 20:
-    print("x est supérieur à 20")
-else:
-    print("x est égal à 20")
-```
-
-Essayez ce programme en modifiant la valeur de `x` pour comprendre comment fonctionnent les conditions.
-
-!!! note "activité 9"
-
-    Reprenez votre code précédent en faisant en sorte que la couleur de votre pinceau soit **rouge** lorsque `i < 50`, et **bleue** sinon à l'aide de Turtle.
-
-    ![act5](../../assets/seconde/introduction_prog/turtle_act5.png)  
-
-!!! note "activité 10"
-
-    Écris un programme en Python qui :
-
-    1. Demande à l’utilisateur de saisir son âge (utilise `input()`).
-    2. Si l’âge est **supérieur ou égal à 18**, affiche :
-
-    ```
-    Tu es majeur.
-    ```
-    3. Sinon, affiche :
-
-    ```
-    Tu es mineur.
-    ```
-
-    ### Exemple d’exécution
-
-    ```
-    Entre ton âge : 16
-    Tu es mineur.
-    ```
-
-    ```
-    Entre ton âge : 20
-    Tu es majeur.
-    ```
-
-    ### Aide
-
-    * Utilise la fonction `input()` de ma maniere suivante: input("Entre ton âge : ") pour pouvoir interroger l'utilisateur.
-    * Utilise une condition `if ... else`.
-
-!!! note "activité 11"
-
-    On considère le programme suivant :
-
-    ```python
-    note = 14
-
-    if note >= 16:
-        print("Mention Très Bien")
-    elif note >= 14:
-        print("Mention Bien")
-    elif note >= 12:
-        print("Mention Assez Bien")
-    elif note >= 10:
-        print("Mention Passable")
-    else:
-        print("Échec")
-    ```
-
-    ### Questions
-
-    1. Quelle est la valeur de la variable `note` au début du programme ?
-    2. Quelle est la première condition testée par le programme ? Est-elle vraie ou fausse ici ?
-    3. Quelle condition sera vraie dans ce cas précis ?
-    4. Quel sera le message affiché par le programme ?
-    5. Que se passerait-il si `note = 9` ?
-
 
 ### Fonctions
 
@@ -497,13 +547,13 @@ color('red')
 fonction_1()
 ```
 
-!!! note "activité 12"
+!!! note "activité 13"
 
     Créez une fonction `carre` qui dessine un carré dont les côtés sont de longueur 100, puis utilisez-la afin de refaire l’image suivante à l'aide de Turtle:  
 
     ![act6](../../assets/seconde/introduction_prog/turtle_act6.png)  
 
-!!! note "activité 13"
+!!! note "activité 14"
 
     On considère le programme suivant :
 
@@ -576,14 +626,14 @@ def fonction_3(longueur, angle):
 fonction_3(100, 90)
 ```
 
-!!! note "activité 14"
+!!! note "activité 15"
 
     Reprenez votre fonction `carre` créée précédemment en y ajoutant un paramètre pour la longueur des côtés.  
     Écrivez ensuite un code permettant de refaire l’image suivante à l'aide de Turtle :  
 
     ![act7](../../assets/seconde/introduction_prog/turtle_act7.png)  
 
-!!! note "activité 15"
+!!! note "activité 16"
 
     1. Écris une **fonction** appelée `carre` qui :
 
