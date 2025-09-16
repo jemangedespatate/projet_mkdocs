@@ -626,6 +626,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#exercice-complementaire" class="md-nav__link">
+    <span class="md-ellipsis">
+      exercice complementaire
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2116,6 +2125,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#exercice-complementaire" class="md-nav__link">
+    <span class="md-ellipsis">
+      exercice complementaire
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2512,6 +2530,41 @@ Le principe est le même qu’en base 10 :</p>
 <span class="sd">    en sa représentation en base 16 (chaîne de caractères).</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 </code></pre></div>
+</div>
+<h2 id="exercice-complementaire">exercice complementaire</h2>
+<div class="admonition note">
+<p class="admonition-title">Exercice pratique</p>
+<ol>
+<li>Compléter la fonction suivante sans passer par la base 10 :  </li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">hex_to_bin</span><span class="p">(</span><span class="n">nombre</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Cette fonction transforme un nombre hexadécimal (en chaîne de caractères)</span>
+<span class="sd">    en sa représentation en base 2 (chaîne de caractères).</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+</code></pre></div>
+<ol>
+<li>Compléter la fonction suivante sans passer par la base 10 :  </li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">bin_to_hex</span><span class="p">(</span><span class="n">nombre</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Cette fonction transforme un nombre en base 2 (chaîne de caractères)</span>
+<span class="sd">    en sa représentation en base 16 (chaîne de caractères).</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+</code></pre></div>
+<details class="success">
+<summary>indice :</summary>
+<p>Chaque chiffre hexadécimal correspond exactement à un groupe de 4 bits en binaire.<br />
+Exemple :<br />
+- A (hexadécimal) = 1010 (binaire)<br />
+- F (hexadécimal) = 1111 (binaire)  </p>
+<p>Pour convertir de l’hexadécimal vers le binaire, tu peux :<br />
+- parcourir chaque caractère hexadécimal,<br />
+- le remplacer par son équivalent en 4 bits.  </p>
+<p>Pour convertir du binaire vers l’hexadécimal, tu peux :<br />
+- regrouper les bits par paquets de 4 (en ajoutant des zéros à gauche si besoin),<br />
+- puis remplacer chaque groupe de 4 par le chiffre hexadécimal correspondant.  </p>
+</details>
 </div>
 
 

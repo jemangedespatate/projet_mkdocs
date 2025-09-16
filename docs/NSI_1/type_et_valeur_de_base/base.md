@@ -363,3 +363,43 @@ Chaque chiffre hexadécimal est remplacé par sa valeur décimale (en utilisant 
         en sa représentation en base 16 (chaîne de caractères).
         """
     ```  
+
+## exercice complementaire 
+
+!!! note "Exercice pratique"
+
+    1. Compléter la fonction suivante sans passer par la base 10 :  
+
+    ```python
+    def hex_to_bin(nombre: str) -> str:
+        """
+        Cette fonction transforme un nombre hexadécimal (en chaîne de caractères)
+        en sa représentation en base 2 (chaîne de caractères).
+        """
+    ```  
+
+    2. Compléter la fonction suivante sans passer par la base 10 :  
+
+    ```python
+    def bin_to_hex(nombre: str) -> str:
+        """
+        Cette fonction transforme un nombre en base 2 (chaîne de caractères)
+        en sa représentation en base 16 (chaîne de caractères).
+        """
+    ```  
+
+    ??? success "indice :"
+
+        Chaque chiffre hexadécimal correspond exactement à un groupe de 4 bits en binaire.  
+        Exemple :  
+        - A (hexadécimal) = 1010 (binaire)  
+        - F (hexadécimal) = 1111 (binaire)  
+
+        Pour convertir de l’hexadécimal vers le binaire, tu peux :  
+        - parcourir chaque caractère hexadécimal,  
+        - le remplacer par son équivalent en 4 bits.  
+
+        Pour convertir du binaire vers l’hexadécimal, tu peux :  
+        - regrouper les bits par paquets de 4 (en ajoutant des zéros à gauche si besoin),  
+        - puis remplacer chaque groupe de 4 par le chiffre hexadécimal correspondant.  
+
