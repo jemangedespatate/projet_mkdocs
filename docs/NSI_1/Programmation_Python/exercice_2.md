@@ -129,7 +129,7 @@ Dans cette série d’exercices, vous allez vous entraîner à manipuler les var
 
     Écrivez une fonction qui simule des lancers de dés et renvoie le nombre d’essais nécessaires pour obtenir **deux 6 consécutifs**.
 
-!!! note "Exercice 13 : Mot de passe"
+!!! note "Exercice 12 : Mot de passe"
 
     Écrivez une fonction qui demande un mot de passe à l’utilisateur.
     👉 L’utilisateur a droit à **4 essais maximum**.
@@ -139,13 +139,13 @@ Dans cette série d’exercices, vous allez vous entraîner à manipuler les var
     mdp = "NSI4ever"
     ```
 
-!!! note "Exercice 14 : Jeu des dés"
+!!! note "Exercice 13 : Jeu des dés"
 
     Un joueur lance deux dés et additionne les résultats.
     👉 Il continue tant que la somme n’est **pas comprise entre 7 et 12 inclus**.
     👉 Écrivez un programme qui automatise cette partie.
 
-!!! note "Exercice 17 : Pourcentage de 6"
+!!! note "Exercice 14 : Pourcentage de 6"
 
     Écrivez une fonction `jeu(n)` qui simule **1000 tirages** aléatoires de nombres entre 1 et 6, et renvoie le pourcentage de `6` obtenus.
 
