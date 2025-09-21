@@ -150,3 +150,4 @@ Dans cette série d’exercices, vous allez vous entraîner à manipuler les var
     Écrivez une fonction `jeu(n)` qui simule **1000 tirages** aléatoires de nombres entre 1 et 6, et renvoie le pourcentage de `6` obtenus.
 
     👉 Indice : utilisez `randint` du module `random`.
+
