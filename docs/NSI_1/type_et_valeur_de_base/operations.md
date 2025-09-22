@@ -131,7 +131,7 @@ Dans ce système, on réserve un certain nombre de bits pour la **partie entièr
 ### <u>2. La virgule flottante</u>
 
 Pour dépasser les limites de la virgule fixe, on utilise une écriture proche de la **notation scientifique**.
-
+    
 $$
 314 = 3,14 \times 10^2
 $$
@@ -176,6 +176,51 @@ $$
 
     1. +5,5
     2. +0,75
+
+!!! question "📝 Exercice code:"
+
+    * completez la fonction suivante
+
+    ```py
+    def frac_to_bin(fraction: float, m: int) -> str:
+        """
+        Fonction permettant de convertir la partie fractionnaire d'un nombre décimal
+        en binaire sur m bits.
+
+        Paramètres:
+            fraction: float, la partie fractionnaire (0 <= fraction < 1)
+            m: int, le nombre de bits maximum à générer
+
+        Retour:
+            str, la chaîne de caractères représentant la partie fractionnaire en binaire
+
+        Exemple:
+        >>> frac_to_bin(0.625, 5)
+        '10100'
+        """
+    ```
+
+    * completez la fonction suivante
+
+    ```py
+    def bin_to_frac(bits: str) -> float:
+        """
+        Fonction permettant de convertir une chaîne binaire représentant la partie
+        fractionnaire d’un nombre en sa valeur décimale.
+
+        Paramètres:
+            bits: str, la chaîne binaire (ex: "101" correspond à 0.101₂)
+
+        Retour:
+            float, la valeur décimale correspondante
+
+        Exemple:
+        >>> bin_to_frac("101")
+        0.625
+        >>> bin_to_frac("00011")
+        0.09375
+        """
+    ```
 
 ✅ Avantage : permet de représenter à la fois des **nombres très grands** et des **nombres très petits**.
 
@@ -244,13 +289,94 @@ Pour obtenir -N :
 
 !!! question "📝 Exercice 5:"
 
-    Représente les nombres suivants en **complément à 2** sur 8 bits :
+    Représenter les nombres suivants en **complément à 2** sur 8 bits :
 
     1. +12  
     2. -12  
     3. +7  
     4. -7
 
+!!! question "📝 Exercice code:"
+
+    * completez la fonction suivante
+
+    ```py
+    def bin_to_comp_2(nombre: str, n: int) -> str:
+        """
+        Fonction permettant de représenter en complément à 2, sur n bits,
+        un nombre binaire donné en paramètre.
+
+        Paramètres:
+            nombre: str, le nombre binaire à convertir
+            n: int, le nombre de bits utilisés pour la représentation
+
+        Retour:
+            str, la chaîne de caractères représentant le complément à 2
+            du nombre en utilisant n bits
+
+        Exemple:
+        >>> bin_to_comp_2("101", 5)
+        '11011'
+        >>> bin_to_comp_2("1", 7)
+        '1111111'
+        """
+    ```
+
+
+    * completez la fonction suivante
+
+    ```py
+    def dec_to_comp_2(nombre: int, n: int) -> str:
+    """
+    Fonction permettant de convertir un entier en sa représentation
+    en complément à 2 sur n bits.
+
+    Paramètres:
+        nombre: int, le nombre à convertir
+        n: int, le nombre de bits utilisés pour la représentation
+
+    Retour:
+        str, la chaîne de caractères représentant le complément à 2
+        du nombre en utilisant n bits
+
+    Exemple:
+    >>> dec_to_comp_2(5, 5)
+    '00101'
+    >>> dec_to_comp_2(-5, 5)
+    '11011'
+    >>> dec_to_comp_2(-1, 7)
+    '1111111'
+    """
+    ```
+
+    * completez la fonction suivante
+
+    ```py
+def dec_to_repr(nombre: int, n: int) -> str:
+    """
+    Fonction permettant de convertir un entier en binaire sur n bits :
+    - si le nombre est positif ou nul → représentation binaire classique
+    - si le nombre est négatif → représentation en complément à 2
+
+    Paramètres:
+        nombre: int, le nombre à convertir
+        n: int, le nombre de bits utilisés pour la représentation
+
+    Retour:
+        str, la chaîne de caractères représentant le nombre en binaire
+        classique si positif, ou en complément à 2 si négatif, sur n bits
+
+    Exemple:
+    >>> dec_to_repr(-5, 5)
+    '11011'
+    >>> dec_to_repr(5, 5)
+    '00101'
+    >>> dec_to_repr(-1, 7)
+    '1111111'
+    >>> dec_to_repr(1, 7)
+    '0000001'
+    """
+    ```
 
 ✅ Avantages :
 

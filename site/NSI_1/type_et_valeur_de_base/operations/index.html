@@ -2544,6 +2544,50 @@ dans un format simplifié sur 8 bits :</p>
 <li>+0,75</li>
 </ul>
 </div>
+<div class="admonition question">
+<p class="admonition-title">📝 Exercice code:</p>
+<ul>
+<li>completez la fonction suivante</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">frac_to_bin</span><span class="p">(</span><span class="n">fraction</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">m</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Fonction permettant de convertir la partie fractionnaire d&#39;un nombre décimal</span>
+<span class="sd">    en binaire sur m bits.</span>
+
+<span class="sd">    Paramètres:</span>
+<span class="sd">        fraction: float, la partie fractionnaire (0 &lt;= fraction &lt; 1)</span>
+<span class="sd">        m: int, le nombre de bits maximum à générer</span>
+
+<span class="sd">    Retour:</span>
+<span class="sd">        str, la chaîne de caractères représentant la partie fractionnaire en binaire</span>
+
+<span class="sd">    Exemple:</span>
+<span class="sd">    &gt;&gt;&gt; frac_to_bin(0.625, 5)</span>
+<span class="sd">    &#39;10100&#39;</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+</code></pre></div>
+<ul>
+<li>completez la fonction suivante</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">bin_to_frac</span><span class="p">(</span><span class="n">bits</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Fonction permettant de convertir une chaîne binaire représentant la partie</span>
+<span class="sd">    fractionnaire d’un nombre en sa valeur décimale.</span>
+
+<span class="sd">    Paramètres:</span>
+<span class="sd">        bits: str, la chaîne binaire (ex: &quot;101&quot; correspond à 0.101₂)</span>
+
+<span class="sd">    Retour:</span>
+<span class="sd">        float, la valeur décimale correspondante</span>
+
+<span class="sd">    Exemple:</span>
+<span class="sd">    &gt;&gt;&gt; bin_to_frac(&quot;101&quot;)</span>
+<span class="sd">    0.625</span>
+<span class="sd">    &gt;&gt;&gt; bin_to_frac(&quot;00011&quot;)</span>
+<span class="sd">    0.09375</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+</code></pre></div>
+</div>
 <p>✅ Avantage : permet de représenter à la fois des <strong>nombres très grands</strong> et des <strong>nombres très petits</strong>.</p>
 <p>❌ Inconvénient : pas tous les nombres décimaux sont représentables exactement (par exemple 0,1 en binaire).</p>
 <h2 id="les-nombres-negatifs"><u>➖ Les nombres négatifs</u></h2>
@@ -2608,7 +2652,7 @@ Pour obtenir -N :</p>
 </div>
 <div class="admonition question">
 <p class="admonition-title">📝 Exercice 5:</p>
-<p>Représente les nombres suivants en <strong>complément à 2</strong> sur 8 bits :</p>
+<p>Représenter les nombres suivants en <strong>complément à 2</strong> sur 8 bits :</p>
 <ol>
 <li>+12  </li>
 <li>-12  </li>
@@ -2616,6 +2660,86 @@ Pour obtenir -N :</p>
 <li>-7</li>
 </ol>
 </div>
+<div class="admonition question">
+<p class="admonition-title">📝 Exercice code:</p>
+<ul>
+<li>completez la fonction suivante</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">bin_to_comp_2</span><span class="p">(</span><span class="n">nombre</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">n</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Fonction permettant de représenter en complément à 2, sur n bits,</span>
+<span class="sd">    un nombre binaire donné en paramètre.</span>
+
+<span class="sd">    Paramètres:</span>
+<span class="sd">        nombre: str, le nombre binaire à convertir</span>
+<span class="sd">        n: int, le nombre de bits utilisés pour la représentation</span>
+
+<span class="sd">    Retour:</span>
+<span class="sd">        str, la chaîne de caractères représentant le complément à 2</span>
+<span class="sd">        du nombre en utilisant n bits</span>
+
+<span class="sd">    Exemple:</span>
+<span class="sd">    &gt;&gt;&gt; bin_to_comp_2(&quot;101&quot;, 5)</span>
+<span class="sd">    &#39;11011&#39;</span>
+<span class="sd">    &gt;&gt;&gt; bin_to_comp_2(&quot;1&quot;, 7)</span>
+<span class="sd">    &#39;1111111&#39;</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+</code></pre></div>
+<ul>
+<li>completez la fonction suivante</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">dec_to_comp_2</span><span class="p">(</span><span class="n">nombre</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">n</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Fonction permettant de convertir un entier en sa représentation</span>
+<span class="sd">en complément à 2 sur n bits.</span>
+
+<span class="sd">Paramètres:</span>
+<span class="sd">    nombre: int, le nombre à convertir</span>
+<span class="sd">    n: int, le nombre de bits utilisés pour la représentation</span>
+
+<span class="sd">Retour:</span>
+<span class="sd">    str, la chaîne de caractères représentant le complément à 2</span>
+<span class="sd">    du nombre en utilisant n bits</span>
+
+<span class="sd">Exemple:</span>
+<span class="sd">&gt;&gt;&gt; dec_to_comp_2(5, 5)</span>
+<span class="sd">&#39;00101&#39;</span>
+<span class="sd">&gt;&gt;&gt; dec_to_comp_2(-5, 5)</span>
+<span class="sd">&#39;11011&#39;</span>
+<span class="sd">&gt;&gt;&gt; dec_to_comp_2(-1, 7)</span>
+<span class="sd">&#39;1111111&#39;</span>
+<span class="sd">&quot;&quot;&quot;</span>
+</code></pre></div>
+<ul>
+<li>completez la fonction suivante</li>
+</ul>
+<p>```py</p>
+</div>
+<p>def dec_to_repr(nombre: int, n: int) -&gt; str:
+    """
+    Fonction permettant de convertir un entier en binaire sur n bits :
+    - si le nombre est positif ou nul → représentation binaire classique
+    - si le nombre est négatif → représentation en complément à 2</p>
+<pre><code>Paramètres:
+    nombre: int, le nombre à convertir
+    n: int, le nombre de bits utilisés pour la représentation
+
+Retour:
+    str, la chaîne de caractères représentant le nombre en binaire
+    classique si positif, ou en complément à 2 si négatif, sur n bits
+
+Exemple:
+&gt;&gt;&gt; dec_to_repr(-5, 5)
+'11011'
+&gt;&gt;&gt; dec_to_repr(5, 5)
+'00101'
+&gt;&gt;&gt; dec_to_repr(-1, 7)
+'1111111'
+&gt;&gt;&gt; dec_to_repr(1, 7)
+'0000001'
+"""
+```
+</code></pre>
 <p>✅ Avantages :</p>
 <ul>
 <li>Un seul zéro (<code>00000000</code>)</li>
