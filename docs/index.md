@@ -11,7 +11,7 @@ Ce site a pour objectif de guider les élèves tout au long de l'année scolaire
 
     L'objectif de la SNT est de permettre aux élèves de **comprendre les objets numériques** et les **applications qu’ils utilisent au quotidien**. Ils découvriront les fondements du numérique à travers différentes thématiques actuelles.
 
-    ## 📘 programme
+    ## 📘 Programme
 
     * [ℹ️ Introduction SNT](SNT/introduction_snt/activiter_introductif/)
     * [🐍 Programmation Python](SNT/Programmation_Python/sommaire/)
@@ -33,10 +33,10 @@ Ce site a pour objectif de guider les élèves tout au long de l'année scolaire
 
     Ils découvriront les notions clés telles que les algorithmes, les structures de données, les fonctions, la programmation orientée objet et les bases de données, tout en développant leur logique et leur capacité à résoudre des problèmes informatiques.
 
-    ## 📘 programme
+    ## 📘 Programme
 
     * [🐍 Programmation Python](NSI_1/Programmation_Python/sommaire/)
-    * [type et valeur de base](NSI_1/type_et_valeur_de_base/sommaire/)
+    * [🔢 Type et valeur de base](NSI_1/type_et_valeur_de_base/sommaire/)
 
 === "NSI terminale"
 
@@ -45,7 +45,7 @@ Ce site a pour objectif de guider les élèves tout au long de l'année scolaire
     L'objectif de la Terminale NSI est de permettre aux élèves de maîtriser des concepts avancés en informatique et en programmation, et de mettre en œuvre des projets plus complexes.
     Ils approfondiront les notions de programmation orientée objet, structures de données avancées, algorithmes de tri et de recherche, gestion de bases de données et réseaux, tout en développant leur capacité à concevoir, analyser et optimiser des programmes.
 
-    ## 📘 programme
+    ## 📘 Programme
 
     1. 🐍 Programmation Python
 
