@@ -1,6 +1,6 @@
-# Évaluation
+# <u>Évaluation</u>
 
-## Premier exercice
+## <u>Premier exercice</u>
 
 On donne trois fonctions appelées ici `mystere_1`, `mystere_2` et `mystere_3` :
 
@@ -47,7 +47,7 @@ def mystere_3(a: int, b: int) -> int:
 
 9. Finalement, que font ces fonctions (donner leur vrai rôle mathématique) ?
 
-## Deuxième exercice
+## <u>Deuxième exercice</u>
 
 Compléter la fonction suivante qui renvoie la position d’un caractère (mis en paramètre) dans un texte (également mis en paramètre).
 
@@ -55,6 +55,7 @@ Compléter la fonction suivante qui renvoie la position d’un caractère (mis e
 
 * Vous ne devez **pas utiliser** `in`, `find` ou toute autre fonction Python déjà existante pour rechercher dans une chaîne.
 * Si le caractère est présent plusieurs fois, on renvoie uniquement **la première position**.
+* ne pas recopier la documentation
 
 ```python
 def recherche(texte: str, caractere: str) -> int | bool:
@@ -79,7 +80,7 @@ def recherche(texte: str, caractere: str) -> int | bool:
     """
 ```
 
-## Troisième exercice
+## <u>Troisième exercice</u>
 
 Écrire une fonction qui renvoie un mot inversé **sans utiliser** `mot[::-1]` ni la fonction `reverse()`.
 
@@ -92,7 +93,7 @@ print(inverse("NSI"))     # attendu : "ISN"
 print(inverse("kayak"))   # attendu : "kayak"
 ```
 
-## Quatrième exercice
+## <u>Quatrième exercice</u>
 
 Écrire une fonction `moyenne` qui demande une **note** (avec `input`) à l’utilisateur et renvoie :
 
