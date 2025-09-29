@@ -1,26 +1,26 @@
-# Exercice 3
+# <u>Exercice 3</u>
 
-## Exercices sur les boucles et les fonctions
+## <u>Exercices sur les boucles et les fonctions</u>
 
-### 1. Affichage simple avec une boucle
+### <u>1. Affichage simple avec une boucle</u>
 
 Écris un programme qui affiche les nombres de 1 à 10 en utilisant une boucle `for`.
 
 ---
 
-### 2. Somme des entiers
+### <u>2. Somme des entiers</u>
 
 Écris un programme qui calcule et affiche la somme des nombres de 1 à 100 en utilisant une boucle.
 
 ---
 
-### 3. Compter les nombres pairs
+### <u>3. Compter les nombres pairs</u>
 
 Écris un programme qui affiche tous les nombres pairs entre 1 et 50 grâce à une boucle.
 
 ---
 
-### 4. Factorielle
+### <u>4. Factorielle</u>
 
 Écris une fonction `factorielle(n)` qui calcule la factorielle de `n`.
 Teste la fonction avec plusieurs valeurs.
@@ -32,7 +32,7 @@ Teste la fonction avec plusieurs valeurs.
 
 ---
 
-### 5. Table de multiplication
+### <u>5. Table de multiplication</u>
 
 Écris une fonction `table(n)` qui affiche la table de multiplication de `n` (de 1 à 10).
 
@@ -43,7 +43,7 @@ Teste la fonction avec plusieurs valeurs.
 
 ---
 
-### 6. Compter les voyelles
+### <u>6. Compter les voyelles</u>
 
 Écris une fonction `compter_voyelles(mot)` qui retourne le nombre de voyelles contenues dans une chaîne de caractères.
 
@@ -54,7 +54,7 @@ Teste la fonction avec plusieurs valeurs.
 
 ---
 
-### 7. Somme des chiffres
+### <u>7. Somme des chiffres</u>
 
 Écris une fonction `somme_chiffres(n)` qui calcule la somme des chiffres d’un nombre entier.
 
@@ -65,7 +65,7 @@ Teste la fonction avec plusieurs valeurs.
 
 ---
 
-### 8. Suite de Fibonacci
+### <u>8. Suite de Fibonacci</u>
 
 Écris une fonction `fibonacci(n)` qui affiche les `n` premiers termes de la suite de Fibonacci.
 
@@ -76,14 +76,14 @@ Teste la fonction avec plusieurs valeurs.
 
 ---
 
-### 9. Nombre premier
+### <u>9. Nombre premier</u>
 
 Écris une fonction `est_premier(n)` qui renvoie `True` si `n` est un nombre premier, et `False` sinon.
 Puis, écris un programme qui affiche tous les nombres premiers jusqu’à 100.
 
 ---
 
-### 10. Dessin avec boucles
+### <u>10. Dessin avec boucles</u>
 
 Écris un programme qui affiche un triangle de hauteur `n` en utilisant une boucle.
 
@@ -100,9 +100,9 @@ Puis, écris un programme qui affiche tous les nombres premiers jusqu’à 100.
     *****
     ```
 
-## exercice complémentaire
+## <u>exercice complémentaire</u>
 
-### 11. Nombres parfaits
+### <u>11. Nombres parfaits</u>
 
 Un **nombre parfait** est un nombre égal à la somme de ses diviseurs propres (par exemple 6 = 1 + 2 + 3).
 
@@ -111,7 +111,7 @@ Un **nombre parfait** est un nombre égal à la somme de ses diviseurs propres (
 
 ---
 
-### 12. Dessin en losange
+### <u>12. Dessin en losange</u>
 
 Écris une fonction `losange(n)` qui affiche un losange de hauteur `2n - 1` en utilisant des boucles.
 
@@ -132,7 +132,7 @@ Un **nombre parfait** est un nombre égal à la somme de ses diviseurs propres (
 
 ---
 
-### 13. Décomposition en facteurs premiers
+### <u>13. Décomposition en facteurs premiers</u>
 
 Écris une fonction `facteurs_premiers(n)` qui décompose un entier en produit de nombres premiers.
 
