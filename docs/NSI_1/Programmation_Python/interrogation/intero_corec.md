@@ -98,13 +98,13 @@ def moyenne():
     note = float(input("Entrez une note entre 0 et 20 : "))
     
     if note < 0 or note > 20:
-        print("Erreur : la note doit être comprise entre 0 et 20.")
+        return("Erreur : la note doit être comprise entre 0 et 20.")
     elif note >= 16:
-        print("Très bien")
+        return("Très bien")
     elif note >= 12:
-        print("Assez bien")
+        return("Assez bien")
     elif note >= 10:
-        print("Passable")
+        return("Passable")
     else:
-        print("Insuffisant")
+        return("Insuffisant")
 ```
