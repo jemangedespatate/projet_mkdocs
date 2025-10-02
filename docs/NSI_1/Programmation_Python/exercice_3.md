@@ -65,7 +65,7 @@ Teste la fonction avec plusieurs valeurs.
 
 ---
 
-### <u>8. Suite de Fibonacci</u>
+### <u>8. Suite de Fibonacci (optionnel)</u>
 
 Écris une fonction `fibonacci(n)` qui affiche les `n` premiers termes de la suite de Fibonacci.
 
@@ -134,10 +134,103 @@ Un **nombre parfait** est un nombre égal à la somme de ses diviseurs propres (
 
 ### <u>13. Décomposition en facteurs premiers</u>
 
-Écris une fonction `facteurs_premiers(n)` qui décompose un entier en produit de nombres premiers.
+Écris une fonction `facteurs_premiers(n)` qui décompose un entier en produit de nombres premiers et les affiches.
 
 ??? example "Exemple :"
 
 
-    * `facteurs_premiers(84)` → `[2, 2, 3, 7]`
-    * `facteurs_premiers(97)` → `[97]`
+    * `facteurs_premiers(84)` → `2, 2, 3, 7`
+    * `facteurs_premiers(97)` → `97`
+
+---
+
+### <u>14. Nombre mystère</u>
+
+Écris une fonction `deviner(n)` qui fait deviner un nombre entre 1 et `n`.
+
+* L’ordinateur choisit un nombre au hasard.
+* L’utilisateur doit proposer des valeurs (saisies au clavier).
+* Le programme indique *trop grand* ou *trop petit*.
+* Quand le nombre est trouvé, afficher le nombre d’essais.
+
+??? example "Exemple :"
+
+    (Le déroulement dépend des essais de l’utilisateur, pas de sortie fixe.)  
+
+---
+
+### <u>15. Somme des chiffres pairs</u>
+
+Écris une fonction `somme_pairs(nombre)` qui renvoie la somme des chiffres **pairs** d’un entier.
+
+??? example "Exemple :"
+
+
+    * `somme_pairs(48215)` → `14`  (car 4 + 8 + 2 = 14)  
+
+---
+
+### <u>16. Triangle inversé</u>
+
+Écris une fonction `triangle_inverse(n)` qui affiche un triangle de `n` lignes avec des `*` décroissants.
+
+??? example "Exemple :"
+
+    * `triangle_inverse(5)`  
+    ```
+    *****
+    ****
+    ***
+    **
+    *
+    ```  
+
+---
+
+### <u>17. Anagrammes</u>
+
+Écris une fonction `est_anagramme(mot1, mot2)` qui retourne `True` si les deux mots sont des anagrammes (mêmes lettres en nombre identique, ordre différent).
+
+??? example "Exemple :"
+
+    * `est_anagramme("chien", "niche")` → `True`  
+    * `est_anagramme("python", "typhon")` → `True`  
+    * `est_anagramme("test", "tseta")` → `False`  
+
+---
+
+### <u>18. Mots en escalier</u>
+
+Écris une fonction `escalier_mot(mot)` qui affiche un mot en escalier.
+
+??? example "Exemple :"
+
+    * `escalier_mot("PYTHON")`  
+    ```
+    P
+    PY
+    PYT
+    PYTH
+    PYTHO
+    PYTHON
+    ```  
+
+---
+
+### <u>19. Symétrie verticale</u>
+
+Écris une fonction `symetrie(mot)` qui crée un effet miroir en concaténant le mot avec son inverse.
+
+??? example "Exemple :"
+
+    * `symetrie("code")` → `"codeedoc"`  
+
+---
+
+### <u>20. Caractère le plus fréquent</u>
+
+Écris une fonction `plus_frequent(texte)` qui retourne le caractère le plus fréquent dans une chaîne (en ignorant les espaces).
+
+??? example "Exemple :"
+
+    * `plus_frequent("abracadabra")` → `'a'`  
