@@ -2529,12 +2529,33 @@
 <h2 id="exercices-sur-les-boucles-et-les-fonctions"><u>Exercices sur les boucles et les fonctions</u></h2>
 <h3 id="1-affichage-simple-avec-une-boucle"><u>1. Affichage simple avec une boucle</u></h3>
 <p>Écris un programme qui affiche les nombres de 1 à 10 en utilisant une boucle <code>for</code>.</p>
+<details class="success">
+<summary>Réponse :</summary>
+<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">11</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</code></pre></div>
+</details>
 <hr />
 <h3 id="2-somme-des-entiers"><u>2. Somme des entiers</u></h3>
 <p>Écris un programme qui calcule et affiche la somme des nombres de 1 à 100 en utilisant une boucle.</p>
+<details class="success">
+<summary>Réponse :</summary>
+<div class="highlight"><pre><span></span><code><span class="n">resultat</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">101</span><span class="p">):</span>
+    <span class="n">resultat</span> <span class="o">=</span> <span class="n">resultat</span> <span class="o">+</span> <span class="n">i</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">resultat</span><span class="p">)</span>
+</code></pre></div>
+</details>
 <hr />
 <h3 id="3-compter-les-nombres-pairs"><u>3. Compter les nombres pairs</u></h3>
 <p>Écris un programme qui affiche tous les nombres pairs entre 1 et 50 grâce à une boucle.</p>
+<details class="success">
+<summary>Réponse :</summary>
+<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">51</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</code></pre></div>
+</details>
 <hr />
 <h3 id="4-factorielle"><u>4. Factorielle</u></h3>
 <p>Écris une fonction <code>factorielle(n)</code> qui calcule la factorielle de <code>n</code>.
@@ -2543,12 +2564,28 @@ Teste la fonction avec plusieurs valeurs.</p>
 <summary>Exemple :</summary>
 <p><code>factorielle(5) = 120</code></p>
 </details>
+<details class="success">
+<summary>Réponse :</summary>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">factorielle</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">resultat</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+        <span class="n">resultat</span> <span class="o">=</span> <span class="n">resultat</span> <span class="o">+</span> <span class="n">i</span>
+    <span class="k">return</span> <span class="n">resultat</span>
+</code></pre></div>
+</details>
 <hr />
 <h3 id="5-table-de-multiplication"><u>5. Table de multiplication</u></h3>
 <p>Écris une fonction <code>table(n)</code> qui affiche la table de multiplication de <code>n</code> (de 1 à 10).</p>
 <details class="example">
 <summary>Exemple :</summary>
 <p><code>table(7)</code> doit afficher la table de 7.</p>
+</details>
+<details class="success">
+<summary>Réponse :</summary>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">table</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">11</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="s2">&quot; x &quot;</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="s2">&quot; = &quot;</span><span class="p">,</span> <span class="n">n</span><span class="o">*</span><span class="n">i</span><span class="p">)</span>
+</code></pre></div>
 </details>
 <hr />
 <h3 id="6-compter-les-voyelles"><u>6. Compter les voyelles</u></h3>
@@ -2557,12 +2594,32 @@ Teste la fonction avec plusieurs valeurs.</p>
 <summary>Exemple :</summary>
 <p><code>compter_voyelles("Bonjour") → 3</code>.</p>
 </details>
+<details class="success">
+<summary>Réponse :</summary>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">compter_voyelles</span><span class="p">(</span><span class="n">mot</span><span class="p">):</span>
+    <span class="n">resultat</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">lettre</span> <span class="ow">in</span> <span class="n">mot</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">lettre</span> <span class="ow">in</span> <span class="s2">&quot;aeiouy&quot;</span><span class="p">:</span>
+            <span class="n">resultat</span> <span class="o">=</span> <span class="n">resultat</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="k">return</span> <span class="n">resultat</span>
+</code></pre></div>
+</details>
 <hr />
 <h3 id="7-somme-des-chiffres"><u>7. Somme des chiffres</u></h3>
 <p>Écris une fonction <code>somme_chiffres(n)</code> qui calcule la somme des chiffres d’un nombre entier.</p>
 <details class="example">
 <summary>Exemple :</summary>
 <p><code>somme_chiffres(1234) → 10</code>.</p>
+</details>
+<details class="success">
+<summary>Réponse :</summary>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">somme_chiffres</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">mot_n</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+    <span class="n">resultat</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">chiffre</span> <span class="ow">in</span> <span class="n">mot_n</span><span class="p">:</span>
+        <span class="n">resultat</span> <span class="o">=</span> <span class="n">resultat</span> <span class="o">+</span> <span class="nb">int</span><span class="p">(</span><span class="n">chiffre</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">resultat</span>
+</code></pre></div>
 </details>
 <hr />
 <h3 id="8-suite-de-fibonacci-optionnel"><u>8. Suite de Fibonacci (optionnel)</u></h3>
@@ -2571,10 +2628,39 @@ Teste la fonction avec plusieurs valeurs.</p>
 <summary>Exemple :</summary>
 <p><code>fibonacci(7)</code> → <code>0 1 1 2 3 5 8</code>.</p>
 </details>
+<details class="success">
+<summary>Réponse :</summary>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">fibonacci</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">b</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot; &quot;</span><span class="p">)</span>
+        <span class="n">temp</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+        <span class="n">a</span> <span class="o">=</span> <span class="n">b</span>
+        <span class="n">b</span> <span class="o">=</span> <span class="n">temp</span>
+</code></pre></div>
+</details>
 <hr />
 <h3 id="9-nombre-premier"><u>9. Nombre premier</u></h3>
 <p>Écris une fonction <code>est_premier(n)</code> qui renvoie <code>True</code> si <code>n</code> est un nombre premier, et <code>False</code> sinon.
 Puis, écris un programme qui affiche tous les nombres premiers jusqu’à 100.</p>
+<details class="success">
+<summary>Réponse :</summary>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">est_premier</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">False</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">n</span><span class="o">**</span><span class="mf">0.5</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">n</span> <span class="o">%</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">False</span>
+    <span class="k">return</span> <span class="kc">True</span>
+
+
+<span class="c1"># Affichage des nombres premiers jusqu&#39;à 100</span>
+<span class="k">for</span> <span class="n">nombre</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">101</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">est_premier</span><span class="p">(</span><span class="n">nombre</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">nombre</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot; &quot;</span><span class="p">)</span>
+</code></pre></div>
+</details>
 <hr />
 <h3 id="10-dessin-avec-boucles"><u>10. Dessin avec boucles</u></h3>
 <p>Écris un programme qui affiche un triangle de hauteur <code>n</code> en utilisant une boucle.</p>
@@ -2588,6 +2674,14 @@ Puis, écris un programme qui affiche tous les nombres premiers jusqu’à 100.<
 *****
 </code></pre></div>
 </details>
+<details class="success">
+<summary>Réponse :</summary>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">triangle</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+        <span class="n">ligne</span> <span class="o">=</span> <span class="s2">&quot;*&quot;</span> <span class="o">*</span> <span class="n">i</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">ligne</span><span class="p">)</span>
+</code></pre></div>
+</details>
 <h2 id="exercice-complementaire"><u>exercice complémentaire</u></h2>
 <h3 id="11-nombres-parfaits"><u>11. Nombres parfaits</u></h3>
 <p>Un <strong>nombre parfait</strong> est un nombre égal à la somme de ses diviseurs propres (par exemple 6 = 1 + 2 + 3).</p>
@@ -2595,6 +2689,22 @@ Puis, écris un programme qui affiche tous les nombres premiers jusqu’à 100.<
 <li>Écris une fonction <code>est_parfait(n)</code> qui vérifie si <code>n</code> est un nombre parfait.</li>
 <li>Écris un programme qui affiche tous les nombres parfaits entre 1 et 1000.</li>
 </ul>
+<details class="success">
+<summary>Réponse :</summary>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">est_parfait</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">somme</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">n</span> <span class="o">%</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">somme</span> <span class="o">+=</span> <span class="n">i</span>
+    <span class="k">return</span> <span class="n">somme</span> <span class="o">==</span> <span class="n">n</span>
+
+
+<span class="c1"># Affichage des nombres parfaits entre 1 et 1000</span>
+<span class="k">for</span> <span class="n">nombre</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1001</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">est_parfait</span><span class="p">(</span><span class="n">nombre</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">nombre</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot; &quot;</span><span class="p">)</span>
+</code></pre></div>
+</details>
 <hr />
 <h3 id="12-dessin-en-losange"><u>12. Dessin en losange</u></h3>
 <p>Écris une fonction <code>losange(n)</code> qui affiche un losange de hauteur <code>2n - 1</code> en utilisant des boucles.</p>
@@ -2610,6 +2720,20 @@ Puis, écris un programme qui affiche tous les nombres premiers jusqu’à 100.<
 *
 </code></pre></div>
 </details>
+<details class="success">
+<summary>Réponse :</summary>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">losange</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+        <span class="n">ligne</span> <span class="o">=</span> <span class="s2">&quot;*&quot;</span> <span class="o">*</span> <span class="n">i</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">ligne</span><span class="p">)</span>
+
+    <span class="n">j</span> <span class="o">=</span> <span class="n">n</span> <span class="o">-</span> <span class="mi">1</span>
+    <span class="k">while</span> <span class="n">j</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">ligne</span> <span class="o">=</span> <span class="s2">&quot;*&quot;</span> <span class="o">*</span> <span class="n">j</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">ligne</span><span class="p">)</span>
+        <span class="n">j</span> <span class="o">=</span> <span class="n">j</span><span class="o">-</span><span class="mi">1</span>
+</code></pre></div>
+</details>
 <hr />
 <h3 id="13-decomposition-en-facteurs-premiers"><u>13. Décomposition en facteurs premiers</u></h3>
 <p>Écris une fonction <code>facteurs_premiers(n)</code> qui décompose un entier en produit de nombres premiers et les affiches.</p>
@@ -2620,6 +2744,20 @@ Puis, écris un programme qui affiche tous les nombres premiers jusqu’à 100.<
 <li><code>facteurs_premiers(97)</code> → <code>97</code></li>
 </ul>
 </details>
+<details class="success">
+<summary>Réponse :</summary>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">facteurs_premiers</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">facteur</span> <span class="o">=</span> <span class="mi">2</span>
+    <span class="k">while</span> <span class="n">n</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">n</span> <span class="o">%</span> <span class="n">facteur</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">facteur</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+            <span class="n">n</span> <span class="o">//=</span> <span class="n">facteur</span>
+            <span class="k">if</span> <span class="n">n</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;, &quot;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">facteur</span> <span class="o">+=</span> <span class="mi">1</span>
+</code></pre></div>
+</details>
 <hr />
 <h3 id="14-nombre-mystere"><u>14. Nombre mystère</u></h3>
 <p>Écris une fonction <code>deviner(n)</code> qui fait deviner un nombre entre 1 et <code>n</code>.</p>
@@ -2629,9 +2767,29 @@ Puis, écris un programme qui affiche tous les nombres premiers jusqu’à 100.<
 <li>Le programme indique <em>trop grand</em> ou <em>trop petit</em>.</li>
 <li>Quand le nombre est trouvé, afficher le nombre d’essais.</li>
 </ul>
-<details class="example">
-<summary>Exemple :</summary>
-<p>(Le déroulement dépend des essais de l’utilisateur, pas de sortie fixe.)  </p>
+<details class="success">
+<summary>Réponse :</summary>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">random</span>
+
+<span class="k">def</span> <span class="nf">deviner</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">secret</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+    <span class="n">essais</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">trouve</span> <span class="o">=</span> <span class="kc">False</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;J&#39;ai choisi un nombre entre 1 et </span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s2">. Essaie de le deviner !&quot;</span><span class="p">)</span>
+
+    <span class="k">while</span> <span class="n">trouve</span> <span class="o">!=</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="n">proposition</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Ta proposition : &quot;</span><span class="p">))</span>
+        <span class="n">essais</span> <span class="o">+=</span> <span class="mi">1</span>
+
+        <span class="k">if</span> <span class="n">proposition</span> <span class="o">&lt;</span> <span class="n">secret</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Trop petit !&quot;</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="n">proposition</span> <span class="o">&gt;</span> <span class="n">secret</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Trop grand !&quot;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Bravo ! Tu as trouvé en </span><span class="si">{</span><span class="n">essais</span><span class="si">}</span><span class="s2"> essai(s).&quot;</span><span class="p">)</span>
+            <span class="n">trouve</span> <span class="o">=</span> <span class="kc">True</span>
+</code></pre></div>
 </details>
 <hr />
 <h3 id="15-somme-des-chiffres-pairs"><u>15. Somme des chiffres pairs</u></h3>
@@ -2641,6 +2799,17 @@ Puis, écris un programme qui affiche tous les nombres premiers jusqu’à 100.<
 <ul>
 <li><code>somme_pairs(48215)</code> → <code>14</code>  (car 4 + 8 + 2 = 14)  </li>
 </ul>
+</details>
+<details class="success">
+<summary>Réponse :</summary>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">somme_pairs</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">mot_n</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+    <span class="n">resultat</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">chiffre</span> <span class="ow">in</span> <span class="n">mot_n</span><span class="p">:</span>
+        <span class="k">if</span> <span class="nb">int</span><span class="p">(</span><span class="n">chiffre</span><span class="p">)</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span> 
+            <span class="n">resultat</span> <span class="o">=</span> <span class="n">resultat</span> <span class="o">+</span> <span class="nb">int</span><span class="p">(</span><span class="n">chiffre</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">resultat</span>
+</code></pre></div>
 </details>
 <hr />
 <h3 id="16-triangle-inverse"><u>16. Triangle inversé</u></h3>
@@ -2657,6 +2826,16 @@ Puis, écris un programme qui affiche tous les nombres premiers jusqu’à 100.<
 </code></pre></div></li>
 </ul>
 </details>
+<details class="success">
+<summary>Réponse :</summary>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">losange</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">j</span> <span class="o">=</span> <span class="n">n</span> <span class="o">-</span> <span class="mi">1</span>
+    <span class="k">while</span> <span class="n">j</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">ligne</span> <span class="o">=</span> <span class="s2">&quot;*&quot;</span> <span class="o">*</span> <span class="n">j</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">ligne</span><span class="p">)</span>
+        <span class="n">j</span> <span class="o">=</span> <span class="n">j</span><span class="o">-</span><span class="mi">1</span>
+</code></pre></div>
+</details>
 <hr />
 <h3 id="17-anagrammes"><u>17. Anagrammes</u></h3>
 <p>Écris une fonction <code>est_anagramme(mot1, mot2)</code> qui retourne <code>True</code> si les deux mots sont des anagrammes (mêmes lettres en nombre identique, ordre différent).</p>
@@ -2667,6 +2846,47 @@ Puis, écris un programme qui affiche tous les nombres premiers jusqu’à 100.<
 <li><code>est_anagramme("python", "typhon")</code> → <code>True</code>  </li>
 <li><code>est_anagramme("test", "tseta")</code> → <code>False</code>  </li>
 </ul>
+</details>
+<details class="success">
+<summary>Réponse :</summary>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">est_anagramme</span><span class="p">(</span><span class="n">mot1</span><span class="p">,</span> <span class="n">mot2</span><span class="p">):</span>
+    <span class="c1"># On met les mots en minuscules pour éviter les différences entre majuscules/minuscules</span>
+    <span class="n">mot1</span> <span class="o">=</span> <span class="n">mot1</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+    <span class="n">mot2</span> <span class="o">=</span> <span class="n">mot2</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+
+    <span class="c1"># Si les mots n&#39;ont pas la même longueur, ils ne peuvent pas être des anagrammes</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">mot1</span><span class="p">)</span> <span class="o">!=</span> <span class="nb">len</span><span class="p">(</span><span class="n">mot2</span><span class="p">):</span>
+        <span class="k">return</span> <span class="kc">False</span>
+
+    <span class="c1"># Pour chaque lettre du premier mot</span>
+    <span class="k">for</span> <span class="n">lettre</span> <span class="ow">in</span> <span class="n">mot1</span><span class="p">:</span>
+        <span class="c1"># On cherche cette lettre dans le deuxième mot</span>
+        <span class="n">position</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">mot2</span><span class="p">)):</span>
+            <span class="k">if</span> <span class="n">mot2</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="n">lettre</span><span class="p">:</span>
+                <span class="n">position</span> <span class="o">=</span> <span class="n">i</span>  <span class="c1"># on note où elle se trouve</span>
+                <span class="k">break</span>
+
+        <span class="c1"># Si la lettre n&#39;est pas trouvée → ce n’est pas une anagramme</span>
+        <span class="k">if</span> <span class="n">position</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">False</span>
+
+        <span class="c1"># On enlève la lettre trouvée dans mot2 en collant la partie gauche a la lettre a sa partie a droite</span>
+        <span class="n">mot2</span> <span class="o">=</span> <span class="n">mot2</span><span class="p">[:</span><span class="n">position</span><span class="p">]</span> <span class="o">+</span> <span class="n">mot2</span><span class="p">[</span><span class="n">position</span><span class="o">+</span><span class="mi">1</span><span class="p">:]</span>
+
+    <span class="c1"># Si à la fin, mot2 est vide, toutes les lettres ont été utilisées → c’est une anagramme</span>
+    <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="n">mot2</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span>
+
+
+<span class="c1"># --- Programme principal ---</span>
+<span class="n">motA</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Entrez le premier mot : &quot;</span><span class="p">)</span>
+<span class="n">motB</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Entrez le deuxième mot : &quot;</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">est_anagramme</span><span class="p">(</span><span class="n">motA</span><span class="p">,</span> <span class="n">motB</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Les deux mots sont des anagrammes ✅&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Les deux mots ne sont pas des anagrammes ❌&quot;</span><span class="p">)</span>
+</code></pre></div>
 </details>
 <hr />
 <h3 id="18-mots-en-escalier"><u>18. Mots en escalier</u></h3>
@@ -2684,6 +2904,15 @@ PYTHON
 </code></pre></div></li>
 </ul>
 </details>
+<details class="success">
+<summary>Réponse :</summary>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">escalier_mot</span><span class="p">(</span><span class="n">mot</span><span class="p">):</span>
+    <span class="n">ligne</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+    <span class="k">for</span> <span class="n">lettre</span> <span class="ow">in</span> <span class="n">mot</span><span class="p">:</span>
+        <span class="n">ligne</span> <span class="o">=</span> <span class="n">ligne</span> <span class="o">+</span> <span class="n">lettre</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">ligne</span><span class="p">)</span>
+</code></pre></div>
+</details>
 <hr />
 <h3 id="19-symetrie-verticale"><u>19. Symétrie verticale</u></h3>
 <p>Écris une fonction <code>symetrie(mot)</code> qui crée un effet miroir en concaténant le mot avec son inverse.</p>
@@ -2693,6 +2922,18 @@ PYTHON
 <li><code>symetrie("code")</code> → <code>"codeedoc"</code>  </li>
 </ul>
 </details>
+<details class="success">
+<summary>Réponse :</summary>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">symetrie</span><span class="p">(</span><span class="n">mot</span><span class="p">):</span>
+    <span class="n">mot_copie</span> <span class="o">=</span> <span class="n">mot</span><span class="p">[:]</span> <span class="c1"># ici, on effectue une copie à l&#39;aide de [:] pour eviter d&#39;ecraser le mot mis en parametre</span>
+
+    <span class="n">i</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">mot</span><span class="p">)</span> <span class="o">-</span><span class="mi">1</span>
+    <span class="k">while</span> <span class="n">i</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">mot_copie</span> <span class="o">=</span> <span class="n">mot_copie</span> <span class="o">+</span> <span class="n">mot</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+        <span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">-</span><span class="mi">1</span>
+    <span class="k">return</span> <span class="n">mot_copie</span>
+</code></pre></div>
+</details>
 <hr />
 <h3 id="20-caractere-le-plus-frequent"><u>20. Caractère le plus fréquent</u></h3>
 <p>Écris une fonction <code>plus_frequent(texte)</code> qui retourne le caractère le plus fréquent dans une chaîne (en ignorant les espaces).</p>
@@ -2701,6 +2942,30 @@ PYTHON
 <ul>
 <li><code>plus_frequent("abracadabra")</code> → <code>'a'</code>  </li>
 </ul>
+</details>
+<details class="success">
+<summary>Réponse :</summary>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">plus_frequent</span><span class="p">(</span><span class="n">texte</span><span class="p">):</span>
+
+    <span class="n">caractere_max</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>   <span class="c1"># le caractère le plus fréquent</span>
+    <span class="n">frequence_max</span> <span class="o">=</span> <span class="mi">0</span>    <span class="c1"># combien de fois il apparaît</span>
+
+    <span class="c1"># On parcourt chaque caractère du texte</span>
+    <span class="k">for</span> <span class="n">caractere</span> <span class="ow">in</span> <span class="n">texte</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">caractere</span> <span class="o">!=</span> <span class="s2">&quot; &quot;</span><span class="p">:</span>  <span class="c1"># on ignore les espaces</span>
+            <span class="c1"># Compter combien de fois ce caractère apparaît</span>
+            <span class="n">compteur</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">texte</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">c</span> <span class="o">==</span> <span class="n">caractere</span><span class="p">:</span>
+                    <span class="n">compteur</span> <span class="o">+=</span> <span class="mi">1</span>
+
+            <span class="c1"># Si ce caractère est plus fréquent que le précédent, on le garde</span>
+            <span class="k">if</span> <span class="n">compteur</span> <span class="o">&gt;</span> <span class="n">frequence_max</span><span class="p">:</span>
+                <span class="n">frequence_max</span> <span class="o">=</span> <span class="n">compteur</span>
+                <span class="n">caractere_max</span> <span class="o">=</span> <span class="n">caractere</span>
+
+    <span class="k">return</span> <span class="n">caractere_max</span>
+</code></pre></div>
 </details>
 
 
