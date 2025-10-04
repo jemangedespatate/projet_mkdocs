@@ -6,17 +6,41 @@
 
 Écris un programme qui affiche les nombres de 1 à 10 en utilisant une boucle `for`.
 
+??? success "Réponse :"
+
+    ```py
+    for i in range(1,11):
+        print(i)
+    ```
+
 ---
 
 ### <u>2. Somme des entiers</u>
 
 Écris un programme qui calcule et affiche la somme des nombres de 1 à 100 en utilisant une boucle.
 
+??? success "Réponse :"
+
+    ```py
+    resultat = 0
+    for i in range(1,101):
+        resultat = resultat + i
+    print(resultat)
+    ```
+
 ---
 
 ### <u>3. Compter les nombres pairs</u>
 
 Écris un programme qui affiche tous les nombres pairs entre 1 et 50 grâce à une boucle.
+
+??? success "Réponse :"
+
+    ```py
+    for i in range(1,51):
+        if i % 2 == 0:
+            print(i)
+    ```
 
 ---
 
@@ -30,6 +54,17 @@ Teste la fonction avec plusieurs valeurs.
 
     `factorielle(5) = 120`
 
+
+??? success "Réponse :"
+
+    ```py
+    def factorielle(n):
+        resultat = 1
+        for i in range(1,n+1):
+            resultat = resultat + i
+        return resultat
+    ```
+
 ---
 
 ### <u>5. Table de multiplication</u>
@@ -38,8 +73,15 @@ Teste la fonction avec plusieurs valeurs.
 
 ??? example "Exemple :"
 
-
     `table(7)` doit afficher la table de 7.
+
+??? success "Réponse :"
+
+    ```py
+    def table(n):
+        for i in range(1,11):
+            print(n," x ", i, " = ", n*i)
+    ```
 
 ---
 
@@ -52,6 +94,17 @@ Teste la fonction avec plusieurs valeurs.
 
     `compter_voyelles("Bonjour") → 3`.
 
+??? success "Réponse :"
+
+    ```py
+    def compter_voyelles(mot):
+        resultat = 0
+        for lettre in mot:
+            if lettre in "aeiouy":
+                resultat = resultat + 1
+        return resultat
+    ```
+
 ---
 
 ### <u>7. Somme des chiffres</u>
@@ -60,8 +113,18 @@ Teste la fonction avec plusieurs valeurs.
 
 ??? example "Exemple :"
 
-
      `somme_chiffres(1234) → 10`.
+
+??? success "Réponse :"
+
+    ```py
+    def somme_chiffres(n):
+        mot_n = str(n)
+        resultat = 0
+        for chiffre in mot_n:
+            resultat = resultat + int(chiffre)
+        return resultat
+    ```
 
 ---
 
@@ -74,12 +137,43 @@ Teste la fonction avec plusieurs valeurs.
 
      `fibonacci(7)` → `0 1 1 2 3 5 8`.
 
+??? success "Réponse :"
+
+    ```py
+    def fibonacci(n):
+        a = 0
+        b = 1
+        for i in range(n):
+            print(a, end=" ")
+            temp = a + b
+            a = b
+            b = temp
+    ```
+
 ---
 
 ### <u>9. Nombre premier</u>
 
 Écris une fonction `est_premier(n)` qui renvoie `True` si `n` est un nombre premier, et `False` sinon.
 Puis, écris un programme qui affiche tous les nombres premiers jusqu’à 100.
+
+??? success "Réponse :"
+
+    ```py
+    def est_premier(n):
+        if n < 2:
+            return False
+        for i in range(2, int(n**0.5) + 1):
+            if n % i == 0:
+                return False
+        return True
+
+
+    # Affichage des nombres premiers jusqu'à 100
+    for nombre in range(2, 101):
+        if est_premier(nombre):
+            print(nombre, end=" ")
+    ```
 
 ---
 
@@ -100,6 +194,16 @@ Puis, écris un programme qui affiche tous les nombres premiers jusqu’à 100.
     *****
     ```
 
+??? success "Réponse :"
+
+    ```py
+    def triangle(n):
+        for i in range(1,n+1):
+            ligne = "*" * i
+            print(ligne)
+    ```
+
+
 ## <u>exercice complémentaire</u>
 
 ### <u>11. Nombres parfaits</u>
@@ -108,6 +212,24 @@ Un **nombre parfait** est un nombre égal à la somme de ses diviseurs propres (
 
 * Écris une fonction `est_parfait(n)` qui vérifie si `n` est un nombre parfait.
 * Écris un programme qui affiche tous les nombres parfaits entre 1 et 1000.
+
+??? success "Réponse :"
+
+    ```py
+    def est_parfait(n):
+        somme = 0
+        for i in range(1, n):
+            if n % i == 0:
+                somme += i
+        return somme == n
+
+
+    # Affichage des nombres parfaits entre 1 et 1000
+    for nombre in range(1, 1001):
+        if est_parfait(nombre):
+            print(nombre, end=" ")
+    ```
+
 
 ---
 
@@ -130,6 +252,21 @@ Un **nombre parfait** est un nombre égal à la somme de ses diviseurs propres (
     *
     ```
 
+??? success "Réponse :"
+
+    ```py
+    def losange(n):
+        for i in range(1,n+1):
+            ligne = "*" * i
+            print(ligne)
+
+        j = n - 1
+        while j > 0:
+            ligne = "*" * j
+            print(ligne)
+            j = j-1
+    ```
+
 ---
 
 ### <u>13. Décomposition en facteurs premiers</u>
@@ -142,6 +279,22 @@ Un **nombre parfait** est un nombre égal à la somme de ses diviseurs propres (
     * `facteurs_premiers(84)` → `2, 2, 3, 7`
     * `facteurs_premiers(97)` → `97`
 
+??? success "Réponse :"
+
+    ```py
+
+    def facteurs_premiers(n):
+        facteur = 2
+        while n > 1:
+            if n % facteur == 0:
+                print(facteur, end="")
+                n //= facteur
+                if n > 1:
+                    print(", ", end="")
+            else:
+                facteur += 1
+    ```
+
 ---
 
 ### <u>14. Nombre mystère</u>
@@ -153,9 +306,31 @@ Un **nombre parfait** est un nombre égal à la somme de ses diviseurs propres (
 * Le programme indique *trop grand* ou *trop petit*.
 * Quand le nombre est trouvé, afficher le nombre d’essais.
 
-??? example "Exemple :"
+??? success "Réponse :"
 
-    (Le déroulement dépend des essais de l’utilisateur, pas de sortie fixe.)  
+    ```py
+
+    import random
+
+    def deviner(n):
+        secret = random.randint(1, n)
+        essais = 0
+        trouve = False
+
+        print(f"J'ai choisi un nombre entre 1 et {n}. Essaie de le deviner !")
+
+        while trouve != True:
+            proposition = int(input("Ta proposition : "))
+            essais += 1
+
+            if proposition < secret:
+                print("Trop petit !")
+            elif proposition > secret:
+                print("Trop grand !")
+            else:
+                print(f"Bravo ! Tu as trouvé en {essais} essai(s).")
+                trouve = True
+    ```
 
 ---
 
@@ -167,6 +342,19 @@ Un **nombre parfait** est un nombre égal à la somme de ses diviseurs propres (
 
 
     * `somme_pairs(48215)` → `14`  (car 4 + 8 + 2 = 14)  
+
+??? success "Réponse :"
+
+    ```py
+    def somme_pairs(n):
+        mot_n = str(n)
+        resultat = 0
+        for chiffre in mot_n:
+            if int(chiffre) % 2 == 0: 
+                resultat = resultat + int(chiffre)
+        return resultat
+        
+    ```
 
 ---
 
@@ -185,7 +373,19 @@ Un **nombre parfait** est un nombre égal à la somme de ses diviseurs propres (
     *
     ```  
 
+??? success "Réponse :"
+
+    ```py
+    def losange(n):
+        j = n - 1
+        while j > 0:
+            ligne = "*" * j
+            print(ligne)
+            j = j-1
+    ```
+
 ---
+
 
 ### <u>17. Anagrammes</u>
 
@@ -196,6 +396,48 @@ Un **nombre parfait** est un nombre égal à la somme de ses diviseurs propres (
     * `est_anagramme("chien", "niche")` → `True`  
     * `est_anagramme("python", "typhon")` → `True`  
     * `est_anagramme("test", "tseta")` → `False`  
+
+??? success "Réponse :"
+
+    ```py
+    def est_anagramme(mot1, mot2):
+        # On met les mots en minuscules pour éviter les différences entre majuscules/minuscules
+        mot1 = mot1.lower()
+        mot2 = mot2.lower()
+
+        # Si les mots n'ont pas la même longueur, ils ne peuvent pas être des anagrammes
+        if len(mot1) != len(mot2):
+            return False
+
+        # Pour chaque lettre du premier mot
+        for lettre in mot1:
+            # On cherche cette lettre dans le deuxième mot
+            position = -1
+            for i in range(len(mot2)):
+                if mot2[i] == lettre:
+                    position = i  # on note où elle se trouve
+                    break
+
+            # Si la lettre n'est pas trouvée → ce n’est pas une anagramme
+            if position == -1:
+                return False
+
+            # On enlève la lettre trouvée dans mot2 en collant la partie gauche a la lettre a sa partie a droite
+            mot2 = mot2[:position] + mot2[position+1:]
+
+        # Si à la fin, mot2 est vide, toutes les lettres ont été utilisées → c’est une anagramme
+        return len(mot2) == 0
+
+
+    # --- Programme principal ---
+    motA = input("Entrez le premier mot : ")
+    motB = input("Entrez le deuxième mot : ")
+
+    if est_anagramme(motA, motB):
+        print("Les deux mots sont des anagrammes ✅")
+    else:
+        print("Les deux mots ne sont pas des anagrammes ❌")
+    ```
 
 ---
 
@@ -215,6 +457,15 @@ Un **nombre parfait** est un nombre égal à la somme de ses diviseurs propres (
     PYTHON
     ```  
 
+??? success "Réponse :"
+
+    ```py
+    def escalier_mot(mot):
+        ligne = ""
+        for lettre in mot:
+            ligne = ligne + lettre
+            print(ligne)
+    ```
 ---
 
 ### <u>19. Symétrie verticale</u>
@@ -225,6 +476,19 @@ Un **nombre parfait** est un nombre égal à la somme de ses diviseurs propres (
 
     * `symetrie("code")` → `"codeedoc"`  
 
+??? success "Réponse :"
+
+    ```py
+    def symetrie(mot):
+        mot_copie = mot[:] # ici, on effectue une copie à l'aide de [:] pour eviter d'ecraser le mot mis en parametre
+
+        i = len(mot) -1
+        while i >= 0:
+            mot_copie = mot_copie + mot[i]
+            i = i -1
+        return mot_copie
+    ```
+
 ---
 
 ### <u>20. Caractère le plus fréquent</u>
@@ -234,3 +498,29 @@ Un **nombre parfait** est un nombre égal à la somme de ses diviseurs propres (
 ??? example "Exemple :"
 
     * `plus_frequent("abracadabra")` → `'a'`  
+
+??? success "Réponse :"
+
+    ```py
+    def plus_frequent(texte):
+
+        caractere_max = ""   # le caractère le plus fréquent
+        frequence_max = 0    # combien de fois il apparaît
+
+        # On parcourt chaque caractère du texte
+        for caractere in texte:
+            if caractere != " ":  # on ignore les espaces
+                # Compter combien de fois ce caractère apparaît
+                compteur = 0
+                for c in texte:
+                    if c == caractere:
+                        compteur += 1
+
+                # Si ce caractère est plus fréquent que le précédent, on le garde
+                if compteur > frequence_max:
+                    frequence_max = compteur
+                    caractere_max = caractere
+
+        return caractere_max
+
+    ```
