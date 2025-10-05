@@ -35,14 +35,14 @@ def mystere_c(texte: str) -> str:
 
 ### Questions
 
-1. Comment s’appellent les trois fonctions ?
-2. Quels sont les **paramètres** de chacune d’elles ?
-3. De quel **type** sont ces paramètres ?
-4. De quel **type** sont les **valeurs renvoyées** ?
-5. Que contient la variable `total` ou `resultat` à la première ligne de chaque fonction ?
-6. Quelle est la **condition d’arrêt** des boucles `while` ?
-7. Comment évolue la variable `i` à chaque tour de boucle ?
-8. Compléter le tableau suivant pour comprendre le fonctionnement de chaque fonction :
+* Comment s’appellent les trois fonctions ?
+* Quels sont les **paramètres** de chacune d’elles ?
+* De quel **type** sont ces paramètres ?
+* De quel **type** sont les **valeurs renvoyées** ?
+* Que contient la variable `total` ou `resultat` à la première ligne de chaque fonction ?
+* Quelle est la **condition d’arrêt** des boucles `while` ?
+* Comment évolue la variable `i` à chaque tour de boucle ?
+* Compléter le tableau suivant pour comprendre le fonctionnement de chaque fonction :
 
 | Entrée    | Fonction  | Résultat attendu |
 | --------- | --------- | ---------------- |
@@ -50,7 +50,7 @@ def mystere_c(texte: str) -> str:
 | 4         | mystere_b | ?                |
 | "bonjour" | mystere_c | ?                | 
 
-9. Décrire en une phrase le rôle de chaque fonction :
+* Décrire en une phrase le rôle de chaque fonction :
 
    * `mystere_a` : …
    * `mystere_b` : …
