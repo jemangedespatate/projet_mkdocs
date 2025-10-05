@@ -55,8 +55,6 @@ def mystere_c(texte: str) -> str:
    * `mystere_a` : …
    * `mystere_b` : …
    * `mystere_c` : …
-Parfait 👍 Voici la version **élève** de ton **exercice 2**, sans les questions, directement prête à être donnée telle quelle.
-Le format reste cohérent avec ton évaluation précédente.
 
 ---
 
