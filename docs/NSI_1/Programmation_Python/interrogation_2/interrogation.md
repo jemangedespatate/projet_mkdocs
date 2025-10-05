@@ -58,7 +58,7 @@ def mystere_c(texte: str) -> str:
 
 ---
 
-# <u>Deuxième exercice - Parcour d'une chaine de caractére</u>
+## <u>Deuxième exercice - Parcour d'une chaine de caractére</u>
 
 Compléter la fonction suivante qui renvoie **le nombre de voyelles** contenues dans un mot donné.
 
@@ -118,7 +118,7 @@ def double_caracteres(mot: str) -> str:
 
 ---
 
-# <u>Quatrième exercice - Conditions</u>
+## <u>Quatrième exercice - Conditions</u>
 
 Compléter la fonction suivante qui renvoie un **message** en fonction de la **température** donnée (en degrés Celsius).
 
