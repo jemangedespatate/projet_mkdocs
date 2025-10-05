@@ -2,38 +2,27 @@
 
 **<u>1. Variables et affichage**</u>
 
-Demandez à l’utilisateur son **nom** et son **âge**, puis affiche :
+Créer deux variables, **nom** et **âge**, puis afficher :
 
 ```
-Bonjour <nom>, dans 10 ans tu auras <âge+10> ans.
+Bonjour <nom>, dans 10 ans tu auras <âge + 10> ans.
 ```
-
-indice: utiliser la fonction `input()`
 
 ---
 
-**<u>2. Types de données**</u>
-
-Créez trois variables : une **entière**, une **décimale** et une **chaîne de caractères**.
-Affiche le type de chaque variable avec la fonction `type()`.
-
----
-
-**<u>3. Opérations mathématiques**</u>
+**<u>2. Opérations mathématiques**</u>
 
 Écrivez un programme qui demande deux nombres à l’utilisateur et affiche :
 
 * la somme
 * la différence
 * le produit
-* le quotient entier
-* le reste de la division
 
 ---
 
-**<u>4. Conditions**</u>
+**<u>3. Conditions**</u>
 
-Écrivait un programme qui demande une **note** à l’utilisateur et affiche :
+Écrire un programme qui crée une variable note et affiche :
 
 * `"Très bien"` si la note ≥ 16
 * `"Assez bien"` si la note ≥ 12
@@ -42,22 +31,29 @@ Affiche le type de chaque variable avec la fonction `type()`.
 
 ---
 
-**<u>5. Boucles**</u>
+**<u>4. Boucles**</u>
 
-Affichez tous les nombres **pairs** de 1 à 20 en utilisant :
+Affichez tous les nombres **pairs** de 1 à 20 en utilisant une boucle `for`
+Voici une version claire et pédagogique de ta phrase, avec une **explication du modulo** incluse 👇
 
-* une boucle `for`
-* une boucle `while`
+💡 *Indice : l’opérateur `%` s’appelle le **modulo**. Il donne le **reste** d’une division entre deux nombres.*
+
+Par exemple :
+
+* `7 % 2 = 1` car 7 ÷ 2 = 3 reste 1
+* `8 % 2 = 0` car 8 ÷ 2 = 4 reste 0
+
+👉 Donc, **si un nombre % 2 est égal à 0, cela signifie qu’il est pair** (car il est divisible par 2 sans reste).
 
 ---
 
-**<u>6. Fonctions**</u>
+**<u>5. Fonctions**</u>
 
 créez une fonction `carre(x)` qui renvoie le carré d’un nombre.
 
 Testez-la avec plusieurs nombres et affichez les résultats.
 
-### calcul de moyenne
+### exercie complémentaire: calcul de moyenne
 
 1. Demandez à l’utilisateur combien de notes il veut entrer.
 2. Utilisez une **boucle** pour demander chaque note une par une. (indice: utilisez `input`)
