@@ -456,3 +456,35 @@ Nombre : `-13,25`
 
 * **Précision contrôlée** : le nombre de bits pour la mantisse définit la précision maximale
 
+
+!!! question "📝 Exercice 6:"
+
+    Convertis les nombres suivants en **notation IEEE 754 simple précision** (32 bits) :
+
+    a. ( +10,5 )
+    b. ( -0,75 )
+    c. ( +5,25 )
+
+    Pour chacun :
+
+    1. Écris le nombre en **binaire**.
+    2. Mets-le sous **forme scientifique binaire** (ex. : (1,xxx \times 2^n)).
+    3. Indique :
+
+    * le **bit de signe**
+    * l’**exposant biaisé** (avec biais = 127)
+    * la **mantisse** (23 bits)
+    4. Donne la **représentation finale sur 32 bits**.
+
+---
+
+!!! question "📝 Exercice 7:"
+
+    Le nombre suivant est stocké en IEEE 754 simple précision :
+
+    ```
+    0 10000010 01000000000000000000000
+    ```
+
+    a. Décode-le (signe, exposant, mantisse).
+    b. Trouve la **valeur décimale** correspondante.
