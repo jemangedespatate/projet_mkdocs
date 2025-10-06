@@ -12,7 +12,7 @@ Bonjour <nom>, dans 10 ans tu auras <âge + 10> ans.
 
 **<u>2. Opérations mathématiques**</u>
 
-Écrivez un programme qui demande deux nombres à l’utilisateur et affiche :
+Écrivez un programme qui utilise 2 variables et affiche :
 
 * la somme
 * la différence
@@ -34,7 +34,6 @@ Bonjour <nom>, dans 10 ans tu auras <âge + 10> ans.
 **<u>4. Boucles**</u>
 
 Affichez tous les nombres **pairs** de 1 à 20 en utilisant une boucle `for`
-Voici une version claire et pédagogique de ta phrase, avec une **explication du modulo** incluse 👇
 
 💡 *Indice : l’opérateur `%` s’appelle le **modulo**. Il donne le **reste** d’une division entre deux nombres.*
 
