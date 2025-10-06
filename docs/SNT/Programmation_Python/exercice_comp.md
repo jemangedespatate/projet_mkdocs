@@ -54,12 +54,12 @@ Testez-la avec plusieurs nombres et affichez les résultats.
 
 ### exercie complémentaire: calcul de moyenne
 
-1. Demandez à l’utilisateur combien de notes il veut entrer.
-2. Utilisez une **boucle** pour demander chaque note une par une. (indice: utilisez `input`)
+1. Demandez à l’utilisateur combien de notes il veut entrer.(indice: utilisez `nombre = int(input("..."))`)
+2. Utilisez une **boucle** pour demander chaque note une par une. (indice: utilisez `note = int(input("..."))`)
 3. À chaque note saisie :
 
    * ajoutez-la à un **total** pour calculer la moyenne
-   * vérifiez si elle est supérieure à la moyenne courante (facultatif pour avancer pas à pas).
+   * ajoutez 1 au nombre de note superieur a 10 si elle est effectivement superieur à 10
 
 4. Créez une **fonction** `mention(note)` qui renvoie :
 
@@ -69,8 +69,7 @@ Testez-la avec plusieurs nombres et affichez les résultats.
    * `"Insuffisant"` sinon
 
 5. Après la saisie de toutes les notes, calculez la **moyenne** et affichez la **mention correspondante**.
-
-6. Affichez ensuite combien de notes sont **supérieures à la moyenne**.
+6. Afficher le nombre de note superieur à 10.
 
 **Exemple d’exécution :**
 
@@ -83,5 +82,5 @@ Note 4 : 12
 Note 5 : 16
 
 Moyenne : 13.8 → Assez bien
-Nombre de notes supérieures à la moyenne : 3
+Nombre de notes supérieures à 10 : 4
 ```

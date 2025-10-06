@@ -2225,8 +2225,8 @@
 <p>Testez-la avec plusieurs nombres et affichez les résultats.</p>
 <h3 id="exercie-complementaire-calcul-de-moyenne">exercie complémentaire: calcul de moyenne</h3>
 <ol>
-<li>Demandez à l’utilisateur combien de notes il veut entrer.</li>
-<li>Utilisez une <strong>boucle</strong> pour demander chaque note une par une. (indice: utilisez <code>input</code>)</li>
+<li>Demandez à l’utilisateur combien de notes il veut entrer.(indice: utilisez <code>nombre = int(input("..."))</code>)</li>
+<li>Utilisez une <strong>boucle</strong> pour demander chaque note une par une. (indice: utilisez <code>note = int(input("..."))</code>)</li>
 <li>
 <p>À chaque note saisie :</p>
 </li>
@@ -2234,7 +2234,7 @@
 <p>ajoutez-la à un <strong>total</strong> pour calculer la moyenne</p>
 </li>
 <li>
-<p>vérifiez si elle est supérieure à la moyenne courante (facultatif pour avancer pas à pas).</p>
+<p>ajoutez 1 au nombre de note superieur a 10 si elle est effectivement superieur à 10</p>
 </li>
 <li>
 <p>Créez une <strong>fonction</strong> <code>mention(note)</code> qui renvoie :</p>
@@ -2250,9 +2250,7 @@
 <li>
 <p>Après la saisie de toutes les notes, calculez la <strong>moyenne</strong> et affichez la <strong>mention correspondante</strong>.</p>
 </li>
-<li>
-<p>Affichez ensuite combien de notes sont <strong>supérieures à la moyenne</strong>.</p>
-</li>
+<li>Afficher le nombre de note superieur à 10.</li>
 </ol>
 <p><strong>Exemple d’exécution :</strong></p>
 <div class="highlight"><pre><span></span><code>Combien de notes ? 5
@@ -2263,7 +2261,7 @@ Note 4 : 12
 Note 5 : 16
 
 Moyenne : 13.8 → Assez bien
-Nombre de notes supérieures à la moyenne : 3
+Nombre de notes supérieures à 10 : 4
 </code></pre></div>
 
 
