@@ -15,6 +15,7 @@
 
 * [interrogation](../interrogation/interrogation)
 * [correction interrogation](../interrogation/intero_corec)
+* [interrogation 2](../interrogation_2/interrogation)
 
 ## Fiche mémo
 
