@@ -85,7 +85,7 @@ def compter_voyelles(mot: str) -> int:
     >>> compter_voyelles("informatique")
     6
     >>> compter_voyelles("rhythme")
-    1
+    2
     """
 ```
 
