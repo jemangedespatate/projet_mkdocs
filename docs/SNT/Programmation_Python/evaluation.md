@@ -1,4 +1,4 @@
-# évaluation
+# Intérrogation
 
 <script>
   const password = "mdpi251"; // mot de passe
@@ -14,9 +14,9 @@
 
 Crée trois variables :
 
-* `largeur` qui doit etre egale a 5
-* `logueur` qui doit etre egale a 8
-* `aire` qui contient le résultat du calcul de l’aire d’un rectangle (rappel: l'aire d'un rectangle est egale au produit de sa longeur et de ca largeur)
+* `largeur` qui doit être égale à 5
+* `longueur` qui doit être égale à 8
+* `aire` qui contient le résultat du calcul de l’aire d’un rectangle (rappel : l'aire d'un rectangle est égale au produit de sa longueur et de sa largeur)
 
 Le programme doit ensuite afficher :
 
@@ -38,6 +38,8 @@ L’aire du rectangle est de 40 unités carrées.
 *****
 ```
 
+---
+
 ## ⚖️ **Exercice 3 — Les conditions**
 
 Crée une variable `vitesse` contenant la valeur `110`.
@@ -47,7 +49,7 @@ Le programme doit afficher :
 * `"Trop vite !"` si la vitesse est supérieure à 130
 * `"Bonne vitesse."` si elle est comprise entre 80 et 130 inclus
 * `"Trop lent."` si elle est inférieure à 80
-* `"a l'arret."` si la vitesse est egale a 0
+* `"À l'arrêt."` si la vitesse est égale à 0
 
 ## 🧩 **Exercice 4 — Les fonctions**
 
