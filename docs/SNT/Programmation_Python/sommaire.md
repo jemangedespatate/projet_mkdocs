@@ -15,4 +15,4 @@
 
 ## interrogations
 
-* [fiche mémo](../evaluation/)
+* [interrogation](../evaluation/)
