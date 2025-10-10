@@ -1,7 +1,7 @@
 # évaluation
 
 <script>
-  const password = "mdpi1"; // mot de passe
+  const password = "mdpi251"; // mot de passe
   const userInput = prompt("Entrez le mot de passe pour accéder à cette page :");
 
   if (userInput !== password) {
@@ -10,39 +10,71 @@
   }
 </script>
 
-## premier exercice:
+## 🧩 **Exercice 1 — Les variables**
 
-```py
-def mystere_1(a:int,b:int)->int:
-    resultat = a
-    while b != 0:
-        resultat = resultat + 1
-        b = b-1
-    return resultat
+Crée trois variables :
 
-def mystere_2(a:int,b:int)->int:
-    resultat = 0
-    while b != 0:
-        resultat = resultat + a
-        b = b-1
-    return resultat
+* `largeur` qui doit etre egale a 5
+* `logueur` qui doit etre egale a 8
+* `aire` qui contient le résultat du calcul de l’aire d’un rectangle (rappel: l'aire d'un rectangle est egale au produit de sa longeur et de ca largeur)
 
-def mystere_3(a:int,b:int)->int:
-    resultat = a
-    while b!=0:
-        resultat = resultat * a
-        b = b-1
-    return resultat
+Le programme doit ensuite afficher :
+
+```
+L’aire du rectangle est de 40 unités carrées.
 ```
 
-1. comment s'appelle les differente fnctions declarer ici
-2. quelles sont les parametres de ces fonctions
-3. de quelle type sont ces parametre
-4. de quelle type vont etre les resultats de ces fonctions
-5. pour chaque fonctions donner se qui va etre stocker dans la variable a à la premiere ligne
-6. quelle est la conditions pour que la boucle while s'arrete
-7. comment evolue le resultat a chaque iterations(tours) de la boucle
-8. finalement que font les fonctions 
+---
 
-## second exercice:
+## 🔁 **Exercice 2 — Les boucles**
+
+Écris un programme qui affiche un carré de 5 étoiles de côté en utilisant une boucle `for`, comme ceci :
+
+```
+*****
+*****
+*****
+*****
+*****
+```
+
+## ⚖️ **Exercice 3 — Les conditions**
+
+Crée une variable `vitesse` contenant la valeur `110`.
+
+Le programme doit afficher :
+
+* `"Trop vite !"` si la vitesse est supérieure à 130
+* `"Bonne vitesse."` si elle est comprise entre 80 et 130 inclus
+* `"Trop lent."` si elle est inférieure à 80
+* `"a l'arret."` si la vitesse est egale a 0
+
+## 🧩 **Exercice 4 — Les fonctions**
+
+### Programme à observer :
+
+```python
+def convertir_minutes_en_heures(minutes):
+    heures = minutes / 60
+    return heures
+
+t1 = convertir_minutes_en_heures(120)
+t2 = convertir_minutes_en_heures(90)
+
+print(t1)
+print(t2)
+```
+
+---
+
+### ✏️ Questions :
+
+1. Quel est le **nom** de la fonction ?
+2. Quel est le **paramètre** de cette fonction ?
+3. Que fait la fonction avec la valeur donnée ?
+4. Quelle **valeur est renvoyée** (retournée) par la fonction ?
+5. Quelle est la **valeur de `t1`** après l’appel `convertir_minutes_en_heures(120)` ?
+6. Quelle est la **valeur de `t2`** après l’appel `convertir_minutes_en_heures(90)` ?
+7. Que va afficher le programme à l’écran ?
+8. Si on écrivait `print(convertir_minutes_en_heures(45))`, que s’afficherait-il ?
 
