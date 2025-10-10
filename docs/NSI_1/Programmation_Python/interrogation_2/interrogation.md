@@ -2,7 +2,7 @@
 
 On donne trois fonctions nommées `mystere_a`, `mystere_b` et `mystere_c` :
 
-```python'  
+```python
 def mystere_a(n: int) -> int:
     total = 0
     i = 1
@@ -55,6 +55,7 @@ def mystere_c(texte: str) -> str:
     * `mystere_a` : …
     * `mystere_b` : …
     * `mystere_c` : …
+
 
 ??? success "Réponse :"
 
