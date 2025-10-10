@@ -1,5 +1,15 @@
 # évaluation
 
+<script>
+  const password = "mdpi1"; // mot de passe
+  const userInput = prompt("Entrez le mot de passe pour accéder à cette page :");
+
+  if (userInput !== password) {
+    alert("Mot de passe incorrect !");
+    window.location.href = "/";
+  }
+</script>
+
 ## premier exercice:
 
 ```py
