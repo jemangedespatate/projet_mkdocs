@@ -685,6 +685,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../booleen/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Booleen
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../exercice/" class="md-nav__link">
         
   
@@ -986,6 +1007,33 @@
         
       </ul>
     </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contexte" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Contexte
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-le-message-chiffre" class="md-nav__link">
+    <span class="md-ellipsis">
+      1️⃣ — Le message chiffré
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-indices-pour-taider" class="md-nav__link">
+    <span class="md-ellipsis">
+      2️⃣ — Indices pour t’aider
+    </span>
+  </a>
   
 </li>
         
@@ -2602,6 +2650,33 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#contexte" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Contexte
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-le-message-chiffre" class="md-nav__link">
+    <span class="md-ellipsis">
+      1️⃣ — Le message chiffré
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-indices-pour-taider" class="md-nav__link">
+    <span class="md-ellipsis">
+      2️⃣ — Indices pour t’aider
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -3066,6 +3141,24 @@ Ainsi, plus le caractère est complexe (ou vient d’un alphabet éloigné du la
 <li>2 octets → caractères accentués et latins étendus (U+0080 à U+07FF).</li>
 <li>3 octets → symboles, alphabets grecs, monétaires (U+0800 à U+FFFF).</li>
 <li>4 octets → emojis, idéogrammes, symboles complexes (U+10000 et plus).</li>
+</ul>
+</details>
+<details class="note">
+<summary>🕵️‍♀️ Activité bonus – Le message secret en UTF-8</summary>
+<h3 id="contexte">🔹 Contexte</h3>
+<p>Un message a été envoyé sur un réseau, mais il n’est pas lisible directement :<br />
+il a été <strong>encodé en UTF-8</strong> sous forme <strong>hexadécimale</strong>.</p>
+<p>À toi de le <strong>décoder</strong> pour retrouver le message original !</p>
+<hr />
+<h3 id="1-le-message-chiffre">1️⃣ — Le message chiffré</h3>
+<div class="highlight"><pre><span></span><code>43 27 65 73 74 20 75 6E 20 6D 65 73 73 61 67 65 20 73 65 63 72 65 74 20 3A 20 43 27 65 73 74 20 3C C3 A9 63 6C 61 74 3E 21
+</code></pre></div>
+<hr />
+<h3 id="2-indices-pour-taider">2️⃣ — Indices pour t’aider</h3>
+<ul>
+<li>Chaque <strong>octet</strong> (ou paire hexadécimale) correspond à <strong>1 caractère UTF-8</strong>.  </li>
+<li>Si un octet commence par <strong>C2</strong> ou <strong>C3</strong>, il fait partie d’un <strong>caractère accentué</strong> (2 octets).  </li>
+<li>Tu peux t’appuyer sur la <strong>table ASCII étendue</strong> pour les valeurs ≤ 0x7F.  </li>
 </ul>
 </details>
 <hr />

@@ -5,6 +5,7 @@
 * [notion de base](../base/)
 * [representations des nombres en machine](../operations/)
 * [representations des caractéres en machine](../representations_caractere/)
+* [les booleen](../booleen/)
 
 ## Exercices
 

@@ -253,6 +253,32 @@ Ainsi, plus le caractère est complexe (ou vient d’un alphabet éloigné du la
     * 3 octets → symboles, alphabets grecs, monétaires (U+0800 à U+FFFF).
     * 4 octets → emojis, idéogrammes, symboles complexes (U+10000 et plus).
 
+??? note "🕵️‍♀️ Activité bonus – Le message secret en UTF-8"
+
+    ### 🔹 Contexte  
+
+    Un message a été envoyé sur un réseau, mais il n’est pas lisible directement :  
+    il a été **encodé en UTF-8** sous forme **hexadécimale**.
+
+    À toi de le **décoder** pour retrouver le message original !
+
+    ---
+
+    ### 1️⃣ — Le message chiffré
+
+    ```
+    43 27 65 73 74 20 75 6E 20 6D 65 73 73 61 67 65 20 73 65 63 72 65 74 20 3A 20 43 27 65 73 74 20 3C C3 A9 63 6C 61 74 3E 21
+    ```
+
+    ---
+
+    ### 2️⃣ — Indices pour t’aider
+
+    * Chaque **octet** (ou paire hexadécimale) correspond à **1 caractère UTF-8**.  
+    * Si un octet commence par **C2** ou **C3**, il fait partie d’un **caractère accentué** (2 octets).  
+    * Tu peux t’appuyer sur la **table ASCII étendue** pour les valeurs ≤ 0x7F.  
+
+
 ---
 
 ## 🧠 En résumé
