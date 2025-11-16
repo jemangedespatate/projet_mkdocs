@@ -15,10 +15,10 @@ Ce site a pour objectif de guider les élèves tout au long de l'année scolaire
 
     * [ℹ️ Introduction SNT](SNT/introduction_snt/activiter_introductif/)
     * [🐍 Programmation Python](SNT/Programmation_Python/sommaire/)
+    * [💬 Réseaux sociaux](SNT/Reseaux_sociaux/sommaire/)
     * 📸 Photographie Numérique
     * 🌐 Internet
     * 📄 Web
-    * 💬 Réseaux sociaux
     * 📍 Géolocalisation
     * 📊 Données Structurées
     * 📡 Objets Connectés
