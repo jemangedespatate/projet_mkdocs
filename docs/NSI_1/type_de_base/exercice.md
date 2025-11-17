@@ -15,8 +15,6 @@
 
 👉 *Objectif : maîtriser les opérations de base (`append`, `remove`, `index`, accès par indices)*
 
-<iframe height="400" width="100%" src="https://trinket.io/python3/2dc29781dad5" frameborder="0" allowfullscreen></iframe>
-
 ---
 
 ### **Exercice 2 : Moyenne de notes**
@@ -28,8 +26,6 @@
 3. Affiche la note maximale et minimale.
 
 👉 *Objectif : manipuler des listes numériques et utiliser les fonctions intégrées.*
-
-<iframe height="400" width="100%" src="https://trinket.io/python3/34be9656856c?runOption=run" frameborder="0" allowfullscreen></iframe>
 
 ---
 
@@ -45,8 +41,6 @@ Indice 2 → kiwi
 
 👉 *Objectif : utiliser une boucle `for` avec `range(len(liste))`.*
 
-<iframe height="400" width="100%" src="https://trinket.io/python3/34be9656856c?runOption=run" frameborder="0" allowfullscreen></iframe>
-
 ---
 
 ### **Exercice 4 : Saisie utilisateur**
@@ -56,8 +50,6 @@ Affiche ensuite la liste complète.
 
 👉 *Objectif : construire une liste dynamiquement avec `append()`.*
 
-<iframe height="400" width="100%" src="https://trinket.io/python3/34be9656856c?runOption=run" frameborder="0" allowfullscreen></iframe>
-
 ---
 
 ## 🟡 **Niveau 2 — Approfondissement et traitement**
@@ -66,12 +58,9 @@ Affiche ensuite la liste complète.
 
 1. Crée une liste de nombres `[5, 1, 9, 3, 7]`.
 2. Trie la liste dans l’ordre croissant et affiche-la.
-3. Trie-la ensuite dans l’ordre décroissant.
 4. Inverse la liste avec `reverse()`.
 
 👉 *Objectif : comprendre `sort()` et `reverse()`.*
-
-<iframe height="400" width="100%" src="https://trinket.io/python3/34be9656856c?runOption=run" frameborder="0" allowfullscreen></iframe>
 
 ---
 
@@ -87,8 +76,6 @@ crée une nouvelle liste `pairs` contenant uniquement les nombres pairs.
 
 👉 *Indice : utiliser une boucle et le test `n % 2 == 0`.*
 
-<iframe height="400" width="100%" src="https://trinket.io/python3/34be9656856c?runOption=run" frameborder="0" allowfullscreen></iframe>
-
 ---
 
 ### **Exercice 7 : Comptage**
@@ -100,8 +87,6 @@ mots = ["elle", "est", "en", "été"]
 ```
 
 👉 *Objectif : parcours + conditions + variable compteur.*
-
-<iframe height="400" width="100%" src="https://trinket.io/python3/34be9656856c?runOption=run" frameborder="0" allowfullscreen></iframe>
 
 ---
 
@@ -121,8 +106,6 @@ Affiche la somme de la deuxième ligne et l’élément au centre.
 
 👉 *Objectif : travailler sur les listes imbriquées.*
 
-<iframe height="400" width="100%" src="https://trinket.io/python3/34be9656856c?runOption=run" frameborder="0" allowfullscreen></iframe>
-
 ---
 
 ## 🔵 **Niveau 3 — Tuples et données structurées**
@@ -138,8 +121,6 @@ Affiche la somme de la deuxième ligne et l’élément au centre.
    ```
 
 👉 *Objectif : apprendre le déballage de tuples.*
-
-<iframe height="400" width="100%" src="https://trinket.io/python3/34be9656856c?runOption=run" frameborder="0" allowfullscreen></iframe>
 
 ---
 
@@ -160,8 +141,6 @@ Clara a obtenu 17
 ```
 
 👉 *Objectif : parcourir une liste de tuples et déballer les valeurs.*
-
-<iframe height="400" width="100%" src="https://trinket.io/python3/34be9656856c?runOption=run" frameborder="0" allowfullscreen></iframe>
 
 ---
 
@@ -184,7 +163,6 @@ cherche([1, 4, 9, 2], 5)  # → False
 
 👉 *Objectif : comprendre les recherches dans une séquence.*
 
-<iframe height="400" width="100%" src="https://trinket.io/python3/34be9656856c?runOption=run" frameborder="0" allowfullscreen></iframe>
 
 ---
 
@@ -199,7 +177,6 @@ cherche([1, 4, 9, 2], 5)  # → False
 
 👉 *Objectif : conversion entre types (`list()` / `tuple()`).*
 
-<iframe height="400" width="100%" src="https://trinket.io/python3/34be9656856c?runOption=run" frameborder="0" allowfullscreen></iframe>
 
 ---
 
@@ -223,8 +200,6 @@ Clara → moyenne : 18.0
 
 👉 *Objectif : boucles imbriquées, calcul de moyenne, tuples + listes.*
 
-<iframe height="400" width="100%" src="https://trinket.io/python3/34be9656856c?runOption=run" frameborder="0" allowfullscreen></iframe>
-
 ---
 
 ### **Exercice 14 : Rotation de liste**
@@ -237,8 +212,6 @@ Exemple :
 ```
 
 👉 *Objectif : travailler sur les indices et la logique algorithmique.*
-
-<iframe height="400" width="100%" src="https://trinket.io/python3/34be9656856c?runOption=run" frameborder="0" allowfullscreen></iframe>
 
 ---
 
@@ -254,5 +227,3 @@ max_matrice(m)  →  9
 ```
 
 👉 *Objectif : parcours imbriqué et compréhension de listes 2D.*
-
-<iframe height="400" width="100%" src="https://trinket.io/python3/34be9656856c?runOption=run" frameborder="0" allowfullscreen></iframe>

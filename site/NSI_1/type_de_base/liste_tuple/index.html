@@ -805,18 +805,18 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#a-avec-for" class="md-nav__link">
+  <a href="#a-parcours-direct-avec-for" class="md-nav__link">
     <span class="md-ellipsis">
-      a) Avec for
+      a) Parcours direct avec for
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#b-avec-range" class="md-nav__link">
+  <a href="#b-parcours-avec-range-et-indices" class="md-nav__link">
     <span class="md-ellipsis">
-      b) Avec range()
+      b) Parcours avec range() et indices
     </span>
   </a>
   
@@ -842,6 +842,21 @@
       2.6 Copies et alias
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="2.6 Copies et alias">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#copier-une-liste-pour-eviter-ce-lien" class="md-nav__link">
+    <span class="md-ellipsis">
+      Copier une liste pour éviter ce lien
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -879,18 +894,18 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#caracteristiques_1" class="md-nav__link">
+  <a href="#caracteristiques-principales" class="md-nav__link">
     <span class="md-ellipsis">
-      ➤ Caractéristiques
+      ➤ Caractéristiques principales
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#31-creation" class="md-nav__link">
+  <a href="#31-creation-dun-tuple" class="md-nav__link">
     <span class="md-ellipsis">
-      3.1 Création
+      3.1 Création d’un tuple
     </span>
   </a>
   
@@ -2635,18 +2650,18 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#a-avec-for" class="md-nav__link">
+  <a href="#a-parcours-direct-avec-for" class="md-nav__link">
     <span class="md-ellipsis">
-      a) Avec for
+      a) Parcours direct avec for
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#b-avec-range" class="md-nav__link">
+  <a href="#b-parcours-avec-range-et-indices" class="md-nav__link">
     <span class="md-ellipsis">
-      b) Avec range()
+      b) Parcours avec range() et indices
     </span>
   </a>
   
@@ -2672,6 +2687,21 @@
       2.6 Copies et alias
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="2.6 Copies et alias">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#copier-une-liste-pour-eviter-ce-lien" class="md-nav__link">
+    <span class="md-ellipsis">
+      Copier une liste pour éviter ce lien
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -2709,18 +2739,18 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#caracteristiques_1" class="md-nav__link">
+  <a href="#caracteristiques-principales" class="md-nav__link">
     <span class="md-ellipsis">
-      ➤ Caractéristiques
+      ➤ Caractéristiques principales
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#31-creation" class="md-nav__link">
+  <a href="#31-creation-dun-tuple" class="md-nav__link">
     <span class="md-ellipsis">
-      3.1 Création
+      3.1 Création d’un tuple
     </span>
   </a>
   
@@ -2812,6 +2842,7 @@
 </ul>
 <hr />
 <h3 id="21-acces-aux-elements">2.1 Accès aux éléments</h3>
+<p>On peut accéder aux éléments d’une liste en utilisant leur indice : les indices commencent à 0 en partant du début, et on peut aussi utiliser des indices négatifs pour accéder aux éléments depuis la fin.</p>
 <div class="highlight"><pre><span></span><code><span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;pomme&quot;</span><span class="p">,</span> <span class="s2">&quot;banane&quot;</span><span class="p">,</span> <span class="s2">&quot;cerise&quot;</span><span class="p">]</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">fruits</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>   <span class="c1"># pomme</span>
@@ -2820,26 +2851,86 @@
 </code></pre></div>
 <hr />
 <h3 id="22-modification">2.2 Modification</h3>
+<p>On peut modifier un élément d’une liste en utilisant son indice. Ici, l’élément à l’indice 1 ("banane") est remplacé par "orange".</p>
 <div class="highlight"><pre><span></span><code><span class="n">fruits</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;orange&quot;</span>      <span class="c1"># Remplace &quot;banane&quot;</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">fruits</span><span class="p">)</span>             <span class="c1"># [&quot;pomme&quot;, &quot;orange&quot;, &quot;cerise&quot;]</span>
 </code></pre></div>
 <hr />
 <h3 id="23-ajout-et-suppression">2.3 Ajout et suppression</h3>
+<ul>
+<li>
+<p>Ajouter : append met un élément à la fin, insert à une position précise.</p>
+</li>
+<li>
+<p>Supprimer : remove supprime par valeur, del ou pop suppriment par position (indice).</p>
+</li>
+</ul>
 <div class="highlight"><pre><span></span><code><span class="n">fruits</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;kiwi&quot;</span><span class="p">)</span>     <span class="c1"># ajoute à la fin</span>
 <span class="n">fruits</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;mangue&quot;</span><span class="p">)</span><span class="c1"># insère à la position 1</span>
 <span class="n">fruits</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s2">&quot;orange&quot;</span><span class="p">)</span>   <span class="c1"># supprime un élément par valeur</span>
 <span class="k">del</span> <span class="n">fruits</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>             <span class="c1"># supprime par indice</span>
 <span class="n">fruits</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>              <span class="c1"># retire le dernier</span>
 </code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">explication</p>
+<p><strong>Liste initiale :</strong></p>
+<div class="highlight"><pre><span></span><code>[&quot;pomme&quot;, &quot;orange&quot;, &quot;cerise&quot;]
+Indices :  0        1        2
+</code></pre></div>
+<p><strong>1️⃣ Ajouter avec <code>append("kiwi")</code> :</strong></p>
+<div class="highlight"><pre><span></span><code>[&quot;pomme&quot;, &quot;orange&quot;, &quot;cerise&quot;, &quot;kiwi&quot;]
+Indices :  0        1        2       3
+</code></pre></div>
+<p><strong>2️⃣ Ajouter avec <code>insert(1, "mangue")</code> :</strong></p>
+<div class="highlight"><pre><span></span><code>[&quot;pomme&quot;, &quot;mangue&quot;, &quot;orange&quot;, &quot;cerise&quot;, &quot;kiwi&quot;]
+Indices :  0       1        2        3       4
+</code></pre></div>
+<p><strong>3️⃣ Supprimer par valeur <code>remove("orange")</code> :</strong></p>
+<div class="highlight"><pre><span></span><code>[&quot;pomme&quot;, &quot;mangue&quot;, &quot;cerise&quot;, &quot;kiwi&quot;]
+Indices :  0        1        2       3
+</code></pre></div>
+<p><strong>4️⃣ Supprimer par indice <code>del fruits[0]</code> :</strong></p>
+<div class="highlight"><pre><span></span><code>[&quot;mangue&quot;, &quot;cerise&quot;, &quot;kiwi&quot;]
+Indices :   0        1       2
+</code></pre></div>
+<p><strong>5️⃣ Supprimer le dernier élément avec <code>pop()</code> :</strong></p>
+<div class="highlight"><pre><span></span><code>[&quot;mangue&quot;, &quot;cerise&quot;]
+Indices :   0       1
+</code></pre></div>
+</div>
+<hr />
+<p>Voici une version réécrite et plus pédagogique pour des élèves de première :</p>
 <hr />
 <h3 id="24-parcours-dune-liste">2.4 Parcours d’une liste</h3>
-<h4 id="a-avec-for">a) Avec <code>for</code></h4>
-<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">fruit</span> <span class="ow">in</span> <span class="n">fruits</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">fruit</span><span class="p">)</span>
+<p>Parcourir une liste signifie <strong>passer en revue tous ses éléments</strong> pour les utiliser ou les afficher. On peut le faire de plusieurs façons.</p>
+<h4 id="a-parcours-direct-avec-for">a) Parcours direct avec <code>for</code></h4>
+<div class="highlight"><pre><span></span><code><span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;mangue&quot;</span><span class="p">,</span> <span class="s2">&quot;cerise&quot;</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">fruit</span> <span class="ow">in</span> <span class="n">fruits</span><span class="p">:</span>      <span class="c1"># pour chaque élément de la liste</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">fruit</span><span class="p">)</span>          <span class="c1"># on affiche l&#39;élément</span>
 </code></pre></div>
-<h4 id="b-avec-range">b) Avec <code>range()</code></h4>
-<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">fruits</span><span class="p">)):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">fruits</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+<p>💡 <strong>Explication :</strong>
+Ici, <code>fruit</code> prend <strong>successivement la valeur de chaque élément</strong> de la liste. C’est simple et lisible.</p>
+<p><strong>Affichage :</strong></p>
+<div class="highlight"><pre><span></span><code>mangue
+cerise
+</code></pre></div>
+<hr />
+<h4 id="b-parcours-avec-range-et-indices">b) Parcours avec <code>range()</code> et indices</h4>
+<div class="highlight"><pre><span></span><code><span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;mangue&quot;</span><span class="p">,</span> <span class="s2">&quot;cerise&quot;</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">fruits</span><span class="p">)):</span>  <span class="c1"># i parcourt les indices de 0 à len(fruits)-1</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">fruits</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>       <span class="c1"># on affiche l&#39;indice et l&#39;élément correspondant</span>
+</code></pre></div>
+<p>💡 <strong>Explication :</strong></p>
+<ul>
+<li><code>len(fruits)</code> donne la <strong>taille de la liste</strong>.</li>
+<li><code>range(len(fruits))</code> crée une <strong>suite de nombres correspondant aux indices</strong>.</li>
+<li><code>fruits[i]</code> permet d’accéder à l’élément à l’indice <code>i</code>.</li>
+</ul>
+<p><strong>Affichage :</strong></p>
+<div class="highlight"><pre><span></span><code>0 mangue
+1 cerise
 </code></pre></div>
 <hr />
 <h3 id="25-fonctions-utiles">2.5 Fonctions utiles</h3>
@@ -2886,60 +2977,118 @@
 </table>
 <hr />
 <h3 id="26-copies-et-alias">2.6 Copies et alias</h3>
-<p>⚠️ Attention : deux variables peuvent <strong>pointer vers la même liste</strong> !</p>
+<p>⚠️ <strong>Attention : deux variables peuvent pointer vers la même liste !</strong></p>
 <div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
-<span class="n">b</span> <span class="o">=</span> <span class="n">a</span>        <span class="c1"># b est un alias de a</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">a</span>        <span class="c1"># b devient un alias de a</span>
 <span class="n">b</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">99</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>     <span class="c1"># affiche [99, 2, 3]</span>
 </code></pre></div>
-<p>Pour copier sans lien :</p>
-<div class="highlight"><pre><span></span><code><span class="n">b</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<p>💡 <strong>Explication :</strong></p>
+<ul>
+<li>Ici, <code>b</code> ne crée pas une nouvelle liste, mais <strong>référence exactement la même liste que <code>a</code></strong>.</li>
+<li>Donc, toute modification via <code>b</code> se voit aussi dans <code>a</code>.</li>
+</ul>
+<hr />
+<h4 id="copier-une-liste-pour-eviter-ce-lien">Copier une liste pour éviter ce lien</h4>
+<div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>  <span class="c1"># crée une **nouvelle liste indépendante**</span>
+<span class="n">b</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">99</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>      <span class="c1"># affiche [1, 2, 3]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>      <span class="c1"># affiche [99, 2, 3]</span>
 </code></pre></div>
+<p>💡 <strong>Explication :</strong></p>
+<ul>
+<li><code>copy()</code> crée une <strong>copie indépendante</strong> de la liste.</li>
+<li>Les modifications sur <code>b</code> <strong>n’affectent pas <code>a</code></strong>.</li>
+</ul>
 <hr />
 <h3 id="27-les-listes-imbriquees">2.7 Les listes imbriquées</h3>
-<div class="highlight"><pre><span></span><code><span class="n">matrice</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">],</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">]]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">matrice</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">2</span><span class="p">])</span>  <span class="c1"># 6</span>
+<p>Une <strong>liste peut contenir d’autres listes</strong>. On parle alors de <strong>liste imbriquée</strong>, utile pour représenter des tableaux ou des matrices.</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Définition d&#39;une matrice 3x3</span>
+<span class="n">matrice</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">]</span>
+<span class="p">]</span>
+
+<span class="c1"># Accéder à un élément : ligne 1, colonne 2</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">matrice</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">2</span><span class="p">])</span>  <span class="c1"># affiche 6</span>
 </code></pre></div>
+<p>💡 <strong>Explication :</strong></p>
+<ul>
+<li><code>matrice[1]</code> sélectionne la <strong>deuxième ligne</strong> : <code>[4, 5, 6]</code>.</li>
+<li><code>matrice[1][2]</code> sélectionne le <strong>troisième élément</strong> de cette ligne : <code>6</code>.</li>
+</ul>
 <hr />
 <h2 id="3-les-tuples-tuple">3. Les tuples (<code>tuple</code>)</h2>
 <h3 id="definition_1">➤ Définition</h3>
-<p>Un <strong>tuple</strong> est une <strong>structure de données ordonnée mais non modifiable (immuable)</strong>.</p>
-<div class="highlight"><pre><span></span><code><span class="n">coordonnees</span> <span class="o">=</span> <span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
-<span class="n">jour</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;lundi&quot;</span><span class="p">,</span> <span class="s2">&quot;mardi&quot;</span><span class="p">,</span> <span class="s2">&quot;mercredi&quot;</span><span class="p">)</span>
-</code></pre></div>
-<h3 id="caracteristiques_1">➤ Caractéristiques</h3>
+<p>Un <strong>tuple</strong> est une <strong>liste spéciale</strong> :</p>
 <ul>
-<li><strong>Ordonné</strong> (indices comme les listes)</li>
-<li><strong>Immuable</strong> : on <strong>ne peut pas modifier, ajouter ou supprimer</strong> d’éléments</li>
-<li><strong>Hétérogène</strong></li>
+<li>les éléments sont <strong>ordonnés</strong> (comme dans une liste)</li>
+<li>mais <strong>on ne peut pas les modifier</strong> une fois créés (immuable).</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="n">coordonnees</span> <span class="o">=</span> <span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>                <span class="c1"># tuple de deux nombres</span>
+<span class="n">jours</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;lundi&quot;</span><span class="p">,</span> <span class="s2">&quot;mardi&quot;</span><span class="p">,</span> <span class="s2">&quot;mercredi&quot;</span><span class="p">)</span>  <span class="c1"># tuple de chaînes de caractères</span>
+</code></pre></div>
+<p>💡 <strong>Explication :</strong></p>
+<ul>
+<li>Les tuples ressemblent aux listes, mais <strong>ils sont figés</strong> : on ne peut pas changer leurs valeurs, ajouter ou supprimer un élément.</li>
 </ul>
 <hr />
-<h3 id="31-creation">3.1 Création</h3>
-<div class="highlight"><pre><span></span><code><span class="n">t</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
-<span class="n">t2</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span>       <span class="c1"># les parenthèses sont facultatives</span>
-<span class="n">t3</span> <span class="o">=</span> <span class="p">(</span><span class="mi">5</span><span class="p">,)</span>          <span class="c1"># un seul élément → la virgule est obligatoire</span>
+<h3 id="caracteristiques-principales">➤ Caractéristiques principales</h3>
+<ul>
+<li><strong>Ordonné</strong> : chaque élément a un <strong>indice</strong> (0, 1, 2, …).</li>
+<li><strong>Immuable</strong> : impossible de modifier, ajouter ou supprimer un élément.</li>
+<li><strong>Hétérogène</strong> : peut contenir différents types de données (nombres, chaînes, booléens…).</li>
+</ul>
+<hr />
+<h3 id="31-creation-dun-tuple">3.1 Création d’un tuple</h3>
+<div class="highlight"><pre><span></span><code><span class="n">t</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>       <span class="c1"># tuple avec parenthèses</span>
+<span class="n">t2</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span>        <span class="c1"># parenthèses facultatives</span>
+<span class="n">t3</span> <span class="o">=</span> <span class="p">(</span><span class="mi">5</span><span class="p">,)</span>           <span class="c1"># un seul élément → **la virgule est obligatoire**</span>
 </code></pre></div>
+<p>💡 <strong>Explication :</strong></p>
+<ul>
+<li>Les tuples peuvent être <strong>créés avec ou sans parenthèses</strong>, sauf pour un élément unique : <code>(5,)</code> est nécessaire pour que Python comprenne que c’est un tuple.</li>
+</ul>
 <hr />
 <h3 id="32-acces-aux-elements">3.2 Accès aux éléments</h3>
 <div class="highlight"><pre><span></span><code><span class="n">coord</span> <span class="o">=</span> <span class="p">(</span><span class="mf">12.4</span><span class="p">,</span> <span class="mf">5.7</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">coord</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>  <span class="c1"># 12.4</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">coord</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>  <span class="c1"># 5.7</span>
 </code></pre></div>
+<p>💡 <strong>Explication :</strong></p>
+<ul>
+<li>Les tuples sont <strong>ordonnés</strong> : chaque élément a un indice.</li>
+<li>L’accès se fait comme dans une liste, avec <code>[]</code>.</li>
+</ul>
 <hr />
 <h3 id="33-immuabilite">3.3 Immuabilité</h3>
 <div class="highlight"><pre><span></span><code><span class="n">t</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
 <span class="c1"># t[0] = 10  ❌ provoque une erreur : tuple immuable</span>
 </code></pre></div>
+<p>💡 <strong>Explication :</strong></p>
+<ul>
+<li>Les tuples sont <strong>immuables</strong>, donc on <strong>ne peut pas modifier leurs éléments</strong> après création.</li>
+</ul>
 <hr />
 <h3 id="34-deballage-unpacking">3.4 Déballage (unpacking)</h3>
-<p>Très utile en NSI pour affecter plusieurs variables à la fois :</p>
+<p>Le <strong>déballage</strong> permet d’affecter facilement plusieurs variables à partir d’un tuple :</p>
 <div class="highlight"><pre><span></span><code><span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>  <span class="c1"># 3</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>  <span class="c1"># 4</span>
 </code></pre></div>
-<p>Ou encore :</p>
+<p>On peut aussi l’utiliser pour des tuples plus grands :</p>
 <div class="highlight"><pre><span></span><code><span class="n">nom</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="n">ville</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;Alice&quot;</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="s2">&quot;Paris&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">nom</span><span class="p">)</span>   <span class="c1"># Alice</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">age</span><span class="p">)</span>   <span class="c1"># 17</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">ville</span><span class="p">)</span> <span class="c1"># Paris</span>
 </code></pre></div>
+<p>💡 <strong>Astuce visuelle :</strong></p>
+<ul>
+<li>Pensez au tuple comme un <strong>ensemble de cases alignées</strong>.</li>
+<li>Le déballage <strong>copie chaque valeur dans la variable correspondante</strong>.</li>
+</ul>
 <hr />
 <h2 id="4-comparaison-liste-tuple">4. Comparaison liste / tuple</h2>
 <table>
