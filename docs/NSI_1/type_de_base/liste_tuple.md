@@ -112,11 +112,7 @@ fruits.pop()              # retire le dernier
     ["mangue", "cerise"]
     Indices :   0       1
     ```
-
----
-
-Voici une version réécrite et plus pédagogique pour des élèves de première :
-
+    
 ---
 
 ### 2.4 Parcours d’une liste

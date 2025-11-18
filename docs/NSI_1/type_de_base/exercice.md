@@ -1,4 +1,4 @@
-# 🧠 Série d’exercices : Listes et tuples en Python (niveau NSI)
+# Série d’exercices : Listes et tuples en Python
 
 ---
 
