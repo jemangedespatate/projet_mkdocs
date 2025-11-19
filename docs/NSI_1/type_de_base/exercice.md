@@ -227,3 +227,80 @@ max_matrice(m)  →  9
 ```
 
 👉 *Objectif : parcours imbriqué et compréhension de listes 2D.*
+
+
+## **Niveau 5 — challenge**
+
+# 🔥 **Exercice 1 – Rotation de liste**
+
+Écrire une fonction `rotation(liste, n)` qui **décale** la liste vers la droite de `n` positions.
+
+Exemple :
+
+```python
+>>> rotation([1, 2, 3, 4, 5], 2)
+[4, 5, 1, 2, 3]
+```
+
+⚠️ Contraintes :
+
+* Ne pas utiliser `append()` ni `pop()` dans leur version avec indice négatif.
+* L’algorithme doit fonctionner pour n'importe quelle taille de liste.
+
+---
+
+# 🔥 **Exercice 2 – Aplatir une liste imbriquée**
+
+Écrire une fonction `aplatir(liste)` qui transforme une liste de listes en une **liste simple**.
+
+Exemple :
+
+```python
+>>> aplatir([[1,2], [3,4], [5,6]])
+[1, 2, 3, 4, 5, 6]
+```
+
+⚠️ Version difficile :
+La liste peut contenir des sous-listes **de profondeur inconnue**, par exemple :
+
+```python
+[[1, [2, 3]], [4, [5, [6]]]]
+```
+
+---
+
+# 🔥 **Exercice 3 – Matrice : diagonale principale**
+
+On vous donne une **matrice carrée** sous forme de liste de listes.
+Écrire une fonction qui retourne la **somme de la diagonale principale**.
+
+Exemple :
+
+```python
+>>> diag([[1,2,3],
+          [4,5,6],
+          [7,8,9]])
+15
+```
+
+⚠️ Extension possible :
+
+* Vérifier que la matrice est bien carrée avant de calculer la somme (sinon afficher un message d’erreur).
+
+---
+
+# 🔥 **Exercice 4 – Détection de motif**
+
+Écrire une fonction `contient_motif(liste, motif)` qui vérifie si **le motif apparaît tel quel dans la liste**.
+
+Exemple :
+
+```python
+>>> contient_motif([1,2,3,4,5,3,4], [3,4])
+True
+>>> contient_motif([1,2,3,4], [4,3])
+False
+```
+
+⚠️ Ce n’est pas juste "des mêmes éléments" : l’ordre compte.
+(Comme la recherche d’un sous-mot dans une chaîne.)
