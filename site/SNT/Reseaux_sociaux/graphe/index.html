@@ -2195,6 +2195,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#graphe-connexe" class="md-nav__link">
+    <span class="md-ellipsis">
+      Graphe connexe
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#petit-monde-de-milgram" class="md-nav__link">
     <span class="md-ellipsis">
       Petit monde de Milgram
@@ -2535,6 +2544,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#graphe-connexe" class="md-nav__link">
+    <span class="md-ellipsis">
+      Graphe connexe
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#petit-monde-de-milgram" class="md-nav__link">
     <span class="md-ellipsis">
       Petit monde de Milgram
@@ -2650,6 +2668,27 @@
 <p class="admonition-title">Exemple:</p>
 <p><img alt="degrés" src="../../../assets/seconde/rsx_sociaux/Graphe_centre.png" /> </p>
 <p>Les sommets bleus représentent les différents centres du graphe.</p>
+</div>
+<h2 id="graphe-connexe"><u>Graphe connexe</u></h2>
+<div class="admonition note">
+<p class="admonition-title">Graphe connexe</p>
+<p>Un <strong>graphe connexe</strong> est un graphe dans lequel <strong>tous les sommets sont accessibles les uns depuis les autres</strong>.</p>
+<p>Autrement dit, pour <strong>n’importe quelle paire de sommets</strong>, il existe <strong>au moins un chemin</strong> qui relie ces deux sommets.</p>
+<p>Dans un réseau social, un graphe connexe signifie que <strong>chaque utilisateur peut atteindre tous les autres</strong>, directement ou indirectement, via une chaîne de relations.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Composante connexe</p>
+<p>Une <strong>composante connexe</strong> est un <strong>sous-graphe</strong> dans lequel tous les sommets sont reliés entre eux, mais <strong>aucun sommet de cette composante n’est relié à un sommet extérieur</strong>.</p>
+<p>Un graphe peut donc être composé :
+- d’une seule composante connexe → il est <strong>connexe</strong><br />
+- de plusieurs composantes connexes → il est <strong>non connexe</strong></p>
+<p>Dans un réseau social, chaque composante connexe représente un <strong>groupe d’utilisateurs isolé</strong> du reste du réseau (aucune relation entre les groupes).</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Exemple : graphe non connexe</p>
+<p><img alt="composantes" src="../../../assets/seconde/rsx_sociaux/Graphe_connexe.png" /></p>
+<p>Dans cet exemple, le graphe comporte <strong>deux composantes connexes</strong>.<br />
+Chaque groupe est totalement connexe en interne, mais aucun lien n’existe entre les deux groupes.</p>
 </div>
 <h2 id="petit-monde-de-milgram"><u>Petit monde de Milgram</u></h2>
 <p>La théorie du « petit monde » stipule que tout individu dans le monde peut être relié à n’importe quel autre individu par une chaîne de relations sociales ne dépassant pas six relations.</p>

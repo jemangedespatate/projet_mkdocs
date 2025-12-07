@@ -125,6 +125,36 @@ Voyons ensemble les graphes, dans le cadre des réseaux sociaux.
 
     Les sommets bleus représentent les différents centres du graphe.
 
+## <u>Graphe connexe</u>
+
+!!! note "Graphe connexe"
+
+    Un **graphe connexe** est un graphe dans lequel **tous les sommets sont accessibles les uns depuis les autres**.
+
+    Autrement dit, pour **n’importe quelle paire de sommets**, il existe **au moins un chemin** qui relie ces deux sommets.
+
+    Dans un réseau social, un graphe connexe signifie que **chaque utilisateur peut atteindre tous les autres**, directement ou indirectement, via une chaîne de relations.
+
+!!! note "Composante connexe"
+
+    Une **composante connexe** est un **sous-graphe** dans lequel tous les sommets sont reliés entre eux, mais **aucun sommet de cette composante n’est relié à un sommet extérieur**.
+
+    Un graphe peut donc être composé :
+    - d’une seule composante connexe → il est **connexe**  
+    - de plusieurs composantes connexes → il est **non connexe**
+
+    Dans un réseau social, chaque composante connexe représente un **groupe d’utilisateurs isolé** du reste du réseau (aucune relation entre les groupes).
+
+
+!!! example "Exemple : graphe non connexe"
+
+    ![composantes](../../assets/seconde/rsx_sociaux/Graphe_connexe.png)
+
+    Dans cet exemple, le graphe comporte **deux composantes connexes**.  
+    Chaque groupe est totalement connexe en interne, mais aucun lien n’existe entre les deux groupes.
+
+
+
 ## <u>Petit monde de Milgram</u>
 
 La théorie du « petit monde » stipule que tout individu dans le monde peut être relié à n’importe quel autre individu par une chaîne de relations sociales ne dépassant pas six relations.
@@ -136,3 +166,4 @@ La théorie du « petit monde » stipule que tout individu dans le monde peut ê
     Milgram a demandé à des participants de différentes régions des États-Unis d’envoyer une lettre à une personne cible en la passant uniquement à des connaissances personnelles.
 
     Milgram a constaté que la lettre atteignait généralement la cible en six étapes ou moins, d’où l’idée des « six degrés de séparation ». Cela a soutenu la théorie du « petit monde » et a montré que nous sommes tous beaucoup plus connectés que nous ne le pensons.
+
