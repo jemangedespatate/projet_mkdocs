@@ -123,3 +123,57 @@ Questions :
 7. Si non, combien de composantes connexes contient-il désormais ?
 
 8. Quel lien serait le plus stratégique à ajouter pour renforcer la connectivité du réseau ?
+
+# 🟥 **Exercice avancé : Analyse d’un réseau de capteurs**
+
+Une entreprise utilise un ensemble de **capteurs intelligents** placés dans un bâtiment.
+Chaque capteur communique avec ceux qui sont suffisamment proches.
+On modélise le système sous forme de graphe.
+
+Les communications connues sont :
+
+* C1 communique avec C2, C3 et C4
+* C2 communique avec C3, C5 et C6
+* C3 communique avec C6, C7
+* C4 communique avec C7 et C8
+* C5 communique avec C6 et C9
+* C6 communique avec C7, C9 et C10
+* C7 communique avec C8, C10 et C11
+* C8 communique avec C11
+* C9 communique avec C10
+* C10 communique avec C11
+* C11 ne communique que avec C7, C8 et C10
+
+---
+
+## **Questions**
+
+1. **Représentez le réseau sous forme de graphe** (attention : il est étendu).
+
+2. **Déterminez le degré de chaque capteur.**
+
+3. **Calculez les distances** suivantes :   
+
+    * d(C1, C11)
+    * d(C4, C9)
+    * d(C2, C8)
+    * d(C5, C7)
+
+4. **Calculez l’excentricité** de chaque capteur.
+
+5. **Déterminez :**
+
+    * Le **rayon** du graphe
+    * Le **diamètre** du graphe
+    * Le(s) **centre(s)** du graphe
+
+6. L’entreprise craint une coupure.   
+   On supprime le lien entre **C6 et C7**.
+
+    * Le graphe reste-t-il connexe ?
+    * Si non, combien de **composantes connexes** apparaissent ?
+    * Quels capteurs se retrouvent isolés dans chaque composante ?
+
+7. Proposez **un lien minimal** à ajouter pour garantir que le réseau devienne à nouveau connexe.
+
+8. Enfin, proposez **un lien stratégique** (pas forcément minimal) qui améliorerait significativement la robustesse du réseau (justifiez).

@@ -2728,6 +2728,69 @@
 <p>Quel lien serait le plus stratégique à ajouter pour renforcer la connectivité du réseau ?</p>
 </li>
 </ol>
+<h1 id="exercice-avance-analyse-dun-reseau-de-capteurs">🟥 <strong>Exercice avancé : Analyse d’un réseau de capteurs</strong></h1>
+<p>Une entreprise utilise un ensemble de <strong>capteurs intelligents</strong> placés dans un bâtiment.
+Chaque capteur communique avec ceux qui sont suffisamment proches.
+On modélise le système sous forme de graphe.</p>
+<p>Les communications connues sont :</p>
+<ul>
+<li>C1 communique avec C2, C3 et C4</li>
+<li>C2 communique avec C3, C5 et C6</li>
+<li>C3 communique avec C6, C7</li>
+<li>C4 communique avec C7 et C8</li>
+<li>C5 communique avec C6 et C9</li>
+<li>C6 communique avec C7, C9 et C10</li>
+<li>C7 communique avec C8, C10 et C11</li>
+<li>C8 communique avec C11</li>
+<li>C9 communique avec C10</li>
+<li>C10 communique avec C11</li>
+<li>C11 ne communique que avec C7, C8 et C10</li>
+</ul>
+<hr />
+<h2 id="questions"><strong>Questions</strong></h2>
+<ol>
+<li>
+<p><strong>Représentez le réseau sous forme de graphe</strong> (attention : il est étendu).</p>
+</li>
+<li>
+<p><strong>Déterminez le degré de chaque capteur.</strong></p>
+</li>
+<li>
+<p><strong>Calculez les distances</strong> suivantes :   </p>
+<ul>
+<li>d(C1, C11)</li>
+<li>d(C4, C9)</li>
+<li>d(C2, C8)</li>
+<li>d(C5, C7)</li>
+</ul>
+</li>
+<li>
+<p><strong>Calculez l’excentricité</strong> de chaque capteur.</p>
+</li>
+<li>
+<p><strong>Déterminez :</strong></p>
+<ul>
+<li>Le <strong>rayon</strong> du graphe</li>
+<li>Le <strong>diamètre</strong> du graphe</li>
+<li>Le(s) <strong>centre(s)</strong> du graphe</li>
+</ul>
+</li>
+<li>
+<p>L’entreprise craint une coupure. <br />
+   On supprime le lien entre <strong>C6 et C7</strong>.</p>
+<ul>
+<li>Le graphe reste-t-il connexe ?</li>
+<li>Si non, combien de <strong>composantes connexes</strong> apparaissent ?</li>
+<li>Quels capteurs se retrouvent isolés dans chaque composante ?</li>
+</ul>
+</li>
+<li>
+<p>Proposez <strong>un lien minimal</strong> à ajouter pour garantir que le réseau devienne à nouveau connexe.</p>
+</li>
+<li>
+<p>Enfin, proposez <strong>un lien stratégique</strong> (pas forcément minimal) qui améliorerait significativement la robustesse du réseau (justifiez).</p>
+</li>
+</ol>
 
 
 
