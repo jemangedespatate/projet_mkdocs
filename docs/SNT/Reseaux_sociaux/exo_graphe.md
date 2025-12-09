@@ -45,6 +45,7 @@ Répondez aux questions suivante:
 On modélise une portion de métro :
 
 Stations : 
+
 - Gare, 
 - Place, 
 - Musée, 
@@ -52,6 +53,7 @@ Stations :
 - Parc
 
 Correspondances :
+
 - Gare ↔ Place
 - Place ↔ Musée
 - Musée ↔ Parc
@@ -62,6 +64,8 @@ Représenter ce réseau sous forme de graphe.
 - Quel est le plus court trajet entre Gare et Parc ?
 
 - Quelle station a le plus grand degré ?
+
+- quelle station est le centre du graphe ?
 
 ## <u>exercice 4</u>
 
@@ -78,7 +82,7 @@ On considère un ensemble fictif de personnes et leurs relations d’amitié ci-
 
 Répondez aux questions suivante:
 
-1. Représentez ces relations sous forme de graphe (simple, non orienté).
+1. Représentez ces relations sous forme de graphe.
 
 2. Déterminez la distance sociale entre :
 

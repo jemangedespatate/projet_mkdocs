@@ -140,6 +140,7 @@ Voyons ensemble les graphes, dans le cadre des réseaux sociaux.
     Une **composante connexe** est un **sous-graphe** dans lequel tous les sommets sont reliés entre eux, mais **aucun sommet de cette composante n’est relié à un sommet extérieur**.
 
     Un graphe peut donc être composé :
+    
     - d’une seule composante connexe → il est **connexe**  
     - de plusieurs composantes connexes → il est **non connexe**
 
