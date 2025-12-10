@@ -135,3 +135,24 @@ python main.py
 Si tout fonctionne, vous verrez votre serpent bouger et la liste se mettre à jour en temps réel sur le côté de l'écran.
 
 👉 **Question :** Observez la liste affichée à droite pendant que vous jouez. Que se passe-t-il dans la liste quand vous mangez une pomme ?
+
+## <u>7. Bonus : Interface Console / Texte 📟</u>
+
+Pour bien comprendre que **la logique du jeu (les listes)** est indépendante de **l'interface graphique**, nous allons créer un affichage simple dans la console.
+
+Ouvrez le fichier `console.py`. Vous y trouverez une structure de jeu alternative qui utilise les **mêmes fonctions** de `logique.py` !
+
+👉 **Votre mission :**
+
+1.  Complétez la fonction `afficher_grille(serpent, pomme, largeur, hauteur)` pour dessiner le jeu avec des caractères :
+    *   `O` pour la tête
+    *   `o` pour le corps
+    *   `X` pour la pomme
+    *   `.` pour le vide
+2.  Complétez `demander_direction()` pour gérer les touches `z, q, s, d`.
+3.  (Optionnel) Intégrez la gestion de la collision et de la pomme (copiez la logique du `main.py`).
+
+Lancez le jeu avec :
+```bash
+python console.py
+```

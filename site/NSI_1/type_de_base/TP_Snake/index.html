@@ -887,6 +887,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#7-bonus-interface-console-texte" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Bonus : Interface Console / Texte 📟
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2636,6 +2645,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#7-bonus-interface-console-texte" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Bonus : Interface Console / Texte 📟
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2746,6 +2764,24 @@ Quelle méthode de liste permet d'ajouter un élément à une position précise 
 </code></pre></div>
 <p>Si tout fonctionne, vous verrez votre serpent bouger et la liste se mettre à jour en temps réel sur le côté de l'écran.</p>
 <p>👉 <strong>Question :</strong> Observez la liste affichée à droite pendant que vous jouez. Que se passe-t-il dans la liste quand vous mangez une pomme ?</p>
+<h2 id="7-bonus-interface-console-texte"><u>7. Bonus : Interface Console / Texte 📟</u></h2>
+<p>Pour bien comprendre que <strong>la logique du jeu (les listes)</strong> est indépendante de <strong>l'interface graphique</strong>, nous allons créer un affichage simple dans la console.</p>
+<p>Ouvrez le fichier <code>console.py</code>. Vous y trouverez une structure de jeu alternative qui utilise les <strong>mêmes fonctions</strong> de <code>logique.py</code> !</p>
+<p>👉 <strong>Votre mission :</strong></p>
+<ol>
+<li>Complétez la fonction <code>afficher_grille(serpent, pomme, largeur, hauteur)</code> pour dessiner le jeu avec des caractères :<ul>
+<li><code>O</code> pour la tête</li>
+<li><code>o</code> pour le corps</li>
+<li><code>X</code> pour la pomme</li>
+<li><code>.</code> pour le vide</li>
+</ul>
+</li>
+<li>Complétez <code>demander_direction()</code> pour gérer les touches <code>z, q, s, d</code>.</li>
+<li>(Optionnel) Intégrez la gestion de la collision et de la pomme (copiez la logique du <code>main.py</code>).</li>
+</ol>
+<p>Lancez le jeu avec :
+<div class="highlight"><pre><span></span><code>python<span class="w"> </span>console.py
+</code></pre></div></p>
 
 
 
