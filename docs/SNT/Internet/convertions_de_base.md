@@ -1,19 +1,85 @@
-## base 
+# <u>Le système binaire</u>
 
-passage d'une base a une autre
+## <u>🤔 Introduction</u>
 
-pour passer de la base 10 a la base 16 il faut faire des divisions successive par 16 du nombre jusqu'a obtenir 0.
+Les ordinateurs ne comprennent pas les nombres comme nous les utilisons au quotidien. Ils fonctionnent uniquement avec deux valeurs : **0** et **1**. Pour cette raison, ils utilisent le **système binaire**, aussi appelé **base 2**.
 
-une fois c'est divisions effectuet on garde seulement le reste de chaque division
+Dans ce cours, nous allons voir :
 
-![chronologie](../../assets/seconde/internet/div_16.png)
+* comment **passer d’un nombre décimal à un nombre binaire** ;
+* comment **passer d’un nombre binaire à un nombre décimal**.
 
-pour passer de la base 16 a la base 10 il faut poser le calcule suivant
+---
 
-$$16^n*n_i + 16^{n-1} * n_{n_i-1} + ... + 16^1*n_1 + 16^0*n_0$$
+## <u>🔢 Les bases de numération</u>
 
-exemple:
+* Le **système décimal** (base 10) utilise 10 chiffres : de 0 à 9.
+* Le **système binaire** (base 2) utilise seulement 2 chiffres : 0 et 1.
 
-$$A3F$$
+Chaque position d’un chiffre dépend de la base utilisée.
 
-$$16^2*10 + 16^1 * 3 + 16^0*15$$
+---
+
+## <u>➡️ Passage d’un nombre décimal à un nombre binaire</u>
+
+Pour convertir un nombre décimal en binaire, on utilise la méthode des **divisions successives par 2**.
+
+### <u>Méthode</u>
+
+1. On divise le nombre par 2.
+2. On note le **reste** (0 ou 1).
+3. On recommence avec le **quotient** obtenu.
+4. On s’arrête lorsque le quotient vaut 0.
+5. Le nombre binaire est obtenu en **lisant les restes de bas en haut**.
+
+---
+
+### <u>Exemple : convertir 21 en binaire</u>
+
+
+$$21 = 10 \times 2 + 1 \$$
+$$10 = 5 \times 2 + 0 \$$
+$$5 = 2 \times 2 + 1 \$$
+$$2 = 1 \times 2 + 0 \$$
+$$1 = 0 \times 2 + 1$$
+
+
+On lit les restes de bas en haut :
+
+$$
+21_{10} = 10101_2
+$$
+
+---
+
+## <u>⬅️ Passage d’un nombre binaire à un nombre décimal</u>
+
+Pour convertir un nombre binaire en décimal, on utilise les **puissances de 2**.
+
+Chaque chiffre du nombre binaire est multiplié par une puissance de 2, en commençant par la droite.
+
+---
+
+### <u>Méthode</u>
+
+1. On numérote les positions à partir de la droite, en commençant par 0.
+2. On multiplie chaque bit par $$2^{\text{position}}$$
+3. On additionne tous les résultats.
+
+---
+
+### <u>Exemple : convertir 110 en décimal</u>
+
+$$
+110_2 = 1 \times 2^2 + 1 \times 2^1 + 0 \times 2^0
+$$
+
+$$
+= 4 + 2 + 0 = 6
+$$
+
+Donc :
+
+$$
+110_2 = 6_{10}
+$$

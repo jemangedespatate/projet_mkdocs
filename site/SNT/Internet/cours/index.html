@@ -14,7 +14,7 @@
         <link rel="prev" href="../convertions_de_base/">
       
       
-        <link rel="next" href="../exo_comp/">
+        <link rel="next" href="../sommaire/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -1450,7 +1450,7 @@
         
   
   <span class="md-ellipsis">
-    Convertions de base
+    Le système binaire
   </span>
   
 
@@ -1561,7 +1561,7 @@
           <li class="md-nav__item">
   <a href="#premier-niveau-ladresse-mac" class="md-nav__link">
     <span class="md-ellipsis">
-      Premier niveau : l'adresse MAC
+      Premier niveau : l’adresse MAC
     </span>
   </a>
   
@@ -1570,7 +1570,7 @@
           <li class="md-nav__item">
   <a href="#second-niveau-ladresse-ip" class="md-nav__link">
     <span class="md-ellipsis">
-      Second niveau : l'adresse IP
+      Second niveau : l’adresse IP
     </span>
   </a>
   
@@ -1606,74 +1606,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../exo_comp/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    exercice complementaire
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../sommaire/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Sommaire
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../travaux_diriger/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    TD Internet
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../travaux_pratique/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    travaux pratique
+    Internet
   </span>
   
 
@@ -2619,7 +2556,7 @@
           <li class="md-nav__item">
   <a href="#premier-niveau-ladresse-mac" class="md-nav__link">
     <span class="md-ellipsis">
-      Premier niveau : l'adresse MAC
+      Premier niveau : l’adresse MAC
     </span>
   </a>
   
@@ -2628,7 +2565,7 @@
           <li class="md-nav__item">
   <a href="#second-niveau-ladresse-ip" class="md-nav__link">
     <span class="md-ellipsis">
-      Second niveau : l'adresse IP
+      Second niveau : l’adresse IP
     </span>
   </a>
   
@@ -2666,45 +2603,24 @@
 <h1 id="internet"><u>Internet</u></h1>
 <h2 id="introduction"><u>🤔 Introduction</u></h2>
 <p>Internet fait aujourd’hui partie de notre quotidien : on l’utilise pour envoyer des messages, regarder des vidéos, jouer en ligne, faire des recherches… Mais comment ça fonctionne vraiment ?</p>
-<p>Voici quelques questions que vous vous êtes peut-être déjà posées :</p>
-<ul>
-<li>
-<p>Comment mon téléphone arrive-t-il à parler avec un autre à l’autre bout du monde ?</p>
-</li>
-<li>
-<p>Qu’est-ce qu’il se passe quand je tape une adresse dans mon navigateur ?</p>
-</li>
-<li>
-<p>Comment les machines savent à qui envoyer les données ?</p>
-</li>
-<li>
-<p>Pourquoi a-t-on parfois besoin d’une box pour se connecter ?</p>
-</li>
-<li>
-<p>C’est quoi une adresse IP ou une adresse MAC ?</p>
-</li>
-<li>
-<p>Qu’est-ce qu’un réseau exactement ?</p>
-</li>
-</ul>
-<p>Dans cette leçon, nous allons répondre à toutes ces questions en découvrant comment les machines communiquent entre elles, quels sont les composants d’un réseau, et comment les informations circulent sur Internet.</p>
+<p>Dans cette leçon, nous allons répondre à cette <strong>question</strong> en découvrant comment les machines communiquent entre elles, quels sont les composants d’un réseau et comment les informations circulent sur Internet.</p>
 <h2 id="point-historique"><u>⌛ Point historique</u></h2>
 <p><img alt="chronologie" src="../../../assets/seconde/internet/chronologie.png" /></p>
 <h2 id="definitions"><u>Définitions</u></h2>
 <p><span style="color: #FF0000">Définition : réseau</span></p>
-<p><strong>Ensemble de machines reliées entre elles de telle sorte qu'elles puissent communiquer ensemble.</strong></p>
-<div class="admonition note">
-<p class="admonition-title">types de réseaux</p>
+<p><strong>Ensemble de machines reliées entre elles de telle sorte qu’elles puissent communiquer entre elles.</strong></p>
+<details class="note">
+<summary>Types de réseaux</summary>
 <p>On distingue plusieurs types de réseaux, dont le réseau local.</p>
 <p><span style="color: #FF0000">Définition : réseau local</span></p>
-<p><strong>Un réseau où les machines peuvent communiquer directement entre elles sans passer par d'autres réseaux.</strong></p>
+<p><strong>Un réseau où les machines peuvent communiquer directement entre elles sans passer par d’autres réseaux.</strong></p>
 <p><span style="color: #26B260">Exemple : un réseau domestique</span></p>
 <p><img alt="réseau local" src="../../../assets/seconde/internet/rsx_local.png" /></p>
-</div>
+</details>
 <p><span style="color: #FF0000">Définition : Internet</span></p>
-<p><strong>Un immense réseau qui relie tous les petits réseaux du monde pour que les machines puissent s’envoyer des messages, partager des fichiers, ou afficher des sites web.</strong></p>
+<p><strong>Internet est un réseau de réseaux.</strong></p>
 <h2 id="composants-dun-reseau"><u>🧩 Composants d’un réseau</u></h2>
-<p>Voici un tableau récapitulatif des éléments que l'on peut croiser dans un réseau :</p>
+<p>Voici un tableau récapitulatif des éléments que l’on peut croiser dans un réseau :</p>
 <table>
 <thead>
 <tr>
@@ -2717,38 +2633,37 @@
 <tr>
 <td>Machines</td>
 <td>Élément qui cherche à communiquer, envoyer ou recevoir des données</td>
-<td>Ordinateur, tablettes, consoles, smartphones</td>
+<td>Ordinateurs, tablettes, consoles, smartphones</td>
 </tr>
 <tr>
 <td>Switch</td>
-<td>Élément qui relie de manière locale des machines</td>
+<td>Élément qui relie localement des machines</td>
 <td>Box Internet, switch RJ45</td>
 </tr>
 <tr>
 <td>Routeur</td>
-<td>Élément qui permet de relier un réseau local à Internet ou à d'autres réseaux</td>
+<td>Élément qui permet de relier un réseau local à Internet ou à d’autres réseaux</td>
 <td>Box Internet, routeur spécifique</td>
 </tr>
 <tr>
 <td>Câbles, ondes</td>
 <td>Élément qui permet de relier les machines au switch ou au routeur</td>
-<td>Câble Ethernet, fibre optique, Wi-Fi</td>
+<td>Câble Ethernet, fibre optique, Wi‑Fi</td>
 </tr>
 </tbody>
 </table>
 <h2 id="identifiants-des-machines-sur-un-reseau"><u>🆔 Identifiants des machines sur un réseau</u></h2>
-<h3 id="premier-niveau-ladresse-mac"><u>Premier niveau : l'adresse MAC</u></h3>
+<h3 id="premier-niveau-ladresse-mac"><u>Premier niveau : l’adresse MAC</u></h3>
 <p>Chaque machine dispose d’une ou plusieurs <strong>cartes réseau</strong>. Ces cartes permettent de communiquer localement ou globalement.</p>
 <p>Chaque carte possède un identifiant unique appelé <strong>adresse MAC</strong> (Media Access Control).</p>
-<p>Une adresse MAC est composée de 6 blocs de 2 caractères hexadécimaux.</p>
-<p>&nbsp;
-&nbsp;</p>
+<p>Une adresse MAC est composée de 6 blocs de 2 caractères hexadécimaux.
+ </p>
 <p><span style="color: #26B260">Exemple :</span>
 <script type="math/tex; mode=display">a1:b2:c3:d4:e5:f6</script>
 </p>
-<div class="admonition note">
-<p class="admonition-title">La base hexadécimale</p>
-<p>La base hexadécimale correspond à une représentation en 16 caractères de chiffres ou de lettres des nombres. Les caractères vont de 0 à F (F représentant 15 en base décimale).</p>
+<details class="note">
+<summary>La base hexadécimale</summary>
+<p>La base hexadécimale correspond à une représentation des nombres utilisant 16 symboles. Les caractères vont de 0 à F (F représentant 15 en base décimale).</p>
 <table>
 <thead>
 <tr>
@@ -2779,18 +2694,16 @@
 </tr>
 </tbody>
 </table>
-</div>
-<h3 id="second-niveau-ladresse-ip"><u>Second niveau : l'adresse IP</u></h3>
+</details>
+<h3 id="second-niveau-ladresse-ip"><u>Second niveau : l’adresse IP</u></h3>
 <p>L’adresse MAC permet d’identifier précisément une machine, mais ne donne aucune information sur son emplacement dans un réseau. Il existe donc une seconde adresse attribuée à chaque machine : <strong>l’adresse IP</strong>.</p>
-<p>L'adresse IP est attribuée aux machines présentes sur un réseau afin qu’elles puissent être identifiées de manière plus globale.</p>
+<p>L’adresse IP est attribuée aux machines présentes sur un réseau afin qu’elles puissent être identifiées de manière plus globale.</p>
 <p>Elle est composée de deux parties :</p>
 <ul>
 <li>La <strong>partie réseau</strong> : elle permet d’identifier un réseau sur Internet.</li>
 <li>La <strong>partie machine</strong> : elle permet d’identifier une machine sur ce réseau.</li>
 </ul>
-<p>Une adresse IP est composée de 4 nombres allant de 0 à 255 sous forme binaire.</p>
-<p>&nbsp;
-&nbsp;</p>
+<p>Une adresse IP (IPv4) est composée de 4 nombres allant de 0 à 255, représentant chacun 8 bits, et peut être écrite sous forme décimale ou binaire.</p>
 <p><span style="color: #26B260">Exemple :</span></p>
 <p>Sous forme décimale :
 <script type="math/tex; mode=display">127.0.0.1</script>
@@ -2798,9 +2711,9 @@
 <p>Sous forme binaire :
 <script type="math/tex; mode=display">01111111.00000000.00000000.00000001</script>
 </p>
-<div class="admonition note">
-<p class="admonition-title">La base hexadécimale</p>
-<p>La base hexadécimale correspond à une représentation en 2 caractères de chiffres des nombres. Les caractères vont de 0 à 1.</p>
+<details class="note">
+<summary>La base binaire</summary>
+<p>La base binaire correspond à une représentation des nombres utilisant uniquement deux symboles : 0 et 1.</p>
 <table>
 <thead>
 <tr>
@@ -2831,49 +2744,40 @@
 </tr>
 </tbody>
 </table>
-</div>
-<p>&nbsp;
-&nbsp;</p>
-<p>Afin de délimiter la partie réseau de la partie machine, on utilise un <strong>masque de sous-réseau</strong>.</p>
-<p>&nbsp;
-&nbsp;</p>
+</details>
+<p>Afin de délimiter la partie réseau de la partie machine, on utilise un <strong>masque de sous‑réseau</strong>.</p>
 <p><span style="color: #26B260">Exemple :</span></p>
-<p>On dispose de l'adresse <code>128.40.94.3</code> avec un masque de 16 bits(soit les 16 premier bit de l'adresse coresponde à la partie réseau et le reste des bits à la partie machine)</p>
+<p>On dispose de l’adresse <code>128.40.94.3</code> avec un masque de 16 bits (c’est‑à‑dire que les 16 premiers bits de l’adresse correspondent à la partie réseau et le reste à la partie machine).</p>
 <p>Cela correspond en binaire à :
 <script type="math/tex; mode=display">128.40.94.3_{10} = 10000000.00101000.01011110.00000100_2</script>
 </p>
-<p>Le masque de sous-réseau etant de 16 bits il correspond donc à:
-<script type="math/tex; mode=display">11111111.11111111.00000000.00000000_2</script>
+<p>Le masque de sous‑réseau étant de 16 bits, il faut donc découper l’adresse IP au 16ᵉ bit.</p>
+<p>Si maintenant on applique le masque de sous‑réseau à l’adresse IP :
+<script type="math/tex; mode=display">\underline{10000000.00101000}.01011110.00000100_2</script>
+<script type="math/tex; mode=display">= \underline{10000000.00101000}.00000000.00000000_2</script>
 </p>
-<p>si maintenant on apllique le masque de sous resaux sur l'adresse ip:
-<script type="math/tex; mode=display"> \ \ \ \  \underline{10000000.00101000}.01011110.00000100_2 </script>
-<script type="math/tex; mode=display"> \& \  \underline{11111111.11111111}.00000000.00000000_2 </script>
-<script type="math/tex; mode=display"> = \underline{10000000.00101000}.00000000.00000000_2 </script>
-</p>
-<p>donc la partie resaux de cette adresse est <code>128.40.0.0</code></p>
-<p>&nbsp;
-&nbsp;</p>
+<p>Donc la partie réseau de cette adresse est <code>128.40.0.0</code>.</p>
 <h2 id="echange-dinformations"><u>🔁 Échange d’informations</u></h2>
-<p>Maintenant que nous savons comment les machines s’identifient entre elles, intéressons-nous à la manière dont elles échangent des informations.</p>
-<p><span style="color: #FF0000">Définition : protocole</span>
-Un <strong>protocole informatique</strong> est un ensemble de règles qui régissent les échanges entre machines.</p>
-<p><span style="color: #FF0000">Définition : protocole TCP/IP</span>
-Le <strong>protocole TCP/IP</strong> permet la communication et l’échange de données sur Internet entre une machine émettrice et une machine réceptrice.</p>
-<p>Ce protocole est composé de deux sous-protocoles :</p>
+<p>Maintenant que nous savons comment les machines s’identifient entre elles, intéressons‑nous à la manière dont elles échangent des informations.</p>
+<p><span style="color: #FF0000">Définition : protocole</span></p>
+<p>Un <strong>protocole informatique</strong> est un ensemble de règles qui régissent les échanges entre machines.</p>
+<p><span style="color: #FF0000">Définition : protocole TCP/IP</span></p>
+<p>Le <strong>protocole TCP/IP</strong> permet la communication et l’échange de données sur Internet entre une machine émettrice et une machine réceptrice.</p>
+<p>Ce protocole est composé de deux sous‑protocoles :</p>
 <ul>
-<li>Le <strong>protocole TCP</strong> permet le contrôle et la sécurité de l’envoi des paquets. Il permet de s’assurer qu’un paquet est bien arrivé à destination à l’aide d’accusés de réception.</li>
-<li>Le <strong>protocole IP</strong> permet d’identifier quelles machines sur quels réseaux communiquent, à l’aide de leur adresse IP.</li>
+<li>Le <strong>protocole TCP</strong> permet le contrôle et la fiabilité de l’envoi des paquets. Il permet de s’assurer qu’un paquet est bien arrivé à destination à l’aide d’accusés de réception.</li>
+<li>Le <strong>protocole IP</strong> permet d’identifier quelles machines, sur quels réseaux, communiquent entre elles à l’aide de leur adresse IP.</li>
 </ul>
-<div class="admonition note">
-<p class="admonition-title">fonctionnement protocole</p>
+<details class="note">
+<summary>Fonctionnement du protocole</summary>
 <p>Le protocole TCP/IP fonctionne en plusieurs étapes :</p>
 <ol>
-<li>Les données à échanger sont découpées en plusieurs <strong>paquets</strong> (séquences de 0 et 1) de taille définie et numérotés.</li>
-<li>Les paquets transitent du point de départ à la machine de destination.</li>
+<li>Les données à échanger sont découpées en plusieurs <strong>paquets</strong> (séquences de 0 et de 1) de taille définie et numérotés.</li>
+<li>Les paquets transitent du point de départ jusqu’à la machine de destination.</li>
 <li>Tous les paquets sont reconstruits à l’aide de leur numérotation.</li>
 <li>Un <strong>contrôle d’intégrité</strong> est effectué par la machine réceptrice pour s’assurer que les données sont complètes et correctes. Si ce n’est pas le cas, la machine demande la retransmission des paquets défectueux.</li>
 </ol>
-</div>
+</details>
 
 
 
