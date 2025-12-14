@@ -1,4 +1,4 @@
-# 🐍 Programmation Python
+# 🐍 Structures linéaires
 
 ## Cours
 
@@ -6,7 +6,8 @@
 
 ## Exercices
 
-* [exercices](../exercice/)
+* [exercices liste et tuple](../exercice/)
+* [correction exercices liste et tuple](../correction_exercice/)
 
 ## projet
 
