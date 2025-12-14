@@ -231,7 +231,7 @@ max_matrice(m)  →  9
 
 ## **Niveau 5 — challenge**
 
-# 🔥 **Exercice 1 – Rotation de liste**
+### 🔥 **Exercice 1 – Rotation de liste**
 
 Écrire une fonction `rotation(liste, n)` qui **décale** la liste vers la droite de `n` positions.
 
@@ -249,7 +249,7 @@ Exemple :
 
 
 
-# 🔥 **Exercice 2 – Aplatir une liste imbriquée**
+### 🔥 **Exercice 2 – Aplatir une liste imbriquée**
 
 Écrire une fonction `aplatir(liste)` qui transforme une liste de listes en une **liste simple**.
 
@@ -269,7 +269,7 @@ La liste peut contenir des sous-listes **de profondeur inconnue**, par exemple :
 
 
 
-# 🔥 **Exercice 3 – Matrice : diagonale principale**
+### 🔥 **Exercice 3 – Matrice : diagonale principale**
 
 On vous donne une **matrice carrée** sous forme de liste de listes.
 Écrire une fonction qui retourne la **somme de la diagonale principale**.
@@ -289,7 +289,7 @@ Exemple :
 
 
 
-# 🔥 **Exercice 4 – Détection de motif**
+### 🔥 **Exercice 4 – Détection de motif**
 
 Écrire une fonction `contient_motif(liste, motif)` qui vérifie si **le motif apparaît tel quel dans la liste**.
 
