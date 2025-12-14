@@ -25,7 +25,7 @@ Ce site a pour objectif de guider les élèves tout au long de l'année scolaire
 
 
 
-=== "NSI premiere"
+=== "Première NSI"
 
     ## 🎯 Objectif
 

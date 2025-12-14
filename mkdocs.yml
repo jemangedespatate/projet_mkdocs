@@ -4,31 +4,44 @@ theme:
   name: material
   custom_dir: overrides
   features:
-    - content.extra
+    - navigation.instant
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.expand
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
   palette:
-    # Dark Mode
-    - scheme: slate
-      toggle:
-        icon: material/weather-sunny
-        name: Dark mode
-      primary: green
-      accent: deep purple
-
     # Light Mode
     - scheme: default
       toggle:
         icon: material/weather-night
-        name: Light mode  
-      primary: blue
-      accent: deep orange
+        name: Mode sombre
+      primary: teal
+      accent: indigo
+    # Dark Mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Mode clair
+      primary: teal
+      accent: indigo
   font:
-    text: Merriweather Sans
-    code: Red Hat Mono
+    text: Roboto
+    code: Roboto Mono
   icon:
-    logo: fontawesome/solid/w
+    logo: fontawesome/solid/book-open
+
+nav:
+  - Accueil: index.md
+  - SNT: SNT/
+  - Première NSI: NSI_1/
 
 extra_css:
-  - assets/stylesheets/extra.css
+  - assets/stylesheets/custom_style.css
 
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML
