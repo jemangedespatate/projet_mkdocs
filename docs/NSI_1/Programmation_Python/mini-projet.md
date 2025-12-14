@@ -1,6 +1,6 @@
-# <u>📝 Mini-projet : Jeu du Pendu en Python</u>
+# 📝 Mini-projet : Jeu du Pendu en Python
 
-## <u>🎯 Objectif</u>
+## 🎯 Objectif
 
 Nous allons programmer le célèbre **jeu du pendu** en Python.
 
@@ -9,7 +9,7 @@ Le principe est simple : un mot est choisi au hasard, et le joueur doit le devin
 Dans ce TP, vous compléterez les fonctions manquantes dans le fichier Python donné, en respectant les consignes et en testant votre code.
 
 
-## <u>Organisation des fichiers 📂</u>
+## Organisation des fichiers 📂
 
 Pour que votre projet fonctionne correctement, vous devez placer tous les fichiers dans **un même répertoire** (dossier).  
 
@@ -26,7 +26,7 @@ mon_projet_pendu/
 └── pendu_dico.txt
 ```
 
-## <u>1. Choix d’un mot aléatoire</u>
+## 1. Choix d’un mot aléatoire
 
 La fonction suivante est déjà écrite :
 
@@ -54,7 +54,7 @@ def choix_mot(nom_fichier:str)->str:
     Écrivez vos réponses directement dans le fichier python, juste après `# réponse`.
 
 
-## <u>2. Cacher le mot avec des underscores</u>
+## 2. Cacher le mot avec des underscores
 
 On veut afficher un mot inconnu sous forme de **tirets bas** `_`, un par lettre.
 
@@ -85,7 +85,7 @@ def cacher_mot(mot:str)->str:
     '_ _ _ _'
     ```
 
-## <u>3. Vérifier si une lettre est présente</u>
+## 3. Vérifier si une lettre est présente
 
 On veut une fonction qui renvoie `True` si une lettre est dans le mot, et `False` sinon.
 
@@ -111,7 +111,7 @@ def verifier_lettre(mot:str, caractere:str)->str:
     ```
 
 
-## <u>4. Révéler une lettre trouvée</u>
+## 4. Révéler une lettre trouvée
 
 Quand le joueur propose une lettre correcte, il faut la remplacer à la bonne position dans le mot inconnu.
 
@@ -147,7 +147,7 @@ def lettre(mot:str, mot_inconnu:str,caractere:str)->str:
     '_ _ _ _ _'
     ```
 
-## <u>5. Compter les erreurs</u>
+## 5. Compter les erreurs
 
 On a besoin d’une fonction qui incrémente le nombre d’erreurs du joueur.
 
@@ -171,7 +171,7 @@ def nb_erreur(erreur:int)->int:
     1
     ```
 
-## <u>6. Utilisation de l’interface 🎮</u>
+## 6. Utilisation de l’interface 🎮
 
 Pour jouer, vous allez maintenant intégrer le fichier [interface.py](../mini_projet/interface.py){:download="interface.py"} dans votre répertoire.
 

@@ -1,6 +1,6 @@
-# 🖥️ <u>Introduction à la programmation</u>
+# 🖥️ Introduction à la programmation
 
-## <u>1. Qu’est-ce que programmer ?</u>
+## 1. Qu’est-ce que programmer ?
 
 Programmer, c’est **donner des instructions précises à un ordinateur** pour qu’il exécute une tâche.
 Un programme est comme une recette de cuisine :
@@ -26,9 +26,9 @@ En NSI, on utilise principalement **Python**, un langage simple et très répand
 
     - utiliser des outils pratiques pour comprendre pas à pas le déroulement d’un programme (mode pas-à-pas, visualisation des variables).
 
-## <u>2. Les bases de Python</u>
+## 2. Les bases de Python
 
-### <u>2.1. Les variables</u>
+### 2.1. Les variables
 
 Une **variable** est comme une boîte qui permet de **stocker une information** pour pouvoir la réutiliser plus tard dans un programme.
 Chaque variable a :
@@ -64,7 +64,7 @@ On peut afficher leur contenu grâce à la fonction `print` :
     Bonjour Alice tu as 16 ans.
     ```
 
-### <u>2.2. Les types de données de base</u>
+### 2.2. Les types de données de base
 
 En Python, il existe différents types de données de base qui permettent de représenter des informations de nature différente
 
@@ -92,7 +92,7 @@ Il est également possible de changer le type de certaines variables à l’aide
     * `str(5)` -> `"5"`
 
 
-### <u>2.3. Les opérateurs</u>
+### 2.3. Les opérateurs
 
 Pour manipuler les nombres et effectuer des calculs en Python, on utilise des opérateurs arithmétiques.
 
@@ -110,9 +110,9 @@ Pour manipuler les nombres et effectuer des calculs en Python, on utilise des op
     print(a ** b) # puissance -> 10 ** 3 = 1000
     ```
 
-## <u>3. Contrôler le déroulement du programme</u>
+## 3. Contrôler le déroulement du programme
 
-### <u>3.1. Les conditions</u>
+### 3.1. Les conditions
 
 Une **condition** permet à un programme de **prendre une décision** en fonction d’une situation donnée.
 L’ordinateur **teste une expression logique** (par exemple `âge >= 18`) et choisit ensuite quel bloc d’instructions exécuter.
@@ -174,13 +174,13 @@ En Python, on utilise les mots-clés :
     Assez bien
     ```
 
-### <u>3.2. Les boucles</u>
+### 3.2. Les boucles
 
 Une boucle permet de répéter automatiquement une série d’instructions sans avoir à les réécrire plusieurs fois. Elle est très utile lorsque l’on veut effectuer une même action plusieurs fois (par exemple afficher les nombres de 1 à 10 ou répéter un calcul).
 
 **Deux types de boucles sont disponibles en Python : la boucle `while` et la boucle `for`.**
 
-#### <u>3.2.1. Boucle **while** (tant que)</u>
+#### 3.2.1. Boucle **while** (tant que)
 
 La boucle **while** permet de répéter une suite d’instructions **tant qu’une condition est vraie**.
 Autrement dit, l’ordinateur vérifie la condition au début de chaque tour de boucle :
@@ -214,7 +214,7 @@ Autrement dit, l’ordinateur vérifie la condition au début de chaque tour de 
     Compteur : 5
     ```
 
-#### <u>3.2.2. Boucle **for** (pour)</u>
+#### 3.2.2. Boucle **for** (pour)
 
 La boucle **for** est utilisée lorsqu’on veut répéter une suite d’instructions **un nombre de fois connu à l’avance** ou lorsqu’on veut parcourir les éléments d’une liste.
 
@@ -262,7 +262,7 @@ En Python, on utilise souvent la fonction `range()` pour générer une séquence
     Compteur : 5
     ```
 
-## <u>4. Les fonctions</u>
+## 4. Les fonctions
 
 Une **fonction** est un bloc de code qui réalise une tâche précise et que l’on peut **réutiliser plusieurs fois** dans un programme, sans avoir à réécrire les mêmes instructions.
 

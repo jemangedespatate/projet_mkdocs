@@ -1,4 +1,4 @@
-## <u>Premier exercice — Étude de code</u>
+## Premier exercice — Étude de code
 
 On donne trois fonctions nommées `mystere_a`, `mystere_b` et `mystere_c` :
 
@@ -143,7 +143,7 @@ def mystere_c(texte: str) -> str:
 
 ---
 
-## <u>Deuxième exercice - Parcour d'une chaine de caractére</u>
+## Deuxième exercice - Parcour d'une chaine de caractére
 
 Compléter la fonction suivante qui renvoie **le nombre de voyelles** contenues dans un mot donné.
 
@@ -197,7 +197,7 @@ def compter_voyelles(mot: str) -> int:
 
 ---
 
-## <u>Troisième exercice - Parcour d'une chaine de caractére</u>
+## Troisième exercice - Parcour d'une chaine de caractére
 
 Écrire une fonction qui renvoie une chaîne où chaque caractère du mot donné est répété deux fois de suite, sans utiliser de compréhension de liste ni de fonction Python avancée.
 
@@ -252,7 +252,7 @@ def double_caracteres(mot: str) -> str:
 
 ---
 
-## <u>Quatrième exercice - Conditions</u>
+## Quatrième exercice - Conditions
 
 Compléter la fonction suivante qui renvoie un **message** en fonction de la **température** donnée (en degrés Celsius).
 

@@ -1,6 +1,6 @@
-# <u>Nombres binaires et hexadécimaux</u>
+# Nombres binaires et hexadécimaux
 
-## <u>Introduction à la numération binaire</u>
+## Introduction à la numération binaire
 
 La numération binaire est un système qui utilise seulement deux symboles : 0 et 1.
 
@@ -17,7 +17,7 @@ Dans ce système, chaque chiffre correspond à une puissance de deux. Cela perme
     Grâce à cette simplicité, les ordinateurs peuvent effectuer des calculs très complexes et stocker des informations numériques.  
 
 
-## <u>Définition</u>
+## Définition
 
 **Base :**
 La base d’un système de numération est le nombre de symboles différents qu’il utilise pour écrire les nombres.
@@ -33,7 +33,7 @@ La base d’un système de numération est le nombre de symboles différents qu�
 
     Les douzaines (par exemple, les boîtes de 12 œufs) viennent d’un usage ancien. On pouvait compter jusqu’à 12 en utilisant les phalanges des doigts d’une main, en se servant du pouce pour les pointer.
 
-## <u>Base 10</u>
+## Base 10
 
 Pour mieux comprendre le principe de la base 2, il est utile de rappeler le fonctionnement du système décimal que nous utilisons au quotidien.
 
@@ -61,7 +61,7 @@ $$
 B_{10} = \{0,1,2,3,4,5,6,7,8,9\}
 $$
 
-## <u>Base 2</u>
+## Base 2
 
 La base 2 est composée, comme indiqué précédemment, de 2 chiffres :
 
@@ -114,7 +114,7 @@ Comme il n’y a que deux chiffres possibles (0 et 1), dès que l’on atteint 1
     * 1110
     * 1011111
 
-## <u>Passage de la base 2 à la base 10</u>
+## Passage de la base 2 à la base 10
 
 Pour convertir un nombre écrit en base 10 vers la base 2, on utilise une décomposition en puissances de 2.
 
@@ -147,7 +147,7 @@ Pour convertir un nombre écrit en base 10 vers la base 2, on utilise une décom
     - 1001001101  
 
 
-## <u>Passage de la base 10 à la base 2</u>
+## Passage de la base 10 à la base 2
 
 Pour convertir un nombre écrit en base 10 vers la base 2, on utilise ce que l’on appelle **la méthode des divisions successives**.
 
@@ -201,7 +201,7 @@ Pour convertir un nombre écrit en base 10 vers la base 2, on utilise ce que l�
     - 42  
 
 
-## <u>Exercice pratique</u>
+## Exercice pratique
 
 !!! note "Exercice pratique"
 
@@ -227,7 +227,7 @@ Pour convertir un nombre écrit en base 10 vers la base 2, on utilise ce que l�
         """
     ```  
 
-## <u>base 16</u>
+## base 16
 
 En informatique, une autre base très importante est la base hexadécimale (ou hex). Cette base représente les nombres avec 16 symboles.
 
@@ -241,7 +241,7 @@ On peut noter cette base :
 $$B_{16}  = \{0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F\}$$
 
 
-## <u>Table de correspondance entre hexadécimal et décimal</u>
+## Table de correspondance entre hexadécimal et décimal
 
 
 | Hex | Dec |   | Hex | Dec |
@@ -255,7 +255,7 @@ $$B_{16}  = \{0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F\}$$
 | 6   | 6   |   | E   | 14  |
 | 7   | 7   |   | F   | 15  |
 
-## <u>Passage de la base 10 à la base 16</u>
+## Passage de la base 10 à la base 16
 
 On va utiliser, une nouvelle fois, la méthode des **divisions successives**, mais cette fois-ci en divisant par 16 et non plus par 2.
 
@@ -302,7 +302,7 @@ On va utiliser, une nouvelle fois, la méthode des **divisions successives**, ma
     - 31  
     - 42  
 
-## <u>Passage de la base 16 à la base 10</u>
+## Passage de la base 16 à la base 10
 
 Pour convertir un nombre écrit en base 16 vers la base 10, on utilise une **décomposition en puissances de 16**, exactement comme on l’a fait pour la base 2 avec les puissances de 2.
 
@@ -340,7 +340,7 @@ Chaque chiffre hexadécimal est remplacé par sa valeur décimale (en utilisant 
     - 7B  
     - FF  
 
-## <u>Exercice pratique</u>
+## Exercice pratique
 
 !!! note "Exercice pratique"
 

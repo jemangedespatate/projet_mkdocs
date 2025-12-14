@@ -1,6 +1,6 @@
-# <u>Introduction aux graphes</u>
+# Introduction aux graphes
 
-## <u>Définition</u>
+## Définition
 
 Un graphe est une structure mathématique utilisée pour modéliser des relations entre objets.
 
@@ -8,7 +8,7 @@ Il est composé de deux éléments principaux : les sommets (ou nœuds) et les a
 
 Voyons ensemble les graphes, dans le cadre des réseaux sociaux.
 
-## <u>vocabulaire</u>
+## vocabulaire
 
 !!! note "Sommets"
 
@@ -65,7 +65,7 @@ Voyons ensemble les graphes, dans le cadre des réseaux sociaux.
 
     Les degrés de chaque sommet sont indiqués en bleu
 
-## <u>algorithmes sur les graphes</u>
+## algorithmes sur les graphes
 
 !!! note "Excentricité d'un sommet"
 
@@ -125,7 +125,7 @@ Voyons ensemble les graphes, dans le cadre des réseaux sociaux.
 
     Les sommets bleus représentent les différents centres du graphe.
 
-## <u>Graphe connexe</u>
+## Graphe connexe
 
 !!! note "Graphe connexe"
 
@@ -156,7 +156,7 @@ Voyons ensemble les graphes, dans le cadre des réseaux sociaux.
 
 
 
-## <u>Petit monde de Milgram</u>
+## Petit monde de Milgram
 
 La théorie du « petit monde » stipule que tout individu dans le monde peut être relié à n’importe quel autre individu par une chaîne de relations sociales ne dépassant pas six relations.
 

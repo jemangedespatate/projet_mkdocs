@@ -60,6 +60,6 @@ Ce site est un **outil évolutif**, mis à jour régulièrement avec de nouveaux
 
 Pour toute question ou remarque, merci de me contacter via l’ENT ou directement en classe.
 
----
+
 
 > *Ensemble, explorons le monde du numérique avec curiosité et rigueur.*

@@ -1,6 +1,6 @@
-# <u>Le système binaire</u>
+# Le système binaire
 
-## <u>🤔 Introduction</u>
+## 🤔 Introduction
 
 Les ordinateurs ne comprennent pas les nombres comme nous les utilisons au quotidien. Ils fonctionnent uniquement avec deux valeurs : **0** et **1**. Pour cette raison, ils utilisent le **système binaire**, aussi appelé **base 2**.
 
@@ -11,7 +11,7 @@ Dans ce cours, nous allons voir :
 
 ---
 
-## <u>🔢 Les bases de numération</u>
+## 🔢 Les bases de numération
 
 * Le **système décimal** (base 10) utilise 10 chiffres : de 0 à 9.
 * Le **système binaire** (base 2) utilise seulement 2 chiffres : 0 et 1.
@@ -20,11 +20,11 @@ Chaque position d’un chiffre dépend de la base utilisée.
 
 ---
 
-## <u>➡️ Passage d’un nombre décimal à un nombre binaire</u>
+## ➡️ Passage d’un nombre décimal à un nombre binaire
 
 Pour convertir un nombre décimal en binaire, on utilise la méthode des **divisions successives par 2**.
 
-### <u>Méthode</u>
+### Méthode
 
 1. On divise le nombre par 2.
 2. On note le **reste** (0 ou 1).
@@ -34,7 +34,7 @@ Pour convertir un nombre décimal en binaire, on utilise la méthode des **divis
 
 ---
 
-### <u>Exemple : convertir 21 en binaire</u>
+### Exemple : convertir 21 en binaire
 
 
 $$21 = 10 \times 2 + 1 \$$
@@ -52,7 +52,7 @@ $$
 
 ---
 
-## <u>⬅️ Passage d’un nombre binaire à un nombre décimal</u>
+## ⬅️ Passage d’un nombre binaire à un nombre décimal
 
 Pour convertir un nombre binaire en décimal, on utilise les **puissances de 2**.
 
@@ -60,7 +60,7 @@ Chaque chiffre du nombre binaire est multiplié par une puissance de 2, en comme
 
 ---
 
-### <u>Méthode</u>
+### Méthode
 
 1. On numérote les positions à partir de la droite, en commençant par 0.
 2. On multiplie chaque bit par $$2^{\text{position}}$$
@@ -68,7 +68,7 @@ Chaque chiffre du nombre binaire est multiplié par une puissance de 2, en comme
 
 ---
 
-### <u>Exemple : convertir 110 en décimal</u>
+### Exemple : convertir 110 en décimal
 
 $$
 110_2 = 1 \times 2^2 + 1 \times 2^1 + 0 \times 2^0

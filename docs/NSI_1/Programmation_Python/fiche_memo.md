@@ -1,6 +1,6 @@
-# <u> 🐍 Fiche Mémo Python</u>
+#  🐍 Fiche Mémo Python
 
-## <u>1. Variables</u>
+## 1. Variables
 
 Une variable est un nom qui sert à stocker une valeur.
 
@@ -16,7 +16,7 @@ ok = True     # booléen
 
 ---
 
-## <u>2. Types de données</u>
+## 2. Types de données
 
 Les principaux types intégrés en Python :
 
@@ -27,7 +27,7 @@ Les principaux types intégrés en Python :
 
 ---
 
-## <u>3. Conditions</u>
+## 3. Conditions
 
 Permettent de faire des choix.
 
@@ -50,9 +50,9 @@ else:
 
 ---
 
-## <u>4. Boucles</u>
+## 4. Boucles
 
-### <u>Boucle `for`:</u>
+### Boucle `for`:
 
 ```python
 for i in range(5):   # de 0 à 4
@@ -64,7 +64,7 @@ for lettre in "Python":
 
 ---
 
-### <u>Boucle `while`:</u>
+### Boucle `while`:
 
 ```python
 compteur = 0
@@ -75,7 +75,7 @@ while compteur < 5:
 
 ---
 
-## <u>5. Fonctions</u>
+## 5. Fonctions
 
 Une fonction permet de réutiliser du code.
 
@@ -98,7 +98,7 @@ print(dire_bonjour("Alice"))
 
 ---
 
-## <u>6. Bonus : petites astuces utiles</u>
+## 6. Bonus : petites astuces utiles
 
 * Commentaire :
 

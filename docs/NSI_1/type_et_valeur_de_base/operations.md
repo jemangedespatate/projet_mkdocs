@@ -1,6 +1,6 @@
-# <u>🔢 representation des nombre en machine</u>
+# 🔢 representation des nombre en machine
 
-## <u>ℹ️ Introduction</u>
+## ℹ️ Introduction
 
 Les ordinateurs ne comprennent que deux symboles : 0 et 1.   
 Ces deux valeurs correspondent à deux états électriques (passage du courant ou absence de courant) et constituent la base du langage binaire.
@@ -16,7 +16,7 @@ Au fil du temps, des conventions se sont imposées pour :
 
 * normaliser cette écriture avec des standards modernes comme la norme IEEE 754.
 
-## <u>➕ Les entiers positifs</u>
+## ➕ Les entiers positifs
 
 Un ordinateur manipule les entiers positifs en utilisant le **système binaire**.   
 Chaque chiffre binaire (bit) peut être **0** ou **1**.
@@ -44,7 +44,7 @@ $$
 
     * Avec **16 bits** → nombres de 0 à 65 535.
 
-## <u>🌊 Les nombres flottants</u>
+## 🌊 Les nombres flottants
 
 Jusqu’ici, nous avons vu comment représenter les entiers en machine.
 Cependant, dans de nombreux calculs, il est nécessaire de manipuler des nombres décimaux : par exemple des mesures (3,14 mètres, 0,25 seconde), des résultats scientifiques ou encore des valeurs financières.
@@ -59,7 +59,7 @@ Deux grandes approches ont été développées :
 
 Ces méthodes ont chacune leurs avantages et leurs limites, et elles ont conduit à l’établissement de normes modernes pour assurer une représentation standardisée dans tous les ordinateurs.
 
-### <u>1. La virgule fixe</u>
+### 1. La virgule fixe
 
 Dans ce système, on réserve un certain nombre de bits pour la **partie entière** et un certain nombre de bits pour la **partie fractionnaire**.
 
@@ -89,7 +89,7 @@ Dans ce système, on réserve un certain nombre de bits pour la **partie entièr
     0,abcd₂ = a \times \frac{1}{2} + b \times \frac{1}{2^2} + c \times \frac{1}{2^3} + d \times \frac{1}{2^4} + \dots
     $$
 
-    ### <u>Exemple avec `0,0101₂` :</u>
+    ### Exemple avec `0,0101₂` :
 
     * Le premier chiffre après la virgule est `0` → $$0 \times \frac{1}{2} = 0$$
     * Le deuxième chiffre est `1` → $$1 \times \frac{1}{4} = 0,25$$
@@ -128,7 +128,7 @@ Dans ce système, on réserve un certain nombre de bits pour la **partie entièr
     3. 7,75  
     4. 3,125
 
-### <u>2. La virgule flottante</u>
+### 2. La virgule flottante
 
 Pour dépasser les limites de la virgule fixe, on utilise une écriture proche de la **notation scientifique**.
     
@@ -226,7 +226,7 @@ $$
 
 ❌ Inconvénient : pas tous les nombres décimaux sont représentables exactement (par exemple 0,1 en binaire).
 
-## <u>➖ Les nombres négatifs</u>
+## ➖ Les nombres négatifs
 
 En mathématiques sur papier, on indique simplement qu’un nombre est négatif en mettant un signe “-” devant.
 En informatique, les ordinateurs ne comprennent que des suites de 0 et de 1. Il faut donc définir une **méthode précise pour représenter les nombres négatifs** en binaire.
@@ -236,7 +236,7 @@ Différentes méthodes ont été utilisées pour coder les nombres négatifs, do
 1. le **bit de poids fort** (où un bit indique simplement le signe),
 2. le **complément à 2**, la méthode standard utilisée dans tous les ordinateurs modernes.
 
-### <u>1. Bit de poids fort</u>
+### 1. Bit de poids fort
 
 * Idée : le **bit le plus à gauche** (bit de poids fort) indique le signe du nombre :
 
@@ -267,7 +267,7 @@ Différentes méthodes ont été utilisées pour coder les nombres négatifs, do
 * Les calculs arithmétiques deviennent compliqués
 
 
-### <u>2. Complément à 2</u>
+### 2. Complément à 2
 
 Le complément à 2 est la **méthode standard** pour représenter les nombres négatifs en binaire.
 
@@ -383,11 +383,11 @@ def dec_to_repr(nombre: int, n: int) -> str:
 * Un seul zéro (`00000000`)
 * Les additions et soustractions fonctionnent directement comme avec des nombres positifs
 
-## <u>🖥️ La norme IEEE 754</u>
+## 🖥️ La norme IEEE 754
 
 La norme **IEEE 754** définit comment représenter les nombres réels (à virgule flottante) en mémoire de manière standardisée, afin que tous les ordinateurs et logiciels manipulent les mêmes valeurs. Elle garantit la compatibilité et la précision dans les calculs scientifiques, financiers ou techniques.
 
-### <u>1. Principe général</u>
+### 1. Principe général
 
 Un nombre flottant est représenté par trois éléments :
 
@@ -410,21 +410,21 @@ $$
     * Elle est toujours **normalisée**, ce qui signifie que le premier chiffre avant la virgule est toujours 1 (implémenté de manière implicite dans la norme IEEE 754).
 
 
-### <u>2. Formats les plus courants</u>
+### 2. Formats les plus courants
 
-#### <u>a. Simple précision (32 bits)</u>
+#### a. Simple précision (32 bits)
 
 * 1 bit pour le **signe**
 * 8 bits pour l’**exposant** (biais = 127)
 * 23 bits pour la **mantisse**
 
-#### <u>b. Double précision (64 bits)</u>
+#### b. Double précision (64 bits)
 
 * 1 bit pour le **signe**
 * 11 bits pour l’**exposant** (biais = 1023)
 * 52 bits pour la **mantisse**
 
-### <u>3. Exemple pratique</u>
+### 3. Exemple pratique
 
 Nombre : `-13,25`
 
@@ -444,7 +444,7 @@ Nombre : `-13,25`
 * 8 bits suivants = exposant biaisé
 * 23 bits suivants = mantisse
 
-### <u>4.✅ Avantages de la norme IEEE 754</u>
+### 4.✅ Avantages de la norme IEEE 754
 
 * **Standard universel** : même représentation sur tous les ordinateurs
 * **Grande plage de valeurs** : peut représenter à la fois des nombres très grands et très petits

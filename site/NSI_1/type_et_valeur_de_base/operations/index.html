@@ -551,8 +551,8 @@
                   
 
 
-<h1 id="representation-des-nombre-en-machine"><u>🔢 representation des nombre en machine</u></h1>
-<h2 id="i-introduction"><u>ℹ️ Introduction</u></h2>
+<h1 id="representation-des-nombre-en-machine">🔢 representation des nombre en machine</h1>
+<h2 id="i-introduction">ℹ️ Introduction</h2>
 <p>Les ordinateurs ne comprennent que deux symboles : 0 et 1. <br />
 Ces deux valeurs correspondent à deux états électriques (passage du courant ou absence de courant) et constituent la base du langage binaire.</p>
 <p>Mais comment représenter, avec uniquement des suites de 0 et de 1, tous les nombres que nous utilisons en mathématiques : entiers positifs, entiers négatifs, fractions, nombres très grands ou très petits ?</p>
@@ -569,7 +569,7 @@ Au fil du temps, des conventions se sont imposées pour :</p>
 <p>normaliser cette écriture avec des standards modernes comme la norme IEEE 754.</p>
 </li>
 </ul>
-<h2 id="les-entiers-positifs"><u>➕ Les entiers positifs</u></h2>
+<h2 id="les-entiers-positifs">➕ Les entiers positifs</h2>
 <p>Un ordinateur manipule les entiers positifs en utilisant le <strong>système binaire</strong>. <br />
 Chaque chiffre binaire (bit) peut être <strong>0</strong> ou <strong>1</strong>.</p>
 <ul>
@@ -604,7 +604,7 @@ Chaque chiffre binaire (bit) peut être <strong>0</strong> ou <strong>1</strong>
 </li>
 </ul>
 </div>
-<h2 id="les-nombres-flottants"><u>🌊 Les nombres flottants</u></h2>
+<h2 id="les-nombres-flottants">🌊 Les nombres flottants</h2>
 <p>Jusqu’ici, nous avons vu comment représenter les entiers en machine.
 Cependant, dans de nombreux calculs, il est nécessaire de manipuler des nombres décimaux : par exemple des mesures (3,14 mètres, 0,25 seconde), des résultats scientifiques ou encore des valeurs financières.</p>
 <p>Le problème est que l’ordinateur ne dispose que d’un nombre limité de bits, et il faut donc trouver une manière efficace de représenter ces nombres qui comportent une partie fractionnaire.</p>
@@ -618,7 +618,7 @@ Cependant, dans de nombreux calculs, il est nécessaire de manipuler des nombres
 </li>
 </ul>
 <p>Ces méthodes ont chacune leurs avantages et leurs limites, et elles ont conduit à l’établissement de normes modernes pour assurer une représentation standardisée dans tous les ordinateurs.</p>
-<h3 id="1-la-virgule-fixe"><u>1. La virgule fixe</u></h3>
+<h3 id="1-la-virgule-fixe">1. La virgule fixe</h3>
 <p>Dans ce système, on réserve un certain nombre de bits pour la <strong>partie entière</strong> et un certain nombre de bits pour la <strong>partie fractionnaire</strong>.</p>
 <div class="admonition example">
 <p class="admonition-title">Exemple :</p>
@@ -642,7 +642,7 @@ En revanche, la <strong>partie fractionnaire</strong> se calcule avec des puissa
 0,abcd₂ = a \times \frac{1}{2} + b \times \frac{1}{2^2} + c \times \frac{1}{2^3} + d \times \frac{1}{2^4} + \dots
 </script>
 </p>
-<h3 id="exemple-avec-001012"><u>Exemple avec <code>0,0101₂</code> :</u></h3>
+<h3 id="exemple-avec-001012">Exemple avec <code>0,0101₂</code> :</h3>
 <ul>
 <li>Le premier chiffre après la virgule est <code>0</code> → <script type="math/tex; mode=display">0 \times \frac{1}{2} = 0</script>
 </li>
@@ -688,7 +688,7 @@ en utilisant 4 bits pour la partie entière et 4 bits pour la partie fractionnai
 <li>3,125</li>
 </ol>
 </div>
-<h3 id="2-la-virgule-flottante"><u>2. La virgule flottante</u></h3>
+<h3 id="2-la-virgule-flottante">2. La virgule flottante</h3>
 <p>Pour dépasser les limites de la virgule fixe, on utilise une écriture proche de la <strong>notation scientifique</strong>.</p>
 <p>
 <script type="math/tex; mode=display">
@@ -784,7 +784,7 @@ dans un format simplifié sur 8 bits :</p>
 </div>
 <p>✅ Avantage : permet de représenter à la fois des <strong>nombres très grands</strong> et des <strong>nombres très petits</strong>.</p>
 <p>❌ Inconvénient : pas tous les nombres décimaux sont représentables exactement (par exemple 0,1 en binaire).</p>
-<h2 id="les-nombres-negatifs"><u>➖ Les nombres négatifs</u></h2>
+<h2 id="les-nombres-negatifs">➖ Les nombres négatifs</h2>
 <p>En mathématiques sur papier, on indique simplement qu’un nombre est négatif en mettant un signe “-” devant.
 En informatique, les ordinateurs ne comprennent que des suites de 0 et de 1. Il faut donc définir une <strong>méthode précise pour représenter les nombres négatifs</strong> en binaire.</p>
 <p>Différentes méthodes ont été utilisées pour coder les nombres négatifs, dont :</p>
@@ -792,7 +792,7 @@ En informatique, les ordinateurs ne comprennent que des suites de 0 et de 1. Il 
 <li>le <strong>bit de poids fort</strong> (où un bit indique simplement le signe),</li>
 <li>le <strong>complément à 2</strong>, la méthode standard utilisée dans tous les ordinateurs modernes.</li>
 </ol>
-<h3 id="1-bit-de-poids-fort"><u>1. Bit de poids fort</u></h3>
+<h3 id="1-bit-de-poids-fort">1. Bit de poids fort</h3>
 <ul>
 <li>
 <p>Idée : le <strong>bit le plus à gauche</strong> (bit de poids fort) indique le signe du nombre :</p>
@@ -826,7 +826,7 @@ En informatique, les ordinateurs ne comprennent que des suites de 0 et de 1. Il 
 <li>Deux représentations du zéro : <code>00000000</code> et <code>10000000</code></li>
 <li>Les calculs arithmétiques deviennent compliqués</li>
 </ul>
-<h3 id="2-complement-a-2"><u>2. Complément à 2</u></h3>
+<h3 id="2-complement-a-2">2. Complément à 2</h3>
 <p>Le complément à 2 est la <strong>méthode standard</strong> pour représenter les nombres négatifs en binaire.</p>
 <p><strong>Règle :</strong>
 Pour obtenir -N :</p>
@@ -939,9 +939,9 @@ Exemple:
 <li>Un seul zéro (<code>00000000</code>)</li>
 <li>Les additions et soustractions fonctionnent directement comme avec des nombres positifs</li>
 </ul>
-<h2 id="la-norme-ieee-754"><u>🖥️ La norme IEEE 754</u></h2>
+<h2 id="la-norme-ieee-754">🖥️ La norme IEEE 754</h2>
 <p>La norme <strong>IEEE 754</strong> définit comment représenter les nombres réels (à virgule flottante) en mémoire de manière standardisée, afin que tous les ordinateurs et logiciels manipulent les mêmes valeurs. Elle garantit la compatibilité et la précision dans les calculs scientifiques, financiers ou techniques.</p>
-<h3 id="1-principe-general"><u>1. Principe général</u></h3>
+<h3 id="1-principe-general">1. Principe général</h3>
 <p>Un nombre flottant est représenté par trois éléments :</p>
 <p>
 <script type="math/tex; mode=display">
@@ -970,20 +970,20 @@ N = (-1)^{\text{signe}} \times 1,\text{mantisse} \times 2^{\text{exposant - biai
 </ul>
 </li>
 </ol>
-<h3 id="2-formats-les-plus-courants"><u>2. Formats les plus courants</u></h3>
-<h4 id="a-simple-precision-32-bits"><u>a. Simple précision (32 bits)</u></h4>
+<h3 id="2-formats-les-plus-courants">2. Formats les plus courants</h3>
+<h4 id="a-simple-precision-32-bits">a. Simple précision (32 bits)</h4>
 <ul>
 <li>1 bit pour le <strong>signe</strong></li>
 <li>8 bits pour l’<strong>exposant</strong> (biais = 127)</li>
 <li>23 bits pour la <strong>mantisse</strong></li>
 </ul>
-<h4 id="b-double-precision-64-bits"><u>b. Double précision (64 bits)</u></h4>
+<h4 id="b-double-precision-64-bits">b. Double précision (64 bits)</h4>
 <ul>
 <li>1 bit pour le <strong>signe</strong></li>
 <li>11 bits pour l’<strong>exposant</strong> (biais = 1023)</li>
 <li>52 bits pour la <strong>mantisse</strong></li>
 </ul>
-<h3 id="3-exemple-pratique"><u>3. Exemple pratique</u></h3>
+<h3 id="3-exemple-pratique">3. Exemple pratique</h3>
 <p>Nombre : <code>-13,25</code></p>
 <ol>
 <li>Conversion en binaire : 13,25 = <code>1101,01₂</code></li>
@@ -1000,7 +1000,7 @@ N = (-1)^{\text{signe}} \times 1,\text{mantisse} \times 2^{\text{exposant - biai
 <li>8 bits suivants = exposant biaisé</li>
 <li>23 bits suivants = mantisse</li>
 </ul>
-<h3 id="4-avantages-de-la-norme-ieee-754"><u>4.✅ Avantages de la norme IEEE 754</u></h3>
+<h3 id="4-avantages-de-la-norme-ieee-754">4.✅ Avantages de la norme IEEE 754</h3>
 <ul>
 <li><strong>Standard universel</strong> : même représentation sur tous les ordinateurs</li>
 <li><strong>Grande plage de valeurs</strong> : peut représenter à la fois des nombres très grands et très petits</li>

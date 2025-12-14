@@ -1,6 +1,6 @@
 # Correction : Listes et tuples en Python
 
----
+
 
 ## 🟢 **Niveau 1 — Découverte et manipulation de base**
 
@@ -28,7 +28,7 @@ print(fruits)
 # Résultat attendu : ['orange', 'cerise', 'kiwi']
 ```
 
----
+
 
 ### **Exercice 2 : Moyenne de notes**
 
@@ -45,7 +45,7 @@ print(f"Note maximale : {max(notes)}")
 print(f"Note minimale : {min(notes)}")
 ```
 
----
+
 
 ### **Exercice 3 : Parcours d’une liste**
 
@@ -57,7 +57,7 @@ for i in range(len(fruits)):
     print(f"Indice {i} -> {fruits[i]}")
 ```
 
----
+
 
 ### **Exercice 4 : Saisie utilisateur**
 
@@ -71,7 +71,7 @@ for _ in range(3):
 print("Liste des prénoms :", prenoms)
 ```
 
----
+
 
 ## 🟡 **Niveau 2 — Approfondissement et traitement**
 
@@ -89,7 +89,7 @@ nombres.reverse()
 print("Inversé :", nombres)
 ```
 
----
+
 
 ### **Exercice 6 : Filtrage**
 
@@ -104,7 +104,7 @@ for n in nombres:
 print("Nombres pairs :", pairs)
 ```
 
----
+
 
 ### **Exercice 7 : Comptage**
 
@@ -119,7 +119,7 @@ for mot in mots:
 print(f"La lettre 'e' apparaît {compteur} fois.")
 ```
 
----
+
 
 ### **Exercice 8 : Liste de listes**
 
@@ -137,7 +137,7 @@ print(f"Somme ligne 2 : {somme_ligne_2}")
 print(f"Élément central : {element_centre}")
 ```
 
----
+
 
 ## 🔵 **Niveau 3 — Tuples et données structurées**
 
@@ -150,7 +150,7 @@ x, y = point  # Unpacking
 print(f"Le point a pour coordonnées x={x} et y={y}")
 ```
 
----
+
 
 ### **Exercice 10 : Données d’élèves**
 
@@ -162,7 +162,7 @@ for eleve in eleves:
     print(f"{nom} a obtenu {note}")
 ```
 
----
+
 
 ### **Exercice 11 : Recherche d’un élément**
 
@@ -178,7 +178,7 @@ print(cherche([1, 4, 9, 2], 9))  # True
 print(cherche([1, 4, 9, 2], 5))  # False
 ```
 
----
+
 
 ### **Exercice 12 : Conversion**
 
@@ -195,7 +195,7 @@ t = tuple(l)
 print(t) # (1, 2, 3, 4, 5)
 ```
 
----
+
 
 ## 🔴 **Niveau 4 — Raisonnement algorithmique**
 
@@ -209,7 +209,7 @@ for nom, notes in notes_eleves:
     print(f"{nom} -> moyenne : {moyenne}")
 ```
 
----
+
 
 ### **Exercice 14 : Rotation de liste**
 
@@ -227,7 +227,7 @@ rotation(ma_liste)
 print(ma_liste) # [2, 3, 4, 1]
 ```
 
----
+
 
 ### **Exercice 15 : Maximum d’une matrice**
 
@@ -261,7 +261,7 @@ print(rotation([1, 2, 3, 4, 5], 2))
 # [4, 5, 1, 2, 3]
 ```
 
----
+
 
 ### **Exercice 2 – Aplatir une liste imbriquée**
 
@@ -280,7 +280,7 @@ print(aplatir([[1, [2, 3]], [4, [5, [6]]]]))
 # [1, 2, 3, 4, 5, 6]
 ```
 
----
+
 
 ### **Exercice 3 – Matrice : diagonale principale**
 
@@ -304,7 +304,7 @@ m = [[1, 2, 3],
 print(diag(m)) # 15
 ```
 
----
+
 
 ### **Exercice 4 – Détection de motif**
 

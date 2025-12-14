@@ -1,6 +1,6 @@
-# <u>Évaluation</u>
+# Évaluation
 
-## <u>Premier exercice</u>
+## Premier exercice
 
 On donne trois fonctions appelées ici `mystere_1`, `mystere_2` et `mystere_3` :
 
@@ -47,7 +47,7 @@ def mystere_3(a: int, b: int) -> int:
 
 9. Finalement, que font ces fonctions (donner leur vrai rôle mathématique) ?
 
-## <u>Deuxième exercice</u>
+## Deuxième exercice
 
 Compléter la fonction suivante qui renvoie la position d’un caractère (mis en paramètre) dans un texte (également mis en paramètre).
 
@@ -80,7 +80,7 @@ def recherche(texte: str, caractere: str) -> int | bool:
     """
 ```
 
-## <u>Troisième exercice</u>
+## Troisième exercice
 
 Écrire une fonction qui renvoie un mot inversé **sans utiliser** `mot[::-1]` ni la fonction `reverse()`.
 
@@ -93,7 +93,7 @@ print(inverse("NSI"))     # attendu : "ISN"
 print(inverse("kayak"))   # attendu : "kayak"
 ```
 
-## <u>Quatrième exercice</u>
+## Quatrième exercice
 
 Écrire une fonction `moyenne` qui demande une **note** (avec `input`) à l’utilisateur et renvoie :
 

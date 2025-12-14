@@ -1,6 +1,6 @@
-# <u>exercices</u>
+# exercices
 
-## <u>exercice 1</u>
+## exercice 1
 
 ![exo_1](../../assets/seconde/rsx_sociaux/Graphe_exercice.png)
 
@@ -17,7 +17,7 @@ Répondez aux questions suivante:
 
 ---
 
-## <u>exercice 2</u>
+## exercice 2
 
 À partir de la liste suivante de relations, construisez un graphe représentant les liens entre les différentes personnes, puis déterminez le rayon, le diamètre ainsi que le ou les centres de ce graphe.
 
@@ -40,7 +40,7 @@ Répondez aux questions suivante:
 
 ---
 
-## <u>exercice 3</u>
+## exercice 3
 
 On modélise une portion de métro :
 
@@ -67,7 +67,7 @@ Représenter ce réseau sous forme de graphe.
 
 - quelle station est le centre du graphe ?
 
-## <u>exercice 4</u>
+## exercice 4
 
 On considère un ensemble fictif de personnes et leurs relations d’amitié ci-dessous :
 
@@ -92,7 +92,7 @@ Répondez aux questions suivante:
 
 3. expliquez en quelques phrases en quoi cette situation illustre le phénomène du petit monde.
 
-## <u>exercice 5 : Trouver l’espion dans le réseau </u>
+## exercice 5 : Trouver l’espion dans le réseau 
 
 On modélise un petit réseau de communication entre agents secrets.
 

@@ -488,12 +488,12 @@
                   
 
 
-<h1 id="mini-projet-jeu-du-pendu-en-python"><u>📝 Mini-projet : Jeu du Pendu en Python</u></h1>
-<h2 id="objectif"><u>🎯 Objectif</u></h2>
+<h1 id="mini-projet-jeu-du-pendu-en-python">📝 Mini-projet : Jeu du Pendu en Python</h1>
+<h2 id="objectif">🎯 Objectif</h2>
 <p>Nous allons programmer le célèbre <strong>jeu du pendu</strong> en Python.</p>
 <p>Le principe est simple : un mot est choisi au hasard, et le joueur doit le deviner en proposant des lettres. À chaque erreur, on ajoute un élément du pendu. Le jeu s’arrête si le joueur trouve toutes les lettres ou s’il atteint le nombre maximum d’erreurs.</p>
 <p>Dans ce TP, vous compléterez les fonctions manquantes dans le fichier Python donné, en respectant les consignes et en testant votre code.</p>
-<h2 id="organisation-des-fichiers"><u>Organisation des fichiers 📂</u></h2>
+<h2 id="organisation-des-fichiers">Organisation des fichiers 📂</h2>
 <p>Pour que votre projet fonctionne correctement, vous devez placer tous les fichiers dans <strong>un même répertoire</strong> (dossier).  </p>
 <p>Les fichiers nécessaires sont :<br />
 - <a download="pendu.py" href="../mini_projet/pendu.py">pendu.py</a> : contient les fonctions que vous devez compléter.<br />
@@ -504,7 +504,7 @@
 ├── pendu.py
 └── pendu_dico.txt
 </code></pre></div>
-<h2 id="1-choix-dun-mot-aleatoire"><u>1. Choix d’un mot aléatoire</u></h2>
+<h2 id="1-choix-dun-mot-aleatoire">1. Choix d’un mot aléatoire</h2>
 <p>La fonction suivante est déjà écrite :</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">choix_mot</span><span class="p">(</span><span class="n">nom_fichier</span><span class="p">:</span><span class="nb">str</span><span class="p">)</span><span class="o">-&gt;</span><span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
@@ -526,7 +526,7 @@
 <p class="admonition-title">informations</p>
 <p>Écrivez vos réponses directement dans le fichier python, juste après <code># réponse</code>.</p>
 </div>
-<h2 id="2-cacher-le-mot-avec-des-underscores"><u>2. Cacher le mot avec des underscores</u></h2>
+<h2 id="2-cacher-le-mot-avec-des-underscores">2. Cacher le mot avec des underscores</h2>
 <p>On veut afficher un mot inconnu sous forme de <strong>tirets bas</strong> <code>_</code>, un par lettre.</p>
 <details class="example">
 <summary>Exemple:</summary>
@@ -550,7 +550,7 @@
 <span class="s1">&#39;_ _ _ _&#39;</span>
 </code></pre></div>
 </details>
-<h2 id="3-verifier-si-une-lettre-est-presente"><u>3. Vérifier si une lettre est présente</u></h2>
+<h2 id="3-verifier-si-une-lettre-est-presente">3. Vérifier si une lettre est présente</h2>
 <p>On veut une fonction qui renvoie <code>True</code> si une lettre est dans le mot, et <code>False</code> sinon.</p>
 <p>👉 Complètez la fonction :</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">verifier_lettre</span><span class="p">(</span><span class="n">mot</span><span class="p">:</span><span class="nb">str</span><span class="p">,</span> <span class="n">caractere</span><span class="p">:</span><span class="nb">str</span><span class="p">)</span><span class="o">-&gt;</span><span class="nb">str</span><span class="p">:</span>
@@ -569,7 +569,7 @@
 <span class="kc">False</span>
 </code></pre></div>
 </details>
-<h2 id="4-reveler-une-lettre-trouvee"><u>4. Révéler une lettre trouvée</u></h2>
+<h2 id="4-reveler-une-lettre-trouvee">4. Révéler une lettre trouvée</h2>
 <p>Quand le joueur propose une lettre correcte, il faut la remplacer à la bonne position dans le mot inconnu.</p>
 <details class="example">
 <summary>Exemple:</summary>
@@ -597,7 +597,7 @@ caractere   = &quot;E&quot;
 <span class="s1">&#39;_ _ _ _ _&#39;</span>
 </code></pre></div>
 </details>
-<h2 id="5-compter-les-erreurs"><u>5. Compter les erreurs</u></h2>
+<h2 id="5-compter-les-erreurs">5. Compter les erreurs</h2>
 <p>On a besoin d’une fonction qui incrémente le nombre d’erreurs du joueur.</p>
 <p>👉 Complètez la fonction :</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">nb_erreur</span><span class="p">(</span><span class="n">erreur</span><span class="p">:</span><span class="nb">int</span><span class="p">)</span><span class="o">-&gt;</span><span class="nb">int</span><span class="p">:</span>
@@ -615,7 +615,7 @@ caractere   = &quot;E&quot;
 <span class="mi">1</span>
 </code></pre></div>
 </details>
-<h2 id="6-utilisation-de-linterface"><u>6. Utilisation de l’interface 🎮</u></h2>
+<h2 id="6-utilisation-de-linterface">6. Utilisation de l’interface 🎮</h2>
 <p>Pour jouer, vous allez maintenant intégrer le fichier <a download="interface.py" href="../mini_projet/interface.py">interface.py</a> dans votre répertoire.</p>
 <p>Voici à quoi doit ressembler votre répertoire après avoir ajouté le fichier :
 <div class="highlight"><pre><span></span><code>mon_projet_pendu/

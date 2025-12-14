@@ -1,6 +1,6 @@
-# <u>✅ Correction de l’évaluation</u>
+# ✅ Correction de l’évaluation
 
-## <u>Premier exercice</u>
+## Premier exercice
 
 ??? note "1. Comment s’appellent les différentes fonctions déclarées ici ?"
 
@@ -53,7 +53,7 @@
 
 ---
 
-## <u>Deuxième exercice</u>
+## Deuxième exercice
 
 ```python
 def recherche(texte: str, caractere: str) -> int | bool:
@@ -75,7 +75,7 @@ print(recherche("bonjour", "i"))  # False
 
 ---
 
-## <u>Troisième exercice</u>
+## Troisième exercice
 
 ```python
 def inverse(mot: str) -> str:
@@ -91,7 +91,7 @@ print(inverse("kayak"))   # "kayak"
 
 ---
 
-## <u>Quatrième exercice</u>
+## Quatrième exercice
 
 ```python
 def moyenne():

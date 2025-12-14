@@ -1,6 +1,6 @@
-# <u>Exercices pratiques</u>
+# Exercices pratiques
 
-**<u>1. Variables et affichage**</u>
+**1. Variables et affichage**
 
 Demandez à l’utilisateur son **nom** et son **âge**, puis affiche :
 
@@ -12,14 +12,14 @@ indice: utiliser la fonction `input()`
 
 ---
 
-**<u>2. Types de données**</u>
+**2. Types de données**
 
 Créez trois variables : une **entière**, une **décimale** et une **chaîne de caractères**.
 Affiche le type de chaque variable avec la fonction `type()`.
 
 ---
 
-**<u>3. Opérations mathématiques**</u>
+**3. Opérations mathématiques**
 
 Écrivez un programme qui demande deux nombres à l’utilisateur et affiche :
 
@@ -31,7 +31,7 @@ Affiche le type de chaque variable avec la fonction `type()`.
 
 ---
 
-**<u>4. Conditions**</u>
+**4. Conditions**
 
 Écrivait un programme qui demande une **note** à l’utilisateur et affiche :
 
@@ -42,7 +42,7 @@ Affiche le type de chaque variable avec la fonction `type()`.
 
 ---
 
-**<u>5. Boucles**</u>
+**5. Boucles**
 
 Affichez tous les nombres **pairs** de 1 à 20 en utilisant :
 
@@ -51,7 +51,7 @@ Affichez tous les nombres **pairs** de 1 à 20 en utilisant :
 
 ---
 
-**<u>6. Fonctions**</u>
+**6. Fonctions**
 
 créez une fonction `carre(x)` qui renvoie le carré d’un nombre.
 

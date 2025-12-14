@@ -1,6 +1,6 @@
 # Série d’exercices : Listes et tuples en Python
 
----
+
 
 ## 🟢 **Niveau 1 — Découverte et manipulation de base**
 
@@ -15,7 +15,7 @@
 
 👉 *Objectif : maîtriser les opérations de base (`append`, `remove`, `index`, accès par indices)*
 
----
+
 
 ### **Exercice 2 : Moyenne de notes**
 
@@ -27,7 +27,7 @@
 
 👉 *Objectif : manipuler des listes numériques et utiliser les fonctions intégrées.*
 
----
+
 
 ### **Exercice 3 : Parcours d’une liste**
 
@@ -41,7 +41,7 @@ Indice 2 → kiwi
 
 👉 *Objectif : utiliser une boucle `for` avec `range(len(liste))`.*
 
----
+
 
 ### **Exercice 4 : Saisie utilisateur**
 
@@ -50,7 +50,7 @@ Affiche ensuite la liste complète.
 
 👉 *Objectif : construire une liste dynamiquement avec `append()`.*
 
----
+
 
 ## 🟡 **Niveau 2 — Approfondissement et traitement**
 
@@ -62,7 +62,7 @@ Affiche ensuite la liste complète.
 
 👉 *Objectif : comprendre `sort()` et `reverse()`.*
 
----
+
 
 ### **Exercice 6 : Filtrage**
 
@@ -76,7 +76,7 @@ crée une nouvelle liste `pairs` contenant uniquement les nombres pairs.
 
 👉 *Indice : utiliser une boucle et le test `n % 2 == 0`.*
 
----
+
 
 ### **Exercice 7 : Comptage**
 
@@ -88,7 +88,7 @@ mots = ["elle", "est", "en", "été"]
 
 👉 *Objectif : parcours + conditions + variable compteur.*
 
----
+
 
 ### **Exercice 8 : Liste de listes**
 
@@ -106,7 +106,7 @@ Affiche la somme de la deuxième ligne et l’élément au centre.
 
 👉 *Objectif : travailler sur les listes imbriquées.*
 
----
+
 
 ## 🔵 **Niveau 3 — Tuples et données structurées**
 
@@ -122,7 +122,7 @@ Affiche la somme de la deuxième ligne et l’élément au centre.
 
 👉 *Objectif : apprendre le déballage de tuples.*
 
----
+
 
 ### **Exercice 10 : Données d’élèves**
 
@@ -142,7 +142,7 @@ Clara a obtenu 17
 
 👉 *Objectif : parcourir une liste de tuples et déballer les valeurs.*
 
----
+
 
 ### **Exercice 11 : Recherche d’un élément**
 
@@ -164,7 +164,7 @@ cherche([1, 4, 9, 2], 5)  # → False
 👉 *Objectif : comprendre les recherches dans une séquence.*
 
 
----
+
 
 ### **Exercice 12 : Conversion**
 
@@ -178,7 +178,7 @@ cherche([1, 4, 9, 2], 5)  # → False
 👉 *Objectif : conversion entre types (`list()` / `tuple()`).*
 
 
----
+
 
 ## 🔴 **Niveau 4 — Raisonnement algorithmique**
 
@@ -200,7 +200,7 @@ Clara → moyenne : 18.0
 
 👉 *Objectif : boucles imbriquées, calcul de moyenne, tuples + listes.*
 
----
+
 
 ### **Exercice 14 : Rotation de liste**
 
@@ -213,7 +213,7 @@ Exemple :
 
 👉 *Objectif : travailler sur les indices et la logique algorithmique.*
 
----
+
 
 ### **Exercice 15 : Maximum d’une matrice**
 
@@ -247,7 +247,7 @@ Exemple :
 * Ne pas utiliser `append()` ni `pop()` dans leur version avec indice négatif.
 * L’algorithme doit fonctionner pour n'importe quelle taille de liste.
 
----
+
 
 # 🔥 **Exercice 2 – Aplatir une liste imbriquée**
 
@@ -267,7 +267,7 @@ La liste peut contenir des sous-listes **de profondeur inconnue**, par exemple :
 [[1, [2, 3]], [4, [5, [6]]]]
 ```
 
----
+
 
 # 🔥 **Exercice 3 – Matrice : diagonale principale**
 
@@ -287,7 +287,7 @@ Exemple :
 
 * Vérifier que la matrice est bien carrée avant de calculer la somme (sinon afficher un message d’erreur).
 
----
+
 
 # 🔥 **Exercice 4 – Détection de motif**
 

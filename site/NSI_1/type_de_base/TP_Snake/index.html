@@ -464,13 +464,13 @@
                   
 
 
-<h1 id="mini-projet-snake-et-listes-en-python"><u>📝 Mini-projet : Snake et Listes en Python</u></h1>
-<h2 id="objectif"><u>🎯 Objectif</u></h2>
+<h1 id="mini-projet-snake-et-listes-en-python">📝 Mini-projet : Snake et Listes en Python</h1>
+<h2 id="objectif">🎯 Objectif</h2>
 <p>Nous allons programmer le célèbre <strong>jeu Snake</strong> en Python.</p>
 <p>Le but est de guider un serpent pour qu'il mange des pommes. À chaque pomme mangée, le serpent grandit. Si le serpent touche un mur ou sa propre queue, la partie est perdue.</p>
 <p>Ce projet a pour but principal de vous faire manipuler les <strong>listes</strong> en Python, car le corps du serpent est représenté par une liste de coordonnées.</p>
 <p>Dans ce TP, vous compléterez les fonctions manquantes dans le fichier <code>logique.py</code>, tandis que l'interface graphique est déjà fournie dans <code>main.py</code>.</p>
-<h2 id="organisation-des-fichiers"><u>Organisation des fichiers 📂</u></h2>
+<h2 id="organisation-des-fichiers">Organisation des fichiers 📂</h2>
 <p>Pour que votre projet fonctionne correctement, vous devez placer tous les fichiers dans <strong>un même répertoire</strong> (dossier).</p>
 <p>Les fichiers nécessaires sont :</p>
 <ul>
@@ -486,7 +486,7 @@
 ├── main.py
 └── requirements.txt
 </code></pre></div>
-<h2 id="1-representation-du-serpent"><u>1. Représentation du Serpent</u></h2>
+<h2 id="1-representation-du-serpent">1. Représentation du Serpent</h2>
 <p>Le serpent est une <strong>liste de tuples</strong>. Chaque tuple <code>(x, y)</code> représente une case de la grille.
 - Le premier élément de la liste (<code>index 0</code>) est la <strong>tête</strong> du serpent.
 - Le dernier élément est le bout de la <strong>queue</strong>.</p>
@@ -506,7 +506,7 @@
 <span class="sd">    Retour: list, une liste de tuples (x, y)</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 </code></pre></div>
-<h2 id="2-calculer-la-nouvelle-tete"><u>2. Calculer la nouvelle tête</u></h2>
+<h2 id="2-calculer-la-nouvelle-tete">2. Calculer la nouvelle tête</h2>
 <p>Quand le serpent avance, on doit calculer la position de sa nouvelle tête en fonction de la direction.
 La direction est donnée par un tuple <code>(dx, dy)</code>.</p>
 <details class="example">
@@ -524,7 +524,7 @@ La nouvelle tête sera <code>(10 + 0, 10 - 1) = (10, 9)</code>.</p>
 <span class="sd">    Retour:     tuple, la nouvelle position (x, y)</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 </code></pre></div>
-<h2 id="3-faire-avancer-le-serpent-insertion"><u>3. Faire avancer le serpent (Insertion)</u></h2>
+<h2 id="3-faire-avancer-le-serpent-insertion">3. Faire avancer le serpent (Insertion)</h2>
 <p>Pour faire avancer le serpent, on ajoute la nouvelle tête au début de la liste.
 Quelle méthode de liste permet d'ajouter un élément à une position précise (ici l'index 0) ?</p>
 <p>👉 <strong>Complétez la fonction :</strong></p>
@@ -534,7 +534,7 @@ Quelle méthode de liste permet d'ajouter un élément à une position précise 
 <span class="sd">    La modification se fait en place (pas de retour).</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 </code></pre></div>
-<h2 id="4-gerer-la-queue-suppression"><u>4. Gérer la queue (Suppression)</u></h2>
+<h2 id="4-gerer-la-queue-suppression">4. Gérer la queue (Suppression)</h2>
 <p>Si le serpent ne mange pas de pomme, il doit garder la même taille. Comme on a ajouté une tête, il faut supprimer le dernier élément de la queue.</p>
 <p>👉 <strong>Complétez la fonction :</strong></p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">supprimer_queue</span><span class="p">(</span><span class="n">serpent</span><span class="p">:</span><span class="nb">list</span><span class="p">)</span><span class="o">-&gt;</span><span class="kc">None</span><span class="p">:</span>
@@ -543,7 +543,7 @@ Quelle méthode de liste permet d'ajouter un élément à une position précise 
 <span class="sd">    La modification se fait en place.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 </code></pre></div>
-<h2 id="5-verifier-les-collisions"><u>5. Vérifier les collisions 💥</u></h2>
+<h2 id="5-verifier-les-collisions">5. Vérifier les collisions 💥</h2>
 <p>Le jeu s'arrête si :
 1.  La tête sort de la grille (coordonnées &lt; 0 ou &gt;= taille).
 2.  La tête touche une autre partie du corps du serpent.</p>
@@ -554,13 +554,13 @@ Quelle méthode de liste permet d'ajouter un élément à une position précise 
 <span class="sd">    Retour: True si collision, False sinon.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 </code></pre></div>
-<h2 id="6-lancer-le-jeu"><u>6. Lancer le jeu 🎮</u></h2>
+<h2 id="6-lancer-le-jeu">6. Lancer le jeu 🎮</h2>
 <p>Une fois vos fonctions complétées, lancez le fichier <code>main.py</code> pour tester votre jeu !</p>
 <div class="highlight"><pre><span></span><code>python<span class="w"> </span>main.py
 </code></pre></div>
 <p>Si tout fonctionne, vous verrez votre serpent bouger et la liste se mettre à jour en temps réel sur le côté de l'écran.</p>
 <p>👉 <strong>Question :</strong> Observez la liste affichée à droite pendant que vous jouez. Que se passe-t-il dans la liste quand vous mangez une pomme ?</p>
-<h2 id="7-bonus-interface-console-texte"><u>7. Bonus : Interface Console / Texte 📟</u></h2>
+<h2 id="7-bonus-interface-console-texte">7. Bonus : Interface Console / Texte 📟</h2>
 <p>Pour bien comprendre que <strong>la logique du jeu (les listes)</strong> est indépendante de <strong>l'interface graphique</strong>, nous allons créer un affichage simple dans la console.</p>
 <p>Ouvrez le fichier <code>console.py</code>. Vous y trouverez une structure de jeu alternative qui utilise les <strong>mêmes fonctions</strong> de <code>logique.py</code> !</p>
 <p>👉 <strong>Votre mission :</strong></p>

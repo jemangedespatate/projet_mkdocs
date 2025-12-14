@@ -1,6 +1,6 @@
-# <u>Exercices pratiques</u>
+# Exercices pratiques
 
-**<u>1. Variables et affichage**</u>
+**1. Variables et affichage**
 
 Créer deux variables, **nom** et **âge**, puis afficher :
 
@@ -10,7 +10,7 @@ Bonjour <nom>, dans 10 ans tu auras <âge + 10> ans.
 
 ---
 
-**<u>2. Opérations mathématiques**</u>
+**2. Opérations mathématiques**
 
 Écrivez un programme qui utilise 2 variables et affiche :
 
@@ -20,7 +20,7 @@ Bonjour <nom>, dans 10 ans tu auras <âge + 10> ans.
 
 ---
 
-**<u>3. Conditions**</u>
+**3. Conditions**
 
 Écrire un programme qui crée une variable note et affiche :
 
@@ -31,7 +31,7 @@ Bonjour <nom>, dans 10 ans tu auras <âge + 10> ans.
 
 ---
 
-**<u>4. Boucles**</u>
+**4. Boucles**
 
 Affichez tous les nombres **pairs** de 1 à 20 en utilisant une boucle `for`
 
@@ -46,7 +46,7 @@ Par exemple :
 
 ---
 
-**<u>5. Fonctions**</u>
+**5. Fonctions**
 
 créez une fonction `carre(x)` qui renvoie le carré d’un nombre.
 

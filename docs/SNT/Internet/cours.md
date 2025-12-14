@@ -1,16 +1,16 @@
-# <u>Internet</u>
+# Internet
 
-## <u>🤔 Introduction</u>
+## 🤔 Introduction
 
 Internet fait aujourd’hui partie de notre quotidien : on l’utilise pour envoyer des messages, regarder des vidéos, jouer en ligne, faire des recherches… Mais comment ça fonctionne vraiment ?
 
 Dans cette leçon, nous allons répondre à cette **question** en découvrant comment les machines communiquent entre elles, quels sont les composants d’un réseau et comment les informations circulent sur Internet.
 
-## <u>⌛ Point historique</u>
+## ⌛ Point historique
 
 ![chronologie](../../assets/seconde/internet/chronologie.png)
 
-## <u>Définitions</u>
+## Définitions
 
 <span style="color: #FF0000">Définition : réseau</span>
 
@@ -32,7 +32,7 @@ Dans cette leçon, nous allons répondre à cette **question** en découvrant co
 
 **Internet est un réseau de réseaux.**
 
-## <u>🧩 Composants d’un réseau</u>
+## 🧩 Composants d’un réseau
 
 Voici un tableau récapitulatif des éléments que l’on peut croiser dans un réseau :
 
@@ -43,9 +43,9 @@ Voici un tableau récapitulatif des éléments que l’on peut croiser dans un r
 | Routeur       | Élément qui permet de relier un réseau local à Internet ou à d’autres réseaux | Box Internet, routeur spécifique              |
 | Câbles, ondes | Élément qui permet de relier les machines au switch ou au routeur             | Câble Ethernet, fibre optique, Wi‑Fi          |
 
-## <u>🆔 Identifiants des machines sur un réseau</u>
+## 🆔 Identifiants des machines sur un réseau
 
-### <u>Premier niveau : l’adresse MAC</u>
+### Premier niveau : l’adresse MAC
 
 Chaque machine dispose d’une ou plusieurs **cartes réseau**. Ces cartes permettent de communiquer localement ou globalement.
 
@@ -65,7 +65,7 @@ $$a1:b2:c3:d4:e5:f6$$
     | ------------------ | - | - | - | -- | -- | -- | -- | -- | -- |
     | nombre décimal     | 0 | ... | 9 | 10 | 11 | 12 | 13 | 14 | 15 |
 
-### <u>Second niveau : l’adresse IP</u>
+### Second niveau : l’adresse IP
 
 L’adresse MAC permet d’identifier précisément une machine, mais ne donne aucune information sur son emplacement dans un réseau. Il existe donc une seconde adresse attribuée à chaque machine : **l’adresse IP**.
 
@@ -123,7 +123,7 @@ Donc la partie réseau de cette adresse est `128.40.0.0`.
  
  
 
-## <u>🔁 Échange d’informations</u>
+## 🔁 Échange d’informations
 
 Maintenant que nous savons comment les machines s’identifient entre elles, intéressons‑nous à la manière dont elles échangent des informations.
 

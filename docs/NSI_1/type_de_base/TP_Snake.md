@@ -1,6 +1,6 @@
-# <u>📝 Mini-projet : Snake et Listes en Python</u>
+# 📝 Mini-projet : Snake et Listes en Python
 
-## <u>🎯 Objectif</u>
+## 🎯 Objectif
 
 Nous allons programmer le célèbre **jeu Snake** en Python.
 
@@ -10,7 +10,7 @@ Ce projet a pour but principal de vous faire manipuler les **listes** en Python,
 
 Dans ce TP, vous compléterez les fonctions manquantes dans le fichier `logique.py`, tandis que l'interface graphique est déjà fournie dans `main.py`.
 
-## <u>Organisation des fichiers 📂</u>
+## Organisation des fichiers 📂
 
 Pour que votre projet fonctionne correctement, vous devez placer tous les fichiers dans **un même répertoire** (dossier).
 
@@ -32,7 +32,7 @@ mon_projet_snake/
 └── requirements.txt
 ```
 
-## <u>1. Représentation du Serpent</u>
+## 1. Représentation du Serpent
 
 Le serpent est une **liste de tuples**. Chaque tuple `(x, y)` représente une case de la grille.
 - Le premier élément de la liste (`index 0`) est la **tête** du serpent.
@@ -58,7 +58,7 @@ def creer_serpent()->list:
     """
 ```
 
-## <u>2. Calculer la nouvelle tête</u>
+## 2. Calculer la nouvelle tête
 
 Quand le serpent avance, on doit calculer la position de sa nouvelle tête en fonction de la direction.
 La direction est donnée par un tuple `(dx, dy)`.
@@ -81,7 +81,7 @@ def calculer_nouvelle_tete(serpent:list, direction:tuple)->tuple:
     """
 ```
 
-## <u>3. Faire avancer le serpent (Insertion)</u>
+## 3. Faire avancer le serpent (Insertion)
 
 Pour faire avancer le serpent, on ajoute la nouvelle tête au début de la liste.
 Quelle méthode de liste permet d'ajouter un élément à une position précise (ici l'index 0) ?
@@ -96,7 +96,7 @@ def inserer_tete(serpent:list, nouvelle_tete:tuple)->None:
     """
 ```
 
-## <u>4. Gérer la queue (Suppression)</u>
+## 4. Gérer la queue (Suppression)
 
 Si le serpent ne mange pas de pomme, il doit garder la même taille. Comme on a ajouté une tête, il faut supprimer le dernier élément de la queue.
 
@@ -110,7 +110,7 @@ def supprimer_queue(serpent:list)->None:
     """
 ```
 
-## <u>5. Vérifier les collisions 💥</u>
+## 5. Vérifier les collisions 💥
 
 Le jeu s'arrête si :
 1.  La tête sort de la grille (coordonnées < 0 ou >= taille).
@@ -126,7 +126,7 @@ def verifier_collision(serpent:list, largeur_grille:int, hauteur_grille:int)->bo
     """
 ```
 
-## <u>6. Lancer le jeu 🎮</u>
+## 6. Lancer le jeu 🎮
 
 Une fois vos fonctions complétées, lancez le fichier `main.py` pour tester votre jeu !
 
@@ -138,7 +138,7 @@ Si tout fonctionne, vous verrez votre serpent bouger et la liste se mettre à jo
 
 👉 **Question :** Observez la liste affichée à droite pendant que vous jouez. Que se passe-t-il dans la liste quand vous mangez une pomme ?
 
-## <u>7. Bonus : Interface Console / Texte 📟</u>
+## 7. Bonus : Interface Console / Texte 📟
 
 Pour bien comprendre que **la logique du jeu (les listes)** est indépendante de **l'interface graphique**, nous allons créer un affichage simple dans la console.
 

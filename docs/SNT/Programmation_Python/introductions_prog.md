@@ -1,6 +1,6 @@
-# <u>Introductions à la programmation</u>
+# Introductions à la programmation
 
-## <u>Introduction</u>
+## Introduction
 
 Lors de vos années au collège, vous avez programmé en utilisant la programmation par blocs. Bien que ce type de langage ait des avantages pour comprendre les bases de la programmation, il reste limité.
 
@@ -12,7 +12,7 @@ Il est possible de réaliser l’ensemble des choses effectuées avec Scratch da
 
 ![exemple python transformer](../../assets/seconde/introduction_prog/merged_exemple.png)
 
-## <u>La programmation en 2 mots</u>
+## La programmation en 2 mots
 
 rappel: La programmation, c’est dire à un ordinateur **quoi faire** en utilisant un langage qu’il peut comprendre.
 Un programme est donc une **suite d’instructions** que la machine exécute pas à pas.
@@ -48,7 +48,7 @@ La programmation permet de :
     sur l’exécution du programme.
 
 
-## <u>Turtle</u>
+## Turtle
 
 Il est possible, dans Python, d’importer ce que l’on appelle des **modules**. Ces modules sont des programmes créés par d’autres utilisateurs, permettant d’avoir accès à de nouvelles possibilités.
 

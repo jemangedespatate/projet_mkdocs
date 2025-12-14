@@ -1,8 +1,8 @@
-# <u>Exercice 3</u>
+# Exercice 3
 
-## <u>Exercices sur les boucles et les fonctions</u>
+## Exercices sur les boucles et les fonctions
 
-### <u>1. Affichage simple avec une boucle</u>
+### 1. Affichage simple avec une boucle
 
 Écris un programme qui affiche les nombres de 1 à 10 en utilisant une boucle `for`.
 
@@ -15,7 +15,7 @@
 
 ---
 
-### <u>2. Somme des entiers</u>
+### 2. Somme des entiers
 
 Écris un programme qui calcule et affiche la somme des nombres de 1 à 100 en utilisant une boucle.
 
@@ -30,7 +30,7 @@
 
 ---
 
-### <u>3. Compter les nombres pairs</u>
+### 3. Compter les nombres pairs
 
 Écris un programme qui affiche tous les nombres pairs entre 1 et 50 grâce à une boucle.
 
@@ -44,7 +44,7 @@
 
 ---
 
-### <u>4. Factorielle</u>
+### 4. Factorielle
 
 Écris une fonction `factorielle(n)` qui calcule la factorielle de `n`.
 Teste la fonction avec plusieurs valeurs.
@@ -67,7 +67,7 @@ Teste la fonction avec plusieurs valeurs.
 
 ---
 
-### <u>5. Table de multiplication</u>
+### 5. Table de multiplication
 
 Écris une fonction `table(n)` qui affiche la table de multiplication de `n` (de 1 à 10).
 
@@ -85,7 +85,7 @@ Teste la fonction avec plusieurs valeurs.
 
 ---
 
-### <u>6. Compter les voyelles</u>
+### 6. Compter les voyelles
 
 Écris une fonction `compter_voyelles(mot)` qui retourne le nombre de voyelles contenues dans une chaîne de caractères.
 
@@ -107,7 +107,7 @@ Teste la fonction avec plusieurs valeurs.
 
 ---
 
-### <u>7. Somme des chiffres</u>
+### 7. Somme des chiffres
 
 Écris une fonction `somme_chiffres(n)` qui calcule la somme des chiffres d’un nombre entier.
 
@@ -128,7 +128,7 @@ Teste la fonction avec plusieurs valeurs.
 
 ---
 
-### <u>8. Suite de Fibonacci (optionnel)</u>
+### 8. Suite de Fibonacci (optionnel)
 
 Écris une fonction `fibonacci(n)` qui affiche les `n` premiers termes de la suite de Fibonacci.
 
@@ -152,7 +152,7 @@ Teste la fonction avec plusieurs valeurs.
 
 ---
 
-### <u>9. Nombre premier</u>
+### 9. Nombre premier
 
 Écris une fonction `est_premier(n)` qui renvoie `True` si `n` est un nombre premier, et `False` sinon.
 Puis, écris un programme qui affiche tous les nombres premiers jusqu’à 100.
@@ -177,7 +177,7 @@ Puis, écris un programme qui affiche tous les nombres premiers jusqu’à 100.
 
 ---
 
-### <u>10. Dessin avec boucles</u>
+### 10. Dessin avec boucles
 
 Écris un programme qui affiche un triangle de hauteur `n` en utilisant une boucle.
 
@@ -204,9 +204,9 @@ Puis, écris un programme qui affiche tous les nombres premiers jusqu’à 100.
     ```
 
 
-## <u>exercice complémentaire</u>
+## exercice complémentaire
 
-### <u>11. Nombres parfaits</u>
+### 11. Nombres parfaits
 
 Un **nombre parfait** est un nombre égal à la somme de ses diviseurs propres (par exemple 6 = 1 + 2 + 3).
 
@@ -233,7 +233,7 @@ Un **nombre parfait** est un nombre égal à la somme de ses diviseurs propres (
 
 ---
 
-### <u>12. Dessin en losange</u>
+### 12. Dessin en losange
 
 Écris une fonction `losange(n)` qui affiche un losange de hauteur `2n - 1` en utilisant des boucles.
 
@@ -269,7 +269,7 @@ Un **nombre parfait** est un nombre égal à la somme de ses diviseurs propres (
 
 ---
 
-### <u>13. Décomposition en facteurs premiers</u>
+### 13. Décomposition en facteurs premiers
 
 Écris une fonction `facteurs_premiers(n)` qui décompose un entier en produit de nombres premiers et les affiches.
 
@@ -297,7 +297,7 @@ Un **nombre parfait** est un nombre égal à la somme de ses diviseurs propres (
 
 ---
 
-### <u>14. Nombre mystère</u>
+### 14. Nombre mystère
 
 Écris une fonction `deviner(n)` qui fait deviner un nombre entre 1 et `n`.
 
@@ -334,7 +334,7 @@ Un **nombre parfait** est un nombre égal à la somme de ses diviseurs propres (
 
 ---
 
-### <u>15. Somme des chiffres pairs</u>
+### 15. Somme des chiffres pairs
 
 Écris une fonction `somme_pairs(nombre)` qui renvoie la somme des chiffres **pairs** d’un entier.
 
@@ -358,7 +358,7 @@ Un **nombre parfait** est un nombre égal à la somme de ses diviseurs propres (
 
 ---
 
-### <u>16. Triangle inversé</u>
+### 16. Triangle inversé
 
 Écris une fonction `triangle_inverse(n)` qui affiche un triangle de `n` lignes avec des `*` décroissants.
 
@@ -387,7 +387,7 @@ Un **nombre parfait** est un nombre égal à la somme de ses diviseurs propres (
 ---
 
 
-### <u>17. Anagrammes</u>
+### 17. Anagrammes
 
 Écris une fonction `est_anagramme(mot1, mot2)` qui retourne `True` si les deux mots sont des anagrammes (mêmes lettres en nombre identique, ordre différent).
 
@@ -441,7 +441,7 @@ Un **nombre parfait** est un nombre égal à la somme de ses diviseurs propres (
 
 ---
 
-### <u>18. Mots en escalier</u>
+### 18. Mots en escalier
 
 Écris une fonction `escalier_mot(mot)` qui affiche un mot en escalier.
 
@@ -468,7 +468,7 @@ Un **nombre parfait** est un nombre égal à la somme de ses diviseurs propres (
     ```
 ---
 
-### <u>19. Symétrie verticale</u>
+### 19. Symétrie verticale
 
 Écris une fonction `symetrie(mot)` qui crée un effet miroir en concaténant le mot avec son inverse.
 
@@ -491,7 +491,7 @@ Un **nombre parfait** est un nombre égal à la somme de ses diviseurs propres (
 
 ---
 
-### <u>20. Caractère le plus fréquent</u>
+### 20. Caractère le plus fréquent
 
 Écris une fonction `plus_frequent(texte)` qui retourne le caractère le plus fréquent dans une chaîne (en ignorant les espaces).
 

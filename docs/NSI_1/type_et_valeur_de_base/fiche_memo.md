@@ -1,8 +1,8 @@
-# <u>🧮 FICHE MÉMO – CONVERSIONS ET REPRÉSENTATIONS BINAIRES</u>
+# 🧮 FICHE MÉMO – CONVERSIONS ET REPRÉSENTATIONS BINAIRES
 
-## <u>🔹 1. Base 10 → Base 2</u>
+## 🔹 1. Base 10 → Base 2
 
-### <u>🔸 Méthode : Division successive par 2</u>
+### 🔸 Méthode : Division successive par 2
 
 1. Divise le nombre par 2.
 2. Note le **reste** (0 ou 1).
@@ -22,9 +22,9 @@
     ```
 ---
 
-## <u>🔹 2. Base 2 → Base 10</u>
+## 🔹 2. Base 2 → Base 10
 
-### <u>🔸 Méthode : Somme des puissances de 2</u>
+### 🔸 Méthode : Somme des puissances de 2
 
 Multiplie chaque bit par sa puissance de 2, en partant de la droite.
 
@@ -39,9 +39,9 @@ Multiplie chaque bit par sa puissance de 2, en partant de la droite.
 
 ---
 
-## <u>🔹 3. Base 16 → Base 10</u>
+## 🔹 3. Base 16 → Base 10
 
-### <u>🔸 Méthode : Somme des puissances de 16</u>
+### 🔸 Méthode : Somme des puissances de 16
 
 Chaque chiffre hexadécimal vaut 0–15 (A=10, B=11, C=12, D=13, E=14, F=15).
 
@@ -52,9 +52,9 @@ Chaque chiffre hexadécimal vaut 0–15 (A=10, B=11, C=12, D=13, E=14, F=15).
     ```
 ---
 
-## <u>🔹 4. Base 10 → Base 16</u>
+## 🔹 4. Base 10 → Base 16
 
-### <u>🔸 Méthode : Division par 16</u>
+### 🔸 Méthode : Division par 16
 
 1. Divise par 16.
 2. Note le reste (0–9 ou A–F).
@@ -70,9 +70,9 @@ Chaque chiffre hexadécimal vaut 0–15 (A=10, B=11, C=12, D=13, E=14, F=15).
     ```
 ---
 
-## <u>🔹 5. Partie fractionnaire (décimale ↔ binaire)</u>
+## 🔹 5. Partie fractionnaire (décimale ↔ binaire)
 
-### <u>🔸 a) Décimal → Binaire (partie après la virgule)</u>
+### 🔸 a) Décimal → Binaire (partie après la virgule)
 
 1. Divise la partie fractionnaire par 2.
 2. Note la **partie entière** (0 ou 1).
@@ -90,7 +90,7 @@ Chaque chiffre hexadécimal vaut 0–15 (A=10, B=11, C=12, D=13, E=14, F=15).
     ```
 ---
 
-### <u>🔸 b) Binaire → Décimal (partie après la virgule)</u>
+### 🔸 b) Binaire → Décimal (partie après la virgule)
 
 Chaque bit après la virgule vaut une puissance **négative** de 2 : 2⁻¹, 2⁻², etc.
 
@@ -107,7 +107,7 @@ Chaque bit après la virgule vaut une puissance **négative** de 2 : 2⁻¹, 2�
 
 ---
 
-## <u>🔹 6. Virgule fixe</u>
+## 🔹 6. Virgule fixe
 
 * La **position de la virgule** est **fixe** dans le nombre binaire.
 
@@ -119,7 +119,7 @@ Chaque bit après la virgule vaut une puissance **négative** de 2 : 2⁻¹, 2�
 
 ---
 
-## <u>🔹 7. Virgule flottante</u>
+## 🔹 7. Virgule flottante
 
 * La **virgule “flotte”** : le nombre est écrit sous la forme
   **± mantisse × base^exposant**
@@ -133,7 +133,7 @@ Chaque bit après la virgule vaut une puissance **négative** de 2 : 2⁻¹, 2�
 
 ---
 
-## <u>🔹 8. Bit de signe</u>
+## 🔹 8. Bit de signe
 
 * Le **bit le plus à gauche** indique le **signe** :
 
@@ -147,9 +147,9 @@ Chaque bit après la virgule vaut une puissance **négative** de 2 : 2⁻¹, 2�
 
 ---
 
-## <u>🔹 9. Complément à 2 (représentation des négatifs)</u>
+## 🔹 9. Complément à 2 (représentation des négatifs)
 
-### <u>🔸 Pour obtenir le complément à 2 :</u>
+### 🔸 Pour obtenir le complément à 2 :
 
 1. Inverse tous les bits (0 → 1, 1 → 0).
 2. Ajoute **1** au résultat.
@@ -161,7 +161,7 @@ Chaque bit après la virgule vaut une puissance **négative** de 2 : 2⁻¹, 2�
     * Inversion : 11101001
     * +1 : 11101010 = **–22**
 
-### <u>🔸 Pour retrouver la valeur :</u>
+### 🔸 Pour retrouver la valeur :
 
 1. Inverse les bits.
 2. Ajoute 1.
