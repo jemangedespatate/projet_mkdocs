@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://www.prof-leal.fr/NSI_1/type_de_base/sommaire/">
+        <link rel="canonical" href="https://www.prof-leal.fr/NSI_1/type_de_base/dictionnaire/">
       
       
       
@@ -18,7 +18,7 @@
     
     
       
-        <title>🐍 Structures linéaires - Mr Leal SNT/NSI</title>
+        <title>📚 Cours de NSI : Les dictionnaires en Python - Mr Leal SNT/NSI</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#structures-lineaires" class="md-skip">
+        <a href="#cours-de-nsi-les-dictionnaires-en-python" class="md-skip">
           Skip to content
         </a>
       
@@ -106,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              🐍 Structures linéaires
+              📚 Cours de NSI : Les dictionnaires en Python
             
           </span>
         </div>
@@ -369,27 +369,138 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#cours" class="md-nav__link">
+  <a href="#1-introduction" class="md-nav__link">
     <span class="md-ellipsis">
-      Cours
+      1. Introduction
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#exercices" class="md-nav__link">
+  <a href="#2-creation-dun-dictionnaire" class="md-nav__link">
     <span class="md-ellipsis">
-      Exercices
+      2. Création d'un dictionnaire
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Création d'un dictionnaire">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#syntaxe" class="md-nav__link">
+    <span class="md-ellipsis">
+      ➤ Syntaxe
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cles-et-valeurs" class="md-nav__link">
+    <span class="md-ellipsis">
+      ➤ Clés et Valeurs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-acces-aux-valeurs" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Accès aux valeurs
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#projet" class="md-nav__link">
+  <a href="#4-modification-et-ajout" class="md-nav__link">
     <span class="md-ellipsis">
-      projet
+      4. Modification et ajout
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-suppression" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Suppression
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-parcours-dun-dictionnaire" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Parcours d'un dictionnaire
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Parcours d'un dictionnaire">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parcourir-les-cles-comportement-par-defaut" class="md-nav__link">
+    <span class="md-ellipsis">
+      ➤ Parcourir les clés (comportement par défaut)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parcourir-les-valeurs-avec-values" class="md-nav__link">
+    <span class="md-ellipsis">
+      ➤ Parcourir les valeurs avec .values()
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parcourir-les-couples-cle-valeur-avec-items" class="md-nav__link">
+    <span class="md-ellipsis">
+      ➤ Parcourir les couples (clé, valeur) avec .items()
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-appartenance-in" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Appartenance (in)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-methodes-utiles" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Méthodes utiles
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-comparaison-liste-vs-dictionnaire" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Comparaison Liste vs Dictionnaire
     </span>
   </a>
   
@@ -410,22 +521,172 @@
                   
 
 
-<h1 id="structures-lineaires">🐍 Structures linéaires</h1>
-<h2 id="cours">Cours</h2>
+<h1 id="cours-de-nsi-les-dictionnaires-en-python">📚 Cours de NSI : Les dictionnaires en Python</h1>
+<hr />
+<h2 id="1-introduction">1. Introduction</h2>
+<p>Les <strong>dictionnaires</strong> (ou <strong>tableaux associatifs</strong>) sont des structures de données permettant de stocker des couples <strong>clé : valeur</strong>.
+Contrairement aux listes qui sont indexées par des entiers (0, 1, 2...), les dictionnaires sont indexés par des <strong>clés</strong> (qui peuvent être des chaînes de caractères, des nombres, etc.).</p>
+<p>C'est une structure essentielle qui fonctionne comme un vrai dictionnaire papier : on cherche un mot (<strong>la clé</strong>) pour obtenir sa définition (<strong>la valeur</strong>).</p>
+<hr />
+<h2 id="2-creation-dun-dictionnaire">2. Création d'un dictionnaire</h2>
+<h3 id="syntaxe">➤ Syntaxe</h3>
+<p>Un dictionnaire se définit avec des accolades <code>{}</code>. Chaque élément est une paire <code>clé : valeur</code>, séparée par une virgule.</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Dictionnaire vide</span>
+<span class="n">vide</span> <span class="o">=</span> <span class="p">{}</span>
+
+<span class="c1"># Dictionnaire représenant une personne</span>
+<span class="n">perso</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;nom&quot;</span><span class="p">:</span> <span class="s2">&quot;Bond&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;prenom&quot;</span><span class="p">:</span> <span class="s2">&quot;James&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;agent&quot;</span><span class="p">:</span> <span class="mi">7</span>
+<span class="p">}</span>
+
+<span class="c1"># Dictionnaire avec des types variés</span>
+<span class="n">notes</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;maths&quot;</span><span class="p">:</span> <span class="mi">15</span><span class="p">,</span>
+    <span class="s2">&quot;anglais&quot;</span><span class="p">:</span> <span class="mi">18</span><span class="p">,</span>
+    <span class="s2">&quot;sport&quot;</span><span class="p">:</span> <span class="mi">12</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="cles-et-valeurs">➤ Clés et Valeurs</h3>
 <ul>
-<li><a href="../liste_tuple/">liste et tuple</a></li>
-<li><a href="../dictionnaire/">dictionnaires</a></li>
+<li><strong>Les clés</strong> doivent être <strong>uniques</strong> et de type <strong>immuable</strong> (str, int, float, tuple...).</li>
+<li><strong>Les valeurs</strong> peuvent être de <strong>n'importe quel type</strong> (str, int, liste, autre dictionnaire...).</li>
 </ul>
-<h2 id="exercices">Exercices</h2>
-<ul>
-<li><a href="../exercice/">exercices liste et tuple</a></li>
-<li><a href="../correction_exercice/">correction exercices liste et tuple</a></li>
-<li><a href="../exercice_dictionnaire/">exercices dictionnaires</a></li>
-</ul>
-<h2 id="projet">projet</h2>
-<ul>
-<li><a href="../TP_Snake/">Snake</a></li>
-</ul>
+<hr />
+<h2 id="3-acces-aux-valeurs">3. Accès aux valeurs</h2>
+<p>On accède à une valeur en utilisant sa <strong>clé</strong> entre crochets <code>[]</code>.</p>
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">perso</span><span class="p">[</span><span class="s2">&quot;nom&quot;</span><span class="p">])</span>    <span class="c1"># Affiche &quot;Bond&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">notes</span><span class="p">[</span><span class="s2">&quot;maths&quot;</span><span class="p">])</span>  <span class="c1"># Affiche 15</span>
+</code></pre></div>
+<p>⚠️ <strong>Attention :</strong> Si la clé n'existe pas, Python renvoie une erreur <code>KeyError</code>.
+Pour éviter cela, on peut utiliser la méthode <code>.get()</code> :</p>
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">perso</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;age&quot;</span><span class="p">))</span>        <span class="c1"># Affiche None (pas d&#39;erreur)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">perso</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;age&quot;</span><span class="p">,</span> <span class="mi">18</span><span class="p">))</span>    <span class="c1"># Affiche 18 (valeur par défaut)</span>
+</code></pre></div>
+<hr />
+<h2 id="4-modification-et-ajout">4. Modification et ajout</h2>
+<p>Les dictionnaires sont <strong>mutables</strong> (modifiables). On peut changer la valeur associée à une clé existante ou créer une nouvelle paire.</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Modification d&#39;une valeur existante</span>
+<span class="n">perso</span><span class="p">[</span><span class="s2">&quot;agent&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;007&quot;</span> 
+
+<span class="c1"># Ajout d&#39;une nouvelle clé</span>
+<span class="n">perso</span><span class="p">[</span><span class="s2">&quot;ville&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Londres&quot;</span>
+<span class="n">perso</span><span class="p">[</span><span class="s2">&quot;actif&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">True</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">perso</span><span class="p">)</span>
+<span class="c1"># {&#39;nom&#39;: &#39;Bond&#39;, &#39;prenom&#39;: &#39;James&#39;, &#39;agent&#39;: &#39;007&#39;, &#39;ville&#39;: &#39;Londres&#39;, &#39;actif&#39;: True}</span>
+</code></pre></div>
+<hr />
+<h2 id="5-suppression">5. Suppression</h2>
+<p>Il existe plusieurs façons de retirer des éléments :</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># del : supprime une paire par sa clé</span>
+<span class="k">del</span> <span class="n">perso</span><span class="p">[</span><span class="s2">&quot;actif&quot;</span><span class="p">]</span>
+
+<span class="c1"># pop() : supprime la clé et renvoie la valeur supprimée</span>
+<span class="n">ville</span> <span class="o">=</span> <span class="n">perso</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s2">&quot;ville&quot;</span><span class="p">)</span> 
+<span class="c1"># ville vaut &quot;Londres&quot;, et la clé &quot;ville&quot; n&#39;est plus dans le dictionnaire</span>
+</code></pre></div>
+<hr />
+<h2 id="6-parcours-dun-dictionnaire">6. Parcours d'un dictionnaire</h2>
+<p>Comme les listes, on peut parcourir un dictionnaire avec une boucle <code>for</code>.</p>
+<h3 id="parcourir-les-cles-comportement-par-defaut">➤ Parcourir les clés (comportement par défaut)</h3>
+<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">matiere</span> <span class="ow">in</span> <span class="n">notes</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">matiere</span><span class="p">)</span>
+<span class="c1"># Affiche : maths, anglais, sport</span>
+</code></pre></div>
+<h3 id="parcourir-les-valeurs-avec-values">➤ Parcourir les valeurs avec <code>.values()</code></h3>
+<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">note</span> <span class="ow">in</span> <span class="n">notes</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">note</span><span class="p">)</span>
+<span class="c1"># Affiche : 15, 18, 12</span>
+</code></pre></div>
+<h3 id="parcourir-les-couples-cle-valeur-avec-items">➤ Parcourir les couples (clé, valeur) avec <code>.items()</code></h3>
+<p>C'est souvent la méthode la plus utile.</p>
+<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">matiere</span><span class="p">,</span> <span class="n">note</span> <span class="ow">in</span> <span class="n">notes</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;En </span><span class="si">{</span><span class="n">matiere</span><span class="si">}</span><span class="s2">, la note est </span><span class="si">{</span><span class="n">note</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div>
+<hr />
+<h2 id="7-appartenance-in">7. Appartenance (in)</h2>
+<p>Pour vérifier si une <strong>clé</strong> est présente dans le dictionnaire :</p>
+<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="s2">&quot;maths&quot;</span> <span class="ow">in</span> <span class="n">notes</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;La note de maths est présente&quot;</span><span class="p">)</span>
+</code></pre></div>
+<hr />
+<h2 id="8-methodes-utiles">8. Méthodes utiles</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Méthode</th>
+<th style="text-align: left;">Rôle</th>
+<th style="text-align: left;">Exemple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>len(d)</code></td>
+<td style="text-align: left;">Nombre de paires</td>
+<td style="text-align: left;"><code>len(notes) → 3</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>d.keys()</code></td>
+<td style="text-align: left;">Liste des clés</td>
+<td style="text-align: left;"><code>notes.keys()</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>d.values()</code></td>
+<td style="text-align: left;">Liste des valeurs</td>
+<td style="text-align: left;"><code>notes.values()</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>d.items()</code></td>
+<td style="text-align: left;">Liste des couples</td>
+<td style="text-align: left;"><code>notes.items()</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>d.clear()</code></td>
+<td style="text-align: left;">Vide le dictionnaire</td>
+<td style="text-align: left;"><code>d.clear()</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="9-comparaison-liste-vs-dictionnaire">9. Comparaison Liste vs Dictionnaire</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Caractéristique</th>
+<th style="text-align: left;">Liste (<code>list</code>)</th>
+<th style="text-align: left;">Dictionnaire (<code>dict</code>)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Syntaxe</strong></td>
+<td style="text-align: left;"><code>[val1, val2]</code></td>
+<td style="text-align: left;"><code>{cle1: val1, cle2: val2}</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Accès</strong></td>
+<td style="text-align: left;">Par indice <code>L[0]</code></td>
+<td style="text-align: left;">Par clé <code>D["nom"]</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ordre</strong></td>
+<td style="text-align: left;">Ordonné</td>
+<td style="text-align: left;">Ordonné (depuis Python 3.7)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Recherche</strong></td>
+<td style="text-align: left;">Lente (parcours complet)</td>
+<td style="text-align: left;">Très rapide (immédiat)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Usage</strong></td>
+<td style="text-align: left;">Collections d'éléments</td>
+<td style="text-align: left;">Association de données</td>
+</tr>
+</tbody>
+</table>
 
 
 
