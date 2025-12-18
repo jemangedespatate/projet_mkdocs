@@ -1,0 +1,654 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://www.prof-leal.fr/SNT/Reseaux_sociaux/graphe/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Introduction aux graphes - Mr Leal SNT/NSI</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/custom_style.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#introduction-aux-graphes" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Mr Leal SNT/NSI" class="md-header__button md-logo" aria-label="Mr Leal SNT/NSI" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M256 141.3v309.3l.5-.2A449 449 0 0 1 428.8 416H448V96h-19.2c-42.2 0-84.1 8.4-123.1 24.6-16.8 7-33.4 13.9-49.7 20.7m-25.1-79.8L256 72l25.1-10.5C327.9 42 378.1 32 428.8 32H464c26.5 0 48 21.5 48 48v352c0 26.5-21.5 48-48 48h-35.2c-50.7 0-100.9 10-147.7 29.5l-12.8 5.3c-7.9 3.3-16.7 3.3-24.6 0l-12.8-5.3C184.1 490 133.9 480 83.2 480H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h35.2c50.7 0 100.9 10 147.7 29.5"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Mr Leal SNT/NSI
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Introduction aux graphes
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="indigo"  aria-label="Mode sombre"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Mode sombre" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="indigo"  aria-label="Mode clair"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Mode clair" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Accueil
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../" class="md-tabs__link">
+        
+  
+  
+    
+  
+  SNT
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../NSI_1/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Première NSI
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Mr Leal SNT/NSI" class="md-nav__button md-logo" aria-label="Mr Leal SNT/NSI" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M256 141.3v309.3l.5-.2A449 449 0 0 1 428.8 416H448V96h-19.2c-42.2 0-84.1 8.4-123.1 24.6-16.8 7-33.4 13.9-49.7 20.7m-25.1-79.8L256 72l25.1-10.5C327.9 42 378.1 32 428.8 32H464c26.5 0 48 21.5 48 48v352c0 26.5-21.5 48-48 48h-35.2c-50.7 0-100.9 10-147.7 29.5l-12.8 5.3c-7.9 3.3-16.7 3.3-24.6 0l-12.8-5.3C184.1 490 133.9 480 83.2 480H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h35.2c50.7 0 100.9 10 147.7 29.5"/></svg>
+
+    </a>
+    Mr Leal SNT/NSI
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Accueil
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SNT
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../NSI_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Première NSI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Définition
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vocabulaire" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        vocabulaire
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#algorithmes-sur-les-graphes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        algorithmes sur les graphes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graphe-connexe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Graphe connexe
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#petit-monde-de-milgram" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Petit monde de Milgram
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="introduction-aux-graphes">Introduction aux graphes</h1>
+<h2 id="definition">Définition</h2>
+<p>Un graphe est une structure mathématique utilisée pour modéliser des relations entre objets.</p>
+<p>Il est composé de deux éléments principaux : les sommets (ou nœuds) et les arêtes (ou liens).</p>
+<p>Voyons ensemble les graphes, dans le cadre des réseaux sociaux.</p>
+<h2 id="vocabulaire">vocabulaire</h2>
+<div class="admonition note">
+<p class="admonition-title">Sommets</p>
+<p>Les sommets sont les entités individuelles dans le graphe. Un sommet peut comporter une information, comme par exemple un nom, une lettre ou un numéro.</p>
+<p>Par exemple, dans un réseau social, chaque personne serait un sommet.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Exemple:</p>
+<p><img alt="sommets" src="../../../assets/seconde/rsx_sociaux/Graphe_sommets.png" />  </p>
+<p>Les sommets sont indiqués en bleu</p>
+</div>
+<hr />
+<div class="admonition note">
+<p class="admonition-title">Arêtes</p>
+<p>Les arêtes sont les connexions entre les sommets. Chaque arête est donc reliée à deux sommets.</p>
+<p>Dans l’exemple du réseau social, une arête pourrait représenter une relation d’amitié entre deux personnes.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Exemple:</p>
+<p><img alt="arretes" src="../../../assets/seconde/rsx_sociaux/Graphe_arretes.png" />  </p>
+<p>Les arêtes sont indiquées en bleu</p>
+</div>
+<hr />
+<div class="admonition note">
+<p class="admonition-title">Voisins</p>
+<p>Deux sommets sont dits voisins s’ils sont reliés par une arête.</p>
+<p>Dans notre exemple de réseau social, deux personnes sont voisines si elles sont amies.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Exemple:</p>
+<p><img alt="voisins" src="../../../assets/seconde/rsx_sociaux/Graphe_voisins.png" />  </p>
+<p>Les voisins du sommet vert sont indiqués en bleu</p>
+</div>
+<hr />
+<div class="admonition note">
+<p class="admonition-title">Degrés</p>
+<p>Le degré d’un sommet est le nombre d’arêtes qui lui sont connectées, autrement dit le nombre de voisins de ce sommet.</p>
+<p>Dans le contexte d’un réseau social, le degré d’une personne serait le nombre de ses amis.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Exemple:</p>
+<p><img alt="degrés" src="../../../assets/seconde/rsx_sociaux/Graphe_degre.png" />  </p>
+<p>Les degrés de chaque sommet sont indiqués en bleu</p>
+</div>
+<h2 id="algorithmes-sur-les-graphes">algorithmes sur les graphes</h2>
+<div class="admonition note">
+<p class="admonition-title">Excentricité d'un sommet</p>
+<p>L'excentricité d'un sommet est la distance du sommet le plus éloigné. Cette distance est calculée en prenant le chemin le plus court.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Exemple:</p>
+<p><img alt="degrés" src="../../../assets/seconde/rsx_sociaux/Graphe_2.png" />  </p>
+<p>Dans cet exemple :</p>
+<p>L'excentricité du sommet 1 est de 3 car le sommet le plus loin est 5 qui est à distance 3.</p>
+<p>L'excentricité du sommet 2 est de 3.</p>
+<p>L'excentricité du sommet 3 est de 2.</p>
+<p>L'excentricité du sommet 4 est de 2.</p>
+<p>L'excentricité du sommet 5 est de 3.</p>
+<p>L'excentricité du sommet 6 est de 2.</p>
+</div>
+<hr />
+<div class="admonition note">
+<p class="admonition-title">Rayon</p>
+<p>Le rayon d’un graphe est la plus petite excentricité parmi tous les sommets du graphe.</p>
+<p>Dans un réseau social, le rayon pourrait donner une idée de la « portée » d’une information (combien de « sauts » elle doit faire pour atteindre tout le monde).</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Diamètre</p>
+<p>Le diamètre d’un graphe est la plus grande excentricité parmi tous les sommets du graphe.</p>
+<p>De même, le diamètre pourrait donner une idée de la séparation maximale entre deux personnes dans le réseau.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Exemple:</p>
+<p><img alt="degrés" src="../../../assets/seconde/rsx_sociaux/Graphe_2.png" /> </p>
+<p>Toujours dans le même exemple, le rayon est de 2, et le diamètre est de 3.</p>
+</div>
+<hr />
+<div class="admonition note">
+<p class="admonition-title">Centre d'un graphe</p>
+<p>Le centre d’un graphe est l’ensemble des sommets dont l’excentricité est égale au rayon du graphe.</p>
+<p>Dans le contexte des réseaux sociaux, le centre d’un graphe peut être interprété comme les utilisateurs les plus « centraux » ou les plus influents dans le réseau.</p>
+<p>Ces utilisateurs sont souvent ceux qui sont les plus proches de tous les autres utilisateurs dans le réseau, ce qui signifie qu’ils peuvent diffuser des informations plus rapidement et plus efficacement à travers le réseau.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Exemple:</p>
+<p><img alt="degrés" src="../../../assets/seconde/rsx_sociaux/Graphe_centre.png" /> </p>
+<p>Les sommets bleus représentent les différents centres du graphe.</p>
+</div>
+<h2 id="graphe-connexe">Graphe connexe</h2>
+<div class="admonition note">
+<p class="admonition-title">Graphe connexe</p>
+<p>Un <strong>graphe connexe</strong> est un graphe dans lequel <strong>tous les sommets sont accessibles les uns depuis les autres</strong>.</p>
+<p>Autrement dit, pour <strong>n’importe quelle paire de sommets</strong>, il existe <strong>au moins un chemin</strong> qui relie ces deux sommets.</p>
+<p>Dans un réseau social, un graphe connexe signifie que <strong>chaque utilisateur peut atteindre tous les autres</strong>, directement ou indirectement, via une chaîne de relations.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Composante connexe</p>
+<p>Une <strong>composante connexe</strong> est un <strong>sous-graphe</strong> dans lequel tous les sommets sont reliés entre eux, mais <strong>aucun sommet de cette composante n’est relié à un sommet extérieur</strong>.</p>
+<p>Un graphe peut donc être composé :</p>
+<ul>
+<li>d’une seule composante connexe → il est <strong>connexe</strong>  </li>
+<li>de plusieurs composantes connexes → il est <strong>non connexe</strong></li>
+</ul>
+<p>Dans un réseau social, chaque composante connexe représente un <strong>groupe d’utilisateurs isolé</strong> du reste du réseau (aucune relation entre les groupes).</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Exemple : graphe non connexe</p>
+<p><img alt="composantes" src="../../../assets/seconde/rsx_sociaux/Graphe_connexe.png" /></p>
+<p>Dans cet exemple, le graphe comporte <strong>deux composantes connexes</strong>.<br />
+Chaque groupe est totalement connexe en interne, mais aucun lien n’existe entre les deux groupes.</p>
+</div>
+<h2 id="petit-monde-de-milgram">Petit monde de Milgram</h2>
+<p>La théorie du « petit monde » stipule que tout individu dans le monde peut être relié à n’importe quel autre individu par une chaîne de relations sociales ne dépassant pas six relations.</p>
+<div class="admonition note">
+<p class="admonition-title">Contexte</p>
+<p>L’expérience a été menée par le psychologue Stanley Milgram dans les années 1960. L’objectif de l’expérience était de tester la théorie du « petit monde » vue précédement.</p>
+<p>Milgram a demandé à des participants de différentes régions des États-Unis d’envoyer une lettre à une personne cible en la passant uniquement à des connaissances personnelles.</p>
+<p>Milgram a constaté que la lettre atteignait généralement la cible en six étapes ou moins, d’où l’idée des « six degrés de séparation ». Cela a soutenu la théorie du « petit monde » et a montré que nous sommes tous beaucoup plus connectés que nous ne le pensons.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <a href="/" class="custom-home-button" title="Accueil">
+  <svg viewBox="0 0 24 24">
+    <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+  </svg>
+  Accueil
+</a>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.instant", "navigation.tabs", "navigation.sections", "navigation.top", "navigation.expand", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      
+    
+  </body>
+</html>

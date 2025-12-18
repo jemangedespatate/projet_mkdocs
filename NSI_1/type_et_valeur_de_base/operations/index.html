@@ -1,0 +1,1172 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://www.prof-leal.fr/NSI_1/type_et_valeur_de_base/operations/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>🔢 representation des nombre en machine - Mr Leal SNT/NSI</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/custom_style.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#representation-des-nombre-en-machine" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Mr Leal SNT/NSI" class="md-header__button md-logo" aria-label="Mr Leal SNT/NSI" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M256 141.3v309.3l.5-.2A449 449 0 0 1 428.8 416H448V96h-19.2c-42.2 0-84.1 8.4-123.1 24.6-16.8 7-33.4 13.9-49.7 20.7m-25.1-79.8L256 72l25.1-10.5C327.9 42 378.1 32 428.8 32H464c26.5 0 48 21.5 48 48v352c0 26.5-21.5 48-48 48h-35.2c-50.7 0-100.9 10-147.7 29.5l-12.8 5.3c-7.9 3.3-16.7 3.3-24.6 0l-12.8-5.3C184.1 490 133.9 480 83.2 480H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h35.2c50.7 0 100.9 10 147.7 29.5"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Mr Leal SNT/NSI
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              🔢 representation des nombre en machine
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="indigo"  aria-label="Mode sombre"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Mode sombre" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="indigo"  aria-label="Mode clair"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Mode clair" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Accueil
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../SNT/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  SNT
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Première NSI
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Mr Leal SNT/NSI" class="md-nav__button md-logo" aria-label="Mr Leal SNT/NSI" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M256 141.3v309.3l.5-.2A449 449 0 0 1 428.8 416H448V96h-19.2c-42.2 0-84.1 8.4-123.1 24.6-16.8 7-33.4 13.9-49.7 20.7m-25.1-79.8L256 72l25.1-10.5C327.9 42 378.1 32 428.8 32H464c26.5 0 48 21.5 48 48v352c0 26.5-21.5 48-48 48h-35.2c-50.7 0-100.9 10-147.7 29.5l-12.8 5.3c-7.9 3.3-16.7 3.3-24.6 0l-12.8-5.3C184.1 490 133.9 480 83.2 480H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h35.2c50.7 0 100.9 10 147.7 29.5"/></svg>
+
+    </a>
+    Mr Leal SNT/NSI
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Accueil
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SNT/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SNT
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Première NSI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#i-introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ℹ️ Introduction
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#les-entiers-positifs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ➕ Les entiers positifs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#les-nombres-flottants" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🌊 Les nombres flottants
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🌊 Les nombres flottants">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-la-virgule-fixe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. La virgule fixe
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemple-avec-001012" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemple avec 0,0101₂ :
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-la-virgule-flottante" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. La virgule flottante
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#les-nombres-negatifs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ➖ Les nombres négatifs
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="➖ Les nombres négatifs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-bit-de-poids-fort" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Bit de poids fort
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-complement-a-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Complément à 2
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#la-norme-ieee-754" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🖥️ La norme IEEE 754
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🖥️ La norme IEEE 754">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-principe-general" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Principe général
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-formats-les-plus-courants" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Formats les plus courants
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Formats les plus courants">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-simple-precision-32-bits" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        a. Simple précision (32 bits)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-double-precision-64-bits" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        b. Double précision (64 bits)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-exemple-pratique" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Exemple pratique
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-avantages-de-la-norme-ieee-754" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.✅ Avantages de la norme IEEE 754
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="representation-des-nombre-en-machine">🔢 representation des nombre en machine</h1>
+<h2 id="i-introduction">ℹ️ Introduction</h2>
+<p>Les ordinateurs ne comprennent que deux symboles : 0 et 1. <br />
+Ces deux valeurs correspondent à deux états électriques (passage du courant ou absence de courant) et constituent la base du langage binaire.</p>
+<p>Mais comment représenter, avec uniquement des suites de 0 et de 1, tous les nombres que nous utilisons en mathématiques : entiers positifs, entiers négatifs, fractions, nombres très grands ou très petits ?</p>
+<p>La réponse repose sur différentes méthodes de représentation des nombres en machine.
+Au fil du temps, des conventions se sont imposées pour :</p>
+<ul>
+<li>
+<p>coder les entiers positifs et négatifs,</p>
+</li>
+<li>
+<p>représenter les fractions et nombres réels grâce à la virgule fixe ou la virgule flottante,</p>
+</li>
+<li>
+<p>normaliser cette écriture avec des standards modernes comme la norme IEEE 754.</p>
+</li>
+</ul>
+<h2 id="les-entiers-positifs">➕ Les entiers positifs</h2>
+<p>Un ordinateur manipule les entiers positifs en utilisant le <strong>système binaire</strong>. <br />
+Chaque chiffre binaire (bit) peut être <strong>0</strong> ou <strong>1</strong>.</p>
+<ul>
+<li>Avec <strong>n bits</strong>, on peut représenter des entiers allant de :</li>
+</ul>
+<p>
+<script type="math/tex; mode=display">
+0 \quad \text{à} \quad 2^n - 1
+</script>
+</p>
+<div class="admonition example">
+<p class="admonition-title">Exemples :</p>
+<ul>
+<li>
+<p>Avec <strong>3 bits</strong> → nombres de 0 à 7 :</p>
+<ul>
+<li>000 = 0</li>
+<li>001 = 1</li>
+<li>010 = 2</li>
+<li>011 = 3</li>
+<li>100 = 4</li>
+<li>101 = 5</li>
+<li>110 = 6</li>
+<li>111 = 7</li>
+</ul>
+</li>
+<li>
+<p>Avec <strong>8 bits (1 octet)</strong> → nombres de 0 à 255.</p>
+</li>
+<li>
+<p>Avec <strong>16 bits</strong> → nombres de 0 à 65 535.</p>
+</li>
+</ul>
+</div>
+<h2 id="les-nombres-flottants">🌊 Les nombres flottants</h2>
+<p>Jusqu’ici, nous avons vu comment représenter les entiers en machine.
+Cependant, dans de nombreux calculs, il est nécessaire de manipuler des nombres décimaux : par exemple des mesures (3,14 mètres, 0,25 seconde), des résultats scientifiques ou encore des valeurs financières.</p>
+<p>Le problème est que l’ordinateur ne dispose que d’un nombre limité de bits, et il faut donc trouver une manière efficace de représenter ces nombres qui comportent une partie fractionnaire.</p>
+<p>Deux grandes approches ont été développées :</p>
+<ul>
+<li>
+<p>La virgule fixe, qui consiste à réserver un certain nombre de bits pour la partie entière et un certain nombre pour la partie décimale.</p>
+</li>
+<li>
+<p>La virgule flottante, qui utilise une écriture proche de la notation scientifique (en base 2), permettant de représenter des nombres très grands comme des nombres très petits avec une certaine précision.</p>
+</li>
+</ul>
+<p>Ces méthodes ont chacune leurs avantages et leurs limites, et elles ont conduit à l’établissement de normes modernes pour assurer une représentation standardisée dans tous les ordinateurs.</p>
+<h3 id="1-la-virgule-fixe">1. La virgule fixe</h3>
+<p>Dans ce système, on réserve un certain nombre de bits pour la <strong>partie entière</strong> et un certain nombre de bits pour la <strong>partie fractionnaire</strong>.</p>
+<div class="admonition example">
+<p class="admonition-title">Exemple :</p>
+<p>Imaginons qu’on ait 8 cases (bits) pour écrire un nombre : on peut en utiliser 4 pour la partie avant la virgule (la partie entière) et 4 pour la partie après la virgule (la partie décimale).</p>
+<div class="highlight"><pre><span></span><code>1101.0101
+</code></pre></div>
+<ul>
+<li>Partie entière : <code>1101</code> = 13</li>
+<li>Partie fractionnaire : <code>0101</code> = 0,3125</li>
+<li>Résultat = <strong>13,3125</strong></li>
+</ul>
+</div>
+<p>✅ Avantage : simple à comprendre et à utiliser.</p>
+<p>❌ Inconvénient : la précision est <strong>fixe</strong> et limitée. On ne peut pas représenter à la fois de très grands nombres et de très petits nombres.</p>
+<div class="admonition note">
+<p class="admonition-title">partie fractionnaire</p>
+<p>Dans le système binaire, la <strong>partie entière</strong> se lit comme d’habitude (avec des puissances de 2 positives).
+En revanche, la <strong>partie fractionnaire</strong> se calcule avec des puissances de 2 <strong>négatives</strong> :</p>
+<p>
+<script type="math/tex; mode=display">
+0,abcd₂ = a \times \frac{1}{2} + b \times \frac{1}{2^2} + c \times \frac{1}{2^3} + d \times \frac{1}{2^4} + \dots
+</script>
+</p>
+<h3 id="exemple-avec-001012">Exemple avec <code>0,0101₂</code> :</h3>
+<ul>
+<li>Le premier chiffre après la virgule est <code>0</code> → <script type="math/tex; mode=display">0 \times \frac{1}{2} = 0</script>
+</li>
+<li>Le deuxième chiffre est <code>1</code> → <script type="math/tex; mode=display">1 \times \frac{1}{4} = 0,25</script>
+</li>
+<li>Le troisième chiffre est <code>0</code> → <script type="math/tex; mode=display">0 \times \frac{1}{8} = 0</script>
+</li>
+<li>Le quatrième chiffre est <code>1</code> → <script type="math/tex; mode=display">1 \times \frac{1}{16} = 0,0625</script>
+</li>
+</ul>
+<p>On additionne :</p>
+<p>
+<script type="math/tex; mode=display">
+0,25 + 0,0625 = 0,3125
+</script>
+</p>
+<p>Donc :</p>
+<p>
+<script type="math/tex; mode=display">
+0,0101₂ = 0,3125_{10}
+</script>
+</p>
+</div>
+<div class="admonition question">
+<p class="admonition-title">📝 Exercice 1:</p>
+<p>Convertis les nombres binaires suivants en décimal :</p>
+<ol>
+<li><code>0,1₂</code></li>
+<li><code>0,01₂</code></li>
+<li><code>0,11₂</code></li>
+<li><code>0,101₂</code></li>
+<li><code>0,1101₂</code></li>
+</ol>
+</div>
+<div class="admonition question">
+<p class="admonition-title">📝 Exercice 2:</p>
+<p>Représente les nombres décimaux suivants en binaire sur 8 bits, 
+en utilisant 4 bits pour la partie entière et 4 bits pour la partie fractionnaire.</p>
+<ol>
+<li>5,5  </li>
+<li>2,25  </li>
+<li>7,75  </li>
+<li>3,125</li>
+</ol>
+</div>
+<h3 id="2-la-virgule-flottante">2. La virgule flottante</h3>
+<p>Pour dépasser les limites de la virgule fixe, on utilise une écriture proche de la <strong>notation scientifique</strong>.</p>
+<p>
+<script type="math/tex; mode=display">
+314 = 3,14 \times 10^2
+</script>
+</p>
+<p>En binaire, on applique la même idée :</p>
+<p>
+<script type="math/tex; mode=display">
+N = (1,\text{mantisse}) \times 2^{\text{exposant}}
+</script>
+</p>
+<ul>
+<li><strong>Mantisse</strong> : contient les chiffres significatifs</li>
+<li><strong>Exposant</strong> : détermine où se situe la virgule</li>
+</ul>
+<div class="admonition example">
+<p class="admonition-title">Exemple :</p>
+<p>Nombre décimal : 13,25
+Conversion en binaire : 13,25 = 1101,01₂
+Écriture scientifique binaire : 1,10101 × 2^3</p>
+<ul>
+<li>Exposant : 3 = 011₂</li>
+<li>Mantisse : 10101 (on garde 5 bits après la virgule)</li>
+</ul>
+<p>→ Stockage en machine sur 8 bits (sans biais, sans bit de signe) :
+<div class="highlight"><pre><span></span><code>011 10101
+</code></pre></div></p>
+<p>Explication :<br />
+- Les <strong>3 premiers bits</strong> représentent l’exposant (<code>011</code>).<br />
+- Les <strong>5 bits suivants</strong> représentent la mantisse (<code>10101</code>).<br />
+- La valeur décimale peut être reconstruite :<br />
+1,10101₂ × 2^3 ≈ 13,25</p>
+</div>
+<div class="admonition question">
+<p class="admonition-title">📝 Exercice 3:</p>
+<p>Représente les nombres décimaux suivants en virgule flottante 
+dans un format simplifié sur 8 bits :</p>
+<ul>
+<li>3 bits pour l’exposant</li>
+<li>
+<p>4 bits pour la mantisse (après la virgule)</p>
+</li>
+<li>
+<p>+5,5</p>
+</li>
+<li>+0,75</li>
+</ul>
+</div>
+<div class="admonition question">
+<p class="admonition-title">📝 Exercice code:</p>
+<ul>
+<li>completez la fonction suivante</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">frac_to_bin</span><span class="p">(</span><span class="n">fraction</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">m</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Fonction permettant de convertir la partie fractionnaire d&#39;un nombre décimal</span>
+<span class="sd">    en binaire sur m bits.</span>
+
+<span class="sd">    Paramètres:</span>
+<span class="sd">        fraction: float, la partie fractionnaire (0 &lt;= fraction &lt; 1)</span>
+<span class="sd">        m: int, le nombre de bits maximum à générer</span>
+
+<span class="sd">    Retour:</span>
+<span class="sd">        str, la chaîne de caractères représentant la partie fractionnaire en binaire</span>
+
+<span class="sd">    Exemple:</span>
+<span class="sd">    &gt;&gt;&gt; frac_to_bin(0.625, 5)</span>
+<span class="sd">    &#39;10100&#39;</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+</code></pre></div>
+<ul>
+<li>completez la fonction suivante</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">bin_to_frac</span><span class="p">(</span><span class="n">bits</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Fonction permettant de convertir une chaîne binaire représentant la partie</span>
+<span class="sd">    fractionnaire d’un nombre en sa valeur décimale.</span>
+
+<span class="sd">    Paramètres:</span>
+<span class="sd">        bits: str, la chaîne binaire (ex: &quot;101&quot; correspond à 0.101₂)</span>
+
+<span class="sd">    Retour:</span>
+<span class="sd">        float, la valeur décimale correspondante</span>
+
+<span class="sd">    Exemple:</span>
+<span class="sd">    &gt;&gt;&gt; bin_to_frac(&quot;101&quot;)</span>
+<span class="sd">    0.625</span>
+<span class="sd">    &gt;&gt;&gt; bin_to_frac(&quot;00011&quot;)</span>
+<span class="sd">    0.09375</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+</code></pre></div>
+</div>
+<p>✅ Avantage : permet de représenter à la fois des <strong>nombres très grands</strong> et des <strong>nombres très petits</strong>.</p>
+<p>❌ Inconvénient : pas tous les nombres décimaux sont représentables exactement (par exemple 0,1 en binaire).</p>
+<h2 id="les-nombres-negatifs">➖ Les nombres négatifs</h2>
+<p>En mathématiques sur papier, on indique simplement qu’un nombre est négatif en mettant un signe “-” devant.
+En informatique, les ordinateurs ne comprennent que des suites de 0 et de 1. Il faut donc définir une <strong>méthode précise pour représenter les nombres négatifs</strong> en binaire.</p>
+<p>Différentes méthodes ont été utilisées pour coder les nombres négatifs, dont :</p>
+<ol>
+<li>le <strong>bit de poids fort</strong> (où un bit indique simplement le signe),</li>
+<li>le <strong>complément à 2</strong>, la méthode standard utilisée dans tous les ordinateurs modernes.</li>
+</ol>
+<h3 id="1-bit-de-poids-fort">1. Bit de poids fort</h3>
+<ul>
+<li>
+<p>Idée : le <strong>bit le plus à gauche</strong> (bit de poids fort) indique le signe du nombre :</p>
+</li>
+<li>
+<p><code>0</code> → positif</p>
+</li>
+<li><code>1</code> → négatif</li>
+</ul>
+<div class="admonition example">
+<p class="admonition-title">Exemple :</p>
+<p>Le nombre 13 s’écrit <code>1101</code> en binaire. </p>
+<p>Pour le représenter sur 8 bits en machine :  </p>
+<ul>
+<li>+13 → <code>00001101</code>  </li>
+<li>-13 → <code>10001101</code> (en utilisant le bit de poids fort pour indiquer le signe)</li>
+</ul>
+</div>
+<div class="admonition question">
+<p class="admonition-title">📝 Exercice 4:</p>
+<p>Représente les nombres décimaux suivants en binaire sur 8 bits en utilisant le <strong>bit de poids fort</strong> pour le signe :</p>
+<ol>
+<li>+14  </li>
+<li>-9  </li>
+<li>+12  </li>
+<li>-5</li>
+</ol>
+</div>
+<p>❌ Inconvénient :</p>
+<ul>
+<li>Deux représentations du zéro : <code>00000000</code> et <code>10000000</code></li>
+<li>Les calculs arithmétiques deviennent compliqués</li>
+</ul>
+<h3 id="2-complement-a-2">2. Complément à 2</h3>
+<p>Le complément à 2 est la <strong>méthode standard</strong> pour représenter les nombres négatifs en binaire.</p>
+<p><strong>Règle :</strong>
+Pour obtenir -N :</p>
+<ol>
+<li>On écrit N en binaire.</li>
+<li>On inverse tous les bits (complément à 1).</li>
+<li>On ajoute 1.</li>
+</ol>
+<div class="admonition example">
+<p class="admonition-title">Exemple :</p>
+<p>représenter -13 sur 8 bits a l'aide du complément à 2:</p>
+<ol>
+<li>+13 = <code>00001101</code></li>
+<li>Inversion (complément à 1) = <code>11110010</code></li>
+<li>Ajouter 1 = <code>11110011</code> → -13</li>
+</ol>
+</div>
+<div class="admonition question">
+<p class="admonition-title">📝 Exercice 5:</p>
+<p>Représenter les nombres suivants en <strong>complément à 2</strong> sur 8 bits :</p>
+<ol>
+<li>+12  </li>
+<li>-12  </li>
+<li>+7  </li>
+<li>-7</li>
+</ol>
+</div>
+<div class="admonition question">
+<p class="admonition-title">📝 Exercice code:</p>
+<ul>
+<li>completez la fonction suivante</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">bin_to_comp_2</span><span class="p">(</span><span class="n">nombre</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">n</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Fonction permettant de représenter en complément à 2, sur n bits,</span>
+<span class="sd">    un nombre binaire donné en paramètre.</span>
+
+<span class="sd">    Paramètres:</span>
+<span class="sd">        nombre: str, le nombre binaire à convertir</span>
+<span class="sd">        n: int, le nombre de bits utilisés pour la représentation</span>
+
+<span class="sd">    Retour:</span>
+<span class="sd">        str, la chaîne de caractères représentant le complément à 2</span>
+<span class="sd">        du nombre en utilisant n bits</span>
+
+<span class="sd">    Exemple:</span>
+<span class="sd">    &gt;&gt;&gt; bin_to_comp_2(&quot;101&quot;, 5)</span>
+<span class="sd">    &#39;11011&#39;</span>
+<span class="sd">    &gt;&gt;&gt; bin_to_comp_2(&quot;1&quot;, 7)</span>
+<span class="sd">    &#39;1111111&#39;</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+</code></pre></div>
+<ul>
+<li>completez la fonction suivante</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">dec_to_comp_2</span><span class="p">(</span><span class="n">nombre</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">n</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Fonction permettant de convertir un entier en sa représentation</span>
+<span class="sd">en complément à 2 sur n bits.</span>
+
+<span class="sd">Paramètres:</span>
+<span class="sd">    nombre: int, le nombre à convertir</span>
+<span class="sd">    n: int, le nombre de bits utilisés pour la représentation</span>
+
+<span class="sd">Retour:</span>
+<span class="sd">    str, la chaîne de caractères représentant le complément à 2</span>
+<span class="sd">    du nombre en utilisant n bits</span>
+
+<span class="sd">Exemple:</span>
+<span class="sd">&gt;&gt;&gt; dec_to_comp_2(5, 5)</span>
+<span class="sd">&#39;00101&#39;</span>
+<span class="sd">&gt;&gt;&gt; dec_to_comp_2(-5, 5)</span>
+<span class="sd">&#39;11011&#39;</span>
+<span class="sd">&gt;&gt;&gt; dec_to_comp_2(-1, 7)</span>
+<span class="sd">&#39;1111111&#39;</span>
+<span class="sd">&quot;&quot;&quot;</span>
+</code></pre></div>
+<ul>
+<li>completez la fonction suivante</li>
+</ul>
+<p>```py</p>
+</div>
+<p>def dec_to_repr(nombre: int, n: int) -&gt; str:
+    """
+    Fonction permettant de convertir un entier en binaire sur n bits :
+    - si le nombre est positif ou nul → représentation binaire classique
+    - si le nombre est négatif → représentation en complément à 2</p>
+<pre><code>Paramètres:
+    nombre: int, le nombre à convertir
+    n: int, le nombre de bits utilisés pour la représentation
+
+Retour:
+    str, la chaîne de caractères représentant le nombre en binaire
+    classique si positif, ou en complément à 2 si négatif, sur n bits
+
+Exemple:
+&gt;&gt;&gt; dec_to_repr(-5, 5)
+'11011'
+&gt;&gt;&gt; dec_to_repr(5, 5)
+'00101'
+&gt;&gt;&gt; dec_to_repr(-1, 7)
+'1111111'
+&gt;&gt;&gt; dec_to_repr(1, 7)
+'0000001'
+"""
+```
+</code></pre>
+<p>✅ Avantages :</p>
+<ul>
+<li>Un seul zéro (<code>00000000</code>)</li>
+<li>Les additions et soustractions fonctionnent directement comme avec des nombres positifs</li>
+</ul>
+<h2 id="la-norme-ieee-754">🖥️ La norme IEEE 754</h2>
+<p>La norme <strong>IEEE 754</strong> définit comment représenter les nombres réels (à virgule flottante) en mémoire de manière standardisée, afin que tous les ordinateurs et logiciels manipulent les mêmes valeurs. Elle garantit la compatibilité et la précision dans les calculs scientifiques, financiers ou techniques.</p>
+<h3 id="1-principe-general">1. Principe général</h3>
+<p>Un nombre flottant est représenté par trois éléments :</p>
+<p>
+<script type="math/tex; mode=display">
+N = (-1)^{\text{signe}} \times 1,\text{mantisse} \times 2^{\text{exposant - biais}}
+</script>
+</p>
+<ol>
+<li>
+<p><strong>Signe</strong> : 1 bit</p>
+<ul>
+<li><code>0</code> → nombre positif</li>
+<li><code>1</code> → nombre négatif</li>
+</ul>
+</li>
+<li>
+<p><strong>Exposant</strong> : stocke la puissance de 2.</p>
+<ul>
+<li>Il est <strong>biaisé</strong> pour permettre la représentation d’exposants négatifs.</li>
+<li>Exemple : en simple précision, le biais est 127. Si l’exposant réel est 3, on stocke 3 + 127 = 130.</li>
+</ul>
+</li>
+<li>
+<p><strong>Mantisse</strong> (ou fraction) : représente les chiffres significatifs du nombre.</p>
+<ul>
+<li>Elle est toujours <strong>normalisée</strong>, ce qui signifie que le premier chiffre avant la virgule est toujours 1 (implémenté de manière implicite dans la norme IEEE 754).</li>
+</ul>
+</li>
+</ol>
+<h3 id="2-formats-les-plus-courants">2. Formats les plus courants</h3>
+<h4 id="a-simple-precision-32-bits">a. Simple précision (32 bits)</h4>
+<ul>
+<li>1 bit pour le <strong>signe</strong></li>
+<li>8 bits pour l’<strong>exposant</strong> (biais = 127)</li>
+<li>23 bits pour la <strong>mantisse</strong></li>
+</ul>
+<h4 id="b-double-precision-64-bits">b. Double précision (64 bits)</h4>
+<ul>
+<li>1 bit pour le <strong>signe</strong></li>
+<li>11 bits pour l’<strong>exposant</strong> (biais = 1023)</li>
+<li>52 bits pour la <strong>mantisse</strong></li>
+</ul>
+<h3 id="3-exemple-pratique">3. Exemple pratique</h3>
+<p>Nombre : <code>-13,25</code></p>
+<ol>
+<li>Conversion en binaire : 13,25 = <code>1101,01₂</code></li>
+<li>Écriture scientifique binaire : <code>1,10101 × 2^3</code></li>
+<li>Signe : <code>1</code> (négatif)</li>
+<li>Exposant biaisé : 3 + 127 = 130 = <code>10000010</code></li>
+<li>Mantisse : <code>10101000000000000000000</code> (23 bits)</li>
+</ol>
+<p><strong>Stockage IEEE 754 (32 bits) :</strong></p>
+<div class="highlight"><pre><span></span><code>1 10000010 10101000000000000000000
+</code></pre></div>
+<ul>
+<li>1er bit = signe</li>
+<li>8 bits suivants = exposant biaisé</li>
+<li>23 bits suivants = mantisse</li>
+</ul>
+<h3 id="4-avantages-de-la-norme-ieee-754">4.✅ Avantages de la norme IEEE 754</h3>
+<ul>
+<li><strong>Standard universel</strong> : même représentation sur tous les ordinateurs</li>
+<li><strong>Grande plage de valeurs</strong> : peut représenter à la fois des nombres très grands et très petits</li>
+<li>
+<p><strong>Gestion des cas particuliers</strong> :</p>
+</li>
+<li>
+<p><code>+0</code> et <code>-0</code></p>
+</li>
+<li><code>+∞</code> et <code>-∞</code></li>
+<li>
+<p><code>NaN</code> (Not a Number, utilisé pour indiquer un résultat invalide)</p>
+</li>
+<li>
+<p><strong>Précision contrôlée</strong> : le nombre de bits pour la mantisse définit la précision maximale</p>
+</li>
+</ul>
+<div class="admonition question">
+<p class="admonition-title">📝 Exercice 6:</p>
+<p>Convertis les nombres suivants en <strong>notation IEEE 754 simple précision</strong> (32 bits) :</p>
+<p>a. ( +10,5 )
+b. ( -0,75 )
+c. ( +5,25 )</p>
+<p>Pour chacun :</p>
+<ol>
+<li>Écris le nombre en <strong>binaire</strong>.</li>
+<li>Mets-le sous <strong>forme scientifique binaire</strong> (ex. : (1,xxx \times 2^n)).</li>
+<li>
+<p>Indique :</p>
+</li>
+<li>
+<p>le <strong>bit de signe</strong></p>
+</li>
+<li>l’<strong>exposant biaisé</strong> (avec biais = 127)</li>
+<li>la <strong>mantisse</strong> (23 bits)</li>
+<li>Donne la <strong>représentation finale sur 32 bits</strong>.</li>
+</ol>
+</div>
+<hr />
+<div class="admonition question">
+<p class="admonition-title">📝 Exercice 7:</p>
+<p>Le nombre suivant est stocké en IEEE 754 simple précision :</p>
+<div class="highlight"><pre><span></span><code>0 10000010 01000000000000000000000
+</code></pre></div>
+<p>a. Décode-le (signe, exposant, mantisse).
+b. Trouve la <strong>valeur décimale</strong> correspondante.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <a href="/" class="custom-home-button" title="Accueil">
+  <svg viewBox="0 0 24 24">
+    <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+  </svg>
+  Accueil
+</a>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.instant", "navigation.tabs", "navigation.sections", "navigation.top", "navigation.expand", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,228 @@
+/* Match footer background to header color (Teal) */
+.md-footer {
+    background-color: var(--md-primary-fg-color) !important;
+    color: white !important;
+
+    /* Constraint width to the left side */
+    width: 60%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+/* Ensure links in the footer are visible (white) */
+.md-footer a {
+    color: white !important;
+}
+
+/* Adjust hover effect for links */
+.md-footer a:hover {
+    opacity: 0.8;
+}
+
+/* Ensure the copyright/meta section also respects the radius */
+.md-footer-meta {
+    background-color: transparent !important;
+}
+
+/* HIDE Table of Contents (Right Sidebar) */
+.md-sidebar--secondary {
+    display: none !important;
+}
+
+/* Expand content to fill the space left by TOC */
+@media screen and (min-width: 76.25em) {
+    /* (Empty ruleset removed for cleanliness) */
+
+    /* Hide the LEFT sidebar (Navigation) */
+    .md-sidebar--primary {
+        display: none !important;
+    }
+
+    .md-content {
+        margin-right: auto !important;
+        /* Changed from 0 to auto to center if combined with margin-left:auto */
+        margin-left: auto !important;
+        /* Add margin-left auto */
+        max-width: 90% !important;
+        /* Constrain width slightly to make centering visible */
+        /* Allow content to use more width */
+    }
+}
+
+/* Reduce size of Footer Navigation Buttons ("Bouton de retour" / Home) */
+.md-footer__link {
+    padding-top: 0.2rem !important;
+    /* Extremely small padding */
+    padding-bottom: 0.2rem !important;
+    min-height: auto !important;
+    /* Remove min-height constraint */
+}
+
+.md-footer__title {
+    font-size: 0.8rem !important;
+    /* Even smaller font */
+    line-height: 1.2 !important;
+    margin-left: 0.5rem !important;
+    margin-right: 0.5rem !important;
+}
+
+.md-footer__direction {
+    font-size: 0.65rem !important;
+    line-height: 1 !important;
+    margin-bottom: 0 !important;
+    /* Remove spacing between label and title */
+}
+
+.md-footer__link .md-icon {
+    height: 1rem !important;
+    /* Smaller arrow icon */
+    width: 1rem !important;
+    margin: 0 !important;
+}
+
+/* Also ensure the Header Logo (Home button in header) is not too large */
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+    height: 1.2rem !important;
+    /* Standard small size */
+    width: auto !important;
+}
+
+/* --------------------------------------------------------- */
+/* Styling for .custom-home-button (User Requested Fix)      */
+/* --------------------------------------------------------- */
+
+.custom-home-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 8px;
+    /* Reduce padding */
+    font-size: 0.8rem;
+    /* Reduce text size */
+    border-radius: 4px;
+    background-color: var(--md-primary-fg-color--light);
+    /* Optional: make it fit theme */
+    color: var(--md-primary-bg-color);
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+.custom-home-button svg {
+    width: 16px;
+    /* Specific small width for icon */
+    height: 16px;
+    /* Specific small height for icon */
+    margin-right: 4px;
+    /* Spacing between icon and text */
+    fill: currentColor;
+}
+
+.custom-home-button:hover {
+    opacity: 0.8;
+}
+
+/* --------------------------------------------------------- */
+/* Styling for Header Navigation Tabs (Rounded Frames)       */
+/* --------------------------------------------------------- */
+
+/* Center the tabs in the container */
+.md-tabs__list {
+    justify-content: center !important;
+    display: flex !important;
+    /* Ensure it is treated as flex container */
+}
+
+.md-tabs__link {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    /* Visible white border */
+    border-radius: 20px;
+    /* Rounded corners */
+    margin: 0 5px;
+    /* Spacing between tabs */
+    padding: 6px 12px;
+    /* Inner spacing to frame the text */
+    transition: all 0.2s ease;
+
+    /* Ensure text is centered and looks distinct */
+    display: inline-block;
+}
+
+/* Adjust hover state for better feedback */
+.md-tabs__link:hover,
+.md-tabs__link--active {
+    background-color: rgba(255, 255, 255, 0.2);
+    /* Semi-transparent fill */
+    border-color: rgba(255, 255, 255, 0.9);
+    /* Brighter border */
+    opacity: 1 !important;
+    color: white !important;
+    /* Ensure text remains white */
+}
+
+/* --------------------------------------------------------- */
+/* Styling for Headers (Underlined and H1 Size)              */
+/* --------------------------------------------------------- */
+
+/* Underline for all markdown headers */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4,
+.md-typeset h5,
+.md-typeset h6 {
+    border-bottom: 2px solid var(--md-primary-fg-color);
+    padding-bottom: 0.2rem;
+    margin-bottom: 1rem;
+    /* Reset from previous override attempting width:100% */
+    width: fit-content;
+    /* Modern browsers support this well */
+    display: block;
+    /* Keep as block but constrain width */
+    margin-right: auto;
+    /* Ensure it stays left aligned and doesn't stretch */
+}
+
+/* BUT user said 'markdown starting with one or more #' which usually implies full block headers in MkDocs context.
+   However, often 'souligné' means just the text.
+   Let's do full width as it's cleaner for H1/H2, but maybe only text for others?
+   Standard Material Theme behavior is full width.
+   Let's keep width 100% to be safe and look like a proper divider.
+*/
+
+/* --------------------------------------------------------- */
+/* Increase Site Title Size (Header)                         */
+/* --------------------------------------------------------- */
+.md-header__topic .md-ellipsis {
+    font-size: 1.6rem !important;
+    /* Slightly smaller but elegant */
+    font-weight: 300 !important;
+    /* Light font weight for "smoothness" */
+    letter-spacing: 0.05em !important;
+    /* Spacing adds elegance */
+    color: #f8f8f8 !important;
+    /* Very soft almost-white */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    /* Subtle soft shadow */
+    opacity: 1 !important;
+}
+
+/* --------------------------------------------------------- */
+/* Search Tweak: Hide body text previews (Teasers)           */
+/* --------------------------------------------------------- */
+/* This makes the search display primarily titles */
+.md-search-result__teaser {
+    display: none !important;
+}
+
+/* Optional: Make the search result titles stand out more */
+.md-search-result__article {
+    padding-bottom: 0.2rem !important;
+}
+
+/* Specific size override for H1 as requested */
+.md-typeset h1 {
+    font-size: 2.5rem !important;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
