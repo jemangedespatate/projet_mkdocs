@@ -6,10 +6,11 @@
 
 ### **Exercice 1 : Mon premier dictionnaire**
 
-1. Crée un dictionnaire `film` avec les clés suivantes :
-   * `"titre"` : "Inception"
-   * `"realisateur"` : "Christopher Nolan"
-   * `"annee"` : 2010
+1. Crée un dictionnaire `film` avec les clés suivantes :   
+    * `"titre"` : "Inception"
+    * `"realisateur"` : "Christopher Nolan"
+    * `"annee"` : 2010
+
 2. Affiche le réalisateur du film.
 3. Modifie l'année pour `2011` (une erreur s'est glissée !).
 4. Ajoute une clé `"genre"` avec la valeur `"Science-fiction"`.

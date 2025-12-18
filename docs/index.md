@@ -37,7 +37,7 @@ Ce site a pour objectif de guider les élèves tout au long de l'année scolaire
 
     * [🐍 Programmation Python](NSI_1/Programmation_Python/sommaire/)
     * [🔢 Type et valeur de base](NSI_1/type_et_valeur_de_base/sommaire/)
-    * [🐍 Structures linéaires](NSI_1/type_de_base/sommaire/)
+    * [🐍 Structures de données](NSI_1/type_de_base/sommaire/)
     * [🌟 Algorithmes](NSI_1/algorithme/sommaire/)
 
 === "NSI terminale"
