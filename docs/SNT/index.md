@@ -8,8 +8,8 @@ Bienvenue dans la section SNT. Voici les thématiques abordées :
 * [🐍 Programmation Python](Programmation_Python/sommaire.md)
 * [💬 Réseaux sociaux](Reseaux_sociaux/sommaire.md)
 * [🌐 Internet](Internet/sommaire.md)
+* [📸 Photographie Numérique](Photographie_Numerique/sommaire.md)
 * 📄 Web
-* 📸 Photographie Numérique
 * 📍 Géolocalisation
 * 📊 Données Structurées
 * 📡 Objets Connectés

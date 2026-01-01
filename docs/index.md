@@ -17,7 +17,7 @@ Ce site a pour objectif de guider les élèves tout au long de l'année scolaire
     * [🐍 Programmation Python](SNT/Programmation_Python/sommaire/)
     * [💬 Réseaux sociaux](SNT/Reseaux_sociaux/sommaire/)
     * [🌐 Internet](SNT/Internet/sommaire/)
-    * 📸 Photographie Numérique
+    * [📸 Photographie Numérique](SNT/Photographie_Numerique/sommaire/)
     * 📄 Web
     * 📍 Géolocalisation
     * 📊 Données Structurées

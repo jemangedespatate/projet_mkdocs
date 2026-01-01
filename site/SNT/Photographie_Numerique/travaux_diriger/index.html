@@ -18,7 +18,7 @@
     
     
       
-        <title>Travaux diriger - Mr Leal SNT/NSI</title>
+        <title>📝 Travaux Dirigés : Photographie Numérique - Mr Leal SNT/NSI</title>
       
     
     
@@ -71,6 +71,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#travaux-diriges-photographie-numerique" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -101,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Travaux diriger
+              📝 Travaux Dirigés : Photographie Numérique
             
           </span>
         </div>
@@ -354,6 +359,52 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#exercice-1-definition-et-resolution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercice 1 : Définition et Résolution
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercice-2-le-poids-des-images" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercice 2 : Le Poids des Images
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercice-3-codage-des-couleurs-rvb" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercice 3 : Codage des Couleurs RVB
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercice-4-metadonnees-et-vie-privee" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercice 4 : Métadonnées et Vie Privée
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -368,9 +419,103 @@
                   
 
 
-  <h1>Travaux diriger</h1>
-
-
+<h1 id="travaux-diriges-photographie-numerique">📝 Travaux Dirigés : Photographie Numérique</h1>
+<p>Ces exercices sont à réaliser sur feuille ou directement sur ce document numérique. Ils visent à vérifier votre compréhension du codage des images.</p>
+<h2 id="exercice-1-definition-et-resolution">Exercice 1 : Définition et Résolution</h2>
+<p>On considère une image numérique de <strong>800 pixels de large</strong> et <strong>600 pixels de haut</strong>.</p>
+<ol>
+<li><strong>Calculez la définition</strong> de cette image (nombre total de pixels).</li>
+<li>On souhaite imprimer cette image sur une photo de <strong>10 pouces</strong> de large (environ 25 cm).<ul>
+<li><strong>Calculez la résolution</strong> de l'impression en <strong>ppp</strong> (points par pouce).</li>
+<li>La qualité sera-t-elle suffisante pour une impression photo standard (généralement 300 ppp) ?</li>
+</ul>
+</li>
+</ol>
+<details class="success">
+<summary>Correction Exercice 1</summary>
+<ol>
+<li><strong>Définition</strong> : $800 \times 600 = 480\,000$ pixels (ou 0,48 Mpx).</li>
+<li><strong>Résolution</strong> :<ul>
+<li>La largeur est de 800 pixels pour 10 pouces.</li>
+<li>Résolution = $800 / 10 = 80$ ppp (dpi).</li>
+<li><strong>Conclusion</strong> : 80 ppp est très inférieur à 300 ppp. L'image paraîtra "pixelisée" ou floue à l'impression.</li>
+</ul>
+</li>
+</ol>
+</details>
+<hr />
+<h2 id="exercice-2-le-poids-des-images">Exercice 2 : Le Poids des Images</h2>
+<p>On souhaite stocker une image de définition $1024 \times 1024$ pixels.
+Calculez le poids de cette image (en octets, puis en Mo) dans les cas suivants :</p>
+<ol>
+<li><strong>Image binaire</strong> (Noir et Blanc pur, 1 bit par pixel).</li>
+<li><strong>Image en niveaux de gris</strong> (256 nuances, 8 bits par pixel).</li>
+<li><strong>Image en couleurs RVB</strong> (16 millions de couleurs, 24 bits par pixel).</li>
+</ol>
+<p><em>Rappel : $1 \text{ octet} = 8 \text{ bits}$. $1 \text{ Mo} \approx 1\,000\,000 \text{ octets}$ (ou $1024 \times 1024$ selon la convention, ici on utilisera $10^6$ pour simplifier).</em></p>
+<details class="success">
+<summary>Correction Exercice 2</summary>
+<p>Le nombre total de pixels est $1024 \times 1024 = 1\,048\,576$ pixels.</p>
+<ol>
+<li>
+<p><strong>Binaire (1 bit/pixel)</strong> :</p>
+<ul>
+<li>Poids en bits : $1\,048\,576$ bits.</li>
+<li>Poids en octets : $1\,048\,576 / 8 = 131\,072$ octets.</li>
+<li>Poids en Ko : $\approx 131$ Ko.</li>
+</ul>
+</li>
+<li>
+<p><strong>Niveaux de gris (1 octet/pixel)</strong> :</p>
+<ul>
+<li>Poids en octets : $1\,048\,576 \times 1 = 1\,048\,576$ octets.</li>
+<li>Poids en Mo : $\approx 1$ Mo.</li>
+</ul>
+</li>
+<li>
+<p><strong>Couleurs RVB (3 octets/pixel)</strong> :</p>
+<ul>
+<li>Poids en octets : $1\,048\,576 \times 3 = 3\,145\,728$ octets.</li>
+<li>Poids en Mo : $\approx 3,14$ Mo.</li>
+</ul>
+</li>
+</ol>
+</details>
+<hr />
+<h2 id="exercice-3-codage-des-couleurs-rvb">Exercice 3 : Codage des Couleurs RVB</h2>
+<p>Dans le système RVB (Rouge, Vert, Bleu), chaque couleur est codée par un triplet de valeurs comprises entre 0 et 255.</p>
+<ol>
+<li>Donnez le code RVB du <strong>Noir</strong> et du <strong>Blanc</strong>.</li>
+<li>Quelle couleur obtient-on avec le code <code>(255, 0, 0)</code> ?</li>
+<li>Quelle couleur obtient-on avec le code <code>(0, 255, 255)</code> ? (Mélange de Vert et Bleu)</li>
+<li>On a une couleur <code>(100, 100, 100)</code>. Est-elle colorée ou grise ? Est-elle plus claire ou plus sombre que <code>(200, 200, 200)</code> ?</li>
+</ol>
+<details class="success">
+<summary>Correction Exercice 3</summary>
+<ol>
+<li><strong>Noir</strong> : <code>(0, 0, 0)</code> | <strong>Blanc</strong> : <code>(255, 255, 255)</code>.</li>
+<li><code>(255, 0, 0)</code> correspond au <strong>Rouge</strong> pur.</li>
+<li><code>(0, 255, 255)</code> correspond au <strong>Cyan</strong>.</li>
+<li>C'est un <strong>Gris</strong> (car R=V=B). <code>(100, 100, 100)</code> est plus <strong>sombre</strong> que <code>(200, 200, 200)</code> (qui se rapproche du blanc).</li>
+</ol>
+</details>
+<hr />
+<h2 id="exercice-4-metadonnees-et-vie-privee">Exercice 4 : Métadonnées et Vie Privée</h2>
+<p>Alice prend une photo de son chat avec son smartphone dernier cri et la poste immédiatement sur un forum public sans modification.
+Un inconnu télécharge la photo et regarde les métadonnées EXIF.</p>
+<ol>
+<li>Citez <strong>trois informations</strong> que l'inconnu pourrait trouver dans le fichier image.</li>
+<li>Quelle information est la plus critique pour la sécurité d'Alice ?</li>
+<li>Comment Alice aurait-elle dû procéder pour se protéger ?</li>
+</ol>
+<details class="success">
+<summary>Correction Exercice 4</summary>
+<ol>
+<li>Date/Heure, Modèle du smartphone, Réglages (ISO/Flash), <strong>Coordonnées GPS</strong>.</li>
+<li>Les <strong>Coordonnées GPS</strong> (Latitude/Longitude) sont critiques car elles permettent de localiser le domicile d'Alice précisèment.</li>
+<li>Elle aurait dû <strong>désactiver la géolocalisation</strong> dans l'appareil photo avant la prise de vue, ou utiliser un logiciel pour <strong>supprimer les métadonnées</strong> avant de publier la photo.</li>
+</ol>
+</details>
 
 
 
