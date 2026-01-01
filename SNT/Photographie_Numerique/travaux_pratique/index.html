@@ -1,0 +1,649 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://www.prof-leal.fr/SNT/Photographie_Numerique/travaux_pratique/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>💻 Travaux Pratiques : Traitement d'Image avec Python - Mr Leal SNT/NSI</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/custom_style.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#travaux-pratiques-traitement-dimage-avec-python" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Mr Leal SNT/NSI" class="md-header__button md-logo" aria-label="Mr Leal SNT/NSI" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M256 141.3v309.3l.5-.2A449 449 0 0 1 428.8 416H448V96h-19.2c-42.2 0-84.1 8.4-123.1 24.6-16.8 7-33.4 13.9-49.7 20.7m-25.1-79.8L256 72l25.1-10.5C327.9 42 378.1 32 428.8 32H464c26.5 0 48 21.5 48 48v352c0 26.5-21.5 48-48 48h-35.2c-50.7 0-100.9 10-147.7 29.5l-12.8 5.3c-7.9 3.3-16.7 3.3-24.6 0l-12.8-5.3C184.1 490 133.9 480 83.2 480H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h35.2c50.7 0 100.9 10 147.7 29.5"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Mr Leal SNT/NSI
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              💻 Travaux Pratiques : Traitement d'Image avec Python
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="indigo"  aria-label="Mode sombre"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Mode sombre" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="indigo"  aria-label="Mode clair"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Mode clair" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Accueil
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../" class="md-tabs__link">
+        
+  
+  
+    
+  
+  SNT
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../NSI_1/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Première NSI
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Mr Leal SNT/NSI" class="md-nav__button md-logo" aria-label="Mr Leal SNT/NSI" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M256 141.3v309.3l.5-.2A449 449 0 0 1 428.8 416H448V96h-19.2c-42.2 0-84.1 8.4-123.1 24.6-16.8 7-33.4 13.9-49.7 20.7m-25.1-79.8L256 72l25.1-10.5C327.9 42 378.1 32 428.8 32H464c26.5 0 48 21.5 48 48v352c0 26.5-21.5 48-48 48h-35.2c-50.7 0-100.9 10-147.7 29.5l-12.8 5.3c-7.9 3.3-16.7 3.3-24.6 0l-12.8-5.3C184.1 490 133.9 480 83.2 480H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h35.2c50.7 0 100.9 10 147.7 29.5"/></svg>
+
+    </a>
+    Mr Leal SNT/NSI
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Accueil
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SNT
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../NSI_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Première NSI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#0-preparation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0. Préparation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#activite-1-ouvrir-et-analyser-une-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Activité 1 : Ouvrir et Analyser une image
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#activite-2-creer-le-negatif-dune-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Activité 2 : Créer le Négatif d'une image
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#activite-3-passage-en-noir-et-blanc-niveaux-de-gris" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Activité 3 : Passage en Noir et Blanc (Niveaux de gris)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#activite-4-effet-filtre-rouge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Activité 4 : Effet "Filtre Rouge"
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#activite-5-le-mystere-de-limage-cachee-steganographie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Activité 5 : Le Mystère de l'Image Cachée (Steganographie) 🕵️‍♂️
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="travaux-pratiques-traitement-dimage-avec-python">💻 Travaux Pratiques : Traitement d'Image avec Python</h1>
+<p>L'objectif de ce TP est d'apprendre à manipuler des images numériques pixel par pixel à l'aide du langage Python et de la bibliothèque <strong>Pillow</strong> (PIL).</p>
+<h2 id="0-preparation">0. Préparation</h2>
+<p>Vous devez disposer d'une image nommée <code>image_tp.jpg</code> dans le même dossier que votre script Python. Vous pouvez télécharger une image simple (par exemple un paysage ou un fruit) pour faire les tests.</p>
+<p>Pour utiliser la bibliothèque, on commence toujours par :
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">PIL</span><span class="w"> </span><span class="kn">import</span> <span class="n">Image</span>
+</code></pre></div></p>
+<h2 id="activite-1-ouvrir-et-analyser-une-image">Activité 1 : Ouvrir et Analyser une image</h2>
+<p>Copiez et exécutez le code suivant :</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">PIL</span><span class="w"> </span><span class="kn">import</span> <span class="n">Image</span>
+
+<span class="c1"># 1. Ouverture du fichier image</span>
+<span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">&quot;image_tp.jpg&quot;</span><span class="p">)</span>
+
+<span class="c1"># 2. Récupération des dimensions</span>
+<span class="n">largeur</span><span class="p">,</span> <span class="n">hauteur</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">size</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;L&#39;image fait </span><span class="si">{</span><span class="n">largeur</span><span class="si">}</span><span class="s2"> pixels de large et </span><span class="si">{</span><span class="n">hauteur</span><span class="si">}</span><span class="s2"> pixels de haut.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Définition totale : </span><span class="si">{</span><span class="n">largeur</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">hauteur</span><span class="si">}</span><span class="s2"> pixels.&quot;</span><span class="p">)</span>
+
+<span class="c1"># 3. Analyse du pixel central</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">largeur</span> <span class="o">//</span> <span class="mi">2</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">hauteur</span> <span class="o">//</span> <span class="mi">2</span>
+<span class="n">r</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">getpixel</span><span class="p">((</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Couleur du pixel central (</span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s2">,</span><span class="si">{</span><span class="n">y</span><span class="si">}</span><span class="s2">) : Rouge=</span><span class="si">{</span><span class="n">r</span><span class="si">}</span><span class="s2">, Vert=</span><span class="si">{</span><span class="n">v</span><span class="si">}</span><span class="s2">, Bleu=</span><span class="si">{</span><span class="n">b</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div>
+<p><strong>Question :</strong> Que se passe-t-il si vous essayez de lire le pixel aux coordonnées <code>(largeur, hauteur)</code> ? Pourquoi ? (Essayez !)</p>
+<hr />
+<h2 id="activite-2-creer-le-negatif-dune-image">Activité 2 : Créer le Négatif d'une image</h2>
+<p>Pour créer le négatif d'une image, il faut inverser les couleurs :
+*   Le 0 devient 255
+*   Le 255 devient 0
+*   La valeur <code>v</code> devient <code>255 - v</code></p>
+<p>Complétez le programme suivant :</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">PIL</span><span class="w"> </span><span class="kn">import</span> <span class="n">Image</span>
+
+<span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">&quot;image_tp.jpg&quot;</span><span class="p">)</span>
+<span class="n">largeur</span><span class="p">,</span> <span class="n">hauteur</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">size</span>
+
+<span class="c1"># On crée une nouvelle image vide de la même taille</span>
+<span class="n">img_new</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="s2">&quot;RGB&quot;</span><span class="p">,</span> <span class="p">(</span><span class="n">largeur</span><span class="p">,</span> <span class="n">hauteur</span><span class="p">))</span>
+
+<span class="c1"># On parcourt tous les pixels de l&#39;image (double boucle)</span>
+<span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">hauteur</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">largeur</span><span class="p">):</span>
+        <span class="c1"># On récupère les anciennes couleurs</span>
+        <span class="n">r</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">getpixel</span><span class="p">((</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">))</span>
+
+        <span class="c1"># --- A VOUS DE JOUER ---</span>
+        <span class="c1"># Calculez les nouvelles couleurs</span>
+        <span class="n">r_new</span> <span class="o">=</span> <span class="mi">255</span> <span class="o">-</span> <span class="n">r</span>
+        <span class="n">v_new</span> <span class="o">=</span> <span class="err">???</span>       <span class="c1"># A compléter</span>
+        <span class="n">b_new</span> <span class="o">=</span> <span class="err">???</span>       <span class="c1"># A compléter</span>
+        <span class="c1"># -----------------------</span>
+
+        <span class="c1"># On écrit le nouveau pixel dans la nouvelle image</span>
+        <span class="n">img_new</span><span class="o">.</span><span class="n">putpixel</span><span class="p">((</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">),</span> <span class="p">(</span><span class="n">r_new</span><span class="p">,</span> <span class="n">v_new</span><span class="p">,</span> <span class="n">b_new</span><span class="p">))</span>
+
+<span class="c1"># On affiche le résultat</span>
+<span class="n">img_new</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="c1"># On sauvegarde le résultat</span>
+<span class="n">img_new</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s2">&quot;negatif.jpg&quot;</span><span class="p">)</span>
+</code></pre></div>
+<hr />
+<h2 id="activite-3-passage-en-noir-et-blanc-niveaux-de-gris">Activité 3 : Passage en Noir et Blanc (Niveaux de gris)</h2>
+<p>Une méthode simple pour transformer une image couleur en noir et blanc est de faire la <strong>moyenne</strong> des trois composantes pour chaque pixel.</p>
+<p>
+<script type="math/tex; mode=display">Gris = \frac{Rouge + Vert + Bleu}{3}</script>
+</p>
+<ol>
+<li>Reprenez le squelette du code de l'Activité 2.</li>
+<li>Modifiez le calcul à l'intérieur de la boucle pour calculer la moyenne.</li>
+<li>Affectez cette valeur moyenne aux trois canaux (<code>r_new</code>, <code>v_new</code>, <code>b_new</code>) pour obtenir du gris.</li>
+</ol>
+<p><em>Attention : La division doit donner un nombre entier ! Utilisez <code>// 3</code> ou <code>int((r+v+b)/3)</code>.</em></p>
+<details class="tip">
+<summary>Indice pour le code</summary>
+<div class="highlight"><pre><span></span><code><span class="n">moyenne</span> <span class="o">=</span> <span class="p">(</span><span class="n">r</span> <span class="o">+</span> <span class="n">v</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span> <span class="o">//</span> <span class="mi">3</span>
+<span class="n">img_new</span><span class="o">.</span><span class="n">putpixel</span><span class="p">((</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">),</span> <span class="p">(</span><span class="n">moyenne</span><span class="p">,</span> <span class="n">moyenne</span><span class="p">,</span> <span class="n">moyenne</span><span class="p">))</span>
+</code></pre></div>
+</details>
+<hr />
+<h2 id="activite-4-effet-filtre-rouge">Activité 4 : Effet "Filtre Rouge"</h2>
+<p>On souhaite ne garder que la composante <strong>Rouge</strong> de l'image.</p>
+<ul>
+<li>Le Rouge reste inchangé.</li>
+<li>Le Vert devient 0.</li>
+<li>Le Bleu devient 0.</li>
+</ul>
+<p>Écrivez le script qui réalise cet effet et sauvegardez l'image sous <code>filtre_rouge.jpg</code>.</p>
+<hr />
+<h2 id="activite-5-le-mystere-de-limage-cachee-steganographie">Activité 5 : Le Mystère de l'Image Cachée (Steganographie) 🕵️‍♂️</h2>
+<p><em>Niveau avancé</em></p>
+<p>On soupçonne qu'un message secret est caché dans les composantes <strong>bleues</strong> d'une image apparemment noire.
+Si le pixel est totalement noir (0,0,0), il n'y a rien. Mais si le bleu vaut 1 (0,0,1), c'est un pixel du message !</p>
+<p><strong>Objectif :</strong> Révéler le message caché.
+<strong>Méthode :</strong> Multiplier la composante bleue par 255.
+*   Si Bleu était 0 -&gt; $0 \times 255 = 0$ (Noir)
+*   Si Bleu était 1 -&gt; $1 \times 255 = 255$ (Bleu vif)</p>
+<p>Essayez d'écrire un script qui transforme les micros-variations de bleu en bleu vif pour faire apparaître une forme.</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Squelette</span>
+<span class="n">r_new</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">v_new</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">b_new</span> <span class="o">=</span> <span class="n">b</span> <span class="o">*</span> <span class="mi">255</span> <span class="c1"># On amplifie le signal bleu</span>
+
+<span class="c1"># Note : Cela ne fonctionne que si vous avez une image préparée pour cet exercice !</span>
+<span class="c1"># Vous pouvez en créer une vous-même en dessinant des pixels (0,0,1) sur un fond (0,0,0).</span>
+</code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <a href="/" class="custom-home-button" title="Accueil">
+  <svg viewBox="0 0 24 24">
+    <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+  </svg>
+  Accueil
+</a>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.instant", "navigation.tabs", "navigation.sections", "navigation.top", "navigation.expand", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      
+    
+  </body>
+</html>

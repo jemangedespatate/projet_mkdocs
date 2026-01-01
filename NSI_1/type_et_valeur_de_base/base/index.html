@@ -1,0 +1,1035 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://www.prof-leal.fr/NSI_1/type_et_valeur_de_base/base/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Nombres binaires et hexadécimaux - Mr Leal SNT/NSI</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/custom_style.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#nombres-binaires-et-hexadecimaux" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Mr Leal SNT/NSI" class="md-header__button md-logo" aria-label="Mr Leal SNT/NSI" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M256 141.3v309.3l.5-.2A449 449 0 0 1 428.8 416H448V96h-19.2c-42.2 0-84.1 8.4-123.1 24.6-16.8 7-33.4 13.9-49.7 20.7m-25.1-79.8L256 72l25.1-10.5C327.9 42 378.1 32 428.8 32H464c26.5 0 48 21.5 48 48v352c0 26.5-21.5 48-48 48h-35.2c-50.7 0-100.9 10-147.7 29.5l-12.8 5.3c-7.9 3.3-16.7 3.3-24.6 0l-12.8-5.3C184.1 490 133.9 480 83.2 480H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h35.2c50.7 0 100.9 10 147.7 29.5"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Mr Leal SNT/NSI
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Nombres binaires et hexadécimaux
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="indigo"  aria-label="Mode sombre"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Mode sombre" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="indigo"  aria-label="Mode clair"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Mode clair" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Accueil
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../SNT/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  SNT
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Première NSI
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Mr Leal SNT/NSI" class="md-nav__button md-logo" aria-label="Mr Leal SNT/NSI" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M256 141.3v309.3l.5-.2A449 449 0 0 1 428.8 416H448V96h-19.2c-42.2 0-84.1 8.4-123.1 24.6-16.8 7-33.4 13.9-49.7 20.7m-25.1-79.8L256 72l25.1-10.5C327.9 42 378.1 32 428.8 32H464c26.5 0 48 21.5 48 48v352c0 26.5-21.5 48-48 48h-35.2c-50.7 0-100.9 10-147.7 29.5l-12.8 5.3c-7.9 3.3-16.7 3.3-24.6 0l-12.8-5.3C184.1 490 133.9 480 83.2 480H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h35.2c50.7 0 100.9 10 147.7 29.5"/></svg>
+
+    </a>
+    Mr Leal SNT/NSI
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Accueil
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SNT/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SNT
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Première NSI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction-a-la-numeration-binaire" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Introduction à la numération binaire
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Définition
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#base-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Base 10
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#base-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Base 2
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#passage-de-la-base-2-a-la-base-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Passage de la base 2 à la base 10
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#passage-de-la-base-10-a-la-base-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Passage de la base 10 à la base 2
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercice-pratique" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercice pratique
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#base-16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        base 16
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#table-de-correspondance-entre-hexadecimal-et-decimal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Table de correspondance entre hexadécimal et décimal
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#passage-de-la-base-10-a-la-base-16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Passage de la base 10 à la base 16
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#passage-de-la-base-16-a-la-base-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Passage de la base 16 à la base 10
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercice-pratique_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercice pratique
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercice-complementaire" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        exercice complementaire
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="nombres-binaires-et-hexadecimaux">Nombres binaires et hexadécimaux</h1>
+<h2 id="introduction-a-la-numeration-binaire">Introduction à la numération binaire</h2>
+<p>La numération binaire est un système qui utilise seulement deux symboles : 0 et 1.</p>
+<p>Contrairement à notre système habituel en base 10 (décimal), qui utilise dix chiffres allant de 0 à 9, la base 2 est le langage fondamental des ordinateurs.</p>
+<p>Dans ce système, chaque chiffre correspond à une puissance de deux. Cela permet de représenter n’importe quel nombre uniquement avec des suites de 0 et de 1.</p>
+<div class="admonition note">
+<p class="admonition-title">Histoire</p>
+<p>L’idée du binaire remonte au XVIIᵉ siècle grâce au philosophe et mathématicien Gottfried Wilhelm Leibniz. Il a montré que tous les nombres pouvaient être exprimés à l’aide de seulement deux symboles.</p>
+<p>Aujourd’hui, le binaire est indispensable en informatique, car les circuits électroniques ne reconnaissent que deux états : « allumé » (1) ou « éteint » (0).  </p>
+<p>Grâce à cette simplicité, les ordinateurs peuvent effectuer des calculs très complexes et stocker des informations numériques.  </p>
+</div>
+<h2 id="definition">Définition</h2>
+<p><strong>Base :</strong>
+La base d’un système de numération est le nombre de symboles différents qu’il utilise pour écrire les nombres.</p>
+<div class="admonition example">
+<p class="admonition-title">Autres bases utilisées</p>
+<p><strong>Base 60 – Temps:</strong></p>
+<p>Le temps est basé sur la numération en 60 : une heure est divisée en 60 minutes, et une minute en 60 secondes.
+Ce choix vient des Babyloniens, qui comptaient avec un système sexagésimal. Cela rendait les calculs de durées plus faciles à l’époque.</p>
+<p><strong>Base 12 – Douzaines:</strong></p>
+<p>Les douzaines (par exemple, les boîtes de 12 œufs) viennent d’un usage ancien. On pouvait compter jusqu’à 12 en utilisant les phalanges des doigts d’une main, en se servant du pouce pour les pointer.</p>
+</div>
+<h2 id="base-10">Base 10</h2>
+<p>Pour mieux comprendre le principe de la base 2, il est utile de rappeler le fonctionnement du système décimal que nous utilisons au quotidien.</p>
+<p>En base 10, chaque chiffre d’un nombre représente une puissance de dix.</p>
+<div class="admonition example">
+<p class="admonition-title">Exemple</p>
+<p>Le nombre 347 peut être décomposé ainsi :  </p>
+<p>
+<script type="math/tex; mode=display"> 347_{10} = 3 × 10^2 + 4 × 10^1 + 7 × 10^0 </script>
+</p>
+<p>Ici, le chiffre 3 représente trois centaines, le chiffre 4 représente quatre dizaines et le chiffre 7 représente sept unités.  </p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Exercice</p>
+<p>Décomposez les nombres suivants :  </p>
+<ul>
+<li>1235  </li>
+<li>1002  </li>
+<li>0001  </li>
+</ul>
+</div>
+<p>On note l’ensemble des <strong>chiffres</strong> disponibles en base 10 de la façon suivante :</p>
+<p>
+<script type="math/tex; mode=display">
+B_{10} = \{0,1,2,3,4,5,6,7,8,9\}
+</script>
+</p>
+<h2 id="base-2">Base 2</h2>
+<p>La base 2 est composée, comme indiqué précédemment, de 2 chiffres :</p>
+<p>
+<script type="math/tex; mode=display">
+B_{2} = \{0,1\}
+</script>
+</p>
+<p>Grâce à la base 2, il est possible de représenter l’ensemble des entiers naturels.
+Le principe est le même qu’en base 10 :</p>
+<ul>
+<li>En base 10, lorsque le chiffre des unités vaut 9 et que l’on ajoute 1, il faut remettre le chiffre des unités à 0, puis ajouter 1 au chiffre des dizaines.</li>
+<li>Si le chiffre des dizaines vaut également 9, il faut lui aussi être remis à 0 et ajouter 1 au chiffre des centaines, et ainsi de suite.</li>
+</ul>
+<div class="admonition example">
+<p class="admonition-title">Exemple</p>
+<p>Si je veux connaître le nombre qui suit 399, je dois commencer par ajouter 1 au chiffre des dizaines et remettre celui des unités à 0.</p>
+<p>Ici, le chiffre des dizaines vaut aussi 9, donc il faut ajouter 1 au chiffre des centaines, puis remettre le chiffre des dizaines à 0.  </p>
+<p>Ainsi, on obtient 400.  </p>
+</div>
+<p>En base 2, on utilise exactement le même principe.</p>
+<p>Comme il n’y a que deux chiffres possibles (0 et 1), dès que l’on atteint 1 dans une position et que l’on ajoute 1, on remet ce chiffre à 0 et on reporte 1 sur la position suivante.</p>
+<ul>
+<li>Par exemple, si le chiffre des unités est 1 et que l’on ajoute 1, il devient 0, et l’on ajoute 1 au chiffre des « dizaines » (en réalité, la deuxième position en base 2).</li>
+<li>Si ce chiffre vaut lui aussi 1, il devient 0 et on ajoute 1 à la position suivante, et ainsi de suite.</li>
+</ul>
+<div class="admonition example">
+<p class="admonition-title">Exemple</p>
+<p>Si je veux connaître le nombre qui suit 10011, je dois commencer par ajouter 1 au chiffre des unités. </p>
+<p>Comme il vaut déjà 1, je le remets à 0 et j’ajoute 1 au chiffre suivant.  </p>
+<p>Or, ce chiffre vaut lui aussi 1, donc je le remets à 0 et j’ajoute 1 au chiffre suivant.  </p>
+<p>Ainsi, j’obtiens 10100.  </p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Exercice</p>
+<p>Écrire les nombres de 0 à 15 en utilisant la base 2.  </p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Exercice</p>
+<p>Donner le nombre qui suit chacun des nombres suivants :  </p>
+<ul>
+<li>1011  </li>
+<li>1111  </li>
+<li>1110</li>
+<li>1011111</li>
+</ul>
+</div>
+<h2 id="passage-de-la-base-2-a-la-base-10">Passage de la base 2 à la base 10</h2>
+<p>Pour convertir un nombre écrit en base 10 vers la base 2, on utilise une décomposition en puissances de 2.</p>
+<div class="admonition example">
+<p class="admonition-title">Exemple</p>
+<p>Prenons un nombre binaire, par exemple 1011.  </p>
+<p>On peut le décomposer ainsi :  </p>
+<p>
+<script type="math/tex; mode=display">
+1011_2 = 1 × 2^3 + 0 × 2^2 + 1 × 2^1 + 1 × 2^0
+</script>
+</p>
+<p>En effectuant le calcul, on obtient :  </p>
+<p>
+<script type="math/tex; mode=display">
+8 + 0 + 2 + 1 = 11
+</script>
+</p>
+<p>Donc 1011 en base 2 correspond à 11 en base 10.  </p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Exercice</p>
+<p>Décomposer les nombres binaires suivants en base 10 :  </p>
+<ul>
+<li>1010  </li>
+<li>11011  </li>
+<li>0011  </li>
+<li>1001001101  </li>
+</ul>
+</div>
+<h2 id="passage-de-la-base-10-a-la-base-2">Passage de la base 10 à la base 2</h2>
+<p>Pour convertir un nombre écrit en base 10 vers la base 2, on utilise ce que l’on appelle <strong>la méthode des divisions successives</strong>.</p>
+<div class="admonition example">
+<p class="admonition-title">Exemple</p>
+<p>Soit le nombre <code>22</code> en base 10. Nous voulons le convertir en base 2.  </p>
+<p>On commence par diviser le nombre par 2 en utilisant la division euclidienne :  </p>
+<p>
+<script type="math/tex; mode=display">
+22 = 11 × 2 + 0
+</script>
+</p>
+<p>On recommence l’opération en prenant le quotient comme nouveau dividende :  </p>
+<p>
+<script type="math/tex; mode=display">
+11 = 5 × 2 + 1
+</script>
+</p>
+<p>Puis on continue jusqu’à ce que le quotient soit égal à 0 :  </p>
+<p>
+<script type="math/tex; mode=display">
+5 = 2 × 2 + 1
+</script>
+<br />
+<script type="math/tex; mode=display">
+2 = 1 × 2 + 0
+</script>
+<br />
+<script type="math/tex; mode=display">
+1 = 0 × 2 + 1
+</script>
+</p>
+<p>Une fois terminé, on conserve les <strong>restes</strong> obtenus en remontant les étapes de bas en haut :  </p>
+<p><img alt="div_suc_2" height="20%" src="../../../assets/seconde/internet/div_succ_2.png" />  </p>
+<p>On obtient donc :  </p>
+<p>
+<script type="math/tex; mode=display">
+22_{10} = 10110_{2}
+</script>
+</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Exercice</p>
+<p>Convertir en base 2 les nombres suivants (écrits en base 10) :  </p>
+<ul>
+<li>6  </li>
+<li>16  </li>
+<li>31  </li>
+<li>42  </li>
+</ul>
+</div>
+<h2 id="exercice-pratique">Exercice pratique</h2>
+<div class="admonition note">
+<p class="admonition-title">Exercice pratique</p>
+<ol>
+<li>Compléter la fonction suivante :  </li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">bin_to_dec</span><span class="p">(</span><span class="n">nombre</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Cette fonction transforme un nombre binaire (en chaîne de caractères)</span>
+<span class="sd">    en sa représentation en base 10.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+</code></pre></div>
+<pre><code>Indice : utiliser le parcours de chaîne de caractères vu précédemment.
+</code></pre>
+<ol>
+<li>Compléter la fonction suivante :  </li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">dec_to_bin</span><span class="p">(</span><span class="n">nombre</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Cette fonction transforme un nombre entier en base 10</span>
+<span class="sd">    en sa représentation en base 2 (chaîne de caractères).</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+</code></pre></div>
+</div>
+<h2 id="base-16">base 16</h2>
+<p>En informatique, une autre base très importante est la base hexadécimale (ou hex). Cette base représente les nombres avec 16 symboles.</p>
+<p>Cette base est très utile pour divers usages notamment :</p>
+<ul>
+<li>La représentation d'adresse mémoire</li>
+<li>La représentation des couleurs</li>
+</ul>
+<p>On peut noter cette base : </p>
+<p>
+<script type="math/tex; mode=display">B_{16}  = \{0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F\}</script>
+</p>
+<h2 id="table-de-correspondance-entre-hexadecimal-et-decimal">Table de correspondance entre hexadécimal et décimal</h2>
+<table>
+<thead>
+<tr>
+<th>Hex</th>
+<th>Dec</th>
+<th></th>
+<th>Hex</th>
+<th>Dec</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>0</td>
+<td></td>
+<td>8</td>
+<td>8</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td></td>
+<td>9</td>
+<td>9</td>
+</tr>
+<tr>
+<td>2</td>
+<td>2</td>
+<td></td>
+<td>A</td>
+<td>10</td>
+</tr>
+<tr>
+<td>3</td>
+<td>3</td>
+<td></td>
+<td>B</td>
+<td>11</td>
+</tr>
+<tr>
+<td>4</td>
+<td>4</td>
+<td></td>
+<td>C</td>
+<td>12</td>
+</tr>
+<tr>
+<td>5</td>
+<td>5</td>
+<td></td>
+<td>D</td>
+<td>13</td>
+</tr>
+<tr>
+<td>6</td>
+<td>6</td>
+<td></td>
+<td>E</td>
+<td>14</td>
+</tr>
+<tr>
+<td>7</td>
+<td>7</td>
+<td></td>
+<td>F</td>
+<td>15</td>
+</tr>
+</tbody>
+</table>
+<h2 id="passage-de-la-base-10-a-la-base-16">Passage de la base 10 à la base 16</h2>
+<p>On va utiliser, une nouvelle fois, la méthode des <strong>divisions successives</strong>, mais cette fois-ci en divisant par 16 et non plus par 2.</p>
+<div class="admonition example">
+<p class="admonition-title">Exemple</p>
+<p>Soit le nombre <code>356</code> en base 10. Nous voulons le convertir en base 16.  </p>
+<p>On commence par diviser le nombre par 16 en utilisant la division euclidienne :  </p>
+<p>
+<script type="math/tex; mode=display">
+356 = 22 × 16 + 4
+</script>
+</p>
+<p>On recommence l’opération en prenant le quotient comme nouveau dividende :  </p>
+<p>
+<script type="math/tex; mode=display">
+22 = 1 × 16 + 6
+</script>
+</p>
+<p>Puis on continue jusqu’à ce que le quotient soit égal à 0 :  </p>
+<p>
+<script type="math/tex; mode=display">
+1 = 0 × 16 + 1
+</script>
+</p>
+<p>Une fois terminé, on conserve les <strong>restes</strong> obtenus en remontant les étapes de bas en haut :  </p>
+<p>
+<script type="math/tex; mode=display">
+(1 \; 6 \; 4)_{16}
+</script>
+</p>
+<p>On obtient donc :  </p>
+<p>
+<script type="math/tex; mode=display">
+356_{10} = 164_{16}
+</script>
+</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Exercice</p>
+<p>Convertir en base 16 les nombres suivants (écrits en base 10) :  </p>
+<ul>
+<li>12</li>
+<li>25</li>
+<li>31  </li>
+<li>42  </li>
+</ul>
+</div>
+<h2 id="passage-de-la-base-16-a-la-base-10">Passage de la base 16 à la base 10</h2>
+<p>Pour convertir un nombre écrit en base 16 vers la base 10, on utilise une <strong>décomposition en puissances de 16</strong>, exactement comme on l’a fait pour la base 2 avec les puissances de 2.</p>
+<p>Chaque chiffre hexadécimal est remplacé par sa valeur décimale (en utilisant le tableau de correspondance vu précédemment), puis multiplié par la puissance de 16 correspondant à sa position.</p>
+<div class="admonition example">
+<p class="admonition-title">Exemple</p>
+<p>Soit le nombre <code>2F</code> en base 16. Nous voulons le convertir en base 10.  </p>
+<p>On décompose le nombre :  </p>
+<p>
+<script type="math/tex; mode=display">
+2F_{16} = 2 × 16^1 + F × 16^0
+</script>
+</p>
+<p>Comme <code>F</code> correspond à 15 en décimal, on obtient :  </p>
+<p>
+<script type="math/tex; mode=display">
+2 × 16^1 + 15 × 16^0 = 32 + 15 = 47
+</script>
+</p>
+<p>Donc :  </p>
+<p>
+<script type="math/tex; mode=display">
+2F_{16} = 47_{10}
+</script>
+</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Exercice</p>
+<p>Convertir en base 10 les nombres hexadécimaux suivants :  </p>
+<ul>
+<li>A  </li>
+<li>1C  </li>
+<li>3F  </li>
+<li>7B  </li>
+<li>FF  </li>
+</ul>
+</div>
+<h2 id="exercice-pratique_1">Exercice pratique</h2>
+<div class="admonition note">
+<p class="admonition-title">Exercice pratique</p>
+<ol>
+<li>Compléter la fonction suivante :  </li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">hex_to_dec</span><span class="p">(</span><span class="n">nombre</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Cette fonction transforme un nombre hexadécimal(en chaîne de caractères)</span>
+<span class="sd">    en sa représentation en base 10.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+</code></pre></div>
+<ol>
+<li>Compléter la fonction suivante :  </li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">dec_to_bin</span><span class="p">(</span><span class="n">nombre</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Cette fonction transforme un nombre entier en base 10</span>
+<span class="sd">    en sa représentation en base 16 (chaîne de caractères).</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+</code></pre></div>
+</div>
+<h2 id="exercice-complementaire">exercice complementaire</h2>
+<div class="admonition note">
+<p class="admonition-title">Exercice pratique</p>
+<ol>
+<li>Compléter la fonction suivante sans passer par la base 10 :  </li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">hex_to_bin</span><span class="p">(</span><span class="n">nombre</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Cette fonction transforme un nombre hexadécimal (en chaîne de caractères)</span>
+<span class="sd">    en sa représentation en base 2 (chaîne de caractères).</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+</code></pre></div>
+<ol>
+<li>Compléter la fonction suivante sans passer par la base 10 :  </li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">bin_to_hex</span><span class="p">(</span><span class="n">nombre</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Cette fonction transforme un nombre en base 2 (chaîne de caractères)</span>
+<span class="sd">    en sa représentation en base 16 (chaîne de caractères).</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+</code></pre></div>
+<details class="success">
+<summary>indice :</summary>
+<p>Chaque chiffre hexadécimal correspond exactement à un groupe de 4 bits en binaire.<br />
+Exemple :<br />
+- A (hexadécimal) = 1010 (binaire)<br />
+- F (hexadécimal) = 1111 (binaire)  </p>
+<p>Pour convertir de l’hexadécimal vers le binaire, tu peux :<br />
+- parcourir chaque caractère hexadécimal,<br />
+- le remplacer par son équivalent en 4 bits.  </p>
+<p>Pour convertir du binaire vers l’hexadécimal, tu peux :<br />
+- regrouper les bits par paquets de 4 (en ajoutant des zéros à gauche si besoin),<br />
+- puis remplacer chaque groupe de 4 par le chiffre hexadécimal correspondant.  </p>
+</details>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <a href="/" class="custom-home-button" title="Accueil">
+  <svg viewBox="0 0 24 24">
+    <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+  </svg>
+  Accueil
+</a>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.instant", "navigation.tabs", "navigation.sections", "navigation.top", "navigation.expand", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      
+    
+  </body>
+</html>
