@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://www.prof-leal.fr/SNT/Photographie_Numerique/travaux_diriger/">
+        <link rel="canonical" href="https://www.prof-leal.fr/SNT/Photographie_Numerique/exercices/">
       
       
       
@@ -18,7 +18,7 @@
     
     
       
-        <title>📝 Travaux Dirigés : Photographie Numérique - Mr Leal SNT/NSI</title>
+        <title>✏️ Exercices : Photographie Numérique - Mr Leal SNT/NSI</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#travaux-diriges-photographie-numerique" class="md-skip">
+        <a href="#exercices-photographie-numerique" class="md-skip">
           Skip to content
         </a>
       
@@ -106,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              📝 Travaux Dirigés : Photographie Numérique
+              ✏️ Exercices : Photographie Numérique
             
           </span>
         </div>
@@ -404,6 +404,33 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#exercice-5-profondeur-de-couleur" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercice 5 : Profondeur de couleur
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercice-6-formats-de-fichiers-et-usages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercice 6 : Formats de fichiers et Usages
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercice-7-retouche-dimage-calcul" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercice 7 : Retouche d'image (Calcul)
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -419,7 +446,7 @@
                   
 
 
-<h1 id="travaux-diriges-photographie-numerique">📝 Travaux Dirigés : Photographie Numérique</h1>
+<h1 id="exercices-photographie-numerique">✏️ Exercices : Photographie Numérique</h1>
 <p>Ces exercices sont à réaliser sur feuille ou directement sur ce document numérique. Ils visent à vérifier votre compréhension du codage des images.</p>
 <h2 id="exercice-1-definition-et-resolution">Exercice 1 : Définition et Résolution</h2>
 <p>On considère une image numérique de <strong>800 pixels de large</strong> et <strong>600 pixels de haut</strong>.</p>
@@ -431,53 +458,44 @@
 </ul>
 </li>
 </ol>
-<details class="success">
-<summary>Correction Exercice 1</summary>
+<details class="tip">
+<summary>Indications pour l'Exercice 1</summary>
 <ol>
-<li><strong>Définition</strong> : $800 \times 600 = 480\,000$ pixels (ou 0,48 Mpx).</li>
-<li><strong>Résolution</strong> :<ul>
-<li>La largeur est de 800 pixels pour 10 pouces.</li>
-<li>Résolution = $800 / 10 = 80$ ppp (dpi).</li>
-<li><strong>Conclusion</strong> : 80 ppp est très inférieur à 300 ppp. L'image paraîtra "pixelisée" ou floue à l'impression.</li>
+<li>Pour la <strong>définition</strong> : multipliez la largeur par la hauteur.</li>
+<li>Pour la <strong>résolution</strong> :<ul>
+<li>Divisez le nombre de pixels en largeur par la largeur en pouces.</li>
+<li>Comparez le résultat obtenu avec le standard de 300 ppp pour l'impression photo.</li>
 </ul>
 </li>
 </ol>
 </details>
 <hr />
 <h2 id="exercice-2-le-poids-des-images">Exercice 2 : Le Poids des Images</h2>
-<p>On souhaite stocker une image de définition $1024 \times 1024$ pixels.
+<p>On souhaite stocker une image de définition <strong>1024 × 1024</strong> pixels.
 Calculez le poids de cette image (en octets, puis en Mo) dans les cas suivants :</p>
 <ol>
 <li><strong>Image binaire</strong> (Noir et Blanc pur, 1 bit par pixel).</li>
 <li><strong>Image en niveaux de gris</strong> (256 nuances, 8 bits par pixel).</li>
 <li><strong>Image en couleurs RVB</strong> (16 millions de couleurs, 24 bits par pixel).</li>
 </ol>
-<p><em>Rappel : $1 \text{ octet} = 8 \text{ bits}$. $1 \text{ Mo} \approx 1\,000\,000 \text{ octets}$ (ou $1024 \times 1024$ selon la convention, ici on utilisera $10^6$ pour simplifier).</em></p>
-<details class="success">
-<summary>Correction Exercice 2</summary>
-<p>Le nombre total de pixels est $1024 \times 1024 = 1\,048\,576$ pixels.</p>
+<p><em>Rappel : </em><em>1 octet = 8 bits</em><em>. </em><em>1 Mo ≈ 1 000 000 octets</em><em> (ou 1024 × 1024 selon la convention, ici on utilisera 10⁶ pour simplifier).</em></p>
+<details class="tip">
+<summary>Indications pour l'Exercice 2</summary>
+<p><strong>Démarche générale :</strong></p>
 <ol>
 <li>
-<p><strong>Binaire (1 bit/pixel)</strong> :</p>
+<p>Commencez par calculer le <strong>nombre total de pixels</strong> de l'image.</p>
+</li>
+<li>
+<p>Pour chaque type d'image :</p>
 <ul>
-<li>Poids en bits : $1\,048\,576$ bits.</li>
-<li>Poids en octets : $1\,048\,576 / 8 = 131\,072$ octets.</li>
-<li>Poids en Ko : $\approx 131$ Ko.</li>
+<li><strong>Binaire</strong> : Chaque pixel = 1 bit. Calculez le total en bits, puis divisez par 8 pour obtenir les octets.</li>
+<li><strong>Niveaux de gris</strong> : Chaque pixel = 1 octet. Multipliez le nombre de pixels par 1.</li>
+<li><strong>Couleurs RVB</strong> : Chaque pixel = 3 octets. Multipliez le nombre de pixels par 3.</li>
 </ul>
 </li>
 <li>
-<p><strong>Niveaux de gris (1 octet/pixel)</strong> :</p>
-<ul>
-<li>Poids en octets : $1\,048\,576 \times 1 = 1\,048\,576$ octets.</li>
-<li>Poids en Mo : $\approx 1$ Mo.</li>
-</ul>
-</li>
-<li>
-<p><strong>Couleurs RVB (3 octets/pixel)</strong> :</p>
-<ul>
-<li>Poids en octets : $1\,048\,576 \times 3 = 3\,145\,728$ octets.</li>
-<li>Poids en Mo : $\approx 3,14$ Mo.</li>
-</ul>
+<p>Pour convertir en Mo, divisez le résultat en octets par 1 000 000.</p>
 </li>
 </ol>
 </details>
@@ -490,14 +508,17 @@ Calculez le poids de cette image (en octets, puis en Mo) dans les cas suivants :
 <li>Quelle couleur obtient-on avec le code <code>(0, 255, 255)</code> ? (Mélange de Vert et Bleu)</li>
 <li>On a une couleur <code>(100, 100, 100)</code>. Est-elle colorée ou grise ? Est-elle plus claire ou plus sombre que <code>(200, 200, 200)</code> ?</li>
 </ol>
-<details class="success">
-<summary>Correction Exercice 3</summary>
-<ol>
-<li><strong>Noir</strong> : <code>(0, 0, 0)</code> | <strong>Blanc</strong> : <code>(255, 255, 255)</code>.</li>
-<li><code>(255, 0, 0)</code> correspond au <strong>Rouge</strong> pur.</li>
-<li><code>(0, 255, 255)</code> correspond au <strong>Cyan</strong>.</li>
-<li>C'est un <strong>Gris</strong> (car R=V=B). <code>(100, 100, 100)</code> est plus <strong>sombre</strong> que <code>(200, 200, 200)</code> (qui se rapproche du blanc).</li>
-</ol>
+<details class="tip">
+<summary>Indications pour l'Exercice 3</summary>
+<p><strong>Rappels utiles :</strong></p>
+<ul>
+<li>Le <strong>Noir</strong> correspond à l'absence totale de lumière (toutes les composantes à 0).</li>
+<li>Le <strong>Blanc</strong> correspond à la lumière maximale (toutes les composantes à 255).</li>
+<li>Une couleur <strong>pure</strong> (Rouge, Vert ou Bleu) a une seule composante à 255 et les autres à 0.</li>
+<li>Le <strong>Cyan</strong> est le mélange de Vert et Bleu (sans Rouge).</li>
+<li>Un <strong>Gris</strong> a les trois composantes égales (R = V = B).</li>
+<li>Plus les valeurs sont élevées, plus la couleur est <strong>claire</strong>.</li>
+</ul>
 </details>
 <hr />
 <h2 id="exercice-4-metadonnees-et-vie-privee">Exercice 4 : Métadonnées et Vie Privée</h2>
@@ -508,12 +529,68 @@ Un inconnu télécharge la photo et regarde les métadonnées EXIF.</p>
 <li>Quelle information est la plus critique pour la sécurité d'Alice ?</li>
 <li>Comment Alice aurait-elle dû procéder pour se protéger ?</li>
 </ol>
-<details class="success">
-<summary>Correction Exercice 4</summary>
+<details class="tip">
+<summary>Indications pour l'Exercice 4</summary>
+<p><strong>Réfléchissez aux métadonnées EXIF :</strong></p>
 <ol>
-<li>Date/Heure, Modèle du smartphone, Réglages (ISO/Flash), <strong>Coordonnées GPS</strong>.</li>
-<li>Les <strong>Coordonnées GPS</strong> (Latitude/Longitude) sont critiques car elles permettent de localiser le domicile d'Alice précisèment.</li>
-<li>Elle aurait dû <strong>désactiver la géolocalisation</strong> dans l'appareil photo avant la prise de vue, ou utiliser un logiciel pour <strong>supprimer les métadonnées</strong> avant de publier la photo.</li>
+<li>
+<p>Les métadonnées peuvent contenir :</p>
+<ul>
+<li>Des informations <strong>temporelles</strong> (quand la photo a été prise)</li>
+<li>Des informations <strong>techniques</strong> (quel appareil, quels réglages)</li>
+<li>Des informations <strong>géographiques</strong> (où la photo a été prise)</li>
+</ul>
+</li>
+<li>
+<p>Quelle information pourrait révéler l'<strong>adresse personnelle</strong> d'Alice ?</p>
+</li>
+<li>
+<p>Pensez aux <strong>paramètres de l'appareil photo</strong> et aux <strong>outils de traitement d'image</strong> qui peuvent supprimer ces données.</p>
+</li>
+</ol>
+</details>
+<hr />
+<h2 id="exercice-5-profondeur-de-couleur">Exercice 5 : Profondeur de couleur</h2>
+<p>La profondeur de couleur correspond au nombre de bits utilisés pour coder la couleur d'un pixel. Plus ce nombre est grand, plus on peut afficher de couleurs différentes.</p>
+<ol>
+<li>Si un pixel est codé sur <strong>2 bits</strong>, combien de couleurs différentes peut-il afficher ? Listez les combinaisons de bits possibles.</li>
+<li>Dans le codage <strong>RVB standard</strong>, on utilise <strong>8 bits par canal</strong> (soit 24 bits au total). Calculez le nombre total de couleurs possibles (utilisez la puissance de 2).</li>
+</ol>
+<details class="tip">
+<summary>Indications pour l'Exercice 5</summary>
+<ul>
+<li>Pour <strong>n bits</strong>, le nombre de valeurs possibles est <strong>2ⁿ</strong>.</li>
+<li>Pour 2 bits, les combinaisons sont 00, 01, 10, 11.</li>
+<li>Pour le RVB standard, calculez <strong>2²⁴</strong>. (C'est environ 16,7 millions).</li>
+</ul>
+</details>
+<hr />
+<h2 id="exercice-6-formats-de-fichiers-et-usages">Exercice 6 : Formats de fichiers et Usages</h2>
+<p>Il existe plusieurs formats pour enregistrer une image, chacun ayant ses avantages.</p>
+<ol>
+<li>Vous créez un logo pour le site du lycée et vous avez besoin que le fond soit <strong>transparent</strong>. Quel format entre <strong>JPEG</strong> et <strong>PNG</strong> devez-vous choisir ?</li>
+<li>Vous prenez une photo de paysage très détaillée. Quel format est le plus adapté pour que le fichier ne soit pas trop lourd tout en restant joli à regarder ?</li>
+<li>Pourquoi dit-on que le format JPEG est un format de compression <strong>"avec perte"</strong> ?</li>
+</ol>
+<details class="tip">
+<summary>Indications pour l'Exercice 6</summary>
+<ul>
+<li>Relisez la partie du cours sur les formats : lequel gère le canal "Alpha" (transparence) ?</li>
+<li>Le <strong>JPEG</strong> réduit la taille du fichier en simplifiant des détails parfois invisibles, alors que le <strong>PNG</strong> garde tout mais pèse plus lourd.</li>
+</ul>
+</details>
+<hr />
+<h2 id="exercice-7-retouche-dimage-calcul">Exercice 7 : Retouche d'image (Calcul)</h2>
+<p>On considère un pixel de couleur <strong>RVB (120, 50, 200)</strong>. On applique une retouche pour augmenter la luminosité en ajoutant <strong>30</strong> à chaque composante.</p>
+<ol>
+<li>Donnez les nouvelles coordonnées RVB du pixel après retouche.</li>
+<li>Si un autre pixel a pour valeur <strong>(240, 100, 40)</strong> et qu'on lui ajoute aussi 30 à chaque canal, quelle sera sa nouvelle valeur pour le canal <strong>Rouge</strong> ? (Rappel : la valeur d'un octet est limitée).</li>
+</ol>
+<details class="tip">
+<summary>Indications pour l'Exercice 7</summary>
+<ol>
+<li>Additionnez simplement 30 à chaque nombre : (120+30, 50+30, 200+30).</li>
+<li><strong>Attention :</strong> Une composante ne peut jamais dépasser <strong>255</strong>. Si le calcul donne plus (ex: 240 + 30 = 270), le résultat est "plafonné" à 255.</li>
 </ol>
 </details>
 

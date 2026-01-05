@@ -375,6 +375,30 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="0. Préparation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#apercu-de-limage-de-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      🖼️ Aperçu de l'image de test
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instructions-de-lancement" class="md-nav__link">
+    <span class="md-ellipsis">
+      📥 Instructions de lancement
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -396,9 +420,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#activite-3-passage-en-noir-et-blanc-niveaux-de-gris" class="md-nav__link">
+  <a href="#activite-3-passage-en-niveaux-de-gris" class="md-nav__link">
     <span class="md-ellipsis">
-      Activité 3 : Passage en Noir et Blanc (Niveaux de gris)
+      Activité 3 : Passage en Niveaux de Gris
     </span>
   </a>
   
@@ -414,9 +438,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#activite-5-le-mystere-de-limage-cachee-steganographie" class="md-nav__link">
+  <a href="#activite-5-steganographie-le-message-cache" class="md-nav__link">
     <span class="md-ellipsis">
-      Activité 5 : Le Mystère de l'Image Cachée (Steganographie) 🕵️‍♂️
+      Activité 5 : Stéganographie (Le message caché) 🕵️‍♂️
     </span>
   </a>
   
@@ -440,111 +464,81 @@
 <h1 id="travaux-pratiques-traitement-dimage-avec-python">💻 Travaux Pratiques : Traitement d'Image avec Python</h1>
 <p>L'objectif de ce TP est d'apprendre à manipuler des images numériques pixel par pixel à l'aide du langage Python et de la bibliothèque <strong>Pillow</strong> (PIL).</p>
 <h2 id="0-preparation">0. Préparation</h2>
-<p>Vous devez disposer d'une image nommée <code>image_tp.jpg</code> dans le même dossier que votre script Python. Vous pouvez télécharger une image simple (par exemple un paysage ou un fruit) pour faire les tests.</p>
-<p>Pour utiliser la bibliothèque, on commence toujours par :
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
-</code></pre></div></p>
+<p>Les fichiers nécessaires sont :</p>
+<ul>
+<li><a download="image_tp.jpg" href="../../img/image_tp.jpg">image_tp.jpg</a> : image à utiliser pour les tests.</li>
+<li><a download="code.py" href="../code.py">code.py</a> : contient le programme interactif que vous devez compléter.</li>
+</ul>
+<h3 id="apercu-de-limage-de-test">🖼️ Aperçu de l'image de test</h3>
+<p>Voici l'image <code>image_tp.jpg</code> que vous allez manipuler (clic droit &gt; Enregistrer sous si besoin) :</p>
+<p><img alt="Image de test" src="../../img/image_tp.jpg" width="300" /></p>
+<h3 id="instructions-de-lancement">📥 Instructions de lancement</h3>
+<ol>
+<li><strong>Téléchargez les deux fichiers</strong> ci-dessus.</li>
+<li><strong>Placez-les impérativement dans le même dossier</strong>.</li>
+<li><strong>Ouvrez <code>code.py</code></strong> avec votre éditeur (IDLE, Thonny, Thonny, VS Code).</li>
+<li><strong>Lancez le programme</strong> : un menu s'affiche dans la console.</li>
+</ol>
+<hr />
 <h2 id="activite-1-ouvrir-et-analyser-une-image">Activité 1 : Ouvrir et Analyser une image</h2>
-<p>Copiez et exécutez le code suivant :</p>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
-
-<span class="c1"># 1. Ouverture du fichier image</span>
-<span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">&quot;image_tp.jpg&quot;</span><span class="p">)</span>
-
-<span class="c1"># 2. Récupération des dimensions</span>
-<span class="n">largeur</span><span class="p">,</span> <span class="n">hauteur</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">size</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;L&#39;image fait </span><span class="si">{</span><span class="n">largeur</span><span class="si">}</span><span class="s2"> pixels de large et </span><span class="si">{</span><span class="n">hauteur</span><span class="si">}</span><span class="s2"> pixels de haut.&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Définition totale : </span><span class="si">{</span><span class="n">largeur</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">hauteur</span><span class="si">}</span><span class="s2"> pixels.&quot;</span><span class="p">)</span>
-
-<span class="c1"># 3. Analyse du pixel central</span>
-<span class="n">x</span> <span class="o">=</span> <span class="n">largeur</span> <span class="o">//</span> <span class="mi">2</span>
-<span class="n">y</span> <span class="o">=</span> <span class="n">hauteur</span> <span class="o">//</span> <span class="mi">2</span>
-<span class="n">r</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">getpixel</span><span class="p">((</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">))</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Couleur du pixel central (</span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s2">,</span><span class="si">{</span><span class="n">y</span><span class="si">}</span><span class="s2">) : Rouge=</span><span class="si">{</span><span class="n">r</span><span class="si">}</span><span class="s2">, Vert=</span><span class="si">{</span><span class="n">v</span><span class="si">}</span><span class="s2">, Bleu=</span><span class="si">{</span><span class="n">b</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-</code></pre></div>
-<p><strong>Question :</strong> Que se passe-t-il si vous essayez de lire le pixel aux coordonnées <code>(largeur, hauteur)</code> ? Pourquoi ? (Essayez !)</p>
+<p><strong>🎯 Objectif : Comprendre comment Python "voit" une image.</strong></p>
+<p>Dans le menu, choisissez l'option <strong>1</strong>. Observez la console :
+- Les dimensions (Largeur x Hauteur) s'affichent.
+- Les composantes <strong>R, V, B</strong> du pixel central sont extraites.</p>
+<div class="admonition question">
+<p class="admonition-title">À réfléchir</p>
+<p>Dans le code de la fonction <code>activite_1()</code>, décommentez la ligne qui tente de lire le pixel aux coordonnées <code>(largeur, hauteur)</code>. Pourquoi cela provoque-t-il une erreur alors que ce sont les dimensions de l'image ?</p>
+</div>
 <hr />
 <h2 id="activite-2-creer-le-negatif-dune-image">Activité 2 : Créer le Négatif d'une image</h2>
-<p>Pour créer le négatif d'une image, il faut inverser les couleurs :
-*   Le 0 devient 255
-*   Le 255 devient 0
-*   La valeur <code>v</code> devient <code>255 - v</code></p>
-<p>Complétez le programme suivant :</p>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
-
-<span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">&quot;image_tp.jpg&quot;</span><span class="p">)</span>
-<span class="n">largeur</span><span class="p">,</span> <span class="n">hauteur</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">size</span>
-
-<span class="c1"># On crée une nouvelle image vide de la même taille</span>
-<span class="n">img_new</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="s2">&quot;RGB&quot;</span><span class="p">,</span> <span class="p">(</span><span class="n">largeur</span><span class="p">,</span> <span class="n">hauteur</span><span class="p">))</span>
-
-<span class="c1"># On parcourt tous les pixels de l&#39;image (double boucle)</span>
-<span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">hauteur</span><span class="p">):</span>
-    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">largeur</span><span class="p">):</span>
-        <span class="c1"># On récupère les anciennes couleurs</span>
-        <span class="n">r</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">getpixel</span><span class="p">((</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">))</span>
-
-        <span class="c1"># --- A VOUS DE JOUER ---</span>
-        <span class="c1"># Calculez les nouvelles couleurs</span>
-        <span class="n">r_new</span> <span class="o">=</span> <span class="mi">255</span> <span class="o">-</span> <span class="n">r</span>
-        <span class="n">v_new</span> <span class="o">=</span> <span class="err">???</span>       <span class="c1"># A compléter</span>
-        <span class="n">b_new</span> <span class="o">=</span> <span class="err">???</span>       <span class="c1"># A compléter</span>
-        <span class="c1"># -----------------------</span>
-
-        <span class="c1"># On écrit le nouveau pixel dans la nouvelle image</span>
-        <span class="n">img_new</span><span class="o">.</span><span class="n">putpixel</span><span class="p">((</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">),</span> <span class="p">(</span><span class="n">r_new</span><span class="p">,</span> <span class="n">v_new</span><span class="p">,</span> <span class="n">b_new</span><span class="p">))</span>
-
-<span class="c1"># On affiche le résultat</span>
-<span class="n">img_new</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-<span class="c1"># On sauvegarde le résultat</span>
-<span class="n">img_new</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s2">&quot;negatif.jpg&quot;</span><span class="p">)</span>
+<p><strong>🎯 Objectif : Utiliser une boucle pour modifier chaque pixel.</strong></p>
+<p>Le négatif consiste à inverser la luminosité. Si une valeur est <code>0</code> (noir), elle devient <code>255</code> (blanc).
+La formule est simple : <code>valeur_neuve = 255 - valeur_ancienne</code>.</p>
+<p><strong>Instructions :</strong>
+- Choisissez l'option <strong>2</strong> dans le menu.
+- Allez dans la fonction <code>activite_2()</code> de votre fichier Python.
+- Remplacez les <code>None</code> pour calculer <code>v_new</code> et <code>b_new</code> sur le même modèle que <code>r_new</code>.</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Dans activite_2() :</span>
+<span class="n">r_new</span> <span class="o">=</span> <span class="mi">255</span> <span class="o">-</span> <span class="n">r</span>
+<span class="n">v_new</span> <span class="o">=</span> <span class="kc">None</span>  <span class="c1"># À COMPLÉTER</span>
+<span class="n">b_new</span> <span class="o">=</span> <span class="kc">None</span>  <span class="c1"># À COMPLÉTER</span>
 </code></pre></div>
 <hr />
-<h2 id="activite-3-passage-en-noir-et-blanc-niveaux-de-gris">Activité 3 : Passage en Noir et Blanc (Niveaux de gris)</h2>
-<p>Une méthode simple pour transformer une image couleur en noir et blanc est de faire la <strong>moyenne</strong> des trois composantes pour chaque pixel.</p>
-<p>
-<script type="math/tex; mode=display">Gris = \frac{Rouge + Vert + Bleu}{3}</script>
-</p>
-<ol>
-<li>Reprenez le squelette du code de l'Activité 2.</li>
-<li>Modifiez le calcul à l'intérieur de la boucle pour calculer la moyenne.</li>
-<li>Affectez cette valeur moyenne aux trois canaux (<code>r_new</code>, <code>v_new</code>, <code>b_new</code>) pour obtenir du gris.</li>
-</ol>
-<p><em>Attention : La division doit donner un nombre entier ! Utilisez <code>// 3</code> ou <code>int((r+v+b)/3)</code>.</em></p>
-<details class="tip">
-<summary>Indice pour le code</summary>
-<div class="highlight"><pre><span></span><code><span class="n">moyenne</span> <span class="o">=</span> <span class="p">(</span><span class="n">r</span> <span class="o">+</span> <span class="n">v</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span> <span class="o">//</span> <span class="mi">3</span>
-<span class="n">img_new</span><span class="o">.</span><span class="n">putpixel</span><span class="p">((</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">),</span> <span class="p">(</span><span class="n">moyenne</span><span class="p">,</span> <span class="n">moyenne</span><span class="p">,</span> <span class="n">moyenne</span><span class="p">))</span>
+<h2 id="activite-3-passage-en-niveaux-de-gris">Activité 3 : Passage en Niveaux de Gris</h2>
+<p><strong>🎯 Objectif : Manipuler les couleurs pour transformer l'aspect.</strong></p>
+<p>Pour transformer de la couleur en gris, on calcule la <strong>moyenne</strong> des trois composantes.</p>
+<p><strong>Instructions :</strong>
+- Choisissez l'option <strong>3</strong>.
+- Dans <code>activite_3()</code>, remplacez les <code>None</code>.
+- <strong>Attention :</strong> En informatique, un pixel doit être un entier. Utilisez l'opérateur <code>//</code> pour une division entière.</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Dans activite_3() :</span>
+<span class="n">moyenne</span> <span class="o">=</span> <span class="p">(</span><span class="n">r</span> <span class="o">+</span> <span class="n">v</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span> <span class="o">//</span> <span class="mi">3</span>
+<span class="n">r_new</span> <span class="o">=</span> <span class="kc">None</span>  <span class="c1"># À COMPLÉTER</span>
+<span class="n">v_new</span> <span class="o">=</span> <span class="kc">None</span>  <span class="c1"># À COMPLÉTER</span>
+<span class="n">b_new</span> <span class="o">=</span> <span class="kc">None</span>  <span class="c1"># À COMPLÉTER</span>
 </code></pre></div>
-</details>
 <hr />
 <h2 id="activite-4-effet-filtre-rouge">Activité 4 : Effet "Filtre Rouge"</h2>
-<p>On souhaite ne garder que la composante <strong>Rouge</strong> de l'image.</p>
-<ul>
-<li>Le Rouge reste inchangé.</li>
-<li>Le Vert devient 0.</li>
-<li>Le Bleu devient 0.</li>
-</ul>
-<p>Écrivez le script qui réalise cet effet et sauvegardez l'image sous <code>filtre_rouge.jpg</code>.</p>
+<p><strong>🎯 Objectif : Écrire sa propre boucle de parcours.</strong></p>
+<p>Ici, nous voulons supprimer totalement le Vert et le Bleu pour ne garder que le canal Rouge.</p>
+<p><strong>Instructions :</strong>
+- Choisissez l'option <strong>4</strong>.
+- Dans <code>activite_4()</code>, vous devez écrire les boucles <code>for</code> pour parcourir toute l'image (utilisez les activités précédentes comme modèle).
+- Mettez les canaux de vert et bleu à <code>0</code>.</p>
 <hr />
-<h2 id="activite-5-le-mystere-de-limage-cachee-steganographie">Activité 5 : Le Mystère de l'Image Cachée (Steganographie) 🕵️‍♂️</h2>
-<p><em>Niveau avancé</em></p>
-<p>On soupçonne qu'un message secret est caché dans les composantes <strong>bleues</strong> d'une image apparemment noire.
-Si le pixel est totalement noir (0,0,0), il n'y a rien. Mais si le bleu vaut 1 (0,0,1), c'est un pixel du message !</p>
-<p><strong>Objectif :</strong> Révéler le message caché.
-<strong>Méthode :</strong> Multiplier la composante bleue par 255.
-*   Si Bleu était 0 -&gt; $0 \times 255 = 0$ (Noir)
-*   Si Bleu était 1 -&gt; $1 \times 255 = 255$ (Bleu vif)</p>
-<p>Essayez d'écrire un script qui transforme les micros-variations de bleu en bleu vif pour faire apparaître une forme.</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># Squelette</span>
-<span class="n">r_new</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="n">v_new</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="n">b_new</span> <span class="o">=</span> <span class="n">b</span> <span class="o">*</span> <span class="mi">255</span> <span class="c1"># On amplifie le signal bleu</span>
-
-<span class="c1"># Note : Cela ne fonctionne que si vous avez une image préparée pour cet exercice !</span>
-<span class="c1"># Vous pouvez en créer une vous-même en dessinant des pixels (0,0,1) sur un fond (0,0,0).</span>
+<h2 id="activite-5-steganographie-le-message-cache">Activité 5 : Stéganographie (Le message caché) 🕵️‍♂️</h2>
+<p><strong>🎯 Objectif : Révéler des informations invisibles à l'œil nu.</strong></p>
+<p>Certaines images semblent noires, mais contiennent des variations infimes (par exemple un bleu à <code>1</code> au lieu de <code>0</code>). En multipliant cette valeur par <code>255</code>, on rend l'information visible.</p>
+<p><strong>Instructions :</strong>
+- Choisissez l'option <strong>5</strong>.
+- Dans <code>activite_5()</code>, multipliez la composante <code>b</code> par <code>255</code> pour révéler la forme cachée.</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Dans activite_5() :</span>
+<span class="n">b_new</span> <span class="o">=</span> <span class="n">b</span> <span class="o">*</span> <span class="mi">255</span>
 </code></pre></div>
+<div class="admonition tip">
+<p class="admonition-title">Défi final</p>
+<p>Une fois que tout fonctionne, essayez de créer votre propre filtre (ex: filtre Sépia ou augmenter le contraste) en créant une nouvelle option dans le menu !</p>
+</div>
 
 
 

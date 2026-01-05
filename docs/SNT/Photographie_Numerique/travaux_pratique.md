@@ -4,134 +4,102 @@ L'objectif de ce TP est d'apprendre à manipuler des images numériques pixel pa
 
 ## 0. Préparation
 
-Vous devez disposer d'une image nommée `image_tp.jpg` dans le même dossier que votre script Python. Vous pouvez télécharger une image simple (par exemple un paysage ou un fruit) pour faire les tests.
+Les fichiers nécessaires sont :
 
-Pour utiliser la bibliothèque, on commence toujours par :
-```python
-from PIL import Image
-```
+- [image_tp.jpg](../img/image_tp.jpg){:download="image_tp.jpg"} : image à utiliser pour les tests.
+- [code.py](code.py){:download="code.py"} : contient le programme interactif que vous devez compléter.
+
+### 🖼️ Aperçu de l'image de test
+Voici l'image `image_tp.jpg` que vous allez manipuler (clic droit > Enregistrer sous si besoin) :
+
+![Image de test](../img/image_tp.jpg){ width="300" }
+
+### 📥 Instructions de lancement
+
+1. **Téléchargez les deux fichiers** ci-dessus.
+2. **Placez-les impérativement dans le même dossier**.
+3. **Ouvrez `code.py`** avec votre éditeur (IDLE, Thonny, Thonny, VS Code).
+4. **Lancez le programme** : un menu s'affiche dans la console.
+
+---
 
 ## Activité 1 : Ouvrir et Analyser une image
+**🎯 Objectif : Comprendre comment Python "voit" une image.**
 
-Copiez et exécutez le code suivant :
+Dans le menu, choisissez l'option **1**. Observez la console :
+- Les dimensions (Largeur x Hauteur) s'affichent.
+- Les composantes **R, V, B** du pixel central sont extraites.
 
-```python
-from PIL import Image
-
-# 1. Ouverture du fichier image
-img = Image.open("image_tp.jpg")
-
-# 2. Récupération des dimensions
-largeur, hauteur = img.size
-print(f"L'image fait {largeur} pixels de large et {hauteur} pixels de haut.")
-print(f"Définition totale : {largeur * hauteur} pixels.")
-
-# 3. Analyse du pixel central
-x = largeur // 2
-y = hauteur // 2
-r, v, b = img.getpixel((x, y))
-
-print(f"Couleur du pixel central ({x},{y}) : Rouge={r}, Vert={v}, Bleu={b}")
-```
-
-**Question :** Que se passe-t-il si vous essayez de lire le pixel aux coordonnées `(largeur, hauteur)` ? Pourquoi ? (Essayez !)
+!!! question "À réfléchir"
+    Dans le code de la fonction `activite_1()`, décommentez la ligne qui tente de lire le pixel aux coordonnées `(largeur, hauteur)`. Pourquoi cela provoque-t-il une erreur alors que ce sont les dimensions de l'image ?
 
 ---
 
 ## Activité 2 : Créer le Négatif d'une image
+**🎯 Objectif : Utiliser une boucle pour modifier chaque pixel.**
 
-Pour créer le négatif d'une image, il faut inverser les couleurs :
-*   Le 0 devient 255
-*   Le 255 devient 0
-*   La valeur `v` devient `255 - v`
+Le négatif consiste à inverser la luminosité. Si une valeur est `0` (noir), elle devient `255` (blanc).
+La formule est simple : `valeur_neuve = 255 - valeur_ancienne`.
 
-Complétez le programme suivant :
+**Instructions :**
+- Choisissez l'option **2** dans le menu.
+- Allez dans la fonction `activite_2()` de votre fichier Python.
+- Remplacez les `None` pour calculer `v_new` et `b_new` sur le même modèle que `r_new`.
 
 ```python
-from PIL import Image
-
-img = Image.open("image_tp.jpg")
-largeur, hauteur = img.size
-
-# On crée une nouvelle image vide de la même taille
-img_new = Image.new("RGB", (largeur, hauteur))
-
-# On parcourt tous les pixels de l'image (double boucle)
-for y in range(hauteur):
-    for x in range(largeur):
-        # On récupère les anciennes couleurs
-        r, v, b = img.getpixel((x, y))
-        
-        # --- A VOUS DE JOUER ---
-        # Calculez les nouvelles couleurs
-        r_new = 255 - r
-        v_new = ???       # A compléter
-        b_new = ???       # A compléter
-        # -----------------------
-        
-        # On écrit le nouveau pixel dans la nouvelle image
-        img_new.putpixel((x, y), (r_new, v_new, b_new))
-
-# On affiche le résultat
-img_new.show()
-# On sauvegarde le résultat
-img_new.save("negatif.jpg")
+# Dans activite_2() :
+r_new = 255 - r
+v_new = None  # À COMPLÉTER
+b_new = None  # À COMPLÉTER
 ```
 
 ---
 
-## Activité 3 : Passage en Noir et Blanc (Niveaux de gris)
+## Activité 3 : Passage en Niveaux de Gris
+**🎯 Objectif : Manipuler les couleurs pour transformer l'aspect.**
 
-Une méthode simple pour transformer une image couleur en noir et blanc est de faire la **moyenne** des trois composantes pour chaque pixel.
+Pour transformer de la couleur en gris, on calcule la **moyenne** des trois composantes.
 
-$$Gris = \frac{Rouge + Vert + Bleu}{3}$$
+**Instructions :**
+- Choisissez l'option **3**.
+- Dans `activite_3()`, remplacez les `None`.
+- **Attention :** En informatique, un pixel doit être un entier. Utilisez l'opérateur `//` pour une division entière.
 
-1.  Reprenez le squelette du code de l'Activité 2.
-2.  Modifiez le calcul à l'intérieur de la boucle pour calculer la moyenne.
-3.  Affectez cette valeur moyenne aux trois canaux (`r_new`, `v_new`, `b_new`) pour obtenir du gris.
-
-*Attention : La division doit donner un nombre entier ! Utilisez `// 3` ou `int((r+v+b)/3)`.*
-
-??? tip "Indice pour le code"
-    ```python
-    moyenne = (r + v + b) // 3
-    img_new.putpixel((x, y), (moyenne, moyenne, moyenne))
-    ```
+```python
+# Dans activite_3() :
+moyenne = (r + v + b) // 3
+r_new = None  # À COMPLÉTER
+v_new = None  # À COMPLÉTER
+b_new = None  # À COMPLÉTER
+```
 
 ---
 
 ## Activité 4 : Effet "Filtre Rouge"
+**🎯 Objectif : Écrire sa propre boucle de parcours.**
 
-On souhaite ne garder que la composante **Rouge** de l'image.
+Ici, nous voulons supprimer totalement le Vert et le Bleu pour ne garder que le canal Rouge.
 
-*   Le Rouge reste inchangé.
-*   Le Vert devient 0.
-*   Le Bleu devient 0.
-
-Écrivez le script qui réalise cet effet et sauvegardez l'image sous `filtre_rouge.jpg`.
+**Instructions :**
+- Choisissez l'option **4**.
+- Dans `activite_4()`, vous devez écrire les boucles `for` pour parcourir toute l'image (utilisez les activités précédentes comme modèle).
+- Mettez les canaux de vert et bleu à `0`.
 
 ---
 
-## Activité 5 : Le Mystère de l'Image Cachée (Steganographie) 🕵️‍♂️
+## Activité 5 : Stéganographie (Le message caché) 🕵️‍♂️
+**🎯 Objectif : Révéler des informations invisibles à l'œil nu.**
 
-*Niveau avancé*
+Certaines images semblent noires, mais contiennent des variations infimes (par exemple un bleu à `1` au lieu de `0`). En multipliant cette valeur par `255`, on rend l'information visible.
 
-On soupçonne qu'un message secret est caché dans les composantes **bleues** d'une image apparemment noire.
-Si le pixel est totalement noir (0,0,0), il n'y a rien. Mais si le bleu vaut 1 (0,0,1), c'est un pixel du message !
-
-**Objectif :** Révéler le message caché.
-**Méthode :** Multiplier la composante bleue par 255.
-*   Si Bleu était 0 -> $0 \times 255 = 0$ (Noir)
-*   Si Bleu était 1 -> $1 \times 255 = 255$ (Bleu vif)
-
-Essayez d'écrire un script qui transforme les micros-variations de bleu en bleu vif pour faire apparaître une forme.
+**Instructions :**
+- Choisissez l'option **5**.
+- Dans `activite_5()`, multipliez la composante `b` par `255` pour révéler la forme cachée.
 
 ```python
-# Squelette
-r_new = 0
-v_new = 0
-b_new = b * 255 # On amplifie le signal bleu
-
-# Note : Cela ne fonctionne que si vous avez une image préparée pour cet exercice !
-# Vous pouvez en créer une vous-même en dessinant des pixels (0,0,1) sur un fond (0,0,0).
+# Dans activite_5() :
+b_new = b * 255
 ```
+
+!!! tip "Défi final"
+    Une fois que tout fonctionne, essayez de créer votre propre filtre (ex: filtre Sépia ou augmenter le contraste) en créant une nouvelle option dans le menu !

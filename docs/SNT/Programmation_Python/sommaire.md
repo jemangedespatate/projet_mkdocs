@@ -1,18 +1,18 @@
 # 🐍 Programmation Python
 
-## Cour
+## Cours
 
-* [introduction à la programmation](../introductions_prog/)
+* [📖 Introduction à la Programmation](introductions_prog.md)
 
 ## Exercices
 
-* [exercices complementaires](../exercice_comp/)
-* [mini-projet](../mini_projet/)
+* [✏️ Exercices Complémentaires](exercice_comp.md)
+* [🚀 Mini-Projet](mini_projet.md)
 
-## Fiche Mémo
+## Ressources
 
-* [fiche mémo](../fiche_memo/)
+* [📋 Fiche Mémo](fiche_memo.md)
 
-## interrogations
+## Évaluations
 
-* [interrogation](../evaluation/)
+* [📝 Interrogations](evaluation.md)

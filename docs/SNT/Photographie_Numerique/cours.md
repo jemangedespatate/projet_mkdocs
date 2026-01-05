@@ -21,14 +21,14 @@ Dans ce cours, nous allons découvrir la structure d'une image matricielle, comm
 
 <span style="color: #FF0000">Définition : Image matricielle</span>
 
-**Une image numérique est une grille (ou matrice) rectangulaire de pixels composée de $L$ colonnes (Largeur) et $H$ lignes (Hauteur).**
+**Une image numérique est une grille (ou matrice) rectangulaire de pixels composée de L colonnes (Largeur) et H lignes (Hauteur).**
 
 ??? note "Définition vs Résolution"
 
     Il ne faut pas confondre deux termes souvent mal utilisés :
     
-    *   **La définition** correspond au nombre total de pixels de l'image. Elle se calcule par le produit $Largeur \times Hauteur$.
-        *   *Exemple : Une image Full HD de $1920 \times 1080$ a une définition d'environ 2 mégapixels.*
+    *   **La définition** correspond au nombre total de pixels de l'image. Elle se calcule par le produit **Largeur × Hauteur**.
+        *   *Exemple : Une image Full HD de **1920 × 1080** a une définition d'environ 2 mégapixels.*
     *   **La résolution** exprime la densité de pixels sur un support physique (écran ou papier). Elle se mesure en **ppp** (points par pouce) ou **dpi** (*dots per inch*).
 
 ## ⚫⚪ Images en Noir et Blanc et Niveaux de Gris
@@ -47,7 +47,7 @@ C'est le format le plus simple. Chaque pixel ne peut prendre que deux états.
 
 Pour obtenir plus de nuances, on code chaque pixel sur plusieurs bits. Le standard actuel utilise **1 octet (8 bits)** par pixel.
 
-Cela permet d'avoir $2^8 = 256$ valeurs possibles :
+Cela permet d'avoir **2⁸ = 256** valeurs possibles :
 
 *   **0** : Noir absolu
 *   **255** : Blanc pur
@@ -68,7 +68,7 @@ L'œil humain perçoit les couleurs grâce à 3 types de cônes (Rouge, Vert, Bl
 
 **Chaque pixel couleur est composé de 3 sous-pixels (canaux) : Rouge, Vert et Bleu. Chacun est codé sur un octet (0 à 255).**
 
-Un pixel couleur occupe donc 3 octets ($3 \times 8 = 24$ bits) en mémoire.
+Un pixel couleur occupe donc 3 octets (**3 × 8 = 24** bits) en mémoire.
 
 | Couleur | Rouge (R) | Vert (V) | Bleu (B) |
 | :--- | :---: | :---: | :---: |
@@ -83,8 +83,9 @@ Un pixel couleur occupe donc 3 octets ($3 \times 8 = 24$ bits) en mémoire.
 
 <span style="color: #26B260">Exemple de poids d'image</span>
 
-Une image de $1000 \times 1000$ pixels en couleur pèse :
-$$1000 \times 1000 \times 3 \text{ octets} = 3 \text{ millions d'octets} \approx 3 \text{ Mo}$$
+Une image de **1000 × 1000** pixels en couleur pèse :
+
+**1000 × 1000 × 3 octets = 3 millions d'octets ≈ 3 Mo**
 
 ## 🗂️ Formats et Métadonnées
 

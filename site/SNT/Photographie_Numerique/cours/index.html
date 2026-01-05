@@ -524,13 +524,13 @@
 <p><span style="color: #FF0000">Définition : Pixel</span></p>
 <p><strong>Le pixel (contraction de <em>Picture Element</em>) est le plus petit élément constitutif d'une image numérique. Il représente un point de couleur ou de lumière.</strong></p>
 <p><span style="color: #FF0000">Définition : Image matricielle</span></p>
-<p><strong>Une image numérique est une grille (ou matrice) rectangulaire de pixels composée de $L$ colonnes (Largeur) et $H$ lignes (Hauteur).</strong></p>
+<p><strong>Une image numérique est une grille (ou matrice) rectangulaire de pixels composée de L colonnes (Largeur) et H lignes (Hauteur).</strong></p>
 <details class="note">
 <summary>Définition vs Résolution</summary>
 <p>Il ne faut pas confondre deux termes souvent mal utilisés :</p>
 <ul>
-<li><strong>La définition</strong> correspond au nombre total de pixels de l'image. Elle se calcule par le produit $Largeur \times Hauteur$.<ul>
-<li><em>Exemple : Une image Full HD de $1920 \times 1080$ a une définition d'environ 2 mégapixels.</em></li>
+<li><strong>La définition</strong> correspond au nombre total de pixels de l'image. Elle se calcule par le produit <strong>Largeur × Hauteur</strong>.<ul>
+<li><em>Exemple : Une image Full HD de </em><em>1920 × 1080</em><em> a une définition d'environ 2 mégapixels.</em></li>
 </ul>
 </li>
 <li><strong>La résolution</strong> exprime la densité de pixels sur un support physique (écran ou papier). Elle se mesure en <strong>ppp</strong> (points par pouce) ou <strong>dpi</strong> (<em>dots per inch</em>).</li>
@@ -544,7 +544,7 @@
 <p><strong>Une image où chaque pixel vaut soit 0 (Noir), soit 1 (Blanc). L'information est codée sur 1 bit.</strong></p>
 <h3 id="images-en-niveaux-de-gris">Images en Niveaux de Gris</h3>
 <p>Pour obtenir plus de nuances, on code chaque pixel sur plusieurs bits. Le standard actuel utilise <strong>1 octet (8 bits)</strong> par pixel.</p>
-<p>Cela permet d'avoir $2^8 = 256$ valeurs possibles :</p>
+<p>Cela permet d'avoir <strong>2⁸ = 256</strong> valeurs possibles :</p>
 <ul>
 <li><strong>0</strong> : Noir absolu</li>
 <li><strong>255</strong> : Blanc pur</li>
@@ -558,7 +558,7 @@ En décimal, cela donnerait : <code>[0, 80, 200, 255]</code>.</p>
 <p>L'œil humain perçoit les couleurs grâce à 3 types de cônes (Rouge, Vert, Bleu). Les écrans et capteurs utilisent le même principe de <strong>synthèse additive</strong>.</p>
 <p><span style="color: #FF0000">Définition : Modèle RVB</span></p>
 <p><strong>Chaque pixel couleur est composé de 3 sous-pixels (canaux) : Rouge, Vert et Bleu. Chacun est codé sur un octet (0 à 255).</strong></p>
-<p>Un pixel couleur occupe donc 3 octets ($3 \times 8 = 24$ bits) en mémoire.</p>
+<p>Un pixel couleur occupe donc 3 octets (<strong>3 × 8 = 24</strong> bits) en mémoire.</p>
 <table>
 <thead>
 <tr>
@@ -620,9 +620,8 @@ En décimal, cela donnerait : <code>[0, 80, 200, 255]</code>.</p>
 </tbody>
 </table>
 <p><span style="color: #26B260">Exemple de poids d'image</span></p>
-<p>Une image de $1000 \times 1000$ pixels en couleur pèse :
-<script type="math/tex; mode=display">1000 \times 1000 \times 3 \text{ octets} = 3 \text{ millions d'octets} \approx 3 \text{ Mo}</script>
-</p>
+<p>Une image de <strong>1000 × 1000</strong> pixels en couleur pèse :</p>
+<p><strong>1000 × 1000 × 3 octets = 3 millions d'octets ≈ 3 Mo</strong></p>
 <h2 id="formats-et-metadonnees">🗂️ Formats et Métadonnées</h2>
 <h3 id="formats-de-fichiers">Formats de fichiers</h3>
 <p>Pour réduire la taille des fichiers (compression), on utilise différents formats :</p>
