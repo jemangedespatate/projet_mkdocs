@@ -13,9 +13,10 @@ Dans ce TP, vous analyserez le chargement des données et compléterez les fonct
 Pour que votre projet fonctionne correctement, vous devez placer tous les fichiers dans **un même répertoire** (dossier).
 
 Les fichiers nécessaires sont :
+
 - [pokedex.py](./pokedex.py){:download="pokedex.py"} : contient le code de l'interface et les fonctions à compléter.
 - [pokemon.csv](./pokemon.csv){:download="pokemon.csv"} : la base de données des 151 Pokémon.
-- **Dossier [e](../e/)** : contient les sprites des Pokémon (déjà présent dans ton espace de travail).
+- [Dossier e](./e.zip){:download="e.zip"} : contient les sprites des Pokémon (déjà présent dans ton espace de travail).
 
 👉 Arborescence attendue :
 
