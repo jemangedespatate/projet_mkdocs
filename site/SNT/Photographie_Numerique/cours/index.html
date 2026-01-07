@@ -402,30 +402,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="⚫⚪ Images en Noir et Blanc et Niveaux de Gris">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#images-binaires" class="md-nav__link">
-    <span class="md-ellipsis">
-      Images binaires
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#images-en-niveaux-de-gris" class="md-nav__link">
-    <span class="md-ellipsis">
-      Images en Niveaux de Gris
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
@@ -435,21 +411,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🎨 Les Images en Couleur">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#le-modele-rvb" class="md-nav__link">
-    <span class="md-ellipsis">
-      Le modèle RVB
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
@@ -458,30 +419,6 @@
       🗂️ Formats et Métadonnées
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="🗂️ Formats et Métadonnées">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#formats-de-fichiers" class="md-nav__link">
-    <span class="md-ellipsis">
-      Formats de fichiers
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#metadonnees-exif" class="md-nav__link">
-    <span class="md-ellipsis">
-      Métadonnées EXIF
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -521,44 +458,146 @@
 <li><strong>1991</strong> : Premier appareil photo numérique commercial, le Kodak DCS-100 (1.3 mégapixels).</li>
 </ul>
 <h2 id="definitions">Définitions</h2>
-<p><span style="color: #FF0000">Définition : Pixel</span></p>
-<p><strong>Le pixel (contraction de <em>Picture Element</em>) est le plus petit élément constitutif d'une image numérique. Il représente un point de couleur ou de lumière.</strong></p>
-<p><span style="color: #FF0000">Définition : Image matricielle</span></p>
-<p><strong>Une image numérique est une grille (ou matrice) rectangulaire de pixels composée de L colonnes (Largeur) et H lignes (Hauteur).</strong></p>
-<details class="note">
-<summary>Définition vs Résolution</summary>
-<p>Il ne faut pas confondre deux termes souvent mal utilisés :</p>
+<div class="admonition note">
+<p class="admonition-title">Pixel</p>
+<p>Le pixel (contraction de <em>Picture Element</em>) est le plus petit élément constitutif d'une image numérique. Il représente un point de couleur ou de lumière.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Exemple:</p>
+<p><img alt="pixel" src="../../../assets/seconde/photo_num/pixel_zoom.png" /></p>
+<p>Si l'on zoom fortement sur une image, on peut apercevoir les petits carrés qui la composent : ce sont les pixels.</p>
+</div>
+<hr />
+<div class="admonition note">
+<p class="admonition-title">Image matricielle</p>
+<p>Une image numérique est une grille (ou matrice) rectangulaire de pixels composée de L colonnes (Largeur) et H lignes (Hauteur).</p>
 <ul>
-<li><strong>La définition</strong> correspond au nombre total de pixels de l'image. Elle se calcule par le produit <strong>Largeur × Hauteur</strong>.<ul>
-<li><em>Exemple : Une image Full HD de </em><em>1920 × 1080</em><em> a une définition d'environ 2 mégapixels.</em></li>
+<li><strong>La définition</strong> correspond au nombre total de pixels (<strong>Largeur × Hauteur</strong>).</li>
+<li><strong>La résolution</strong> exprime la densité de pixels sur un support physique (en <strong>ppp</strong> ou <strong>dpi</strong>).</li>
 </ul>
-</li>
-<li><strong>La résolution</strong> exprime la densité de pixels sur un support physique (écran ou papier). Elle se mesure en <strong>ppp</strong> (points par pouce) ou <strong>dpi</strong> (<em>dots per inch</em>).</li>
-</ul>
-</details>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Exemple:</p>
+<p>Une image de 800x600 pixels possède une définition de 480 000 pixels.</p>
+</div>
 <h2 id="images-en-noir-et-blanc-et-niveaux-de-gris">⚫⚪ Images en Noir et Blanc et Niveaux de Gris</h2>
 <p>Pour qu'un ordinateur stocke une image, il doit transformer chaque pixel en nombre.</p>
-<h3 id="images-binaires">Images binaires</h3>
-<p>C'est le format le plus simple. Chaque pixel ne peut prendre que deux états.</p>
-<p><span style="color: #FF0000">Définition : Image binaire</span></p>
-<p><strong>Une image où chaque pixel vaut soit 0 (Noir), soit 1 (Blanc). L'information est codée sur 1 bit.</strong></p>
-<h3 id="images-en-niveaux-de-gris">Images en Niveaux de Gris</h3>
-<p>Pour obtenir plus de nuances, on code chaque pixel sur plusieurs bits. Le standard actuel utilise <strong>1 octet (8 bits)</strong> par pixel.</p>
-<p>Cela permet d'avoir <strong>2⁸ = 256</strong> valeurs possibles :</p>
+<div class="admonition note">
+<p class="admonition-title">Image binaire</p>
+<p>C'est le format le plus simple. Chaque pixel ne peut prendre que deux états : soit <strong>0</strong> (Noir), soit <strong>1</strong> (Blanc). L'information est codée sur <strong>1 bit</strong>.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Exemple : Codage d'un cœur (8x6 pixels)</p>
+<p><strong>Vue "Machine" (Les données) :</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"></th>
+<th style="text-align: center;"></th>
+<th style="text-align: center;"></th>
+<th style="text-align: center;"></th>
+<th style="text-align: center;"></th>
+<th style="text-align: center;"></th>
+<th style="text-align: center;"></th>
+<th style="text-align: center;"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Vue "Image" (Le rendu) :</strong></p>
+<p>⬜⬛⬛⬜⬜⬛⬛⬜<br />
+⬛⬛⬛⬛⬛⬛⬛⬛<br />
+⬛⬛⬛⬛⬛⬛⬛⬛<br />
+⬜⬛⬛⬛⬛⬛⬛⬜<br />
+⬜⬜⬛⬛⬛⬛⬜⬜<br />
+⬜⬜⬜⬛⬛⬜⬜⬜  </p>
+<p>Sur ce schéma, chaque case <strong>noire</strong> correspond à un <code>1</code> et chaque case <strong>blanche</strong> à un <code>0</code>.</p>
+</div>
+<hr />
+<div class="admonition note">
+<p class="admonition-title">Niveaux de Gris</p>
+<p>Pour obtenir plus de nuances, on code chaque pixel sur <strong>1 octet (8 bits)</strong>. Cela permet d'avoir <strong>256</strong> valeurs possibles (de 0 à 255).</p>
 <ul>
 <li><strong>0</strong> : Noir absolu</li>
 <li><strong>255</strong> : Blanc pur</li>
 <li><strong>128</strong> : Gris moyen</li>
 </ul>
-<p><span style="color: #26B260">Exemple : Codage d'une ligne</span></p>
-<p>Imaginez une ligne de 4 pixels : Noir, Gris foncé, Gris clair, Blanc.
-En décimal, cela donnerait : <code>[0, 80, 200, 255]</code>.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Exemple:</p>
+<p><img alt="gris" src="../../../assets/seconde/photo_num/gradient_gris.png" /></p>
+<p>Une ligne de 4 pixels : [Noir, Gris foncé, Gris clair, Blanc]
+S'écrira en machine : <code>[0, 80, 200, 255]</code>.</p>
+</div>
 <h2 id="les-images-en-couleur">🎨 Les Images en Couleur</h2>
-<h3 id="le-modele-rvb">Le modèle RVB</h3>
-<p>L'œil humain perçoit les couleurs grâce à 3 types de cônes (Rouge, Vert, Bleu). Les écrans et capteurs utilisent le même principe de <strong>synthèse additive</strong>.</p>
-<p><span style="color: #FF0000">Définition : Modèle RVB</span></p>
-<p><strong>Chaque pixel couleur est composé de 3 sous-pixels (canaux) : Rouge, Vert et Bleu. Chacun est codé sur un octet (0 à 255).</strong></p>
-<p>Un pixel couleur occupe donc 3 octets (<strong>3 × 8 = 24</strong> bits) en mémoire.</p>
+<div class="admonition note">
+<p class="admonition-title">Le modèle RVB</p>
+<p>L'œil humain perçoit les couleurs grâce à 3 types de cônes (Rouge, Vert, Bleu). Les écrans utilisent le même principe : la <strong>synthèse additive</strong>.
+Chaque pixel couleur est composé de 3 sous-pixels (canaux) : <strong>Rouge, Vert et Bleu</strong>. Chacun est codé sur un octet (0 à 255).</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Exemple:</p>
 <table>
 <thead>
 <tr>
@@ -566,101 +605,93 @@ En décimal, cela donnerait : <code>[0, 80, 200, 255]</code>.</p>
 <th style="text-align: center;">Rouge (R)</th>
 <th style="text-align: center;">Vert (V)</th>
 <th style="text-align: center;">Bleu (B)</th>
+<th style="text-align: center;">Rendu</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td style="text-align: left;"><strong>Noir</strong></td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">0</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Blanc</strong></td>
-<td style="text-align: center;">255</td>
-<td style="text-align: center;">255</td>
-<td style="text-align: center;">255</td>
-</tr>
 <tr>
 <td style="text-align: left;"><strong>Rouge</strong></td>
 <td style="text-align: center;">255</td>
 <td style="text-align: center;">0</td>
 <td style="text-align: center;">0</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Vert</strong></td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">255</td>
-<td style="text-align: center;">0</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Bleu</strong></td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">255</td>
+<td style="text-align: center;">🟥</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Jaune</strong></td>
 <td style="text-align: center;">255</td>
 <td style="text-align: center;">255</td>
 <td style="text-align: center;">0</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Magenta</strong></td>
-<td style="text-align: center;">255</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">255</td>
+<td style="text-align: center;">🟨</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Cyan</strong></td>
 <td style="text-align: center;">0</td>
 <td style="text-align: center;">255</td>
 <td style="text-align: center;">255</td>
+<td style="text-align: center;">🟦 (Cyan)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Blanc</strong></td>
+<td style="text-align: center;">255</td>
+<td style="text-align: center;">255</td>
+<td style="text-align: center;">255</td>
+<td style="text-align: center;">⬜</td>
 </tr>
 </tbody>
 </table>
-<p><span style="color: #26B260">Exemple de poids d'image</span></p>
-<p>Une image de <strong>1000 × 1000</strong> pixels en couleur pèse :</p>
-<p><strong>1000 × 1000 × 3 octets = 3 millions d'octets ≈ 3 Mo</strong></p>
+</div>
+<hr />
+<div class="admonition note">
+<p class="admonition-title">Poids d'une image</p>
+<p>Le poids d'une image dépend de sa définition et de son codage. En couleur RVB (24 bits), chaque pixel utilise 3 octets.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Exemple:</p>
+<p>Une image de <strong>1000 × 1000</strong> pixels en couleur pèse :
+<strong>1 000 000 pixels × 3 octets = 3 000 000 octets ≈ 3 Mo</strong></p>
+</div>
 <h2 id="formats-et-metadonnees">🗂️ Formats et Métadonnées</h2>
-<h3 id="formats-de-fichiers">Formats de fichiers</h3>
-<p>Pour réduire la taille des fichiers (compression), on utilise différents formats :</p>
+<div class="admonition note">
+<p class="admonition-title">Formats de fichiers</p>
 <ul>
-<li><strong>JPEG</strong> : Compression <strong>avec perte</strong>. Idéal pour les photos. Supprime les détails invisibles à l'œil nu.</li>
-<li><strong>PNG</strong> : Compression <strong>sans perte</strong>. Gère la transparence. Idéal pour les graphismes.</li>
+<li><strong>JPEG</strong> : Compression <strong>avec perte</strong>. Idéal pour les photos (poids réduit).</li>
+<li><strong>PNG</strong> : Compression <strong>sans perte</strong>. Gère la transparence.</li>
 </ul>
-<h3 id="metadonnees-exif">Métadonnées EXIF</h3>
-<p><span style="color: #FF0000">Définition : Métadonnées</span></p>
-<p><strong>Ce sont des "données sur les données". Elles sont enregistrées dans le fichier image au moment de la prise de vue (souvent au format EXIF).</strong></p>
-<p>Elles peuvent contenir :</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Métadonnées (EXIF)</p>
+<p>Ce sont des "données sur les données". Elles sont enregistrées dans le fichier au moment de la prise de vue.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Exemple de données EXIF:</p>
 <ul>
-<li>La date et l'heure.</li>
-<li>Les réglages de l'appareil (Flash, ISO, temps de pose).</li>
-<li>Les coordonnées GPS (Latitude, Longitude).</li>
+<li><strong>Date/Heure</strong> : 12/05/2023 14:30</li>
+<li><strong>Appareil</strong> : iPhone 13</li>
+<li><strong>Coordonnées GPS</strong> : 48.8584° N, 2.2945° E (Tour Eiffel)</li>
+<li><strong>Réglages</strong> : ISO 100, f/1.8, 1/500s</li>
 </ul>
-<details class="warning">
-<summary>Vie privée et Géolocalisation</summary>
-<p>Partager une photo prise chez soi sur un réseau social ou un site web peut révéler votre adresse exacte si les métadonnées GPS ne sont pas supprimées. Soyez vigilants !</p>
-</details>
+</div>
 <h2 id="manipulation-en-python-pil">💻 Manipulation en Python (PIL)</h2>
 <p>Le langage Python permet de manipuler les images pixel par pixel grâce à la bibliothèque <code>Pillow</code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Bibliothèque Pillow</p>
+<p>On utilise souvent <code>from PIL import Image</code> pour charger et modifier des images.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Code Python:</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
 
-<span class="c1"># Ouvrir une image</span>
-<span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">&quot;mon_image.jpg&quot;</span><span class="p">)</span>
-
-<span class="c1"># Récupérer la taille</span>
+<span class="c1"># Ouvrir l&#39;image</span>
+<span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">&quot;photo.jpg&quot;</span><span class="p">)</span>
 <span class="n">largeur</span><span class="p">,</span> <span class="n">hauteur</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">size</span>
 
-<span class="c1"># Récupérer la couleur du pixel (x=10, y=20)</span>
+<span class="c1"># Accéder à un pixel</span>
 <span class="n">r</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">getpixel</span><span class="p">((</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">))</span>
 
-<span class="c1"># Créer un négatif en modifiant les pixels</span>
-<span class="c1"># (Exemple de principe, il faudrait une boucle pour tout l&#39;image)</span>
-<span class="n">r_new</span> <span class="o">=</span> <span class="mi">255</span> <span class="o">-</span> <span class="n">r</span>
-<span class="n">v_new</span> <span class="o">=</span> <span class="mi">255</span> <span class="o">-</span> <span class="n">v</span>
-<span class="n">b_new</span> <span class="o">=</span> <span class="mi">255</span> <span class="o">-</span> <span class="n">b</span>
+<span class="c1"># Inverser les couleurs (négatif)</span>
+<span class="n">nouveau_pixel</span> <span class="o">=</span> <span class="p">(</span><span class="mi">255</span><span class="o">-</span><span class="n">r</span><span class="p">,</span> <span class="mi">255</span><span class="o">-</span><span class="n">v</span><span class="p">,</span> <span class="mi">255</span><span class="o">-</span><span class="n">b</span><span class="p">)</span>
 </code></pre></div>
+</div>
 
 
 

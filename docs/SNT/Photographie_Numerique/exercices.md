@@ -19,7 +19,24 @@ On considère une image numérique de **800 pixels de large** et **600 pixels de
 
 ---
 
-## Exercice 2 : Le Poids des Images
+## Exercice 2 : Décoder une image binaire
+
+On a reçu une suite de bits représentant une petite image binaire de **5x5 pixels**. Les bits sont envoyés ligne par ligne :
+
+`01110 10001 10101 10001 01110`
+
+1.  **Dessinez la grille** de 5x5 cases correspondante.
+2.  **Coloriez en noir** les cases valant `1` et laissez en blanc les cases valant `0`.
+3.  **Quelle forme** apparaît sur votre dessin ?
+
+??? tip "Indications pour l'Exercice 2"
+    1.  Préparez une grille de 5 lignes et 5 colonnes.
+    2.  Prenez le premier groupe de 5 bits (`01110`) et remplissez la première ligne (0=Blanc, 1=Noir).
+    3.  Observez le dessin global (c'est une forme géométrique simple).
+
+---
+
+## Exercice 3 : Le Poids des Images
 
 On souhaite stocker une image de définition **1024 × 1024** pixels.
 Calculez le poids de cette image (en octets, puis en Mo) dans les cas suivants :
@@ -44,7 +61,7 @@ Calculez le poids de cette image (en octets, puis en Mo) dans les cas suivants :
 
 ---
 
-## Exercice 3 : Codage des Couleurs RVB
+## Exercice 4 : Codage des Couleurs RVB
 
 Dans le système RVB (Rouge, Vert, Bleu), chaque couleur est codée par un triplet de valeurs comprises entre 0 et 255.
 
@@ -59,13 +76,10 @@ Dans le système RVB (Rouge, Vert, Bleu), chaque couleur est codée par un tripl
     *   Le **Noir** correspond à l'absence totale de lumière (toutes les composantes à 0).
     *   Le **Blanc** correspond à la lumière maximale (toutes les composantes à 255).
     *   Une couleur **pure** (Rouge, Vert ou Bleu) a une seule composante à 255 et les autres à 0.
-    *   Le **Cyan** est le mélange de Vert et Bleu (sans Rouge).
-    *   Un **Gris** a les trois composantes égales (R = V = B).
-    *   Plus les valeurs sont élevées, plus la couleur est **claire**.
 
 ---
 
-## Exercice 4 : Métadonnées et Vie Privée
+## Exercice 5 : Métadonnées et Vie Privée
 
 Alice prend une photo de son chat avec son smartphone dernier cri et la poste immédiatement sur un forum public sans modification.
 Un inconnu télécharge la photo et regarde les métadonnées EXIF.
@@ -87,7 +101,7 @@ Un inconnu télécharge la photo et regarde les métadonnées EXIF.
     3.  Pensez aux **paramètres de l'appareil photo** et aux **outils de traitement d'image** qui peuvent supprimer ces données.
 ---
 
-## Exercice 5 : Profondeur de couleur
+## Exercice 6 : Profondeur de couleur
 
 La profondeur de couleur correspond au nombre de bits utilisés pour coder la couleur d'un pixel. Plus ce nombre est grand, plus on peut afficher de couleurs différentes.
 
@@ -97,21 +111,7 @@ La profondeur de couleur correspond au nombre de bits utilisés pour coder la co
 ??? tip "Indications pour l'Exercice 5"
     *   Pour **n bits**, le nombre de valeurs possibles est **2ⁿ**.
     *   Pour 2 bits, les combinaisons sont 00, 01, 10, 11.
-    *   Pour le RVB standard, calculez **2²⁴**. (C'est environ 16,7 millions).
-
----
-
-## Exercice 6 : Formats de fichiers et Usages
-
-Il existe plusieurs formats pour enregistrer une image, chacun ayant ses avantages.
-
-1.  Vous créez un logo pour le site du lycée et vous avez besoin que le fond soit **transparent**. Quel format entre **JPEG** et **PNG** devez-vous choisir ?
-2.  Vous prenez une photo de paysage très détaillée. Quel format est le plus adapté pour que le fichier ne soit pas trop lourd tout en restant joli à regarder ?
-3.  Pourquoi dit-on que le format JPEG est un format de compression **"avec perte"** ?
-
-??? tip "Indications pour l'Exercice 6"
-    *   Relisez la partie du cours sur les formats : lequel gère le canal "Alpha" (transparence) ?
-    *   Le **JPEG** réduit la taille du fichier en simplifiant des détails parfois invisibles, alors que le **PNG** garde tout mais pèse plus lourd.
+    *   Pour le RVB standard, calculez **2²⁴**.
 
 ---
 

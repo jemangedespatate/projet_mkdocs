@@ -378,45 +378,45 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#exercice-2-le-poids-des-images" class="md-nav__link">
+  <a href="#exercice-2-decoder-une-image-binaire" class="md-nav__link">
     <span class="md-ellipsis">
-      Exercice 2 : Le Poids des Images
+      Exercice 2 : Décoder une image binaire
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#exercice-3-codage-des-couleurs-rvb" class="md-nav__link">
+  <a href="#exercice-3-le-poids-des-images" class="md-nav__link">
     <span class="md-ellipsis">
-      Exercice 3 : Codage des Couleurs RVB
+      Exercice 3 : Le Poids des Images
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#exercice-4-metadonnees-et-vie-privee" class="md-nav__link">
+  <a href="#exercice-4-codage-des-couleurs-rvb" class="md-nav__link">
     <span class="md-ellipsis">
-      Exercice 4 : Métadonnées et Vie Privée
+      Exercice 4 : Codage des Couleurs RVB
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#exercice-5-profondeur-de-couleur" class="md-nav__link">
+  <a href="#exercice-5-metadonnees-et-vie-privee" class="md-nav__link">
     <span class="md-ellipsis">
-      Exercice 5 : Profondeur de couleur
+      Exercice 5 : Métadonnées et Vie Privée
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#exercice-6-formats-de-fichiers-et-usages" class="md-nav__link">
+  <a href="#exercice-6-profondeur-de-couleur" class="md-nav__link">
     <span class="md-ellipsis">
-      Exercice 6 : Formats de fichiers et Usages
+      Exercice 6 : Profondeur de couleur
     </span>
   </a>
   
@@ -470,7 +470,24 @@
 </ol>
 </details>
 <hr />
-<h2 id="exercice-2-le-poids-des-images">Exercice 2 : Le Poids des Images</h2>
+<h2 id="exercice-2-decoder-une-image-binaire">Exercice 2 : Décoder une image binaire</h2>
+<p>On a reçu une suite de bits représentant une petite image binaire de <strong>5x5 pixels</strong>. Les bits sont envoyés ligne par ligne :</p>
+<p><code>01110 10001 10101 10001 01110</code></p>
+<ol>
+<li><strong>Dessinez la grille</strong> de 5x5 cases correspondante.</li>
+<li><strong>Coloriez en noir</strong> les cases valant <code>1</code> et laissez en blanc les cases valant <code>0</code>.</li>
+<li><strong>Quelle forme</strong> apparaît sur votre dessin ?</li>
+</ol>
+<details class="tip">
+<summary>Indications pour l'Exercice 2</summary>
+<ol>
+<li>Préparez une grille de 5 lignes et 5 colonnes.</li>
+<li>Prenez le premier groupe de 5 bits (<code>01110</code>) et remplissez la première ligne (0=Blanc, 1=Noir).</li>
+<li>Observez le dessin global (c'est une forme géométrique simple).</li>
+</ol>
+</details>
+<hr />
+<h2 id="exercice-3-le-poids-des-images">Exercice 3 : Le Poids des Images</h2>
 <p>On souhaite stocker une image de définition <strong>1024 × 1024</strong> pixels.
 Calculez le poids de cette image (en octets, puis en Mo) dans les cas suivants :</p>
 <ol>
@@ -500,7 +517,7 @@ Calculez le poids de cette image (en octets, puis en Mo) dans les cas suivants :
 </ol>
 </details>
 <hr />
-<h2 id="exercice-3-codage-des-couleurs-rvb">Exercice 3 : Codage des Couleurs RVB</h2>
+<h2 id="exercice-4-codage-des-couleurs-rvb">Exercice 4 : Codage des Couleurs RVB</h2>
 <p>Dans le système RVB (Rouge, Vert, Bleu), chaque couleur est codée par un triplet de valeurs comprises entre 0 et 255.</p>
 <ol>
 <li>Donnez le code RVB du <strong>Noir</strong> et du <strong>Blanc</strong>.</li>
@@ -515,13 +532,10 @@ Calculez le poids de cette image (en octets, puis en Mo) dans les cas suivants :
 <li>Le <strong>Noir</strong> correspond à l'absence totale de lumière (toutes les composantes à 0).</li>
 <li>Le <strong>Blanc</strong> correspond à la lumière maximale (toutes les composantes à 255).</li>
 <li>Une couleur <strong>pure</strong> (Rouge, Vert ou Bleu) a une seule composante à 255 et les autres à 0.</li>
-<li>Le <strong>Cyan</strong> est le mélange de Vert et Bleu (sans Rouge).</li>
-<li>Un <strong>Gris</strong> a les trois composantes égales (R = V = B).</li>
-<li>Plus les valeurs sont élevées, plus la couleur est <strong>claire</strong>.</li>
 </ul>
 </details>
 <hr />
-<h2 id="exercice-4-metadonnees-et-vie-privee">Exercice 4 : Métadonnées et Vie Privée</h2>
+<h2 id="exercice-5-metadonnees-et-vie-privee">Exercice 5 : Métadonnées et Vie Privée</h2>
 <p>Alice prend une photo de son chat avec son smartphone dernier cri et la poste immédiatement sur un forum public sans modification.
 Un inconnu télécharge la photo et regarde les métadonnées EXIF.</p>
 <ol>
@@ -550,7 +564,7 @@ Un inconnu télécharge la photo et regarde les métadonnées EXIF.</p>
 </ol>
 </details>
 <hr />
-<h2 id="exercice-5-profondeur-de-couleur">Exercice 5 : Profondeur de couleur</h2>
+<h2 id="exercice-6-profondeur-de-couleur">Exercice 6 : Profondeur de couleur</h2>
 <p>La profondeur de couleur correspond au nombre de bits utilisés pour coder la couleur d'un pixel. Plus ce nombre est grand, plus on peut afficher de couleurs différentes.</p>
 <ol>
 <li>Si un pixel est codé sur <strong>2 bits</strong>, combien de couleurs différentes peut-il afficher ? Listez les combinaisons de bits possibles.</li>
@@ -561,22 +575,7 @@ Un inconnu télécharge la photo et regarde les métadonnées EXIF.</p>
 <ul>
 <li>Pour <strong>n bits</strong>, le nombre de valeurs possibles est <strong>2ⁿ</strong>.</li>
 <li>Pour 2 bits, les combinaisons sont 00, 01, 10, 11.</li>
-<li>Pour le RVB standard, calculez <strong>2²⁴</strong>. (C'est environ 16,7 millions).</li>
-</ul>
-</details>
-<hr />
-<h2 id="exercice-6-formats-de-fichiers-et-usages">Exercice 6 : Formats de fichiers et Usages</h2>
-<p>Il existe plusieurs formats pour enregistrer une image, chacun ayant ses avantages.</p>
-<ol>
-<li>Vous créez un logo pour le site du lycée et vous avez besoin que le fond soit <strong>transparent</strong>. Quel format entre <strong>JPEG</strong> et <strong>PNG</strong> devez-vous choisir ?</li>
-<li>Vous prenez une photo de paysage très détaillée. Quel format est le plus adapté pour que le fichier ne soit pas trop lourd tout en restant joli à regarder ?</li>
-<li>Pourquoi dit-on que le format JPEG est un format de compression <strong>"avec perte"</strong> ?</li>
-</ol>
-<details class="tip">
-<summary>Indications pour l'Exercice 6</summary>
-<ul>
-<li>Relisez la partie du cours sur les formats : lequel gère le canal "Alpha" (transparence) ?</li>
-<li>Le <strong>JPEG</strong> réduit la taille du fichier en simplifiant des détails parfois invisibles, alors que le <strong>PNG</strong> garde tout mais pèse plus lourd.</li>
+<li>Pour le RVB standard, calculez <strong>2²⁴</strong>.</li>
 </ul>
 </details>
 <hr />

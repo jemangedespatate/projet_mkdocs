@@ -2,7 +2,7 @@
 
 ---
 
-## � Objectif
+## Objectif
 
 Dans ce TP, nous allons mettre en pratique nos connaissances sur le **traitement de données en tables**. L'objectif est de créer un mini-Pokédex capable de rechercher un Pokémon de la première génération par son nom et d'afficher ses types ainsi que ses statistiques de combat.
 
@@ -14,9 +14,9 @@ Pour que votre projet fonctionne correctement, vous devez placer tous les fichie
 
 Les fichiers nécessaires sont :
 
-- [pokedex.py](./pokedex.py){:download="pokedex.py"} : contient le code de l'interface et les fonctions à compléter.
-- [pokemon.csv](./pokemon.csv){:download="pokemon.csv"} : la base de données des 151 Pokémon.
-- [Dossier e](./e.zip){:download="e.zip"} : contient les sprites des Pokémon (déjà présent dans ton espace de travail).
+- [pokedex.py](./pokemon/pokedex.py){:download="pokedex.py"} : contient le code de l'interface et les fonctions à compléter.
+- [pokemon.csv](./pokemon/pokemon.csv){:download="pokemon.csv"} : la base de données des 151 Pokémon.
+- [Dossier e](./pokemon/e.zip){:download="e.zip"} : contient les sprites des Pokémon (déjà présent dans ton espace de travail).
 
 👉 Arborescence attendue :
 
