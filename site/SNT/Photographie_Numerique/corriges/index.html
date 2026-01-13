@@ -522,9 +522,50 @@
 <li><strong>Cas du pixel (240, 100, 40)</strong> :<ul>
 <li>Calcul pour le Rouge : <strong>240 + 30 = 270</strong>.</li>
 <li><strong>Plafonnement</strong> : Puisqu'un octet est limité à 255, la valeur sera <strong>255</strong>.</li>
-<li>Nouvelles coordonnées : <strong>(255, 130, 70)</strong>.</li>
 </ul>
 </li>
+</ol>
+<hr />
+<p>## Exercice 8 : Compression d'Image</p>
+<ol>
+<li><strong>Poids théorique</strong> : $2000 \times 1500 \times 3 = 9\ 000\ 000$ octets = <strong>9 Mo</strong>.</li>
+<li><strong>Taux de compression</strong> : 9 Mo = 9 000 Ko. $9000 / 600 =$ <strong>15</strong>. Le poids a été divisé par 15.</li>
+<li><strong>Usage Internet</strong> : Les fichiers compressés se téléchargent beaucoup plus vite, ce qui est crucial pour la fluidité de la navigation et pour économiser de la bande passante.</li>
+</ol>
+<hr />
+<p>## Exercice 9 : Codage Hexadécimal</p>
+<ol>
+<li><code>#FF0000</code> : <strong>Rouge</strong> pur.</li>
+<li><code>#000000</code> : <strong>Noir</strong>.</li>
+<li><code>#FFFFFF</code> : <code>(255, 255, 255)</code> — <strong>Blanc</strong>.</li>
+<li><code>(0, 255, 0)</code> : <strong>#00FF00</strong>.</li>
+</ol>
+<hr />
+<p>## Exercice 10 : Transformation mathématique</p>
+<ol>
+<li><strong>Pixel (10, 200, 50)</strong> :<ul>
+<li>R : $255 - 10 = 245$</li>
+<li>V : $255 - 200 = 55$</li>
+<li>B : $255 - 50 = 205$</li>
+<li>Résultat : <strong>(245, 55, 205)</strong>.</li>
+</ul>
+</li>
+<li><strong>Négatif du Blanc</strong> : <strong>Noir</strong> <code>(0, 0, 0)</code>.</li>
+<li><strong>Négatif du Noir</strong> : <strong>Blanc</strong> <code>(255, 255, 255)</code>.</li>
+<li><strong>Double application</strong> : L'opération est une symétrie par rapport au milieu (127.5). Mathématiquement : $255 - (255 - x) = x$. On retrouve donc la valeur de départ.</li>
+</ol>
+<hr />
+<p>## Exercice 11 : Le Capteur et les Photosites</p>
+<ol>
+<li><strong>24 Mégapixels</strong> : Environ <strong>24 millions</strong> de photosites.</li>
+<li><strong>Sensibilité du Vert</strong> : L'œil humain est naturellement plus sensible au vert et perçoit mieux les nuances dans cette couleur (héritage de l'évolution pour distinguer les nuances de feuillage). Doubler les photosites verts permet d'obtenir une image qui semble plus nette et plus fidèle à notre vision.</li>
+</ol>
+<hr />
+<p>## Exercice 12 : Analyse de cas (Les Métadonnées)</p>
+<ol>
+<li><strong>Exposition</strong> : Temps de pose <strong>très court</strong> (1/1000 s). Oui, c'est idéal pour figer un mouvement rapide (sport, animal en course) sans flou.</li>
+<li><strong>Monument</strong> : Les coordonnées correspondent à la <strong>Tour Eiffel</strong> à Paris.</li>
+<li><strong>Danger</strong> : Les coordonnées GPS révèlent le <strong>lieu exact</strong> où la photo a été prise. Si le vendeur prend la photo chez lui, n'importe qui peut localiser son domicile, ce qui pose un problème de sécurité et de vie privée.</li>
 </ol>
 
 

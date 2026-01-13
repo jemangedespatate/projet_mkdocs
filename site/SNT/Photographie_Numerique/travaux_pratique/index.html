@@ -467,6 +467,7 @@
 <p>Les fichiers nécessaires sont :</p>
 <ul>
 <li><a download="image_tp.jpg" href="../../img/image_tp.jpg">image_tp.jpg</a> : image à utiliser pour les tests.</li>
+<li><a download="image_cachee.jpg" href="../../img/image_cachee.jpg">image_cachee.jpg</a> : image mystère pour l'activité 5. <strong>À mettre dans le même dossier que le code.</strong></li>
 <li><a download="code.py" href="../code.py">code.py</a> : contient le programme interactif que vous devez compléter.</li>
 </ul>
 <h3 id="apercu-de-limage-de-test">🖼️ Aperçu de l'image de test</h3>
@@ -474,7 +475,7 @@
 <p><img alt="Image de test" src="../../img/image_tp.jpg" width="300" /></p>
 <h3 id="instructions-de-lancement">📥 Instructions de lancement</h3>
 <ol>
-<li><strong>Téléchargez les deux fichiers</strong> ci-dessus.</li>
+<li><strong>Téléchargez les trois fichiers</strong> ci-dessus.</li>
 <li><strong>Placez-les impérativement dans le même dossier</strong>.</li>
 <li><strong>Ouvrez <code>code.py</code></strong> avec votre éditeur (IDLE, Thonny, Thonny, VS Code).</li>
 <li><strong>Lancez le programme</strong> : un menu s'affiche dans la console.</li>
@@ -482,9 +483,11 @@
 <hr />
 <h2 id="activite-1-ouvrir-et-analyser-une-image">Activité 1 : Ouvrir et Analyser une image</h2>
 <p><strong>🎯 Objectif : Comprendre comment Python "voit" une image.</strong></p>
-<p>Dans le menu, choisissez l'option <strong>1</strong>. Observez la console :
-- Les dimensions (Largeur x Hauteur) s'affichent.
-- Les composantes <strong>R, V, B</strong> du pixel central sont extraites.</p>
+<p>Dans le menu, choisissez l'option <strong>1</strong>. Observez la console :</p>
+<ul>
+<li>Les dimensions (Largeur x Hauteur) s'affichent.</li>
+<li>Les composantes <strong>R, V, B</strong> du pixel central sont extraites.</li>
+</ul>
 <div class="admonition question">
 <p class="admonition-title">À réfléchir</p>
 <p>Dans le code de la fonction <code>activite_1()</code>, décommentez la ligne qui tente de lire le pixel aux coordonnées <code>(largeur, hauteur)</code>. Pourquoi cela provoque-t-il une erreur alors que ce sont les dimensions de l'image ?</p>
@@ -494,10 +497,12 @@
 <p><strong>🎯 Objectif : Utiliser une boucle pour modifier chaque pixel.</strong></p>
 <p>Le négatif consiste à inverser la luminosité. Si une valeur est <code>0</code> (noir), elle devient <code>255</code> (blanc).
 La formule est simple : <code>valeur_neuve = 255 - valeur_ancienne</code>.</p>
-<p><strong>Instructions :</strong>
-- Choisissez l'option <strong>2</strong> dans le menu.
-- Allez dans la fonction <code>activite_2()</code> de votre fichier Python.
-- Remplacez les <code>None</code> pour calculer <code>v_new</code> et <code>b_new</code> sur le même modèle que <code>r_new</code>.</p>
+<p><strong>Instructions :</strong></p>
+<ul>
+<li>Choisissez l'option <strong>2</strong> dans le menu.</li>
+<li>Allez dans la fonction <code>activite_2()</code> de votre fichier Python.</li>
+<li>Remplacez les <code>None</code> pour calculer <code>v_new</code> et <code>b_new</code> sur le même modèle que <code>r_new</code>.</li>
+</ul>
 <div class="highlight"><pre><span></span><code><span class="c1"># Dans activite_2() :</span>
 <span class="n">r_new</span> <span class="o">=</span> <span class="mi">255</span> <span class="o">-</span> <span class="n">r</span>
 <span class="n">v_new</span> <span class="o">=</span> <span class="kc">None</span>  <span class="c1"># À COMPLÉTER</span>
@@ -507,10 +512,12 @@ La formule est simple : <code>valeur_neuve = 255 - valeur_ancienne</code>.</p>
 <h2 id="activite-3-passage-en-niveaux-de-gris">Activité 3 : Passage en Niveaux de Gris</h2>
 <p><strong>🎯 Objectif : Manipuler les couleurs pour transformer l'aspect.</strong></p>
 <p>Pour transformer de la couleur en gris, on calcule la <strong>moyenne</strong> des trois composantes.</p>
-<p><strong>Instructions :</strong>
-- Choisissez l'option <strong>3</strong>.
-- Dans <code>activite_3()</code>, remplacez les <code>None</code>.
-- <strong>Attention :</strong> En informatique, un pixel doit être un entier. Utilisez l'opérateur <code>//</code> pour une division entière.</p>
+<p><strong>Instructions :</strong></p>
+<ul>
+<li>Choisissez l'option <strong>3</strong>.</li>
+<li>Dans <code>activite_3()</code>, remplacez les <code>None</code>.</li>
+<li><strong>Attention :</strong> En informatique, un pixel doit être un entier. Utilisez l'opérateur <code>//</code> pour une division entière.</li>
+</ul>
 <div class="highlight"><pre><span></span><code><span class="c1"># Dans activite_3() :</span>
 <span class="n">moyenne</span> <span class="o">=</span> <span class="p">(</span><span class="n">r</span> <span class="o">+</span> <span class="n">v</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span> <span class="o">//</span> <span class="mi">3</span>
 <span class="n">r_new</span> <span class="o">=</span> <span class="kc">None</span>  <span class="c1"># À COMPLÉTER</span>
@@ -521,17 +528,21 @@ La formule est simple : <code>valeur_neuve = 255 - valeur_ancienne</code>.</p>
 <h2 id="activite-4-effet-filtre-rouge">Activité 4 : Effet "Filtre Rouge"</h2>
 <p><strong>🎯 Objectif : Écrire sa propre boucle de parcours.</strong></p>
 <p>Ici, nous voulons supprimer totalement le Vert et le Bleu pour ne garder que le canal Rouge.</p>
-<p><strong>Instructions :</strong>
-- Choisissez l'option <strong>4</strong>.
-- Dans <code>activite_4()</code>, vous devez écrire les boucles <code>for</code> pour parcourir toute l'image (utilisez les activités précédentes comme modèle).
-- Mettez les canaux de vert et bleu à <code>0</code>.</p>
+<p><strong>Instructions :</strong></p>
+<ul>
+<li>Choisissez l'option <strong>4</strong>.</li>
+<li>Dans <code>activite_4()</code>, vous devez écrire les boucles <code>for</code> pour parcourir toute l'image (utilisez les activités précédentes comme modèle).</li>
+<li>Mettez les canaux de vert et bleu à <code>0</code>.</li>
+</ul>
 <hr />
 <h2 id="activite-5-steganographie-le-message-cache">Activité 5 : Stéganographie (Le message caché) 🕵️‍♂️</h2>
 <p><strong>🎯 Objectif : Révéler des informations invisibles à l'œil nu.</strong></p>
 <p>Certaines images semblent noires, mais contiennent des variations infimes (par exemple un bleu à <code>1</code> au lieu de <code>0</code>). En multipliant cette valeur par <code>255</code>, on rend l'information visible.</p>
-<p><strong>Instructions :</strong>
-- Choisissez l'option <strong>5</strong>.
-- Dans <code>activite_5()</code>, multipliez la composante <code>b</code> par <code>255</code> pour révéler la forme cachée.</p>
+<p><strong>Instructions :</strong></p>
+<ul>
+<li>Choisissez l'option <strong>5</strong>.</li>
+<li>Dans <code>activite_5()</code>, multipliez la composante <code>b</code> par <code>255</code> pour révéler la forme cachée.</li>
+</ul>
 <div class="highlight"><pre><span></span><code><span class="c1"># Dans activite_5() :</span>
 <span class="n">b_new</span> <span class="o">=</span> <span class="n">b</span> <span class="o">*</span> <span class="mi">255</span>
 </code></pre></div>

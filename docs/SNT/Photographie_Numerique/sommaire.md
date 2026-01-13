@@ -7,5 +7,9 @@
 ## Exercices
 
 * [✏️ Exercices](exercices.md)
+* [📝 Exercices Complémentaire](exo_comp.md)
+
+## travaux pratiques
+
 * [💻 Travaux Pratiques](travaux_pratique.md)
-* [➕ Exercices Complémentaires](exo_comp.md)
+* [⚡ Compléments de TP](complement_tp.md)

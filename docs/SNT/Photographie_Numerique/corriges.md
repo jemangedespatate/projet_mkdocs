@@ -72,4 +72,47 @@ Définition totale : **1024 × 1024 = 1 048 576** pixels.
 2.  **Cas du pixel (240, 100, 40)** :
     *   Calcul pour le Rouge : **240 + 30 = 270**.
     *   **Plafonnement** : Puisqu'un octet est limité à 255, la valeur sera **255**.
-    *   Nouvelles coordonnées : **(255, 130, 70)**.
+---
+ 
+ ## Exercice 8 : Compression d'Image
+ 
+ 1.  **Poids théorique** : $2000 \times 1500 \times 3 = 9\ 000\ 000$ octets = **9 Mo**.
+ 2.  **Taux de compression** : 9 Mo = 9 000 Ko. $9000 / 600 =$ **15**. Le poids a été divisé par 15.
+ 3.  **Usage Internet** : Les fichiers compressés se téléchargent beaucoup plus vite, ce qui est crucial pour la fluidité de la navigation et pour économiser de la bande passante.
+ 
+ ---
+ 
+ ## Exercice 9 : Codage Hexadécimal
+ 
+ 1.  `#FF0000` : **Rouge** pur.
+ 2.  `#000000` : **Noir**.
+ 3.  `#FFFFFF` : `(255, 255, 255)` — **Blanc**.
+ 4.  `(0, 255, 0)` : **#00FF00**.
+ 
+ ---
+ 
+ ## Exercice 10 : Transformation mathématique
+ 
+ 1.  **Pixel (10, 200, 50)** :
+     - R : $255 - 10 = 245$
+     - V : $255 - 200 = 55$
+     - B : $255 - 50 = 205$
+     - Résultat : **(245, 55, 205)**.
+ 2.  **Négatif du Blanc** : **Noir** `(0, 0, 0)`.
+ 3.  **Négatif du Noir** : **Blanc** `(255, 255, 255)`.
+ 4.  **Double application** : L'opération est une symétrie par rapport au milieu (127.5). Mathématiquement : $255 - (255 - x) = x$. On retrouve donc la valeur de départ.
+ 
+ ---
+ 
+ ## Exercice 11 : Le Capteur et les Photosites
+ 
+ 1.  **24 Mégapixels** : Environ **24 millions** de photosites.
+ 2.  **Sensibilité du Vert** : L'œil humain est naturellement plus sensible au vert et perçoit mieux les nuances dans cette couleur (héritage de l'évolution pour distinguer les nuances de feuillage). Doubler les photosites verts permet d'obtenir une image qui semble plus nette et plus fidèle à notre vision.
+ 
+ ---
+ 
+ ## Exercice 12 : Analyse de cas (Les Métadonnées)
+ 
+ 1.  **Exposition** : Temps de pose **très court** (1/1000 s). Oui, c'est idéal pour figer un mouvement rapide (sport, animal en course) sans flou.
+ 2.  **Monument** : Les coordonnées correspondent à la **Tour Eiffel** à Paris.
+ 3.  **Danger** : Les coordonnées GPS révèlent le **lieu exact** où la photo a été prise. Si le vendeur prend la photo chez lui, n'importe qui peut localiser son domicile, ce qui pose un problème de sécurité et de vie privée.

@@ -18,7 +18,7 @@
     
     
       
-        <title>exercice complementaire - Mr Leal SNT/NSI</title>
+        <title>📝 Exercices Complémentaires : Photographie Numérique - Mr Leal SNT/NSI</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#exercice-complementaire" class="md-skip">
+        <a href="#exercices-complementaires-photographie-numerique" class="md-skip">
           Skip to content
         </a>
       
@@ -106,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              exercice complementaire
+              📝 Exercices Complémentaires : Photographie Numérique
             
           </span>
         </div>
@@ -362,6 +362,59 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#exercice-8-compression-dimage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercice 8 : Compression d'Image
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercice-9-codage-hexadecimal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercice 9 : Codage Hexadécimal
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercice-10-transformation-mathematique" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercice 10 : Transformation mathématique
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercice-11-le-capteur-et-les-photosites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercice 11 : Le Capteur et les Photosites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercice-12-analyse-de-cas-les-metadonnees" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercice 12 : Analyse de cas (Les Métadonnées)
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -375,7 +428,106 @@
                   
 
 
-<h1 id="exercice-complementaire">exercice complementaire</h1>
+<h1 id="exercices-complementaires-photographie-numerique">📝 Exercices Complémentaires : Photographie Numérique</h1>
+<p>Ces exercices sont à réaliser sur feuille. Ils prolongent les notions abordées dans la première série d'exercices et le TP.</p>
+<hr />
+<h2 id="exercice-8-compression-dimage">Exercice 8 : Compression d'Image</h2>
+<p><strong>Objectif :</strong> Comprendre l'intérêt de la compression.</p>
+<p>On a une image de <strong>2000 x 1500 pixels</strong> en couleurs RVB (24 bits).</p>
+<ol>
+<li>Calculez le poids théorique de cette image en <strong>Mo</strong> sans compression.</li>
+<li>Après l'avoir enregistrée au format <strong>JPEG</strong>, le fichier ne pèse plus que <strong>600 Ko</strong>.</li>
+<li>Par combien le poids de l'image a-t-il été divisé ? (C'est le <em>taux de compression</em>).</li>
+<li>À votre avis, pourquoi le format JPEG est-il plus utilisé que le format BMP (non compressé) sur Internet ?</li>
+</ol>
+<details class="tip">
+<summary>Indications pour l'Exercice 8</summary>
+<ol>
+<li>Calculez le nombre de pixels (2000 x 1500), puis multipliez par 3 octets (car 24 bits = 3 octets). Divisez par 1 000 000 pour les Mo.</li>
+<li>Convertissez les Mo de la question 1 en Ko (x 1000) et divisez par 600.</li>
+<li>Pensez au temps de chargement des pages web et au stockage sur les serveurs.</li>
+</ol>
+</details>
+<hr />
+<h2 id="exercice-9-codage-hexadecimal">Exercice 9 : Codage Hexadécimal</h2>
+<p><strong>Objectif :</strong> Faire le lien entre les couleurs RVB et le codage Web (Hexadécimal).</p>
+<p>Sur le Web, les couleurs sont souvent notées <code>#RRGGBB</code> où chaque couleur est écrite en hexadécimal (de <code>00</code> à <code>FF</code>).
+<em>Rappel : <code>FF</code> en hexadécimal vaut <code>255</code> en décimal.</em></p>
+<ol>
+<li>À quelle couleur correspond le code <code>#FF0000</code> ?</li>
+<li>À quelle couleur correspond le code <code>#000000</code> ?</li>
+<li>On a le code <code>#FFFFFF</code>. À quel triplet RVB cela correspond-il ? Quelle est cette couleur ?</li>
+<li>Convertissez la couleur RVB <code>(0, 255, 0)</code> en code hexadécimal.</li>
+</ol>
+<details class="tip">
+<summary>Indications pour l'Exercice 9</summary>
+<ul>
+<li>Chaque paire de caractères correspond à un canal : <code>RR</code> (Rouge), <code>GG</code> (Vert), <code>BB</code> (Bleu).</li>
+<li><code>00</code> = absence (0) ; <code>FF</code> = maximum (255).</li>
+<li>Pour la question 4, le vert est au maximum, les autres à 0.</li>
+</ul>
+</details>
+<hr />
+<h2 id="exercice-10-transformation-mathematique">Exercice 10 : Transformation mathématique</h2>
+<p><strong>Objectif :</strong> Calculer le résultat d'un filtre "Négatif".</p>
+<p>Pour obtenir le négatif d'une image, on applique la formule : <code>valeur_neuve = 255 - valeur_ancienne</code>.</p>
+<ol>
+<li>Calculez les nouvelles composantes RVB pour un pixel valant <code>(10, 200, 50)</code>.</li>
+<li>Quel est le négatif d'un pixel <strong>Blanc</strong> ?</li>
+<li>Quel est le négatif d'un pixel <strong>Noir</strong> ?</li>
+<li>Expliquez pourquoi, si on applique deux fois de suite l'effet "Négatif", on retrouve l'image d'origine.</li>
+</ol>
+<details class="tip">
+<summary>Indications pour l'Exercice 10</summary>
+<ol>
+<li>Faites <code>255 - 10</code>, puis <code>255 - 200</code>, puis <code>255 - 50</code>.</li>
+<li>Le Blanc est <code>(255, 255, 255)</code>.</li>
+<li>Le Noir est <code>(0, 0, 0)</code>.</li>
+<li>Que vaut <code>255 - (255 - x)</code> ?</li>
+</ol>
+</details>
+<hr />
+<h2 id="exercice-11-le-capteur-et-les-photosites">Exercice 11 : Le Capteur et les Photosites</h2>
+<p><strong>Objectif :</strong> Comprendre comment l'appareil "capture" la lumière.</p>
+<p>Un capteur photographique est composé de millions de petites cellules photoélectriques appelées <strong>photosites</strong>.</p>
+<ol>
+<li>Si un appareil photo est vendu pour <strong>24 Mégapixels</strong>, combien de photosites possède-t-il environ ?</li>
+<li>Chaque photosite ne mesure que l'intensité lumineuse. Pour obtenir de la couleur, on place devant chaque photosite un petit filtre coloré (souvent une <em>Matrice de Bayer</em>).
+   Sur un carré de 4 photosites, on trouve généralement : <strong>1 filtre Rouge, 1 filtre Bleu et 2 filtres Verts</strong>.</li>
+<li>Pourquoi, selon vous, y a-t-il deux fois plus de filtres verts que de rouges ou de bleus ? (Indice : regardez la sensibilité de l'œil humain).</li>
+</ol>
+<details class="tip">
+<summary>Indications pour l'Exercice 11</summary>
+<ol>
+<li>"Méga" signifie "Million".</li>
+<li>L'évolution a rendu l'œil humain beaucoup plus sensible aux nuances d'une certaine couleur pour mieux distinguer les prédateurs ou la nourriture dans la nature... laquelle ?</li>
+</ol>
+</details>
+<hr />
+<h2 id="exercice-12-analyse-de-cas-les-metadonnees">Exercice 12 : Analyse de cas (Les Métadonnées)</h2>
+<p><strong>Objectif :</strong> Savoir lire et interpréter des informations techniques.</p>
+<p>Voici un extrait de métadonnées EXIF d'une photo :</p>
+<ul>
+<li><strong>Appareil :</strong> iPhone 13</li>
+<li><strong>Date :</strong> 12/07/2025  14:32:05</li>
+<li><strong>Exposition :</strong> 1/1000 s</li>
+<li><strong>ISO :</strong> 50</li>
+<li><strong>GPS :</strong> 48.8584° N, 2.2945° E</li>
+</ul>
+<p><strong>Questions :</strong></p>
+<ol>
+<li>La photo a-t-elle été prise avec un temps de pose long ou court ? Est-ce adapté pour un sujet en mouvement rapide ?</li>
+<li>En utilisant un outil de recherche ou vos connaissances, trouvez quel monument célèbre se trouve aux coordonnées GPS indiquées.</li>
+<li>Si cette photo est celle d'un objet en vente sur un site de petites annonces, quel danger cela représente-t-il pour le vendeur ?</li>
+</ol>
+<details class="tip">
+<summary>Indications pour l'Exercice 12</summary>
+<ol>
+<li>1/1000 de seconde, c'est très rapide. Cela permet de "figer" le mouvement.</li>
+<li>Tapez "48.8584 N, 2.2945 E" dans un moteur de recherche ou une carte. C'est à Paris.</li>
+<li>Si la photo est prise <em>chez le vendeur</em>, que révèle la position GPS ?</li>
+</ol>
+</details>
 
 
 

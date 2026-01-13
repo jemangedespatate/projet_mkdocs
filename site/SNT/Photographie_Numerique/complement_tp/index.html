@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://www.prof-leal.fr/SNT/Photographie_Numerique/sommaire/">
+        <link rel="canonical" href="https://www.prof-leal.fr/SNT/Photographie_Numerique/complement_tp/">
       
       
       
@@ -18,7 +18,7 @@
     
     
       
-        <title>📸 Photographie Numérique - Mr Leal SNT/NSI</title>
+        <title>⚡ Compléments de TP : Photographie Numérique - Mr Leal SNT/NSI</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#photographie-numerique" class="md-skip">
+        <a href="#complements-de-tp-photographie-numerique" class="md-skip">
           Skip to content
         </a>
       
@@ -106,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              📸 Photographie Numérique
+              ⚡ Compléments de TP : Photographie Numérique
             
           </span>
         </div>
@@ -369,27 +369,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#cours" class="md-nav__link">
+  <a href="#exercice-1-reglage-de-la-luminosite" class="md-nav__link">
     <span class="md-ellipsis">
-      Cours
+      Exercice 1 : Réglage de la luminosité
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#exercices" class="md-nav__link">
+  <a href="#exercice-2-effet-miroir-symetrie-horizontale" class="md-nav__link">
     <span class="md-ellipsis">
-      Exercices
+      Exercice 2 : Effet Miroir (Symétrie Horizontale)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#travaux-pratiques" class="md-nav__link">
+  <a href="#exercice-3-binarisation-seuillage" class="md-nav__link">
     <span class="md-ellipsis">
-      travaux pratiques
+      Exercice 3 : Binarisation (Seuillage)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercice-4-filtrage-sepia-plus-complexe" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercice 4 : Filtrage Sépia (Plus complexe)
     </span>
   </a>
   
@@ -410,21 +419,47 @@
                   
 
 
-<h1 id="photographie-numerique">📸 Photographie Numérique</h1>
-<h2 id="cours">Cours</h2>
-<ul>
-<li><a href="../cours/">📖 Cours</a></li>
+<h1 id="complements-de-tp-photographie-numerique">⚡ Compléments de TP : Photographie Numérique</h1>
+<p>Ces activités sont destinées aux élèves ayant terminé les 5 activités principales du TP et souhaitant approfondir leurs connaissances en traitement d'image.</p>
+<hr />
+<h2 id="exercice-1-reglage-de-la-luminosite">Exercice 1 : Réglage de la luminosité</h2>
+<p><strong>Objectif :</strong> Modifier l'intensité lumineuse d'une image.</p>
+<ol>
+<li>Créez une nouvelle fonction <code>luminosite(img, valeur)</code> dans votre fichier Python.</li>
+<li>Pour chaque pixel $(r, v, b)$, demandez-vous comment augmenter ou diminuer sa luminosité.<ul>
+<li><em>Indice :</em> Il faut ajouter ou soustraire un nombre à chaque composante (ex: +50 ou -50).</li>
 </ul>
-<h2 id="exercices">Exercices</h2>
-<ul>
-<li><a href="../exercices/">✏️ Exercices</a></li>
-<li><a href="../exo_comp/">📝 Exercices Complémentaire</a></li>
+</li>
+<li><strong>Attention :</strong> Veillez à ce que les valeurs restent entre 0 et 255 (utilisez les fonctions <code>min()</code> et <code>max()</code>).</li>
+<li>Testez votre fonction.</li>
+</ol>
+<hr />
+<h2 id="exercice-2-effet-miroir-symetrie-horizontale">Exercice 2 : Effet Miroir (Symétrie Horizontale)</h2>
+<p><strong>Objectif :</strong> Retourner l'image comme dans un miroir.</p>
+<ol>
+<li>Créez une fonction <code>miroir_horizontal()</code>.</li>
+<li>Si un pixel est à la position $(x, y)$, par quel pixel $(x', y')$ de l'image d'origine doit-il être remplacé ?<ul>
+<li><em>Réponse :</em> $x' = largeur - 1 - x$ et $y' = y$.</li>
 </ul>
-<h2 id="travaux-pratiques">travaux pratiques</h2>
-<ul>
-<li><a href="../travaux_pratique/">💻 Travaux Pratiques</a></li>
-<li><a href="../complement_tp/">⚡ Compléments de TP</a></li>
-</ul>
+</li>
+<li>Implémentez cette transformation.</li>
+</ol>
+<hr />
+<h2 id="exercice-3-binarisation-seuillage">Exercice 3 : Binarisation (Seuillage)</h2>
+<p><strong>Objectif :</strong> Transformer l'image pour qu'elle ne contienne que du noir pur et du blanc pur.</p>
+<ol>
+<li>Transformez d'abord l'image en niveaux de gris.</li>
+<li>Choisissez un <strong>seuil</strong> (par exemple $128$).</li>
+<li>Pour chaque pixel, si sa valeur est supérieure au seuil, mettez-le en blanc $(255, 255, 255)$. Sinon, mettez-le en noir $(0, 0, 0)$.</li>
+</ol>
+<hr />
+<h2 id="exercice-4-filtrage-sepia-plus-complexe">Exercice 4 : Filtrage Sépia (Plus complexe)</h2>
+<p><strong>Objectif :</strong> Donner un aspect ancien à une photo.</p>
+<p>L'effet Sépia s'obtient avec les formules suivantes pour chaque pixel :
+*   <code>tr = 0.393*r + 0.769*v + 0.189*b</code>
+*   <code>tg = 0.349*r + 0.686*v + 0.168*b</code>
+*   <code>tb = 0.272*r + 0.534*v + 0.131*b</code></p>
+<p>Implémentez cela en n'oubliant pas d'arrondir les résultats (<code>int()</code>) et de limiter les valeurs à 255.</p>
 
 
 

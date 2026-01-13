@@ -47,7 +47,7 @@ Calculez le poids de cette image (en octets, puis en Mo) dans les cas suivants :
 
 *Rappel : **1 octet = 8 bits**. **1 Mo ≈ 1 000 000 octets** (ou 1024 × 1024 selon la convention, ici on utilisera 10⁶ pour simplifier).*
 
-??? tip "Indications pour l'Exercice 2"
+??? tip "Indications pour l'Exercice 3"
     **Démarche générale :**
     
     1.  Commencez par calculer le **nombre total de pixels** de l'image.
@@ -70,7 +70,7 @@ Dans le système RVB (Rouge, Vert, Bleu), chaque couleur est codée par un tripl
 3.  Quelle couleur obtient-on avec le code `(0, 255, 255)` ? (Mélange de Vert et Bleu)
 4.  On a une couleur `(100, 100, 100)`. Est-elle colorée ou grise ? Est-elle plus claire ou plus sombre que `(200, 200, 200)` ?
 
-??? tip "Indications pour l'Exercice 3"
+??? tip "Indications pour l'Exercice 4"
     **Rappels utiles :**
     
     *   Le **Noir** correspond à l'absence totale de lumière (toutes les composantes à 0).
@@ -88,7 +88,7 @@ Un inconnu télécharge la photo et regarde les métadonnées EXIF.
 2.  Quelle information est la plus critique pour la sécurité d'Alice ?
 3.  Comment Alice aurait-elle dû procéder pour se protéger ?
 
-??? tip "Indications pour l'Exercice 4"
+??? tip "Indications pour l'Exercice 5"
     **Réfléchissez aux métadonnées EXIF :**
     
     1.  Les métadonnées peuvent contenir :
@@ -108,7 +108,7 @@ La profondeur de couleur correspond au nombre de bits utilisés pour coder la co
 1.  Si un pixel est codé sur **2 bits**, combien de couleurs différentes peut-il afficher ? Listez les combinaisons de bits possibles.
 2.  Dans le codage **RVB standard**, on utilise **8 bits par canal** (soit 24 bits au total). Calculez le nombre total de couleurs possibles (utilisez la puissance de 2).
 
-??? tip "Indications pour l'Exercice 5"
+??? tip "Indications pour l'Exercice 6"
     *   Pour **n bits**, le nombre de valeurs possibles est **2ⁿ**.
     *   Pour 2 bits, les combinaisons sont 00, 01, 10, 11.
     *   Pour le RVB standard, calculez **2²⁴**.
