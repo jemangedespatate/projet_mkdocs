@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://www.prof-leal.fr/SNT/Photographie_Numerique/corrige_tp/">
+        <link rel="canonical" href="https://www.prof-leal.fr/SNT/Photographie_Numerique/tp_pillow_complement/">
       
       
       
@@ -18,7 +18,7 @@
     
     
       
-        <title>🔑 Correction du TP : Traitement d'Image avec Python - Mr Leal SNT/NSI</title>
+        <title>⚡ Compléments de TP : Photographie Numérique - Mr Leal SNT/NSI</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#correction-du-tp-traitement-dimage-avec-python" class="md-skip">
+        <a href="#complements-de-tp-photographie-numerique" class="md-skip">
           Skip to content
         </a>
       
@@ -106,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              🔑 Correction du TP : Traitement d'Image avec Python
+              ⚡ Compléments de TP : Photographie Numérique
             
           </span>
         </div>
@@ -369,80 +369,38 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#activite-1-ouvrir-et-analyser" class="md-nav__link">
+  <a href="#exercice-1-reglage-de-la-luminosite" class="md-nav__link">
     <span class="md-ellipsis">
-      Activité 1 : Ouvrir et Analyser
+      Exercice 1 : Réglage de la luminosité
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#activite-2-le-negatif" class="md-nav__link">
+  <a href="#exercice-2-effet-miroir-symetrie-horizontale" class="md-nav__link">
     <span class="md-ellipsis">
-      Activité 2 : Le Négatif
+      Exercice 2 : Effet Miroir (Symétrie Horizontale)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#activite-3-niveaux-de-gris" class="md-nav__link">
+  <a href="#exercice-3-binarisation-seuillage" class="md-nav__link">
     <span class="md-ellipsis">
-      Activité 3 : Niveaux de Gris
+      Exercice 3 : Binarisation (Seuillage)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#activite-4-filtre-rouge" class="md-nav__link">
+  <a href="#exercice-4-filtrage-sepia-plus-complexe" class="md-nav__link">
     <span class="md-ellipsis">
-      Activité 4 : Filtre Rouge
+      Exercice 4 : Filtrage Sépia (Plus complexe)
     </span>
   </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#activite-5-steganographie" class="md-nav__link">
-    <span class="md-ellipsis">
-      Activité 5 : Stéganographie
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#solutions-des-complements-facultatif" class="md-nav__link">
-    <span class="md-ellipsis">
-      ⚡ Solutions des Compléments (Facultatif)
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="⚡ Solutions des Compléments (Facultatif)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#luminosite-50" class="md-nav__link">
-    <span class="md-ellipsis">
-      Luminosité (+50)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#miroir-horizontal" class="md-nav__link">
-    <span class="md-ellipsis">
-      Miroir Horizontal
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -461,62 +419,47 @@
                   
 
 
-<h1 id="correction-du-tp-traitement-dimage-avec-python">🔑 Correction du TP : Traitement d'Image avec Python</h1>
-<p>Ce document contient les solutions attendues pour le TP de photographie numérique.</p>
+<h1 id="complements-de-tp-photographie-numerique">⚡ Compléments de TP : Photographie Numérique</h1>
+<p>Ces activités sont destinées aux élèves ayant terminé les 5 activités principales du TP et souhaitant approfondir leurs connaissances en traitement d'image.</p>
 <hr />
-<h2 id="activite-1-ouvrir-et-analyser">Activité 1 : Ouvrir et Analyser</h2>
-<p><strong>Question :</strong> Pourquoi l'accès au pixel <code>(largeur, hauteur)</code> provoque-t-il une erreur ?
-<strong>Réponse :</strong> En informatique, les indices commencent à <strong>0</strong>. Si une image fait 800 pixels de large, les coordonnées vont de <strong>0 à 799</strong>. Le pixel <code>800</code> est donc hors limites.</p>
+<h2 id="exercice-1-reglage-de-la-luminosite">Exercice 1 : Réglage de la luminosité</h2>
+<p><strong>Objectif :</strong> Modifier l'intensité lumineuse d'une image.</p>
+<ol>
+<li>Créez une nouvelle fonction <code>luminosite(img, valeur)</code> dans votre fichier Python.</li>
+<li>Pour chaque pixel $(r, v, b)$, demandez-vous comment augmenter ou diminuer sa luminosité.<ul>
+<li><em>Indice :</em> Il faut ajouter ou soustraire un nombre à chaque composante (ex: +50 ou -50).</li>
+</ul>
+</li>
+<li><strong>Attention :</strong> Veillez à ce que les valeurs restent entre 0 et 255 (utilisez les fonctions <code>min()</code> et <code>max()</code>).</li>
+<li>Testez votre fonction.</li>
+</ol>
 <hr />
-<h2 id="activite-2-le-negatif">Activité 2 : Le Négatif</h2>
-<div class="highlight"><pre><span></span><code><span class="c1"># Dans activite_2() :</span>
-<span class="n">r_new</span> <span class="o">=</span> <span class="mi">255</span> <span class="o">-</span> <span class="n">r</span>
-<span class="n">v_new</span> <span class="o">=</span> <span class="mi">255</span> <span class="o">-</span> <span class="n">v</span>  <span class="c1"># Inversion du vert</span>
-<span class="n">b_new</span> <span class="o">=</span> <span class="mi">255</span> <span class="o">-</span> <span class="n">b</span>  <span class="c1"># Inversion du bleu</span>
-</code></pre></div>
+<h2 id="exercice-2-effet-miroir-symetrie-horizontale">Exercice 2 : Effet Miroir (Symétrie Horizontale)</h2>
+<p><strong>Objectif :</strong> Retourner l'image comme dans un miroir.</p>
+<ol>
+<li>Créez une fonction <code>miroir_horizontal()</code>.</li>
+<li>Si un pixel est à la position $(x, y)$, par quel pixel $(x', y')$ de l'image d'origine doit-il être remplacé ?<ul>
+<li><em>Réponse :</em> $x' = largeur - 1 - x$ et $y' = y$.</li>
+</ul>
+</li>
+<li>Implémentez cette transformation.</li>
+</ol>
 <hr />
-<h2 id="activite-3-niveaux-de-gris">Activité 3 : Niveaux de Gris</h2>
-<div class="highlight"><pre><span></span><code><span class="c1"># Dans activite_3() :</span>
-<span class="n">moyenne</span> <span class="o">=</span> <span class="p">(</span><span class="n">r</span> <span class="o">+</span> <span class="n">v</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span> <span class="o">//</span> <span class="mi">3</span>
-<span class="n">r_new</span> <span class="o">=</span> <span class="n">moyenne</span>
-<span class="n">v_new</span> <span class="o">=</span> <span class="n">moyenne</span>
-<span class="n">b_new</span> <span class="o">=</span> <span class="n">moyenne</span>
-</code></pre></div>
+<h2 id="exercice-3-binarisation-seuillage">Exercice 3 : Binarisation (Seuillage)</h2>
+<p><strong>Objectif :</strong> Transformer l'image pour qu'elle ne contienne que du noir pur et du blanc pur.</p>
+<ol>
+<li>Transformez d'abord l'image en niveaux de gris.</li>
+<li>Choisissez un <strong>seuil</strong> (par exemple $128$).</li>
+<li>Pour chaque pixel, si sa valeur est supérieure au seuil, mettez-le en blanc $(255, 255, 255)$. Sinon, mettez-le en noir $(0, 0, 0)$.</li>
+</ol>
 <hr />
-<h2 id="activite-4-filtre-rouge">Activité 4 : Filtre Rouge</h2>
-<div class="highlight"><pre><span></span><code><span class="c1"># Dans activite_4() :</span>
-<span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">hauteur</span><span class="p">):</span>
-    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">largeur</span><span class="p">):</span>
-        <span class="n">r</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">getpixel</span><span class="p">((</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">))</span>
-
-        <span class="n">r_new</span> <span class="o">=</span> <span class="n">r</span>   <span class="c1"># On garde le rouge</span>
-        <span class="n">v_new</span> <span class="o">=</span> <span class="mi">0</span>   <span class="c1"># On supprime le vert</span>
-        <span class="n">b_new</span> <span class="o">=</span> <span class="mi">0</span>   <span class="c1"># On supprime le bleu</span>
-
-        <span class="n">img_new</span><span class="o">.</span><span class="n">putpixel</span><span class="p">((</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">),</span> <span class="p">(</span><span class="n">r_new</span><span class="p">,</span> <span class="n">v_new</span><span class="p">,</span> <span class="n">b_new</span><span class="p">))</span>
-</code></pre></div>
-<hr />
-<h2 id="activite-5-steganographie">Activité 5 : Stéganographie</h2>
-<p><div class="highlight"><pre><span></span><code><span class="c1"># Dans activite_5() :</span>
-<span class="n">b_new</span> <span class="o">=</span> <span class="n">b</span> <span class="o">*</span> <span class="mi">255</span>
-
-<span class="c1"># Sécurité pour ne pas dépasser 255</span>
-<span class="k">if</span> <span class="n">b_new</span> <span class="o">&gt;</span> <span class="mi">255</span><span class="p">:</span>
-    <span class="n">b_new</span> <span class="o">=</span> <span class="mi">255</span>
-</code></pre></div>
-<strong>Le message caché est :</strong> "SNT 2026"</p>
-<hr />
-<h2 id="solutions-des-complements-facultatif">⚡ Solutions des Compléments (Facultatif)</h2>
-<h3 id="luminosite-50">Luminosité (+50)</h3>
-<div class="highlight"><pre><span></span><code><span class="n">r_new</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="n">r</span> <span class="o">+</span> <span class="mi">50</span><span class="p">)</span>
-<span class="n">v_new</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="n">v</span> <span class="o">+</span> <span class="mi">50</span><span class="p">)</span>
-<span class="n">b_new</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="n">b</span> <span class="o">+</span> <span class="mi">50</span><span class="p">)</span>
-</code></pre></div>
-<h3 id="miroir-horizontal">Miroir Horizontal</h3>
-<div class="highlight"><pre><span></span><code><span class="c1"># On prend le pixel à l&#39;opposé en X</span>
-<span class="n">r</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">getpixel</span><span class="p">((</span><span class="n">largeur</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">))</span>
-<span class="n">img_new</span><span class="o">.</span><span class="n">putpixel</span><span class="p">((</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">),</span> <span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">b</span><span class="p">))</span>
-</code></pre></div>
+<h2 id="exercice-4-filtrage-sepia-plus-complexe">Exercice 4 : Filtrage Sépia (Plus complexe)</h2>
+<p><strong>Objectif :</strong> Donner un aspect ancien à une photo.</p>
+<p>L'effet Sépia s'obtient avec les formules suivantes pour chaque pixel :
+*   <code>tr = 0.393*r + 0.769*v + 0.189*b</code>
+*   <code>tg = 0.349*r + 0.686*v + 0.168*b</code>
+*   <code>tb = 0.272*r + 0.534*v + 0.131*b</code></p>
+<p>Implémentez cela en n'oubliant pas d'arrondir les résultats (<code>int()</code>) et de limiter les valeurs à 255.</p>
 
 
 

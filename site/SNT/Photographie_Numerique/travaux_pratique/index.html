@@ -18,7 +18,7 @@
     
     
       
-        <title>💻 Travaux Pratiques : Traitement d'Image avec Python - Mr Leal SNT/NSI</title>
+        <title>💻 TP : Images Binaires (Noir et Blanc) - Mr Leal SNT/NSI</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#travaux-pratiques-traitement-dimage-avec-python" class="md-skip">
+        <a href="#tp-images-binaires-noir-et-blanc" class="md-skip">
           Skip to content
         </a>
       
@@ -106,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              💻 Travaux Pratiques : Traitement d'Image avec Python
+              💻 TP : Images Binaires (Noir et Blanc)
             
           </span>
         </div>
@@ -369,28 +369,55 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#0-preparation" class="md-nav__link">
+  <a href="#introduction" class="md-nav__link">
     <span class="md-ellipsis">
-      0. Préparation
+      Introduction
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="0. Préparation">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#activite-1-creer-une-image-a-la-main" class="md-nav__link">
+    <span class="md-ellipsis">
+      Activité 1 : Créer une image à la main ✍️
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#activite-2-manipuler-limage-avec-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      Activité 2 : Manipuler l'image avec Python 🐍
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Activité 2 : Manipuler l'image avec Python 🐍">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#apercu-de-limage-de-test" class="md-nav__link">
+  <a href="#1-preparation" class="md-nav__link">
     <span class="md-ellipsis">
-      🖼️ Aperçu de l'image de test
+      1. Préparation
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#instructions-de-lancement" class="md-nav__link">
+  <a href="#2-comprendre-les-commandes" class="md-nav__link">
     <span class="md-ellipsis">
-      📥 Instructions de lancement
+      2. Comprendre les commandes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-a-vous-de-jouer" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. A vous de jouer
     </span>
   </a>
   
@@ -402,45 +429,27 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#activite-1-ouvrir-et-analyser-une-image" class="md-nav__link">
+  <a href="#activite-3-le-negatif-inversion-des-couleurs" class="md-nav__link">
     <span class="md-ellipsis">
-      Activité 1 : Ouvrir et Analyser une image
+      Activité 3 : Le Négatif (Inversion des couleurs) 🌗
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#activite-2-creer-le-negatif-dune-image" class="md-nav__link">
+  <a href="#activite-4-limage-aleatoire-neige-tv" class="md-nav__link">
     <span class="md-ellipsis">
-      Activité 2 : Créer le Négatif d'une image
+      Activité 4 : L'image aléatoire (Neige TV) 🎲
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#activite-3-passage-en-niveaux-de-gris" class="md-nav__link">
+  <a href="#aller-plus-loin" class="md-nav__link">
     <span class="md-ellipsis">
-      Activité 3 : Passage en Niveaux de Gris
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#activite-4-effet-filtre-rouge" class="md-nav__link">
-    <span class="md-ellipsis">
-      Activité 4 : Effet "Filtre Rouge"
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#activite-5-steganographie-le-message-cache" class="md-nav__link">
-    <span class="md-ellipsis">
-      Activité 5 : Stéganographie (Le message caché) 🕵️‍♂️
+      Aller plus loin
     </span>
   </a>
   
@@ -461,95 +470,97 @@
                   
 
 
-<h1 id="travaux-pratiques-traitement-dimage-avec-python">💻 Travaux Pratiques : Traitement d'Image avec Python</h1>
-<p>L'objectif de ce TP est d'apprendre à manipuler des images numériques pixel par pixel à l'aide du langage Python et de la bibliothèque <strong>Pillow</strong> (PIL).</p>
-<h2 id="0-preparation">0. Préparation</h2>
-<p>Les fichiers nécessaires sont :</p>
-<ul>
-<li><a download="image_tp.jpg" href="../../img/image_tp.jpg">image_tp.jpg</a> : image à utiliser pour les tests.</li>
-<li><a download="image_cachee.jpg" href="../../img/image_cachee.jpg">image_cachee.jpg</a> : image mystère pour l'activité 5. <strong>À mettre dans le même dossier que le code.</strong></li>
-<li><a download="code.py" href="../code.py">code.py</a> : contient le programme interactif que vous devez compléter.</li>
-</ul>
-<h3 id="apercu-de-limage-de-test">🖼️ Aperçu de l'image de test</h3>
-<p>Voici l'image <code>image_tp.jpg</code> que vous allez manipuler (clic droit &gt; Enregistrer sous si besoin) :</p>
-<p><img alt="Image de test" src="../../img/image_tp.jpg" width="300" /></p>
-<h3 id="instructions-de-lancement">📥 Instructions de lancement</h3>
+<h1 id="tp-images-binaires-noir-et-blanc">💻 TP : Images Binaires (Noir et Blanc)</h1>
+<p>Ce TP a pour but de comprendre comment une image est stockée dans la mémoire de l'ordinateur en utilisant uniquement des <strong>0</strong> et des <strong>1</strong>, sans entrer dans la complexité de la programmation avancée.</p>
+<h2 id="introduction">Introduction</h2>
+<p>Une image numérique est une grille de points appelés <strong>pixels</strong>.
+Dans une image "binaire" (2 couleurs), chaque pixel est codé sur <strong>1 bit</strong> :
+- <strong>0</strong> représente le <strong>BLANC</strong>.
+- <strong>1</strong> représente le <strong>NOIR</strong>.</p>
+<hr />
+<h2 id="activite-1-creer-une-image-a-la-main">Activité 1 : Créer une image à la main ✍️</h2>
+<p>Nous allons utiliser un format d'image ultra-simple appelé <strong>PBM</strong> (Portable Bitmap). C'est un simple fichier texte !</p>
 <ol>
-<li><strong>Téléchargez les trois fichiers</strong> ci-dessus.</li>
-<li><strong>Placez-les impérativement dans le même dossier</strong>.</li>
-<li><strong>Ouvrez <code>code.py</code></strong> avec votre éditeur (IDLE, Thonny, Thonny, VS Code).</li>
-<li><strong>Lancez le programme</strong> : un menu s'affiche dans la console.</li>
+<li>Ouvrez un éditeur de texte simple (Bloc-notes ou directement dans eduPython/Thonny).</li>
+<li>Copiez-collez le texte suivant :</li>
+</ol>
+<div class="highlight"><pre><span></span><code>P1
+5 5
+0 0 1 0 0
+0 1 0 1 0
+1 0 0 0 1
+0 1 0 1 0
+0 0 1 0 0
+</code></pre></div>
+<ol>
+<li>
+<p><strong>Explications :</strong></p>
+<ul>
+<li><code>P1</code> : C'est le "code magique" qui dit "Je suis une image PBM".</li>
+<li><code>5 5</code> : Largeur et Hauteur de l'image (5 pixels sur 5).</li>
+<li>La suite : Les pixels (0 pour blanc, 1 pour noir).</li>
+</ul>
+</li>
+<li>
+<p>Enregistrez le fichier sous le nom <code>smiley.pbm</code> (Attention à l'extension <code>.pbm</code> !).</p>
+</li>
+<li>Ouvrez ce fichier avec un logiciel de visualisation d'image (ou glissez-le dans Thonny/eduPython).</li>
+</ol>
+<p><strong>A vous de jouer :</strong> Modifiez le fichier texte pour dessiner la première lettre de votre prénom. Sauvegardez et vérifiez le résultat.</p>
+<hr />
+<h2 id="activite-2-manipuler-limage-avec-python">Activité 2 : Manipuler l'image avec Python 🐍</h2>
+<p>Dessiner pixel par pixel à la main, c'est long. Utilisons Python pour colorier les cases à notre place.</p>
+<h3 id="1-preparation">1. Préparation</h3>
+<p>Téléchargez le fichier de départ :
+- <a download="code_binaire.py" href="../code_binaire.py">code_binaire.py</a></p>
+<p>Ouvrez-le dans <strong>eduPython</strong> (ou tout autre éditeur Python).</p>
+<h3 id="2-comprendre-les-commandes">2. Comprendre les commandes</h3>
+<p>Dans ce fichier, nous avons préparé des commandes simples pour vous :</p>
+<ul>
+<li><code>creer_image(largeur, hauteur)</code> : Crée une image blanche.</li>
+<li><code>colorier_pixel(x, y, 1)</code> : Met le pixel en <strong>NOIR</strong> aux coordonnées (x, y).</li>
+<li><code>colorier_pixel(x, y, 0)</code> : Met le pixel en <strong>BLANC</strong>.</li>
+<li><code>afficher_image()</code> : Montre votre dessin dans la console.</li>
+</ul>
+<p><em>Rappel : En informatique, on commence à compter à partir de 0. Le point en haut à gauche est (0, 0).</em></p>
+<h3 id="3-a-vous-de-jouer">3. A vous de jouer</h3>
+<p>Dans la zone élève du fichier <code>code_binaire.py</code> :
+1.  Lancez le code pour voir ce qu'il fait (il trace 3 points).
+2.  Effacez les exemples et essayez de dessiner une <strong>croix</strong> ou un <strong>carré</strong> en utilisant les commandes <code>colorier_pixel</code>.</p>
+<p>Exemple de croix à réaliser :
+<div class="highlight"><pre><span></span><code>1 0 0 0 1
+0 1 0 1 0
+0 0 1 0 0
+0 1 0 1 0
+1 0 0 0 1
+</code></pre></div></p>
+<hr />
+<h2 id="activite-3-le-negatif-inversion-des-couleurs">Activité 3 : Le Négatif (Inversion des couleurs) 🌗</h2>
+<p>Imaginez que vous deviez inverser une image de 1000 pixels. Vous n'allez pas écrire 1000 lignes de code !
+Nous allons utiliser des <strong>boucles</strong> pour parcourir toute l'image.</p>
+<p>Pour réaliser le négatif :
+1.  On regarde chaque pixel un par un (avec deux boucles <code>for</code>, une pour les lignes <code>y</code>, une pour les colonnes <code>x</code>).
+2.  On regarde sa couleur avec <code>lire_pixel(x, y)</code>.
+3.  Si c'est <strong>0</strong>, on colorie en <strong>1</strong>. Sinon on colorie en <strong>0</strong>.</p>
+<p><strong>Votre mission :</strong>
+Tout en bas du fichier <code>code_binaire.py</code>, décommentez la partie "EXERCICE : LE NÉGATIF" et complétez les lignes manquantes pour que le programme inverse les couleurs de votre dessin précédent.</p>
+<hr />
+<h2 id="activite-4-limage-aleatoire-neige-tv">Activité 4 : L'image aléatoire (Neige TV) 🎲</h2>
+<p>Pour aller plus loin, essayons de remplir l'image au hasard.</p>
+<ol>
+<li>Ajoutez <code>from random import randint</code> tout en haut du fichier.</li>
+<li>Créez une nouvelle image plus grande : <code>creer_image(10, 10)</code>.</li>
+<li>Utilisez les boucles <code>for</code> (comme dans l'activité 3) pour parcourir toutes les cases.</li>
+<li>À l'intérieur de la boucle, au lieu de lire la couleur, choisissez une couleur au hasard :
+    <div class="highlight"><pre><span></span><code><span class="n">couleur_hasard</span> <span class="o">=</span> <span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="c1"># Choisit 0 ou 1 au hasard</span>
+<span class="n">colorier_pixel</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">couleur_hasard</span><span class="p">)</span>
+</code></pre></div></li>
+<li>Affichez le résultat.</li>
 </ol>
 <hr />
-<h2 id="activite-1-ouvrir-et-analyser-une-image">Activité 1 : Ouvrir et Analyser une image</h2>
-<p><strong>🎯 Objectif : Comprendre comment Python "voit" une image.</strong></p>
-<p>Dans le menu, choisissez l'option <strong>1</strong>. Observez la console :</p>
-<ul>
-<li>Les dimensions (Largeur x Hauteur) s'affichent.</li>
-<li>Les composantes <strong>R, V, B</strong> du pixel central sont extraites.</li>
-</ul>
-<div class="admonition question">
-<p class="admonition-title">À réfléchir</p>
-<p>Dans le code de la fonction <code>activite_1()</code>, décommentez la ligne qui tente de lire le pixel aux coordonnées <code>(largeur, hauteur)</code>. Pourquoi cela provoque-t-il une erreur alors que ce sont les dimensions de l'image ?</p>
-</div>
-<hr />
-<h2 id="activite-2-creer-le-negatif-dune-image">Activité 2 : Créer le Négatif d'une image</h2>
-<p><strong>🎯 Objectif : Utiliser une boucle pour modifier chaque pixel.</strong></p>
-<p>Le négatif consiste à inverser la luminosité. Si une valeur est <code>0</code> (noir), elle devient <code>255</code> (blanc).
-La formule est simple : <code>valeur_neuve = 255 - valeur_ancienne</code>.</p>
-<p><strong>Instructions :</strong></p>
-<ul>
-<li>Choisissez l'option <strong>2</strong> dans le menu.</li>
-<li>Allez dans la fonction <code>activite_2()</code> de votre fichier Python.</li>
-<li>Remplacez les <code>None</code> pour calculer <code>v_new</code> et <code>b_new</code> sur le même modèle que <code>r_new</code>.</li>
-</ul>
-<div class="highlight"><pre><span></span><code><span class="c1"># Dans activite_2() :</span>
-<span class="n">r_new</span> <span class="o">=</span> <span class="mi">255</span> <span class="o">-</span> <span class="n">r</span>
-<span class="n">v_new</span> <span class="o">=</span> <span class="kc">None</span>  <span class="c1"># À COMPLÉTER</span>
-<span class="n">b_new</span> <span class="o">=</span> <span class="kc">None</span>  <span class="c1"># À COMPLÉTER</span>
-</code></pre></div>
-<hr />
-<h2 id="activite-3-passage-en-niveaux-de-gris">Activité 3 : Passage en Niveaux de Gris</h2>
-<p><strong>🎯 Objectif : Manipuler les couleurs pour transformer l'aspect.</strong></p>
-<p>Pour transformer de la couleur en gris, on calcule la <strong>moyenne</strong> des trois composantes.</p>
-<p><strong>Instructions :</strong></p>
-<ul>
-<li>Choisissez l'option <strong>3</strong>.</li>
-<li>Dans <code>activite_3()</code>, remplacez les <code>None</code>.</li>
-<li><strong>Attention :</strong> En informatique, un pixel doit être un entier. Utilisez l'opérateur <code>//</code> pour une division entière.</li>
-</ul>
-<div class="highlight"><pre><span></span><code><span class="c1"># Dans activite_3() :</span>
-<span class="n">moyenne</span> <span class="o">=</span> <span class="p">(</span><span class="n">r</span> <span class="o">+</span> <span class="n">v</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span> <span class="o">//</span> <span class="mi">3</span>
-<span class="n">r_new</span> <span class="o">=</span> <span class="kc">None</span>  <span class="c1"># À COMPLÉTER</span>
-<span class="n">v_new</span> <span class="o">=</span> <span class="kc">None</span>  <span class="c1"># À COMPLÉTER</span>
-<span class="n">b_new</span> <span class="o">=</span> <span class="kc">None</span>  <span class="c1"># À COMPLÉTER</span>
-</code></pre></div>
-<hr />
-<h2 id="activite-4-effet-filtre-rouge">Activité 4 : Effet "Filtre Rouge"</h2>
-<p><strong>🎯 Objectif : Écrire sa propre boucle de parcours.</strong></p>
-<p>Ici, nous voulons supprimer totalement le Vert et le Bleu pour ne garder que le canal Rouge.</p>
-<p><strong>Instructions :</strong></p>
-<ul>
-<li>Choisissez l'option <strong>4</strong>.</li>
-<li>Dans <code>activite_4()</code>, vous devez écrire les boucles <code>for</code> pour parcourir toute l'image (utilisez les activités précédentes comme modèle).</li>
-<li>Mettez les canaux de vert et bleu à <code>0</code>.</li>
-</ul>
-<hr />
-<h2 id="activite-5-steganographie-le-message-cache">Activité 5 : Stéganographie (Le message caché) 🕵️‍♂️</h2>
-<p><strong>🎯 Objectif : Révéler des informations invisibles à l'œil nu.</strong></p>
-<p>Certaines images semblent noires, mais contiennent des variations infimes (par exemple un bleu à <code>1</code> au lieu de <code>0</code>). En multipliant cette valeur par <code>255</code>, on rend l'information visible.</p>
-<p><strong>Instructions :</strong></p>
-<ul>
-<li>Choisissez l'option <strong>5</strong>.</li>
-<li>Dans <code>activite_5()</code>, multipliez la composante <code>b</code> par <code>255</code> pour révéler la forme cachée.</li>
-</ul>
-<div class="highlight"><pre><span></span><code><span class="c1"># Dans activite_5() :</span>
-<span class="n">b_new</span> <span class="o">=</span> <span class="n">b</span> <span class="o">*</span> <span class="mi">255</span>
-</code></pre></div>
-<div class="admonition tip">
-<p class="admonition-title">Défi final</p>
-<p>Une fois que tout fonctionne, essayez de créer votre propre filtre (ex: filtre Sépia ou augmenter le contraste) en créant une nouvelle option dans le menu !</p>
-</div>
+<h2 id="aller-plus-loin">Aller plus loin</h2>
+<p>Si vous avez fini ce TP, vous pouvez tenter le TP sur la photographie couleur :
+👉 <a href="../tp_pillow/">TP 2 : Traitement d'Image (Pillow)</a></p>
 
 
 

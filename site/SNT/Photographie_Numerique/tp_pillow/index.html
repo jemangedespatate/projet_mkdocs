@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://www.prof-leal.fr/SNT/Photographie_Numerique/sommaire/">
+        <link rel="canonical" href="https://www.prof-leal.fr/SNT/Photographie_Numerique/tp_pillow/">
       
       
       
@@ -18,7 +18,7 @@
     
     
       
-        <title>📸 Photographie Numérique - Mr Leal SNT/NSI</title>
+        <title>💻 Travaux Pratiques : Traitement d'Image avec Python - Mr Leal SNT/NSI</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#photographie-numerique" class="md-skip">
+        <a href="#travaux-pratiques-traitement-dimage-avec-python" class="md-skip">
           Skip to content
         </a>
       
@@ -106,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              📸 Photographie Numérique
+              💻 Travaux Pratiques : Traitement d'Image avec Python
             
           </span>
         </div>
@@ -369,27 +369,78 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#cours" class="md-nav__link">
+  <a href="#0-preparation" class="md-nav__link">
     <span class="md-ellipsis">
-      Cours
+      0. Préparation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="0. Préparation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#apercu-de-limage-de-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      🖼️ Aperçu de l'image de test
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instructions-de-lancement" class="md-nav__link">
+    <span class="md-ellipsis">
+      📥 Instructions de lancement
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#activite-1-ouvrir-et-analyser-une-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      Activité 1 : Ouvrir et Analyser une image
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#exercices" class="md-nav__link">
+  <a href="#activite-2-creer-le-negatif-dune-image" class="md-nav__link">
     <span class="md-ellipsis">
-      Exercices
+      Activité 2 : Créer le Négatif d'une image
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#travaux-pratiques" class="md-nav__link">
+  <a href="#activite-3-passage-en-niveaux-de-gris" class="md-nav__link">
     <span class="md-ellipsis">
-      Travaux Pratiques
+      Activité 3 : Passage en Niveaux de Gris
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#activite-4-effet-filtre-rouge" class="md-nav__link">
+    <span class="md-ellipsis">
+      Activité 4 : Effet "Filtre Rouge"
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#activite-5-steganographie-le-message-cache" class="md-nav__link">
+    <span class="md-ellipsis">
+      Activité 5 : Stéganographie (Le message caché) 🕵️‍♂️
     </span>
   </a>
   
@@ -410,22 +461,95 @@
                   
 
 
-<h1 id="photographie-numerique">📸 Photographie Numérique</h1>
-<h2 id="cours">Cours</h2>
+<h1 id="travaux-pratiques-traitement-dimage-avec-python">💻 Travaux Pratiques : Traitement d'Image avec Python</h1>
+<p>L'objectif de ce TP est d'apprendre à manipuler des images numériques pixel par pixel à l'aide du langage Python et de la bibliothèque <strong>Pillow</strong> (PIL).</p>
+<h2 id="0-preparation">0. Préparation</h2>
+<p>Les fichiers nécessaires sont :</p>
 <ul>
-<li><a href="../cours/">📖 Cours</a></li>
+<li><a download="image_tp.jpg" href="../../img/image_tp.jpg">image_tp.jpg</a> : image à utiliser pour les tests.</li>
+<li><a download="image_cachee.jpg" href="../../img/image_cachee.jpg">image_cachee.jpg</a> : image mystère pour l'activité 5. <strong>À mettre dans le même dossier que le code.</strong></li>
+<li><a download="code_pillow.py" href="../code_pillow.py">code_pillow.py</a> : contient le programme interactif complet.</li>
 </ul>
-<h2 id="exercices">Exercices</h2>
+<h3 id="apercu-de-limage-de-test">🖼️ Aperçu de l'image de test</h3>
+<p>Voici l'image <code>image_tp.jpg</code> que vous allez manipuler (clic droit &gt; Enregistrer sous si besoin) :</p>
+<p><img alt="Image de test" src="../../img/image_tp.jpg" width="300" /></p>
+<h3 id="instructions-de-lancement">📥 Instructions de lancement</h3>
+<ol>
+<li><strong>Téléchargez les trois fichiers</strong> ci-dessus.</li>
+<li><strong>Placez-les impérativement dans le même dossier</strong>.</li>
+<li><strong>Ouvrez <code>code_pillow.py</code></strong> avec votre éditeur (IDLE, Thonny, VS Code).</li>
+<li><strong>Lancez le programme</strong> : un menu s'affiche dans la console.</li>
+</ol>
+<hr />
+<h2 id="activite-1-ouvrir-et-analyser-une-image">Activité 1 : Ouvrir et Analyser une image</h2>
+<p><strong>🎯 Objectif : Comprendre comment Python "voit" une image.</strong></p>
+<p>Dans le menu, choisissez l'option <strong>1</strong>. Observez la console :</p>
 <ul>
-<li><a href="../exercices/">✏️ Exercices</a></li>
-<li><a href="../exo_comp/">📝 Exercices Complémentaire</a></li>
+<li>Les dimensions (Largeur x Hauteur) s'affichent.</li>
+<li>Les composantes <strong>R, V, B</strong> du pixel central sont extraites.</li>
 </ul>
-<h2 id="travaux-pratiques">Travaux Pratiques</h2>
+<div class="admonition question">
+<p class="admonition-title">À réfléchir</p>
+<p>Dans le code de la fonction <code>activite_1()</code>, décommentez la ligne qui tente de lire le pixel aux coordonnées <code>(largeur, hauteur)</code>. Pourquoi cela provoque-t-il une erreur alors que ce sont les dimensions de l'image ?</p>
+</div>
+<hr />
+<h2 id="activite-2-creer-le-negatif-dune-image">Activité 2 : Créer le Négatif d'une image</h2>
+<p><strong>🎯 Objectif : Utiliser une boucle pour modifier chaque pixel.</strong></p>
+<p>Le négatif consiste à inverser la luminosité. Si une valeur est <code>0</code> (noir), elle devient <code>255</code> (blanc).
+La formule est simple : <code>valeur_neuve = 255 - valeur_ancienne</code>.</p>
+<p><strong>Instructions :</strong></p>
 <ul>
-<li><a href="../travaux_pratique/">💻 TP 1 : Images Binaires</a></li>
-<li><a href="../tp_pillow/">🐍 TP 2 : Traitement d'Image (Pillow)</a></li>
-<li><a href="../tp_pillow_complement/">⚡ Compléments TP 2</a></li>
+<li>Choisissez l'option <strong>2</strong> dans le menu.</li>
+<li>Allez dans la fonction <code>activite_2()</code> de votre fichier Python.</li>
+<li>Remplacez les <code>None</code> pour calculer <code>v_new</code> et <code>b_new</code> sur le même modèle que <code>r_new</code>.</li>
 </ul>
+<div class="highlight"><pre><span></span><code><span class="c1"># Dans activite_2() :</span>
+<span class="n">r_new</span> <span class="o">=</span> <span class="mi">255</span> <span class="o">-</span> <span class="n">r</span>
+<span class="n">v_new</span> <span class="o">=</span> <span class="kc">None</span>  <span class="c1"># À COMPLÉTER</span>
+<span class="n">b_new</span> <span class="o">=</span> <span class="kc">None</span>  <span class="c1"># À COMPLÉTER</span>
+</code></pre></div>
+<hr />
+<h2 id="activite-3-passage-en-niveaux-de-gris">Activité 3 : Passage en Niveaux de Gris</h2>
+<p><strong>🎯 Objectif : Manipuler les couleurs pour transformer l'aspect.</strong></p>
+<p>Pour transformer de la couleur en gris, on calcule la <strong>moyenne</strong> des trois composantes.</p>
+<p><strong>Instructions :</strong></p>
+<ul>
+<li>Choisissez l'option <strong>3</strong>.</li>
+<li>Dans <code>activite_3()</code>, remplacez les <code>None</code>.</li>
+<li><strong>Attention :</strong> En informatique, un pixel doit être un entier. Utilisez l'opérateur <code>//</code> pour une division entière.</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="c1"># Dans activite_3() :</span>
+<span class="n">moyenne</span> <span class="o">=</span> <span class="p">(</span><span class="n">r</span> <span class="o">+</span> <span class="n">v</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span> <span class="o">//</span> <span class="mi">3</span>
+<span class="n">r_new</span> <span class="o">=</span> <span class="kc">None</span>  <span class="c1"># À COMPLÉTER</span>
+<span class="n">v_new</span> <span class="o">=</span> <span class="kc">None</span>  <span class="c1"># À COMPLÉTER</span>
+<span class="n">b_new</span> <span class="o">=</span> <span class="kc">None</span>  <span class="c1"># À COMPLÉTER</span>
+</code></pre></div>
+<hr />
+<h2 id="activite-4-effet-filtre-rouge">Activité 4 : Effet "Filtre Rouge"</h2>
+<p><strong>🎯 Objectif : Écrire sa propre boucle de parcours.</strong></p>
+<p>Ici, nous voulons supprimer totalement le Vert et le Bleu pour ne garder que le canal Rouge.</p>
+<p><strong>Instructions :</strong></p>
+<ul>
+<li>Choisissez l'option <strong>4</strong>.</li>
+<li>Dans <code>activite_4()</code>, vous devez écrire les boucles <code>for</code> pour parcourir toute l'image (utilisez les activités précédentes comme modèle).</li>
+<li>Mettez les canaux de vert et bleu à <code>0</code>.</li>
+</ul>
+<hr />
+<h2 id="activite-5-steganographie-le-message-cache">Activité 5 : Stéganographie (Le message caché) 🕵️‍♂️</h2>
+<p><strong>🎯 Objectif : Révéler des informations invisibles à l'œil nu.</strong></p>
+<p>Certaines images semblent noires, mais contiennent des variations infimes (par exemple un bleu à <code>1</code> au lieu de <code>0</code>). En multipliant cette valeur par <code>255</code>, on rend l'information visible.</p>
+<p><strong>Instructions :</strong></p>
+<ul>
+<li>Choisissez l'option <strong>5</strong>.</li>
+<li>Dans <code>activite_5()</code>, multipliez la composante <code>b</code> par <code>255</code> pour révéler la forme cachée.</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="c1"># Dans activite_5() :</span>
+<span class="n">b_new</span> <span class="o">=</span> <span class="n">b</span> <span class="o">*</span> <span class="mi">255</span>
+</code></pre></div>
+<div class="admonition tip">
+<p class="admonition-title">Défi final</p>
+<p>Une fois que tout fonctionne, essayez de créer votre propre filtre (ex: filtre Sépia ou augmenter le contraste) en créant une nouvelle option dans le menu !</p>
+</div>
 
 
 

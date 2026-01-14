@@ -9,7 +9,8 @@
 * [✏️ Exercices](exercices.md)
 * [📝 Exercices Complémentaire](exo_comp.md)
 
-## travaux pratiques
+## Travaux Pratiques
 
-* [💻 Travaux Pratiques](travaux_pratique.md)
-* [⚡ Compléments de TP](complement_tp.md)
+* [💻 TP 1 : Images Binaires](travaux_pratique.md)
+* [🐍 TP 2 : Traitement d'Image (Pillow)](tp_pillow.md)
+* [⚡ Compléments TP 2](tp_pillow_complement.md)

@@ -1,111 +1,112 @@
-# 💻 Travaux Pratiques : Traitement d'Image avec Python
+# 💻 TP : Images Binaires (Noir et Blanc)
 
-L'objectif de ce TP est d'apprendre à manipuler des images numériques pixel par pixel à l'aide du langage Python et de la bibliothèque **Pillow** (PIL).
+Ce TP a pour but de comprendre comment une image est stockée dans la mémoire de l'ordinateur en utilisant uniquement des **0** et des **1**, sans entrer dans la complexité de la programmation avancée.
 
-## 0. Préparation
+## Introduction
 
-Les fichiers nécessaires sont :
-
-- [image_tp.jpg](../img/image_tp.jpg){:download="image_tp.jpg"} : image à utiliser pour les tests.
-- [image_cachee.jpg](../img/image_cachee.jpg){:download="image_cachee.jpg"} : image mystère pour l'activité 5. **À mettre dans le même dossier que le code.**
-- [code.py](code.py){:download="code.py"} : contient le programme interactif que vous devez compléter.
-
-### 🖼️ Aperçu de l'image de test
-Voici l'image `image_tp.jpg` que vous allez manipuler (clic droit > Enregistrer sous si besoin) :
-
-![Image de test](../img/image_tp.jpg){ width="300" }
-
-### 📥 Instructions de lancement
-
-1. **Téléchargez les trois fichiers** ci-dessus.
-2. **Placez-les impérativement dans le même dossier**.
-3. **Ouvrez `code.py`** avec votre éditeur (IDLE, Thonny, Thonny, VS Code).
-4. **Lancez le programme** : un menu s'affiche dans la console.
+Une image numérique est une grille de points appelés **pixels**.
+Dans une image "binaire" (2 couleurs), chaque pixel est codé sur **1 bit** :
+- **0** représente le **BLANC**.
+- **1** représente le **NOIR**.
 
 ---
 
-## Activité 1 : Ouvrir et Analyser une image
-**🎯 Objectif : Comprendre comment Python "voit" une image.**
+## Activité 1 : Créer une image à la main ✍️
 
-Dans le menu, choisissez l'option **1**. Observez la console :
+Nous allons utiliser un format d'image ultra-simple appelé **PBM** (Portable Bitmap). C'est un simple fichier texte !
 
-- Les dimensions (Largeur x Hauteur) s'affichent.
-- Les composantes **R, V, B** du pixel central sont extraites.
+1. Ouvrez un éditeur de texte simple (Bloc-notes ou directement dans eduPython/Thonny).
+2. Copiez-collez le texte suivant :
 
-!!! question "À réfléchir"
-    Dans le code de la fonction `activite_1()`, décommentez la ligne qui tente de lire le pixel aux coordonnées `(largeur, hauteur)`. Pourquoi cela provoque-t-il une erreur alors que ce sont les dimensions de l'image ?
+```text
+P1
+5 5
+0 0 1 0 0
+0 1 0 1 0
+1 0 0 0 1
+0 1 0 1 0
+0 0 1 0 0
+```
+
+3. **Explications :**
+    - `P1` : C'est le "code magique" qui dit "Je suis une image PBM".
+    - `5 5` : Largeur et Hauteur de l'image (5 pixels sur 5).
+    - La suite : Les pixels (0 pour blanc, 1 pour noir).
+    
+4. Enregistrez le fichier sous le nom `smiley.pbm` (Attention à l'extension `.pbm` !).
+5. Ouvrez ce fichier avec un logiciel de visualisation d'image (ou glissez-le dans Thonny/eduPython).
+
+**A vous de jouer :** Modifiez le fichier texte pour dessiner la première lettre de votre prénom. Sauvegardez et vérifiez le résultat.
 
 ---
 
-## Activité 2 : Créer le Négatif d'une image
-**🎯 Objectif : Utiliser une boucle pour modifier chaque pixel.**
+## Activité 2 : Manipuler l'image avec Python 🐍
 
-Le négatif consiste à inverser la luminosité. Si une valeur est `0` (noir), elle devient `255` (blanc).
-La formule est simple : `valeur_neuve = 255 - valeur_ancienne`.
+Dessiner pixel par pixel à la main, c'est long. Utilisons Python pour colorier les cases à notre place.
 
-**Instructions :**
+### 1. Préparation
+Téléchargez le fichier de départ :
+- [code_binaire.py](code_binaire.py){:download="code_binaire.py"}
 
-- Choisissez l'option **2** dans le menu.
-- Allez dans la fonction `activite_2()` de votre fichier Python.
-- Remplacez les `None` pour calculer `v_new` et `b_new` sur le même modèle que `r_new`.
+Ouvrez-le dans **eduPython** (ou tout autre éditeur Python).
 
-```python
-# Dans activite_2() :
-r_new = 255 - r
-v_new = None  # À COMPLÉTER
-b_new = None  # À COMPLÉTER
+### 2. Comprendre les commandes
+Dans ce fichier, nous avons préparé des commandes simples pour vous :
+
+*   `creer_image(largeur, hauteur)` : Crée une image blanche.
+*   `colorier_pixel(x, y, 1)` : Met le pixel en **NOIR** aux coordonnées (x, y).
+*   `colorier_pixel(x, y, 0)` : Met le pixel en **BLANC**.
+*   `afficher_image()` : Montre votre dessin dans la console.
+
+_Rappel : En informatique, on commence à compter à partir de 0. Le point en haut à gauche est (0, 0)._
+
+### 3. A vous de jouer
+Dans la zone élève du fichier `code_binaire.py` :
+1.  Lancez le code pour voir ce qu'il fait (il trace 3 points).
+2.  Effacez les exemples et essayez de dessiner une **croix** ou un **carré** en utilisant les commandes `colorier_pixel`.
+
+Exemple de croix à réaliser :
+```text
+1 0 0 0 1
+0 1 0 1 0
+0 0 1 0 0
+0 1 0 1 0
+1 0 0 0 1
 ```
 
 ---
 
-## Activité 3 : Passage en Niveaux de Gris
-**🎯 Objectif : Manipuler les couleurs pour transformer l'aspect.**
+## Activité 3 : Le Négatif (Inversion des couleurs) 🌗
 
-Pour transformer de la couleur en gris, on calcule la **moyenne** des trois composantes.
+Imaginez que vous deviez inverser une image de 1000 pixels. Vous n'allez pas écrire 1000 lignes de code !
+Nous allons utiliser des **boucles** pour parcourir toute l'image.
 
-**Instructions :**
+Pour réaliser le négatif :
+1.  On regarde chaque pixel un par un (avec deux boucles `for`, une pour les lignes `y`, une pour les colonnes `x`).
+2.  On regarde sa couleur avec `lire_pixel(x, y)`.
+3.  Si c'est **0**, on colorie en **1**. Sinon on colorie en **0**.
 
-- Choisissez l'option **3**.
-- Dans `activite_3()`, remplacez les `None`.
-- **Attention :** En informatique, un pixel doit être un entier. Utilisez l'opérateur `//` pour une division entière.
-
-```python
-# Dans activite_3() :
-moyenne = (r + v + b) // 3
-r_new = None  # À COMPLÉTER
-v_new = None  # À COMPLÉTER
-b_new = None  # À COMPLÉTER
-```
+**Votre mission :**
+Tout en bas du fichier `code_binaire.py`, décommentez la partie "EXERCICE : LE NÉGATIF" et complétez les lignes manquantes pour que le programme inverse les couleurs de votre dessin précédent.
 
 ---
 
-## Activité 4 : Effet "Filtre Rouge"
-**🎯 Objectif : Écrire sa propre boucle de parcours.**
+## Activité 4 : L'image aléatoire (Neige TV) 🎲
 
-Ici, nous voulons supprimer totalement le Vert et le Bleu pour ne garder que le canal Rouge.
+Pour aller plus loin, essayons de remplir l'image au hasard.
 
-**Instructions :**
-
-- Choisissez l'option **4**.
-- Dans `activite_4()`, vous devez écrire les boucles `for` pour parcourir toute l'image (utilisez les activités précédentes comme modèle).
-- Mettez les canaux de vert et bleu à `0`.
+1.  Ajoutez `from random import randint` tout en haut du fichier.
+2.  Créez une nouvelle image plus grande : `creer_image(10, 10)`.
+3.  Utilisez les boucles `for` (comme dans l'activité 3) pour parcourir toutes les cases.
+4.  À l'intérieur de la boucle, au lieu de lire la couleur, choisissez une couleur au hasard :
+    ```python
+    couleur_hasard = randint(0, 1) # Choisit 0 ou 1 au hasard
+    colorier_pixel(x, y, couleur_hasard)
+    ```
+5.  Affichez le résultat.
 
 ---
+## Aller plus loin
 
-## Activité 5 : Stéganographie (Le message caché) 🕵️‍♂️
-**🎯 Objectif : Révéler des informations invisibles à l'œil nu.**
-
-Certaines images semblent noires, mais contiennent des variations infimes (par exemple un bleu à `1` au lieu de `0`). En multipliant cette valeur par `255`, on rend l'information visible.
-
-**Instructions :**
-
-- Choisissez l'option **5**.
-- Dans `activite_5()`, multipliez la composante `b` par `255` pour révéler la forme cachée.
-
-```python
-# Dans activite_5() :
-b_new = b * 255
-```
-
-!!! tip "Défi final"
-    Une fois que tout fonctionne, essayez de créer votre propre filtre (ex: filtre Sépia ou augmenter le contraste) en créant une nouvelle option dans le menu !
+Si vous avez fini ce TP, vous pouvez tenter le TP sur la photographie couleur :
+👉 [TP 2 : Traitement d'Image (Pillow)](tp_pillow.md)
