@@ -17,7 +17,7 @@ Nous allons utiliser un format d'image ultra-simple appelé **PBM** (Portable Bi
 
 1. Ouvrez un éditeur de texte simple (Bloc-notes ou directement dans eduPython/Thonny).
 2. Copiez-collez le texte suivant :
-
+        
 ```text
 P1
 5 5

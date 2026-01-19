@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://www.prof-leal.fr/NSI_1/traitement_de_donnees/sommaire/">
+        <link rel="canonical" href="https://www.prof-leal.fr/NSI_1/traitement_de_donnees/tp_avance_fusion/">
       
       
       
@@ -18,7 +18,7 @@
     
     
       
-        <title>📊 Traitement de données en tables - Mr Leal SNT/NSI</title>
+        <title>🚀 TP Avancé : Fusion de Tables et Analyse Complexe - Mr Leal SNT/NSI</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#traitement-de-donnees-en-tables" class="md-skip">
+        <a href="#tp-avance-fusion-de-tables-et-analyse-complexe" class="md-skip">
           Skip to content
         </a>
       
@@ -106,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              📊 Traitement de données en tables
+              🚀 TP Avancé : Fusion de Tables et Analyse Complexe
             
           </span>
         </div>
@@ -369,18 +369,96 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#cours" class="md-nav__link">
+  <a href="#preparation-des-donnees" class="md-nav__link">
     <span class="md-ellipsis">
-      Cours
+      📂 Préparation des données
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#exercices" class="md-nav__link">
+  <a href="#travail-a-realiser" class="md-nav__link">
     <span class="md-ellipsis">
-      Exercices
+      🛠️ Travail à réaliser
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🛠️ Travail à réaliser">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mission-1-nettoyage-et-chargement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mission 1 : Nettoyage et Chargement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mission-2-la-fusion-jointure-inner-join" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mission 2 : La Fusion (Jointure "Inner Join")
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mission-3-statistiques-avancees" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mission 3 : Statistiques Avancées
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mission-4-visualisation-ascii-regions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mission 4 : Visualisation ASCII (Régions)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mission-5-top-10-des-villes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mission 5 : Top 10 des Villes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mission-6-interface-de-recherche" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mission 6 : Interface de recherche
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#le-defi-de-lexpert-optimisation-dictionnarique" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Le Défi de l'Expert : Optimisation Dictionnarique
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pistes-doptimisation" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 Pistes d'optimisation
     </span>
   </a>
   
@@ -401,18 +479,66 @@
                   
 
 
-<h1 id="traitement-de-donnees-en-tables">📊 Traitement de données en tables</h1>
-<h2 id="cours">Cours</h2>
+<h1 id="tp-avance-fusion-de-tables-et-analyse-complexe">🚀 TP Avancé : Fusion de Tables et Analyse Complexe</h1>
+<h2 id="preparation-des-donnees">📂 Préparation des données</h2>
+<p>Nous allons travailler avec deux fichiers CSV :</p>
+<ol>
+<li><code>villes.csv</code> : contient des informations sur les communes (nom, code postal, population).</li>
+<li><code>departements.csv</code> : contient les noms des départements et leur région d'appartenance.</li>
+</ol>
+<p>Vous devez télécharger les deux fichiers suivants et les placer dans votre dossier de travail :</p>
 <ul>
-<li><a href="../cours/">cours</a></li>
+<li><a download="villes.csv" href="../tp_fusion/villes.csv">villes.csv</a> : contient des informations sur les communes (nom, code postal, population). Ce fichier contient volontairement des erreurs à filtrer.</li>
+<li><a download="departements.csv" href="../tp_fusion/departements.csv">departements.csv</a> : contient les noms des départements et leur région d'appartenance.</li>
 </ul>
-<h2 id="exercices">Exercices</h2>
-<ul>
-<li><a href="../exercices/">exercices</a></li>
-<li><a href="../mini_projet/">mini projet</a></li>
-<li><a href="../tp_pokemon/">TP : Pokédex de Kanto</a></li>
-<li><a href="../tp_avance_fusion/">TP Avancé : Fusion de tables</a></li>
-</ul>
+<h2 id="travail-a-realiser">🛠️ Travail à réaliser</h2>
+<h3 id="mission-1-nettoyage-et-chargement">Mission 1 : Nettoyage et Chargement</h3>
+<p>Écrivez une fonction <code>charger_villes(nom_fichier)</code> qui :</p>
+<ol>
+<li>Charge les données.</li>
+<li><strong>Filtre les erreurs</strong> : Ignore les lignes où la population n'est pas un nombre ou est négative.</li>
+<li>Retourne une liste de dictionnaires propres.</li>
+</ol>
+<h3 id="mission-2-la-fusion-jointure-inner-join">Mission 2 : La Fusion (Jointure "Inner Join")</h3>
+<p>L'objectif est de créer une nouvelle table <code>villes_enrichies</code>.</p>
+<p><strong>Contrainte :</strong> Si une ville possède un <code>code_dep</code> qui n'existe pas dans votre fichier <code>departements.csv</code>, elle ne doit pas apparaître dans le résultat final (c'est ce qu'on appelle une jointure interne).</p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">fusionner_tables</span><span class="p">(</span><span class="n">villes</span><span class="p">,</span> <span class="n">departements</span><span class="p">):</span>
+    <span class="c1"># À COMPLÉTER</span>
+    <span class="k">pass</span>
+</code></pre></div>
+<h3 id="mission-3-statistiques-avancees">Mission 3 : Statistiques Avancées</h3>
+<p>En utilisant la table fusionnée, implémentez les fonctions suivantes :</p>
+<ol>
+<li><code>stats_par_region(table)</code> : Retourne un dictionnaire dont les clés sont les régions et les valeurs sont la <strong>somme des populations</strong>.</li>
+<li><code>moyenne_regionale(table)</code> : Calcule la population moyenne des villes par région.</li>
+<li><code>densite_relative(table)</code> : Pour chaque ville, calculez le pourcentage de la population qu'elle représente par rapport à sa région. Ajoutez cette information (<code>pourcent_region</code>) dans le dictionnaire de la ville.</li>
+</ol>
+<h3 id="mission-4-visualisation-ascii-regions">Mission 4 : Visualisation ASCII (Régions)</h3>
+<p>Créez une fonction <code>afficher_graphique_regions(stats_region)</code> qui affiche un petit histogramme textuel dans la console pour comparer les régions.</p>
+<p><strong>Exemple de rendu attendu :</strong>
+<div class="highlight"><pre><span></span><code>Île-de-France          : #################### (2161000)
+Occitanie              : ####### (749580)
+Grand Est              : #### (461346)
+...
+</code></pre></div>
+<em>(Indice : Une <code>#</code> peut représenter 100 000 habitants)</em></p>
+<h3 id="mission-5-top-10-des-villes">Mission 5 : Top 10 des Villes</h3>
+<p>Créez une fonction <code>afficher_top_villes(table, n=10)</code> qui :
+1. Trie les villes par population décroissante.
+2. Affiche un histogramme ASCII pour les <strong>n</strong> premières villes.</p>
+<p><strong>Contrainte :</strong> Comme les populations des villes sont plus petites que celles des régions, adaptez l'échelle (par exemple : une <code>#</code> pour 10 000 habitants).</p>
+<h3 id="mission-6-interface-de-recherche">Mission 6 : Interface de recherche</h3>
+<p>Proposez un petit menu permettant de :</p>
+<ol>
+<li>Chercher une ville par son nom et afficher TOUTES ses infos (département et région compris).</li>
+<li>Lister tous les départements d'une région donnée.</li>
+</ol>
+<h2 id="le-defi-de-lexpert-optimisation-dictionnarique">🚀 Le Défi de l'Expert : Optimisation Dictionnarique</h2>
+<p>Actuellement, votre fonction <code>fusionner_tables</code> contient probablement une boucle dans une boucle.</p>
+<p><strong>Défi :</strong> Transformez d'abord la liste des départements en un <strong>dictionnaire</strong> où la clé est le <code>code_dep</code>. Utilisez ensuite ce dictionnaire pour faire la fusion en un seul parcours de la liste des villes.</p>
+<h2 id="pistes-doptimisation">💡 Pistes d'optimisation</h2>
+<p>Pour la recherche du département (Mission 2), parcourir toute la table des départements pour chaque ville peut être lent si les fichiers sont gros.</p>
+<p><strong>Défi :</strong> Comment utiliser un <strong>dictionnaire de recherche</strong> pour rendre la fusion instantanée ?</p>
 
 
 
