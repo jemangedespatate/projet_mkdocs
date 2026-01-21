@@ -21,6 +21,22 @@ Vous devez télécharger les deux fichiers suivants et les placer dans votre dos
 2. **Filtre les erreurs** : Ignore les lignes où la population n'est pas un nombre ou est négative.
 3. Retourne une liste de dictionnaires propres.
 
+??? note "Solution :"
+
+    ```python
+    def charger_donnees(nom_fichier):
+        donnees = []
+        with open(nom_fichier, 'r', encoding='utf-8') as fichier:
+            lecteur = csv.DictReader(fichier)
+            for ligne in lecteur:
+                try:
+                    if int(ligne["population"]) > 0:
+                        donnees.append(dict(ligne))
+                except ValueError:
+                    pass
+        return donnees
+    ```
+
 ### Mission 2 : La Fusion (Jointure "Inner Join")
 L'objectif est de créer une nouvelle table `villes_enrichies`.
 
@@ -31,7 +47,7 @@ def fusionner_tables(villes, departements):
     # À COMPLÉTER
     pass
 ```
-
+    
 ### Mission 3 : Statistiques Avancées
 En utilisant la table fusionnée, implémentez les fonctions suivantes :
 
