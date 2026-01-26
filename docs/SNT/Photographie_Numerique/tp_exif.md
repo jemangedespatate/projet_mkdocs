@@ -1,21 +1,17 @@
-# 🕵️‍♂️ Travaux Pratiques : Enquête sur les Métadonnées EXIF
+# 🕵️‍♂️ Exercices Avancé : Enquête sur les Métadonnées EXIF
 
-Ce TP est destiné aux élèves ayant terminé les activités de base. Nous allons explorer les **métadonnées** cachées dans vos photos : les données **EXIF** (Exchangeable Image File Format).
-
-## 🎯 Objectifs
-- Comprendre ce que sont les données EXIF.
-- Apprendre à utiliser un script Python pour extraire ces informations.
-- Découvrir comment les supprimer pour protéger sa vie privée.
-
----
+Ces exercices sont destinés aux élèves ayant terminé les activités de base. Nous allons explorer les **métadonnées** cachées dans vos photos : les données **EXIF** (Exchangeable Image File Format).
 
 ## 🔍 Activité 1 : Observation en ligne
 
 Pour cette enquête, nous allons utiliser une image de test contenant des données de localisation.
 
-1. **Téléchargez l'image de test** : [photo_mystere.jpg](../img/photo_mystere.jpg){:download="photo_mystere.jpg"}
+1. **Téléchargez les images de test** :
+    - [photo_mystere.jpg](../img/photo_mystere.jpg){:download="photo_mystere.jpg"}
+    - [photo_mystere_2.jpg](../img/photo_mystere_2.jpg){:download="photo_mystere_2.jpg"}
+    - [photo_mystere_3.jpg](../img/photo_mystere_3.jpg){:download="photo_mystere_3.jpg"}
 2. Allez sur le site [jimpl.com](https://jimpl.com/).
-3. Téléversez l'image `photo_mystere.jpg`.
+3. Téléversez l'une des images.
 4. **Observez les résultats :**
     - À quelle date et heure précise la photo a-t-elle été prise ?
     - Quel est le modèle exact de l'appareil photo ?
@@ -32,11 +28,12 @@ Nous allons maintenant utiliser le script **code_exif.py** pour automatiser cett
 
 ### 1. Préparation
 1. Téléchargez le script complet : [code_exif.py](code_exif.py){:download="code_exif.py"}.
-2. Placez-le dans le même dossier que l'image [photo_mystere.jpg](../img/photo_mystere.jpg).
-3. Lancez le script.
+2. Placez-le dans le même dossier que les images téléchargées.
+3. Lancez le script : il vous proposera automatiquement de choisir l'image à analyser.
 
 ### 2. Observation
 Le script affiche les informations suivantes :
+
 - Le modèle de l'appareil.
 - La date de la prise de vue.
 - Les coordonnées GPS converties.
@@ -74,10 +71,3 @@ Il est important de savoir "nettoyer" ses photos avant de les envoyer ou de les 
 4. Choisissez "Créer une copie en supprimant toutes les propriétés possibles".
 5. Comparez le poids (en octets) de l'image originale et de l'image nettoyée.
 
----
-
-## 📝 Bilan
-Répondez aux questions suivantes :
-1. Pourquoi les réseaux sociaux (Instagram, WhatsApp, Facebook) suppriment-ils automatiquement les EXIF des photos que vous postez ?
-2. Citez deux avantages des données EXIF pour un photographe professionnel.
-3. Quel est le principal risque lié aux métadonnées pour un utilisateur lambda ?

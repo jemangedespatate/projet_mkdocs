@@ -1,0 +1,988 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://www.prof-leal.fr/NSI_1/interaction_web/cours/">
+      
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.42">
+    
+    
+      
+        <title>🌟 Découverte du Web : créer sa première page internet - Mr Leal SNT/NSI</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/custom_style.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#decouverte-du-web-creer-sa-premiere-page-internet" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Mr Leal SNT/NSI" class="md-header__button md-logo" aria-label="Mr Leal SNT/NSI" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M249.6 471.5c10.8 3.8 22.4-4.1 22.4-15.5V78.6c0-4.2-1.6-8.4-5-11C247.4 52 202.4 32 144 32 93.5 32 46.3 45.3 18.1 56.1 6.8 60.5 0 71.7 0 83.8v370.3c0 11.9 12.8 20.2 24.1 16.5C55.6 460.1 105.5 448 144 448c33.9 0 79 14 105.6 23.5m76.8 0C353 462 398.1 448 432 448c38.5 0 88.4 12.1 119.9 22.6 11.3 3.8 24.1-4.6 24.1-16.5V83.8c0-12.1-6.8-23.3-18.1-27.6C529.7 45.3 482.5 32 432 32c-58.4 0-103.4 20-123 35.6-3.3 2.6-5 6.8-5 11V456c0 11.4 11.7 19.3 22.4 15.5"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Mr Leal SNT/NSI
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              🌟 Découverte du Web : créer sa première page internet
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="indigo"  aria-label="Mode sombre"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Mode sombre" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="indigo"  aria-label="Mode clair"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Mode clair" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+    
+  
+  Accueil
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../SNT/" class="md-tabs__link">
+        
+  
+    
+  
+  SNT
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../" class="md-tabs__link">
+        
+  
+    
+  
+  Première NSI
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Mr Leal SNT/NSI" class="md-nav__button md-logo" aria-label="Mr Leal SNT/NSI" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M249.6 471.5c10.8 3.8 22.4-4.1 22.4-15.5V78.6c0-4.2-1.6-8.4-5-11C247.4 52 202.4 32 144 32 93.5 32 46.3 45.3 18.1 56.1 6.8 60.5 0 71.7 0 83.8v370.3c0 11.9 12.8 20.2 24.1 16.5C55.6 460.1 105.5 448 144 448c33.9 0 79 14 105.6 23.5m76.8 0C353 462 398.1 448 432 448c38.5 0 88.4 12.1 119.9 22.6 11.3 3.8 24.1-4.6 24.1-16.5V83.8c0-12.1-6.8-23.3-18.1-27.6C529.7 45.3 482.5 32 432 32c-58.4 0-103.4 20-123 35.6-3.3 2.6-5 6.8-5 11V456c0 11.4 11.7 19.3 22.4 15.5"/></svg>
+
+    </a>
+    Mr Leal SNT/NSI
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Accueil
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SNT/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SNT
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Première NSI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-les-trois-ingredients-dune-page-web" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 🏗️ Les trois ingrédients d'une page web
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 🏗️ Les trois ingrédients d'une page web">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-html-le-contenu-de-la-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1 📝 HTML : le contenu de la page
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.1 📝 HTML : le contenu de la page">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quest-ce-que-cest" class="md-nav__link">
+    <span class="md-ellipsis">
+      Qu'est-ce que c'est ?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comment-ca-marche" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comment ça marche ?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#balises-principales" class="md-nav__link">
+    <span class="md-ellipsis">
+      📋 Balises principales
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-css-cascading-style-sheets" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2 🎨 CSS (Cascading Style Sheets)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.2 🎨 CSS (Cascading Style Sheets)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#les-selecteurs-css" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔍 Les sélecteurs CSS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proprietes-css-courantes" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 Propriétés CSS courantes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-javascript" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3 ⚡ JavaScript
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.3 ⚡ JavaScript">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#concepts-de-base-en-javascript" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 Concepts de base en JavaScript
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-interaction-avec-lutilisateur-dans-une-page-web" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 🖱️ Interaction avec l'utilisateur dans une page Web
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 🖱️ Interaction avec l'utilisateur dans une page Web">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-le-modele-evenementiel" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 🔄 Le modèle événementiel
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.1 🔄 Le modèle événementiel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#evenements-courants" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚡ Événements courants
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-exemple-complet-dinteraction" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 💻 Exemple complet d'interaction
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="decouverte-du-web-creer-sa-premiere-page-internet">🌟 Découverte du Web : créer sa première page internet</h1>
+<h2 id="introduction">🎯 Introduction</h2>
+<p>Avez-vous déjà voulu créer votre propre site web ? Bonne nouvelle : <strong>c'est plus simple que vous ne le pensez !</strong></p>
+<p>Quand vous visitez un site web (YouTube, Instagram, un site de jeux...), votre navigateur affiche une <strong>page web</strong>. Cette page est créée avec trois technologies simples que nous allons découvrir ensemble.</p>
+<hr />
+<h2 id="1-les-trois-ingredients-dune-page-web">1. 🏗️ Les trois ingrédients d'une page web</h2>
+<p>Pour créer une page web, on utilise <strong>trois langages</strong> qui travaillent ensemble. Imaginez que vous construisez une maison :</p>
+<table>
+<thead>
+<tr>
+<th>Langage</th>
+<th>Rôle</th>
+<th>C'est comme...</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>HTML</strong></td>
+<td>Le contenu</td>
+<td>Les murs et les pièces de la maison</td>
+</tr>
+<tr>
+<td><strong>CSS</strong></td>
+<td>Le style</td>
+<td>La peinture et la décoration</td>
+</tr>
+<tr>
+<td><strong>JavaScript</strong></td>
+<td>L'interactivité</td>
+<td>L'électricité et les interrupteurs</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="11-html-le-contenu-de-la-page">1.1 📝 HTML : le contenu de la page</h3>
+<h4 id="quest-ce-que-cest">Qu'est-ce que c'est ?</h4>
+<p>HTML signifie "HyperText Markup Language" (langage de balisage). C'est le langage qui dit au navigateur <strong>quoi afficher</strong> sur la page.</p>
+<h4 id="comment-ca-marche">Comment ça marche ?</h4>
+<p>HTML utilise des <strong>balises</strong> (tags en anglais). Une balise ressemble à ceci : <code>&lt;balise&gt;contenu&lt;/balise&gt;</code></p>
+<p><strong>Exemple simple :</strong>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Bonjour !<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</code></pre></div>
+Cette ligne affiche un grand titre avec le texte "Bonjour !"</p>
+<details class="example">
+<summary>Exemple de code HTML :</summary>
+<div class="highlight"><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;fr&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Ma première page<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Bienvenue sur mon site<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Ceci est un paragraphe de texte.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;photo.jpg&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;Une photo&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://www.exemple.com&quot;</span><span class="p">&gt;</span>Cliquez ici<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
+</details>
+<hr />
+<h4 id="balises-principales">📋 Balises principales</h4>
+<table>
+<thead>
+<tr>
+<th>Balise</th>
+<th>Signification</th>
+<th>Utilisation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;h1&gt;</code> à <code>&lt;h6&gt;</code></td>
+<td>Titres</td>
+<td>Hiérarchie des titres (h1 = plus important)</td>
+</tr>
+<tr>
+<td><code>&lt;p&gt;</code></td>
+<td>Paragraphe</td>
+<td>Bloc de texte</td>
+</tr>
+<tr>
+<td><code>&lt;a&gt;</code></td>
+<td>Lien</td>
+<td>Créer un lien hypertexte</td>
+</tr>
+<tr>
+<td><code>&lt;img&gt;</code></td>
+<td>Image</td>
+<td>Afficher une image</td>
+</tr>
+<tr>
+<td><code>&lt;div&gt;</code></td>
+<td>Division</td>
+<td>Conteneur générique</td>
+</tr>
+<tr>
+<td><code>&lt;span&gt;</code></td>
+<td>Span</td>
+<td>Conteneur en ligne</td>
+</tr>
+<tr>
+<td><code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, <code>&lt;li&gt;</code></td>
+<td>Listes</td>
+<td>Listes à puces ou numérotées</td>
+</tr>
+<tr>
+<td><code>&lt;button&gt;</code></td>
+<td>Bouton</td>
+<td>Bouton cliquable</td>
+</tr>
+<tr>
+<td><code>&lt;input&gt;</code></td>
+<td>Champ de saisie</td>
+<td>Formulaire</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="12-css-cascading-style-sheets">1.2 🎨 CSS (Cascading Style Sheets)</h3>
+<p>CSS est la <strong>peau</strong> de la page web. Il définit :</p>
+<ul>
+<li>Les couleurs, polices, tailles</li>
+<li>Les espacements, marges, bordures</li>
+<li>La disposition des éléments (layout)</li>
+<li>Les animations et transitions</li>
+</ul>
+<p>👉 CSS permet de <strong>séparer le contenu (HTML) de la présentation</strong>. Un même HTML peut avoir plusieurs apparences différentes !</p>
+<details class="example">
+<summary>Exemple de code CSS :</summary>
+<div class="highlight"><pre><span></span><code><span class="c">/* Sélectionner tous les titres h1 */</span>
+<span class="nt">h1</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="mh">#2c3e50</span><span class="p">;</span>
+<span class="w">    </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">32</span><span class="kt">px</span><span class="p">;</span>
+<span class="w">    </span><span class="k">text-align</span><span class="p">:</span><span class="w"> </span><span class="kc">center</span><span class="p">;</span>
+<span class="w">    </span><span class="k">font-family</span><span class="p">:</span><span class="w"> </span><span class="n">Arial</span><span class="p">,</span><span class="w"> </span><span class="kc">sans-serif</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* Sélectionner tous les paragraphes */</span>
+<span class="nt">p</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="mh">#34495e</span><span class="p">;</span>
+<span class="w">    </span><span class="k">line-height</span><span class="p">:</span><span class="w"> </span><span class="mf">1.6</span><span class="p">;</span>
+<span class="w">    </span><span class="k">margin</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* Sélectionner un élément avec l&#39;id &quot;menu&quot; */</span>
+<span class="p">#</span><span class="nn">menu</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="mh">#3498db</span><span class="p">;</span>
+<span class="w">    </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* Sélectionner tous les éléments avec la classe &quot;bouton&quot; */</span>
+<span class="p">.</span><span class="nc">bouton</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="mh">#e74c3c</span><span class="p">;</span>
+<span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">white</span><span class="p">;</span>
+<span class="w">    </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="kt">px</span><span class="w"> </span><span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
+<span class="w">    </span><span class="k">border-radius</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="kt">px</span><span class="p">;</span>
+<span class="w">    </span><span class="k">cursor</span><span class="p">:</span><span class="w"> </span><span class="kc">pointer</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+</details>
+<details class="example">
+<summary>HTML associé à ce CSS :</summary>
+<div class="highlight"><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;fr&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Exemple CSS<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;style.css&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Mon titre principal<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;menu&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Ceci est le menu avec un fond bleu<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Ceci est un paragraphe normal avec une couleur et des marges.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;bouton&quot;</span><span class="p">&gt;</span>Cliquez ici<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
+<p><strong>Résultat</strong> : </p>
+<ul>
+<li>Le titre <code>&lt;h1&gt;</code> sera centré, en bleu foncé, taille 32px</li>
+<li>Le <code>&lt;div id="menu"&gt;</code> aura un fond bleu</li>
+<li>Les paragraphes <code>&lt;p&gt;</code> auront une couleur grise et des marges de 20px</li>
+<li>Le bouton avec <code>class="bouton"</code> sera rouge avec du texte blanc</li>
+</ul>
+</details>
+<hr />
+<h4 id="les-selecteurs-css">🔍 Les sélecteurs CSS</h4>
+<p>Les sélecteurs permettent de <strong>cibler</strong> les éléments HTML à styliser :</p>
+<ul>
+<li><strong>Sélecteur de balise</strong> : <code>p { ... }</code> → affecte tous les <code>&lt;p&gt;</code></li>
+<li><strong>Sélecteur de classe</strong> : <code>.ma-classe { ... }</code> → affecte tous les éléments avec <code>class="ma-classe"</code></li>
+<li><strong>Sélecteur d'ID</strong> : <code>#mon-id { ... }</code> → affecte l'élément avec <code>id="mon-id"</code></li>
+</ul>
+<p>👉 Un ID est <strong>unique</strong> dans une page, une classe peut être <strong>réutilisée</strong> plusieurs fois.</p>
+<hr />
+<h4 id="proprietes-css-courantes">🎯 Propriétés CSS courantes</h4>
+<table>
+<thead>
+<tr>
+<th>Propriété</th>
+<th>Effet</th>
+<th>Exemple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>color</code></td>
+<td>Couleur du texte</td>
+<td><code>color: red;</code></td>
+</tr>
+<tr>
+<td><code>background-color</code></td>
+<td>Couleur de fond</td>
+<td><code>background-color: #fff;</code></td>
+</tr>
+<tr>
+<td><code>font-size</code></td>
+<td>Taille de police</td>
+<td><code>font-size: 16px;</code></td>
+</tr>
+<tr>
+<td><code>margin</code></td>
+<td>Marge extérieure</td>
+<td><code>margin: 10px;</code></td>
+</tr>
+<tr>
+<td><code>padding</code></td>
+<td>Marge intérieure</td>
+<td><code>padding: 20px;</code></td>
+</tr>
+<tr>
+<td><code>border</code></td>
+<td>Bordure</td>
+<td><code>border: 1px solid black;</code></td>
+</tr>
+<tr>
+<td><code>width</code> / <code>height</code></td>
+<td>Dimensions</td>
+<td><code>width: 300px;</code></td>
+</tr>
+<tr>
+<td><code>display</code></td>
+<td>Type d'affichage</td>
+<td><code>display: flex;</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="13-javascript">1.3 ⚡ JavaScript</h3>
+<p>JavaScript est le <strong>cerveau</strong> de la page web. Il permet :</p>
+<ul>
+<li>De réagir aux actions de l'utilisateur (clics, saisies)</li>
+<li>De modifier le contenu de la page dynamiquement</li>
+<li>De communiquer avec des serveurs</li>
+<li>De créer des animations complexes</li>
+</ul>
+<p>👉 JavaScript est un <strong>langage de programmation</strong> qui s'exécute dans le navigateur web.</p>
+<details class="example">
+<summary>Exemple de code JavaScript :</summary>
+<div class="highlight"><pre><span></span><code><span class="c1">// Afficher un message dans la console</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Bonjour !&quot;</span><span class="p">);</span>
+
+<span class="c1">// Modifier le contenu d&#39;un élément</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;titre&quot;</span><span class="p">).</span><span class="nx">textContent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Nouveau titre&quot;</span><span class="p">;</span>
+
+<span class="c1">// Réagir à un clic</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;monBouton&quot;</span><span class="p">).</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;click&quot;</span><span class="p">,</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;Vous avez cliqué sur le bouton !&quot;</span><span class="p">);</span>
+<span class="p">});</span>
+
+<span class="c1">// Modifier le style d&#39;un élément</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&quot;.ma-classe&quot;</span><span class="p">).</span><span class="nx">style</span><span class="p">.</span><span class="nx">color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;red&quot;</span><span class="p">;</span>
+</code></pre></div>
+</details>
+<hr />
+<h4 id="concepts-de-base-en-javascript">💡 Concepts de base en JavaScript</h4>
+<ul>
+<li><strong>Variables</strong> : <code>let nom = "Alice";</code> ou <code>const age = 15;</code></li>
+<li><strong>Fonctions</strong> : <code>function direBonjour() { alert("Bonjour !"); }</code></li>
+<li><strong>Événements</strong> : <code>click</code>, <code>mouseover</code>, <code>keypress</code>, etc.</li>
+<li><strong>DOM (Document Object Model)</strong> : représentation de la page que JavaScript peut manipuler</li>
+</ul>
+<hr />
+<h2 id="2-interaction-avec-lutilisateur-dans-une-page-web">2. 🖱️ Interaction avec l'utilisateur dans une page Web</h2>
+<h3 id="21-le-modele-evenementiel">2.1 🔄 Le modèle événementiel</h3>
+<p>Les pages web modernes fonctionnent selon un <strong>modèle événementiel</strong> :</p>
+<ol>
+<li>L'utilisateur effectue une action (clic, saisie, mouvement de souris)</li>
+<li>Cette action génère un <strong>événement</strong></li>
+<li>JavaScript peut <strong>écouter</strong> cet événement</li>
+<li>Quand l'événement se produit, une <strong>fonction</strong> est exécutée</li>
+</ol>
+<hr />
+<h4 id="evenements-courants">⚡ Événements courants</h4>
+<table>
+<thead>
+<tr>
+<th>Événement</th>
+<th>Déclenchement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>click</code></td>
+<td>Clic sur un élément</td>
+</tr>
+<tr>
+<td><code>dblclick</code></td>
+<td>Double-clic</td>
+</tr>
+<tr>
+<td><code>mouseover</code></td>
+<td>Survol avec la souris</td>
+</tr>
+<tr>
+<td><code>mouseout</code></td>
+<td>Sortie de la souris</td>
+</tr>
+<tr>
+<td><code>keydown</code></td>
+<td>Touche enfoncée</td>
+</tr>
+<tr>
+<td><code>keyup</code></td>
+<td>Touche relâchée</td>
+</tr>
+<tr>
+<td><code>submit</code></td>
+<td>Soumission d'un formulaire</td>
+</tr>
+<tr>
+<td><code>change</code></td>
+<td>Modification d'un champ</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="22-exemple-complet-dinteraction">2.2 💻 Exemple complet d'interaction</h3>
+<p>Voici un exemple très simple : un bouton qui affiche un message quand on clique dessus.</p>
+<p><strong>1. Le fichier HTML (<code>index.html</code>) :</strong></p>
+<div class="highlight"><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Exemple simple<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+
+    <span class="cm">&lt;!-- Le bouton --&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;monBouton&quot;</span><span class="p">&gt;</span>Cliquez-moi !<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+
+    <span class="cm">&lt;!-- Lien vers le fichier JavaScript --&gt;</span>
+    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;script.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
+<p><strong>2. Le fichier JavaScript (<code>script.js</code>) :</strong></p>
+<div class="highlight"><pre><span></span><code><span class="c1">// On sélectionne le bouton</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">bouton</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;monBouton&quot;</span><span class="p">);</span>
+
+<span class="c1">// On ajoute l&#39;événement &quot;click&quot;</span>
+<span class="nx">bouton</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;click&quot;</span><span class="p">,</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;Bravo ! Vous avez réussi votre première interaction !&quot;</span><span class="p">);</span>
+<span class="p">});</span>
+</code></pre></div>
+<p><strong>Explication étape par étape :</strong></p>
+<ol>
+<li>Dans le HTML, on crée un bouton avec <code>&lt;button id="monBouton"&gt;</code>.</li>
+<li>On lie le fichier JavaScript avec <code>&lt;script src="script.js"&gt;&lt;/script&gt;</code>.</li>
+<li>Dans le fichier JS, on récupère ce bouton grâce à son ID : <code>getElementById</code>.</li>
+<li>On lui dit : "quand tu reçois un <strong>click</strong>, lance la fonction qui affiche l'alerte".</li>
+</ol>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <a href="/" class="custom-home-button" title="Accueil">
+  <svg viewBox="0 0 24 24">
+    <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+  </svg>
+  Accueil
+</a>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tabs", "navigation.sections", "navigation.top", "navigation.expand", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      
+    
+  </body>
+</html>

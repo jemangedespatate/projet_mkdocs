@@ -499,6 +499,21 @@
 <li><strong>Filtre les erreurs</strong> : Ignore les lignes où la population n'est pas un nombre ou est négative.</li>
 <li>Retourne une liste de dictionnaires propres.</li>
 </ol>
+<details class="note">
+<summary>Solution :</summary>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">charger_donnees</span><span class="p">(</span><span class="n">nom_fichier</span><span class="p">):</span>
+    <span class="n">donnees</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">nom_fichier</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">fichier</span><span class="p">:</span>
+        <span class="n">lecteur</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">DictReader</span><span class="p">(</span><span class="n">fichier</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">ligne</span> <span class="ow">in</span> <span class="n">lecteur</span><span class="p">:</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="k">if</span> <span class="nb">int</span><span class="p">(</span><span class="n">ligne</span><span class="p">[</span><span class="s2">&quot;population&quot;</span><span class="p">])</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+                    <span class="n">donnees</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span><span class="n">ligne</span><span class="p">))</span>
+            <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+                <span class="k">pass</span>
+    <span class="k">return</span> <span class="n">donnees</span>
+</code></pre></div>
+</details>
 <h3 id="mission-2-la-fusion-jointure-inner-join">Mission 2 : La Fusion (Jointure "Inner Join")</h3>
 <p>L'objectif est de créer une nouvelle table <code>villes_enrichies</code>.</p>
 <p><strong>Contrainte :</strong> Si une ville possède un <code>code_dep</code> qui n'existe pas dans votre fichier <code>departements.csv</code>, elle ne doit pas apparaître dans le résultat final (c'est ce qu'on appelle une jointure interne).</p>
