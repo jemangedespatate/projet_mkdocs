@@ -25,7 +25,6 @@
 4. **Modifiez** le titre et le paragraphe avec votre propre texte
 5. Ajoutez un deuxième paragraphe avec la balise `<p>`
 
-**Résultat attendu** : Une page simple avec un titre et deux paragraphes.
 
 ---
 
