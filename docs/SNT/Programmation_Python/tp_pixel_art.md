@@ -18,7 +18,6 @@ Nous allons recréer le principe d'une **image numérique** (une grille de pixel
 Dans ce TP, nous allons utiliser une fonction prête à l'emploi : `dessiner_pixel(x, y, couleur)`.
 Elle dessine un carré (un "pixel") à l'endroit désiré.
 
-**Votre mission :**
 1. Lancez le programme et choisissez l'option **1**. Rien ne se passe pour l'instant.
 2. Dans le code, trouvez la fonction `activite_1()`.
 3. Ajoutez une ligne pour dessiner un pixel rouge au centre `(0, 0)`.
@@ -32,7 +31,6 @@ Elle dessine un carré (un "pixel") à l'endroit désiré.
 
 Dessiner 100 pixels un par un serait trop long ! En informatique, on utilise des **boucles**.
 
-**Votre mission :**
 1. Choisissez l'option **2**.
 2. Dans `activite_2()`, on veut dessiner 10 pixels bleus alignés horizontalement (x change, y reste à 0).
 3. Écrivez une boucle `for` pour réaliser cela.
@@ -47,7 +45,6 @@ C'est ici que l'on rejoint le chapitre **Photo** ! Une image est une grille. Pou
 - Une pour descendre les **lignes** (y).
 - Une pour parcourir les **colonnes** (x) dans chaque ligne.
 
-**Votre mission :**
 1. Choisissez l'option **3**.
 2. Dans `activite_3()`, écrivez deux boucles imbriquées pour dessiner un carré de 5x5 pixels verts.
 
@@ -64,7 +61,6 @@ L'astuce mathématique est d'utiliser la **parité** de la somme des coordonnée
 
 Si `(x_index + y_index)` est un nombre **pair**, on met du noir. Sinon, du blanc.
 
-**Votre mission :**
 1. Choisissez l'option **4**.
 2. Dans `activite_4()`, utilisez une condition `if / else` avec l'opérateur modulo (`%`) pour alterner les couleurs.
 3. Vous devez utiliser une boucle double comme dans l'activité 3.
