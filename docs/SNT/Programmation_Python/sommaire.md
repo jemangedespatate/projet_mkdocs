@@ -16,3 +16,7 @@
 ## Évaluations
 
 * [📝 Interrogations](evaluation.md)
+
+## Travaux Pratiques
+
+* [🎨 TP : Pixel Art & Remédiation](tp_pixel_art.md)

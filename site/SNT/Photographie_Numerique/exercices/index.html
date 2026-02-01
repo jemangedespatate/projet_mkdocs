@@ -469,6 +469,18 @@
 </li>
 </ol>
 </details>
+<details class="check">
+<summary>Réponse de l'Exercice 1</summary>
+<p><strong>1. Définition de l'image :</strong></p>
+<ul>
+<li><code>800 × 600 = 480 000 pixels</code> (soit environ 0,48 Mégapixels).</li>
+</ul>
+<p><strong>2. Impression et Résolution :</strong></p>
+<ul>
+<li><strong>Résolution</strong> : <code>800 pixels / 10 pouces = 80 ppp</code>.</li>
+<li><strong>Qualité</strong> : 80 ppp est très inférieur au standard de <strong>300 ppp</strong>. La qualité sera <strong>médiocre</strong> (l'image sera "pixellisée").</li>
+</ul>
+</details>
 <hr />
 <h2 id="exercice-2-decoder-une-image-binaire">Exercice 2 : Décoder une image binaire</h2>
 <p>On a reçu une suite de bits représentant une petite image binaire de <strong>5x5 pixels</strong>. Les bits sont envoyés ligne par ligne :</p>
@@ -485,6 +497,20 @@
 <li>Prenez le premier groupe de 5 bits (<code>01110</code>) et remplissez la première ligne (0=Blanc, 1=Noir).</li>
 <li>Observez le dessin global (c'est une forme géométrique simple).</li>
 </ol>
+</details>
+<details class="check">
+<summary>Réponse de l'Exercice 2</summary>
+<p><strong>Grille décodée :</strong></p>
+<div class="highlight"><pre><span></span><code>.XXX.  (01110)
+X...X  (10001)
+X.X.X  (10101)
+X...X  (10001)
+.XXX.  (01110)
+</code></pre></div>
+<p><strong>Forme obtenue :</strong></p>
+<ul>
+<li>La forme ressemble à un <strong>cercle</strong>, un <strong>zéro</strong>, ou la lettre <strong>O</strong>.</li>
+</ul>
 </details>
 <hr />
 <h2 id="exercice-3-le-poids-des-images">Exercice 3 : Le Poids des Images</h2>
@@ -516,6 +542,33 @@ Calculez le poids de cette image (en octets, puis en Mo) dans les cas suivants :
 </li>
 </ol>
 </details>
+<details class="check">
+<summary>Réponse de l'Exercice 3</summary>
+<p><strong>Nombre total de pixels :</strong> <code>1024 × 1024 = 1 048 576 pixels</code>.</p>
+<ol>
+<li>
+<p><strong>Image binaire (1 bit/pixel) :</strong></p>
+<ul>
+<li><code>1 048 576 bits / 8 = 131 072 octets</code></li>
+<li>Soit environ <strong>0,13 Mo</strong>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Niveaux de gris (1 octet/pixel) :</strong></p>
+<ul>
+<li><code>1 048 576 × 1 = 1 048 576 octets</code></li>
+<li>Soit environ <strong>1,05 Mo</strong>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Couleurs RVB (3 octets/pixel) :</strong></p>
+<ul>
+<li><code>1 048 576 × 3 = 3 145 728 octets</code></li>
+<li>Soit environ <strong>3,15 Mo</strong>.</li>
+</ul>
+</li>
+</ol>
+</details>
 <hr />
 <h2 id="exercice-4-codage-des-couleurs-rvb">Exercice 4 : Codage des Couleurs RVB</h2>
 <p>Dans le système RVB (Rouge, Vert, Bleu), chaque couleur est codée par un triplet de valeurs comprises entre 0 et 255.</p>
@@ -533,6 +586,19 @@ Calculez le poids de cette image (en octets, puis en Mo) dans les cas suivants :
 <li>Le <strong>Blanc</strong> correspond à la lumière maximale (toutes les composantes à 255).</li>
 <li>Une couleur <strong>pure</strong> (Rouge, Vert ou Bleu) a une seule composante à 255 et les autres à 0.</li>
 </ul>
+</details>
+<details class="check">
+<summary>Réponse de l'Exercice 4</summary>
+<ol>
+<li><strong>Noir</strong> : <code>(0, 0, 0)</code> ; <strong>Blanc</strong> : <code>(255, 255, 255)</code>.</li>
+<li><strong>(255, 0, 0)</strong> correspond au <strong>Rouge</strong> pur.</li>
+<li><strong>(0, 255, 255)</strong> est un mélange saturé de Vert et de Bleu, ce qui donne du <strong>Cyan</strong>.</li>
+<li><strong>(100, 100, 100)</strong> :<ul>
+<li>C'est une nuance de <strong>Gris</strong> (car les trois composantes sont égales).</li>
+<li>Elle est <strong>plus sombre</strong> que (200, 200, 200), car la quantité de lumière est plus faible (100 &lt; 200).</li>
+</ul>
+</li>
+</ol>
 </details>
 <hr />
 <h2 id="exercice-5-metadonnees-et-vie-privee">Exercice 5 : Métadonnées et Vie Privée</h2>
@@ -563,6 +629,14 @@ Un inconnu télécharge la photo et regarde les métadonnées EXIF.</p>
 </li>
 </ol>
 </details>
+<details class="check">
+<summary>Réponse de l'Exercice 5</summary>
+<ol>
+<li><strong>Informations possibles</strong> : La date et l'heure, la localisation GPS, le modèle du smartphone, les temps d'exposition, l'utilisation du flash, etc.</li>
+<li><strong>Info critique</strong> : Les <strong>coordonnées GPS</strong> (géolocalisation), car elles peuvent révéler l'adresse exacte de son domicile.</li>
+<li><strong>Protection</strong> : Alice devrait <strong>désactiver la géolocalisation</strong> dans les paramètres de son appareil photo ou utiliser un logiciel pour <strong>effacer les métadonnées</strong> avant de partager la photo.</li>
+</ol>
+</details>
 <hr />
 <h2 id="exercice-6-profondeur-de-couleur">Exercice 6 : Profondeur de couleur</h2>
 <p>La profondeur de couleur correspond au nombre de bits utilisés pour coder la couleur d'un pixel. Plus ce nombre est grand, plus on peut afficher de couleurs différentes.</p>
@@ -578,6 +652,25 @@ Un inconnu télécharge la photo et regarde les métadonnées EXIF.</p>
 <li>Pour le RVB standard, calculez <strong>2²⁴</strong>.</li>
 </ul>
 </details>
+<details class="check">
+<summary>Réponse de l'Exercice 6</summary>
+<ol>
+<li>
+<p><strong>Pour 2 bits :</strong></p>
+<ul>
+<li>On peut afficher <strong>4 couleurs</strong> différentes (<code>2² = 4</code>).</li>
+<li>Combinaisons : <code>00</code>, <code>01</code>, <code>10</code>, <code>11</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Pour le RVB (24 bits) :</strong></p>
+<ul>
+<li>Nombre de couleurs = <code>2²⁴</code>.</li>
+<li>Soit <code>16 777 216</code> couleurs possibles (environ 16,7 millions).</li>
+</ul>
+</li>
+</ol>
+</details>
 <hr />
 <h2 id="exercice-7-retouche-dimage-calcul">Exercice 7 : Retouche d'image (Calcul)</h2>
 <p>On considère un pixel de couleur <strong>RVB (120, 50, 200)</strong>. On applique une retouche pour augmenter la luminosité en ajoutant <strong>30</strong> à chaque composante.</p>
@@ -590,6 +683,28 @@ Un inconnu télécharge la photo et regarde les métadonnées EXIF.</p>
 <ol>
 <li>Additionnez simplement 30 à chaque nombre : (120+30, 50+30, 200+30).</li>
 <li><strong>Attention :</strong> Une composante ne peut jamais dépasser <strong>255</strong>. Si le calcul donne plus (ex: 240 + 30 = 270), le résultat est "plafonné" à 255.</li>
+</ol>
+</details>
+<details class="check">
+<summary>Réponse de l'Exercice 7</summary>
+<ol>
+<li>
+<p><strong>Pixel (120, 50, 200) + 30 :</strong></p>
+<ul>
+<li>Rouge : <code>120 + 30 = 150</code></li>
+<li>Vert : <code>50 + 30 = 80</code></li>
+<li>Bleu : <code>200 + 30 = 230</code></li>
+<li>Nouvelle couleur : <strong>(150, 80, 230)</strong>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Pixel (240, 100, 40) + 30 :</strong></p>
+<ul>
+<li>Rouge : <code>240 + 30 = 270</code>. Or, la valeur maximale est <strong>255</strong>.</li>
+<li>La valeur est donc écrêtée à <strong>255</strong>.</li>
+<li>Nouvelle valeur du Rouge : <strong>255</strong>.</li>
+</ul>
+</li>
 </ol>
 </details>
 

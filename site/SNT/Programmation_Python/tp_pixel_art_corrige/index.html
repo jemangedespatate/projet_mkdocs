@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://www.prof-leal.fr/SNT/Programmation_Python/sommaire/">
+        <link rel="canonical" href="https://www.prof-leal.fr/SNT/Programmation_Python/tp_pixel_art_corrige/">
       
       
       
@@ -18,7 +18,7 @@
     
     
       
-        <title>🐍 Programmation Python - Mr Leal SNT/NSI</title>
+        <title>🔑 Correction du TP : Pixel Art & Remédiation - Mr Leal SNT/NSI</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#programmation-python" class="md-skip">
+        <a href="#correction-du-tp-pixel-art-remediation" class="md-skip">
           Skip to content
         </a>
       
@@ -106,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              🐍 Programmation Python
+              🔑 Correction du TP : Pixel Art &amp; Remédiation
             
           </span>
         </div>
@@ -369,45 +369,54 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#cours" class="md-nav__link">
+  <a href="#fichiers" class="md-nav__link">
     <span class="md-ellipsis">
-      Cours
+      Fichiers
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#exercices" class="md-nav__link">
+  <a href="#activite-1-un-simple-pixel" class="md-nav__link">
     <span class="md-ellipsis">
-      Exercices
+      Activité 1 : Un simple Pixel
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#ressources" class="md-nav__link">
+  <a href="#activite-2-une-ligne-de-pixels-la-boucle" class="md-nav__link">
     <span class="md-ellipsis">
-      Ressources
+      Activité 2 : Une ligne de Pixels (La Boucle)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#evaluations" class="md-nav__link">
+  <a href="#activite-3-le-carre-boucles-imbriquees" class="md-nav__link">
     <span class="md-ellipsis">
-      Évaluations
+      Activité 3 : Le Carré (Boucles Imbriquées)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#travaux-pratiques" class="md-nav__link">
+  <a href="#activite-4-le-damier-les-conditions" class="md-nav__link">
     <span class="md-ellipsis">
-      Travaux Pratiques
+      Activité 4 : Le Damier (Les Conditions)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prolongements-possibles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prolongements possibles
     </span>
   </a>
   
@@ -428,28 +437,78 @@
                   
 
 
-<h1 id="programmation-python">🐍 Programmation Python</h1>
-<h2 id="cours">Cours</h2>
+<h1 id="correction-du-tp-pixel-art-remediation">🔑 Correction du TP : Pixel Art &amp; Remédiation</h1>
+<p>Ce document fournit les solutions complètes et des notes pédagogiques pour le TP de remédiation Pixel Art.</p>
+<p>Rappel : Ce TP est conçu pour aider les élèves qui ont du mal avec les coordonnées <code>(x, y)</code> et les boucles, avant ou pendant le chapitre sur la photographie numérique.</p>
+<hr />
+<h2 id="fichiers">Fichiers</h2>
 <ul>
-<li><a href="../introductions_prog/">📖 Introduction à la Programmation</a></li>
+<li><strong>Code Élève</strong> : <code>code_pixel_art.py</code> (à compléter)</li>
+<li><strong>Code Prof</strong> : <code>code_pixel_art_corrige.py</code> (complet et fonctionnel)</li>
 </ul>
-<h2 id="exercices">Exercices</h2>
-<ul>
-<li><a href="../exercice_comp/">✏️ Exercices Complémentaires</a></li>
-<li><a href="../mini_projet/">🚀 Mini-Projet</a></li>
-</ul>
-<h2 id="ressources">Ressources</h2>
-<ul>
-<li><a href="../fiche_memo/">📋 Fiche Mémo</a></li>
-</ul>
-<h2 id="evaluations">Évaluations</h2>
-<ul>
-<li><a href="../evaluation/">📝 Interrogations</a></li>
-</ul>
-<h2 id="travaux-pratiques">Travaux Pratiques</h2>
-<ul>
-<li><a href="../tp_pixel_art/">🎨 TP : Pixel Art &amp; Remédiation</a></li>
-</ul>
+<hr />
+<h2 id="activite-1-un-simple-pixel">Activité 1 : Un simple Pixel</h2>
+<p><strong>Difficulté</strong> : Très Facile<br />
+<strong>But</strong> : Comprendre l'appel de fonction avec paramètres.</p>
+<p>Beaucoup d'élèves oublient les parenthèses <code>()</code> ou ne savent pas où écrire le code. Insistez sur l'indentation (bien que non nécessaire pour un appel simple, c'est une bonne pratique).</p>
+<div class="highlight"><pre><span></span><code><span class="n">dessiner_pixel</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;red&quot;</span><span class="p">)</span>       <span class="c1"># Pixel de base</span>
+<span class="n">dessiner_pixel</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;blue&quot;</span><span class="p">)</span>     <span class="c1"># Défi : pixel décalé de 30px</span>
+</code></pre></div>
+<p><em>Note : Les coordonnées sont en pixels écran. Si on met <code>(1, 0)</code>, les pixels se chevaucheront car chaque carré fait 30px de côté.</em></p>
+<hr />
+<h2 id="activite-2-une-ligne-de-pixels-la-boucle">Activité 2 : Une ligne de Pixels (La Boucle)</h2>
+<p><strong>Difficulté</strong> : Moyenne<br />
+<strong>But</strong> : Comprendre le lien entre l'indice de boucle <code>i</code> et la coordonnée <code>x</code>.</p>
+<p>C'est le point de blocage fréquent. Les élèves écrivent souvent <code>x = i</code> au lieu de <code>x = i * 30</code>.<br />
+Expliquez que <code>i</code> est le <strong>numéro de la case</strong> (0, 1, 2...) et <code>x</code> est la <strong>position en pixels</strong> (0, 30, 60...).</p>
+<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">i</span> <span class="o">*</span> <span class="mi">30</span>       <span class="c1"># Le pas est de 30</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="mi">0</span>            <span class="c1"># On reste sur la même ligne</span>
+    <span class="n">dessiner_pixel</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="s2">&quot;blue&quot;</span><span class="p">)</span>
+</code></pre></div>
+<hr />
+<h2 id="activite-3-le-carre-boucles-imbriquees">Activité 3 : Le Carré (Boucles Imbriquées)</h2>
+<p><strong>Difficulté</strong> : Difficile<br />
+<strong>But</strong> : Introduire la double boucle nécessaire pour le traitement d'images.</p>
+<p>Cette structure est identique à celle utilisée dans le TP Photo (parcours des pixels <code>width</code> x <code>height</code>).
+L'erreur classique est d'inverser <code>x</code> et <code>y</code> ou d'oublier l'indentation de la deuxième boucle.</p>
+<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">y_index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="n">y_index</span> <span class="o">*</span> <span class="mi">30</span>
+
+    <span class="k">for</span> <span class="n">x_index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">x_index</span> <span class="o">*</span> <span class="mi">30</span>
+
+        <span class="c1"># On peut varier la couleur si on veut s&#39;amuser</span>
+        <span class="n">dessiner_pixel</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="s2">&quot;green&quot;</span><span class="p">)</span>
+</code></pre></div>
+<hr />
+<h2 id="activite-4-le-damier-les-conditions">Activité 4 : Le Damier (Les Conditions)</h2>
+<p><strong>Difficulté</strong> : Avancée<br />
+<strong>But</strong> : Logique conditionnelle basée sur les mathématiques (Parité).</p>
+<p>Le concept de damier repose sur le fait que la somme des coordonnées (indices de case) change de parité à chaque case adjacente.
+- Case (0,0) -&gt; 0 (pair) -&gt; Noir
+- Case (1,0) -&gt; 1 (impair) -&gt; Blanc
+- Case (0,1) -&gt; 1 (impair) -&gt; Blanc
+- Case (1,1) -&gt; 2 (pair) -&gt; Noir</p>
+<div class="highlight"><pre><span></span><code><span class="n">taille_grille</span> <span class="o">=</span> <span class="mi">8</span>
+
+<span class="k">for</span> <span class="n">y_index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">taille_grille</span><span class="p">):</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="n">y_index</span> <span class="o">*</span> <span class="mi">30</span>
+    <span class="k">for</span> <span class="n">x_index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">taille_grille</span><span class="p">):</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">x_index</span> <span class="o">*</span> <span class="mi">30</span>
+
+        <span class="c1"># Test de parité sur la somme des indices</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">x_index</span> <span class="o">+</span> <span class="n">y_index</span><span class="p">)</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">couleur</span> <span class="o">=</span> <span class="s2">&quot;black&quot;</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">couleur</span> <span class="o">=</span> <span class="s2">&quot;white&quot;</span>
+
+        <span class="n">dessiner_pixel</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">couleur</span><span class="p">)</span>
+</code></pre></div>
+<h2 id="prolongements-possibles">Prolongements possibles</h2>
+<p>Si des élèves finissent très vite :
+1. <strong>Drapeau Français</strong> : Diviser la largeur par 3 et changer la couleur (Bleu, Blanc, Rouge) selon la valeur de <code>x_index</code>.
+2. <strong>Dégradé</strong> : Utiliser la bibliothèque Turtle pour changer la couleur RGB en fonction de <code>i</code>.</p>
 
 
 

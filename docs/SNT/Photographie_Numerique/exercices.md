@@ -17,6 +17,16 @@ On considère une image numérique de **800 pixels de large** et **600 pixels de
         *   Divisez le nombre de pixels en largeur par la largeur en pouces.
         *   Comparez le résultat obtenu avec le standard de 300 ppp pour l'impression photo.
 
+??? check "Réponse de l'Exercice 1"
+    **1. Définition de l'image :**
+    
+    *   `800 × 600 = 480 000 pixels` (soit environ 0,48 Mégapixels).
+    
+    **2. Impression et Résolution :**
+    
+    *   **Résolution** : `800 pixels / 10 pouces = 80 ppp`.
+    *   **Qualité** : 80 ppp est très inférieur au standard de **300 ppp**. La qualité sera **médiocre** (l'image sera "pixellisée").
+
 ---
 
 ## Exercice 2 : Décoder une image binaire
@@ -33,6 +43,21 @@ On a reçu une suite de bits représentant une petite image binaire de **5x5 pix
     1.  Préparez une grille de 5 lignes et 5 colonnes.
     2.  Prenez le premier groupe de 5 bits (`01110`) et remplissez la première ligne (0=Blanc, 1=Noir).
     3.  Observez le dessin global (c'est une forme géométrique simple).
+
+??? check "Réponse de l'Exercice 2"
+    **Grille décodée :**
+    
+    ```text
+    .XXX.  (01110)
+    X...X  (10001)
+    X.X.X  (10101)
+    X...X  (10001)
+    .XXX.  (01110)
+    ```
+    
+    **Forme obtenue :**
+    
+    *   La forme ressemble à un **cercle**, un **zéro**, ou la lettre **O**.
 
 ---
 
@@ -59,6 +84,21 @@ Calculez le poids de cette image (en octets, puis en Mo) dans les cas suivants :
     
     3.  Pour convertir en Mo, divisez le résultat en octets par 1 000 000.
 
+??? check "Réponse de l'Exercice 3"
+    **Nombre total de pixels :** `1024 × 1024 = 1 048 576 pixels`.
+    
+    1.  **Image binaire (1 bit/pixel) :**
+        *   `1 048 576 bits / 8 = 131 072 octets`
+        *   Soit environ **0,13 Mo**.
+    
+    2.  **Niveaux de gris (1 octet/pixel) :**
+        *   `1 048 576 × 1 = 1 048 576 octets`
+        *   Soit environ **1,05 Mo**.
+    
+    3.  **Couleurs RVB (3 octets/pixel) :**
+        *   `1 048 576 × 3 = 3 145 728 octets`
+        *   Soit environ **3,15 Mo**.
+
 ---
 
 ## Exercice 4 : Codage des Couleurs RVB
@@ -76,6 +116,14 @@ Dans le système RVB (Rouge, Vert, Bleu), chaque couleur est codée par un tripl
     *   Le **Noir** correspond à l'absence totale de lumière (toutes les composantes à 0).
     *   Le **Blanc** correspond à la lumière maximale (toutes les composantes à 255).
     *   Une couleur **pure** (Rouge, Vert ou Bleu) a une seule composante à 255 et les autres à 0.
+
+??? check "Réponse de l'Exercice 4"
+    1.  **Noir** : `(0, 0, 0)` ; **Blanc** : `(255, 255, 255)`.
+    2.  **(255, 0, 0)** correspond au **Rouge** pur.
+    3.  **(0, 255, 255)** est un mélange saturé de Vert et de Bleu, ce qui donne du **Cyan**.
+    4.  **(100, 100, 100)** :
+        *   C'est une nuance de **Gris** (car les trois composantes sont égales).
+        *   Elle est **plus sombre** que (200, 200, 200), car la quantité de lumière est plus faible (100 < 200).
 
 ---
 
@@ -99,6 +147,11 @@ Un inconnu télécharge la photo et regarde les métadonnées EXIF.
     2.  Quelle information pourrait révéler l'**adresse personnelle** d'Alice ?
     
     3.  Pensez aux **paramètres de l'appareil photo** et aux **outils de traitement d'image** qui peuvent supprimer ces données.
+
+??? check "Réponse de l'Exercice 5"
+    1.  **Informations possibles** : La date et l'heure, la localisation GPS, le modèle du smartphone, les temps d'exposition, l'utilisation du flash, etc.
+    2.  **Info critique** : Les **coordonnées GPS** (géolocalisation), car elles peuvent révéler l'adresse exacte de son domicile.
+    3.  **Protection** : Alice devrait **désactiver la géolocalisation** dans les paramètres de son appareil photo ou utiliser un logiciel pour **effacer les métadonnées** avant de partager la photo.
 ---
 
 ## Exercice 6 : Profondeur de couleur
@@ -113,6 +166,15 @@ La profondeur de couleur correspond au nombre de bits utilisés pour coder la co
     *   Pour 2 bits, les combinaisons sont 00, 01, 10, 11.
     *   Pour le RVB standard, calculez **2²⁴**.
 
+??? check "Réponse de l'Exercice 6"
+    1.  **Pour 2 bits :**
+        *   On peut afficher **4 couleurs** différentes (`2² = 4`).
+        *   Combinaisons : `00`, `01`, `10`, `11`.
+    
+    2.  **Pour le RVB (24 bits) :**
+        *   Nombre de couleurs = `2²⁴`.
+        *   Soit `16 777 216` couleurs possibles (environ 16,7 millions).
+
 ---
 
 ## Exercice 7 : Retouche d'image (Calcul)
@@ -125,3 +187,15 @@ On considère un pixel de couleur **RVB (120, 50, 200)**. On applique une retouc
 ??? tip "Indications pour l'Exercice 7"
     1.  Additionnez simplement 30 à chaque nombre : (120+30, 50+30, 200+30).
     2.  **Attention :** Une composante ne peut jamais dépasser **255**. Si le calcul donne plus (ex: 240 + 30 = 270), le résultat est "plafonné" à 255.
+
+??? check "Réponse de l'Exercice 7"
+    1.  **Pixel (120, 50, 200) + 30 :**
+        *   Rouge : `120 + 30 = 150`
+        *   Vert : `50 + 30 = 80`
+        *   Bleu : `200 + 30 = 230`
+        *   Nouvelle couleur : **(150, 80, 230)**.
+    
+    2.  **Pixel (240, 100, 40) + 30 :**
+        *   Rouge : `240 + 30 = 270`. Or, la valeur maximale est **255**.
+        *   La valeur est donc écrêtée à **255**.
+        *   Nouvelle valeur du Rouge : **255**.
