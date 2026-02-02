@@ -413,6 +413,33 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#exercice-13-capacite-de-stockage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercice 13 : Capacité de stockage
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercice-14-conversion-en-niveaux-de-gris" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercice 14 : Conversion en Niveaux de Gris
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercice-15-le-seuillage-image-binaire" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercice 15 : Le "Seuillage" (Image Binaire)
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -527,6 +554,63 @@
 <li>Tapez "48.8584 N, 2.2945 E" dans un moteur de recherche ou une carte. C'est à Paris.</li>
 <li>Si la photo est prise <em>chez le vendeur</em>, que révèle la position GPS ?</li>
 </ol>
+</details>
+<hr />
+<h2 id="exercice-13-capacite-de-stockage">Exercice 13 : Capacité de stockage</h2>
+<p><strong>Objectif :</strong> Calculer le nombre d'images que l'on peut stocker sur un support.</p>
+<p>On dispose d'une carte mémoire de <strong>4 Go</strong> (Gigaoctets).
+On souhaite y enregistrer des photos non compressées (format BMP par exemple) de définition <strong>2000 x 2000 pixels</strong> en <strong>couleurs RVB</strong> (24 bits par pixel).</p>
+<ol>
+<li>Calculez le poids d'une seule image en <strong>Mo</strong>.</li>
+<li>Combien de photos peut-on stocker sur la carte mémoire ?</li>
+<li>Si on utilise le format JPEG qui divise le poids par 10, combien de photos peut-on stocker ?</li>
+</ol>
+<details class="tip">
+<summary>Indications pour l'Exercice 13</summary>
+<ol>
+<li>Nombre de pixels = 2000 x 2000. Poids = Pixels x 3 octets. Convertissez en Mo (/ 1 000 000).</li>
+<li>Convertissez 4 Go en Mo (4000 Mo) et divisez par le poids d'une image.</li>
+<li>Multipliez simplement le résultat précédent par 10.</li>
+</ol>
+</details>
+<hr />
+<h2 id="exercice-14-conversion-en-niveaux-de-gris">Exercice 14 : Conversion en Niveaux de Gris</h2>
+<p><strong>Objectif :</strong> Comprendre comment passer de la couleur au noir et blanc.</p>
+<p>Pour transformer un pixel couleur RVB en un pixel "gris", une méthode simple consiste à faire la moyenne des trois composantes.
+Formule : <code>Gris = (Rouge + Vert + Bleu) / 3</code></p>
+<p>On a le pixel <strong>P1 (100, 50, 210)</strong>.</p>
+<ol>
+<li>Calculez la valeur de gris correspondante (arrondissez à l'entier).</li>
+<li>Quelle sera la couleur finale du pixel P1 après conversion ? (Donnez le triplet RVB).</li>
+<li>Le pixel <strong>P2 (0, 255, 0)</strong> correspond à du vert pur. Quelle sera sa valeur de gris ? Est-ce un gris clair ou foncé ?</li>
+</ol>
+<details class="tip">
+<summary>Indications pour l'Exercice 14</summary>
+<ol>
+<li>Additionnez 100 + 50 + 210 puis divisez par 3.</li>
+<li>Un pixel gris a ses trois composantes égales : (Gris, Gris, Gris).</li>
+<li>255 / 3 = 85. Comparez 85 à 128 (gris moyen) pour savoir si c'est clair ou foncé.</li>
+</ol>
+</details>
+<hr />
+<h2 id="exercice-15-le-seuillage-image-binaire">Exercice 15 : Le "Seuillage" (Image Binaire)</h2>
+<p><strong>Objectif :</strong> Transformer une image en niveaux de gris vers une image strictement Noir et Blanc (0 ou 1).</p>
+<p>Le <strong>seuillage</strong> est une technique pour ne garder que deux couleurs : Noir ou Blanc.
+On choisit un <strong>seuil</strong>, par exemple <strong>128</strong>.
+*   Si la valeur du pixel est <strong>inférieure</strong> au seuil (&lt; 128), il devient <strong>Noir (0)</strong>.
+*   Si la valeur est <strong>supérieure ou égale</strong> au seuil (&gt;= 128), il devient <strong>Blanc (255)</strong>.</p>
+<p>Appliquez ce seuil de 128 aux pixels suivants (valeurs de gris) :
+1.  Pixel A : <strong>85</strong>
+2.  Pixel B : <strong>120</strong>
+3.  Pixel C : <strong>200</strong>
+4.  Pixel D : <strong>128</strong></p>
+<details class="tip">
+<summary>Indications pour l'Exercice 15</summary>
+<ul>
+<li>Comparez chaque valeur à 128.</li>
+<li>C'est une logique "Tout ou Rien".</li>
+<li>Le pixel D vaut exactement 128, donc il devient Blanc selon la règle énoncée.</li>
+</ul>
 </details>
 
 

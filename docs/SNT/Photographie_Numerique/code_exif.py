@@ -9,22 +9,46 @@ Nécessite la bibliothèque Pillow : pip install Pillow
 from PIL import Image
 from PIL.ExifTags import TAGS, GPSTAGS
 
+def to_degrees(value):
+    """
+    Helper pour convertir un tuple (num, den) ou un IFDRational en float.
+    """
+    if isinstance(value, tuple) and len(value) == 2:
+        if value[1] == 0: 
+            return 0.0
+        return value[0] / value[1]
+    
+    try:
+        return float(value)
+    except (TypeError, ValueError):
+        return 0.0
+
 def convertir_gps(coordonnees, reference):
     """
     Convertit les coordonnées DMS (Degrés, Minutes, Secondes) en format décimal.
     """
-    if coordonnees is None:
-        return None
+    if not coordonnees or len(coordonnees) < 3:
+        return 0.0
         
-    # Extraction des valeurs (souvent des fractions ou des objets IFDRational)
-    d = float(coordonnees[0])
-    m = float(coordonnees[1])
-    s = float(coordonnees[2])
+    # Extraction des valeurs avec notre fonction helper sécurisée
+    d = to_degrees(coordonnees[0])
+    m = to_degrees(coordonnees[1])
+    s = to_degrees(coordonnees[2])
     
     decimal = d + (m / 60.0) + (s / 3600.0)
     
+    # Gestion de la direction (Nord/Sud, Est/Ouest)
+    # Parfois 'reference' est en bytes (ex: b'N')
+    if isinstance(reference, bytes):
+        try:
+            reference = reference.decode()
+        except:
+            reference = str(reference)
+            
+    reference = str(reference).upper()
+    
     # Sud ou Ouest = Valeur négative
-    if reference in ['S', 'W']:
+    if 'S' in reference or 'W' in reference:
         decimal = -decimal
         
     return decimal
@@ -52,9 +76,12 @@ def analyser_image(nom_fichier):
             
             # Cas particulier : Données GPS
             if tag_name == "GPSInfo":
-                for gps_id in value:
-                    gps_tag_name = GPSTAGS.get(gps_id, gps_id)
-                    gps_info[gps_tag_name] = value[gps_id]
+                try:
+                    for gps_id in value:
+                        gps_tag_name = GPSTAGS.get(gps_id, gps_id)
+                        gps_info[gps_tag_name] = value[gps_id]
+                except Exception as e:
+                    print(f"⚠️ Erreur lecture GPS : {e}")
             else:
                 exif_info[tag_name] = value
 
@@ -63,17 +90,24 @@ def analyser_image(nom_fichier):
         print(f"⚙️  Logiciel   : {exif_info.get('Software', 'Inconnu')}")
         
         # Affichage GPS si présent
-        if gps_info:
-            lat_dms = gps_info.get('GPSLatitude')
-            lat_ref = gps_info.get('GPSLatitudeRef')
-            lon_dms = gps_info.get('GPSLongitude')
-            lon_ref = gps_info.get('GPSLongitudeRef')
-            
-            lat_dec = convertir_gps(lat_dms, lat_ref)
-            lon_dec = convertir_gps(lon_dms, lon_ref)
-            
-            print(f"📍 Coordonnées : {lat_dec:.6f}, {lon_dec:.6f}")
-            print(f"🔗 Lien Maps   : https://www.google.com/maps?q={lat_dec},{lon_dec}")
+        # On vérifie qu'on a bien Latitude et Longitude
+        if 'GPSLatitude' in gps_info and 'GPSLongitude' in gps_info:
+            try:
+                lat_dms = gps_info.get('GPSLatitude')
+                lat_ref = gps_info.get('GPSLatitudeRef')
+                lon_dms = gps_info.get('GPSLongitude')
+                lon_ref = gps_info.get('GPSLongitudeRef')
+                
+                lat_dec = convertir_gps(lat_dms, lat_ref)
+                lon_dec = convertir_gps(lon_dms, lon_ref)
+                
+                if lat_dec != 0.0 or lon_dec != 0.0:
+                    print(f"📍 Coordonnées : {lat_dec:.6f}, {lon_dec:.6f}")
+                    print(f"🔗 Lien Maps   : https://www.google.com/maps?q={lat_dec},{lon_dec}")
+                else:
+                    print("📍 Coordonnées : Format illisible ou vide.")
+            except Exception as e:
+                print(f"⚠️ Erreur calcul coordonnées : {e}")
         else:
             print("📍 Coordonnées : Aucune donnée GPS trouvée.")
 
@@ -88,9 +122,14 @@ def nettoyer_image(nom_fichier):
     """
     try:
         img = Image.open(nom_fichier)
-        # En enregistrant sans l'argument 'exif', Pillow retire tout par défaut
+        # Supprime les données EXIF (pas de mot clé exif dans save)
+        # Mais pour être sûr, on crée une nouvelle image
+        data = list(img.getdata())
+        nouvelle_img = Image.new(img.mode, img.size)
+        nouvelle_img.putdata(data)
+        
         nouveau_nom = "CLEAN_" + nom_fichier
-        img.save(nouveau_nom)
+        nouvelle_img.save(nouveau_nom)
         print(f"✅ Image nettoyée sauvegardée sous : {nouveau_nom}")
     except Exception as e:
         print(f"⚠️ Impossible de nettoyer l'image : {e}")

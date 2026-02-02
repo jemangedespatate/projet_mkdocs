@@ -397,9 +397,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-observation" class="md-nav__link">
+  <a href="#2-execution-et-analyse" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Observation
+      2. Exécution et Analyse
     </span>
   </a>
   
@@ -411,9 +411,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#activite-3-comment-fonctionne-le-calcul-analyse" class="md-nav__link">
+  <a href="#activite-3-le-calcul-gps" class="md-nav__link">
     <span class="md-ellipsis">
-      🧮 Activité 3 : Comment fonctionne le calcul ? (Analyse)
+      🧮 Activité 3 : Le calcul GPS
     </span>
   </a>
   
@@ -439,9 +439,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#methode-2-sans-python-windows" class="md-nav__link">
+  <a href="#methode-2-comparaison-de-poids" class="md-nav__link">
     <span class="md-ellipsis">
-      Méthode 2 : Sans Python (Windows)
+      Méthode 2 : Comparaison de poids
     </span>
   </a>
   
@@ -479,14 +479,24 @@
 </ul>
 </li>
 <li>Allez sur le site <a href="https://jimpl.com/">jimpl.com</a>.</li>
-<li>Téléversez l'une des images.</li>
-<li><strong>Observez les résultats :</strong><ul>
-<li>À quelle date et heure précise la photo a-t-elle été prise ?</li>
-<li>Quel est le modèle exact de l'appareil photo ?</li>
-<li><strong>Le clou du spectacle</strong> : Trouvez les coordonnées GPS et cliquez sur le lien pour voir le lieu sur une carte. Où se trouve-t-on ?</li>
-</ul>
-</li>
+<li>Téléversez l'une des images (par exemple <code>photo_mystere.jpg</code>).</li>
 </ol>
+<div class="admonition question">
+<p class="admonition-title">Question 1</p>
+<p>Relevez les informations suivantes pour <code>photo_mystere.jpg</code> :</p>
+<ul>
+<li><strong>Date et Heure</strong> de la prise de vue : ...</li>
+<li><strong>Modèle</strong> de l'appareil photo : ...</li>
+<li><strong>Coordonnées GPS</strong> (Latitude, Longitude) : ...</li>
+</ul>
+</div>
+<div class="admonition question">
+<p class="admonition-title">Question 2</p>
+<p>Cliquez sur la carte ou le lien de localisation.</p>
+<ul>
+<li><strong>Où</strong> a été prise cette photo (Ville, Rue ou Monument) ? : ...</li>
+</ul>
+</div>
 <div class="admonition warning">
 <p class="admonition-title">Vie privée</p>
 <p>Vous venez de voir qu'une simple photo peut révéler l'endroit exact où vous étiez (votre maison, votre école, etc.). C'est pourquoi il faut être prudent avant de partager ses photos originales !</p>
@@ -498,44 +508,73 @@
 <ol>
 <li>Téléchargez le script complet : <a download="code_exif.py" href="../code_exif.py">code_exif.py</a>.</li>
 <li>Placez-le dans le même dossier que les images téléchargées.</li>
-<li>Lancez le script : il vous proposera automatiquement de choisir l'image à analyser.</li>
+<li>Ouvrez le fichier <code>code_exif.py</code> avec votre éditeur Python (Thonny, IDLE, etc.).</li>
 </ol>
-<h3 id="2-observation">2. Observation</h3>
-<p>Le script affiche les informations suivantes :</p>
+<div class="admonition question">
+<p class="admonition-title">Question 3</p>
+<p>Regardez les premières lignes du code.</p>
 <ul>
-<li>Le modèle de l'appareil.</li>
-<li>La date de la prise de vue.</li>
-<li>Les coordonnées GPS converties.</li>
-<li>Un lien Google Maps pour localiser l'image.</li>
+<li>Quelle <strong>bibliothèque</strong> Python est utilisée pour gérer les images ? (Indice : ligne <code>from ... import ...</code>) : ...</li>
 </ul>
-<div class="admonition info">
-<p class="admonition-title">Le saviez-vous ?</p>
-<p>Le script doit transformer les coordonnées GPS du format "Degrés, Minutes, Secondes" (utilisé par l'appareil) en format "Décimal" (utilisé par Google Maps).</p>
+</div>
+<h3 id="2-execution-et-analyse">2. Exécution et Analyse</h3>
+<p>Lancez le script et choisissez l'image <code>photo_mystere.jpg</code>.</p>
+<div class="admonition question">
+<p class="admonition-title">Question 4</p>
+<p>Recopiez les informations affichées par le script dans la console :</p>
+<ul>
+<li>Modèle : ...</li>
+<li>Date : ...</li>
+<li>Lien Google Maps : ...</li>
+</ul>
+</div>
+<div class="admonition question">
+<p class="admonition-title">Question 5</p>
+<p>Le script affiche-t-il exactement la même localisation que le site Jimpl.com ? Si non, est-ce proche ?</p>
 </div>
 <hr />
-<h2 id="activite-3-comment-fonctionne-le-calcul-analyse">🧮 Activité 3 : Comment fonctionne le calcul ? (Analyse)</h2>
-<p>Regardez la fonction <code>convertir_gps</code> dans le fichier <code>code_exif.py</code>. L'appareil photo ne stocke pas un simple nombre mais trois valeurs (Degrés, Minutes, Secondes).</p>
-<p>La formule mathématique utilisée par le script est :
-<script type="math/tex; mode=display"> \text{Décimal} = \text{Degré} + \frac{\text{Minute}}{60} + \frac{\text{Seconde}}{3600} </script>
-</p>
-<p>Si vous avez une photo avec des données GPS, vérifiez que le lien généré par le script correspond bien au site où la photo a été prise.</p>
+<h2 id="activite-3-le-calcul-gps">🧮 Activité 3 : Le calcul GPS</h2>
+<p>Les coordonnées GPS stockées dans l'image sont souvent en <strong>Degrés, Minutes, Secondes (DMS)</strong> (ex: 48° 51' 24").
+Pour les utiliser sur Google Maps, il faut les convertir en <strong>Degrés Décimaux (DD)</strong> (ex: 48.8566).
+La formule est :</p>
+<p><strong>Décimal = Degré + (Minute / 60) + (Seconde / 3600)</strong></p>
+<div class="admonition question">
+<p class="admonition-title">Question 6</p>
+<p>À vous de calculer !
+Convertissez la coordonnée suivante : <strong>45° 30' 36"</strong></p>
+<ul>
+<li>Calcul : ...</li>
+<li>Calcul intermédiaire : ...</li>
+<li>Résultat décimal : ...</li>
+</ul>
+</div>
 <hr />
 <h2 id="activite-4-effacer-les-traces">🧹 Activité 4 : Effacer les traces</h2>
-<p>Il est important de savoir "nettoyer" ses photos avant de les envoyer ou de les poster.</p>
+<p>Il est important de savoir "nettoyer" ses photos avant de les publier.</p>
 <h3 id="methode-1-avec-le-script-python">Méthode 1 : Avec le script Python</h3>
 <ol>
 <li>Lancez <code>code_exif.py</code>.</li>
 <li>Après l'analyse, répondez <code>o</code> (oui) à la question <em>"Voulez-vous créer une version 'propre' ?"</em>.</li>
-<li>Un nouveau fichier <code>CLEAN_...</code> sera créé. Analysez ce nouveau fichier avec le script : que remarquez-vous ?</li>
+<li>Un nouveau fichier (commençant par <code>CLEAN_</code>) est créé.</li>
 </ol>
-<h3 id="methode-2-sans-python-windows">Méthode 2 : Sans Python (Windows)</h3>
-<ol>
-<li>Faites un <strong>clic droit</strong> sur votre image &gt; <strong>Propriétés</strong>.</li>
-<li>Allez dans l'onglet <strong>Détails</strong>.</li>
-<li>Tout en bas, cliquez sur <strong>"Supprimer les propriétés et les informations personnelles"</strong>.</li>
-<li>Choisissez "Créer une copie en supprimant toutes les propriétés possibles".</li>
-<li>Comparez le poids (en octets) de l'image originale et de l'image nettoyée.</li>
-</ol>
+<div class="admonition question">
+<p class="admonition-title">Question 7</p>
+<p>Analysez ce nouveau fichier <code>CLEAN_...</code> avec le site Jimpl.com ou le script.</p>
+<ul>
+<li>Trouvez-vous encore des données GPS ?</li>
+<li>Trouvez-vous encore la date de prise de vue ?</li>
+</ul>
+</div>
+<h3 id="methode-2-comparaison-de-poids">Méthode 2 : Comparaison de poids</h3>
+<p>Regardez la taille (en octets ou Ko) du fichier original et du fichier nettoyé.</p>
+<div class="admonition question">
+<p class="admonition-title">Question 8</p>
+<ul>
+<li>Taille de l'image originale : ...</li>
+<li>Taille de l'image nettoyée : ...</li>
+<li>Quelle est la différence de taille ? Pourquoi le fichier est-il plus léger ?</li>
+</ul>
+</div>
 
 
 

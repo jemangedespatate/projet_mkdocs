@@ -11,11 +11,19 @@ Pour cette enquête, nous allons utiliser une image de test contenant des donné
     - [photo_mystere_2.jpg](../img/photo_mystere_2.jpg){:download="photo_mystere_2.jpg"}
     - [photo_mystere_3.jpg](../img/photo_mystere_3.jpg){:download="photo_mystere_3.jpg"}
 2. Allez sur le site [jimpl.com](https://jimpl.com/).
-3. Téléversez l'une des images.
-4. **Observez les résultats :**
-    - À quelle date et heure précise la photo a-t-elle été prise ?
-    - Quel est le modèle exact de l'appareil photo ?
-    - **Le clou du spectacle** : Trouvez les coordonnées GPS et cliquez sur le lien pour voir le lieu sur une carte. Où se trouve-t-on ?
+3. Téléversez l'une des images (par exemple `photo_mystere.jpg`).
+
+!!! question "Question 1"
+    Relevez les informations suivantes pour `photo_mystere.jpg` :
+
+    *   **Date et Heure** de la prise de vue : ...
+    *   **Modèle** de l'appareil photo : ...
+    *   **Coordonnées GPS** (Latitude, Longitude) : ...
+
+!!! question "Question 2"
+    Cliquez sur la carte ou le lien de localisation.
+
+    *   **Où** a été prise cette photo (Ville, Rue ou Monument) ? : ...
 
 !!! warning "Vie privée"
     Vous venez de voir qu'une simple photo peut révéler l'endroit exact où vous étiez (votre maison, votre école, etc.). C'est pourquoi il faut être prudent avant de partager ses photos originales !
@@ -27,47 +35,72 @@ Pour cette enquête, nous allons utiliser une image de test contenant des donné
 Nous allons maintenant utiliser le script **code_exif.py** pour automatiser cette lecture.
 
 ### 1. Préparation
+
 1. Téléchargez le script complet : [code_exif.py](code_exif.py){:download="code_exif.py"}.
 2. Placez-le dans le même dossier que les images téléchargées.
-3. Lancez le script : il vous proposera automatiquement de choisir l'image à analyser.
+3. Ouvrez le fichier `code_exif.py` avec votre éditeur Python (Thonny, IDLE, etc.).
 
-### 2. Observation
-Le script affiche les informations suivantes :
+!!! question "Question 3"
+    Regardez les premières lignes du code.
+ 
+    *   Quelle **bibliothèque** Python est utilisée pour gérer les images ? (Indice : ligne `from ... import ...`) : ...
 
-- Le modèle de l'appareil.
-- La date de la prise de vue.
-- Les coordonnées GPS converties.
-- Un lien Google Maps pour localiser l'image.
+### 2. Exécution et Analyse
+Lancez le script et choisissez l'image `photo_mystere.jpg`.
 
-!!! info "Le saviez-vous ?"
-    Le script doit transformer les coordonnées GPS du format "Degrés, Minutes, Secondes" (utilisé par l'appareil) en format "Décimal" (utilisé par Google Maps).
+!!! question "Question 4"
+    Recopiez les informations affichées par le script dans la console :
+
+    *   Modèle : ...
+    *   Date : ...
+    *   Lien Google Maps : ...
+
+!!! question "Question 5"
+    Le script affiche-t-il exactement la même localisation que le site Jimpl.com ? Si non, est-ce proche ?
 
 ---
 
-## 🧮 Activité 3 : Comment fonctionne le calcul ? (Analyse)
+## 🧮 Activité 3 : Le calcul GPS
 
-Regardez la fonction `convertir_gps` dans le fichier `code_exif.py`. L'appareil photo ne stocke pas un simple nombre mais trois valeurs (Degrés, Minutes, Secondes).
+Les coordonnées GPS stockées dans l'image sont souvent en **Degrés, Minutes, Secondes (DMS)** (ex: 48° 51' 24").
+Pour les utiliser sur Google Maps, il faut les convertir en **Degrés Décimaux (DD)** (ex: 48.8566).
+La formule est :
 
-La formule mathématique utilisée par le script est :
-$$ \text{Décimal} = \text{Degré} + \frac{\text{Minute}}{60} + \frac{\text{Seconde}}{3600} $$
+**Décimal = Degré + (Minute / 60) + (Seconde / 3600)**
 
-Si vous avez une photo avec des données GPS, vérifiez que le lien généré par le script correspond bien au site où la photo a été prise.
+!!! question "Question 6"
+    À vous de calculer !
+    Convertissez la coordonnée suivante : **45° 30' 36"**
+
+    *   Calcul : ...
+    *   Calcul intermédiaire : ...
+    *   Résultat décimal : ...
 
 ---
 
 ## 🧹 Activité 4 : Effacer les traces
 
-Il est important de savoir "nettoyer" ses photos avant de les envoyer ou de les poster.
+Il est important de savoir "nettoyer" ses photos avant de les publier.
 
 ### Méthode 1 : Avec le script Python
+
 1. Lancez `code_exif.py`.
 2. Après l'analyse, répondez `o` (oui) à la question *"Voulez-vous créer une version 'propre' ?"*.
-3. Un nouveau fichier `CLEAN_...` sera créé. Analysez ce nouveau fichier avec le script : que remarquez-vous ?
+3. Un nouveau fichier (commençant par `CLEAN_`) est créé.
 
-### Méthode 2 : Sans Python (Windows)
-1. Faites un **clic droit** sur votre image > **Propriétés**.
-2. Allez dans l'onglet **Détails**.
-3. Tout en bas, cliquez sur **"Supprimer les propriétés et les informations personnelles"**.
-4. Choisissez "Créer une copie en supprimant toutes les propriétés possibles".
-5. Comparez le poids (en octets) de l'image originale et de l'image nettoyée.
+!!! question "Question 7"
+    Analysez ce nouveau fichier `CLEAN_...` avec le site Jimpl.com ou le script.
+
+    *   Trouvez-vous encore des données GPS ?
+    *   Trouvez-vous encore la date de prise de vue ?
+
+### Méthode 2 : Comparaison de poids
+Regardez la taille (en octets ou Ko) du fichier original et du fichier nettoyé.
+
+!!! question "Question 8"
+
+    *   Taille de l'image originale : ...
+    *   Taille de l'image nettoyée : ...
+    *   Quelle est la différence de taille ? Pourquoi le fichier est-il plus léger ?
+
 

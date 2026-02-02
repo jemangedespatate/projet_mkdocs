@@ -94,3 +94,60 @@ Voici un extrait de métadonnées EXIF d'une photo :
     1. 1/1000 de seconde, c'est très rapide. Cela permet de "figer" le mouvement.
     2. Tapez "48.8584 N, 2.2945 E" dans un moteur de recherche ou une carte. C'est à Paris.
     3. Si la photo est prise *chez le vendeur*, que révèle la position GPS ?
+
+---
+
+## Exercice 13 : Capacité de stockage
+**Objectif :** Calculer le nombre d'images que l'on peut stocker sur un support.
+
+On dispose d'une carte mémoire de **4 Go** (Gigaoctets).
+On souhaite y enregistrer des photos non compressées (format BMP par exemple) de définition **2000 x 2000 pixels** en **couleurs RVB** (24 bits par pixel).
+
+1.  Calculez le poids d'une seule image en **Mo**.
+2.  Combien de photos peut-on stocker sur la carte mémoire ?
+3.  Si on utilise le format JPEG qui divise le poids par 10, combien de photos peut-on stocker ?
+
+??? tip "Indications pour l'Exercice 13"
+    1.  Nombre de pixels = 2000 x 2000. Poids = Pixels x 3 octets. Convertissez en Mo (/ 1 000 000).
+    2.  Convertissez 4 Go en Mo (4000 Mo) et divisez par le poids d'une image.
+    3.  Multipliez simplement le résultat précédent par 10.
+
+---
+
+## Exercice 14 : Conversion en Niveaux de Gris
+**Objectif :** Comprendre comment passer de la couleur au noir et blanc.
+
+Pour transformer un pixel couleur RVB en un pixel "gris", une méthode simple consiste à faire la moyenne des trois composantes.
+Formule : `Gris = (Rouge + Vert + Bleu) / 3`
+
+On a le pixel **P1 (100, 50, 210)**.
+
+1.  Calculez la valeur de gris correspondante (arrondissez à l'entier).
+2.  Quelle sera la couleur finale du pixel P1 après conversion ? (Donnez le triplet RVB).
+3.  Le pixel **P2 (0, 255, 0)** correspond à du vert pur. Quelle sera sa valeur de gris ? Est-ce un gris clair ou foncé ?
+
+??? tip "Indications pour l'Exercice 14"
+    1.  Additionnez 100 + 50 + 210 puis divisez par 3.
+    2.  Un pixel gris a ses trois composantes égales : (Gris, Gris, Gris).
+    3.  255 / 3 = 85. Comparez 85 à 128 (gris moyen) pour savoir si c'est clair ou foncé.
+
+---
+
+## Exercice 15 : Le "Seuillage" (Image Binaire)
+**Objectif :** Transformer une image en niveaux de gris vers une image strictement Noir et Blanc (0 ou 1).
+
+Le **seuillage** est une technique pour ne garder que deux couleurs : Noir ou Blanc.
+On choisit un **seuil**, par exemple **128**.
+*   Si la valeur du pixel est **inférieure** au seuil (< 128), il devient **Noir (0)**.
+*   Si la valeur est **supérieure ou égale** au seuil (>= 128), il devient **Blanc (255)**.
+
+Appliquez ce seuil de 128 aux pixels suivants (valeurs de gris) :
+1.  Pixel A : **85**
+2.  Pixel B : **120**
+3.  Pixel C : **200**
+4.  Pixel D : **128**
+
+??? tip "Indications pour l'Exercice 15"
+    *   Comparez chaque valeur à 128.
+    *   C'est une logique "Tout ou Rien".
+    *   Le pixel D vaut exactement 128, donc il devient Blanc selon la règle énoncée.
