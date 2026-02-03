@@ -18,7 +18,7 @@
     
     
       
-        <title>travaux pratique - Mr Leal SNT/NSI</title>
+        <title>💻 TP - Coordonnées GPS et Trames NMEA - Mr Leal SNT/NSI</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#travaux-pratique" class="md-skip">
+        <a href="#tp-coordonnees-gps-et-trames-nmea" class="md-skip">
           Skip to content
         </a>
       
@@ -106,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              travaux pratique
+              💻 TP - Coordonnées GPS et Trames NMEA
             
           </span>
         </div>
@@ -362,6 +362,248 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#objectifs" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 Objectifs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequis" class="md-nav__link">
+    <span class="md-ellipsis">
+      📋 Prérequis
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#activite-1-exploration-de-coordonnees-gps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Activité 1 : Exploration de coordonnées GPS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Activité 1 : Exploration de coordonnées GPS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#etape-1-localisation-de-lieux-celebres" class="md-nav__link">
+    <span class="md-ellipsis">
+      Étape 1 : Localisation de lieux célèbres
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etape-2-calcul-de-distances" class="md-nav__link">
+    <span class="md-ellipsis">
+      Étape 2 : Calcul de distances
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#activite-2-conversion-de-coordonnees" class="md-nav__link">
+    <span class="md-ellipsis">
+      Activité 2 : Conversion de coordonnées
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Activité 2 : Conversion de coordonnées">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#etape-1-conversion-manuelle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Étape 1 : Conversion manuelle
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etape-2-verification-avec-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      Étape 2 : Vérification avec Python
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#activite-3-decodage-de-trames-nmea" class="md-nav__link">
+    <span class="md-ellipsis">
+      Activité 3 : Décodage de trames NMEA
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Activité 3 : Décodage de trames NMEA">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#etape-1-analyse-manuelle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Étape 1 : Analyse manuelle
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etape-2-decodeur-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      Étape 2 : Décodeur Python
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#activite-4-conversion-dm-decimal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Activité 4 : Conversion DM → Décimal
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Activité 4 : Conversion DM → Décimal">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#etape-1-comprendre-le-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      Étape 1 : Comprendre le format
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etape-2-fonction-de-conversion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Étape 2 : Fonction de conversion
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#activite-5-programme-complet-danalyse-gps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Activité 5 : Programme complet d'analyse GPS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Activité 5 : Programme complet d'analyse GPS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objectif" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objectif
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#code-a-completer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code à compléter
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#activite-6-metadonnees-gps-dans-les-photos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Activité 6 : Métadonnées GPS dans les photos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Activité 6 : Métadonnées GPS dans les photos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objectif_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objectif
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#code-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code Python
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pour-aller-plus-loin" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎓 Pour aller plus loin
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#compte-rendu" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 Compte-rendu
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -375,7 +617,482 @@
                   
 
 
-<h1 id="travaux-pratique">travaux pratique</h1>
+<h1 id="tp-coordonnees-gps-et-trames-nmea">💻 TP - Coordonnées GPS et Trames NMEA</h1>
+<h2 id="objectifs">🎯 Objectifs</h2>
+<p>Dans ce TP, vous allez :</p>
+<ul>
+<li>Manipuler des coordonnées GPS</li>
+<li>Décoder des trames NMEA</li>
+<li>Créer un programme Python pour analyser des données GPS</li>
+<li>Visualiser des positions sur une carte</li>
+</ul>
+<h2 id="prerequis">📋 Prérequis</h2>
+<ul>
+<li>Connaissances de base en Python</li>
+<li>Compréhension du format NMEA (voir cours)</li>
+<li>Accès à Internet pour utiliser les outils en ligne</li>
+</ul>
+<h2 id="activite-1-exploration-de-coordonnees-gps">Activité 1 : Exploration de coordonnées GPS</h2>
+<h3 id="etape-1-localisation-de-lieux-celebres">Étape 1 : Localisation de lieux célèbres</h3>
+<p>Utilisez Google Maps pour trouver les coordonnées GPS des lieux suivants et complétez le tableau :</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Lieu</th>
+<th style="text-align: center;">Latitude</th>
+<th style="text-align: center;">Longitude</th>
+<th style="text-align: center;">Pays</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Colisée (Rome)</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Big Ben (Londres)</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Taj Mahal (Inde)</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Christ Rédempteur (Rio)</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Opéra de Sydney</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Astuce</p>
+<p>Sur Google Maps, faites un clic droit sur le lieu et sélectionnez "Plus d'infos sur cet endroit" pour voir les coordonnées.</p>
+</div>
+<h3 id="etape-2-calcul-de-distances">Étape 2 : Calcul de distances</h3>
+<p>Utilisez l'outil <a href="https://www.lexilogos.com/calcul_distances.htm">Lexilogos</a> pour calculer :</p>
+<ol>
+<li>La distance entre le Colisée et la Tour Eiffel</li>
+<li>La distance entre Big Ben et le Taj Mahal</li>
+<li>La distance entre votre lycée et l'Opéra de Sydney</li>
+</ol>
+<div class="admonition question">
+<p class="admonition-title">Question</p>
+<p>Quel est le lieu le plus éloigné de votre lycée parmi ceux listés ci-dessus ?</p>
+</div>
+<h2 id="activite-2-conversion-de-coordonnees">Activité 2 : Conversion de coordonnées</h2>
+<h3 id="etape-1-conversion-manuelle">Étape 1 : Conversion manuelle</h3>
+<p>Convertissez les coordonnées suivantes du format décimal au format degrés-minutes (DM) :</p>
+<ol>
+<li><strong>Mont Blanc</strong> : 45.8326° N, 6.8652° E</li>
+<li><strong>Mont Fuji</strong> : 35.3606° N, 138.7274° E</li>
+<li><strong>Kilimandjaro</strong> : -3.0674° S, 37.3556° E</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Rappel</p>
+<p><strong>Formule</strong> : </p>
+<ul>
+<li>Degrés = partie entière</li>
+<li>Minutes = partie décimale × 60</li>
+</ul>
+</div>
+<h3 id="etape-2-verification-avec-python">Étape 2 : Vérification avec Python</h3>
+<p>Créez un programme Python pour automatiser la conversion :</p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">decimal_vers_dm</span><span class="p">(</span><span class="n">coord_decimal</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Convertit une coordonnée décimale en format degrés-minutes</span>
+
+<span class="sd">    Paramètre:</span>
+<span class="sd">        coord_decimal (float): coordonnée en format décimal</span>
+
+<span class="sd">    Retour:</span>
+<span class="sd">        tuple: (degrés, minutes)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># À compléter</span>
+    <span class="k">pass</span>
+
+<span class="c1"># Test</span>
+<span class="n">lat_decimal</span> <span class="o">=</span> <span class="mf">45.8326</span>
+<span class="n">degres</span><span class="p">,</span> <span class="n">minutes</span> <span class="o">=</span> <span class="n">decimal_vers_dm</span><span class="p">(</span><span class="n">lat_decimal</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">lat_decimal</span><span class="si">}</span><span class="s2">° = </span><span class="si">{</span><span class="n">degres</span><span class="si">}</span><span class="s2">° </span><span class="si">{</span><span class="n">minutes</span><span class="si">}</span><span class="s2">&#39;&quot;</span><span class="p">)</span>
+</code></pre></div>
+<details class="tip">
+<summary>Indice</summary>
+<ul>
+<li>Utilisez <code>int()</code> pour obtenir la partie entière</li>
+<li>La partie décimale = coord_decimal - partie_entiere</li>
+<li>Multipliez la partie décimale par 60</li>
+</ul>
+</details>
+<details class="check">
+<summary>Solution</summary>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">decimal_vers_dm</span><span class="p">(</span><span class="n">coord_decimal</span><span class="p">):</span>
+    <span class="n">degres</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">coord_decimal</span><span class="p">)</span>
+    <span class="n">minutes</span> <span class="o">=</span> <span class="p">(</span><span class="n">coord_decimal</span> <span class="o">-</span> <span class="n">degres</span><span class="p">)</span> <span class="o">*</span> <span class="mi">60</span>
+    <span class="k">return</span> <span class="n">degres</span><span class="p">,</span> <span class="n">minutes</span>
+
+<span class="c1"># Test</span>
+<span class="n">lat_decimal</span> <span class="o">=</span> <span class="mf">45.8326</span>
+<span class="n">degres</span><span class="p">,</span> <span class="n">minutes</span> <span class="o">=</span> <span class="n">decimal_vers_dm</span><span class="p">(</span><span class="n">lat_decimal</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">lat_decimal</span><span class="si">}</span><span class="s2">° = </span><span class="si">{</span><span class="n">degres</span><span class="si">}</span><span class="s2">° </span><span class="si">{</span><span class="n">minutes</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&#39;&quot;</span><span class="p">)</span>
+<span class="c1"># Résultat : 45.8326° = 45° 49.9560&#39;</span>
+</code></pre></div>
+</details>
+<h2 id="activite-3-decodage-de-trames-nmea">Activité 3 : Décodage de trames NMEA</h2>
+<h3 id="etape-1-analyse-manuelle">Étape 1 : Analyse manuelle</h3>
+<p>Analysez la trame NMEA suivante :</p>
+<div class="highlight"><pre><span></span><code>$GPGGA,123519.487,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*47
+</code></pre></div>
+<p>Complétez le tableau :</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Champ</th>
+<th style="text-align: center;">Valeur</th>
+<th style="text-align: left;">Signification</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Type de trame</td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Heure UTC</td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Latitude (DM)</td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Latitude (décimal)</td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Longitude (DM)</td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Longitude (décimal)</td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Nombre de satellites</td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Altitude</td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Astuce</p>
+<p>Utilisez le site <a href="https://rl.se/gprmc">NMEA Decoder</a> pour vérifier vos réponses.</p>
+</div>
+<h3 id="etape-2-decodeur-python">Étape 2 : Décodeur Python</h3>
+<p>Créez un programme Python pour décoder automatiquement une trame GPGGA :</p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">decoder_gpgga</span><span class="p">(</span><span class="n">trame</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Décode une trame NMEA GPGGA</span>
+
+<span class="sd">    Paramètre:</span>
+<span class="sd">        trame (str): trame NMEA complète</span>
+
+<span class="sd">    Retour:</span>
+<span class="sd">        dict: dictionnaire contenant les informations décodées</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># Supprimer le $ et le checksum (*XX)</span>
+    <span class="n">trame</span> <span class="o">=</span> <span class="n">trame</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">trame</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;$&#39;</span><span class="p">):</span>
+        <span class="n">trame</span> <span class="o">=</span> <span class="n">trame</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
+    <span class="k">if</span> <span class="s1">&#39;*&#39;</span> <span class="ow">in</span> <span class="n">trame</span><span class="p">:</span>
+        <span class="n">trame</span> <span class="o">=</span> <span class="n">trame</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;*&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+
+    <span class="c1"># Séparer les champs</span>
+    <span class="n">champs</span> <span class="o">=</span> <span class="n">trame</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
+
+    <span class="c1"># Extraire les informations</span>
+    <span class="n">info</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="n">info</span><span class="p">[</span><span class="s1">&#39;type&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">champs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">info</span><span class="p">[</span><span class="s1">&#39;heure&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">champs</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+    <span class="n">info</span><span class="p">[</span><span class="s1">&#39;latitude_dm&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">champs</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+    <span class="n">info</span><span class="p">[</span><span class="s1">&#39;lat_direction&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">champs</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+    <span class="n">info</span><span class="p">[</span><span class="s1">&#39;longitude_dm&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">champs</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
+    <span class="n">info</span><span class="p">[</span><span class="s1">&#39;lon_direction&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">champs</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">info</span><span class="p">[</span><span class="s1">&#39;nb_satellites&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">champs</span><span class="p">[</span><span class="mi">7</span><span class="p">]</span>
+    <span class="n">info</span><span class="p">[</span><span class="s1">&#39;altitude&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">champs</span><span class="p">[</span><span class="mi">9</span><span class="p">]</span>
+
+    <span class="k">return</span> <span class="n">info</span>
+
+<span class="c1"># Test</span>
+<span class="n">trame</span> <span class="o">=</span> <span class="s2">&quot;$GPGGA,123519.487,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*47&quot;</span>
+<span class="n">resultat</span> <span class="o">=</span> <span class="n">decoder_gpgga</span><span class="p">(</span><span class="n">trame</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=== Décodage de la trame GPGGA ===&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Type : </span><span class="si">{</span><span class="n">resultat</span><span class="p">[</span><span class="s1">&#39;type&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Heure UTC : </span><span class="si">{</span><span class="n">resultat</span><span class="p">[</span><span class="s1">&#39;heure&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Latitude : </span><span class="si">{</span><span class="n">resultat</span><span class="p">[</span><span class="s1">&#39;latitude_dm&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">resultat</span><span class="p">[</span><span class="s1">&#39;lat_direction&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Longitude : </span><span class="si">{</span><span class="n">resultat</span><span class="p">[</span><span class="s1">&#39;longitude_dm&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">resultat</span><span class="p">[</span><span class="s1">&#39;lon_direction&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Satellites : </span><span class="si">{</span><span class="n">resultat</span><span class="p">[</span><span class="s1">&#39;nb_satellites&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Altitude : </span><span class="si">{</span><span class="n">resultat</span><span class="p">[</span><span class="s1">&#39;altitude&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2"> m&quot;</span><span class="p">)</span>
+</code></pre></div>
+<div class="admonition question">
+<p class="admonition-title">Question</p>
+<p>Testez votre programme avec les trames suivantes. Identifiez les villes correspondantes.</p>
+<div class="highlight"><pre><span></span><code>$GPGGA,064036.289,4836.5375,N,00740.9373,E,1,04,3.2,200.2,M,,,,0000*0E
+$GPGGA,175737.303,4449.833,N,00034.772,W,1,04,1.0,0.0,M,0.0,M,,*7C
+$GPGGA,175738.303,4545.175,N,00450.039,E,1,12,1.0,0.0,M,0.0,M,,*69
+</code></pre></div>
+</div>
+<h2 id="activite-4-conversion-dm-decimal">Activité 4 : Conversion DM → Décimal</h2>
+<h3 id="etape-1-comprendre-le-format">Étape 1 : Comprendre le format</h3>
+<p>Dans le format NMEA, les coordonnées sont au format DDMM.MMMM :</p>
+<ul>
+<li><strong>DD</strong> = degrés (2 chiffres pour la latitude, 3 pour la longitude)</li>
+<li><strong>MM.MMMM</strong> = minutes</li>
+</ul>
+<p><strong>Exemple</strong> : 4807.038 = 48° 07.038'</p>
+<h3 id="etape-2-fonction-de-conversion">Étape 2 : Fonction de conversion</h3>
+<p>Complétez la fonction suivante :</p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">dm_vers_decimal</span><span class="p">(</span><span class="n">coord_dm</span><span class="p">,</span> <span class="n">est_longitude</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Convertit une coordonnée NMEA (DDMM.MMMM) en format décimal</span>
+
+<span class="sd">    Paramètres:</span>
+<span class="sd">        coord_dm (str): coordonnée au format DDMM.MMMM</span>
+<span class="sd">        est_longitude (bool): True si c&#39;est une longitude (3 chiffres pour les degrés)</span>
+
+<span class="sd">    Retour:</span>
+<span class="sd">        float: coordonnée en format décimal</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># À compléter</span>
+    <span class="k">pass</span>
+
+<span class="c1"># Test</span>
+<span class="n">lat_nmea</span> <span class="o">=</span> <span class="s2">&quot;4807.038&quot;</span>
+<span class="n">lat_decimal</span> <span class="o">=</span> <span class="n">dm_vers_decimal</span><span class="p">(</span><span class="n">lat_nmea</span><span class="p">,</span> <span class="n">est_longitude</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">lat_nmea</span><span class="si">}</span><span class="s2"> = </span><span class="si">{</span><span class="n">lat_decimal</span><span class="si">}</span><span class="s2">°&quot;</span><span class="p">)</span>
+</code></pre></div>
+<details class="tip">
+<summary>Indice</summary>
+<ol>
+<li>Si c'est une longitude, les 3 premiers caractères sont les degrés, sinon les 2 premiers</li>
+<li>Le reste représente les minutes</li>
+<li>Formule : décimal = degrés + (minutes / 60)</li>
+</ol>
+</details>
+<details class="check">
+<summary>Solution</summary>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">dm_vers_decimal</span><span class="p">(</span><span class="n">coord_dm</span><span class="p">,</span> <span class="n">est_longitude</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">est_longitude</span><span class="p">:</span>
+        <span class="n">degres</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">coord_dm</span><span class="p">[:</span><span class="mi">3</span><span class="p">])</span>
+        <span class="n">minutes</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">coord_dm</span><span class="p">[</span><span class="mi">3</span><span class="p">:])</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">degres</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">coord_dm</span><span class="p">[:</span><span class="mi">2</span><span class="p">])</span>
+        <span class="n">minutes</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">coord_dm</span><span class="p">[</span><span class="mi">2</span><span class="p">:])</span>
+
+    <span class="n">decimal</span> <span class="o">=</span> <span class="n">degres</span> <span class="o">+</span> <span class="p">(</span><span class="n">minutes</span> <span class="o">/</span> <span class="mi">60</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">decimal</span>
+
+<span class="c1"># Test</span>
+<span class="n">lat_nmea</span> <span class="o">=</span> <span class="s2">&quot;4807.038&quot;</span>
+<span class="n">lat_decimal</span> <span class="o">=</span> <span class="n">dm_vers_decimal</span><span class="p">(</span><span class="n">lat_nmea</span><span class="p">,</span> <span class="n">est_longitude</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">lat_nmea</span><span class="si">}</span><span class="s2"> = </span><span class="si">{</span><span class="n">lat_decimal</span><span class="si">:</span><span class="s2">.6f</span><span class="si">}</span><span class="s2">°&quot;</span><span class="p">)</span>
+<span class="c1"># Résultat : 4807.038 = 48.117300°</span>
+</code></pre></div>
+</details>
+<h2 id="activite-5-programme-complet-danalyse-gps">Activité 5 : Programme complet d'analyse GPS</h2>
+<h3 id="objectif">Objectif</h3>
+<p>Créez un programme complet qui :</p>
+<ol>
+<li>Lit une trame NMEA GPGGA</li>
+<li>Décode les informations</li>
+<li>Convertit les coordonnées en format décimal</li>
+<li>Affiche un résumé formaté</li>
+</ol>
+<h3 id="code-a-completer">Code à compléter</h3>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">decoder_et_convertir_gpgga</span><span class="p">(</span><span class="n">trame</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Décode une trame GPGGA et convertit les coordonnées en décimal</span>
+
+<span class="sd">    Paramètre:</span>
+<span class="sd">        trame (str): trame NMEA complète</span>
+
+<span class="sd">    Retour:</span>
+<span class="sd">        dict: informations décodées avec coordonnées décimales</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># 1. Décoder la trame (réutiliser la fonction decoder_gpgga)</span>
+    <span class="n">info</span> <span class="o">=</span> <span class="n">decoder_gpgga</span><span class="p">(</span><span class="n">trame</span><span class="p">)</span>
+
+    <span class="c1"># 2. Convertir latitude</span>
+    <span class="n">lat_decimal</span> <span class="o">=</span> <span class="n">dm_vers_decimal</span><span class="p">(</span><span class="n">info</span><span class="p">[</span><span class="s1">&#39;latitude_dm&#39;</span><span class="p">],</span> <span class="n">est_longitude</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">info</span><span class="p">[</span><span class="s1">&#39;lat_direction&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;S&#39;</span><span class="p">:</span>
+        <span class="n">lat_decimal</span> <span class="o">=</span> <span class="o">-</span><span class="n">lat_decimal</span>
+
+    <span class="c1"># 3. Convertir longitude</span>
+    <span class="n">lon_decimal</span> <span class="o">=</span> <span class="n">dm_vers_decimal</span><span class="p">(</span><span class="n">info</span><span class="p">[</span><span class="s1">&#39;longitude_dm&#39;</span><span class="p">],</span> <span class="n">est_longitude</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">info</span><span class="p">[</span><span class="s1">&#39;lon_direction&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;W&#39;</span><span class="p">:</span>
+        <span class="n">lon_decimal</span> <span class="o">=</span> <span class="o">-</span><span class="n">lon_decimal</span>
+
+    <span class="c1"># 4. Ajouter les coordonnées décimales</span>
+    <span class="n">info</span><span class="p">[</span><span class="s1">&#39;latitude_decimal&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">lat_decimal</span>
+    <span class="n">info</span><span class="p">[</span><span class="s1">&#39;longitude_decimal&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">lon_decimal</span>
+
+    <span class="k">return</span> <span class="n">info</span>
+
+<span class="k">def</span> <span class="nf">afficher_position</span><span class="p">(</span><span class="n">info</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Affiche les informations GPS de manière formatée</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="s2">&quot;=&quot;</span><span class="o">*</span><span class="mi">50</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;📍 POSITION GPS&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=&quot;</span><span class="o">*</span><span class="mi">50</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;🕐 Heure UTC     : </span><span class="si">{</span><span class="n">info</span><span class="p">[</span><span class="s1">&#39;heure&#39;</span><span class="p">][:</span><span class="mi">2</span><span class="p">]</span><span class="si">}</span><span class="s2">:</span><span class="si">{</span><span class="n">info</span><span class="p">[</span><span class="s1">&#39;heure&#39;</span><span class="p">][</span><span class="mi">2</span><span class="p">:</span><span class="mi">4</span><span class="p">]</span><span class="si">}</span><span class="s2">:</span><span class="si">{</span><span class="n">info</span><span class="p">[</span><span class="s1">&#39;heure&#39;</span><span class="p">][</span><span class="mi">4</span><span class="p">:]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;🌍 Latitude      : </span><span class="si">{</span><span class="n">info</span><span class="p">[</span><span class="s1">&#39;latitude_dm&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">info</span><span class="p">[</span><span class="s1">&#39;lat_direction&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2"> (</span><span class="si">{</span><span class="n">info</span><span class="p">[</span><span class="s1">&#39;latitude_decimal&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">.6f</span><span class="si">}</span><span class="s2">°)&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;🌍 Longitude     : </span><span class="si">{</span><span class="n">info</span><span class="p">[</span><span class="s1">&#39;longitude_dm&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">info</span><span class="p">[</span><span class="s1">&#39;lon_direction&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2"> (</span><span class="si">{</span><span class="n">info</span><span class="p">[</span><span class="s1">&#39;longitude_decimal&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">.6f</span><span class="si">}</span><span class="s2">°)&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;🛰️  Satellites    : </span><span class="si">{</span><span class="n">info</span><span class="p">[</span><span class="s1">&#39;nb_satellites&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;⛰️  Altitude      : </span><span class="si">{</span><span class="n">info</span><span class="p">[</span><span class="s1">&#39;altitude&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2"> m&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;🔗 Google Maps  : https://www.google.com/maps?q=</span><span class="si">{</span><span class="n">info</span><span class="p">[</span><span class="s1">&#39;latitude_decimal&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">,</span><span class="si">{</span><span class="n">info</span><span class="p">[</span><span class="s1">&#39;longitude_decimal&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=&quot;</span><span class="o">*</span><span class="mi">50</span><span class="p">)</span>
+
+<span class="c1"># Programme principal</span>
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="c1"># Trames de test</span>
+    <span class="n">trames</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="s2">&quot;$GPGGA,064036.289,4836.5375,N,00740.9373,E,1,04,3.2,200.2,M,,,,0000*0E&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;$GPGGA,175737.303,4449.833,N,00034.772,W,1,04,1.0,0.0,M,0.0,M,,*7C&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;$GPGGA,123519.487,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*47&quot;</span>
+    <span class="p">]</span>
+
+    <span class="k">for</span> <span class="n">trame</span> <span class="ow">in</span> <span class="n">trames</span><span class="p">:</span>
+        <span class="n">info</span> <span class="o">=</span> <span class="n">decoder_et_convertir_gpgga</span><span class="p">(</span><span class="n">trame</span><span class="p">)</span>
+        <span class="n">afficher_position</span><span class="p">(</span><span class="n">info</span><span class="p">)</span>
+</code></pre></div>
+<div class="admonition success">
+<p class="admonition-title">Résultat attendu</p>
+<p>Le programme devrait afficher pour chaque trame :</p>
+<ul>
+<li>L'heure formatée</li>
+<li>Les coordonnées en format DM et décimal</li>
+<li>Le nombre de satellites</li>
+<li>L'altitude</li>
+<li>Un lien Google Maps cliquable</li>
+</ul>
+</div>
+<h2 id="activite-6-metadonnees-gps-dans-les-photos">Activité 6 : Métadonnées GPS dans les photos</h2>
+<h3 id="objectif_1">Objectif</h3>
+<p>Extraire les coordonnées GPS des métadonnées EXIF d'une photo.</p>
+<h3 id="code-python">Code Python</h3>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
+<span class="kn">from</span> <span class="nn">PIL.ExifTags</span> <span class="kn">import</span> <span class="n">TAGS</span><span class="p">,</span> <span class="n">GPSTAGS</span>
+
+<span class="k">def</span> <span class="nf">extraire_gps</span><span class="p">(</span><span class="n">chemin_image</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Extrait les coordonnées GPS des métadonnées EXIF d&#39;une image</span>
+
+<span class="sd">    Paramètre:</span>
+<span class="sd">        chemin_image (str): chemin vers l&#39;image</span>
+
+<span class="sd">    Retour:</span>
+<span class="sd">        tuple: (latitude, longitude) ou None si pas de GPS</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">image</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">chemin_image</span><span class="p">)</span>
+        <span class="n">exif</span> <span class="o">=</span> <span class="n">image</span><span class="o">.</span><span class="n">_getexif</span><span class="p">()</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">exif</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">None</span>
+
+        <span class="c1"># Chercher les données GPS</span>
+        <span class="k">for</span> <span class="n">tag</span><span class="p">,</span> <span class="n">valeur</span> <span class="ow">in</span> <span class="n">exif</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+            <span class="n">nom_tag</span> <span class="o">=</span> <span class="n">TAGS</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">tag</span><span class="p">,</span> <span class="n">tag</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">nom_tag</span> <span class="o">==</span> <span class="s1">&#39;GPSInfo&#39;</span><span class="p">:</span>
+                <span class="n">gps_data</span> <span class="o">=</span> <span class="p">{}</span>
+                <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">valeur</span><span class="p">:</span>
+                    <span class="n">sous_tag</span> <span class="o">=</span> <span class="n">GPSTAGS</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">t</span><span class="p">)</span>
+                    <span class="n">gps_data</span><span class="p">[</span><span class="n">sous_tag</span><span class="p">]</span> <span class="o">=</span> <span class="n">valeur</span><span class="p">[</span><span class="n">t</span><span class="p">]</span>
+
+                <span class="c1"># Extraire latitude et longitude</span>
+                <span class="k">if</span> <span class="s1">&#39;GPSLatitude&#39;</span> <span class="ow">in</span> <span class="n">gps_data</span> <span class="ow">and</span> <span class="s1">&#39;GPSLongitude&#39;</span> <span class="ow">in</span> <span class="n">gps_data</span><span class="p">:</span>
+                    <span class="n">lat</span> <span class="o">=</span> <span class="n">gps_data</span><span class="p">[</span><span class="s1">&#39;GPSLatitude&#39;</span><span class="p">]</span>
+                    <span class="n">lon</span> <span class="o">=</span> <span class="n">gps_data</span><span class="p">[</span><span class="s1">&#39;GPSLongitude&#39;</span><span class="p">]</span>
+
+                    <span class="n">lat_ref</span> <span class="o">=</span> <span class="n">gps_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;GPSLatitudeRef&#39;</span><span class="p">,</span> <span class="s1">&#39;N&#39;</span><span class="p">)</span>
+                    <span class="n">lon_ref</span> <span class="o">=</span> <span class="n">gps_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;GPSLongitudeRef&#39;</span><span class="p">,</span> <span class="s1">&#39;E&#39;</span><span class="p">)</span>
+
+                    <span class="c1"># Convertir en décimal</span>
+                    <span class="n">lat_decimal</span> <span class="o">=</span> <span class="n">lat</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">lat</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">60</span> <span class="o">+</span> <span class="n">lat</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">/</span><span class="mi">3600</span>
+                    <span class="n">lon_decimal</span> <span class="o">=</span> <span class="n">lon</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">lon</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">60</span> <span class="o">+</span> <span class="n">lon</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">/</span><span class="mi">3600</span>
+
+                    <span class="k">if</span> <span class="n">lat_ref</span> <span class="o">==</span> <span class="s1">&#39;S&#39;</span><span class="p">:</span>
+                        <span class="n">lat_decimal</span> <span class="o">=</span> <span class="o">-</span><span class="n">lat_decimal</span>
+                    <span class="k">if</span> <span class="n">lon_ref</span> <span class="o">==</span> <span class="s1">&#39;W&#39;</span><span class="p">:</span>
+                        <span class="n">lon_decimal</span> <span class="o">=</span> <span class="o">-</span><span class="n">lon_decimal</span>
+
+                    <span class="k">return</span> <span class="p">(</span><span class="n">lat_decimal</span><span class="p">,</span> <span class="n">lon_decimal</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="kc">None</span>
+
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Erreur : </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="kc">None</span>
+
+<span class="c1"># Test</span>
+<span class="c1"># chemin = &quot;photo_avec_gps.jpg&quot;</span>
+<span class="c1"># coords = extraire_gps(chemin)</span>
+<span class="c1"># if coords:</span>
+<span class="c1">#     print(f&quot;Coordonnées GPS : {coords[0]}, {coords[1]}&quot;)</span>
+<span class="c1">#     print(f&quot;Google Maps : https://www.google.com/maps?q={coords[0]},{coords[1]}&quot;)</span>
+<span class="c1"># else:</span>
+<span class="c1">#     print(&quot;Pas de données GPS dans cette image&quot;)</span>
+</code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">Attention</p>
+<p>Cette activité nécessite la bibliothèque Pillow. Installez-la avec :
+<div class="highlight"><pre><span></span><code>pip install Pillow
+</code></pre></div></p>
+</div>
+<h2 id="pour-aller-plus-loin">🎓 Pour aller plus loin</h2>
+<div class="admonition tip">
+<p class="admonition-title">Défis supplémentaires</p>
+<ol>
+<li><strong>Calculateur de distance</strong> : Créez une fonction qui calcule la distance entre deux coordonnées GPS (formule de Haversine)</li>
+<li><strong>Tracé GPS</strong> : Lisez plusieurs trames NMEA et tracez le parcours sur une carte</li>
+<li><strong>Simulation GPS</strong> : Générez des trames NMEA pour un trajet fictif</li>
+<li><strong>Analyse de fichier GPX</strong> : Lisez un fichier GPX (format XML utilisé pour les traces GPS) et extrayez les coordonnées</li>
+</ol>
+</div>
+<h2 id="compte-rendu">📝 Compte-rendu</h2>
+<p>À rendre :</p>
+<ol>
+<li>Le tableau des coordonnées de l'Activité 1</li>
+<li>Les conversions de l'Activité 2</li>
+<li>Le code Python complet et fonctionnel</li>
+<li>Les villes identifiées pour chaque trame de test</li>
+<li>Une capture d'écran de votre programme en action</li>
+</ol>
 
 
 

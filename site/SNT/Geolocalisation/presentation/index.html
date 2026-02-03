@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://www.prof-leal.fr/SNT/Geolocalisation/cours/">
+        <link rel="canonical" href="https://www.prof-leal.fr/SNT/Geolocalisation/presentation/">
       
       
       
@@ -18,7 +18,7 @@
     
     
       
-        <title>🌍 Géolocalisation - Mr Leal SNT/NSI</title>
+        <title>Presentation - Mr Leal SNT/NSI</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#geolocalisation" class="md-skip">
+        <a href="#la-geolocalisation" class="md-skip">
           Skip to content
         </a>
       
@@ -106,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              🌍 Géolocalisation
+              Presentation
             
           </span>
         </div>
@@ -369,120 +369,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#introduction" class="md-nav__link">
+  <a href="#plan-du-cours" class="md-nav__link">
     <span class="md-ellipsis">
-      🤔 Introduction
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#point-historique" class="md-nav__link">
-    <span class="md-ellipsis">
-      ⌛ Point Historique
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#definitions" class="md-nav__link">
-    <span class="md-ellipsis">
-      📖 Définitions
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#fonctionnement-de-la-geolocalisation-par-satellite" class="md-nav__link">
-    <span class="md-ellipsis">
-      🛰️ Fonctionnement de la géolocalisation par satellite
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🛰️ Fonctionnement de la géolocalisation par satellite">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#le-processus-de-localisation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Le processus de localisation
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#applications-le-calcul-ditineraires" class="md-nav__link">
-    <span class="md-ellipsis">
-      Applications : Le calcul d'itinéraires
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#le-protocole-nmea-0183-communication-des-donnees-gps" class="md-nav__link">
-    <span class="md-ellipsis">
-      📡 Le protocole NMEA-0183 : Communication des données GPS
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="📡 Le protocole NMEA-0183 : Communication des données GPS">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#formats-de-coordonnees" class="md-nav__link">
-    <span class="md-ellipsis">
-      Formats de coordonnées
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#structure-dune-trame-nmea" class="md-nav__link">
-    <span class="md-ellipsis">
-      Structure d'une trame NMEA
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#applications-pratiques" class="md-nav__link">
-    <span class="md-ellipsis">
-      🎯 Applications pratiques
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#enjeux-et-perspectives" class="md-nav__link">
-    <span class="md-ellipsis">
-      ⚠️ Enjeux et perspectives
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pour-aller-plus-loin" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔍 Pour aller plus loin
+      📋 Plan du cours
     </span>
   </a>
   
@@ -503,116 +392,286 @@
                   
 
 
-<h1 id="geolocalisation">🌍 Géolocalisation</h1>
-<h2 id="introduction">🤔 Introduction</h2>
-<p>La géolocalisation est devenue omniprésente dans notre quotidien : smartphones, voitures, montres connectées, applications de livraison... Mais comment fonctionne cette technologie qui permet de situer précisément un objet ou une personne sur la planète ?</p>
-<p>Dans ce cours, nous allons découvrir les principes de la géolocalisation par satellite, comprendre le protocole de communication GPS et explorer ses applications concrètes.</p>
-<h2 id="point-historique">⌛ Point Historique</h2>
-<ul>
-<li><strong>Années 1960</strong> : Développement du GPS (Global Positioning System) par l'armée américaine pour des besoins militaires.</li>
-<li><strong>Années 1980</strong> : Lancement du premier satellite GPS dans l'espace, marquant le début d'une révolution technologique.</li>
-<li><strong>Années 1990</strong> : Le GPS devient accessible au grand public, ouvrant la voie aux applications civiles.</li>
-<li><strong>2000s</strong> : Développement d'autres systèmes de géolocalisation :<ul>
-<li><strong>Galileo</strong> (Europe) - plus précis que le GPS américain</li>
-<li><strong>GLONASS</strong> (Russie)</li>
-<li><strong>BeiDou</strong> (Chine)</li>
-</ul>
-</li>
-<li><strong>Aujourd'hui</strong> : La géolocalisation est intégrée dans la plupart de nos appareils électroniques.</li>
-</ul>
-<h2 id="definitions">📖 Définitions</h2>
-<div class="admonition note">
-<p class="admonition-title">Géolocalisation</p>
-<p>La géolocalisation est une technique permettant de situer de manière précise un lieu, une personne ou un objet sur la planète grâce à des coordonnées géographiques.</p>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Coordonnées géographiques</p>
-<p>Pour localiser un point sur Terre, on utilise un système de coordonnées basé sur trois dimensions :</p>
-<ul>
-<li><strong>Latitude</strong> : Position Nord-Sud (de -90° à +90°)</li>
-<li><strong>Longitude</strong> : Position Est-Ouest (de -180° à +180°)</li>
-<li><strong>Altitude</strong> : Hauteur par rapport au niveau de la mer</li>
-</ul>
-</div>
-<div class="admonition example">
-<p class="admonition-title">Exemple:</p>
-<p><strong>Tour Eiffel, Paris</strong> :</p>
-<ul>
-<li>Latitude : 48.8584° N</li>
-<li>Longitude : 2.2945° E</li>
-<li>Altitude : ~57 m</li>
-</ul>
-</div>
+<!-- _class: lead -->
+<h1 id="la-geolocalisation">🌍 La Géolocalisation</h1>
+<p><strong>SNT - Seconde</strong>
+Localisation, cartographie et mobilité</p>
 <hr />
-<div class="admonition note">
-<p class="admonition-title">Trilatération</p>
-<p>La trilatération est la technique mathématique utilisée pour déterminer une position en mesurant les distances depuis au moins trois points de référence connus (les satellites).</p>
-<p>Le principe est simple : chaque satellite émet un signal contenant l'heure précise d'émission et sa position. Le récepteur GPS calcule le temps de trajet du signal pour déterminer sa distance à chaque satellite.</p>
-</div>
-<div class="admonition example">
-<p class="admonition-title">Exemple:</p>
-<p><img alt="trilateration" src="../../../assets/seconde/geoloc/trilateration.png" /></p>
-<p>Imaginez trois cercles dont les centres sont les satellites. L'intersection de ces trois cercles donne votre position exacte.</p>
-</div>
-<h2 id="fonctionnement-de-la-geolocalisation-par-satellite">🛰️ Fonctionnement de la géolocalisation par satellite</h2>
-<h3 id="le-processus-de-localisation">Le processus de localisation</h3>
-<p>Le système GPS fonctionne en plusieurs étapes :</p>
-<div class="admonition note">
-<p class="admonition-title">Étape 1 : Réception des signaux</p>
-<p>Le récepteur GPS capte les signaux d'au moins <strong>4 satellites</strong> :</p>
+<h2 id="plan-du-cours">📋 Plan du cours</h2>
+<ol>
+<li>📚 Introduction et historique</li>
+<li>🌐 Les coordonnées géographiques</li>
+<li>🛰️ Comment fonctionne le GPS ?</li>
+<li>📡 Le protocole NMEA</li>
+<li>🎯 Applications pratiques</li>
+<li>⚠️ Enjeux et vie privée</li>
+</ol>
+<p><strong>Durée</strong> : 1 heure</p>
+<hr />
+<!-- _class: lead -->
+<h1 id="1-introduction-et-historique">1️⃣ Introduction et Historique</h1>
+<hr />
+<h2 id="quest-ce-que-la-geolocalisation">🤔 Qu'est-ce que la géolocalisation ?</h2>
+<blockquote>
+<p><strong>Technique permettant de situer de manière précise un lieu, une personne ou un objet sur la planète grâce à des coordonnées géographiques.</strong></p>
+</blockquote>
+<h3 id="exemples-dutilisation-quotidienne">Exemples d'utilisation quotidienne</h3>
 <ul>
-<li><strong>3 satellites</strong> pour déterminer la position (x, y, z)</li>
-<li><strong>1 satellite supplémentaire</strong> pour la synchronisation temporelle</li>
+<li>📱 Smartphone (Google Maps, Waze)</li>
+<li>🚗 GPS automobile</li>
+<li>📦 Suivi de colis</li>
+<li>🎮 Pokémon GO</li>
+<li>📸 Géotagging de photos</li>
 </ul>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Étape 2 : Calcul des distances</p>
-<p>Grâce au temps de trajet des signaux :</p>
-<ul>
-<li><strong>Vitesse du signal</strong> = vitesse de la lumière (300 000 km/s)</li>
-<li><strong>Distance</strong> = Vitesse × Temps de trajet</li>
-</ul>
-</div>
-<div class="admonition example">
-<p class="admonition-title">Exemple de calcul:</p>
-<p>Si un signal met 0.07 secondes pour arriver :</p>
-<p>Distance = 300 000 km/s × 0.07 s = 21 000 km</p>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Étape 3 : Résolution mathématique</p>
-<p>Le récepteur résout un système d'équations pour trouver le point d'intersection des sphères centrées sur chaque satellite.</p>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">Précision</p>
-<p>La précision dépend de nombreux facteurs :</p>
-<ul>
-<li>Nombre de satellites visibles</li>
-<li>Conditions météorologiques</li>
-<li>Obstacles (bâtiments, relief)</li>
-<li>Qualité du récepteur</li>
-</ul>
-<p><strong>Précision typique</strong> : 5 à 10 mètres (GPS civil)<br />
-<strong>Précision Galileo</strong> : 1 mètre</p>
-</div>
-<h3 id="applications-le-calcul-ditineraires">Applications : Le calcul d'itinéraires</h3>
-<p>Une fois la position déterminée, les systèmes de navigation utilisent des algorithmes de routage pour calculer le meilleur chemin entre deux points.</p>
-<div class="admonition note">
-<p class="admonition-title">Paramètres pris en compte</p>
-<ul>
-<li><strong>Distance</strong> : Chemin le plus court</li>
-<li><strong>Temps</strong> : Trajet le plus rapide</li>
-<li><strong>Type de route</strong> : Autoroutes, nationales, départementales</li>
-<li><strong>Trafic en temps réel</strong> : Bouchons, accidents</li>
-<li><strong>Coût</strong> : Péages, consommation de carburant</li>
-<li><strong>Préférences</strong> : Éviter les autoroutes, routes touristiques</li>
-</ul>
-</div>
-<div class="admonition example">
-<p class="admonition-title">Exemple concret : Trajet Paris → Lyon</p>
+<hr />
+<h2 id="histoire-du-gps">⌛ Histoire du GPS</h2>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Type d'itinéraire</th>
+<th style="text-align: center;">Année</th>
+<th style="text-align: left;">Événement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><strong>1960s</strong></td>
+<td style="text-align: left;">Développement militaire par l'armée américaine</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>1980s</strong></td>
+<td style="text-align: left;">Premier satellite GPS lancé</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>1990s</strong></td>
+<td style="text-align: left;">Ouverture au grand public</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2000s</strong></td>
+<td style="text-align: left;">Développement d'autres systèmes (Galileo, GLONASS, BeiDou)</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Aujourd'hui</strong></td>
+<td style="text-align: left;">Omniprésent dans nos appareils</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="les-systemes-de-geolocalisation">🌍 Les systèmes de géolocalisation</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Système</th>
+<th style="text-align: center;">Pays</th>
+<th style="text-align: center;">Précision</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>GPS</strong></td>
+<td style="text-align: center;">🇺🇸 USA</td>
+<td style="text-align: center;">5-10 m</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Galileo</strong></td>
+<td style="text-align: center;">🇪🇺 Europe</td>
+<td style="text-align: center;">1 m</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>GLONASS</strong></td>
+<td style="text-align: center;">🇷🇺 Russie</td>
+<td style="text-align: center;">5-10 m</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>BeiDou</strong></td>
+<td style="text-align: center;">🇨🇳 Chine</td>
+<td style="text-align: center;">5-10 m</td>
+</tr>
+</tbody>
+</table>
+<p>💡 <strong>Galileo</strong> est le plus précis !</p>
+<hr />
+<!-- _class: lead -->
+<h1 id="2-les-coordonnees-geographiques">2️⃣ Les Coordonnées Géographiques</h1>
+<hr />
+<h2 id="comment-localiser-un-point-sur-terre">🌐 Comment localiser un point sur Terre ?</h2>
+<p>On utilise <strong>3 dimensions</strong> :</p>
+<h3 id="latitude">📍 Latitude</h3>
+<ul>
+<li>Position <strong>Nord-Sud</strong></li>
+<li>De <strong>-90°</strong> (Pôle Sud) à <strong>+90°</strong> (Pôle Nord)</li>
+<li>Exemple : 48.8584° N (Paris)</li>
+</ul>
+<h3 id="longitude">📍 Longitude</h3>
+<ul>
+<li>Position <strong>Est-Ouest</strong></li>
+<li>De <strong>-180°</strong> à <strong>+180°</strong></li>
+<li>Référence : Méridien de Greenwich (0°)</li>
+<li>Exemple : 2.2945° E (Paris)</li>
+</ul>
+<h3 id="altitude">📍 Altitude</h3>
+<ul>
+<li>Hauteur par rapport au niveau de la mer</li>
+</ul>
+<hr />
+<h2 id="exemple-tour-eiffel">🗼 Exemple : Tour Eiffel</h2>
+<div class="highlight"><pre><span></span><code>Latitude  : 48.8584° N
+Longitude : 2.2945° E
+Altitude  : ~57 m
+</code></pre></div>
+<p><img alt="bg right:40% 80%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Tour_Eiffel_Wikimedia_Commons_%28cropped%29.jpg/800px-Tour_Eiffel_Wikimedia_Commons_%28cropped%29.jpg" /></p>
+<p><strong>Exercice</strong> : Trouvez les coordonnées de votre lycée sur Google Maps !</p>
+<hr />
+<h2 id="formats-de-coordonnees">📐 Formats de coordonnées</h2>
+<h3 id="format-decimal-le-plus-simple">Format Décimal (le plus simple)</h3>
+<div class="highlight"><pre><span></span><code>48.8584° N, 2.2945° E
+</code></pre></div>
+<h3 id="format-degres-minutes-dm">Format Degrés-Minutes (DM)</h3>
+<div class="highlight"><pre><span></span><code>48° 51.504&#39; N, 2° 17.670&#39; E
+</code></pre></div>
+<h3 id="format-degres-minutes-secondes-dms">Format Degrés-Minutes-Secondes (DMS)</h3>
+<div class="highlight"><pre><span></span><code>48° 51&#39; 30.24&quot; N, 2° 17&#39; 40.20&quot; E
+</code></pre></div>
+<p>💡 <strong>Conversion</strong> : 1° = 60' (minutes), 1' = 60" (secondes)</p>
+<hr />
+<!-- _class: lead -->
+<h1 id="3-comment-fonctionne-le-gps">3️⃣ Comment fonctionne le GPS ?</h1>
+<hr />
+<h2 id="le-principe-de-la-trilateration">🛰️ Le principe de la trilatération</h2>
+<p><img alt="width:700px" src="../../../assets/seconde/geoloc/trilateration.png" /></p>
+<p><strong>Trilatération</strong> = Déterminer une position en mesurant les distances depuis au moins <strong>3 satellites</strong></p>
+<hr />
+<h2 id="le-processus-en-3-etapes">📡 Le processus en 3 étapes</h2>
+<h3 id="etape-1-reception-des-signaux">Étape 1️⃣ : Réception des signaux</h3>
+<ul>
+<li>Le récepteur capte <strong>au moins 4 satellites</strong></li>
+<li>3 pour la position (x, y, z)</li>
+<li>1 pour la synchronisation temporelle</li>
+</ul>
+<h3 id="etape-2-calcul-des-distances">Étape 2️⃣ : Calcul des distances</h3>
+<ul>
+<li><strong>Distance = Vitesse × Temps</strong></li>
+<li>Vitesse du signal = <strong>300 000 km/s</strong> (vitesse de la lumière)</li>
+</ul>
+<h3 id="etape-3-resolution-mathematique">Étape 3️⃣ : Résolution mathématique</h3>
+<ul>
+<li>Calcul du point d'intersection des sphères</li>
+</ul>
+<hr />
+<h2 id="exemple-de-calcul">🧮 Exemple de calcul</h2>
+<p><strong>Question</strong> : Un signal met 0.07 secondes pour arriver. Quelle est la distance ?</p>
+<p>--</p>
+<p><strong>Réponse</strong> :
+<div class="highlight"><pre><span></span><code>Distance = Vitesse × Temps
+Distance = 300 000 km/s × 0.07 s
+Distance = 21 000 km
+</code></pre></div></p>
+<p>✅ Les satellites GPS orbitent à environ <strong>20 200 km</strong> d'altitude</p>
+<hr />
+<h2 id="facteurs-affectant-la-precision">⚠️ Facteurs affectant la précision</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Facteur</th>
+<th style="text-align: left;">Impact</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">🛰️ Nombre de satellites</td>
+<td style="text-align: left;">Plus il y en a, meilleure est la précision</td>
+</tr>
+<tr>
+<td style="text-align: left;">🌧️ Météo</td>
+<td style="text-align: left;">Nuages, pluie peuvent perturber</td>
+</tr>
+<tr>
+<td style="text-align: left;">🏢 Obstacles</td>
+<td style="text-align: left;">Bâtiments, montagnes bloquent les signaux</td>
+</tr>
+<tr>
+<td style="text-align: left;">📱 Qualité du récepteur</td>
+<td style="text-align: left;">Meilleur récepteur = meilleure précision</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Précision typique</strong> : 5-10 mètres (GPS civil)</p>
+<hr />
+<!-- _class: lead -->
+<h1 id="4-le-protocole-nmea">4️⃣ Le Protocole NMEA</h1>
+<hr />
+<h2 id="quest-ce-que-le-nmea-0183">📡 Qu'est-ce que le NMEA-0183 ?</h2>
+<blockquote>
+<p><strong>Standard de communication</strong> pour transmettre les données GPS sous forme de <strong>trames textuelles</strong></p>
+</blockquote>
+<p>Développé par la <strong>National Marine Electronics Association</strong></p>
+<h3 id="exemple-de-trame-gpgga">Exemple de trame GPGGA</h3>
+<div class="highlight"><pre><span></span><code>$GPGGA,064036.289,4836.5375,N,00740.9373,E,1,04,3.2,200.2,M,,,,0000*0E
+</code></pre></div>
+<hr />
+<h2 id="decodage-dune-trame-nmea">🔍 Décodage d'une trame NMEA</h2>
+<div class="highlight"><pre><span></span><code>$GPGGA,064036.289,4836.5375,N,00740.9373,E,1,04,3.2,200.2,M,,,,0000*0E
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Champ</th>
+<th style="text-align: left;">Valeur</th>
+<th style="text-align: left;">Signification</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>$GPGGA</code></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">Type de trame (position GPS)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>064036.289</code></td>
+<td style="text-align: left;">06:40:36</td>
+<td style="text-align: left;">Heure UTC</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>4836.5375,N</code></td>
+<td style="text-align: left;">48° 36.5375' N</td>
+<td style="text-align: left;">Latitude</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>00740.9373,E</code></td>
+<td style="text-align: left;">7° 40.9373' E</td>
+<td style="text-align: left;">Longitude</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>04</code></td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">Nombre de satellites</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>200.2,M</code></td>
+<td style="text-align: left;">200.2 m</td>
+<td style="text-align: left;">Altitude</td>
+</tr>
+</tbody>
+</table>
+<p>📍 Cette position correspond à <strong>Paris, France</strong></p>
+<hr />
+<!-- _class: lead -->
+<h1 id="5-applications-pratiques">5️⃣ Applications Pratiques</h1>
+<hr />
+<h2 id="le-calcul-ditineraires">🗺️ Le calcul d'itinéraires</h2>
+<p>Les applications de navigation calculent le meilleur chemin en fonction de :</p>
+<ul>
+<li>📏 <strong>Distance</strong> : Chemin le plus court</li>
+<li>⏱️ <strong>Temps</strong> : Trajet le plus rapide</li>
+<li>🚗 <strong>Type de route</strong> : Autoroutes, nationales</li>
+<li>🚦 <strong>Trafic en temps réel</strong> : Bouchons, accidents</li>
+<li>💰 <strong>Coût</strong> : Péages, carburant</li>
+</ul>
+<hr />
+<h2 id="exemple-paris-lyon">🚗 Exemple : Paris → Lyon</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Itinéraire</th>
 <th style="text-align: left;">Route</th>
 <th style="text-align: center;">Durée</th>
 <th style="text-align: center;">Distance</th>
@@ -639,218 +698,116 @@
 </tr>
 </tbody>
 </table>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Technologies utilisées</p>
-<p>Les applications comme Google Maps, Waze ou Plans combinent :</p>
+<p>💡 Les apps combinent : cartes + trafic + IA + signalements utilisateurs</p>
+<hr />
+<h2 id="domaines-dapplication">🎯 Domaines d'application</h2>
+<h3 id="transport">🚗 Transport</h3>
 <ul>
-<li>Données cartographiques statiques</li>
-<li>Informations trafic en temps réel</li>
-<li>Signalements utilisateurs (accidents, travaux)</li>
-<li>Intelligence artificielle pour prédire les conditions</li>
+<li>Navigation automobile</li>
+<li>VTC (Uber, Bolt)</li>
+<li>Suivi de flottes</li>
 </ul>
-</div>
-<h2 id="le-protocole-nmea-0183-communication-des-donnees-gps">📡 Le protocole NMEA-0183 : Communication des données GPS</h2>
-<div class="admonition note">
-<p class="admonition-title">Protocole NMEA-0183</p>
-<p>Le protocole NMEA-0183 est un standard de communication développé par la National Marine Electronics Association (NMEA) pour transmettre les données de géolocalisation sous forme de trames textuelles facilement décodables.</p>
-<p>Ce protocole permet aux récepteurs GPS de communiquer leurs informations de position à d'autres appareils (ordinateurs, smartphones, systèmes de navigation).</p>
-</div>
-<h3 id="formats-de-coordonnees">Formats de coordonnées</h3>
-<p>Il existe plusieurs façons d'exprimer les coordonnées géographiques :</p>
-<div class="admonition note">
-<p class="admonition-title">Format décimal</p>
-<p>Le plus simple et le plus utilisé en informatique.</p>
-<p><strong>Exemple</strong> : 48.8584° N, 2.2945° E</p>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Format degrés-minutes (DM)</p>
-<p>Utilisé par les GPS et le protocole NMEA.</p>
-<p><strong>Exemple</strong> : 48° 51.504' N, 2° 17.670' E</p>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Format degrés-minutes-secondes (DMS)</p>
-<p>Le plus précis, utilisé en cartographie.</p>
-<p><strong>Exemple</strong> : 48° 51' 30.24" N, 2° 17' 40.20" E</p>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">Conversion</p>
-<p><strong>1 degré = 60 minutes</strong><br />
-<strong>1 minute = 60 secondes</strong></p>
-<p>Pour convertir 48.8584° en DM :</p>
-<ul>
-<li>Partie entière : 48°</li>
-<li>Partie décimale : 0.8584 × 60 = 51.504'</li>
-<li>Résultat : 48° 51.504'</li>
-</ul>
-</div>
-<h3 id="structure-dune-trame-nmea">Structure d'une trame NMEA</h3>
-<div class="admonition example">
-<p class="admonition-title">Exemple de trame GPGGA (position GPS)</p>
-<div class="highlight"><pre><span></span><code>$GPGGA,064036.289,4836.5375,N,00740.9373,E,1,04,3.2,200.2,M,,,,0000*0E
-</code></pre></div>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Décodage de la trame</p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Champ</th>
-<th style="text-align: left;">Valeur</th>
-<th style="text-align: left;">Signification</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><code>$GPGGA</code></td>
-<td style="text-align: left;">-</td>
-<td style="text-align: left;">Type de trame (position GPS)</td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>064036.289</code></td>
-<td style="text-align: left;">06:40:36.289</td>
-<td style="text-align: left;">Heure UTC</td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>4836.5375,N</code></td>
-<td style="text-align: left;">48° 36.5375' N</td>
-<td style="text-align: left;">Latitude</td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>00740.9373,E</code></td>
-<td style="text-align: left;">7° 40.9373' E</td>
-<td style="text-align: left;">Longitude</td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>1</code></td>
-<td style="text-align: left;">1</td>
-<td style="text-align: left;">Qualité du signal (1 = GPS fixe)</td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>04</code></td>
-<td style="text-align: left;">4</td>
-<td style="text-align: left;">Nombre de satellites utilisés</td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>3.2</code></td>
-<td style="text-align: left;">3.2</td>
-<td style="text-align: left;">Précision horizontale</td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>200.2,M</code></td>
-<td style="text-align: left;">200.2 m</td>
-<td style="text-align: left;">Altitude</td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>*0E</code></td>
-<td style="text-align: left;">0E</td>
-<td style="text-align: left;">Checksum (vérification)</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="admonition example">
-<p class="admonition-title">Localisation</p>
-<p>Cette trame correspond à la position de <strong>Paris, France</strong>.</p>
-<ul>
-<li>Latitude : 48° 36.5375' N = 48.6090° N</li>
-<li>Longitude : 7° 40.9373' E = 7.6823° E</li>
-</ul>
-</div>
-<h2 id="applications-pratiques">🎯 Applications pratiques</h2>
-<p>La géolocalisation est utilisée dans de nombreux domaines :</p>
-<div class="admonition note">
-<p class="admonition-title">Navigation</p>
-<ul>
-<li>GPS automobile</li>
-<li>Applications de navigation (Google Maps, Waze)</li>
-<li>Randonnée et sports outdoor</li>
-</ul>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Transport et logistique</p>
+<h3 id="logistique">📦 Logistique</h3>
 <ul>
 <li>Suivi de colis</li>
-<li>Gestion de flottes de véhicules</li>
-<li>Applications de VTC (Uber, Bolt)</li>
+<li>Livraisons</li>
 </ul>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Réseaux sociaux</p>
+<h3 id="reseaux-sociaux">📱 Réseaux sociaux</h3>
 <ul>
-<li>Géotagging de photos</li>
-<li>Check-in sur Facebook, Instagram</li>
-<li>Snapchat Map</li>
+<li>Géotagging photos</li>
+<li>Check-in</li>
 </ul>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Sécurité</p>
+<h3 id="securite">🆘 Sécurité</h3>
 <ul>
-<li>Localisation d'urgence (appel au 112)</li>
-<li>Antivol de véhicules</li>
-<li>Surveillance parentale</li>
+<li>Appels d'urgence (112)</li>
+<li>Antivol véhicules</li>
 </ul>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Jeux et divertissement</p>
+<h3 id="divertissement">🎮 Divertissement</h3>
 <ul>
 <li>Pokémon GO</li>
 <li>Geocaching</li>
-<li>Réalité augmentée</li>
 </ul>
-</div>
-<h2 id="enjeux-et-perspectives">⚠️ Enjeux et perspectives</h2>
-<p>La géolocalisation soulève des questions importantes :</p>
-<div class="admonition warning">
-<p class="admonition-title">Vie privée</p>
+<hr />
+<!-- _class: lead -->
+<h1 id="6-enjeux-et-vie-privee">6️⃣ Enjeux et Vie Privée</h1>
+<hr />
+<h2 id="risques-lies-a-la-geolocalisation">⚠️ Risques liés à la géolocalisation</h2>
+<h3 id="vie-privee">🔒 Vie privée</h3>
 <ul>
-<li><strong>Traçabilité des déplacements</strong> : Vos mouvements peuvent être enregistrés</li>
-<li><strong>Données personnelles</strong> : Risque de collecte et revente de données</li>
-<li><strong>Surveillance</strong> : Utilisation à des fins de contrôle</li>
+<li><strong>Traçabilité</strong> de vos déplacements</li>
+<li><strong>Collecte de données</strong> personnelles</li>
+<li>Risque de <strong>surveillance</strong></li>
 </ul>
-</div>
-<div class="admonition danger">
-<p class="admonition-title">Attention</p>
-<p>La géolocalisation peut être utilisée à des fins de surveillance. Il est important de maîtriser les paramètres de confidentialité de vos appareils :</p>
+<h3 id="securite-personnelle">🏠 Sécurité personnelle</h3>
 <ul>
-<li>Désactiver la géolocalisation quand elle n'est pas nécessaire</li>
-<li>Vérifier les autorisations des applications</li>
-<li>Supprimer les métadonnées GPS des photos avant partage</li>
+<li>Révélation de votre <strong>domicile</strong></li>
+<li>Indication de votre <strong>absence</strong> (risque de cambriolage)</li>
+<li><strong>Harcèlement</strong> / stalking</li>
 </ul>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Sécurité technique</p>
+<h3 id="metadonnees-gps">📸 Métadonnées GPS</h3>
 <ul>
-<li><strong>Dépendance aux satellites</strong> : Vulnérabilité en cas de panne</li>
-<li><strong>Interférences</strong> : Brouillage volontaire ou involontaire</li>
-<li><strong>Précision</strong> : Amélioration continue (Galileo, GPS III)</li>
+<li>Les photos contiennent souvent votre position exacte</li>
+<li>Partage involontaire de votre localisation</li>
 </ul>
-</div>
-<div class="admonition example">
-<p class="admonition-title">Applications futures</p>
+<hr />
+<h2 id="comment-se-proteger">🛡️ Comment se protéger ?</h2>
+<h3 id="bonnes-pratiques">✅ Bonnes pratiques</h3>
+<ol>
+<li><strong>Désactiver</strong> la géolocalisation quand elle n'est pas nécessaire</li>
+<li><strong>Vérifier</strong> les autorisations des applications</li>
+<li><strong>Utiliser</strong> le mode "position approximative" plutôt que "précise"</li>
+<li><strong>Supprimer</strong> les métadonnées GPS avant de partager des photos</li>
+<li><strong>Ne pas partager</strong> sa position en temps réel publiquement</li>
+</ol>
+<p>💡 <strong>Paramètres → Confidentialité → Localisation</strong> sur votre smartphone</p>
+<hr />
+<h2 id="perspectives-futures">🔮 Perspectives futures</h2>
+<h3 id="applications-emergentes">Applications émergentes</h3>
 <ul>
-<li><strong>Véhicules autonomes</strong> : Navigation précise au centimètre</li>
-<li><strong>Internet des Objets (IoT)</strong> : Suivi d'objets connectés</li>
-<li><strong>Réalité augmentée</strong> : Superposition d'informations géolocalisées</li>
-<li><strong>Drones</strong> : Livraisons et surveillance</li>
-<li><strong>Agriculture de précision</strong> : Optimisation des cultures</li>
+<li>🚙 <strong>Véhicules autonomes</strong> : Navigation au centimètre</li>
+<li>🏠 <strong>Internet des Objets</strong> : Suivi d'objets connectés</li>
+<li>🥽 <strong>Réalité augmentée</strong> : Superposition d'informations géolocalisées</li>
+<li>🚁 <strong>Drones</strong> : Livraisons et surveillance</li>
+<li>🌾 <strong>Agriculture de précision</strong> : Optimisation des cultures</li>
 </ul>
-</div>
-<h2 id="pour-aller-plus-loin">🔍 Pour aller plus loin</h2>
-<div class="admonition tip">
-<p class="admonition-title">Ressources</p>
-<ul>
-<li><a href="https://parcours.algorea.org/fr/a/88752303685492924;p=4702,1067253748629066205,183305583351435935,1207970506541061357,237778358454750514;a=0">Activité interactive : Trilatération</a></li>
-<li><a href="https://rl.se/gprmc">NMEA Decoder en ligne</a></li>
-<li><a href="https://www.lexilogos.com/calcul_distances.htm">Calculateur de distances GPS</a></li>
-</ul>
-</div>
+<hr />
+<!-- _class: lead -->
+<h1 id="recapitulatif">📝 Récapitulatif</h1>
+<hr />
+<h2 id="points-cles-a-retenir">🎯 Points clés à retenir</h2>
+<ol>
+<li><strong>Géolocalisation</strong> = Situer précisément un point sur Terre</li>
+<li><strong>3 coordonnées</strong> : Latitude, Longitude, Altitude</li>
+<li><strong>Trilatération</strong> = Technique utilisant au moins 3 satellites</li>
+<li><strong>4 satellites minimum</strong> pour une position 3D précise</li>
+<li><strong>NMEA</strong> = Protocole de communication GPS</li>
+<li><strong>Applications multiples</strong> : navigation, transport, sécurité</li>
+<li><strong>Attention à la vie privée</strong> : Maîtriser ses paramètres</li>
+</ol>
+<hr />
+<!-- _class: lead -->
+<h1 id="questions">❓ Questions ?</h1>
+<hr />
+<!-- _class: lead -->
+<h1 id="questionnaire-devaluation">📋 Questionnaire d'évaluation</h1>
+<p><strong>5 minutes pour vérifier vos connaissances !</strong></p>
+<p>Rendez-vous sur le questionnaire distribué</p>
+<hr />
+<!-- _class: lead -->
+<h1 id="merci">Merci ! 🌍</h1>
+<p><strong>Prochaine séance</strong> : Travaux Pratiques
+- Manipulation de coordonnées GPS
+- Décodage de trames NMEA en Python
+- Extraction de métadonnées de photos</p>
 
 
 
 
 
 
+
+  
+  
 
 
 
