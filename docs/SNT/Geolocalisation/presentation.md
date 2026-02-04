@@ -33,7 +33,17 @@ Localisation, cartographie et mobilité
 
 ## 🤔 Qu'est-ce que la géolocalisation ?
 
+---
+
+## 🤔 Qu'est-ce que la géolocalisation ?
+
 > **Technique permettant de situer de manière précise un lieu, une personne ou un objet sur la planète grâce à des coordonnées géographiques.**
+
+---
+
+### Exemples d'utilisation quotidienne
+
+---
 
 ### Exemples d'utilisation quotidienne
 - 📱 Smartphone (Google Maps, Waze)
@@ -41,6 +51,12 @@ Localisation, cartographie et mobilité
 - 📦 Suivi de colis
 - 🎮 Pokémon GO
 - 📸 Géotagging de photos
+
+---
+
+## ⌛ Histoire du GPS
+
+De quand date le GPS ?
 
 ---
 
@@ -78,16 +94,27 @@ Localisation, cartographie et mobilité
 
 On utilise **3 dimensions** :
 
+---
+
+## 🌐 Comment localiser un point sur Terre ?
+
 ### 📍 Latitude
 - Position **Nord-Sud**
 - De **-90°** (Pôle Sud) à **+90°** (Pôle Nord)
 - Exemple : 48.8584° N (Paris)
 
+---
+
+## 🌐 Comment localiser un point sur Terre ?
+
 ### 📍 Longitude
 - Position **Est-Ouest**
 - De **-180°** à **+180°**
-- Référence : Méridien de Greenwich (0°)
 - Exemple : 2.2945° E (Paris)
+
+---
+
+## 🌐 Comment localiser un point sur Terre ?
 
 ### 📍 Altitude
 - Hauteur par rapport au niveau de la mer
@@ -104,7 +131,11 @@ Altitude  : ~57 m
 
 ![bg right:40% 80%](https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Tour_Eiffel_Wikimedia_Commons_%28cropped%29.jpg/800px-Tour_Eiffel_Wikimedia_Commons_%28cropped%29.jpg)
 
-**Exercice** : Trouvez les coordonnées de votre lycée sur Google Maps !
+---
+
+## 🌐 Exercice :
+
+Trouvez les coordonnées de votre lycée sur Google Maps !
 
 ---
 
@@ -115,17 +146,27 @@ Altitude  : ~57 m
 48.8584° N, 2.2945° E
 ```
 
+---
+
+## 📐 Formats de coordonnées
+
 ### Format Degrés-Minutes (DM)
 ```
 48° 51.504' N, 2° 17.670' E
 ```
+
+**Conversion** : 1° = 60' (minutes)
+
+---
+
+## 📐 Formats de coordonnées
 
 ### Format Degrés-Minutes-Secondes (DMS)
 ```
 48° 51' 30.24" N, 2° 17' 40.20" E
 ```
 
-💡 **Conversion** : 1° = 60' (minutes), 1' = 60" (secondes)
+**Conversion** : 1' = 60" (secondes)
 
 ---
 
@@ -136,18 +177,20 @@ Altitude  : ~57 m
 
 ## 🛰️ Le principe de la trilatération
 
-![width:700px](../../assets/seconde/geoloc/trilateration.png)
-
 **Trilatération** = Déterminer une position en mesurant les distances depuis au moins **3 satellites**
+
+---
+
+![width:700px](../../assets/seconde/geoloc/trilateration.png)
 
 ---
 
 ## 📡 Le processus en 3 étapes
 
 ### Étape 1️⃣ : Réception des signaux
-- Le récepteur capte **au moins 4 satellites**
+- Le récepteur capte **3 satellites**
   - 3 pour la position (x, y, z)
-  - 1 pour la synchronisation temporelle
+  - 1 (optionel) pour synchroniser les satellites
 
 ### Étape 2️⃣ : Calcul des distances
 - **Distance = Vitesse × Temps**
@@ -160,9 +203,9 @@ Altitude  : ~57 m
 
 ## 🧮 Exemple de calcul
 
-**Question** : Un signal met 0.07 secondes pour arriver. Quelle est la distance ?
+**Question** : Un signal met 0.07 secondes pour arriver (Vitesse du signal = **300 000 km/s**). Quelle est la distance ?
 
---
+---
 
 **Réponse** :
 ```
@@ -250,33 +293,6 @@ Les applications de navigation calculent le meilleur chemin en fonction de :
 | **Économique** | Routes nationales | 6h15 | 445 km |
 | **Touristique** | Routes départementales | 7h00 | 520 km |
 
-💡 Les apps combinent : cartes + trafic + IA + signalements utilisateurs
-
----
-
-## 🎯 Domaines d'application
-
-### 🚗 Transport
-- Navigation automobile
-- VTC (Uber, Bolt)
-- Suivi de flottes
-
-### 📦 Logistique
-- Suivi de colis
-- Livraisons
-
-### 📱 Réseaux sociaux
-- Géotagging photos
-- Check-in
-
-### 🆘 Sécurité
-- Appels d'urgence (112)
-- Antivol véhicules
-
-### 🎮 Divertissement
-- Pokémon GO
-- Geocaching
-
 ---
 
 <!-- _class: lead -->
@@ -295,6 +311,10 @@ Les applications de navigation calculent le meilleur chemin en fonction de :
 - Révélation de votre **domicile**
 - Indication de votre **absence** (risque de cambriolage)
 - **Harcèlement** / stalking
+
+---
+
+## ⚠️ Risques liés à la géolocalisation
 
 ### 📸 Métadonnées GPS
 - Les photos contiennent souvent votre position exacte
@@ -316,35 +336,6 @@ Les applications de navigation calculent le meilleur chemin en fonction de :
 
 ---
 
-## 🔮 Perspectives futures
-
-### Applications émergentes
-
-- 🚙 **Véhicules autonomes** : Navigation au centimètre
-- 🏠 **Internet des Objets** : Suivi d'objets connectés
-- 🥽 **Réalité augmentée** : Superposition d'informations géolocalisées
-- 🚁 **Drones** : Livraisons et surveillance
-- 🌾 **Agriculture de précision** : Optimisation des cultures
-
----
-
-<!-- _class: lead -->
-# 📝 Récapitulatif
-
----
-
-## 🎯 Points clés à retenir
-
-1. **Géolocalisation** = Situer précisément un point sur Terre
-2. **3 coordonnées** : Latitude, Longitude, Altitude
-3. **Trilatération** = Technique utilisant au moins 3 satellites
-4. **4 satellites minimum** pour une position 3D précise
-5. **NMEA** = Protocole de communication GPS
-6. **Applications multiples** : navigation, transport, sécurité
-7. **Attention à la vie privée** : Maîtriser ses paramètres
-
----
-
 <!-- _class: lead -->
 # ❓ Questions ?
 
@@ -357,12 +348,3 @@ Les applications de navigation calculent le meilleur chemin en fonction de :
 
 Rendez-vous sur le questionnaire distribué
 
----
-
-<!-- _class: lead -->
-# Merci ! 🌍
-
-**Prochaine séance** : Travaux Pratiques
-- Manipulation de coordonnées GPS
-- Décodage de trames NMEA en Python
-- Extraction de métadonnées de photos

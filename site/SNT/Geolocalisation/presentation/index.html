@@ -412,10 +412,15 @@ Localisation, cartographie et mobilité</p>
 <h1 id="1-introduction-et-historique">1️⃣ Introduction et Historique</h1>
 <hr />
 <h2 id="quest-ce-que-la-geolocalisation">🤔 Qu'est-ce que la géolocalisation ?</h2>
+<hr />
+<h2 id="quest-ce-que-la-geolocalisation_1">🤔 Qu'est-ce que la géolocalisation ?</h2>
 <blockquote>
 <p><strong>Technique permettant de situer de manière précise un lieu, une personne ou un objet sur la planète grâce à des coordonnées géographiques.</strong></p>
 </blockquote>
+<hr />
 <h3 id="exemples-dutilisation-quotidienne">Exemples d'utilisation quotidienne</h3>
+<hr />
+<h3 id="exemples-dutilisation-quotidienne_1">Exemples d'utilisation quotidienne</h3>
 <ul>
 <li>📱 Smartphone (Google Maps, Waze)</li>
 <li>🚗 GPS automobile</li>
@@ -425,6 +430,9 @@ Localisation, cartographie et mobilité</p>
 </ul>
 <hr />
 <h2 id="histoire-du-gps">⌛ Histoire du GPS</h2>
+<p>De quand date le GPS ?</p>
+<hr />
+<h2 id="histoire-du-gps_1">⌛ Histoire du GPS</h2>
 <table>
 <thead>
 <tr>
@@ -495,19 +503,24 @@ Localisation, cartographie et mobilité</p>
 <hr />
 <h2 id="comment-localiser-un-point-sur-terre">🌐 Comment localiser un point sur Terre ?</h2>
 <p>On utilise <strong>3 dimensions</strong> :</p>
+<hr />
+<h2 id="comment-localiser-un-point-sur-terre_1">🌐 Comment localiser un point sur Terre ?</h2>
 <h3 id="latitude">📍 Latitude</h3>
 <ul>
 <li>Position <strong>Nord-Sud</strong></li>
 <li>De <strong>-90°</strong> (Pôle Sud) à <strong>+90°</strong> (Pôle Nord)</li>
 <li>Exemple : 48.8584° N (Paris)</li>
 </ul>
+<hr />
+<h2 id="comment-localiser-un-point-sur-terre_2">🌐 Comment localiser un point sur Terre ?</h2>
 <h3 id="longitude">📍 Longitude</h3>
 <ul>
 <li>Position <strong>Est-Ouest</strong></li>
 <li>De <strong>-180°</strong> à <strong>+180°</strong></li>
-<li>Référence : Méridien de Greenwich (0°)</li>
 <li>Exemple : 2.2945° E (Paris)</li>
 </ul>
+<hr />
+<h2 id="comment-localiser-un-point-sur-terre_3">🌐 Comment localiser un point sur Terre ?</h2>
 <h3 id="altitude">📍 Altitude</h3>
 <ul>
 <li>Hauteur par rapport au niveau de la mer</li>
@@ -519,33 +532,41 @@ Longitude : 2.2945° E
 Altitude  : ~57 m
 </code></pre></div>
 <p><img alt="bg right:40% 80%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Tour_Eiffel_Wikimedia_Commons_%28cropped%29.jpg/800px-Tour_Eiffel_Wikimedia_Commons_%28cropped%29.jpg" /></p>
-<p><strong>Exercice</strong> : Trouvez les coordonnées de votre lycée sur Google Maps !</p>
+<hr />
+<h2 id="exercice">🌐 Exercice :</h2>
+<p>Trouvez les coordonnées de votre lycée sur Google Maps !</p>
 <hr />
 <h2 id="formats-de-coordonnees">📐 Formats de coordonnées</h2>
 <h3 id="format-decimal-le-plus-simple">Format Décimal (le plus simple)</h3>
 <div class="highlight"><pre><span></span><code>48.8584° N, 2.2945° E
 </code></pre></div>
+<hr />
+<h2 id="formats-de-coordonnees_1">📐 Formats de coordonnées</h2>
 <h3 id="format-degres-minutes-dm">Format Degrés-Minutes (DM)</h3>
 <div class="highlight"><pre><span></span><code>48° 51.504&#39; N, 2° 17.670&#39; E
 </code></pre></div>
+<p><strong>Conversion</strong> : 1° = 60' (minutes)</p>
+<hr />
+<h2 id="formats-de-coordonnees_2">📐 Formats de coordonnées</h2>
 <h3 id="format-degres-minutes-secondes-dms">Format Degrés-Minutes-Secondes (DMS)</h3>
 <div class="highlight"><pre><span></span><code>48° 51&#39; 30.24&quot; N, 2° 17&#39; 40.20&quot; E
 </code></pre></div>
-<p>💡 <strong>Conversion</strong> : 1° = 60' (minutes), 1' = 60" (secondes)</p>
+<p><strong>Conversion</strong> : 1' = 60" (secondes)</p>
 <hr />
 <!-- _class: lead -->
 <h1 id="3-comment-fonctionne-le-gps">3️⃣ Comment fonctionne le GPS ?</h1>
 <hr />
 <h2 id="le-principe-de-la-trilateration">🛰️ Le principe de la trilatération</h2>
-<p><img alt="width:700px" src="../../../assets/seconde/geoloc/trilateration.png" /></p>
 <p><strong>Trilatération</strong> = Déterminer une position en mesurant les distances depuis au moins <strong>3 satellites</strong></p>
+<hr />
+<p><img alt="width:700px" src="../../../assets/seconde/geoloc/trilateration.png" /></p>
 <hr />
 <h2 id="le-processus-en-3-etapes">📡 Le processus en 3 étapes</h2>
 <h3 id="etape-1-reception-des-signaux">Étape 1️⃣ : Réception des signaux</h3>
 <ul>
-<li>Le récepteur capte <strong>au moins 4 satellites</strong></li>
+<li>Le récepteur capte <strong>3 satellites</strong></li>
 <li>3 pour la position (x, y, z)</li>
-<li>1 pour la synchronisation temporelle</li>
+<li>1 (optionel) pour synchroniser les satellites</li>
 </ul>
 <h3 id="etape-2-calcul-des-distances">Étape 2️⃣ : Calcul des distances</h3>
 <ul>
@@ -558,8 +579,8 @@ Altitude  : ~57 m
 </ul>
 <hr />
 <h2 id="exemple-de-calcul">🧮 Exemple de calcul</h2>
-<p><strong>Question</strong> : Un signal met 0.07 secondes pour arriver. Quelle est la distance ?</p>
-<p>--</p>
+<p><strong>Question</strong> : Un signal met 0.07 secondes pour arriver (Vitesse du signal = <strong>300 000 km/s</strong>). Quelle est la distance ?</p>
+<hr />
 <p><strong>Réponse</strong> :
 <div class="highlight"><pre><span></span><code>Distance = Vitesse × Temps
 Distance = 300 000 km/s × 0.07 s
@@ -698,35 +719,6 @@ Distance = 21 000 km
 </tr>
 </tbody>
 </table>
-<p>💡 Les apps combinent : cartes + trafic + IA + signalements utilisateurs</p>
-<hr />
-<h2 id="domaines-dapplication">🎯 Domaines d'application</h2>
-<h3 id="transport">🚗 Transport</h3>
-<ul>
-<li>Navigation automobile</li>
-<li>VTC (Uber, Bolt)</li>
-<li>Suivi de flottes</li>
-</ul>
-<h3 id="logistique">📦 Logistique</h3>
-<ul>
-<li>Suivi de colis</li>
-<li>Livraisons</li>
-</ul>
-<h3 id="reseaux-sociaux">📱 Réseaux sociaux</h3>
-<ul>
-<li>Géotagging photos</li>
-<li>Check-in</li>
-</ul>
-<h3 id="securite">🆘 Sécurité</h3>
-<ul>
-<li>Appels d'urgence (112)</li>
-<li>Antivol véhicules</li>
-</ul>
-<h3 id="divertissement">🎮 Divertissement</h3>
-<ul>
-<li>Pokémon GO</li>
-<li>Geocaching</li>
-</ul>
 <hr />
 <!-- _class: lead -->
 <h1 id="6-enjeux-et-vie-privee">6️⃣ Enjeux et Vie Privée</h1>
@@ -744,6 +736,8 @@ Distance = 21 000 km
 <li>Indication de votre <strong>absence</strong> (risque de cambriolage)</li>
 <li><strong>Harcèlement</strong> / stalking</li>
 </ul>
+<hr />
+<h2 id="risques-lies-a-la-geolocalisation_1">⚠️ Risques liés à la géolocalisation</h2>
 <h3 id="metadonnees-gps">📸 Métadonnées GPS</h3>
 <ul>
 <li>Les photos contiennent souvent votre position exacte</li>
@@ -761,30 +755,6 @@ Distance = 21 000 km
 </ol>
 <p>💡 <strong>Paramètres → Confidentialité → Localisation</strong> sur votre smartphone</p>
 <hr />
-<h2 id="perspectives-futures">🔮 Perspectives futures</h2>
-<h3 id="applications-emergentes">Applications émergentes</h3>
-<ul>
-<li>🚙 <strong>Véhicules autonomes</strong> : Navigation au centimètre</li>
-<li>🏠 <strong>Internet des Objets</strong> : Suivi d'objets connectés</li>
-<li>🥽 <strong>Réalité augmentée</strong> : Superposition d'informations géolocalisées</li>
-<li>🚁 <strong>Drones</strong> : Livraisons et surveillance</li>
-<li>🌾 <strong>Agriculture de précision</strong> : Optimisation des cultures</li>
-</ul>
-<hr />
-<!-- _class: lead -->
-<h1 id="recapitulatif">📝 Récapitulatif</h1>
-<hr />
-<h2 id="points-cles-a-retenir">🎯 Points clés à retenir</h2>
-<ol>
-<li><strong>Géolocalisation</strong> = Situer précisément un point sur Terre</li>
-<li><strong>3 coordonnées</strong> : Latitude, Longitude, Altitude</li>
-<li><strong>Trilatération</strong> = Technique utilisant au moins 3 satellites</li>
-<li><strong>4 satellites minimum</strong> pour une position 3D précise</li>
-<li><strong>NMEA</strong> = Protocole de communication GPS</li>
-<li><strong>Applications multiples</strong> : navigation, transport, sécurité</li>
-<li><strong>Attention à la vie privée</strong> : Maîtriser ses paramètres</li>
-</ol>
-<hr />
 <!-- _class: lead -->
 <h1 id="questions">❓ Questions ?</h1>
 <hr />
@@ -792,13 +762,6 @@ Distance = 21 000 km
 <h1 id="questionnaire-devaluation">📋 Questionnaire d'évaluation</h1>
 <p><strong>5 minutes pour vérifier vos connaissances !</strong></p>
 <p>Rendez-vous sur le questionnaire distribué</p>
-<hr />
-<!-- _class: lead -->
-<h1 id="merci">Merci ! 🌍</h1>
-<p><strong>Prochaine séance</strong> : Travaux Pratiques
-- Manipulation de coordonnées GPS
-- Décodage de trames NMEA en Python
-- Extraction de métadonnées de photos</p>
 
 
 
