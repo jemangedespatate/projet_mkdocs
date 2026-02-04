@@ -1,0 +1,1191 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://www.prof-leal.fr/NSI_1/type_et_valeur_de_base/booleen/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Booleen - Mr Leal SNT/NSI</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/custom_style.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#cours-les-booleens-en-nsi-premiere" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Mr Leal SNT/NSI" class="md-header__button md-logo" aria-label="Mr Leal SNT/NSI" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M256 141.3v309.3l.5-.2A449 449 0 0 1 428.8 416H448V96h-19.2c-42.2 0-84.1 8.4-123.1 24.6-16.8 7-33.4 13.9-49.7 20.7m-25.1-79.8L256 72l25.1-10.5C327.9 42 378.1 32 428.8 32H464c26.5 0 48 21.5 48 48v352c0 26.5-21.5 48-48 48h-35.2c-50.7 0-100.9 10-147.7 29.5l-12.8 5.3c-7.9 3.3-16.7 3.3-24.6 0l-12.8-5.3C184.1 490 133.9 480 83.2 480H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h35.2c50.7 0 100.9 10 147.7 29.5"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Mr Leal SNT/NSI
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Booleen
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="indigo"  aria-label="Mode sombre"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Mode sombre" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="indigo"  aria-label="Mode clair"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Mode clair" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Accueil
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../SNT/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  SNT
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Première NSI
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Mr Leal SNT/NSI" class="md-nav__button md-logo" aria-label="Mr Leal SNT/NSI" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M256 141.3v309.3l.5-.2A449 449 0 0 1 428.8 416H448V96h-19.2c-42.2 0-84.1 8.4-123.1 24.6-16.8 7-33.4 13.9-49.7 20.7m-25.1-79.8L256 72l25.1-10.5C327.9 42 378.1 32 428.8 32H464c26.5 0 48 21.5 48 48v352c0 26.5-21.5 48-48 48h-35.2c-50.7 0-100.9 10-147.7 29.5l-12.8 5.3c-7.9 3.3-16.7 3.3-24.6 0l-12.8-5.3C184.1 490 133.9 480 83.2 480H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h35.2c50.7 0 100.9 10 147.7 29.5"/></svg>
+
+    </a>
+    Mr Leal SNT/NSI
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Accueil
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SNT/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SNT
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Première NSI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cours-les-booleens-en-nsi-premiere" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧠 Cours : Les booléens en NSI (Première)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧠 Cours : Les booléens en NSI (Première)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-quest-ce-quun-booleen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Qu’est-ce qu’un booléen ?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-partie-a-logique-du-quotidien" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1️⃣ Partie A — Logique du quotidien
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-partie-b-expressions-logiques" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2️⃣ Partie B — Expressions logiques
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-les-expressions-booleennes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Les expressions booléennes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-partie-a-vrai-ou-faux" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1️⃣ Partie A — Vrai ou Faux ?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-partie-b-trouve-la-comparaison-correcte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2️⃣ Partie B — Trouve la comparaison correcte
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-partie-c-lecture-de-phrases" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3️⃣ Partie C — Lecture de phrases
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-les-operateurs-logiques" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Les opérateurs logiques
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-partie-a-comprendre-les-operateurs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1️⃣ Partie A — Comprendre les opérateurs
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1️⃣ Partie A — Comprendre les opérateurs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-operateur-et-and" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        a) Opérateur ET (and)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-operateur-ou-or" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        b) Opérateur OU (or)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-operateur-non-not" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        c) Opérateur NON (not)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-partie-b-logique-combinee" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2️⃣ Partie B — Logique combinée
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-les-tables-de-verite" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Les tables de vérité
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Les tables de vérité">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-operateur-and" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        a. Opérateur and
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-operateur-or" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        b. Opérateur or
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-operateur-not" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        c. Opérateur not
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-booleens-et-conditions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Booléens et conditions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-conversion-en-booleen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Conversion en booléen
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Booleen</h1>
+
+<h2 id="cours-les-booleens-en-nsi-premiere">🧠 Cours : Les booléens en NSI (Première)</h2>
+<h3 id="1-quest-ce-quun-booleen">1. Qu’est-ce qu’un booléen ?</h3>
+<p>Un <strong>booléen</strong> (ou <em>bool</em>) est un type de donnée logique qui ne peut prendre <strong>que deux valeurs</strong> :</p>
+<ul>
+<li><code>True</code> → Vrai</li>
+<li><code>False</code> → Faux</li>
+</ul>
+<p>Ces deux valeurs permettent à un programme de <strong>prendre des décisions</strong> : faire une action <strong>si</strong> une condition est vraie, ou une autre <strong>sinon</strong>.</p>
+<blockquote>
+<p>En Python :</p>
+</blockquote>
+<div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">b</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+</code></pre></div>
+<details class="example">
+<summary>Exercice :</summary>
+<h3 id="1-partie-a-logique-du-quotidien">1️⃣ Partie A — Logique du quotidien</h3>
+<table>
+<thead>
+<tr>
+<th>N°</th>
+<th>Affirmation</th>
+<th>Réponse (Vrai / Faux)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Le soleil se lève à l’ouest.</td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>Un carré a quatre côtés égaux.</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>2 + 2 = 5</td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>L’eau gèle à 0°C.</td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td>Tous les chiens sont des animaux.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="2-partie-b-expressions-logiques">2️⃣ Partie B — Expressions logiques</h3>
+<table>
+<thead>
+<tr>
+<th>Expression</th>
+<th>Résultat booléen</th>
+<th>Justification</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5 est plus grand que 3</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>8 est égal à 8</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>10 est plus petit que 4</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>“bleu” est différent de “rouge”</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</details>
+<h3 id="2-les-expressions-booleennes">2. Les expressions booléennes</h3>
+<p>Une <strong>expression booléenne</strong> est une expression qui <strong>se calcule en vrai ou faux</strong>.
+Exemples :</p>
+<div class="highlight"><pre><span></span><code><span class="mi">5</span> <span class="o">&gt;</span> <span class="mi">3</span>        <span class="c1"># True</span>
+<span class="mi">10</span> <span class="o">==</span> <span class="mi">2</span> <span class="o">*</span> <span class="mi">5</span>  <span class="c1"># True</span>
+<span class="mi">7</span> <span class="o">&lt;=</span> <span class="mi">4</span>       <span class="c1"># False</span>
+<span class="s2">&quot;a&quot;</span> <span class="o">!=</span> <span class="s2">&quot;b&quot;</span>   <span class="c1"># True</span>
+</code></pre></div>
+<p>👉 Les opérateurs de comparaison :</p>
+<table>
+<thead>
+<tr>
+<th>Opérateur</th>
+<th>Signification</th>
+<th>Exemple</th>
+<th>Résultat</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>==</code></td>
+<td>égal à</td>
+<td><code>3 == 3</code></td>
+<td>True</td>
+</tr>
+<tr>
+<td><code>!=</code></td>
+<td>différent de</td>
+<td><code>3 != 2</code></td>
+<td>True</td>
+</tr>
+<tr>
+<td><code>&lt;</code></td>
+<td>inférieur à</td>
+<td><code>2 &lt; 5</code></td>
+<td>True</td>
+</tr>
+<tr>
+<td><code>&lt;=</code></td>
+<td>inférieur ou égal</td>
+<td><code>3 &lt;= 3</code></td>
+<td>True</td>
+</tr>
+<tr>
+<td><code>&gt;</code></td>
+<td>supérieur à</td>
+<td><code>7 &gt; 10</code></td>
+<td>False</td>
+</tr>
+<tr>
+<td><code>&gt;=</code></td>
+<td>supérieur ou égal</td>
+<td><code>5 &gt;= 2</code></td>
+<td>True</td>
+</tr>
+</tbody>
+</table>
+<details class="example">
+<summary>Exercice :</summary>
+<h3 id="1-partie-a-vrai-ou-faux">1️⃣ Partie A — Vrai ou Faux ?</h3>
+<p>Pour chaque affirmation, indique si elle est <strong>vraie</strong> ou <strong>fausse</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>Affirmation</th>
+<th>Réponse (Vrai / Faux)</th>
+<th>Justification</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>9 est supérieur à 4</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>7 est inférieur à 7</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>12 est égal à 3 × 4</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>15 est différent de 5 × 3</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>8 est supérieur ou égal à 8</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="2-partie-b-trouve-la-comparaison-correcte">2️⃣ Partie B — Trouve la comparaison correcte</h3>
+<p>Complète les phrases suivantes avec le bon signe parmi : <code>&lt;</code>, <code>&gt;</code>, <code>==</code>, <code>!=</code>, <code>&lt;=</code>, <code>&gt;=</code>.</p>
+<ol>
+<li>5 ___ 3  </li>
+<li>10 ___ 2 × 5  </li>
+<li>7 ___ 9  </li>
+<li>6 × 2 ___ 11 + 1  </li>
+<li>15 ___ 3 × 5  </li>
+</ol>
+<hr />
+<h3 id="3-partie-c-lecture-de-phrases">3️⃣ Partie C — Lecture de phrases</h3>
+<p>Coche les phrases qui pourraient être <strong>vraies</strong> dans un programme informatique :</p>
+<ul>
+<li>[ ] Le mot de passe est égal à “secret”.  </li>
+<li>[ ] Le nombre de vies du joueur est inférieur à 0.  </li>
+<li>[ ] Le score est supérieur à 1000.  </li>
+<li>[ ] Le nombre de pommes est différent du nombre de poires.  </li>
+<li>[ ] 2 est plus grand que 8.  </li>
+</ul>
+</details>
+<hr />
+<h3 id="3-les-operateurs-logiques">3. Les opérateurs logiques</h3>
+<p>Les booléens peuvent être <strong>combinés</strong> à l’aide d’opérateurs logiques.</p>
+<table>
+<thead>
+<tr>
+<th>Opérateur</th>
+<th>Signification</th>
+<th>Exemple</th>
+<th>Résultat</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>and</code></td>
+<td>ET logique</td>
+<td><code>True and False</code></td>
+<td>False</td>
+</tr>
+<tr>
+<td><code>or</code></td>
+<td>OU logique</td>
+<td><code>True or False</code></td>
+<td>True</td>
+</tr>
+<tr>
+<td><code>not</code></td>
+<td>NON logique</td>
+<td><code>not True</code></td>
+<td>False</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Exemples en Python :</strong></p>
+<div class="highlight"><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">)</span>   <span class="c1"># True (les deux conditions sont vraies)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">)</span>    <span class="c1"># False (aucune condition vraie)</span>
+<span class="nb">print</span><span class="p">(</span><span class="ow">not</span><span class="p">(</span><span class="n">x</span> <span class="o">==</span> <span class="mi">5</span><span class="p">))</span>        <span class="c1"># False (car x == 5 est vrai)</span>
+</code></pre></div>
+<details class="example">
+<summary>Exercice :</summary>
+<h3 id="1-partie-a-comprendre-les-operateurs">1️⃣ Partie A — Comprendre les opérateurs</h3>
+<p>Recopie les phrases suivantes et indique si la <strong>conclusion est vraie ou fausse</strong>.</p>
+<h4 id="a-operateur-et-and">a) Opérateur <strong>ET (and)</strong></h4>
+<blockquote>
+<p>La phrase est <strong>vraie seulement si les deux affirmations sont vraies.</strong></p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Situation</th>
+<th>Résultat (Vrai / Faux)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Il fait <strong>beau</strong> ET il fait <strong>chaud</strong>. (Il fait beau : Vrai, il fait chaud : Vrai)</td>
+<td></td>
+</tr>
+<tr>
+<td>Il fait <strong>beau</strong> ET il fait <strong>froid</strong>. (Vrai, Faux)</td>
+<td></td>
+</tr>
+<tr>
+<td>Il <strong>pleut</strong> ET il fait <strong>froid</strong>. (Faux, Faux)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>🧠 <em>Quand utilise-t-on “ET” dans la vie de tous les jours ?</em></p>
+<hr />
+<h4 id="b-operateur-ou-or">b) Opérateur <strong>OU (or)</strong></h4>
+<blockquote>
+<p>La phrase est <strong>vraie si au moins une des deux affirmations est vraie.</strong></p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Situation</th>
+<th>Résultat (Vrai / Faux)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Je mange <strong>une pomme</strong> OU une <strong>banane</strong>. (pomme : Vrai, banane : Faux)</td>
+<td></td>
+</tr>
+<tr>
+<td>Je mange <strong>une pomme</strong> OU une <strong>banane</strong>. (pomme : Faux, banane : Vrai)</td>
+<td></td>
+</tr>
+<tr>
+<td>Je ne mange <strong>ni pomme</strong> ni <strong>banane</strong>. (Faux, Faux)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>💡 <em>→ L’opérateur “OU” en logique signifie “au moins un des deux est vrai”.</em></p>
+<hr />
+<h4 id="c-operateur-non-not">c) Opérateur <strong>NON (not)</strong></h4>
+<blockquote>
+<p>“NON” inverse la valeur logique :
+Vrai devient Faux, et Faux devient Vrai.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Situation</th>
+<th>Résultat (Vrai / Faux)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Il <strong>ne pleut pas</strong> (si “il pleut” est Faux)</td>
+<td></td>
+</tr>
+<tr>
+<td>Il <strong>ne fait pas chaud</strong> (si “il fait chaud” est Vrai)</td>
+<td></td>
+</tr>
+<tr>
+<td>Il <strong>ne neige pas</strong> (si “il neige” est Faux)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="2-partie-b-logique-combinee">2️⃣ Partie B — Logique combinée</h3>
+<p>Lis les affirmations et détermine si elles sont <strong>vraies ou fausses</strong>.
+Tu peux t’aider des règles précédentes.</p>
+<table>
+<thead>
+<tr>
+<th>Affirmation</th>
+<th>Résultat (Vrai / Faux)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(Vrai ET Faux)</td>
+<td></td>
+</tr>
+<tr>
+<td>(Vrai OU Faux)</td>
+<td></td>
+</tr>
+<tr>
+<td>NON(Vrai)</td>
+<td></td>
+</tr>
+<tr>
+<td>(Faux OU Faux)</td>
+<td></td>
+</tr>
+<tr>
+<td>NON(Faux)</td>
+<td></td>
+</tr>
+<tr>
+<td>(Vrai ET NON(Faux))</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</details>
+<hr />
+<h3 id="4-les-tables-de-verite">4. Les tables de vérité</h3>
+<h4 id="a-operateur-and">a. Opérateur <code>and</code></h4>
+<table>
+<thead>
+<tr>
+<th>A</th>
+<th>B</th>
+<th>A and B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+</tr>
+<tr>
+<td>True</td>
+<td>False</td>
+<td>False</td>
+</tr>
+<tr>
+<td>False</td>
+<td>True</td>
+<td>False</td>
+</tr>
+<tr>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+</tr>
+</tbody>
+</table>
+<h4 id="b-operateur-or">b. Opérateur <code>or</code></h4>
+<table>
+<thead>
+<tr>
+<th>A</th>
+<th>B</th>
+<th>A or B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+</tr>
+<tr>
+<td>True</td>
+<td>False</td>
+<td>True</td>
+</tr>
+<tr>
+<td>False</td>
+<td>True</td>
+<td>True</td>
+</tr>
+<tr>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+</tr>
+</tbody>
+</table>
+<h4 id="c-operateur-not">c. Opérateur <code>not</code></h4>
+<table>
+<thead>
+<tr>
+<th>A</th>
+<th>not A</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>True</td>
+<td>False</td>
+</tr>
+<tr>
+<td>False</td>
+<td>True</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="5-booleens-et-conditions">5. Booléens et conditions</h3>
+<p>Les booléens sont souvent utilisés dans les <strong>structures conditionnelles</strong> :</p>
+<div class="highlight"><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="mi">7</span>
+
+<span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">5</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;x est grand&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;x est petit&quot;</span><span class="p">)</span>
+</code></pre></div>
+<p>Le test <code>x &gt; 5</code> est une <strong>expression booléenne</strong> qui détermine quelle partie du code s’exécute.</p>
+<hr />
+<h3 id="6-conversion-en-booleen">6. Conversion en booléen</h3>
+<p>Python peut convertir n’importe quelle valeur en booléen avec <code>bool()</code> :</p>
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="nb">bool</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span>       <span class="c1"># False</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">bool</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>       <span class="c1"># True</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">bool</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">))</span>      <span class="c1"># False (chaîne vide)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">bool</span><span class="p">(</span><span class="s2">&quot;test&quot;</span><span class="p">))</span>  <span class="c1"># True</span>
+</code></pre></div>
+<blockquote>
+<p>⚠️ Attention : en Python, <strong>0, "", [], {}, None</strong> sont considérés comme <strong>False</strong>.</p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <a href="/" class="custom-home-button" title="Accueil">
+  <svg viewBox="0 0 24 24">
+    <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+  </svg>
+  Accueil
+</a>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.instant", "navigation.tabs", "navigation.sections", "navigation.top", "navigation.expand", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      
+    
+  </body>
+</html>

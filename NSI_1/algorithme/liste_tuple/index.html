@@ -1,0 +1,703 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://www.prof-leal.fr/NSI_1/algorithme/liste_tuple/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>🌟 Cours : Les algorithmes de tri - Mr Leal SNT/NSI</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/custom_style.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#cours-les-algorithmes-de-tri" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Mr Leal SNT/NSI" class="md-header__button md-logo" aria-label="Mr Leal SNT/NSI" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M256 141.3v309.3l.5-.2A449 449 0 0 1 428.8 416H448V96h-19.2c-42.2 0-84.1 8.4-123.1 24.6-16.8 7-33.4 13.9-49.7 20.7m-25.1-79.8L256 72l25.1-10.5C327.9 42 378.1 32 428.8 32H464c26.5 0 48 21.5 48 48v352c0 26.5-21.5 48-48 48h-35.2c-50.7 0-100.9 10-147.7 29.5l-12.8 5.3c-7.9 3.3-16.7 3.3-24.6 0l-12.8-5.3C184.1 490 133.9 480 83.2 480H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h35.2c50.7 0 100.9 10 147.7 29.5"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Mr Leal SNT/NSI
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              🌟 Cours : Les algorithmes de tri
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="indigo"  aria-label="Mode sombre"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Mode sombre" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="indigo"  aria-label="Mode clair"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Mode clair" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Accueil
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../SNT/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  SNT
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Première NSI
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Mr Leal SNT/NSI" class="md-nav__button md-logo" aria-label="Mr Leal SNT/NSI" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M256 141.3v309.3l.5-.2A449 449 0 0 1 428.8 416H448V96h-19.2c-42.2 0-84.1 8.4-123.1 24.6-16.8 7-33.4 13.9-49.7 20.7m-25.1-79.8L256 72l25.1-10.5C327.9 42 378.1 32 428.8 32H464c26.5 0 48 21.5 48 48v352c0 26.5-21.5 48-48 48h-35.2c-50.7 0-100.9 10-147.7 29.5l-12.8 5.3c-7.9 3.3-16.7 3.3-24.6 0l-12.8-5.3C184.1 490 133.9 480 83.2 480H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h35.2c50.7 0 100.9 10 147.7 29.5"/></svg>
+
+    </a>
+    Mr Leal SNT/NSI
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Accueil
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SNT/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SNT
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Première NSI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="cours-les-algorithmes-de-tri">🌟 Cours : Les algorithmes de tri</h1>
+<h1 id="1-quest-ce-quun-tri-en-informatique">1. 🔎 Qu’est-ce qu’un tri en informatique ?</h1>
+<p>En informatique, on manipule très souvent des <strong>données</strong> : des nombres, des mots, des objets, des dates, etc.
+Lorsque ces données sont rangées dans un certain ordre, il est beaucoup plus facile et rapide :</p>
+<ul>
+<li>d’effectuer des recherches,</li>
+<li>de repérer des valeurs importantes (minimum, maximum…),</li>
+<li>de faire des statistiques,</li>
+<li>ou encore d’organiser des informations dans un tableau ou un programme.</li>
+</ul>
+<p>👉 C’est pour cela qu’on utilise des <strong>algorithmes de tri</strong>.</p>
+<details class="example">
+<summary>Exemples concrets où le tri est essentiel :</summary>
+<ul>
+<li>ranger les messages sur un téléphone par date,</li>
+<li>classer des photos par nom ou par année,</li>
+<li>organiser un classement sportif du meilleur au moins bon,</li>
+<li>trier des produits par prix croissant sur un site d’achat.</li>
+</ul>
+</details>
+<hr />
+<h2 id="definition">🎯 Définition</h2>
+<p>Un <strong>tri</strong> est une opération qui consiste à <strong>réordonner les éléments d’une liste</strong> selon un critère précis.</p>
+<details class="example">
+<summary>Exemples de critères :</summary>
+</details>
+<ul>
+<li>du plus petit au plus grand (croissant),</li>
+<li>du plus grand au plus petit (décroissant),</li>
+<li>ordre alphabétique (A → Z),</li>
+<li>ordre chronologique (du plus ancien au plus récent).</li>
+</ul>
+<p>👉 Le mot <em>algorithme</em> signifie simplement une <strong>suite d’instructions précises</strong> que l’ordinateur peut exécuter pour obtenir un résultat.</p>
+<hr />
+<h2 id="les-structures-manipulees-les-listes">📦 Les structures manipulées : les listes</h2>
+<p>Les algorithmes de tri s’appliquent à des <strong>listes</strong> ou <strong>tableaux</strong>.
+Une liste est une suite ordonnée d’éléments, par exemple :</p>
+<div class="highlight"><pre><span></span><code>[12, 5, 9, 3, 14]
+[&quot;Alice&quot;, &quot;Brian&quot;, &quot;Clara&quot;]
+</code></pre></div>
+<p>Chaque élément de la liste a :</p>
+<ul>
+<li>une <strong>valeur</strong> (ex : 12),</li>
+<li>une <strong>position</strong> (ex : 12 est à la position 0).</li>
+</ul>
+<p>Quand on applique un tri, on <strong>modifie l’ordre des valeurs</strong>, mais on garde les mêmes éléments.</p>
+<hr />
+<h2 id="tri-manuel-vs-tri-algorithmique">🔍 Tri "manuel" vs tri algorithmique</h2>
+<p>Les humains trient instinctivement :</p>
+<ul>
+<li>un paquet de cartes,</li>
+<li>leurs fichiers dans un classeur,</li>
+<li>les vêtements dans une armoire.</li>
+</ul>
+<p>Mais l’ordinateur, lui, ne peut pas "voir" ou "comprendre".
+Il doit appliquer une méthode <strong>claire</strong>, <strong>répétitive</strong>, <strong>automatisable</strong>.</p>
+<p>👉 D’où l’importance des <strong>algorithmes de tri</strong>.</p>
+<h2 id="plusieurs-familles-de-tris">🧩 Plusieurs familles de tris</h2>
+<p>Il existe beaucoup d’algorithmes de tri (tri rapide, tri à bulles, tri fusion, tri tas…).
+Chacun a ses avantages et inconvénients (vitesse, simplicité, consommation mémoire…).</p>
+<p>Pour les élèves de Première, on étudie surtout deux tris :</p>
+<ol>
+<li><strong>le tri par sélection</strong>,</li>
+<li><strong>le tri par insertion</strong>.</li>
+</ol>
+<h1 id="2-le-tri-par-selection">2. 🔷 Le tri par sélection</h1>
+<p>Le <strong>tri par sélection</strong> (en anglais <em>selection sort</em>) est un des algorithmes de tri les plus simples à comprendre.
+Il est souvent étudié en premier parce qu’il illustre très bien les concepts de <strong>parcours de liste</strong>, de <strong>comparaison</strong>, et de <strong>permutation</strong>.</p>
+<hr />
+<h2 id="idee-generale">🎯 Idée générale</h2>
+<p>Le principe est le suivant :</p>
+<ol>
+<li><strong>On recherche le plus petit élément de la liste.</strong></li>
+<li><strong>On échange cet élément avec celui de la première position.</strong></li>
+<li>On recommence sur la sous-liste restante (tous les éléments sauf le premier).</li>
+<li>On répète jusqu’à ce que tous les éléments soient rangés.</li>
+</ol>
+<p>Autrement dit, à chaque étape, on <strong>sélectionne</strong> (d’où le nom) l’élément le plus petit parmi ceux qui ne sont pas encore triés.</p>
+<hr />
+<h2 id="pourquoi-ce-nom">🧠 Pourquoi ce nom ?</h2>
+<p>L'algorithme <em>sélectionne</em> successivement les plus petits éléments pour les mettre au bon endroit.
+Il ne construit pas une liste triée en avançant :
+il place d’abord ce qui doit être au début, puis ce qui doit suivre, etc.</p>
+<hr />
+<h2 id="exemple-detaille-trier-la-liste-7-3-5-2">🔍 Exemple détaillé : trier la liste <code>[7, 3, 5, 2]</code></h2>
+<p>On va suivre pas à pas ce que fait l’algorithme.</p>
+<h3 id="etape-1-trouver-le-minimum-de-toute-la-liste">➤ Étape 1 : trouver le minimum de toute la liste</h3>
+<p>La liste est : <code>[7, 3, 5, 2]</code>
+Le plus petit élément est <strong>2</strong>.</p>
+<p>👉 On échange 2 avec le premier élément (7).</p>
+<p>Nouvelle liste :
+<code>[2, 3, 5, 7]</code></p>
+<h3 id="etape-2-trier-la-sous-liste-a-partir-de-la-position-1">➤ Étape 2 : trier la sous-liste à partir de la position 1</h3>
+<p>Sous-liste : <code>[3, 5, 7]</code>
+Le plus petit élément est <strong>3</strong>, qui est déjà à sa place.</p>
+<p>La liste ne change pas :
+<code>[2, 3, 5, 7]</code></p>
+<h3 id="etape-3-trier-la-sous-liste-a-partir-de-la-position-2">➤ Étape 3 : trier la sous-liste à partir de la position 2</h3>
+<p>Sous-liste : <code>[5, 7]</code>
+Le plus petit est <strong>5</strong>, déjà en position.</p>
+<p>Rien ne change.</p>
+<h3 id="etape-4-le-dernier-element">➤ Étape 4 : le dernier élément</h3>
+<p>Le dernier élément est forcément le plus grand restant.
+Plus rien à faire.</p>
+<p>👉 La liste est triée :
+<code>[2, 3, 5, 7]</code></p>
+<hr />
+<h2 id="representation-schematisee">🧩 Représentation schématisée</h2>
+<div class="highlight"><pre><span></span><code>[7, 3, 5, 2]
+   ↓
+(minimum = 2)
+↳ échange avec 7
+[2, 3, 5, 7]
+   ↓
+(minimum = 3)
+[pas d’échange]
+[2, 3, 5, 7]
+   ↓
+(minimum = 5)
+[pas d’échange]
+[2, 3, 5, 7]
+</code></pre></div>
+<hr />
+<h2 id="comment-fonctionne-lalgorithme-a-chaque-tour">🔄 Comment fonctionne l’algorithme à chaque tour ?</h2>
+<p>Pour chaque position <strong>i</strong> dans la liste :</p>
+<ol>
+<li>on suppose que la plus petite valeur se trouve en position <strong>i</strong> ;</li>
+<li>on parcourt les positions qui suivent (i+1, i+2, …) pour vérifier si un élément plus petit existe ;</li>
+<li>si on le trouve, on retient sa position ;</li>
+<li>à la fin du parcours, on échange l’élément trouvé avec celui de la position <strong>i</strong>.</li>
+</ol>
+<p>👉 C’est un algorithme qui nécessite <strong>deux boucles</strong> :</p>
+<ul>
+<li>une boucle extérieure qui fixe la position où doit aller le prochain plus petit,</li>
+<li>une boucle intérieure qui cherche le minimum.</li>
+</ul>
+<hr />
+<h2 id="avantages-et-inconvenients">📦 Avantages et inconvénients</h2>
+<h3 id="avantages">✔️ Avantages</h3>
+<ul>
+<li>Très simple à comprendre et à implémenter.</li>
+<li>Réalise très peu d’échanges (au maximum n échanges pour n éléments).</li>
+</ul>
+<h3 id="inconvenients">❌ Inconvénients</h3>
+<ul>
+<li>Il faut <strong>parcourir toute la liste</strong> pour chaque position → lent si la liste est longue.</li>
+<li>Ne s’adapte pas bien aux listes déjà presque triées : il fera quand même les mêmes comparaisons.</li>
+</ul>
+<h1 id="3-le-tri-par-insertion-version-developpee">3. 🔶 Le tri par insertion (Version développée)</h1>
+<p>Le <strong>tri par insertion</strong> (en anglais <em>insertion sort</em>) est un algorithme de tri très intuitif, souvent expliqué en comparant son fonctionnement avec la manière dont on trie des <strong>cartes à jouer dans sa main</strong>.</p>
+<hr />
+<h2 id="idee-generale_1">🎯 Idée générale</h2>
+<p>On considère qu’une partie de la liste (au début, juste le premier élément) est déjà <strong>triée</strong>.</p>
+<p>Ensuite, pour chaque nouvel élément de la liste :</p>
+<ol>
+<li>On le compare avec les éléments déjà triés ;</li>
+<li>On le déplace vers la gauche jusqu’à trouver sa <strong>juste place</strong> ;</li>
+<li>On l’insère là où il doit aller.</li>
+</ol>
+<p>👉 De cette manière, la partie gauche de la liste est toujours triée, et elle <strong>grandit</strong> à chaque étape.</p>
+<hr />
+<h2 id="exemple-concret-comme-trier-des-cartes">🃏 Exemple concret : comme trier des cartes</h2>
+<p>Quand on reçoit des cartes dans un jeu :</p>
+<ol>
+<li>On commence avec une carte → c’est trié.</li>
+<li>On prend la seconde → on la met avant ou après selon sa valeur.</li>
+<li>On prend la troisième → on la glisse au bon endroit, même s’il faut bouger les autres cartes.</li>
+<li>Et ainsi de suite.</li>
+</ol>
+<p>Le tri par insertion fait exactement la même chose, mais avec des nombres dans une liste.</p>
+<hr />
+<h2 id="exemple-detaille-trier-la-liste-7-3-5-2_1">🔍 Exemple détaillé : trier la liste <code>[7, 3, 5, 2]</code></h2>
+<p>On va construire progressivement une partie triée à gauche.</p>
+<hr />
+<h3 id="etape-0-point-de-depart">➤ Étape 0 : point de départ</h3>
+<p>On considère que <code>[7]</code> est déjà trié.</p>
+<hr />
+<h3 id="etape-1-inserer-3">➤ Étape 1 : insérer 3</h3>
+<p>On compare 3 avec les éléments de la partie triée (<code>[7]</code>) :</p>
+<ul>
+<li>3 &lt; 7 → on déplace 7 vers la droite</li>
+<li>On place 3 à sa place</li>
+</ul>
+<p>Résultat :
+<code>[3, 7, 5, 2]</code></p>
+<hr />
+<h3 id="etape-2-inserer-5">➤ Étape 2 : insérer 5</h3>
+<p>On compare 5 à 7 puis à 3 :</p>
+<ul>
+<li>5 &lt; 7 → on décale 7 à droite</li>
+<li>5 &gt; 3 → sa place est ici</li>
+</ul>
+<p>Résultat :
+<code>[3, 5, 7, 2]</code></p>
+<hr />
+<h3 id="etape-3-inserer-2">➤ Étape 3 : insérer 2</h3>
+<p>On compare 2 à 7 → déplacer 7
+On compare 2 à 5 → déplacer 5
+On compare 2 à 3 → déplacer 3
+Puis on place 2 au début.</p>
+<p>Résultat final :
+<code>[2, 3, 5, 7]</code></p>
+<hr />
+<h2 id="schema-illustre">🧩 Schéma illustré</h2>
+<div class="highlight"><pre><span></span><code>[7 | 3, 5, 2] → 3 s&#39;insère → [3, 7 | 5, 2]
+[3, 7 | 5, 2] → 5 s&#39;insère → [3, 5, 7 | 2]
+[3, 5, 7 | 2] → 2 s&#39;insère → [2, 3, 5, 7]
+</code></pre></div>
+<p>La partie à gauche de la barre (<code>|</code>) est toujours triée.</p>
+<hr />
+<h2 id="le-fonctionnement-detaille">🔄 Le fonctionnement détaillé</h2>
+<p>Pour chaque position <strong>i</strong> de la liste :</p>
+<ol>
+<li>On retient la valeur à insérer : <code>valeur = liste[i]</code></li>
+<li>On parcourt les éléments à gauche de <code>i</code> en partant de <code>i-1</code></li>
+<li>Tant que la valeur est <strong>plus petite</strong>, on décale les éléments vers la droite</li>
+<li>On place la valeur au bon endroit.</li>
+</ol>
+<p>👉 Cet algorithme nécessite aussi deux boucles :</p>
+<ul>
+<li>une boucle extérieure pour parcourir la liste,</li>
+<li>une boucle intérieure pour déplacer les éléments.</li>
+</ul>
+<hr />
+<h2 id="avantages-et-inconvenients_1">📦 Avantages et inconvénients</h2>
+<h3 id="avantages_1">✔️ Avantages</h3>
+<ul>
+<li>Très efficace quand la liste est déjà <strong>presque triée</strong>.</li>
+<li>Simple à comprendre et très naturel.</li>
+<li>Fonctionne "en ligne" : à chaque élément ajouté, la liste reste triée.</li>
+</ul>
+<h3 id="inconvenients_1">❌ Inconvénients</h3>
+<ul>
+<li>Peut être lent si la liste est très désordonnée.</li>
+<li>Nécessite parfois beaucoup de <strong>déplacements</strong> d’éléments.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <a href="/" class="custom-home-button" title="Accueil">
+  <svg viewBox="0 0 24 24">
+    <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+  </svg>
+  Accueil
+</a>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.instant", "navigation.tabs", "navigation.sections", "navigation.top", "navigation.expand", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,1096 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://www.prof-leal.fr/NSI_1/interaction_web/tp_site_web/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>TP/DM : Mon premier site web - Mr Leal SNT/NSI</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/custom_style.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#tpdm-mon-premier-site-web" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Mr Leal SNT/NSI" class="md-header__button md-logo" aria-label="Mr Leal SNT/NSI" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M256 141.3v309.3l.5-.2A449 449 0 0 1 428.8 416H448V96h-19.2c-42.2 0-84.1 8.4-123.1 24.6-16.8 7-33.4 13.9-49.7 20.7m-25.1-79.8L256 72l25.1-10.5C327.9 42 378.1 32 428.8 32H464c26.5 0 48 21.5 48 48v352c0 26.5-21.5 48-48 48h-35.2c-50.7 0-100.9 10-147.7 29.5l-12.8 5.3c-7.9 3.3-16.7 3.3-24.6 0l-12.8-5.3C184.1 490 133.9 480 83.2 480H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h35.2c50.7 0 100.9 10 147.7 29.5"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Mr Leal SNT/NSI
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              TP/DM : Mon premier site web
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="indigo"  aria-label="Mode sombre"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Mode sombre" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="indigo"  aria-label="Mode clair"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Mode clair" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Accueil
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../SNT/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  SNT
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Première NSI
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Mr Leal SNT/NSI" class="md-nav__button md-logo" aria-label="Mr Leal SNT/NSI" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M256 141.3v309.3l.5-.2A449 449 0 0 1 428.8 416H448V96h-19.2c-42.2 0-84.1 8.4-123.1 24.6-16.8 7-33.4 13.9-49.7 20.7m-25.1-79.8L256 72l25.1-10.5C327.9 42 378.1 32 428.8 32H464c26.5 0 48 21.5 48 48v352c0 26.5-21.5 48-48 48h-35.2c-50.7 0-100.9 10-147.7 29.5l-12.8 5.3c-7.9 3.3-16.7 3.3-24.6 0l-12.8-5.3C184.1 490 133.9 480 83.2 480H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h35.2c50.7 0 100.9 10 147.7 29.5"/></svg>
+
+    </a>
+    Mr Leal SNT/NSI
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Accueil
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SNT/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SNT
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Première NSI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#objectifs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 Objectifs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#choisir-votre-theme" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎨 Choisir votre thème
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ce-que-votre-site-doit-contenir-minimum" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📋 Ce que votre site doit contenir (minimum)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📋 Ce que votre site doit contenir (minimum)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#structure-de-base" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Structure de base
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#organisation-des-fichiers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Organisation des fichiers
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partie-1-html-10-points" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 Partie 1 : HTML (10 points)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📝 Partie 1 : HTML (10 points)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ce-que-vous-devez-avoir-dans-votre-html" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ce que vous devez avoir dans votre HTML
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partie-2-css-8-points" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎨 Partie 2 : CSS (8 points)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎨 Partie 2 : CSS (8 points)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ce-que-vous-devez-avoir-dans-votre-css" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ce que vous devez avoir dans votre CSS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conseils-pour-debuter-en-css" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conseils pour débuter en CSS
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partie-3-javascript-bonus-2-points" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚡ Partie 3 : JavaScript (BONUS - 2 points)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⚡ Partie 3 : JavaScript (BONUS - 2 points)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#option-simple-bouton-qui-affiche-un-message" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Option simple : Bouton qui affiche un message
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#option-moyenne-changer-une-image-au-clic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Option moyenne : Changer une image au clic
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#criteres-devaluation-javascript" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Critères d'évaluation JavaScript
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rendu-du-travail" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📦 Rendu du travail
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📦 Rendu du travail">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ce-que-vous-devez-rendre" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ce que vous devez rendre
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nommage-du-fichier" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nommage du fichier
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conseils-pour-reussir" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💡 Conseils pour réussir
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💡 Conseils pour réussir">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-commencez-simple" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Commencez simple
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-testez-souvent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Testez souvent
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-demandez-de-laide" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Demandez de l'aide
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemples-dinspiration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemples d'inspiration
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Exemples d&#39;inspiration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exemple-1-site-sur-le-football" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemple 1 : Site sur le football
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemple-2-site-de-recettes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemple 2 : Site de recettes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemple-3-portfolio-artistique" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemple 3 : Portfolio artistique
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="tpdm-mon-premier-site-web">TP/DM : Mon premier site web</h1>
+<h2 id="objectifs">🎯 Objectifs</h2>
+<p>Dans ce travail pratique, vous allez créer votre <strong>premier site web</strong> sur un thème de votre choix !</p>
+<hr />
+<h2 id="choisir-votre-theme">🎨 Choisir votre thème</h2>
+<p>Vous êtes <strong>libre</strong> de choisir le thème de votre site web. Voici des idées simples pour débuter :</p>
+<ul>
+<li>🎮 Présentation de votre jeu vidéo préféré</li>
+<li>🎵 Site sur votre artiste ou groupe de musique favori</li>
+<li>🏀 Page dédiée à votre sport ou équipe favorite</li>
+<li>📚 Blog sur vos livres ou films préférés</li>
+<li>🌍 Site de présentation d'un pays ou d'une ville</li>
+<li>🎨 Portfolio artistique ou photographique</li>
+<li>🔬 Présentation d'une découverte scientifique</li>
+<li>🍕 Site de recettes de cuisine</li>
+<li>🐾 Présentation d'une espèce animale</li>
+<li>💻 Présentation de vous-même (page "À propos de moi")</li>
+<li>🏀 Votre sport préféré</li>
+<li>🎬 Vos films ou séries préférés</li>
+</ul>
+<p><strong>Important</strong> : Choisissez un thème que vous connaissez bien et qui vous intéresse !</p>
+<hr />
+<h2 id="ce-que-votre-site-doit-contenir-minimum">📋 Ce que votre site doit contenir (minimum)</h2>
+<p>Pour réussir ce TP, votre site doit avoir <strong>au minimum</strong> :</p>
+<h3 id="structure-de-base">Structure de base</h3>
+<p>✅ <strong>2 pages HTML minimum</strong> :</p>
+<ul>
+<li><code>index.html</code> (page d'accueil)</li>
+<li>Une autre page de votre choix (ex: <code>galerie.html</code>, <code>contact.html</code>)</li>
+</ul>
+<p>✅ <strong>1 fichier CSS</strong> :</p>
+<ul>
+<li><code>style.css</code> (pour la mise en forme)</li>
+</ul>
+<p>✅ <strong>Un dossier pour les images</strong> :</p>
+<ul>
+<li><code>images/</code> (contenant vos photos)</li>
+</ul>
+<h3 id="organisation-des-fichiers">Organisation des fichiers</h3>
+<p>Votre dossier doit ressembler à ceci :</p>
+<div class="highlight"><pre><span></span><code>mon_site_web/
+│
+├── index.html          ← Page d&#39;accueil
+├── page2.html          ← Deuxième page
+├── style.css           ← Fichier CSS
+│
+└── images/             ← Dossier des images
+    ├── photo1.jpg
+    └── photo2.jpg
+</code></pre></div>
+<hr />
+<h2 id="partie-1-html-10-points">📝 Partie 1 : HTML (10 points)</h2>
+<h3 id="ce-que-vous-devez-avoir-dans-votre-html">Ce que vous devez avoir dans votre HTML</h3>
+<table>
+<thead>
+<tr>
+<th>Élément</th>
+<th>Points</th>
+<th>Explication</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Structure de base</td>
+<td>1 pt</td>
+<td><code>&lt;!DOCTYPE html&gt;</code>, <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, <code>&lt;body&gt;</code></td>
+</tr>
+<tr>
+<td>Titre de la page</td>
+<td>1 pt</td>
+<td>Balise <code>&lt;title&gt;</code> dans le <code>&lt;head&gt;</code></td>
+</tr>
+<tr>
+<td>Au moins 1 titre h1</td>
+<td>1 pt</td>
+<td>Un grand titre sur chaque page</td>
+</tr>
+<tr>
+<td>Au moins 3 paragraphes</td>
+<td>1 pt</td>
+<td>Du texte avec la balise <code>&lt;p&gt;</code></td>
+</tr>
+<tr>
+<td>Au moins 2 images</td>
+<td>1 pt</td>
+<td>Balise <code>&lt;img&gt;</code> avec attribut <code>alt</code></td>
+</tr>
+<tr>
+<td>Un menu de navigation</td>
+<td>2 pts</td>
+<td>Liens entre vos pages avec <code>&lt;a&gt;</code></td>
+</tr>
+<tr>
+<td>Une liste</td>
+<td>1 pt</td>
+<td><code>&lt;ul&gt;</code> ou <code>&lt;ol&gt;</code> avec au moins 3 éléments</td>
+</tr>
+<tr>
+<td>Code bien indenté</td>
+<td>2 pts</td>
+<td>Code propre et facile à lire</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="partie-2-css-8-points">🎨 Partie 2 : CSS (8 points)</h2>
+<h3 id="ce-que-vous-devez-avoir-dans-votre-css">Ce que vous devez avoir dans votre CSS</h3>
+<table>
+<thead>
+<tr>
+<th>Élément</th>
+<th>Points</th>
+<th>Explication</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fichier CSS séparé</td>
+<td>1 pt</td>
+<td>Créer un fichier <code>style.css</code></td>
+</tr>
+<tr>
+<td>Couleurs</td>
+<td>2 pts</td>
+<td>Changer les couleurs du texte et du fond</td>
+</tr>
+<tr>
+<td>Polices</td>
+<td>1 pt</td>
+<td>Changer la taille et le type de police</td>
+</tr>
+<tr>
+<td>Espacements</td>
+<td>2 pts</td>
+<td>Utiliser <code>margin</code> et <code>padding</code></td>
+</tr>
+<tr>
+<td>Menu stylisé</td>
+<td>1 pt</td>
+<td>Rendre le menu joli</td>
+</tr>
+<tr>
+<td>Code propre</td>
+<td>1 pt</td>
+<td>Code bien organisé et commenté</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="conseils-pour-debuter-en-css">Conseils pour débuter en CSS</h3>
+<p><strong>1. Commencez simple</strong></p>
+<ul>
+<li>Changez d'abord les couleurs</li>
+<li>Puis les tailles de police</li>
+<li>Ensuite les espacements</li>
+</ul>
+<p><strong>2. Testez au fur et à mesure</strong></p>
+<ul>
+<li>Modifiez une propriété</li>
+<li>Rechargez la page (F5)</li>
+<li>Observez le résultat</li>
+</ul>
+<p><strong>3. Utilisez des couleurs harmonieuses</strong></p>
+<details class="note">
+<summary>Quelques palettes simples :</summary>
+<ul>
+<li><strong>Bleu et blanc</strong> : <code>#3498db</code> (bleu), <code>#ecf0f1</code> (gris clair), <code>#2c3e50</code> (gris foncé)</li>
+<li><strong>Vert et blanc</strong> : <code>#27ae60</code> (vert), <code>#f0f0f0</code> (gris clair), <code>#2c3e50</code> (gris foncé)</li>
+<li><strong>Rouge et blanc</strong> : <code>#e74c3c</code> (rouge), <code>#ecf0f1</code> (gris clair), <code>#2c3e50</code> (gris foncé)</li>
+</ul>
+</details>
+<p><strong>4. Propriétés CSS essentielles</strong></p>
+<table>
+<thead>
+<tr>
+<th>Propriété</th>
+<th>Effet</th>
+<th>Exemple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>color</code></td>
+<td>Couleur du texte</td>
+<td><code>color: blue;</code></td>
+</tr>
+<tr>
+<td><code>background-color</code></td>
+<td>Couleur de fond</td>
+<td><code>background-color: #f0f0f0;</code></td>
+</tr>
+<tr>
+<td><code>font-size</code></td>
+<td>Taille du texte</td>
+<td><code>font-size: 18px;</code></td>
+</tr>
+<tr>
+<td><code>margin</code></td>
+<td>Espace extérieur</td>
+<td><code>margin: 20px;</code></td>
+</tr>
+<tr>
+<td><code>padding</code></td>
+<td>Espace intérieur</td>
+<td><code>padding: 15px;</code></td>
+</tr>
+<tr>
+<td><code>text-align</code></td>
+<td>Alignement du texte</td>
+<td><code>text-align: center;</code></td>
+</tr>
+<tr>
+<td><code>border-radius</code></td>
+<td>Coins arrondis</td>
+<td><code>border-radius: 10px;</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="partie-3-javascript-bonus-2-points">⚡ Partie 3 : JavaScript (BONUS - 2 points)</h2>
+<p>Cette partie est <strong>optionnelle</strong> et permet d'obtenir <strong>2 points bonus</strong>.</p>
+<p><strong>Important</strong> : Ne faites cette partie que si vous avez bien compris HTML et CSS !</p>
+<h3 id="option-simple-bouton-qui-affiche-un-message">Option simple : Bouton qui affiche un message</h3>
+<p><strong>Ce que ça fait</strong> : Quand on clique sur le bouton, un message s'affiche.</p>
+<h3 id="option-moyenne-changer-une-image-au-clic">Option moyenne : Changer une image au clic</h3>
+<p><strong>Ce que ça fait</strong> : Quand on clique sur le bouton, l'image change.</p>
+<h3 id="criteres-devaluation-javascript">Critères d'évaluation JavaScript</h3>
+<table>
+<thead>
+<tr>
+<th>Critère</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Le code fonctionne</td>
+<td>1 pt</td>
+</tr>
+<tr>
+<td>Le code est bien placé et commenté</td>
+<td>1 pt</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="rendu-du-travail">📦 Rendu du travail</h2>
+<h3 id="ce-que-vous-devez-rendre">Ce que vous devez rendre</h3>
+<p><strong>Un dossier compressé (.zip)</strong> contenant :</p>
+<ul>
+<li>Tous vos fichiers HTML</li>
+<li>Votre fichier CSS</li>
+<li>Votre dossier <code>images/</code> avec les images</li>
+<li>(Optionnel) Votre fichier JavaScript</li>
+</ul>
+<p><strong>Un fichier texte</strong> <code>README.txt</code> avec :   </p>
+<ul>
+<li>Votre nom et prénom</li>
+<li>Le thème de votre site</li>
+<li>Ce que vous avez fait (HTML, CSS, JavaScript ?)</li>
+<li>Les difficultés rencontrées</li>
+</ul>
+<h3 id="nommage-du-fichier">Nommage du fichier</h3>
+<p>Nommez votre fichier zip : <code>NOM_Prenom_MonSite.zip</code></p>
+<p><strong>Exemple</strong> : <code>DUPONT_Marie_MonSite.zip</code></p>
+<hr />
+<h2 id="conseils-pour-reussir">💡 Conseils pour réussir</h2>
+<h3 id="1-commencez-simple">1. Commencez simple</h3>
+<p>Ne cherchez pas à faire quelque chose de trop compliqué. Un site simple mais bien fait vaut mieux qu'un site complexe qui ne fonctionne pas !</p>
+<h3 id="2-testez-souvent">2. Testez souvent</h3>
+<p>Après chaque modification :</p>
+<ol>
+<li>Sauvegardez votre fichier</li>
+<li>Rechargez la page dans le navigateur (F5)</li>
+<li>Vérifiez que tout fonctionne</li>
+</ol>
+<h3 id="3-demandez-de-laide">3. Demandez de l'aide</h3>
+<p>Si vous êtes bloqué :</p>
+<ul>
+<li>Relisez le cours</li>
+<li>Regardez les exercices</li>
+<li>Demandez à votre professeur</li>
+<li>Cherchez sur internet (W3Schools, MDN)</li>
+</ul>
+<h2 id="exemples-dinspiration">Exemples d'inspiration</h2>
+<p>Voici quelques exemples de sites simples mais bien réalisés :</p>
+<h3 id="exemple-1-site-sur-le-football">Exemple 1 : Site sur le football</h3>
+<ul>
+<li><strong>Page d'accueil</strong> : Présentation du club, actualités</li>
+<li><strong>Page joueurs</strong> : Galerie des joueurs avec photos</li>
+<li><strong>Page contact</strong> : Formulaire de contact</li>
+</ul>
+<h3 id="exemple-2-site-de-recettes">Exemple 2 : Site de recettes</h3>
+<ul>
+<li><strong>Page d'accueil</strong> : Présentation, recette du jour</li>
+<li><strong>Page recettes</strong> : Liste de recettes avec images</li>
+<li><strong>Page à propos</strong> : Histoire du site, auteur</li>
+</ul>
+<h3 id="exemple-3-portfolio-artistique">Exemple 3 : Portfolio artistique</h3>
+<ul>
+<li><strong>Page d'accueil</strong> : Présentation de l'artiste</li>
+<li><strong>Page galerie</strong> : Galerie d'œuvres avec effet lightbox (JS)</li>
+<li><strong>Page contact</strong> : Formulaire et réseaux sociaux</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <a href="/" class="custom-home-button" title="Accueil">
+  <svg viewBox="0 0 24 24">
+    <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+  </svg>
+  Accueil
+</a>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.instant", "navigation.tabs", "navigation.sections", "navigation.top", "navigation.expand", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      
+    
+  </body>
+</html>
