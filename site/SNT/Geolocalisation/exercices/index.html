@@ -604,14 +604,6 @@
 <li>1 km = 1000 m</li>
 </ul>
 </details>
-<details class="check">
-<summary>Réponse</summary>
-<ol>
-<li>Distance = 300 000 km/s × 0.08 s = <strong>24 000 km</strong></li>
-<li>24 000 km = <strong>24 000 000 mètres</strong></li>
-<li>Oui, c'est cohérent car les satellites GPS orbitent à environ 20 200 km, et le signal peut parcourir une distance légèrement supérieure selon l'angle</li>
-</ol>
-</details>
 <h2 id="exercice-6-decodage-de-trame-nmea-niveau-1">Exercice 6 : Décodage de trame NMEA (Niveau 1)</h2>
 <div class="admonition question">
 <p class="admonition-title">Énoncé</p>
@@ -636,16 +628,6 @@
 <li>Champ 4-5 : Longitude et direction (E/W)</li>
 <li>Champ 7 : Nombre de satellites</li>
 </ul>
-</details>
-<details class="check">
-<summary>Réponse</summary>
-<ol>
-<li><strong>17:57:37.303</strong> (heure UTC)</li>
-<li>Latitude : <strong>44° 49.833' N</strong></li>
-<li>Longitude : <strong>0° 34.772' W</strong></li>
-<li><strong>4 satellites</strong></li>
-<li>Cette position correspond à <strong>Bordeaux, France</strong></li>
-</ol>
 </details>
 <h2 id="exercice-7-decodage-de-trame-nmea-niveau-2">Exercice 7 : Décodage de trame NMEA (Niveau 2)</h2>
 <div class="admonition question">
@@ -676,25 +658,6 @@
 <li>L'altitude est indiquée dans le champ après le nombre de satellites</li>
 </ul>
 </details>
-<details class="check">
-<summary>Réponse</summary>
-<p><strong>Trame 1 :</strong></p>
-<ul>
-<li>Coordonnées : 50.6341° N, 3.0616° E</li>
-<li>Ville : <strong>Lille, France</strong></li>
-</ul>
-<p><strong>Trame 2 :</strong></p>
-<ul>
-<li>Coordonnées : 45.7529° N, 4.8340° E</li>
-<li>Ville : <strong>Lyon, France</strong></li>
-</ul>
-<p><strong>Trame 3 :</strong></p>
-<ul>
-<li>Coordonnées : 45.5631° N, 5.9134° E</li>
-<li>Altitude : <strong>154.3 mètres</strong></li>
-<li>Ville : <strong>Chambéry, France</strong></li>
-</ul>
-</details>
 <h2 id="exercice-8-coordonnees-mystere">Exercice 8 : Coordonnées mystère</h2>
 <div class="admonition question">
 <p class="admonition-title">Énoncé</p>
@@ -712,18 +675,6 @@
 <li>Utilisez Google Maps : entrez directement les coordonnées dans la barre de recherche</li>
 <li>Format à entrer : 41.921, 8.735</li>
 </ul>
-</details>
-<details class="check">
-<summary>Réponse</summary>
-<ol>
-<li><strong>Ajaccio</strong></li>
-<li><strong>France</strong> (Corse)</li>
-<li>Coordonnées en DM :<ul>
-<li>Latitude : 41° 55.260' N</li>
-<li>Longitude : 8° 44.100' E</li>
-</ul>
-</li>
-</ol>
 </details>
 <h2 id="exercice-9-precision-gps">Exercice 9 : Précision GPS</h2>
 <div class="admonition question">
@@ -744,20 +695,6 @@
 <li>Réfléchissez à l'effet des bâtiments sur les signaux satellites</li>
 </ul>
 </details>
-<details class="check">
-<summary>Réponse</summary>
-<ol>
-<li><strong>5 à 10 mètres</strong> pour un GPS civil</li>
-<li><strong>Galileo</strong> (précision d'environ 1 mètre)</li>
-<li>Trois facteurs :<ul>
-<li>Nombre de satellites visibles</li>
-<li>Conditions météorologiques</li>
-<li>Obstacles (bâtiments, relief, végétation)</li>
-</ul>
-</li>
-<li>En ville, les bâtiments créent un <strong>effet canyon</strong> : les signaux sont réfléchis et perturbés, ce qui réduit la précision</li>
-</ol>
-</details>
 <h2 id="exercice-10-vie-privee-et-geolocalisation">Exercice 10 : Vie privée et géolocalisation</h2>
 <div class="admonition question">
 <p class="admonition-title">Énoncé</p>
@@ -776,45 +713,6 @@
 <li>Réfléchissez aux informations qu'on peut déduire de vos déplacements</li>
 <li>Consultez la section "Enjeux et perspectives" du cours</li>
 </ul>
-</details>
-<details class="check">
-<summary>Réponse</summary>
-<ol>
-<li>
-<p><strong>Exemples d'applications :</strong></p>
-<ul>
-<li>Google Maps / Waze (navigation)</li>
-<li>Instagram / Snapchat (géotagging)</li>
-<li>Uber / Deliveroo (services de livraison)</li>
-</ul>
-</li>
-<li>
-<p><strong>Risques :</strong></p>
-<ul>
-<li>Surveillance de vos déplacements</li>
-<li>Cambriolage (si on sait que vous n'êtes pas chez vous)</li>
-<li>Harcèlement / stalking</li>
-<li>Collecte et revente de données personnelles</li>
-</ul>
-</li>
-<li>
-<p><strong>Protection :</strong></p>
-<ul>
-<li>Désactiver la géolocalisation quand elle n'est pas nécessaire</li>
-<li>Vérifier les autorisations des applications</li>
-<li>Utiliser le mode "position approximative" plutôt que "position précise"</li>
-<li>Ne pas partager sa position en temps réel publiquement</li>
-</ul>
-</li>
-<li>
-<p><strong>Métadonnées GPS :</strong></p>
-<ul>
-<li>Les photos contiennent souvent votre position exacte</li>
-<li>Cela peut révéler votre domicile, votre lieu de travail, vos habitudes</li>
-<li>Des personnes malveillantes pourraient utiliser ces informations</li>
-</ul>
-</li>
-</ol>
 </details>
 
 

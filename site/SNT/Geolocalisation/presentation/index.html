@@ -534,7 +534,7 @@ Altitude  : ~57 m
 <p><img alt="bg right:40% 80%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Tour_Eiffel_Wikimedia_Commons_%28cropped%29.jpg/800px-Tour_Eiffel_Wikimedia_Commons_%28cropped%29.jpg" /></p>
 <hr />
 <h2 id="exercice">🌐 Exercice :</h2>
-<p>Trouvez les coordonnées de votre lycée sur Google Maps !</p>
+<p>Trouvez les coordonnées de votre lycée sur <a href="https://www.coordonnees-gps.fr">www.coordonnees-gps.fr</a> ou sur <a href="https://www.calcmaps.com/fr/">www.calcmaps.com</a> !</p>
 <hr />
 <h2 id="formats-de-coordonnees">📐 Formats de coordonnées</h2>
 <h3 id="format-decimal-le-plus-simple">Format Décimal (le plus simple)</h3>
@@ -554,12 +554,30 @@ Altitude  : ~57 m
 <p><strong>Conversion</strong> : 1' = 60" (secondes)</p>
 <hr />
 <!-- _class: lead -->
+
+<h2 id="formats-de-coordonnees_3">📐 Formats de coordonnées</h2>
+<p>À vous de jouer avec les coordonnées du lycée pour les transformer en minutes puis en secondes !</p>
+<hr />
+<!-- _class: lead -->
 <h1 id="3-comment-fonctionne-le-gps">3️⃣ Comment fonctionne le GPS ?</h1>
 <hr />
 <h2 id="le-principe-de-la-trilateration">🛰️ Le principe de la trilatération</h2>
 <p><strong>Trilatération</strong> = Déterminer une position en mesurant les distances depuis au moins <strong>3 satellites</strong></p>
 <hr />
-<p><img alt="width:700px" src="../../../assets/seconde/geoloc/trilateration.png" /></p>
+<h2 id="etape-1-un-seul-satellite">🛰️ Étape 1 : Un seul satellite</h2>
+<p>Avec <strong>1 satellite</strong>, on connaît seulement la <strong>distance</strong> au satellite.</p>
+<p>➡️ La position peut être <strong>n'importe où</strong> sur un cercle autour du satellite</p>
+<p><img alt="width:500px" src="../../../assets/seconde/geoloc/trilateration_step1.png" /></p>
+<hr />
+<h2 id="etape-2-deux-satellites">🛰️ Étape 2 : Deux satellites</h2>
+<p>Avec <strong>2 satellites</strong>, on a deux cercles qui se croisent.</p>
+<p>➡️ La position est réduite à <strong>2 points possibles</strong> (intersection des cercles)</p>
+<p><img alt="width:500px" src="../../../assets/seconde/geoloc/trilateration_step2.png" /></p>
+<hr />
+<h2 id="etape-3-trois-satellites">🛰️ Étape 3 : Trois satellites</h2>
+<p>Avec <strong>3 satellites</strong>, les trois cercles se croisent en <strong>un seul point</strong>.</p>
+<p>➡️ C'est votre <strong>position exacte</strong> ! 📍</p>
+<p><img alt="width:500px" src="../../../assets/seconde/geoloc/trilateration_step3.png" /></p>
 <hr />
 <h2 id="le-processus-en-3-etapes">📡 Le processus en 3 étapes</h2>
 <h3 id="etape-1-reception-des-signaux">Étape 1️⃣ : Réception des signaux</h3>

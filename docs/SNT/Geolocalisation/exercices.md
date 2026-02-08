@@ -122,12 +122,6 @@
     *   Temps = 0.08 s
     *   1 km = 1000 m
 
-??? check "Réponse"
-
-    1. Distance = 300 000 km/s × 0.08 s = **24 000 km**
-    2. 24 000 km = **24 000 000 mètres**
-    3. Oui, c'est cohérent car les satellites GPS orbitent à environ 20 200 km, et le signal peut parcourir une distance légèrement supérieure selon l'angle
-
 ## Exercice 6 : Décodage de trame NMEA (Niveau 1)
 
 !!! question "Énoncé"
@@ -154,14 +148,6 @@
     *   Champ 2-3 : Latitude et direction (N/S)
     *   Champ 4-5 : Longitude et direction (E/W)
     *   Champ 7 : Nombre de satellites
-
-??? check "Réponse"
-
-    1. **17:57:37.303** (heure UTC)
-    2. Latitude : **44° 49.833' N**
-    3. Longitude : **0° 34.772' W**
-    4. **4 satellites**
-    5. Cette position correspond à **Bordeaux, France**
 
 ## Exercice 7 : Décodage de trame NMEA (Niveau 2)
 
@@ -198,24 +184,6 @@
     *   Utilisez Google Maps pour identifier les villes
     *   L'altitude est indiquée dans le champ après le nombre de satellites
 
-??? check "Réponse"
-
-    **Trame 1 :**
-    
-    *   Coordonnées : 50.6341° N, 3.0616° E
-    *   Ville : **Lille, France**
-    
-    **Trame 2 :**
-    
-    *   Coordonnées : 45.7529° N, 4.8340° E
-    *   Ville : **Lyon, France**
-    
-    **Trame 3 :**
-    
-    *   Coordonnées : 45.5631° N, 5.9134° E
-    *   Altitude : **154.3 mètres**
-    *   Ville : **Chambéry, France**
-
 ## Exercice 8 : Coordonnées mystère
 
 !!! question "Énoncé"
@@ -232,14 +200,6 @@
 
     *   Utilisez Google Maps : entrez directement les coordonnées dans la barre de recherche
     *   Format à entrer : 41.921, 8.735
-
-??? check "Réponse"
-
-    1. **Ajaccio**
-    2. **France** (Corse)
-    3. Coordonnées en DM :
-        *   Latitude : 41° 55.260' N
-        *   Longitude : 8° 44.100' E
 
 ## Exercice 9 : Précision GPS
 
@@ -258,16 +218,6 @@
     *   Pensez aux obstacles physiques
     *   Réfléchissez à l'effet des bâtiments sur les signaux satellites
 
-??? check "Réponse"
-
-    1. **5 à 10 mètres** pour un GPS civil
-    2. **Galileo** (précision d'environ 1 mètre)
-    3. Trois facteurs :
-        *   Nombre de satellites visibles
-        *   Conditions météorologiques
-        *   Obstacles (bâtiments, relief, végétation)
-    4. En ville, les bâtiments créent un **effet canyon** : les signaux sont réfléchis et perturbés, ce qui réduit la précision
-
 ## Exercice 10 : Vie privée et géolocalisation
 
 !!! question "Énoncé"
@@ -285,26 +235,3 @@
     *   Réfléchissez aux informations qu'on peut déduire de vos déplacements
     *   Consultez la section "Enjeux et perspectives" du cours
 
-??? check "Réponse"
-
-    1. **Exemples d'applications :**
-        *   Google Maps / Waze (navigation)
-        *   Instagram / Snapchat (géotagging)
-        *   Uber / Deliveroo (services de livraison)
-    
-    2. **Risques :**
-        *   Surveillance de vos déplacements
-        *   Cambriolage (si on sait que vous n'êtes pas chez vous)
-        *   Harcèlement / stalking
-        *   Collecte et revente de données personnelles
-    
-    3. **Protection :**
-        *   Désactiver la géolocalisation quand elle n'est pas nécessaire
-        *   Vérifier les autorisations des applications
-        *   Utiliser le mode "position approximative" plutôt que "position précise"
-        *   Ne pas partager sa position en temps réel publiquement
-    
-    4. **Métadonnées GPS :**
-        *   Les photos contiennent souvent votre position exacte
-        *   Cela peut révéler votre domicile, votre lieu de travail, vos habitudes
-        *   Des personnes malveillantes pourraient utiliser ces informations

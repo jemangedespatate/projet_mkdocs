@@ -135,7 +135,7 @@ Altitude  : ~57 m
 
 ## 🌐 Exercice :
 
-Trouvez les coordonnées de votre lycée sur Google Maps !
+Trouvez les coordonnées de votre lycée sur [www.coordonnees-gps.fr](https://www.coordonnees-gps.fr) ou sur [www.calcmaps.com](https://www.calcmaps.com/fr/) !
 
 ---
 
@@ -169,6 +169,13 @@ Trouvez les coordonnées de votre lycée sur Google Maps !
 **Conversion** : 1' = 60" (secondes)
 
 ---
+<!-- _class: lead -->
+
+## 📐 Formats de coordonnées
+
+À vous de jouer avec les coordonnées du lycée pour les transformer en minutes puis en secondes !
+
+---
 
 <!-- _class: lead -->
 # 3️⃣ Comment fonctionne le GPS ?
@@ -181,7 +188,33 @@ Trouvez les coordonnées de votre lycée sur Google Maps !
 
 ---
 
-![width:700px](../../assets/seconde/geoloc/trilateration.png)
+## 🛰️ Étape 1 : Un seul satellite
+
+Avec **1 satellite**, on connaît seulement la **distance** au satellite.
+
+➡️ La position peut être **n'importe où** sur un cercle autour du satellite
+
+![width:500px](../../assets/seconde/geoloc/trilateration_step1.png)
+
+---
+
+## 🛰️ Étape 2 : Deux satellites
+
+Avec **2 satellites**, on a deux cercles qui se croisent.
+
+➡️ La position est réduite à **2 points possibles** (intersection des cercles)
+
+![width:500px](../../assets/seconde/geoloc/trilateration_step2.png)
+
+---
+
+## 🛰️ Étape 3 : Trois satellites
+
+Avec **3 satellites**, les trois cercles se croisent en **un seul point**.
+
+➡️ C'est votre **position exacte** ! 📍
+
+![width:500px](../../assets/seconde/geoloc/trilateration_step3.png)
 
 ---
 
