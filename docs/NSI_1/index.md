@@ -10,3 +10,4 @@ Bienvenue dans la section NSI Première. Voici les différents modules disponibl
 * [📊 Traitement de données en tables](traitement_de_donnees/sommaire.md)
 * [🌟 Algorithmes](algorithme/sommaire.md)
 * [🌐 Interaction Web (HTML/CSS/JS)](interaction_web/sommaire.md)
+* [💻 Système d'Exploitation (Linux)](Systeme_Exploitation/sommaire.md)

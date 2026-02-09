@@ -41,6 +41,7 @@ Ce site a pour objectif de guider les élèves tout au long de l'année scolaire
     * [📊 Traitement de données en tables](NSI_1/traitement_de_donnees/sommaire/)
     * [🌟 Algorithmes](NSI_1/algorithme/sommaire/)
     * [🌐 Interaction Web](NSI_1/interaction_web/sommaire/)
+    * [💻 Système d'Exploitation](NSI_1/Systeme_Exploitation/sommaire/)
 
 === "NSI terminale"
 
