@@ -1,49 +1,49 @@
 # ✏️ Exercices - Géolocalisation
 
-## Exercice 1 : Coordonnées GPS du lycée
+## Exercice 1 : Le Stade de France
 
 !!! question "Énoncé"
 
-    Sur votre téléphone ou avec Google Maps, retrouvez les coordonnées GPS de votre lycée.
+    Recherchez les coordonnées GPS exactes du **Stade de France** à Saint-Denis.
     
     **Questions :**
     
-    1. Quelle est la latitude de votre lycée ?
-    2. Quelle est la longitude de votre lycée ?
-    3. Votre lycée est-il situé dans l'hémisphère Nord ou Sud ?
-    4. Votre lycée est-il situé à l'Est ou à l'Ouest du méridien de Greenwich ?
+    1. Quelle est la latitude du Stade de France ?
+    2. Quelle est la longitude du Stade de France ?
+    3. Est-il situé dans l'hémisphère Nord ou Sud ?
+    4. Est-il situé à l'Est ou à l'Ouest du méridien de Greenwich ?
 
 ??? tip "Indice"
 
-    *   Ouvrez Google Maps sur votre téléphone ou ordinateur
-    *   Recherchez le nom de votre lycée
-    *   Faites un clic droit sur le point et sélectionnez "Plus d'infos sur cet endroit"
-    *   Les coordonnées s'affichent en bas de l'écran
+    *   Ouvrez [Google Maps](https://www.google.fr/maps)
+    *   Recherchez "Stade de France"
+    *   Faites un clic droit sur le point central et sélectionnez "Plus d'infos sur cet endroit" ou regardez l'URL
+    *   Les coordonnées s'affichent (Latitude, Longitude)
 
-## Exercice 2 : Exploration urbaine
+## Exercice 2 : Voyage autour du monde
 
 !!! question "Énoncé"
 
     Recherchez les coordonnées GPS des lieux suivants :
     
-    1. **Tour Eiffel** à Paris
-    2. **Statue de la Liberté** à New York
+    1. **L'Empire State Building** à New York (États-Unis)
+    2. **L'Opéra de Sydney** à Sydney (Australie)
     
     Utilisez ensuite l'outil [Lexilogos](https://www.lexilogos.com/calcul_distances.htm) pour calculer la distance entre ces deux lieux.
     
     **Questions :**
     
-    1. Quelles sont les coordonnées de la Tour Eiffel ?
-    2. Quelles sont les coordonnées de la Statue de la Liberté ?
+    1. Quelles sont les coordonnées de l'Empire State Building ?
+    2. Quelles sont les coordonnées de l'Opéra de Sydney ?
     3. Quelle est la distance (en km) entre ces deux monuments ?
-    4. Combien de temps faudrait-il en avion à 800 km/h ?
+    4. Combien de temps faudrait-il en avion à 900 km/h pour relier les deux ?
 
 ??? tip "Indice"
 
     *   Recherchez chaque monument sur Google Maps
-    *   Notez les coordonnées au format décimal (ex: 48.8584, 2.2945)
+    *   Notez les coordonnées au format décimal (ex: 40.7484, 151.2152)
     *   Sur Lexilogos, entrez les coordonnées de départ et d'arrivée
-    *   Pour le temps de vol : Temps = Distance ÷ Vitesse
+    *   Pour le temps de vol : $Temps = \frac{Distance}{Vitesse}$
 
 ## Exercice 3 : Conversion de coordonnées
 
@@ -71,12 +71,6 @@
     *   Minutes : 0.8584 × 60 = 51.504'
     *   Résultat : 48° 51.504'
 
-??? check "Réponse"
-
-    1. **45.7640°** = 45° 45.840' N
-    2. **4.8357°** = 4° 50.142' E
-    3. **43.2965°** = 43° 17.790' N
-    4. **5.3698°** = 5° 22.188' E
 
 ## Exercice 4 : Nombre de satellites
 
@@ -95,12 +89,6 @@
     *   Pensez aux dimensions : 2D vs 3D
     *   La synchronisation temporelle est cruciale pour calculer les distances
 
-??? check "Réponse"
-
-    1. **3 satellites** minimum pour une position 2D
-    2. **4 satellites** minimum pour une position 3D
-    3. Le satellite supplémentaire permet de **corriger l'horloge du récepteur** qui n'est pas aussi précise que les horloges atomiques des satellites
-    4. Avec seulement 2 satellites, on ne peut pas déterminer une position unique (il y aurait deux points d'intersection possibles)
 
 ## Exercice 5 : Calcul de distance
 
