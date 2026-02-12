@@ -2,33 +2,6 @@ from turtle import *
 import turtle
 
 # ==========================================
-# 🛠️ OUTILS (Ne pas modifier cette partie)
-# ==========================================
-
-def initialiser_tortue():
-    speed(0) # Vitesse maximale
-    hideturtle()
-    title("TP Remédiation : Pixel Art")
-    bgcolor("#f0f0f0") # Gris très clair pour le fond
-
-def aller_a(x, y):
-    penup()
-    goto(x, y)
-    pendown()
-
-def dessiner_pixel(x, y, couleur, taille=30):
-    """
-    Dessine un carré (pixel) à la position (x,y) de la couleur donnée.
-    """
-    aller_a(x, y)
-    color("black", couleur) # Contour noir, remplissage 'couleur'
-    begin_fill()
-    for _ in range(4):
-        forward(taille)
-        left(90)
-    end_fill()
-
-# ==========================================
 # 🚀 ACTIVITÉS À COMPLÉTER
 # ==========================================
 
@@ -39,6 +12,9 @@ def activite_1():
     # Exemple : dessiner_pixel(12, 24, "blue")
     
     # 👇 A COMPLÉTER CI-DESSOUS 👇
+    
+    # Modifiez ce pixel et ajoutez-en un nouveau :
+    dessiner_pixel(0, 0, "red") 
     
     pass 
 
@@ -73,40 +49,68 @@ def activite_4():
     pass
 
 # ==========================================
+# 🛠️ OUTILS (Ne pas modifier cette partie)
+# ==========================================
+
+def initialiser_tortue():
+    speed(0) # Vitesse maximale
+    hideturtle()
+    title("TP Remédiation : Pixel Art")
+    bgcolor("#f0f0f0") # Gris très clair pour le fond
+
+def aller_a(x, y):
+    penup()
+    goto(x, y)
+    pendown()
+
+def dessiner_pixel(x, y, couleur, taille=30):
+    """
+    Dessine un carré (pixel) à la position (x,y) de la couleur donnée.
+    """
+    aller_a(x, y)
+    color("black", couleur) # Contour noir, remplissage 'couleur'
+    begin_fill()
+    for _ in range(4):
+        forward(taille)
+        left(90)
+    end_fill()
+
+# ==========================================
 # 🎮 MENU PRINCIPAL
 # ==========================================
 
 def menu():
-    while True:
-        print("\n" + "="*30)
-        print("   MENU TP PIXEL ART")
-        print("="*30)
-        print("1. Activité 1 : Un simple Pixel")
-        print("2. Activité 2 : Une ligne (Boucle)")
-        print("3. Activité 3 : Un carré (Double Boucle)")
-        print("4. Activité 4 : Le Damier (Conditions)")
-        print("0. Quitter")
-        
-        choix = input("\nVotre choix : ")
-        
-        reset() 
-        initialiser_tortue()
-        
-        if choix == '1':
-            activite_1()
-        elif choix == '2':
-            activite_2()
-        elif choix == '3':
-            activite_3()
-        elif choix == '4':
-            activite_4()
-        elif choix == '0':
-            print("Au revoir !")
-            bye()
-            break
-        else:
-            print("Choix invalide.")
+    print("\n" + "="*30)
+    print("   MENU TP PIXEL ART")
+    print("="*30)
+    print("1. Activité 1 : Un simple Pixel")
+    print("2. Activité 2 : Une ligne (Boucle)")
+    print("3. Activité 3 : Un carré (Double Boucle)")
+    print("4. Activité 4 : Le Damier (Conditions)")
+    print("0. Quitter")
+    
+    choix = input("\nVotre choix : ")
+    
+    if choix == '0':
+        print("Au revoir !")
+        return
+
+    initialiser_tortue()
+    
+    if choix == '1':
+        activite_1()
+    elif choix == '2':
+        activite_2()
+    elif choix == '3':
+        activite_3()
+    elif choix == '4':
+        activite_4()
+    else:
+        print("Choix invalide.")
+        return
+
+    # Maintient la fenêtre ouverte
+    done()
 
 if __name__ == "__main__":
-    initialiser_tortue()
     menu()

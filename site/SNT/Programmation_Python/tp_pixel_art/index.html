@@ -443,11 +443,11 @@
 <p>Dans ce TP, nous allons utiliser une fonction prête à l'emploi : <code>dessiner_pixel(x, y, couleur)</code>.
 Elle dessine un carré (un "pixel") à l'endroit désiré.</p>
 <ol>
-<li>Lancez le programme et choisissez l'option <strong>1</strong>. Rien ne se passe pour l'instant.</li>
-<li>Dans le code, trouvez la fonction <code>activite_1()</code>.</li>
-<li>Ajoutez une ligne pour dessiner un pixel rouge au centre <code>(0, 0)</code>.</li>
-<li>Relancez le programme pour vérifier.</li>
-<li>Ajoutez une deuxième ligne pour dessiner un pixel bleu juste à côté, en <code>(30, 0)</code>.</li>
+<li>Lancez le programme et choisissez l'option <strong>1</strong>. Une fenêtre s'ouvre et <strong>un pixel rouge</strong> apparaît au centre.</li>
+<li>Fermez la fenêtre graphique pour revenir au menu ou à l'éditeur.</li>
+<li>Dans le code, trouvez la fonction <code>activite_1()</code> (tout en haut du fichier). Une ligne de code est déjà écrite.</li>
+<li><strong>Modifiez</strong> cette ligne pour changer la couleur du pixel (par exemple "blue" ou "green").</li>
+<li><strong>Ajoutez</strong> une nouvelle ligne en dessous pour dessiner un deuxième pixel à côté, par exemple en <code>(30, 0)</code>.</li>
 </ol>
 <hr />
 <h2 id="activite-2-une-ligne-de-pixels-la-boucle">Activité 2 : Une ligne de Pixels (La Boucle)</h2>
@@ -462,9 +462,15 @@ Elle dessine un carré (un "pixel") à l'endroit désiré.</p>
 <hr />
 <h2 id="activite-3-le-carre-boucles-imbriquees">Activité 3 : Le Carré (Boucles Imbriquées)</h2>
 <p><strong>🎯 Objectif : Comprendre les images (Largeur x Hauteur).</strong></p>
-<p>C'est ici que l'on rejoint le chapitre <strong>Photo</strong> ! Une image est une grille. Pour parcourir une grille, on a besoin de <strong>deux boucles</strong> :
-- Une pour descendre les <strong>lignes</strong> (y).
-- Une pour parcourir les <strong>colonnes</strong> (x) dans chaque ligne.</p>
+<p>C'est ici que l'on rejoint le chapitre <strong>Photo</strong> ! Une image est une grille. Pour parcourir une grille, on a besoin de <strong>deux boucles</strong> :</p>
+<ul>
+<li>Une pour descendre les <strong>lignes</strong> (y).</li>
+<li>Une pour parcourir les <strong>colonnes</strong> (x) dans chaque ligne.</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nombre_de_lignes</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nombre_de_colonnes</span><span class="p">):</span>
+        <span class="c1"># Dessiner un pixel</span>
+</code></pre></div>
 <ol>
 <li>Choisissez l'option <strong>3</strong>.</li>
 <li>Dans <code>activite_3()</code>, écrivez deux boucles imbriquées pour dessiner un carré de 5x5 pixels verts.</li>

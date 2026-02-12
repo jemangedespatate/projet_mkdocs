@@ -18,11 +18,11 @@ Nous allons recréer le principe d'une **image numérique** (une grille de pixel
 Dans ce TP, nous allons utiliser une fonction prête à l'emploi : `dessiner_pixel(x, y, couleur)`.
 Elle dessine un carré (un "pixel") à l'endroit désiré.
 
-1. Lancez le programme et choisissez l'option **1**. Rien ne se passe pour l'instant.
-2. Dans le code, trouvez la fonction `activite_1()`.
-3. Ajoutez une ligne pour dessiner un pixel rouge au centre `(0, 0)`.
-4. Relancez le programme pour vérifier.
-5. Ajoutez une deuxième ligne pour dessiner un pixel bleu juste à côté, en `(30, 0)`.
+1. Lancez le programme et choisissez l'option **1**. Une fenêtre s'ouvre et **un pixel rouge** apparaît au centre.
+2. Fermez la fenêtre graphique pour revenir au menu ou à l'éditeur.
+3. Dans le code, trouvez la fonction `activite_1()` (tout en haut du fichier). Une ligne de code est déjà écrite.
+4. **Modifiez** cette ligne pour changer la couleur du pixel (par exemple "blue" ou "green").
+5. **Ajoutez** une nouvelle ligne en dessous pour dessiner un deuxième pixel à côté, par exemple en `(30, 0)`.
 
 ---
 
@@ -42,8 +42,15 @@ Dessiner 100 pixels un par un serait trop long ! En informatique, on utilise des
 **🎯 Objectif : Comprendre les images (Largeur x Hauteur).**
 
 C'est ici que l'on rejoint le chapitre **Photo** ! Une image est une grille. Pour parcourir une grille, on a besoin de **deux boucles** :
+
 - Une pour descendre les **lignes** (y).
 - Une pour parcourir les **colonnes** (x) dans chaque ligne.
+
+```python
+for y in range(nombre_de_lignes):
+    for x in range(nombre_de_colonnes):
+        # Dessiner un pixel
+```
 
 1. Choisissez l'option **3**.
 2. Dans `activite_3()`, écrivez deux boucles imbriquées pour dessiner un carré de 5x5 pixels verts.
