@@ -2,8 +2,14 @@
 
 ## Cours
 
-* [Cour](../liste_tuple/)
+* [Les algorithmes de tri](../liste_tuple/)
+* [La recherche dichotomique](../recherche_dichotomique/)
+* [Introduction à la récursivité](../recursivite/)
 
 ## Activité
 
-* [Activité](../exercice/)
+* [Activité introductive : inventer son tri](../exercice/)
+
+## TP
+
+* [TP — Recherche dichotomique (Notebook)](../tp_recherche_dichotomique/)

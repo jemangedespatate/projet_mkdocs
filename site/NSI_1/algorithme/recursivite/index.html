@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://www.prof-leal.fr/NSI_1/algorithme/sommaire/">
+        <link rel="canonical" href="https://www.prof-leal.fr/NSI_1/algorithme/recursivite/">
       
       
       
@@ -18,7 +18,7 @@
     
     
       
-        <title>🌟 Algorithme - Mr Leal SNT/NSI</title>
+        <title>🔄 Cours : Introduction à la Récursivité - Mr Leal SNT/NSI</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#algorithme" class="md-skip">
+        <a href="#cours-introduction-a-la-recursivite" class="md-skip">
           Skip to content
         </a>
       
@@ -106,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              🌟 Algorithme
+              🔄 Cours : Introduction à la Récursivité
             
           </span>
         </div>
@@ -362,41 +362,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#cours" class="md-nav__link">
-    <span class="md-ellipsis">
-      Cours
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#activite" class="md-nav__link">
-    <span class="md-ellipsis">
-      Activité
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tp" class="md-nav__link">
-    <span class="md-ellipsis">
-      TP
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -410,21 +375,175 @@
                   
 
 
-<h1 id="algorithme">🌟 Algorithme</h1>
-<h2 id="cours">Cours</h2>
+<h1 id="cours-introduction-a-la-recursivite">🔄 Cours : Introduction à la Récursivité</h1>
+<hr />
+<h1 id="1-quest-ce-que-la-recursivite">1. 🪞 Qu'est-ce que la récursivité ?</h1>
+<p>Une fonction est dite <strong>récursive</strong> lorsqu'elle <strong>s'appelle elle-même</strong> dans sa propre définition.</p>
+<p>C'est une technique puissante qui permet de résoudre des problèmes en les <strong>décomposant en sous-problèmes</strong> de même nature, mais plus petits.</p>
+<details class="example">
+<summary>Analogie du quotidien</summary>
+<p>Imaginez que vous voulez savoir combien de personnes sont devant vous dans une file d'attente.</p>
 <ul>
-<li><a href="../liste_tuple/">Les algorithmes de tri</a></li>
-<li><a href="../recherche_dichotomique/">La recherche dichotomique</a></li>
-<li><a href="../recursivite/">Introduction à la récursivité</a></li>
+<li>Si la file est vide → il y a <strong>0</strong> personne devant vous.</li>
+<li>Sinon → il y a <strong>1 personne</strong> + le nombre de personnes devant <em>elle</em>.</li>
 </ul>
-<h2 id="activite">Activité</h2>
+<p>Vous venez de raisonner de façon récursive !</p>
+</details>
+<hr />
+<h1 id="2-la-structure-dune-fonction-recursive">2. 🏗️ La structure d'une fonction récursive</h1>
+<p>Toute fonction récursive bien écrite doit contenir <strong>deux éléments obligatoires</strong> :</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Élément</th>
+<th style="text-align: left;">Rôle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Cas de base</strong></td>
+<td style="text-align: left;">La condition d'arrêt — répond directement sans rappeler la fonction</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Appel récursif</strong></td>
+<td style="text-align: left;">La fonction se rappelle elle-même sur un problème <strong>plus petit</strong></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Danger : la récurrence infinie</p>
+<p>Si une fonction récursive n'a pas de cas de base, elle s'appellera <strong>indéfiniment</strong>,
+ce qui provoquera une erreur Python : <code>RecursionError: maximum recursion depth exceeded</code>.</p>
+<p>C'est l'équivalent informatique d'une boucle infinie !</p>
+</div>
+<hr />
+<h1 id="3-exemple-1-compte-a-rebours">3. 🔢 Exemple 1 — Compte à rebours</h1>
+<h2 id="version-iterative-avec-une-boucle">Version itérative (avec une boucle)</h2>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">compte_a_rebours_iteratif</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">while</span> <span class="n">n</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+        <span class="n">n</span> <span class="o">-=</span> <span class="mi">1</span>
+</code></pre></div>
+<h2 id="version-recursive">Version récursive</h2>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">compte_a_rebours</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>          <span class="c1"># ← Cas de base : on arrête</span>
+        <span class="k">return</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+    <span class="n">compte_a_rebours</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>  <span class="c1"># ← Appel récursif sur n-1</span>
+</code></pre></div>
+<p>Appel : <code>compte_a_rebours(3)</code></p>
+<div class="highlight"><pre><span></span><code>Appel compte_a_rebours(3) → affiche 3
+  Appel compte_a_rebours(2) → affiche 2
+    Appel compte_a_rebours(1) → affiche 1
+      Appel compte_a_rebours(0) → affiche 0
+        Appel compte_a_rebours(-1) → cas de base, on s&#39;arrête
+</code></pre></div>
+<hr />
+<h1 id="4-exemple-2-la-factorielle">4. 🔢 Exemple 2 — La factorielle</h1>
+<p>La <strong>factorielle</strong> de n (notée n!) est définie ainsi :</p>
+<div class="highlight"><pre><span></span><code>n! = n × (n-1) × (n-2) × ... × 2 × 1
+</code></pre></div>
+<p>Avec <strong>0! = 1</strong> par convention.</p>
+<p>Par exemple : <strong>4! = 4 × 3 × 2 × 1 = 24</strong></p>
+<h2 id="vision-recursive">Vision récursive</h2>
+<p>On peut remarquer que :</p>
+<div class="highlight"><pre><span></span><code>4! = 4 × 3!
+3! = 3 × 2!
+2! = 2 × 1!
+1! = 1 × 0!
+0! = 1   ← cas de base
+</code></pre></div>
+<p>La factorielle de n, c'est donc : <strong>n × factorielle(n-1)</strong> !</p>
+<h2 id="implementation-python">Implémentation Python</h2>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">factorielle</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>              <span class="c1"># ← Cas de base</span>
+        <span class="k">return</span> <span class="mi">1</span>
+    <span class="k">return</span> <span class="n">n</span> <span class="o">*</span> <span class="n">factorielle</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>  <span class="c1"># ← Appel récursif</span>
+</code></pre></div>
+<h2 id="trace-dexecution-de-factorielle4">Trace d'exécution de <code>factorielle(4)</code></h2>
+<div class="highlight"><pre><span></span><code>factorielle(4)
+  = 4 × factorielle(3)
+        = 3 × factorielle(2)
+              = 2 × factorielle(1)
+                    = 1 × factorielle(0)
+                                = 1    ← cas de base
+                    = 1 × 1 = 1
+              = 2 × 1 = 2
+        = 3 × 2 = 6
+  = 4 × 6 = 24
+</code></pre></div>
+<p>👉 Les appels s'<strong>empilent</strong> jusqu'au cas de base, puis les résultats <strong>remontent</strong> en chaîne.</p>
+<hr />
+<h1 id="5-schema-mental-la-pile-dappels">5. 📐 Schéma mental : la pile d'appels</h1>
+<p>Chaque appel récursif est mis en attente dans ce qu'on appelle la <strong>pile d'appels</strong> (<em>call stack</em>).</p>
+<div class="highlight"><pre><span></span><code>┌────────────────────────┐  ← dernier appel (cas de base)
+│ factorielle(0) → 1     │
+├────────────────────────┤
+│ factorielle(1) → 1×1   │
+├────────────────────────┤
+│ factorielle(2) → 2×1   │
+├────────────────────────┤
+│ factorielle(3) → 3×2   │
+├────────────────────────┤
+│ factorielle(4) → 4×6   │  ← premier appel
+└────────────────────────┘
+</code></pre></div>
+<p>Les fonctions s'accumulent jusqu'au cas de base, puis les résultats remontent de bas en haut.</p>
+<hr />
+<h1 id="6-recursivite-vs-iteration">6. ✅ Récursivité vs Itération</h1>
+<p>Les deux approches permettent de résoudre le même problème :</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"></th>
+<th style="text-align: center;">Itératif</th>
+<th style="text-align: center;">Récursif</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Utilise</td>
+<td style="text-align: center;">une boucle <code>for</code>/<code>while</code></td>
+<td style="text-align: center;">un appel à soi-même</td>
+</tr>
+<tr>
+<td style="text-align: left;">Lisibilité</td>
+<td style="text-align: center;">Souvent plus directe</td>
+<td style="text-align: center;">Plus élégante pour certains problèmes</td>
+</tr>
+<tr>
+<td style="text-align: left;">Risque</td>
+<td style="text-align: center;">Boucle infinie</td>
+<td style="text-align: center;">Récurrence infinie</td>
+</tr>
+<tr>
+<td style="text-align: left;">Exemple naturel</td>
+<td style="text-align: center;">Parcourir une liste</td>
+<td style="text-align: center;">Diviser pour régner</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Quand préférer la récursivité ?</p>
+<p>La récursivité est particulièrement adaptée lorsque le problème se <strong>décompose naturellement</strong> en sous-problèmes identiques mais plus petits, comme :</p>
 <ul>
-<li><a href="../exercice/">Activité introductive : inventer son tri</a></li>
+<li>La recherche dichotomique (diviser la liste en deux)</li>
+<li>Le parcours d'arbres</li>
+<li>Les algorithmes de type « diviser pour régner »</li>
 </ul>
-<h2 id="tp">TP</h2>
-<ul>
-<li><a href="../tp_recherche_dichotomique/">TP — Recherche dichotomique (Notebook)</a></li>
-</ul>
+</div>
+<hr />
+<h1 id="7-a-retenir">7. 📝 À retenir</h1>
+<div class="admonition success">
+<p class="admonition-title">Les 3 règles d'une récursion correcte</p>
+<ol>
+<li><strong>Un cas de base</strong> qui arrête les appels récursifs</li>
+<li><strong>Un appel récursif</strong> qui progresse vers le cas de base</li>
+<li><strong>Le problème se réduit</strong> à chaque appel (n-1, n//2, etc.)</li>
+</ol>
+</div>
+<p>Dans le TP qui suit, vous allez utiliser la récursivité pour réécrire la recherche dichotomique :
+à chaque appel, on divise par deux la zone de recherche jusqu'à trouver la valeur (cas de base).</p>
 
 
 
