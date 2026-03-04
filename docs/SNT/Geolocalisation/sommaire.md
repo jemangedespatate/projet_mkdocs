@@ -7,6 +7,7 @@
 ## Exercices
 
 * [✏️ Exercices](exercices.md)
+* [🚀 Exercices complémentaires](exercices_complementaires.md)
 
 ## Travaux Pratiques
 
