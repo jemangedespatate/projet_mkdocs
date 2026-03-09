@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://www.prof-leal.fr/NSI_1/algorithme/sommaire/">
+        <link rel="canonical" href="https://www.prof-leal.fr/NSI_1/algorithme/diaporama_tri_dichotomie/">
       
       
       
@@ -18,7 +18,7 @@
     
     
       
-        <title>🌟 Algorithme - Mr Leal SNT/NSI</title>
+        <title>📊 Diaporama : Tris, Complexité et Recherche Dichotomique - Mr Leal SNT/NSI</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#algorithme" class="md-skip">
+        <a href="#diaporama-tris-complexite-et-recherche-dichotomique" class="md-skip">
           Skip to content
         </a>
       
@@ -106,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              🌟 Algorithme
+              📊 Diaporama : Tris, Complexité et Recherche Dichotomique
             
           </span>
         </div>
@@ -369,27 +369,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#cours" class="md-nav__link">
+  <a href="#au-programme-aujourdhui" class="md-nav__link">
     <span class="md-ellipsis">
-      Cours
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#activite" class="md-nav__link">
-    <span class="md-ellipsis">
-      Activité
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tp" class="md-nav__link">
-    <span class="md-ellipsis">
-      TP
+      📅 Au programme aujourd'hui
     </span>
   </a>
   
@@ -410,30 +392,206 @@
                   
 
 
-<h1 id="algorithme">🌟 Algorithme</h1>
-<h2 id="cours">Cours</h2>
+<h1 id="diaporama-tris-complexite-et-recherche-dichotomique">📊 Diaporama : Tris, Complexité et Recherche Dichotomique</h1>
+<p><strong>Thème :</strong> Algorithmique<br />
+<strong>Niveau :</strong> Première NSI<br />
+<strong>Durée estimée :</strong> 2 heures  </p>
+<hr />
+<h2 id="au-programme-aujourdhui">📅 Au programme aujourd'hui</h2>
+<ol>
+<li><strong>Rappel sur les Tris</strong> : Zoom sur le tri par insertion.</li>
+<li><strong>Introduction à la Complexité</strong> : Pourquoi certains programmes sont-ils plus lents ?</li>
+<li><strong>La Recherche Dichotomique</strong> : Comment être (très) efficace.</li>
+<li><strong>Analyse de performance</strong> : Est-ce vraiment mieux ?</li>
+</ol>
+<hr />
+<h1 id="1-rappel-le-tri-par-insertion">1. 🔍 Rappel : Le Tri par Insertion</h1>
+<blockquote>
+<p><strong>Question de réflexion :</strong><br />
+Comment trieriez-vous naturellement un jeu de cartes dans votre main ?</p>
+</blockquote>
+<hr />
+<h2 id="principe-du-tri-par-insertion">Principe du Tri par Insertion</h2>
+<p>L'idée : On parcourt la liste et on insère chaque élément à sa place dans la partie déjà triée.</p>
+<hr />
+<h2 id="principe-du-tri-par-insertion_1">Principe du Tri par Insertion</h2>
+<p><strong>Décomposition de l'algorithme</strong>
+Pour transformer cette idée en code, nous allons séparer le tri en deux fonctions :
+1.  Une fonction qui gère le <strong>parcours</strong> de la liste.
+2.  Une fonction qui gère l'<strong>insertion</strong> d'un élément précis.</p>
+<hr />
+<h2 id="a-vous-de-jouer-la-fonction-principale">💻 À vous de jouer : La fonction principale</h2>
+<p>Complétez le parcours de la liste pour appeler l'insertion à chaque étape :</p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">tri_insert</span><span class="p">(</span><span class="n">l</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span> <span class="n">comp</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Parcourt la liste et insère chaque élément i </span>
+<span class="sd">    dans la tranche déjà triée l[0:i].</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># parcourir chaque index i de la liste l</span>
+    <span class="k">for</span> <span class="o">...</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="o">...</span><span class="p">):</span>
+        <span class="c1"># appeler la fonction d&#39;insertion pour l&#39;index i</span>
+        <span class="n">insert_tranche_triee</span><span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="o">...</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
+</code></pre></div>
+<hr />
+<h2 id="a-vous-de-jouer-linsertion-12">💻 À vous de jouer : L'insertion (1/2)</h2>
+<p>Complétez le début de la fonction qui prépare l'insertion de l'élément <code>l[i]</code> :</p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">insert_tranche_triee</span><span class="p">(</span><span class="n">l</span><span class="p">:</span> <span class="nb">list</span><span class="p">,</span> <span class="n">i</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">comp</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Insère l[i] à sa place dans l[0:i]</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># stocker la valeur à insérer (l[i]) dans une variable tmp</span>
+    <span class="n">tmp</span> <span class="o">=</span> <span class="o">...</span>
+    <span class="c1"># initialiser l&#39;index de recherche j à i</span>
+    <span class="n">j</span> <span class="o">=</span> <span class="o">...</span>
+</code></pre></div>
+<hr />
+<h2 id="a-vous-de-jouer-linsertion-22">💻 À vous de jouer : L'insertion (2/2)</h2>
+<p>Complétez la boucle de décalage vers la droite :</p>
+<div class="highlight"><pre><span></span><code>    <span class="c1"># Tant qu&#39;on n&#39;est pas au début ET que l&#39;élément de gauche </span>
+    <span class="c1"># est plus &quot;grand&quot; que notre valeur</span>
+    <span class="k">while</span> <span class="n">j</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="o">...</span> <span class="o">&gt;</span> <span class="o">...</span><span class="p">:</span>
+        <span class="c1"># décaler l&#39;élément l[j-1] vers la position l[j]</span>
+        <span class="n">l</span><span class="p">[</span><span class="o">...</span><span class="p">]</span> <span class="o">=</span> <span class="n">l</span><span class="p">[</span><span class="o">...</span><span class="p">]</span>
+        <span class="c1"># décrémenter j</span>
+        <span class="n">j</span> <span class="o">=</span> <span class="o">...</span>
+
+    <span class="c1"># placer la valeur tmp à sa position finale l[j]</span>
+    <span class="n">l</span><span class="p">[</span><span class="o">...</span><span class="p">]</span> <span class="o">=</span> <span class="o">...</span>
+</code></pre></div>
+<hr />
+<h2 id="exercice-rapide">📝 Exercice Rapide</h2>
+<p><strong>Question :</strong> Si on trie <code>[5, 8, 2, 4]</code>, quel sera l'état de la liste après l'appel de <code>insert_tranche_triee</code> pour <code>i = 2</code> ?</p>
+<hr />
+<h1 id="2-introduction-a-la-complexite">2. 🐢 Introduction à la Complexité</h1>
+<blockquote>
+<p><strong>Question de réflexion :</strong><br />
+Si un programme met 1 seconde pour traiter 1000 noms, combien de temps mettra-t-il pour 1 million de noms ?<br />
+Est-ce forcément proportionnel ?</p>
+</blockquote>
+<hr />
+<h2 id="quest-ce-que-la-complexite">Qu'est-ce que la complexité ?</h2>
+<p>C'est une mesure du <strong>nombre d'opérations élémentaires</strong> (comparaisons, affectations) que doit faire l'ordinateur.</p>
+<p>On ne mesure pas en secondes (trop dépendant de la machine), mais en <strong>évolution du nombre d'opérations</strong> selon la taille $N$ des données.</p>
+<hr />
+<h2 id="ordre-de-grandeur-le-tri">📏 Ordre de grandeur : Le Tri</h2>
+<p>Dans nos tris (sélection, insertion), on a souvent :
+1.  Une boucle (parcours de la liste).
+2.  <strong>DANS</strong> cette boucle, une autre boucle (recherche du min ou décalage).</p>
+<blockquote>
+<p><strong>Question :</strong> Si on a $N$ tours de boucle, et que chaque tour fait lui-même $N$ opérations, quel est le total ?</p>
+</blockquote>
+<hr />
+<h2 id="la-complexite-quadratique-n2">📏 La complexité quadratique ($N^2$)</h2>
 <ul>
-<li><a href="../liste_tuple/">Les algorithmes de tri</a></li>
-<li><a href="../recherche_dichotomique/">La recherche dichotomique</a></li>
-<li><a href="../diaporama_tri_dichotomie/">Révisions : Tris, Complexité et Recherche (Diapo)</a></li>
-<li><a href="../diaporama_ia/">Introduction à l'IA (Diapo)</a></li>
-<li><a href="../recursivite/">Introduction à la récursivité</a></li>
+<li>Environ $N \times N = N^2$ opérations.</li>
+<li>Doublez la taille $\rightarrow$ Temps $\times 4$.</li>
+<li>Décuplez la taille $\rightarrow$ Temps $\times 100$.</li>
 </ul>
-<h2 id="activite">Activité</h2>
+<blockquote>
+<p><strong>Question :</strong> Pourquoi est-ce un problème pour des données géantes (Big Data) ?</p>
+</blockquote>
+<hr />
+<h1 id="3-la-recherche-dichotomique">3. 🎯 La Recherche Dichotomique</h1>
+<blockquote>
+<p><strong>Question de réflexion :</strong><br />
+Comment trouvez-vous rapidement un mot dans un dictionnaire papier de 2000 pages ?<br />
+Est-ce que vous lisez chaque page une par une ?</p>
+</blockquote>
+<hr />
+<h2 id="le-principe-de-diviser-pour-regner">🧠 Le principe de "Diviser pour Régner"</h2>
+<ol>
+<li>Regarder l'élément au milieu.</li>
+<li>Si c'est la cible : Gagné !</li>
+<li>Si la cible est plus petite : On recommence sur la <strong>moitié gauche</strong>.</li>
+<li>Si la cible est plus grande : On recommence sur la <strong>moitié droite</strong>.</li>
+</ol>
+<blockquote>
+<p><strong>Question indispensable :</strong> Quelle condition doit remplir la liste pour que cela fonctionne ?</p>
+</blockquote>
+<hr />
+<h2 id="a-vous-de-jouer-recherche-dichotomique">💻 À vous de jouer : Recherche Dichotomique</h2>
+<p>Complétez l'implémentation de la recherche :</p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">recherche_dicho</span><span class="p">(</span><span class="n">l</span><span class="p">:</span> <span class="nb">list</span><span class="p">,</span> <span class="n">cible</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+    <span class="n">debut</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">fin</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">l</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
+    <span class="k">while</span> <span class="n">debut</span> <span class="o">&lt;=</span> <span class="n">fin</span><span class="p">:</span>
+        <span class="c1"># calculer l&#39;index du milieu de l&#39;intervalle [debut, fin]</span>
+        <span class="n">milieu</span> <span class="o">=</span> <span class="p">(</span><span class="o">...</span> <span class="o">+</span> <span class="o">...</span><span class="p">)</span> <span class="o">//</span> <span class="mi">2</span>
+        <span class="k">if</span> <span class="n">l</span><span class="p">[</span><span class="n">milieu</span><span class="p">]</span> <span class="o">==</span> <span class="n">cible</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">milieu</span>
+        <span class="k">elif</span> <span class="n">l</span><span class="p">[</span><span class="n">milieu</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">cible</span><span class="p">:</span>
+            <span class="c1"># mettre à jour debut</span>
+            <span class="n">debut</span> <span class="o">=</span> <span class="o">...</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="c1"># mettre à jour fin</span>
+            <span class="n">fin</span> <span class="o">=</span> <span class="o">...</span>
+    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span>
+</code></pre></div>
+<hr />
+<h1 id="4-analyse-de-performance">4. ⚡ Analyse de Performance</h1>
+<blockquote>
+<p><strong>Question de réflexion :</strong><br />
+Combien de fois peut-on couper une feuille de papier en deux avant qu'il ne reste qu'un tout petit morceau ?</p>
+</blockquote>
+<hr />
+<h2 id="le-pouvoir-de-la-division-par-2">📈 Le pouvoir de la division par 2</h2>
+<p>Imaginez une liste de <strong>1 000 000</strong> éléments.
+- Étape 1 : 500 000 restants.
+- Étape 2 : 250 000 restants.
+- ...
+- Étape 20 : <strong>1</strong> seul élément restant !</p>
+<blockquote>
+<p><strong>Question :</strong> Pourquoi est-ce plus efficace que la recherche classique ?</p>
+</blockquote>
+<hr />
+<h2 id="sequentiel-vs-dichotomique">📈 Séquentiel vs Dichotomique</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Taille (N)</th>
+<th style="text-align: left;">Séquentiel</th>
+<th style="text-align: left;">Dichotomique</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1 000</td>
+<td style="text-align: left;">1 000 tests</td>
+<td style="text-align: left;">~10 tests</td>
+</tr>
+<tr>
+<td style="text-align: left;">1 000 000</td>
+<td style="text-align: left;">1 000 000 tests</td>
+<td style="text-align: left;">~20 tests</td>
+</tr>
+<tr>
+<td style="text-align: left;">1 000 000 000</td>
+<td style="text-align: left;">1 000 000 000 tests</td>
+<td style="text-align: left;">~30 tests</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Question :</strong> Si on trie une fois pour faire des milliers de recherches ensuite, est-ce rentable ?</p>
+</blockquote>
+<hr />
+<h2 id="conclusion">🚦 Conclusion</h2>
 <ul>
-<li><a href="../exercice/">Activité introductive : inventer son tri</a></li>
-<li><a href="../exercices_tri_dichotomie/">Exercices : Tris, Complexité et Recherche</a></li>
+<li><strong>Trier est coûteux</strong> ($N^2$).</li>
+<li><strong>Rechercher est ultra-rapide</strong> ($\log N$).</li>
 </ul>
-<h2 id="tp">TP</h2>
-<ul>
-<li><a href="../tp_recherche_dichotomique/">TP — Recherche dichotomique (Notebook)</a></li>
-</ul>
+<hr />
+<h1 id="a-vous-de-jouer">🛠️ À vous de jouer !</h1>
+<p>Passez à la feuille d'exercices pour mettre cela en pratique.</p>
 
 
 
 
 
 
+
+  
+  
 
 
 

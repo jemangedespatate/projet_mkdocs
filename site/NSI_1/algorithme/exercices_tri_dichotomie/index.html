@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://www.prof-leal.fr/NSI_1/algorithme/sommaire/">
+        <link rel="canonical" href="https://www.prof-leal.fr/NSI_1/algorithme/exercices_tri_dichotomie/">
       
       
       
@@ -18,7 +18,7 @@
     
     
       
-        <title>🌟 Algorithme - Mr Leal SNT/NSI</title>
+        <title>✍️ Exercices : Tris, Complexité et Recherche Dichotomique - Mr Leal SNT/NSI</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#algorithme" class="md-skip">
+        <a href="#exercices-tris-complexite-et-recherche-dichotomique" class="md-skip">
           Skip to content
         </a>
       
@@ -106,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              🌟 Algorithme
+              ✍️ Exercices : Tris, Complexité et Recherche Dichotomique
             
           </span>
         </div>
@@ -369,27 +369,45 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#cours" class="md-nav__link">
+  <a href="#exercice-1-trace-de-lalgorithme-de-tri-par-insertion" class="md-nav__link">
     <span class="md-ellipsis">
-      Cours
+      🧩 Exercice 1 : Trace de l'algorithme de Tri par Insertion
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#activite" class="md-nav__link">
+  <a href="#exercice-2-analyse-de-complexite-tris" class="md-nav__link">
     <span class="md-ellipsis">
-      Activité
+      🐢 Exercice 2 : Analyse de Complexité (Tris)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#tp" class="md-nav__link">
+  <a href="#exercice-3-recherche-dichotomique-a-la-main" class="md-nav__link">
     <span class="md-ellipsis">
-      TP
+      🎯 Exercice 3 : Recherche Dichotomique "à la main"
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercice-4-mission-plus-ou-moins-implementation" class="md-nav__link">
+    <span class="md-ellipsis">
+      💻 Exercice 4 : Mission "Plus ou Moins" (Implémentation)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pour-aller-plus-loin-facultatif" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Pour aller plus loin (Facultatif)
     </span>
   </a>
   
@@ -410,24 +428,69 @@
                   
 
 
-<h1 id="algorithme">🌟 Algorithme</h1>
-<h2 id="cours">Cours</h2>
-<ul>
-<li><a href="../liste_tuple/">Les algorithmes de tri</a></li>
-<li><a href="../recherche_dichotomique/">La recherche dichotomique</a></li>
-<li><a href="../diaporama_tri_dichotomie/">Révisions : Tris, Complexité et Recherche (Diapo)</a></li>
-<li><a href="../diaporama_ia/">Introduction à l'IA (Diapo)</a></li>
-<li><a href="../recursivite/">Introduction à la récursivité</a></li>
+<h1 id="exercices-tris-complexite-et-recherche-dichotomique">✍️ Exercices : Tris, Complexité et Recherche Dichotomique</h1>
+<p><strong>Rappel :</strong> Les exercices ci-dessous sont à réaliser en autonomie ou en binôme après avoir suivi la présentation.</p>
+<hr />
+<h2 id="exercice-1-trace-de-lalgorithme-de-tri-par-insertion">🧩 Exercice 1 : Trace de l'algorithme de Tri par Insertion</h2>
+<p>Soit la liste suivante : <code>L = [5, 12, 8, 3, 10]</code>.<br />
+On souhaite la trier en utilisant les fonctions <code>tri_insert</code> et <code>insert_tranche_triee</code> vues en cours.</p>
+<ol>
+<li><strong>Détailler l'état de la liste</strong> après chaque appel à la fonction <code>insert_tranche_triee(l, i, comp)</code>.<ul>
+<li><em>i = 0</em> : </li>
+<li><em>i = 1</em> : </li>
+<li><em>i = 2</em> : </li>
+<li><em>i = 3</em> : </li>
+<li><em>i = 4</em> : </li>
 </ul>
-<h2 id="activite">Activité</h2>
-<ul>
-<li><a href="../exercice/">Activité introductive : inventer son tri</a></li>
-<li><a href="../exercices_tri_dichotomie/">Exercices : Tris, Complexité et Recherche</a></li>
+</li>
+<li>Dans <code>insert_tranche_triee</code>, pour <code>i = 3</code> (insertion du nombre 3), <strong>combien de décalages</strong> (l[j] = l[j-1]) sont effectués ?</li>
+<li>À quoi sert le <code>assert est_triee(l[:i], comp)</code> au début de la fonction ?</li>
+</ol>
+<hr />
+<h2 id="exercice-2-analyse-de-complexite-tris">🐢 Exercice 2 : Analyse de Complexité (Tris)</h2>
+<p>Imaginez que trier une liste de <strong>100</strong> éléments avec le tri par sélection prend <strong>0,01 seconde</strong>.</p>
+<ol>
+<li>D'après la théorie du <strong>N²</strong> (complexité quadratique), combien de secondes faudra-t-il environ pour trier une liste de :<ul>
+<li><strong>1 000</strong> éléments ?</li>
+<li><strong>10 000</strong> éléments ?</li>
+<li><strong>1 000 000</strong> éléments ?</li>
 </ul>
-<h2 id="tp">TP</h2>
-<ul>
-<li><a href="../tp_recherche_dichotomique/">TP — Recherche dichotomique (Notebook)</a></li>
+</li>
+<li>Si la liste est <strong>déjà triée</strong>, quel algorithme est le plus efficace entre :<ul>
+<li>Le tri par <strong>sélection</strong> ? (Vérifie toujours chaque élément).</li>
+<li>Le tri par <strong>insertion</strong> ? (Détecte immédiatement que l'élément est à sa place).</li>
+<li><em>Expliquez pourquoi.</em></li>
 </ul>
+</li>
+</ol>
+<hr />
+<h2 id="exercice-3-recherche-dichotomique-a-la-main">🎯 Exercice 3 : Recherche Dichotomique "à la main"</h2>
+<p>On a la liste triée : <code>L = [2, 5, 8, 12, 16, 23, 38, 56, 72, 91]</code>.
+On cherche la valeur <strong>56</strong> par recherche dichotomique.</p>
+<ol>
+<li>Quelles seront les valeurs successives des variables <code>debut</code>, <code>fin</code> et <code>milieu</code> ?<ul>
+<li><em>Étape 1 :</em> debut = ..., fin = ..., milieu = ..., L[milieu] = ...</li>
+<li><em>Étape 2 :</em> ...</li>
+<li><em>Étape 3 :</em> ...</li>
+</ul>
+</li>
+<li>Combien de comparaisons ont été nécessaires ?</li>
+<li>Combien en aurait-il fallu avec une recherche classique (séquentielle) ?</li>
+</ol>
+<hr />
+<h2 id="exercice-4-mission-plus-ou-moins-implementation">💻 Exercice 4 : Mission "Plus ou Moins" (Implémentation)</h2>
+<p>Le jeu du "Plus ou Moins" consiste à deviner un nombre entre 1 et 1 000.<br />
+Si vous jouez de manière <strong>optimale</strong> (stratégie dichotomique) :</p>
+<ol>
+<li>Combien de coups au <strong>maximum</strong> vous faut-il pour gagner ?</li>
+<li><strong>Code de défi :</strong> Écrivez une fonction Python <code>nombre_etapes_max(n: int) -&gt; int</code> qui prend en paramètre la taille de la liste <code>n</code> et renvoie le nombre maximum d'étapes nécessaires pour trouver un élément par dichotomie.<ul>
+<li><em>Aide :</em> On divise par 2 à chaque fois jusqu'à arriver à 1.</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h2 id="pour-aller-plus-loin-facultatif">🚀 Pour aller plus loin (Facultatif)</h2>
+<p>Modifiez la fonction <code>recherche_dicho</code> pour qu'elle renvoie l'<strong>index de la première occurrence</strong> si le nombre cherché apparaît plusieurs fois dans la liste triée (ex: <code>[1, 2, 2, 2, 3]</code>).</p>
 
 
 

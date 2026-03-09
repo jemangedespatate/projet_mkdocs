@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://www.prof-leal.fr/NSI_1/algorithme/sommaire/">
+        <link rel="canonical" href="https://www.prof-leal.fr/NSI_1/algorithme/diaporama_ia/">
       
       
       
@@ -18,7 +18,7 @@
     
     
       
-        <title>🌟 Algorithme - Mr Leal SNT/NSI</title>
+        <title>🤖 Introduction à l'Intelligence Artificielle (IA) - Mr Leal SNT/NSI</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#algorithme" class="md-skip">
+        <a href="#introduction-a-lintelligence-artificielle-ia" class="md-skip">
           Skip to content
         </a>
       
@@ -106,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              🌟 Algorithme
+              🤖 Introduction à l'Intelligence Artificielle (IA)
             
           </span>
         </div>
@@ -369,27 +369,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#cours" class="md-nav__link">
+  <a href="#au-programme" class="md-nav__link">
     <span class="md-ellipsis">
-      Cours
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#activite" class="md-nav__link">
-    <span class="md-ellipsis">
-      Activité
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tp" class="md-nav__link">
-    <span class="md-ellipsis">
-      TP
+      📅 Au programme
     </span>
   </a>
   
@@ -410,30 +392,124 @@
                   
 
 
-<h1 id="algorithme">🌟 Algorithme</h1>
-<h2 id="cours">Cours</h2>
+<h1 id="introduction-a-lintelligence-artificielle-ia">🤖 Introduction à l'Intelligence Artificielle (IA)</h1>
+<p><strong>Thème :</strong> Culture Numérique &amp; Algorithmique<br />
+<strong>Niveau :</strong> Première NSI<br />
+<strong>Objectif :</strong> Comprendre les bases, le fonctionnement et les enjeux de l'IA.</p>
+<hr />
+<h2 id="au-programme">📅 Au programme</h2>
+<ol>
+<li><strong>Un peu d'histoire</strong> : D'où vient l'IA ?</li>
+<li><strong>Comment ça marche ?</strong> : La magie derrière le code.</li>
+<li><strong>Les données</strong> : Le carburant de l'IA.</li>
+<li><strong>Critiques et Enjeux</strong> : Faut-il avoir peur du robot ?</li>
+</ol>
+<hr />
+<h1 id="1-un-peu-dhistoire">1. 📜 Un peu d'histoire</h1>
+<blockquote>
+<p><strong>Question de réflexion :</strong><br />
+À votre avis, depuis quelle décennie parle-t-on d'Intelligence Artificielle ?<br />
+(1950, 1980, 2010 ?)</p>
+</blockquote>
+<hr />
+<h2 id="les-grandes-etapes">Les grandes étapes</h2>
 <ul>
-<li><a href="../liste_tuple/">Les algorithmes de tri</a></li>
-<li><a href="../recherche_dichotomique/">La recherche dichotomique</a></li>
-<li><a href="../diaporama_tri_dichotomie/">Révisions : Tris, Complexité et Recherche (Diapo)</a></li>
-<li><a href="../diaporama_ia/">Introduction à l'IA (Diapo)</a></li>
-<li><a href="../recursivite/">Introduction à la récursivité</a></li>
+<li><strong>1950 : Alan Turing</strong> pose la question : "Les machines peuvent-elles penser ?" et invente le <em>Test de Turing</em>.</li>
+<li><strong>1956 : Conférence de Dartmouth</strong>, naissance officielle du terme "Intelligence Artificielle".</li>
+<li><strong>1997 : Deep Blue</strong> (IBM) bat Garry Kasparov aux échecs.</li>
+<li><strong>2016 : AlphaGo</strong> bat Lee Sedol au jeu de Go.</li>
+<li><strong>2022 : ChatGPT</strong> (OpenAI) démocratise l'IA générative.</li>
 </ul>
-<h2 id="activite">Activité</h2>
+<blockquote>
+<p><strong>Question :</strong> Pourquoi a-t-on attendu 70 ans pour que l'IA explose vraiment ?</p>
+</blockquote>
+<hr />
+<h1 id="2-comment-ca-marche">2. 🧠 Comment ça marche ?</h1>
+<blockquote>
+<p><strong>Question de réflexion :</strong><br />
+Quelle est la différence entre un programme "classique" et une IA ?</p>
+</blockquote>
+<hr />
+<h2 id="programmation-classique-vs-machine-learning">Programmation classique vs Machine Learning</h2>
 <ul>
-<li><a href="../exercice/">Activité introductive : inventer son tri</a></li>
-<li><a href="../exercices_tri_dichotomie/">Exercices : Tris, Complexité et Recherche</a></li>
+<li><strong>Classique</strong> : On donne des <strong>règles</strong> précises à l'ordinateur. 
+  <em>(Ex: "Si le ciel est gris, alors il va pleuvoir")</em></li>
+<li><strong>IA (Machine Learning)</strong> : On donne des <strong>exemples</strong> à l'ordinateur et il trouve les règles tout seul.
+  <em>(Ex: On lui montre 10 000 photos de pluie et il apprend à la reconnaître)</em></li>
 </ul>
-<h2 id="tp">TP</h2>
-<ul>
-<li><a href="../tp_recherche_dichotomique/">TP — Recherche dichotomique (Notebook)</a></li>
-</ul>
+<hr />
+<h2 id="le-neurone-artificiel-simplifie">Le neurone artificiel (Simplifié)</h2>
+<p>Une IA moderne utilise des <strong>réseaux de neurones</strong>.
+1. Elle reçoit des entrées (pixels, mots).
+2. Elle applique des "poids" (importance) à ces entrées.
+3. Elle produit une prédiction (99% de chance que ce soit un chat).</p>
+<blockquote>
+<p><strong>Question :</strong> Que se passe-t-il si on montre une photo de chien à une IA qui n'a vu que des chats ?</p>
+</blockquote>
+<hr />
+<h1 id="3-les-donnees-le-carburant">3. 📊 Les Données : Le carburant</h1>
+<blockquote>
+<p><strong>Question de réflexion :</strong><br />
+"L'IA est une éponge." À votre avis, d'où viennent les informations que contient ChatGPT ?</p>
+</blockquote>
+<hr />
+<h2 id="dou-viennent-les-donnees">D'où viennent les données ?</h2>
+<p>Pour apprendre, une IA a besoin de milliards d'exemples. Elles sont extraites de :
+- <strong>Le Web</strong> (Wikipedia, journaux, forums locaux).
+- <strong>Les Livres</strong> numérisés.
+- <strong>Le code informatique</strong> (GitHub).
+- <strong>Vos interactions</strong> (quand vous corrigez une IA, elle apprend !).</p>
+<blockquote>
+<p><strong>Question :</strong> Si l'IA apprend sur Internet, risque-t-elle d'apprendre des mensonges ou des insultes ?</p>
+</blockquote>
+<hr />
+<h1 id="4-critiques-et-limites">4. ⚖️ Critiques et Limites</h1>
+<blockquote>
+<p><strong>Question de réflexion :</strong><br />
+Est-ce que l'IA "comprend" vraiment ce qu'elle dit, ou est-ce juste une calculatrice géante ?</p>
+</blockquote>
+<hr />
+<h2 id="les-points-noirs-de-lia">Les points noirs de l'IA</h2>
+<ol>
+<li><strong>Les Biais</strong> : Si les données sont sexistes ou racistes, l'IA le sera aussi.</li>
+<li><strong>L'Énergie</strong> : Entraîner une IA consomme énormément d'électricité et d'eau (refroidissement des serveurs).</li>
+<li><strong>Le Copyright</strong> : L'IA utilise des œuvres d'artistes sans toujours les payer.</li>
+<li><strong>Les Hallucinations</strong> : L'IA peut affirmer une bêtise avec une assurance totale.</li>
+</ol>
+<hr />
+<h2 id="conclusion">🚦 Conclusion</h2>
+<p>L'IA est un <strong>outil puissant</strong> mais ce n'est pas une "intelligence" au sens humain. C'est un moteur de probabilités.</p>
+<blockquote>
+<p><strong>Dernière question :</strong> À votre avis, quel métier ne pourra JAMAIS être remplacé par une IA ?</p>
+</blockquote>
+<hr />
+<h1 id="activite-debranchee-latelier-des-neurones">🛠️ Activité Débranchée : L'Atelier des Neurones</h1>
+<p><strong>Objectif</strong> : Comprendre comment une IA "apprend" en ajustant l'importance des informations (les poids).</p>
+<p><strong>Rôles :</strong>
+1. <strong>La Machine</strong> (1 élève) : Dos au tableau, doit deviner si l'objet est un "Fruit" ou un "Légume".
+2. <strong>Les Neurones</strong> (3-4 élèves) : Observent l'image d'un objet et donnent une note de 0 à 10 pour un critère précis :
+   - Neurone 1 : "C'est sucré ?"
+   - Neurone 2 : "C'est croquant ?"
+   - Neurone 3 : "Ça pousse dans un arbre ?"</p>
+<hr />
+<h2 id="le-fonctionnement-atelier-debranche">🛠️ Le fonctionnement (Atelier débranché)</h2>
+<p><strong>Étape 1 : Le test</strong>
+La Machine écoute les notes et annonce sa décision (ex: "C'est un fruit !").</p>
+<p><strong>Étape 2 : L'ajustement (L'Apprentissage)</strong>
+Si la Machine se trompe :
+- On demande : "Quel neurone nous a induit en erreur ?"
+- On décide de donner <strong>moins d'importance</strong> (moins de poids) à ce critère la prochaine fois.</p>
+<p><strong>C'est exactement ça, l'entraînement d'une IA !</strong>
+On répète cela des millions de fois jusqu'à ce que les "poids" soient parfaits.</p>
 
 
 
 
 
 
+
+  
+  
 
 
 
