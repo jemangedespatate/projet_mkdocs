@@ -11,6 +11,6 @@
 
 ## Travaux Pratiques
 
-* [💻 TP : trilateration -> code : 9b34-9814396](https://capytale2.ac-paris.fr/web/c/9b34-9814396)
+* [💻 TP : trilateration](https://capytale2.ac-paris.fr/web/c/9b34-9814396)
 * [💻 TP : Analyse de trajet](https://capytale2.ac-paris.fr/web/c/39ae-9989121)
-* [💻 TP complémentaires : Coordonnées GPS et Trames NMEA](travaux_pratique.md)
+* [💻 TP : Décodage de trames NMEA](https://capytale2.ac-paris.fr/web/c/4137-10076153)
