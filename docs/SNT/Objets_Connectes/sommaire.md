@@ -1,4 +1,15 @@
-* [cours](../cours/)
-* [travaux diriger](../travaux_diriger/)
-* [travaux pratique](../travaux_pratique/)
-* [exercice complementaire](../exo_comp/)
+# Objets Connectes
+
+## Cours
+
+* [📖 Cours](cours/cours.md)
+
+## Travaux Pratiques
+
+* [💻 Travaux Pratique](tp/travaux_pratique.md)
+
+## Exercices
+
+* [✏️ Exo Comp](exercices/exo_comp.md)
+* [✏️ Travaux Diriger](exercices/travaux_diriger.md)
+

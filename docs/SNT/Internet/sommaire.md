@@ -1,6 +1,7 @@
 # Internet
 
-## Cour
+## Cours
 
-* [cours](../cours/)
-* [binaire](../convertions_de_base/)
+* [📖 Convertions de Base](cours/convertions_de_base.md)
+* [📖 Cours](cours/cours.md)
+
