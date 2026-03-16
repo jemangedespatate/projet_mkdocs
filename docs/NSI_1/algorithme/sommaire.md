@@ -5,7 +5,6 @@
 * [Les algorithmes de tri](../liste_tuple/)
 * [La recherche dichotomique](../recherche_dichotomique/)
 * [Révisions : Tris, Complexité et Recherche (Diapo)](../diaporama_tri_dichotomie/)
-* [Introduction à la récursivité](../recursivite/)
 
 ## Activité
 

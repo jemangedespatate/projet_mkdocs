@@ -9,6 +9,7 @@ Bienvenue dans la section NSI Première. Voici les différents modules disponibl
 * [⛓️ Structures linéaires (Listes et Tuples)](type_de_base/sommaire.md)
 * [📊 Traitement de données en tables](traitement_de_donnees/sommaire.md)
 * [🌟 Algorithmes](algorithme/sommaire.md)
+* [🤖 Algorithme des k plus proches voisins (k-NN)](k_plus_proches_voisins/sommaire.md)
 * [🌐 Interaction Web (HTML/CSS/JS)](interaction_web/sommaire.md)
 * [💻 Système d'Exploitation (Linux)](Systeme_Exploitation/sommaire.md)
 * [Extra](extra/sommaire.md)
