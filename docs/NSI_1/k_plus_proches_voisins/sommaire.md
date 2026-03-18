@@ -10,4 +10,5 @@
 
 ## TP
 
-* [TP — Algorithme des k plus proches voisins (Notebook)](https://capytale2.ac-paris.fr/web/c/d13c-10114145)
+* [TP — Introduction : Le Choixpeau Magique (Capytale)](https://capytale2.ac-paris.fr/web/c/d13c-10114145)
+* [TP EXPERT — Évaluation et Optimisation (Notebook)](tp_knn_expert.ipynb)
