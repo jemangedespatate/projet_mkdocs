@@ -11,4 +11,4 @@
 ## TP
 
 * [TP — Introduction : Le Choixpeau Magique (Capytale)](https://capytale2.ac-paris.fr/web/c/d13c-10114145)
-* [TP EXPERT — Évaluation et Optimisation (Notebook)](tp_knn_expert.ipynb)
+* [TP EXPERT — Évaluation et Optimisation (Notebook)](https://capytale2.ac-paris.fr/web/c/b6c0-10182596)

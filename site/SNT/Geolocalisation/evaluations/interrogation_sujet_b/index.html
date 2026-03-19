@@ -369,45 +369,54 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#exercice-1-fonctionnement-et-definitions-2-points" class="md-nav__link">
+  <a href="#exercice-1-fonctionnement-et-definitions" class="md-nav__link">
     <span class="md-ellipsis">
-      Exercice 1 : Fonctionnement et définitions (2 points)
+      Exercice 1 : Fonctionnement et définitions
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#exercice-2-calcul-de-distance-2-points" class="md-nav__link">
+  <a href="#exercice-2-calcul-de-distance" class="md-nav__link">
     <span class="md-ellipsis">
-      Exercice 2 : Calcul de distance (2 points)
+      Exercice 2 : Calcul de distance
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#exercice-3-conversion-de-coordonnees-2-points" class="md-nav__link">
+  <a href="#exercice-3-conversion-de-coordonnees" class="md-nav__link">
     <span class="md-ellipsis">
-      Exercice 3 : Conversion de coordonnées (2 points)
+      Exercice 3 : Conversion de coordonnées
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#exercice-4-trame-nmea-2-points" class="md-nav__link">
+  <a href="#exercice-4-trame-nmea" class="md-nav__link">
     <span class="md-ellipsis">
-      Exercice 4 : Trame NMEA (2 points)
+      Exercice 4 : Trame NMEA
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#exercice-5-vie-privee-et-enjeux-2-points" class="md-nav__link">
+  <a href="#exercice-5-vie-privee-et-enjeux" class="md-nav__link">
     <span class="md-ellipsis">
-      Exercice 5 : Vie privée et enjeux (2 points)
+      Exercice 5 : Vie privée et enjeux
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercice-6-systemes-satellites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercice 6 : Systèmes satellites
     </span>
   </a>
   
@@ -429,60 +438,38 @@
 
 
 <h1 id="interrogation-de-snt-geolocalisation-sujet-b">Interrogation de SNT - Géolocalisation (Sujet B)</h1>
-<p><strong>Nom :</strong> .......................................... <strong>Prénom :</strong> .......................................... <strong>Classe :</strong> ............<br />
-<strong>Note :</strong> ..... / 10</p>
-<hr />
-<h3 id="exercice-1-fonctionnement-et-definitions-2-points">Exercice 1 : Fonctionnement et définitions (2 points)</h3>
+<h3 id="exercice-1-fonctionnement-et-definitions">Exercice 1 : Fonctionnement et définitions</h3>
 <ol>
-<li>Définissez ce que sont la <strong>latitude</strong> et la <strong>longitude</strong>. (1 pt)
-<br><br><br></li>
-<li>Lors d'un positionnement par satellite en 3D, pourquoi un <strong>4ème satellite</strong> est-il indispensable pour calculer correctement sa position (alors que 3 suffiraient pour la trilatération) ? (1 pt)
-<br><br><br><br></li>
+<li>quelle est la ligne permetant de diferencier le nord du sud. de meme pour l'est et l'ouest. par quelle ville passe-t-elle ?</li>
+<li>combien de signaux/satelitte sont necessaire pour pouvoir localiser precisement une personne grace au gps</li>
+<li>Définissez brièvement le terme <strong>Géolocalisation</strong>.</li>
+<li>Expliquez le principe de la <strong>trilatération</strong> utilisé par les récepteurs GPS pour trouver leur position sur Terre.</li>
 </ol>
-<h3 id="exercice-2-calcul-de-distance-2-points">Exercice 2 : Calcul de distance (2 points)</h3>
-<p>Un signal émis par un satellite GPS met <strong>0,09 seconde</strong> pour atteindre un récepteur au sol. Sachant que la vitesse de ce signal est de <strong>300 000 km/s</strong>, calculez la distance entre le satellite et le récepteur.<br />
-<em>Détaillez votre calcul.</em>
-<br><br><br><br></p>
-<h3 id="exercice-3-conversion-de-coordonnees-2-points">Exercice 3 : Conversion de coordonnées (2 points)</h3>
-<p>Il est souvent nécessaire de convertir les coordonnées pour les exploiter dans différents logiciels. <em>Détaillez vos calculs.</em>
-1. Convertissez la coordonnée suivante du format decimo-degrés (décimal) vers le format degrés-minutes (DM) : <strong>48,25°</strong> (1 pt)
-<br><br><br>
-2. Convertissez la coordonnée suivante du format degrés-minutes (DM) vers le format décimal : <strong>10° 45'</strong> (1 pt)
-<br><br><br></p>
-<h3 id="exercice-4-trame-nmea-2-points">Exercice 4 : Trame NMEA (2 points)</h3>
-<p>Voici une trame NMEA transmise par un objet connecté :<br />
-<code>$GPGGA,142530.500,4851.5000,N,00217.5000,E,1,06,1.5,50.5,M,,,,0000*1A</code></p>
+<h3 id="exercice-2-calcul-de-distance">Exercice 2 : Calcul de distance</h3>
+<p>Un signal radio met <strong>250 µs</strong> pour voyager depuis un satellite jusqu'à votre smartphone. Sachant que la vitesse du signal est d'environ <strong>300 m/µs</strong>, calculez la distance qui les sépare en detaillent le calcul. donner ensuite le resultat en km.</p>
+<h3 id="exercice-3-conversion-de-coordonnees">Exercice 3 : Conversion de coordonnées</h3>
+<p>La conversion est indispensable pour passer des formats GPS aux formats lisibles sur des cartes.</p>
 <ol>
-<li>Quelle est l'heure (UTC) de ce relevé de position ? (0.5 pt)
-<br><br></li>
-<li>Combien de satellites ont été nécessaires pour ce calcul de la position ? (0.5 pt)
-<br><br></li>
-<li>À quelle altitude se situe le capteur GPS au moment de la mesure ? (1 pt)
-<br><br></li>
+<li>Convertissez la coordonnée suivante du format décimal vers le format degrés-minutes-seconde (DMS) : <strong>38,75°</strong></li>
+<li>Convertissez la coordonnée suivante du format degrés-minutes-seconde (DMS) vers le format degres : <strong>24° 30' 45"</strong></li>
 </ol>
-<h3 id="exercice-5-vie-privee-et-enjeux-2-points">Exercice 5 : Vie privée et enjeux (2 points)</h3>
-<p>Donnez <strong>deux</strong> actions simples à réaliser pour limiter les risques liés à la géolocalisation et protéger sa vie privée sur son smartphone.
-<br><br><br><br></p>
-<hr />
-<details class="success">
-<summary>Correction Sujet B</summary>
-<p><strong>Exercice 1 :</strong>
-1. La latitude permet de déterminer la position Nord/Sud, et la longitude détermine la position Est/Ouest sur la planète.
-2. Le 4ème satellite sert à synchroniser très précisément l'horloge interne du récepteur avec le temps exact des satellites, sans quoi le calcul de distance serait erroné.</p>
-<p><strong>Exercice 2 :</strong>
-- Formule : Distance = Vitesse × Temps
-- Calcul : Distance = 300 000 × 0,09
-- Résultat : 27 000 km.</p>
-<p><strong>Exercice 3 :</strong>
-1. 48° et 0,25 × 60 = 15' =&gt; <strong>48° 15'</strong>
-2. 10 + (45 / 60) = 10 + 0,75 =&gt; <strong>10,75°</strong></p>
-<p><strong>Exercice 4 :</strong>
-1. À <strong>14:25:30</strong> (UTC).
-2. <strong>6</strong> satellites ont été utilisés (champ <code>06</code>).
-3. L'altitude est de <strong>50.5 mètres</strong> (champ <code>50.5,M</code>).</p>
-<p><strong>Exercice 5 :</strong>
-Types de réponses attendues : Désactiver la localisation de son appareil quand on ne s'en sert pas, vérifier/révoquer les autorisations de localisation pour les applications non critiques, désactiver la géolocalisation lors de la prise de photos.</p>
-</details>
+<h3 id="exercice-4-trame-nmea">Exercice 4 : Trame NMEA</h3>
+<p>Voici une trame NMEA captée par un smartphone :<br />
+<code>$GPGGA,142530.000,4852.0000,N,00219.0000,E,1,06,1.2,110.0,M,,,,0000*0F</code></p>
+<ol>
+<li>À quelle heure (UTC) cette position a-t-elle été enregistrée ?</li>
+<li>Quelle est la lattitude à laquelle se trouve le capteur ?</li>
+<li>Quelle est la longitude à laquelle se trouve le capteur ?</li>
+<li>convertissez les donner trouver pour la lattitude et la longitude au format degree</li>
+</ol>
+<h3 id="exercice-5-vie-privee-et-enjeux">Exercice 5 : Vie privée et enjeux</h3>
+<p>Citez <strong>deux</strong> risques liés à l'utilisation constante de la géolocalisation sur les smartphones concernant la vie privée des utilisateurs.</p>
+<h3 id="exercice-6-systemes-satellites">Exercice 6 : Systèmes satellites</h3>
+<ol>
+<li>Le GPS est le système américain. Citez le nom de son concurrent <strong>européen</strong>.</li>
+<li>Quel est l'avantage principal de ce système européen par rapport au GPS ?</li>
+<li>Citez un facteur qui peut réduire la précision d'un récepteur GPS.</li>
+</ol>
 
 
 
