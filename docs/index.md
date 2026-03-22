@@ -19,7 +19,7 @@ Ce site a pour objectif de guider les élèves tout au long de l'année scolaire
     * [🌐 Internet](SNT/Internet/sommaire/)
     * [📸 Photographie Numérique](SNT/Photographie_Numerique/sommaire/)
     * [📍 Géolocalisation ](SNT/Geolocalisation/sommaire/)
-    * 📄 Web
+    * [📄 Web](SNT/Web/sommaire/)
     * 📊 Données Structurées
     * 📡 Objets Connectés
 

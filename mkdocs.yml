@@ -20,15 +20,15 @@ theme:
       toggle:
         icon: material/weather-night
         name: Mode sombre
-      primary: teal
-      accent: indigo
+      primary: deep-purple
+      accent: amber
     # Dark Mode
     - scheme: slate
       toggle:
         icon: material/weather-sunny
         name: Mode clair
-      primary: teal
-      accent: indigo
+      primary: deep-purple
+      accent: amber
   font:
     text: Roboto
     code: Roboto Mono
@@ -45,12 +45,19 @@ extra_css:
 
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+  - assets/javascripts/live_editor.js
 
 markdown_extensions:
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
           class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+        - name: live-editor
+          class: live-editor
+          format: !!python/name:pymdownx.superfences.fence_code_format
+        - name: live-editor-dual
+          class: live-editor-dual
           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true

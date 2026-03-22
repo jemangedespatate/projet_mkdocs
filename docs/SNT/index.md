@@ -10,6 +10,6 @@ Bienvenue dans la section SNT. Voici les thématiques abordées :
 * [🌐 Internet](Internet/sommaire.md)
 * [📸 Photographie Numérique](Photographie_Numerique/sommaire.md)
 * [📍 Géolocalisation](Geolocalisation/sommaire.md)
-* [📄 Web]()
+* [📄 Web](Web/sommaire.md)
 * [📊 Données Structurées]()
 * [📡 Objets Connectés]()

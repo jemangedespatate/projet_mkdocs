@@ -226,3 +226,108 @@
     font-weight: bold;
     margin-bottom: 1.5rem;
 }
+
+/* --------------------------------------------------------- */
+/* Live Code Editor for HTML/CSS TPs */
+
+.live-editor, .live-editor-dual {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin: 1.5rem auto !important; /* Centered with auto margin */
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    max-width: 95%; /* Centering constraint */
+    width: 100%;
+}
+
+.editor-header {
+    background: #f1f1f1;
+    padding: 10px 16px; /* Slightly more padding for icons */
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 0.8rem; /* Slightly larger */
+    font-weight: 600;
+    color: #333; /* Darker for better visibility with icons */
+    display: flex;
+    align-items: center; /* Vertical center for icons */
+    justify-content: flex-start;
+}
+
+.editor-input {
+    width: 100% !important;
+    height: 140px;
+    font-family: 'Roboto Mono', Courier, monospace !important;
+    font-size: 13px !important;
+    padding: 12px !important;
+    border: none !important;
+    background: #282c34 !important;
+    color: #abb2bf !important;
+    resize: vertical;
+    outline: none !important;
+    line-height: 1.5 !important;
+}
+
+.editor-preview-label {
+    background: #f1f1f1;
+    padding: 4px 16px;
+    font-size: 0.7rem;
+    color: #999;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #eee;
+}
+
+.editor-preview {
+    padding: 0;
+    background: #ffffff;
+    min-height: 50px;
+}
+
+.preview-iframe {
+    width: 100%;
+    border: none;
+    display: block;
+    min-height: 100px;
+}
+
+/* Dual Editor Design */
+.editor-dual-container {
+    display: flex;
+    flex-wrap: wrap;
+    background: #1e1e1e; /* Darker base */
+    border-bottom: 2px solid #1e1e1e;
+    gap: 1px; /* Gap creates a natural divider with background */
+}
+.editor-pane {
+    flex: 1;
+    min-width: 300px;
+    background: #282c34;
+    display: flex;
+    flex-direction: column;
+}
+.editor-pane .editor-header {
+    padding: 8px 16px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+/* Specific Header colors for better separation */
+.editor-pane:first-child .editor-header {
+    background: #e44d26; /* HTML Orange */
+}
+.editor-pane:last-child .editor-header {
+    background: #0070ba; /* CSS Blue */
+}
+.editor-pane textarea.editor-input {
+    height: 120px !important;
+    border: none !important;
+    border-radius: 0 !important;
+    font-size: 13px !important;
+    background: #282c34 !important;
+}
+.css-input { border-left: 4px solid #0070ba !important; }
+.html-input { border-left: 4px solid #e44d26 !important; }
+
