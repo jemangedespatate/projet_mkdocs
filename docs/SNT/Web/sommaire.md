@@ -1,9 +1,5 @@
 # Web
 
-## Cours
-
-* [📖 Cours](cours/cours.md)
-
 ## Travaux Pratiques
 
 * [💻 Travaux Pratique](tp/travaux_pratique.md)

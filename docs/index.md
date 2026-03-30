@@ -44,6 +44,7 @@ Ce site a pour objectif de guider les élèves tout au long de l'année scolaire
     * [💻 Système d'Exploitation](NSI_1/Systeme_Exploitation/sommaire/)
     * [Extra](NSI_1/extra/sommaire/)
     * [🤖 Algorithme des k plus proches voisins (k-NN)](NSI_1/k_plus_proches_voisins/sommaire.md)
+    * [evaluations](NSI_1/evaluations/sommaire.md)
 
 === "NSI terminale"
 

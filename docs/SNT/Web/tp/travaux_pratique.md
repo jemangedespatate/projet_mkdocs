@@ -1,8 +1,8 @@
-# TP : Crée ton site sur l'Histoire du Jeu Vidéo !
+# TP : Créez votre site sur l'Histoire du Jeu Vidéo !
 
-Bienvenue dans ce premier Travaux Pratiques sur le Web. Aujourd'hui, tu vas apprendre à coder ton propre site internet. 
+Bienvenue dans ce premier Travaux Pratiques sur le Web. Aujourd'hui, vous allez apprendre à coder votre propre site internet. 
 
-Le projet : créer une page web dédiée à l'un de tes jeux vidéo préférés ou à l'histoire du gaming.
+Le projet : créer une page web dédiée à l'un de vos jeux vidéo préférés ou à l'histoire du gaming.
 
 ---
 
@@ -10,8 +10,8 @@ Le projet : créer une page web dédiée à l'un de tes jeux vidéo préférés 
 
 Le HTML (HyperText Markup Language) est le langage qui permet de structurer le contenu d'une page. On utilise des balises comme `<h1>` (titre principal) et `<p>` (paragraphe).
 
-!!! question "Exercice 1 : Ton premier titre"
-    Affiche ton titre et un petit message d'accueil sur ton jeu préféré.
+!!! question "Exercice 1 : Votre premier titre"
+    Affichez votre titre et un petit message d'accueil sur votre jeu préféré.
     
     **Pour cet exercice, voici le code à recopier :**
     ```html
@@ -20,7 +20,7 @@ Le HTML (HyperText Markup Language) est le langage qui permet de structurer le c
     ```
 
     ```live-editor
-    <!-- Tape ton code HTML ici -->
+    <!-- Tapez votre code HTML ici -->
     
     ```
 
@@ -28,23 +28,23 @@ Le HTML (HyperText Markup Language) est le langage qui permet de structurer le c
 
 ## Étape 2 : Organiser les données (Les Listes)
 
-Pour lister des caractéristiques (comme les modes de jeu ou tes consoles), on utilise les balises de liste :
+Pour lister des caractéristiques (comme les modes de jeu ou vos consoles), on utilise les balises de liste :
 
 *   `<ul>` : Ouvre la liste (Unordered List).
 *   `<li>` : Crée un élément dans la liste (List Item).
 *   `</ul>` : Ferme la liste.
 
-!!! question "Exercice 2 : Tes modes de jeu"
-    Sous ton titre et ton paragraphe de l'exercice précédent, ajoute une liste de 3 modes ou éléments de ton jeu préféré.
+!!! question "Exercice 2 : Vos modes de jeu"
+    Sous votre titre et votre paragraphe de l'exercice précédent, ajoutez une liste de 3 modes ou éléments de votre jeu préféré.
     
     **Consignes :**
 
-    1. Utilise la balise `<ul>` pour commencer ta liste.
-    2. Utilise trois balises `<li>` pour tes éléments.
-    3. N'oublie pas de fermer chaque balise !
+    1. Utilisez la balise `<ul>` pour commencer votre liste.
+    2. Utilisez trois balises `<li>` pour vos éléments.
+    3. N'oubliez pas de fermer chaque balise !
 
     ```live-editor
-    <!-- Tape ton code HTML ici -->
+    <!-- Tapez votre code HTML ici -->
 
     ```
 
@@ -58,16 +58,16 @@ Un site web est plus vivant avec des images et des liens.
 *   `<a href="URL_LIEN">Texte</a>` : Crée un lien vers l'adresse URL indiquée.
 
 !!! question "Exercice 3 : Ajouter une image et un lien"
-    Essaye d'ajouter une image de Pac-Man (`https://static.wikia.nocookie.net/logopedia/images/e/e2/Pac-ManJP.png/revision/latest/scale-to-width-down/1000?cb=20240313115916`) et un lien vers sa page Wikipedia.
+    Essayez d'ajouter une image de Pac-Man (`https://static.wikia.nocookie.net/logopedia/images/e/e2/Pac-ManJP.png/revision/latest/scale-to-width-down/1000?cb=20240313115916`) et un lien vers sa page Wikipedia.
     
     **Consignes :**
 
-    1. Utilise la balise `<img>` avec l'attribut `src`.
-    2. En dessous, crée un lien avec la balise `<a>` et l'attribut `href`.
-    3. Entre l'ouverture `<a>` et la fermeture `</a>`, écris le texte qui sera cliquable.
+    1. Utilisez la balise `<img>` avec l'attribut `src`.
+    2. En dessous, créez un lien avec la balise `<a>` et l'attribut `href`.
+    3. Entre l'ouverture `<a>` et la fermeture `</a>`, écrivez le texte qui sera cliquable.
 
     ```live-editor
-    <!-- Tape ton code HTML ici -->
+    <!-- Tapez votre code HTML ici -->
 
     ```
 
@@ -79,19 +79,19 @@ Le CSS (Cascading Style Sheets) permet de changer l'apparence. On écrit le styl
 
 !!! question "Exercice 4 : Un look Gamer"
 
-    Donne un style plus sombre et moderne à ta page.
+    Donnez un style plus sombre et moderne à votre page.
     
     **Consignes :**
 
-    1. Dans le volet **CSS**, modifie le `body` pour mettre le fond (`background-color`) en noir et le texte (`color`) en blanc.
-    2. Modifie le `h1` pour lui donner une couleur vive (comme `cyan` ou `orange`).
+    1. Dans le volet **CSS**, modifiez le `body` pour mettre le fond (`background-color`) en noir et le texte (`color`) en blanc.
+    2. Modifiez le `h1` pour lui donner une couleur vive (comme `cyan` ou `orange`).
 
     ```live-editor-dual
     ---html---
     <h1>Gaming Live</h1>
     <p>Bienvenue sur mon site futuriste.</p>
     ---css---
-    /* Tape ton CSS ici */
+    /* Tapez votre CSS ici */
     ```
 
 ---
@@ -104,23 +104,23 @@ Pour rendre un site "Premium", on utilise souvent des bordures et des angles arr
 *   `border-radius: 10px;` : Arrondit les coins.
 *   `box-shadow: 5px 5px 15px gray;` : Ajoute une ombre.
 
-!!! question "Exercice 5 : Styliser ton image"
+!!! question "Exercice 5 : Styliser votre image"
 
-    Donne une allure de "carte à collectionner" à ton image.
+    Donnez une allure de "carte à collectionner" à votre image.
     
     **Consignes :**
 
-    1. Dans le volet **CSS**, sélectionne la balise `img`.
-    2. Ajoute une bordure de ta couleur préférée.
-    3. Arrondis les coins avec `border-radius: 20px`.
-    4. Bonus : ajoute une ombre.
+    1. Dans le volet **CSS**, sélectionnez la balise `img`.
+    2. Ajoutez une bordure de votre couleur préférée.
+    3. Arrondissez les coins avec `border-radius: 20px`.
+    4. Bonus : ajoutez une ombre.
 
     ```live-editor-dual
     ---html---
     <img src="https://static.wikia.nocookie.net/logopedia/images/e/e2/Pac-ManJP.png/revision/latest/scale-to-width-down/1000?cb=20240313115916" width="300">
     ---css---
     img {
-      /* Tes bordures ici */
+      /* Vos bordures ici */
     }
     ```
 
@@ -133,14 +133,14 @@ Pour éviter que le texte ne colle aux bords de l'image ou de la page, on utilis
 *   `margin` : Espace **autour** de l'élément (à l'extérieur).
 *   `padding` : Espace **dedans** (à l'intérieur de la bordure).
 
-!!! question "Exercice 6 : Aérer ta page"
+!!! question "Exercice 6 : Aérer votre page"
 
-    Ajoute de l'espace pour que ton site soit agréable à lire.
+    Ajoutez de l'espace pour que votre site soit agréable à lire.
     
     **Consignes :**
 
-    1. Dans le volet **CSS**, ajoute un `padding: 20px` sur ton `body`.
-    2. Ajoute une `margin-bottom: 30px` sur ton titre `h1` pour l'éloigner du texte d'après.
+    1. Dans le volet **CSS**, ajoutez un `padding: 20px` sur votre `body`.
+    2. Ajoutez une `margin-bottom: 30px` sur votre titre `h1` pour l'éloigner du texte d'après.
 
     ```live-editor-dual
     ---html---
@@ -148,10 +148,10 @@ Pour éviter que le texte ne colle aux bords de l'image ou de la page, on utilis
     <p>Ce texte est un peu trop collé en haut...</p>
     ---css---
     body {
-       /* Ajoute du padding ici */
+       /* Ajoutez du padding ici */
     }
     h1 {
-       /* Ajoute de la marge ic i */
+       /* Ajoutez de la marge ici */
     }
     ```
 
@@ -159,11 +159,11 @@ Pour éviter que le texte ne colle aux bords de l'image ou de la page, on utilis
 
 ## Étape 7 : Le Projet Final
 
-C'est le moment de prouver que tu es devenu un développeur Web !
+C'est le moment de prouver que vous êtes devenu un développeur Web !
 
 !!! question "Le Grand Défi"
 
-    Crée une page de présentation complète sur une console ou un jeu historique.
+    Créez une page de présentation complète sur une console ou un jeu historique.
     
     **Contraintes :**
 
@@ -174,10 +174,10 @@ C'est le moment de prouver que tu es devenu un développeur Web !
     
     ```live-editor-dual
     ---html---
-    <!-- Ton HTML ici -->
+    <!-- Votre HTML ici -->
     ---css---
-    /* Ton CSS ici */
+    /* Votre CSS ici */
     ```
 
 ---
-Astuce : Si tu es fier de ton résultat, tu peux faire une capture d'écran pour la partager !
+Astuce : Si vous êtes fier de votre résultat, vous pouvez faire une capture d'écran pour la partager !

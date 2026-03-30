@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://www.prof-leal.fr/SNT/Web/sommaire/">
+        <link rel="canonical" href="https://www.prof-leal.fr/NSI_1/Architecture/01_von_neumann_presentation/">
       
       
       
@@ -18,7 +18,7 @@
     
     
       
-        <title>Web - Mr Leal SNT/NSI</title>
+        <title>L'Architecture de Von Neumann - Mr Leal SNT/NSI</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#web" class="md-skip">
+        <a href="#larchitecture-de-von-neumann" class="md-skip">
           Skip to content
         </a>
       
@@ -106,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Web
+              L'Architecture de Von Neumann
             
           </span>
         </div>
@@ -220,7 +220,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../" class="md-tabs__link">
+      <a href="../../../SNT/" class="md-tabs__link">
         
   
     
@@ -237,7 +237,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../NSI_1/" class="md-tabs__link">
+      <a href="../../" class="md-tabs__link">
         
   
     
@@ -309,7 +309,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../" class="md-nav__link">
+      <a href="../../../SNT/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -329,7 +329,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../NSI_1/" class="md-nav__link">
+      <a href="../../" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -369,18 +369,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#travaux-pratiques" class="md-nav__link">
+  <a href="#partie-1-modelisation-principes" class="md-nav__link">
     <span class="md-ellipsis">
-      Travaux Pratiques
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#exercices" class="md-nav__link">
-    <span class="md-ellipsis">
-      Exercices
+      Partie 1 : Modélisation &amp; Principes 🏗️
     </span>
   </a>
   
@@ -401,22 +392,215 @@
                   
 
 
-<h1 id="web">Web</h1>
-<h2 id="travaux-pratiques">Travaux Pratiques</h2>
+<h1 id="larchitecture-de-von-neumann">L'Architecture de Von Neumann</h1>
+<h2 id="partie-1-modelisation-principes">Partie 1 : Modélisation &amp; Principes 🏗️</h2>
+<hr />
+<h1 id="alan-turing-lorigine-theorique">🕰️ Alan Turing : L'Origine Théorique</h1>
+<p><img alt="bg right:40% 80%" src="https://upload.wikimedia.org/wikipedia/commons/7/79/Alan_Turing_az_1930-as_%C3%A9vekben.jpg" /></p>
+<p>Avant la construction physique, il y a eu la théorie. 
+- <strong>1936</strong> : Alan Turing imagine une machine capable de réaliser n'importe quel calcul si on lui donne les bonnes instructions.
+- C'est le concept de <strong>Machine Universelle</strong>.</p>
+<hr />
+<h1 id="le-probleme-des-debuts">🔌 Le Problème des Débuts</h1>
+<p><img alt="bg left:45% 80%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Glen_Beck_and_Betty_Snyder_program_the_ENIAC_in_building_328_at_the_Ballistic_Research_Laboratory.jpg/1280px-Glen_Beck_and_Betty_Snyder_program_the_ENIAC_in_building_328_at_the_Ballistic_Research_Laboratory.jpg" /></p>
 <ul>
-<li><a href="../tp/travaux_pratique/">💻 Travaux Pratique</a></li>
+<li>Les premiers ordinateurs étaient "figés".</li>
+<li>Pour changer de programme, il fallait manipuler des milliers de câbles et d'interrupteurs.</li>
+<li><strong>La machine et le programme ne faisaient qu'un.</strong> C'était extrêmement long et complexe !</li>
 </ul>
-<h2 id="exercices">Exercices</h2>
+<hr />
+<h1 id="la-solution-de-von-neumann">✍️ La Solution de Von Neumann</h1>
+<p><img alt="bg right:40% 70%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/JohnvonNeumann-LosAlamos.jpg/960px-JohnvonNeumann-LosAlamos.jpg" /></p>
 <ul>
-<li><a href="../exercices/exo_comp/">✏️ Exo Comp</a></li>
-<li><a href="../exercices/travaux_diriger/">✏️ Travaux Diriger</a></li>
+<li><strong>1945</strong> : John Von Neumann propose une idée qui va tout changer.</li>
+<li><strong>Le concept</strong> : On n'a plus besoin de toucher aux câbles !</li>
+<li>Les instructions sont stockées <strong>en mémoire</strong>, exactement comme des nombres. </li>
+<li>Pour changer de programme, il suffit de charger un nouveau fichier en mémoire.</li>
 </ul>
+<hr />
+<h1 id="un-mot-sur-la-memoire">💾 Un mot sur la Mémoire 📦</h1>
+<p><img alt="bg left:40% 90%" src="https://upload.wikimedia.org/wikipedia/commons/d/df/Ferrite_core_memory.jpg" /></p>
+<ul>
+<li>Au début, stocker des données était complexe !</li>
+<li><strong>Mémoire à tores de ferrite</strong> (photo) : De petits anneaux magnétiques traversés par des fils.</li>
+<li>Chaque anneau stockait <strong>1 bit</strong>.</li>
+<li>1 Mo de RAM aurait pris la taille d'une salle entière !</li>
+</ul>
+<hr />
+<h1 id="le-modele-de-von-neumann">🏗️ Le Modèle de Von Neumann</h1>
+<p>Donnez les different composant d'un ordianteur</p>
+<hr />
+<h1 id="le-modele-de-von-neumann_1">🏗️ Le Modèle de Von Neumann</h1>
+<p>Lesquels sont essentiels ?</p>
+<hr />
+<h1 id="le-modele-de-von-neumann_2">🏗️ Le Modèle de Von Neumann</h1>
+<p>Un ordinateur moderne repose sur 4 piliers fondamentaux :</p>
+<ol>
+<li><strong>L'Unité Centrale de Traitement (CPU)</strong> : Le "cerveau" de la machine.</li>
+<li><strong>La Mémoire Vive (RAM)</strong> : L'espace de stockage temporaire (instructions + données).</li>
+<li><strong>Les Entrées / Sorties (I/O)</strong> : Interface avec le monde (clavier, écran, disque).</li>
+<li><strong>Les Bus</strong> : Les canaux de communication qui relient tout ce beau monde.</li>
+</ol>
+<hr />
+<h1 id="le-cur-le-cpu">🧠 Le Cœur : Le CPU</h1>
+<p><img alt="bg left:40% 90%" src="https://cours-informatique-gratuit.fr/wp-content/uploads/2014/05/processeur-intel.jpg" /></p>
+<p>Il est divisé en deux parties essentielles :</p>
+<h3 id="1-lunite-arithmetique-et-logique-alu">1. L'Unité Arithmétique et Logique (ALU)</h3>
+<p>Elle réalise tous les calculs mathématiques (<code>+</code>, <code>-</code>, <code>*</code>) et les opérations logiques (<code>ET</code>, <code>OU</code>, <code>NON</code>).</p>
+<h3 id="2-lunite-de-controle-cu">2. L'Unité de Contrôle (CU)</h3>
+<p>C'est le chef d'orchestre : elle lit l'instruction en mémoire, la décode et donne les ordres aux autres composants.</p>
+<hr />
+<h1 id="memoire-registres">💾 Mémoire &amp; Registres</h1>
+<p><img alt="bg right:45% 90%" src="https://infomaxparis.com/img/cms/Blog/image-ram-4-stick2.jpg" /></p>
+<ul>
+<li><strong>La Mémoire (RAM)</strong> : Grande capacité, mais située à l'extérieur du CPU. C'est le plan de travail où l'ordinateur pose ses dossiers.</li>
+</ul>
+<hr />
+<h1 id="memoire-registres_1">💾 Mémoire &amp; Registres</h1>
+<p><img alt="bg right:45% 90%" src="https://infomaxparis.com/img/cms/Blog/image-ram-4-stick2.jpg" /></p>
+<ul>
+<li><strong>Les Registres</strong> : Zones de stockage ultra-rapides situées <em>directement</em> dans le CPU.<ul>
+<li><strong>PC (Program Counter)</strong> : Maintient l'adresse de la prochaine instruction.</li>
+<li><strong>Accumulateur</strong> : Stocke le résultat immédiat d'un calcul.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h1 id="le-cycle-cpu">🔄 Le Cycle CPU</h1>
+<p>C'est ce que fait votre ordinateur des milliards de fois par seconde !</p>
+<ol>
+<li><strong>FETCH (Recherche)</strong> : Aller chercher l'instruction stockée à l'adresse indiquée par le <code>PC</code> dans la RAM.</li>
+<li><strong>DECODE (Décodage)</strong> : L'unité de contrôle traduit l'instruction binaire en opération compréhensible par le matériel.</li>
+<li><strong>EXECUTE (Exécution)</strong> : L'ALU fait le calcul et le résultat est rangé dans un registre ou en RAM.</li>
+<li><strong>RE-PC</strong> : Incrémenter le <code>PC</code> pour passer à l'instruction suivante.</li>
+</ol>
+<hr />
+<h1 id="le-modele-de-von-neumann_3">🏗️ Le Modèle de Von Neumann</h1>
+<p>Associer chaque composant à son rôle :</p>
+<ul>
+<li><strong>L'Unité Centrale de Traitement</strong> : Travaille et calcule (Cerveau).</li>
+<li><strong>La Mémoire Vive</strong> : Stocke temporairement (Plan de travail).</li>
+<li><strong>Les Entrées / Sorties</strong> : Communique (Interfaces).</li>
+<li><strong>Les Bus</strong> : Transporte (Autoroutes).</li>
+</ul>
+<hr />
+<h1 id="mais-comment-parle-t-on-a-cette-machine">❓ Mais comment parle-t-on à cette machine ?</h1>
+<ul>
+<li>On a vu que le CPU exécute des instructions binaires (<code>0</code> et <code>1</code>).</li>
+<li><strong>Problème</strong> : Un humain a beaucoup de mal à lire ou écrire des millions de <code>0</code> et de <code>1</code> sans faire d'erreur.</li>
+<li><strong>Solution</strong> : On a créé des "couches" d'abstraction pour faciliter la communication.</li>
+</ul>
+<hr />
+<h1 id="les-niveaux-de-langage">📊 Les Niveaux de Langage</h1>
+<p>Du plus proche de l'humain au plus proche du silicium :</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Niveau</th>
+<th style="text-align: left;">Nom</th>
+<th style="text-align: left;">Exemple</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><strong>3</strong></td>
+<td style="text-align: left;">Haut Niveau</td>
+<td style="text-align: left;"><code>score = 10 + 5</code></td>
+<td style="text-align: left;">Lisible comme de l'anglais.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2</strong></td>
+<td style="text-align: left;"><strong>Assembleur</strong></td>
+<td style="text-align: left;"><code>ADD R0, #10, #5</code></td>
+<td style="text-align: left;">Traduction directe du binaire en mots.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>1</strong></td>
+<td style="text-align: left;">Machine</td>
+<td style="text-align: left;"><code>1110 0010 ...</code></td>
+<td style="text-align: left;">La seule langue que parle le CPU.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1 id="quiz-de-recapitulation">🏁 Quiz de Récapitulation</h1>
+<h3 id="testons-vos-connaissances">Testons vos connaissances ! 🧠</h3>
+<hr />
+<h1 id="question-1">❓ Question 1</h1>
+<p><strong>Avant Von Neumann, si on voulait changer de calcul, il fallait :</strong></p>
+<p>A) Appuyer sur un bouton Reset.
+B) Changer physiquement des câbles et des interrupteurs.
+C) Taper une commande au clavier.</p>
+<hr />
+<h1 id="question-1_1">❓ Question 1</h1>
+<p><strong>Avant Von Neumann, si on voulait changer de calcul, il fallait :</strong></p>
+<p>A) Appuyer sur un bouton Reset.
+B) Changer physiquement des câbles et des interrupteurs.
+C) Taper une commande au clavier.</p>
+<blockquote>
+<p><strong>Réponse B</strong> : Il fallait littéralement "reconfigurer" la machine.</p>
+</blockquote>
+<hr />
+<h1 id="question-2">❓ Question 2</h1>
+<p><strong>Votre ordinateur doit réaliser une opération mathématique. Quel composant effectue le calcul ?</strong></p>
+<p>A) L'Unité de Contrôle (CU).
+B) L'Unité Arithmétique et Logique (ALU).
+C) La Mémoire Vive (RAM).</p>
+<hr />
+<h1 id="question-2_1">❓ Question 2</h1>
+<p><strong>Votre ordinateur doit réaliser une opération mathématique. Quel composant effectue le calcul ?</strong></p>
+<ul>
+<li>A) L'Unité de Contrôle (CU).</li>
+<li>B) L'Unité Arithmétique et Logique (ALU).</li>
+<li>C) La Mémoire Vive (RAM).</li>
+</ul>
+<blockquote>
+<p><strong>Réponse B</strong> : L'ALU (Arithmetic Logic Unit).</p>
+</blockquote>
+<hr />
+<h1 id="question-3">❓ Question 3</h1>
+<p><strong>Quel est l'endroit le plus rapide pour stocker une donnée pendant un calcul ?</strong></p>
+<p>A) La RAM.
+B) Le Disque Dur (SSD).
+C) Un Registre.</p>
+<hr />
+<h1 id="question-3_1">❓ Question 3</h1>
+<p><strong>Quel est l'endroit le plus rapide pour stocker une donnée pendant un calcul ?</strong></p>
+<ul>
+<li>A) La RAM.</li>
+<li>B) Le Disque Dur (SSD).</li>
+<li>C) Un Registre.</li>
+</ul>
+<blockquote>
+<p><strong>Réponse C</strong> : Les registres sont intégrés au CPU.</p>
+</blockquote>
+<hr />
+<h1 id="question-4">❓ Question 4</h1>
+<p><strong>Quelle est la seule langue que le processeur comprend réellement ?</strong></p>
+<p>A) Le Python.
+B) L'Assembleur.
+C) Le Langage Machine (Binaire).</p>
+<hr />
+<h1 id="question-4_1">❓ Question 4</h1>
+<p><strong>Quelle est la seule langue que le processeur comprend réellement ?</strong></p>
+<ul>
+<li>A) Le Python.</li>
+<li>B) L'Assembleur.</li>
+<li>C) Le Langage Machine (Binaire).</li>
+</ul>
+<blockquote>
+<p><strong>Réponse C</strong> : Tout le reste doit être traduit en binaire.</p>
+</blockquote>
 
 
 
 
 
 
+
+  
+  
 
 
 
