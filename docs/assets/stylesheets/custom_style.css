@@ -257,7 +257,7 @@
 
 .editor-input {
     width: 100% !important;
-    height: 140px;
+    height: 300px;
     font-family: 'Roboto Mono', Courier, monospace !important;
     font-size: 13px !important;
     padding: 12px !important;
@@ -322,7 +322,7 @@
     background: #0070ba; /* CSS Blue */
 }
 .editor-pane textarea.editor-input {
-    height: 120px !important;
+    height: 300px !important;
     border: none !important;
     border-radius: 0 !important;
     font-size: 13px !important;
