@@ -13,3 +13,4 @@ Bienvenue dans la section NSI Première. Voici les différents modules disponibl
 * [🌐 Interaction Web (HTML/CSS/JS)](interaction_web/sommaire.md)
 * [💻 Système d'Exploitation (Linux)](Systeme_Exploitation/sommaire.md)
 * [evaluations](evaluations/sommaire.md)
+* [💻 Architecture et Assembleur](Architecture/sommaire.md)
