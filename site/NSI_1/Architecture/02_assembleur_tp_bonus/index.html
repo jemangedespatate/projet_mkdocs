@@ -396,6 +396,24 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#defi-4-le-pgcd-algorithme-deuclide" class="md-nav__link">
+    <span class="md-ellipsis">
+      DÉFI 4 : LE PGCD (ALGORITHME D'EUCLIDE)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#defi-5-le-calcul-de-puissance-a-puissance-b" class="md-nav__link">
+    <span class="md-ellipsis">
+      DÉFI 5 : LE CALCUL DE PUISSANCE (A puissance B)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#aide-memoire-rappel-syntaxe" class="md-nav__link">
     <span class="md-ellipsis">
       AIDE-MÉMOIRE (RAPPEL SYNTAXE)
@@ -452,6 +470,30 @@ La suite commence donc comme cela : <code>0, 1, 1, 2, 3, 5, 8, 13, 21, 34...</co
 <p class="admonition-title">Astuce</p>
 <p>Vous aurez besoin de plusieurs registres mobilisés. Par exemple, <code>R1</code> pour l'avant-dernier terme, <code>R2</code> pour le dernier terme, et <code>R3</code> pour faire l'addition et stocker le suivant.
 <strong>Attention</strong> : prévoyez un registre spécifique comme "compteur de boucle" pour vous arrêter exactement au 10ème terme, sinon votre processeur tournera à l'infini !</p>
+</div>
+<hr />
+<h2 id="defi-4-le-pgcd-algorithme-deuclide">DÉFI 4 : LE PGCD (ALGORITHME D'EUCLIDE)</h2>
+<p>Le Plus Grand Commun Diviseur (PGCD) de deux nombres entiers est le plus grand entier naturel qui divise simultanément ces deux nombres sans laisser de reste.
+Une méthode très élégante (et historique !) pour le trouver par ordinateur repose sur des soustractions successives : tant que les deux nombres sont différents, on soustrait toujours le plus petit au plus grand. Quand ils finissent par être strictement égaux, bingo : c'est le PGCD !</p>
+<p><strong>Objectif :</strong>
+Deux nombres sont situés aux adresses <strong>80</strong> et <strong>81</strong> (ex: 15 et 25).
+Calculez leur PGCD avec l'algorithme d'Euclide et stockez la réponse finale à l'adresse <strong>82</strong> (dans l'exemple, le résultat attendu serait 5).</p>
+<div class="admonition tip">
+<p class="admonition-title">Astuce</p>
+<p>Chargez les deux valeurs dans deux registres. Comparez-les (<code>CMP</code>). S'ils sont égaux, la boucle est finie et vous pouvez sauter vers la fin du code. Sinon, identifiez le plus grand grâce à un branchement conditionnel (<code>BGT</code>) et soustrayez-lui le plus petit (<code>SUB</code>), puis repartez au tout début de votre boucle de comparaison !</p>
+</div>
+<hr />
+<h2 id="defi-5-le-calcul-de-puissance-a-puissance-b">DÉFI 5 : LE CALCUL DE PUISSANCE (A puissance B)</h2>
+<p>En mathématiques, <code>A</code> puissance <code>B</code> consiste à multiplier le nombre <code>A</code> par lui-même <code>B</code> fois. Par exemple, <code>2</code> à la puissance <code>3</code> vaut <code>2 * 2 * 2 = 8</code>.
+Problème critique : notre processeur ne sait pas multiplier nativement, et encore moins calculer des puissances. Il va falloir ruser !</p>
+<p><strong>Objectif :</strong>
+Le nombre <code>A</code> (la base) est stocké à l'adresse <strong>90</strong> (ex: 2).
+Le nombre <code>B</code> (l'exposant) est stocké à l'adresse <strong>91</strong> (ex: 3).
+Calculez ce résultat et enregistrez-le à l'adresse <strong>92</strong>.</p>
+<div class="admonition tip">
+<p class="admonition-title">Astuce</p>
+<p>C'est le <strong>défi ultime</strong> de ce TP, car il requiert de programmer des "boucles imbriquées". 
+Une boucle principale va utiliser le compteur d'exposant (ex: 3, puis 2, puis 1), et à l'intérieur de celle-ci, il faudra exécuter votre programme de multiplication par additions répétées ! Prenez une feuille de papier au brouillon pour noter le rôle précis de chaque registre (compteur global, compteur de multiplication, accumulateur des sommes, base originelle...).</p>
 </div>
 <hr />
 <h2 id="aide-memoire-rappel-syntaxe">AIDE-MÉMOIRE (RAPPEL SYNTAXE)</h2>

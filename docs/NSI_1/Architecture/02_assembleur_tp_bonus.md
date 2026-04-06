@@ -47,6 +47,36 @@ La suite commence donc comme cela : `0, 1, 1, 2, 3, 5, 8, 13, 21, 34...`
 
 ---
 
+## DÉFI 4 : LE PGCD (ALGORITHME D'EUCLIDE)
+
+Le Plus Grand Commun Diviseur (PGCD) de deux nombres entiers est le plus grand entier naturel qui divise simultanément ces deux nombres sans laisser de reste.
+Une méthode très élégante (et historique !) pour le trouver par ordinateur repose sur des soustractions successives : tant que les deux nombres sont différents, on soustrait toujours le plus petit au plus grand. Quand ils finissent par être strictement égaux, bingo : c'est le PGCD !
+
+**Objectif :**
+Deux nombres sont situés aux adresses **80** et **81** (ex: 15 et 25).
+Calculez leur PGCD avec l'algorithme d'Euclide et stockez la réponse finale à l'adresse **82** (dans l'exemple, le résultat attendu serait 5).
+
+!!! tip "Astuce"
+    Chargez les deux valeurs dans deux registres. Comparez-les (`CMP`). S'ils sont égaux, la boucle est finie et vous pouvez sauter vers la fin du code. Sinon, identifiez le plus grand grâce à un branchement conditionnel (`BGT`) et soustrayez-lui le plus petit (`SUB`), puis repartez au tout début de votre boucle de comparaison !
+
+---
+
+## DÉFI 5 : LE CALCUL DE PUISSANCE (A puissance B)
+
+En mathématiques, `A` puissance `B` consiste à multiplier le nombre `A` par lui-même `B` fois. Par exemple, `2` à la puissance `3` vaut `2 * 2 * 2 = 8`.
+Problème critique : notre processeur ne sait pas multiplier nativement, et encore moins calculer des puissances. Il va falloir ruser !
+
+**Objectif :**
+Le nombre `A` (la base) est stocké à l'adresse **90** (ex: 2).
+Le nombre `B` (l'exposant) est stocké à l'adresse **91** (ex: 3).
+Calculez ce résultat et enregistrez-le à l'adresse **92**.
+
+!!! tip "Astuce"
+    C'est le **défi ultime** de ce TP, car il requiert de programmer des "boucles imbriquées". 
+    Une boucle principale va utiliser le compteur d'exposant (ex: 3, puis 2, puis 1), et à l'intérieur de celle-ci, il faudra exécuter votre programme de multiplication par additions répétées ! Prenez une feuille de papier au brouillon pour noter le rôle précis de chaque registre (compteur global, compteur de multiplication, accumulateur des sommes, base originelle...).
+
+---
+
 ## AIDE-MÉMOIRE (RAPPEL SYNTAXE)
 
 Si vous avez un trou de mémoire, voici un rappel des commandes de survie :
