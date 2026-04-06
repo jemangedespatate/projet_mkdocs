@@ -1,0 +1,706 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://www.prof-leal.fr/NSI_1/interaction_web/tp_bonus_animations_css/">
+      
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.42">
+    
+    
+      
+        <title>🚀 TP Bonus : Donnez vie à votre site web (Animations CSS) - Mr Leal SNT/NSI</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/custom_style.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#tp-bonus-donnez-vie-a-votre-site-web-animations-css" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Mr Leal SNT/NSI" class="md-header__button md-logo" aria-label="Mr Leal SNT/NSI" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M249.6 471.5c10.8 3.8 22.4-4.1 22.4-15.5V78.6c0-4.2-1.6-8.4-5-11C247.4 52 202.4 32 144 32 93.5 32 46.3 45.3 18.1 56.1 6.8 60.5 0 71.7 0 83.8v370.3c0 11.9 12.8 20.2 24.1 16.5C55.6 460.1 105.5 448 144 448c33.9 0 79 14 105.6 23.5m76.8 0C353 462 398.1 448 432 448c38.5 0 88.4 12.1 119.9 22.6 11.3 3.8 24.1-4.6 24.1-16.5V83.8c0-12.1-6.8-23.3-18.1-27.6C529.7 45.3 482.5 32 432 32c-58.4 0-103.4 20-123 35.6-3.3 2.6-5 6.8-5 11V456c0 11.4 11.7 19.3 22.4 15.5"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Mr Leal SNT/NSI
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              🚀 TP Bonus : Donnez vie à votre site web (Animations CSS)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="amber"  aria-label="Mode sombre"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Mode sombre" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="amber"  aria-label="Mode clair"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Mode clair" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+    
+  
+  Accueil
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../SNT/" class="md-tabs__link">
+        
+  
+    
+  
+  SNT
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../" class="md-tabs__link">
+        
+  
+    
+  
+  Première NSI
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Mr Leal SNT/NSI" class="md-nav__button md-logo" aria-label="Mr Leal SNT/NSI" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M249.6 471.5c10.8 3.8 22.4-4.1 22.4-15.5V78.6c0-4.2-1.6-8.4-5-11C247.4 52 202.4 32 144 32 93.5 32 46.3 45.3 18.1 56.1 6.8 60.5 0 71.7 0 83.8v370.3c0 11.9 12.8 20.2 24.1 16.5C55.6 460.1 105.5 448 144 448c33.9 0 79 14 105.6 23.5m76.8 0C353 462 398.1 448 432 448c38.5 0 88.4 12.1 119.9 22.6 11.3 3.8 24.1-4.6 24.1-16.5V83.8c0-12.1-6.8-23.3-18.1-27.6C529.7 45.3 482.5 32 432 32c-58.4 0-103.4 20-123 35.6-3.3 2.6-5 6.8-5 11V456c0 11.4 11.7 19.3 22.4 15.5"/></svg>
+
+    </a>
+    Mr Leal SNT/NSI
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Accueil
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SNT/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SNT
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Première NSI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#objectifs" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 Objectifs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partie-1-des-survols-en-douceur-transition-et-hover" class="md-nav__link">
+    <span class="md-ellipsis">
+      🦋 Partie 1 : Des survols en douceur (transition et :hover)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🦋 Partie 1 : Des survols en douceur (transition et :hover)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-animer-vos-liens-de-navigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1 Animer vos liens de navigation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-effet-de-zoom-sur-vos-images" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2 Effet de Zoom sur vos images
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partie-2-effet-carte-interactive" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎴 Partie 2 : Effet "Carte interactive"
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partie-3-animations-continues-avec-keyframes" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔄 Partie 3 : Animations continues avec @keyframes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔄 Partie 3 : Animations continues avec @keyframes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-faire-flotter-votre-titre-principal" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 Faire "flotter" votre titre principal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-le-bouton-pulse-battement-de-coeur" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 Le bouton "Pulse" (Battement de coeur)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#defi-final" class="md-nav__link">
+    <span class="md-ellipsis">
+      🏆 Défi final
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partie-4-bonus-un-apercu-de-la-magie-du-javascript" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Partie 4 (Bonus+) : Un aperçu de la magie du JavaScript
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚀 Partie 4 (Bonus+) : Un aperçu de la magie du JavaScript">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tester-la-magie-de-js" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tester la magie de JS
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="tp-bonus-donnez-vie-a-votre-site-web-animations-css">🚀 TP Bonus : Donnez vie à votre site web (Animations CSS)</h1>
+<h2 id="objectifs">🎯 Objectifs</h2>
+<p>Vos sites web sont maintenant fonctionnels et bien structurés ! Mais ils pourraient être encore plus dynamiques et interactifs. Dans ce TP bonus, nous allons utiliser le <strong>CSS</strong> pour créer des petites animations <strong>sans écrire une seule ligne de JavaScript</strong>.</p>
+<blockquote>
+<p><strong>Note :</strong> Vous appliquerez ces nouveaux effets <strong>directement sur le site web</strong> que vous avez réalisé lors du TP précédent.</p>
+</blockquote>
+<hr />
+<h2 id="partie-1-des-survols-en-douceur-transition-et-hover">🦋 Partie 1 : Des survols en douceur (<code>transition</code> et <code>:hover</code>)</h2>
+<p>La pseudo-classe <code>:hover</code> (qui se rajoute dans le CSS) permet de changer le style d'un élément lorsque la souris passe dessus. La propriété <code>transition</code> permet de faire ce changement "en douceur" (de manière fluide) plutôt que de manière brutale ou instantanée.</p>
+<h3 id="11-animer-vos-liens-de-navigation">1.1 Animer vos liens de navigation</h3>
+<p>Actuellement, votre menu change de couleur (ou de soulignement) de façon très hachée. Rendons cela plus fluide.</p>
+<p><strong>Cible</strong> : Les balises <code>&lt;a&gt;</code> de votre menu de navigation.</p>
+<div class="highlight"><pre><span></span><code><span class="c">/* On ajoute la transition sur l&#39;état &quot;normal&quot; de l&#39;élément */</span>
+<span class="nt">a</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="mh">#3498db</span><span class="p">;</span>
+<span class="w">    </span><span class="c">/* La couleur changera en 0.4 secondes de façon très douce */</span>
+<span class="w">    </span><span class="k">transition</span><span class="p">:</span><span class="w"> </span><span class="kc">color</span><span class="w"> </span><span class="mf">0.4</span><span class="kt">s</span><span class="w"> </span><span class="kc">ease</span><span class="p">;</span><span class="w"> </span>
+<span class="p">}</span>
+
+<span class="c">/* On définit ce qui change AU SURVOL */</span>
+<span class="nt">a</span><span class="p">:</span><span class="nd">hover</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="mh">#e74c3c</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<p><strong>À vous de jouer :</strong> Appliquez une transition fluide sur les couleurs (texte ou fond) des liens de votre menu principal. N'hésitez pas à adapter le temps de transition !</p>
+<h3 id="12-effet-de-zoom-sur-vos-images">1.2 Effet de Zoom sur vos images</h3>
+<p>C'est un effet très populaire pour les galeries d'images : l'image s'agrandit légèrement quand on la survole. Pour cela on utilise la transformation d'échelle : <code>transform: scale()</code>.</p>
+<div class="highlight"><pre><span></span><code><span class="nt">img</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c">/* Toute transformation appliquée prendra 0.3 secondes */</span>
+<span class="w">    </span><span class="k">transition</span><span class="p">:</span><span class="w"> </span><span class="k">transform</span><span class="w"> </span><span class="mf">0.3</span><span class="kt">s</span><span class="w"> </span><span class="kc">ease</span><span class="p">;</span><span class="w"> </span>
+<span class="p">}</span>
+
+<span class="nt">img</span><span class="p">:</span><span class="nd">hover</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c">/* Au survol, l&#39;image passe à 110% de sa taille d&#39;origine (1.1) */</span>
+<span class="w">    </span><span class="k">transform</span><span class="p">:</span><span class="w"> </span><span class="nb">scale</span><span class="p">(</span><span class="mf">1.1</span><span class="p">);</span><span class="w"> </span>
+<span class="p">}</span>
+</code></pre></div>
+<p><em>(Si les grandes images dépassent sur d'autres éléments, observez comment vos marges réagissent !)</em></p>
+<p><strong>À vous de jouer :</strong> 
+1. Trouvez des images sur votre site.
+2. Ajoutez-leur cet effet de zoom. Testez sur votre navigateur en rechargeant la page (touche F5).</p>
+<hr />
+<h2 id="partie-2-effet-carte-interactive">🎴 Partie 2 : Effet "Carte interactive"</h2>
+<p>Nous allons créer un effet de "carte qui se soulève vers l'écran", que l'on retrouve sur de nombreux sites professionnels pour présenter des articles, des joueurs, des recettes, etc.</p>
+<p>Pour cela nous allons combiner 2 propriétés :
+- <code>transform: translateY()</code> pour déplacer la carte vers le haut (sur l'axe Y vertical).
+- <code>box-shadow</code> pour créer une ombre portée.</p>
+<p><strong>À vous de jouer :</strong>
+Appliquez ces classes sur un <code>&lt;div class="carte"&gt;</code> contenant par exemple un sous-titre (<code>h2</code>), une petite image et un paragraphe.</p>
+<div class="highlight"><pre><span></span><code><span class="p">.</span><span class="nc">carte</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="mh">#f8f9fa</span><span class="p">;</span>
+<span class="w">    </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
+<span class="w">    </span><span class="k">border-radius</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+
+<span class="w">    </span><span class="c">/* Une petite ombre par défaut sous la carte */</span>
+<span class="w">    </span><span class="k">box-shadow</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="mi">4</span><span class="kt">px</span><span class="w"> </span><span class="mi">8</span><span class="kt">px</span><span class="w"> </span><span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mf">0.1</span><span class="p">);</span><span class="w"> </span>
+
+<span class="w">    </span><span class="c">/* Transition sur TOUTES les propriétés qui vont changer plus tard */</span>
+<span class="w">    </span><span class="k">transition</span><span class="p">:</span><span class="w"> </span><span class="kc">all</span><span class="w"> </span><span class="mf">0.3</span><span class="kt">s</span><span class="w"> </span><span class="kc">ease</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">carte</span><span class="p">:</span><span class="nd">hover</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c">/* La carte remonte de 10 pixels (vers le haut, donc négatif en CSS) */</span>
+<span class="w">    </span><span class="k">transform</span><span class="p">:</span><span class="w"> </span><span class="nb">translateY</span><span class="p">(</span><span class="mi">-10</span><span class="kt">px</span><span class="p">);</span><span class="w"> </span>
+
+<span class="w">    </span><span class="c">/* L&#39;ombre devient beaucoup plus grande et plus diffuse : la carte &quot;décolle&quot; */</span>
+<span class="w">    </span><span class="k">box-shadow</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="mi">15</span><span class="kt">px</span><span class="w"> </span><span class="mi">25</span><span class="kt">px</span><span class="w"> </span><span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mf">0.2</span><span class="p">);</span><span class="w"> </span>
+<span class="p">}</span>
+</code></pre></div>
+<hr />
+<h2 id="partie-3-animations-continues-avec-keyframes">🔄 Partie 3 : Animations continues avec <code>@keyframes</code></h2>
+<p>Jusqu'à cette partie, l'animation se déclenchait uniquement via une action de l'utilisateur (le passage de la souris). 
+Avec les <code>@keyframes</code>, on peut créer <strong>une animation qui s'exécute automatiquement et qui tourne en boucle</strong> !</p>
+<h3 id="31-faire-flotter-votre-titre-principal">3.1 Faire "flotter" votre titre principal</h3>
+<p>Imaginons que vous voulez que le titre principal de votre page (votre <code>h1</code>) "flotte" doucement de haut en bas, en continu.</p>
+<p>On commence par décrire l'animation indépendamment de notre élément. On lui donne un nom, ici "flottaison" :</p>
+<div class="highlight"><pre><span></span><code><span class="p">@</span><span class="k">keyframes</span><span class="w"> </span><span class="nt">flottaison</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">0</span><span class="o">%</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">transform</span><span class="p">:</span><span class="w"> </span><span class="nb">translateY</span><span class="p">(</span><span class="mi">0</span><span class="kt">px</span><span class="p">);</span><span class="w"> </span><span class="p">}</span>
+<span class="w">    </span><span class="nt">50</span><span class="o">%</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">transform</span><span class="p">:</span><span class="w"> </span><span class="nb">translateY</span><span class="p">(</span><span class="mi">-15</span><span class="kt">px</span><span class="p">);</span><span class="w"> </span><span class="p">}</span><span class="w">    </span><span class="c">/* Monte de 15px à la moitié de l&#39;animation */</span>
+<span class="w">    </span><span class="nt">100</span><span class="o">%</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">transform</span><span class="p">:</span><span class="w"> </span><span class="nb">translateY</span><span class="p">(</span><span class="mi">0</span><span class="kt">px</span><span class="p">);</span><span class="w"> </span><span class="p">}</span><span class="w">     </span><span class="c">/* Redescend pour finir au point de départ */</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>Puis on l'applique sur l'élément souhaité (ici le <code>h1</code>), de cette façon :</p>
+<div class="highlight"><pre><span></span><code><span class="nt">h1</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c">/* </span>
+<span class="c">       Propriété animation : [nom_de_lanimation] [duree] [type_de_mouvement] [répétition]</span>
+<span class="c">    */</span>
+<span class="w">    </span><span class="k">animation</span><span class="p">:</span><span class="w"> </span><span class="n">flottaison</span><span class="w"> </span><span class="mi">3</span><span class="kt">s</span><span class="w"> </span><span class="kc">ease-in-out</span><span class="w"> </span><span class="kc">infinite</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<p><strong>À vous de jouer :</strong> Appliquez cette animation sur un de vos titres, ou sur l'image centrale de votre page d'accueil pour lui donner un côté "magique".</p>
+<h3 id="32-le-bouton-pulse-battement-de-coeur">3.2 Le bouton "Pulse" (Battement de coeur)</h3>
+<p>C'est une variante de l'animation précédente. On agit cette fois sur la taille (<code>scale</code>) plutôt que sur la position (<code>translate</code>). C'est extrêmement pratique pour attirer l'attention de l'utilisateur sur un élément important (comme un badge "NOUVEAU", une alerte ou un bouton de contact).</p>
+<div class="highlight"><pre><span></span><code><span class="p">@</span><span class="k">keyframes</span><span class="w"> </span><span class="nt">battement</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">0</span><span class="o">%</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">transform</span><span class="p">:</span><span class="w"> </span><span class="nb">scale</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span><span class="w"> </span><span class="p">}</span>
+<span class="w">    </span><span class="nt">50</span><span class="o">%</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">transform</span><span class="p">:</span><span class="w"> </span><span class="nb">scale</span><span class="p">(</span><span class="mf">1.05</span><span class="p">);</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="c">/* L&#39;élément grossit de 5% de sa taille */</span>
+<span class="w">    </span><span class="nt">100</span><span class="o">%</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">transform</span><span class="p">:</span><span class="w"> </span><span class="nb">scale</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span><span class="w"> </span><span class="p">}</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">pulse</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">animation</span><span class="p">:</span><span class="w"> </span><span class="n">battement</span><span class="w"> </span><span class="mi">2</span><span class="kt">s</span><span class="w"> </span><span class="kc">infinite</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<p><strong>À vous de jouer :</strong> Créez un élément dans votre fichier <code>.html</code> (une icône, un bouton, un court paragraphe), associez-lui la classe <code>class="pulse"</code> et vérifiez que votre élément palpite !</p>
+<hr />
+<h2 id="defi-final">🏆 Défi final</h2>
+<p>En utilisant les notions vues dans ce TP et une rapide recherche sur internet, essayez de créer une animation qui exécute une belle <strong>rotation</strong> sur un élément au passage de la souris ! </p>
+<hr />
+<h2 id="partie-4-bonus-un-apercu-de-la-magie-du-javascript">🚀 Partie 4 (Bonus+) : Un aperçu de la magie du JavaScript</h2>
+<p>Nous avons vu que le CSS est fantastique pour des animations récurrentes ou gérées par le navigateur (comme le survol de la souris). Mais que faire si l'on veut <strong>réagir dynamiquement</strong> aux actions complexes de l'utilisateur ? C'est là que le <strong>JavaScript</strong> intervient !</p>
+<p>Avec JavaScript, on peut réagir aux clics précis, au défilement de la page, ou même suivre les mouvements de la souris en temps réel. Voici un petit exemple pour vous montrer sa puissance : <strong>créer un "fantôme" ou un "halo" qui suit le pointeur de votre souris !</strong></p>
+<h3 id="tester-la-magie-de-js">Tester la magie de JS</h3>
+<p>Pour tester cette démonstration :</p>
+<p><strong>1. Ajoutez ceci tout en bas de votre fichier HTML (juste avant la balise fermante <code>&lt;/body&gt;</code>) :</strong></p>
+<div class="highlight"><pre><span></span><code><span class="cm">&lt;!-- Notre élément qui va suivre la souris --&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;curseur-suiveur&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+
+<span class="cm">&lt;!-- Le script qui va donner vie à notre élément --&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="w">    </span><span class="c1">// 1. On indique au JavaScript quel élément il doit manipuler</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">curseur</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;curseur-suiveur&quot;</span><span class="p">);</span>
+
+<span class="w">    </span><span class="c1">// 2. On demande au navigateur de surveiller (écouter) le mouvement de la souris</span>
+<span class="w">    </span><span class="nb">document</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;mousemove&quot;</span><span class="p">,</span><span class="w"> </span><span class="kd">function</span><span class="p">(</span><span class="nx">evenement</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="c1">// 3. À chaque micro-mouvement, on calcule la position X et Y</span>
+<span class="w">        </span><span class="c1">// et on déplace dynamiquement la &quot;bulle&quot; avec transform!</span>
+<span class="w">        </span><span class="nx">curseur</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">transform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sb">`translate(</span><span class="si">${</span><span class="nx">evenement</span><span class="p">.</span><span class="nx">clientX</span><span class="si">}</span><span class="sb">px, </span><span class="si">${</span><span class="nx">evenement</span><span class="p">.</span><span class="nx">clientY</span><span class="si">}</span><span class="sb">px)`</span><span class="p">;</span>
+<span class="w">    </span><span class="p">});</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</code></pre></div>
+<p><strong>2. Ajoutez ensuite ce style dans votre fichier <code>.css</code> pour donner une forme à votre curseur :</strong></p>
+<div class="highlight"><pre><span></span><code><span class="p">#</span><span class="nn">curseur-suiveur</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="kt">px</span><span class="p">;</span>
+<span class="w">    </span><span class="k">height</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="kt">px</span><span class="p">;</span>
+<span class="w">    </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="mh">#f39c12</span><span class="p">;</span><span class="w"> </span><span class="c">/* Une belle couleur orange */</span>
+<span class="w">    </span><span class="k">border-radius</span><span class="p">:</span><span class="w"> </span><span class="mi">50</span><span class="kt">%</span><span class="p">;</span><span class="w">        </span><span class="c">/* Pour faire un rond parfait */</span>
+
+<span class="w">    </span><span class="k">position</span><span class="p">:</span><span class="w"> </span><span class="kc">fixed</span><span class="p">;</span><span class="w">           </span><span class="c">/* Pour qu&#39;il vole au-dessus du reste de la page */</span>
+<span class="w">    </span><span class="k">top</span><span class="p">:</span><span class="w"> </span><span class="mi">-15</span><span class="kt">px</span><span class="p">;</span><span class="w">                </span><span class="c">/* Pour que votre vraie souris soit au centre du rond */</span>
+<span class="w">    </span><span class="k">left</span><span class="p">:</span><span class="w"> </span><span class="mi">-15</span><span class="kt">px</span><span class="p">;</span>
+<span class="w">    </span><span class="k">z-index</span><span class="p">:</span><span class="w"> </span><span class="mi">9999</span><span class="p">;</span><span class="w">             </span><span class="c">/* Pour être sûr qu&#39;il passe au-dessus de tout le reste */</span>
+
+<span class="w">    </span><span class="k">pointer-events</span><span class="p">:</span><span class="w"> </span><span class="kc">none</span><span class="p">;</span><span class="w">      </span><span class="c">/* CRÉCIAL : pour ne pas empêcher de cliquer sur vos vrais liens ! */</span>
+<span class="w">    </span><span class="k">transition</span><span class="p">:</span><span class="w"> </span><span class="k">transform</span><span class="w"> </span><span class="mf">0.1</span><span class="kt">s</span><span class="w"> </span><span class="kc">ease-out</span><span class="p">;</span><span class="w"> </span><span class="c">/* Un petit lissage du mouvement (&quot;effet d&#39;inertie&quot;) */</span>
+<span class="p">}</span>
+</code></pre></div>
+<p><strong>Que s'est-il passé ?</strong> 
+Sauvegardez vos fichiers et rechargez votre page web. Bougez votre souris... le rond orange vous suit ! </p>
+<p>C'est là toute la différence : le CSS s'occupe de la <strong>présentation</strong> (la couleur, la forme), tandis que le JavaScript s'occupe de la <strong>logique</strong> et de l'<strong>interactivité</strong> (calculer des positions infinies en direct). C'est avec ce langage que l'on code les jeux par navigateur ou les réseaux sociaux modernes !</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <a href="/" class="custom-home-button" title="Accueil">
+  <svg viewBox="0 0 24 24">
+    <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+  </svg>
+  Accueil
+</a>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tabs", "navigation.sections", "navigation.top", "navigation.expand", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      
+        <script src="../../../assets/javascripts/live_editor.js"></script>
+      
+    
+  </body>
+</html>
