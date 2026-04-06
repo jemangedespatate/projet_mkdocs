@@ -4,12 +4,6 @@ Bienvenue dans ce projet final sur le thème du Web ! Vous allez mettre en prati
 
 Le projet : créer une (ou plusieurs) page(s) web sur le **thème de votre choix** (votre groupe de musique préféré, un sport, un film, l'écologie, un jeu vidéo, etc.). Vous pouvez réaliser ce projet **seul ou à plusieurs** selon les consignes de votre professeur.
 
-!!! info "Où écrire votre code ?"
-    Pour ce projet, vous n'allez pas coder directement sur cette page.
-    Rendez-vous sur la plateforme Capytale en cliquant sur le lien ci-dessous pour réaliser et sauvegarder votre travail :
-    
-    👉 **[Accéder à l'espace de travail Capytale pour le projet Web](https://capytale2.ac-paris.fr/web/c/a3f7-10513067)** 👈
-
 ---
 
 ## Les attendus du projet
@@ -47,6 +41,18 @@ Le projet : créer une (ou plusieurs) page(s) web sur le **thème de votre choix
     
     N'oubliez pas d'insérer vos textes, vos titres, votre image et votre lien hypertexte.
 
+    ```live-editor-dual
+    ---html---
+
+    
+
+
+
+
+    ---css---
+    /* Ne touchez pas encore au CSS dans cette étape ! */
+    ```
+
 ---
 
 ## Étape 2 : Le style et l'habillage (CSS)
@@ -56,10 +62,24 @@ Le projet : créer une (ou plusieurs) page(s) web sur le **thème de votre choix
     
     **Consignes :**
 
-    1. Dans la partie **HTML** de Capytale, continuez de développer le contenu de votre page. N'hésitez pas à **ajouter toujours plus de contenu et d'images** pour étoffer votre site !
-    2. Dans la partie **CSS**, commencez à appliquer vos couleurs, vos arrondis (`border-radius`), vos marges, et tout le reste.
+    1. Dans le volet **HTML**, copiez et collez le contenu que vous avez créé à l'étape précédente. N'hésitez pas à **ajouter toujours plus de contenu et d'images** pour étoffer votre site !
+    2. Dans le volet **CSS**, commencez à appliquer vos couleurs, vos arrondis (`border-radius`), vos marges, et tout le reste.
     3. Testez les **ombres** derrière les textes ou les images avec les propriétés `box-shadow` et `text-shadow`.
     4. Commencez à concevoir une **deuxième page web** avec la même interface graphique pour lier vos pages entre elles.
+
+    ```live-editor-dual
+    ---html---
+    <!-- Copiez-collez votre HTML de l'étape 1 ici et ajoutez du contenu supplémentaire -->
+
+
+
+
+    ---css---
+
+
+
+
+    ```
 
 ---
 
@@ -85,3 +105,55 @@ Pour ce projet sur plusieurs séances, votre site peut devenir extrêmement rich
     **4. Modifier la typographie :**
 
     Remplacez la police d'écriture par défaut du site en utilisant la propriété `font-family` avec des polices adaptées à l'ambiance de votre thème (histoire, jeu, musique, etc.).
+
+    ```live-editor-dual
+    ---html---
+
+
+
+
+
+    ---css---
+
+    ```
+
+---
+
+## Étape Bonus : Créer le site "pour de vrai" localement !
+
+Pour le moment, vous codez à l'intérieur d'un éditeur virtuel sur cette page. Cela a cependant ses limites : vous ne pouvez pas utiliser vos propres images locales par défaut, et la création de liens vers d'autres pages est fastidieuse (tout l'univers virtuel doit être géré sur cette seule page).
+
+Pour repousser ces limites et découvrir comment travaillent les vrais développeurs Web, voici comment héberger votre site sur votre propre ordinateur :
+
+!!! tip "Créer de vrais fichiers web sur la machine"
+
+    1. Sur l'ordinateur, créez un **nouveau dossier** sur le bureau ou dans vos documents. Nommez-le `Mon_Projet_Web`.
+    2. À l'intérieur, créez un nouveau document texte. Renommez-le très exactement en **`index.html`** (attention à bien vérifier que vous avez remplacé l'extension `.txt`). C'est le nom officiel mondial pour la page d'accueil d'un site !
+    3. Créez un deuxième document texte nommé **`style.css`**.
+    4. **Déplacez les fichiers d'images** locaux que vous souhaitez utiliser directement dans ce dossier `Mon_Projet_Web`.
+    5. Ouvrez vos fichiers `.html` et `.css` avec un **éditeur de code** (comme le *Bloc-notes* Windows) via Clic-Droit "Ouvrir avec...".
+
+    C'est ici que vous allez pouvoir copier-coller tout le code libre que vous avez produit dans ce TP ! Dans votre `<head>`, n'oubliez pas d'insérer la balise de lien pour relier votre fichier HTML à votre fichier CSS :
+
+    ```html
+    <!DOCTYPE html>
+    <html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Titre de ma page</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+        <!-- C'est ici, entre les balises body, qu'il faut coller le code HTML du site ! -->
+
+    </body>
+    </html>
+    ```
+
+    **Pour afficher le site :**
+    Double-cliquez simplement sur votre fichier `index.html` ! Il s'ouvrira dans votre navigateur web habituel (Chrome, Edge, Firefox...). 
+    À chaque fois que vous modifiez le code dans votre éditeur textuel, n'oubliez pas de **sauvegarder votre fichier (`Ctrl` + `S`)** puis de retourner **actualiser la page de votre navigateur (`F5`)** !
+    
+    **L'avantage majeur de cette méthode de pros :** vous pouvez dorénavant créer autant de pages que vous désirez (ex: `page2.html`, `contact.html`...) et faire de vrais liens de navigation `<a href="page2.html">` pour naviguer entre vos pages !

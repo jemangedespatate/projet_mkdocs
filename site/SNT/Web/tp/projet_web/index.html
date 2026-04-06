@@ -404,6 +404,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#etape-bonus-creer-le-site-pour-de-vrai-localement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Étape Bonus : Créer le site "pour de vrai" localement !
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -422,12 +431,6 @@
 <h1 id="tp-projet-final-web">TP : Projet Final Web</h1>
 <p>Bienvenue dans ce projet final sur le thème du Web ! Vous allez mettre en pratique tout ce que vous avez appris lors des séances précédentes pour créer un site internet complet.</p>
 <p>Le projet : créer une (ou plusieurs) page(s) web sur le <strong>thème de votre choix</strong> (votre groupe de musique préféré, un sport, un film, l'écologie, un jeu vidéo, etc.). Vous pouvez réaliser ce projet <strong>seul ou à plusieurs</strong> selon les consignes de votre professeur.</p>
-<div class="admonition info">
-<p class="admonition-title">Où écrire votre code ?</p>
-<p>Pour ce projet, vous n'allez pas coder directement sur cette page.
-Rendez-vous sur la plateforme Capytale en cliquant sur le lien ci-dessous pour réaliser et sauvegarder votre travail :</p>
-<p>👉 <strong><a href="https://capytale2.ac-paris.fr/web/c/a3f7-10513067">Accéder à l'espace de travail Capytale pour le projet Web</a></strong> 👈</p>
-</div>
 <hr />
 <h2 id="les-attendus-du-projet">Les attendus du projet</h2>
 <div class="admonition question">
@@ -460,6 +463,15 @@ Rendez-vous sur la plateforme Capytale en cliquant sur le lien ci-dessous pour r
 <p class="admonition-title">Votre code HTML</p>
 <p>Commencez par rédiger tout le contenu de votre site internet en HTML. N'utilisez <strong>que</strong> les balises HTML. Ne vous préoccupez pas encore de l'apparence visuelle, c'est ce qu'on appelle écrire le "squelette" du site !</p>
 <p>N'oubliez pas d'insérer vos textes, vos titres, votre image et votre lien hypertexte.</p>
+<pre class="live-editor-dual"><code>---html---
+
+
+
+
+
+
+---css---
+/* Ne touchez pas encore au CSS dans cette étape ! */</code></pre>
 </div>
 <hr />
 <h2 id="etape-2-le-style-et-lhabillage-css">Étape 2 : Le style et l'habillage (CSS)</h2>
@@ -468,11 +480,22 @@ Rendez-vous sur la plateforme Capytale en cliquant sur le lien ci-dessous pour r
 <p>Maintenant que votre page HTML est bien structurée, vous pouvez y ajouter votre style pour la rendre belle et agréable à lire.</p>
 <p><strong>Consignes :</strong></p>
 <ol>
-<li>Dans la partie <strong>HTML</strong> de Capytale, continuez de développer le contenu de votre page. N'hésitez pas à <strong>ajouter toujours plus de contenu et d'images</strong> pour étoffer votre site !</li>
-<li>Dans la partie <strong>CSS</strong>, commencez à appliquer vos couleurs, vos arrondis (<code>border-radius</code>), vos marges, et tout le reste.</li>
+<li>Dans le volet <strong>HTML</strong>, copiez et collez le contenu que vous avez créé à l'étape précédente. N'hésitez pas à <strong>ajouter toujours plus de contenu et d'images</strong> pour étoffer votre site !</li>
+<li>Dans le volet <strong>CSS</strong>, commencez à appliquer vos couleurs, vos arrondis (<code>border-radius</code>), vos marges, et tout le reste.</li>
 <li>Testez les <strong>ombres</strong> derrière les textes ou les images avec les propriétés <code>box-shadow</code> et <code>text-shadow</code>.</li>
 <li>Commencez à concevoir une <strong>deuxième page web</strong> avec la même interface graphique pour lier vos pages entre elles.</li>
 </ol>
+<pre class="live-editor-dual"><code>---html---
+&lt;!-- Copiez-collez votre HTML de l'étape 1 ici et ajoutez du contenu supplémentaire --&gt;
+
+
+
+
+---css---
+
+
+
+</code></pre>
 </div>
 <hr />
 <h2 id="etape-3-pour-aller-plus-loin-finitions-professionnelles">Étape 3 (Pour aller plus loin) : Finitions professionnelles</h2>
@@ -488,6 +511,48 @@ Stylisez les liens pour qu'ils ressemblent à de vrais boutons : sans souligneme
 <p>Rendez votre site interactif ! En CSS, vous pouvez utiliser <code>:hover</code> pour changer l'allure d'un bouton ou d'une image quand la souris pointe dessus. N'oubliez pas d'ajouter <code>transition: 0.5s;</code> à votre élément d'origine pour que le changement soit joli et fluide.</p>
 <p><strong>4. Modifier la typographie :</strong></p>
 <p>Remplacez la police d'écriture par défaut du site en utilisant la propriété <code>font-family</code> avec des polices adaptées à l'ambiance de votre thème (histoire, jeu, musique, etc.).</p>
+<pre class="live-editor-dual"><code>---html---
+
+
+
+
+
+---css---
+</code></pre>
+</div>
+<hr />
+<h2 id="etape-bonus-creer-le-site-pour-de-vrai-localement">Étape Bonus : Créer le site "pour de vrai" localement !</h2>
+<p>Pour le moment, vous codez à l'intérieur d'un éditeur virtuel sur cette page. Cela a cependant ses limites : vous ne pouvez pas utiliser vos propres images locales par défaut, et la création de liens vers d'autres pages est fastidieuse (tout l'univers virtuel doit être géré sur cette seule page).</p>
+<p>Pour repousser ces limites et découvrir comment travaillent les vrais développeurs Web, voici comment héberger votre site sur votre propre ordinateur :</p>
+<div class="admonition tip">
+<p class="admonition-title">Créer de vrais fichiers web sur la machine</p>
+<ol>
+<li>Sur l'ordinateur, créez un <strong>nouveau dossier</strong> sur le bureau ou dans vos documents. Nommez-le <code>Mon_Projet_Web</code>.</li>
+<li>À l'intérieur, créez un nouveau document texte. Renommez-le très exactement en <strong><code>index.html</code></strong> (attention à bien vérifier que vous avez remplacé l'extension <code>.txt</code>). C'est le nom officiel mondial pour la page d'accueil d'un site !</li>
+<li>Créez un deuxième document texte nommé <strong><code>style.css</code></strong>.</li>
+<li><strong>Déplacez les fichiers d'images</strong> locaux que vous souhaitez utiliser directement dans ce dossier <code>Mon_Projet_Web</code>.</li>
+<li>Ouvrez vos fichiers <code>.html</code> et <code>.css</code> avec un <strong>éditeur de code</strong> (comme le <em>Bloc-notes</em> Windows) via Clic-Droit "Ouvrir avec...".</li>
+</ol>
+<p>C'est ici que vous allez pouvoir copier-coller tout le code libre que vous avez produit dans ce TP ! Dans votre <code>&lt;head&gt;</code>, n'oubliez pas d'insérer la balise de lien pour relier votre fichier HTML à votre fichier CSS :</p>
+<div class="highlight"><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;fr&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;viewport&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;width=device-width, initial-scale=1.0&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Titre de ma page<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;style.css&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+
+    <span class="cm">&lt;!-- C&#39;est ici, entre les balises body, qu&#39;il faut coller le code HTML du site ! --&gt;</span>
+
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
+<p><strong>Pour afficher le site :</strong>
+Double-cliquez simplement sur votre fichier <code>index.html</code> ! Il s'ouvrira dans votre navigateur web habituel (Chrome, Edge, Firefox...). 
+À chaque fois que vous modifiez le code dans votre éditeur textuel, n'oubliez pas de <strong>sauvegarder votre fichier (<code>Ctrl</code> + <code>S</code>)</strong> puis de retourner <strong>actualiser la page de votre navigateur (<code>F5</code>)</strong> !</p>
+<p><strong>L'avantage majeur de cette méthode de pros :</strong> vous pouvez dorénavant créer autant de pages que vous désirez (ex: <code>page2.html</code>, <code>contact.html</code>...) et faire de vrais liens de navigation <code>&lt;a href="page2.html"&gt;</code> pour naviguer entre vos pages !</p>
 </div>
 
 
