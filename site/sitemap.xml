@@ -2,458 +2,466 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://www.prof-leal.fr/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/NSI_1/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/NSI_1/Architecture/01_von_neumann_presentation/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/NSI_1/Architecture/02_assembleur_tp/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
+    </url>
+    <url>
+         <loc>https://www.prof-leal.fr/NSI_1/Architecture/02_assembleur_tp_bonus/</loc>
+         <lastmod>2026-04-06</lastmod>
+    </url>
+    <url>
+         <loc>https://www.prof-leal.fr/NSI_1/Architecture/sommaire/</loc>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/NSI_1/Programmation_Python/exercice/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/NSI_1/Programmation_Python/exercice_2/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/NSI_1/Programmation_Python/exercice_3/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/NSI_1/Programmation_Python/fiche_memo/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/NSI_1/Programmation_Python/introductions_prog/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/NSI_1/Programmation_Python/mini-projet/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/NSI_1/Programmation_Python/sommaire/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/NSI_1/Programmation_Python/interrogation/intero_corec/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/NSI_1/Programmation_Python/interrogation/interrogation/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/NSI_1/Programmation_Python/interrogation_2/interrogation/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/NSI_1/Systeme_Exploitation/cours/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/NSI_1/Systeme_Exploitation/sommaire/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/NSI_1/Systeme_Exploitation/tp_bash_game/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/NSI_1/algorithme/diaporama_ia/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/NSI_1/algorithme/diaporama_tri_dichotomie/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/NSI_1/algorithme/exercice/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/NSI_1/algorithme/exercices_tri_dichotomie/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/NSI_1/algorithme/liste_tuple/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/NSI_1/algorithme/recherche_dichotomique/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/NSI_1/algorithme/recursivite/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/NSI_1/algorithme/sommaire/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/NSI_1/evaluations/sommaire/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/NSI_1/extra/sommaire/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/NSI_1/interaction_web/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/NSI_1/interaction_web/cours/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/NSI_1/interaction_web/exercices/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/NSI_1/interaction_web/sommaire/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/NSI_1/interaction_web/tp_site_web/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/NSI_1/k_plus_proches_voisins/algorithme_knn/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/NSI_1/k_plus_proches_voisins/exercices_knn/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/NSI_1/k_plus_proches_voisins/sommaire/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/NSI_1/traitement_de_donnees/cours/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/NSI_1/traitement_de_donnees/exercices/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/NSI_1/traitement_de_donnees/mini_projet/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/NSI_1/traitement_de_donnees/sommaire/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/NSI_1/traitement_de_donnees/tp_avance_fusion/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/NSI_1/traitement_de_donnees/tp_pokemon/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/NSI_1/type_de_base/TP_Snake/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/NSI_1/type_de_base/correction_exercice/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/NSI_1/type_de_base/dictionnaire/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/NSI_1/type_de_base/exercice/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/NSI_1/type_de_base/exercice_dictionnaire/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/NSI_1/type_de_base/liste_tuple/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/NSI_1/type_de_base/sommaire/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/NSI_1/type_de_base/dm_vacances/dm/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/NSI_1/type_et_valeur_de_base/base/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/NSI_1/type_et_valeur_de_base/booleen/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/NSI_1/type_et_valeur_de_base/exercice/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/NSI_1/type_et_valeur_de_base/fiche_memo/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/NSI_1/type_et_valeur_de_base/interro/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/NSI_1/type_et_valeur_de_base/operations/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/NSI_1/type_et_valeur_de_base/representations_caractere/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/NSI_1/type_et_valeur_de_base/sommaire/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/SNT/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/SNT/Donnees_Structurees/sommaire/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/SNT/Donnees_Structurees/cours/cours/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/SNT/Donnees_Structurees/exercices/exo_comp/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/SNT/Donnees_Structurees/exercices/travaux_diriger/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/SNT/Donnees_Structurees/tp/travaux_pratique/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/SNT/Geolocalisation/sommaire/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/SNT/Geolocalisation/cours/cours/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/SNT/Geolocalisation/cours/presentation/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/SNT/Geolocalisation/evaluations/interrogation_sujet_a/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/SNT/Geolocalisation/evaluations/interrogation_sujet_b/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/SNT/Geolocalisation/evaluations/interrogation_sujet_c/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/SNT/Geolocalisation/evaluations/interrogation_sujet_d/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/SNT/Geolocalisation/exercices/exercices/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/SNT/Geolocalisation/exercices/exercices_complementaires/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/SNT/Internet/sommaire/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/SNT/Internet/cours/convertions_de_base/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/SNT/Internet/cours/cours/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/SNT/Objets_Connectes/sommaire/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/SNT/Objets_Connectes/cours/cours/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/SNT/Objets_Connectes/exercices/exo_comp/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/SNT/Objets_Connectes/exercices/travaux_diriger/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/SNT/Objets_Connectes/tp/travaux_pratique/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/SNT/Photographie_Numerique/sommaire/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/SNT/Photographie_Numerique/cours/cours/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/SNT/Photographie_Numerique/exercices/corriges/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/SNT/Photographie_Numerique/exercices/exercices/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/SNT/Photographie_Numerique/exercices/exo_comp/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/SNT/Photographie_Numerique/tp/tp_exif/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/SNT/Photographie_Numerique/tp/tp_pillow/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/SNT/Photographie_Numerique/tp/tp_pillow_complement/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/SNT/Photographie_Numerique/tp/tp_pillow_corrige/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/SNT/Photographie_Numerique/tp/travaux_pratique/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/SNT/Programmation_Python/sommaire/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/SNT/Programmation_Python/cours/fiche_memo/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/SNT/Programmation_Python/cours/introductions_prog/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/SNT/Programmation_Python/evaluations/evaluation/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/SNT/Programmation_Python/exercices/exercice_comp/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/SNT/Programmation_Python/tp/mini_projet/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/SNT/Programmation_Python/tp/tp_pixel_art/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/SNT/Programmation_Python/tp/tp_pixel_art_corrige/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/SNT/Reseaux_sociaux/sommaire/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/SNT/Reseaux_sociaux/cours/exo_graphe/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/SNT/Reseaux_sociaux/cours/expo/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/SNT/Reseaux_sociaux/cours/graphe/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/SNT/Reseaux_sociaux/exercices/exo_comp/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/SNT/Reseaux_sociaux/tp/travaux_pratique/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/SNT/Web/sommaire/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/SNT/Web/cours/cours/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/SNT/Web/cours/diaporama_web/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/SNT/Web/exercices/exo_comp/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/SNT/Web/exercices/travaux_diriger/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/SNT/Web/tp/projet_web/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/SNT/Web/tp/travaux_pratique/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/SNT/img/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/SNT/introduction_snt/sommaire/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
          <loc>https://www.prof-leal.fr/SNT/introduction_snt/cours/activiter_introductif/</loc>
-         <lastmod>2026-03-31</lastmod>
+         <lastmod>2026-04-06</lastmod>
     </url>
 </urlset>

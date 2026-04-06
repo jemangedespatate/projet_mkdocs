@@ -4,6 +4,12 @@ Bienvenue dans ce projet final sur le thème du Web ! Vous allez mettre en prati
 
 Le projet : créer une (ou plusieurs) page(s) web sur le **thème de votre choix** (votre groupe de musique préféré, un sport, un film, l'écologie, un jeu vidéo, etc.). Vous pouvez réaliser ce projet **seul ou à plusieurs** selon les consignes de votre professeur.
 
+!!! info "Où écrire votre code ?"
+    Pour ce projet, vous n'allez pas coder directement sur cette page.
+    Rendez-vous sur la plateforme Capytale en cliquant sur le lien ci-dessous pour réaliser et sauvegarder votre travail :
+    
+    👉 **[Accéder à l'espace de travail Capytale pour le projet Web](https://capytale2.ac-paris.fr/web/c/a3f7-10513067)** 👈
+
 ---
 
 ## Les attendus du projet
@@ -41,14 +47,6 @@ Le projet : créer une (ou plusieurs) page(s) web sur le **thème de votre choix
     
     N'oubliez pas d'insérer vos textes, vos titres, votre image et votre lien hypertexte.
 
-    ```live-editor-dual
-    ---html---
-
-    
-    ---css---
-    /* Ne touchez pas encore au CSS dans cette étape ! */
-    ```
-
 ---
 
 ## Étape 2 : Le style et l'habillage (CSS)
@@ -58,18 +56,10 @@ Le projet : créer une (ou plusieurs) page(s) web sur le **thème de votre choix
     
     **Consignes :**
 
-    1. Dans le volet **HTML**, copiez et collez le contenu que vous avez créé à l'étape précédente. N'hésitez pas à **ajouter toujours plus de contenu et d'images** pour étoffer votre site !
-    2. Dans le volet **CSS**, commencez à appliquer vos couleurs, vos arrondis (`border-radius`), vos marges, et tout le reste.
+    1. Dans la partie **HTML** de Capytale, continuez de développer le contenu de votre page. N'hésitez pas à **ajouter toujours plus de contenu et d'images** pour étoffer votre site !
+    2. Dans la partie **CSS**, commencez à appliquer vos couleurs, vos arrondis (`border-radius`), vos marges, et tout le reste.
     3. Testez les **ombres** derrière les textes ou les images avec les propriétés `box-shadow` et `text-shadow`.
     4. Commencez à concevoir une **deuxième page web** avec la même interface graphique pour lier vos pages entre elles.
-
-    ```live-editor-dual
-    ---html---
-    <!-- Copiez-collez votre HTML de l'étape 1 ici et ajoutez du contenu supplémentaire -->
-
-    ---css---
-
-    ```
 
 ---
 
@@ -95,10 +85,3 @@ Pour ce projet sur plusieurs séances, votre site peut devenir extrêmement rich
     **4. Modifier la typographie :**
 
     Remplacez la police d'écriture par défaut du site en utilisant la propriété `font-family` avec des polices adaptées à l'ambiance de votre thème (histoire, jeu, musique, etc.).
-
-    ```live-editor-dual
-    ---html---
-
-    ---css---
-
-    ```
