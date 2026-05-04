@@ -5,6 +5,7 @@
 * [Les algorithmes de tri](../liste_tuple/)
 * [La recherche dichotomique](../recherche_dichotomique/)
 * [Révisions : Tris, Complexité et Recherche (Diapo)](../diaporama_tri_dichotomie/)
+* [Les algorithmes gloutons](../diaporama_gloutons/)
 
 ## Activité
 
@@ -13,3 +14,4 @@
 ## TP
 
 * [TP — Recherche dichotomique (Notebook)](https://capytale2.ac-paris.fr/web/c/a026-10020926)
+* [TP — Les algorithmes gloutons (Notebook)](https://capytale2.ac-paris.fr/web/c/8b20-10815765)

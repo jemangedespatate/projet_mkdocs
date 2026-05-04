@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NSI Quiz Battle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=JetBrains+Mono&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="background-elements">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <main class="app-container">
+        <header>
+            <h1>NSI Quiz</h1>
+            <p class="subtitle"></p>
+        </header>
+
+        <div class="game-board">
+            <!-- LEADERBOARD -->
+            <aside class="leaderboard-container glass-panel">
+                <h2>Classement</h2>
+                <div class="teams" id="teams-container">
+                    <!-- Teams injected by JS -->
+                </div>
+            </aside>
+
+            <!-- MAIN PLAY AREA -->
+            <section class="play-area glass-panel">
+                <div class="turn-indicator" id="turn-indicator">
+                    <span class="label">Au tour de l'équipe :</span>
+                    <span class="current-team" id="current-team-display">Chargement...</span>
+                </div>
+
+                <!-- STATE: SELECT DIFFICULTY -->
+                <div id="state-select" class="game-state active">
+                    <h3>Choisissez une difficulté</h3>
+                    <p class="remaining-info" id="remaining-info">Chargement...</p>
+                    <div class="difficulty-buttons">
+                        <button class="btn btn-facile" onclick="app.drawQuestion('facile')">Facile (1 pt)</button>
+                        <button class="btn btn-moyenne" onclick="app.drawQuestion('moyenne')">Moyenne (2 pts)</button>
+                        <button class="btn btn-difficile" onclick="app.drawQuestion('difficile')">Difficile (3
+                            pts)</button>
+                    </div>
+                    <div style="display: flex; justify-content: center; gap: 1rem;">
+                        <button class="btn btn-random" onclick="app.drawQuestion('random')">Aléatoire</button>
+                        <button class="btn btn-danger" onclick="app.nextTurn()">Passer le tour</button>
+                    </div>
+                </div>
+
+                <!-- STATE: QUESTION DISPLAY -->
+                <div id="state-question" class="game-state">
+                    <div class="question-header">
+                        <span class="badge diff-badge" id="q-diff">Difficile</span>
+                        <span class="badge author-badge" id="q-author">Proposée par : Equipe</span>
+                    </div>
+
+                    <div class="question-content">
+                        <div id="q-enonce" class="markdown-body"></div>
+                    </div>
+
+                    <div class="actions">
+                        <button class="btn btn-primary" onclick="app.showAnswer()">Afficher la réponse</button>
+                        <button class="btn btn-danger" onclick="app.penalizeAuthor(); app.nextTurn();" style="margin-top: 2rem; margin-left: 1rem;">Question Invalide (Auteur -1 pt)</button>
+                    </div>
+                </div>
+
+                <!-- STATE: ANSWER DISPLAY -->
+                <div id="state-answer" class="game-state">
+                    <div class="question-header">
+                        <span class="badge diff-badge" id="a-diff"></span>
+                        <span class="badge author-badge" id="a-author"></span>
+                    </div>
+
+                    <div class="question-content">
+                        <div id="a-enonce" class="markdown-body"></div>
+                    </div>
+
+                    <div class="answer-content">
+                        <h4>Réponse :</h4>
+                        <div id="a-reponse" class="markdown-body"></div>
+                    </div>
+
+                    <div class="resolution-actions" id="resolution-actions">
+                        <!-- Buttons dynamically injected by app.js -->
+                    </div>
+                    <div class="resolution-actions" style="margin-top: 1rem;">
+                        <button class="btn btn-warning" id="btn-nobody" onclick="app.awardPointsToAuthor()">Personne ne trouve (Auteur +1 pt)</button>
+                        <button class="btn btn-danger" id="btn-penalize" onclick="app.penalizeAuthor()">Question Invalide (Auteur -1 pt)</button>
+                        <button class="btn btn-danger" onclick="app.nextTurn()">Tour Suivant</button>
+                    </div>
+                </div>
+
+                <!-- STATE: GAME OVER -->
+                <div id="state-end" class="game-state">
+                    <h2>Game Over !</h2>
+                    <p>Toutes les questions ont été posées.</p>
+                    <div id="winner-display" class="winner"></div>
+                    <button class="btn btn-primary" onclick="location.reload()">Rejouer</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Markdown Parser (marked.js) for parsing markdown content -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <!-- DOMPurify for sanitizing markdown -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.6/purify.min.js"></script>
+
+    <script src="questions.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
