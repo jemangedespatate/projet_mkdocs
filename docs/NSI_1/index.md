@@ -12,5 +12,6 @@ Bienvenue dans la section NSI Première. Voici les différents modules disponibl
 * [🤖 Algorithme des k plus proches voisins (k-NN)](k_plus_proches_voisins/sommaire.md)
 * [🌐 Interaction Web (HTML/CSS/JS)](interaction_web/sommaire.md)
 * [💻 Système d'Exploitation (Linux)](Systeme_Exploitation/sommaire.md)
-* [evaluations](evaluations/sommaire.md)
+* [🌍 Architecture des Réseaux](reseaux/sommaire.md)
 * [💻 Architecture et Assembleur](Architecture/sommaire.md)
+* [evaluations](evaluations/sommaire.md)

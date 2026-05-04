@@ -1,0 +1,650 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://www.prof-leal.fr/NSI_1/reseaux/2_tp_filius_tcp_ip/">
+      
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.42">
+    
+    
+      
+        <title>TP : Simulation de réseaux avec Filius - Mr Leal SNT/NSI</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/custom_style.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#tp-simulation-de-reseaux-avec-filius" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Mr Leal SNT/NSI" class="md-header__button md-logo" aria-label="Mr Leal SNT/NSI" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M249.6 471.5c10.8 3.8 22.4-4.1 22.4-15.5V78.6c0-4.2-1.6-8.4-5-11C247.4 52 202.4 32 144 32 93.5 32 46.3 45.3 18.1 56.1 6.8 60.5 0 71.7 0 83.8v370.3c0 11.9 12.8 20.2 24.1 16.5C55.6 460.1 105.5 448 144 448c33.9 0 79 14 105.6 23.5m76.8 0C353 462 398.1 448 432 448c38.5 0 88.4 12.1 119.9 22.6 11.3 3.8 24.1-4.6 24.1-16.5V83.8c0-12.1-6.8-23.3-18.1-27.6C529.7 45.3 482.5 32 432 32c-58.4 0-103.4 20-123 35.6-3.3 2.6-5 6.8-5 11V456c0 11.4 11.7 19.3 22.4 15.5"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Mr Leal SNT/NSI
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              TP : Simulation de réseaux avec Filius
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="amber"  aria-label="Mode sombre"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Mode sombre" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="amber"  aria-label="Mode clair"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Mode clair" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+    
+  
+  Accueil
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../SNT/" class="md-tabs__link">
+        
+  
+    
+  
+  SNT
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../" class="md-tabs__link">
+        
+  
+    
+  
+  Première NSI
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Mr Leal SNT/NSI" class="md-nav__button md-logo" aria-label="Mr Leal SNT/NSI" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M249.6 471.5c10.8 3.8 22.4-4.1 22.4-15.5V78.6c0-4.2-1.6-8.4-5-11C247.4 52 202.4 32 144 32 93.5 32 46.3 45.3 18.1 56.1 6.8 60.5 0 71.7 0 83.8v370.3c0 11.9 12.8 20.2 24.1 16.5C55.6 460.1 105.5 448 144 448c33.9 0 79 14 105.6 23.5m76.8 0C353 462 398.1 448 432 448c38.5 0 88.4 12.1 119.9 22.6 11.3 3.8 24.1-4.6 24.1-16.5V83.8c0-12.1-6.8-23.3-18.1-27.6C529.7 45.3 482.5 32 432 32c-58.4 0-103.4 20-123 35.6-3.3 2.6-5 6.8-5 11V456c0 11.4 11.7 19.3 22.4 15.5"/></svg>
+
+    </a>
+    Mr Leal SNT/NSI
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Accueil
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SNT/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SNT
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Première NSI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction-a-filius" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction à Filius
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partie-1-creation-dun-reseau-local-couches-acces-reseau-internet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Partie 1 : Création d'un réseau local (Couches Accès Réseau &amp; Internet)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Partie 1 : Création d'un réseau local (Couches Accès Réseau & Internet)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-mise-en-place-du-materiel-couche-acces-reseau" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1 Mise en place du matériel (Couche Accès Réseau)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-configuration-logique-couche-internet" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2 Configuration logique (Couche Internet)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partie-2-le-routage-couche-internet-approfondie" class="md-nav__link">
+    <span class="md-ellipsis">
+      Partie 2 : Le Routage (Couche Internet approfondie)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partie-3-service-web-et-ports-couches-transport-et-application" class="md-nav__link">
+    <span class="md-ellipsis">
+      Partie 3 : Service Web et Ports (Couches Transport et Application)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Partie 3 : Service Web et Ports (Couches Transport et Application)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#observation-des-echanges-a-la-loupe" class="md-nav__link">
+    <span class="md-ellipsis">
+      Observation des échanges à la loupe
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partie-4-nom-de-domaine-dns-couche-application" class="md-nav__link">
+    <span class="md-ellipsis">
+      Partie 4 : Nom de domaine DNS (Couche Application)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Partie 4 : Nom de domaine DNS (Couche Application)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#observation-finale" class="md-nav__link">
+    <span class="md-ellipsis">
+      Observation finale
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bilan-de-tp-synthese-des-couches" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 Bilan de TP : Synthèse des Couches
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="tp-simulation-de-reseaux-avec-filius">TP : Simulation de réseaux avec Filius</h1>
+<p><strong>Durée :</strong> 2 heures
+<strong>Objectif :</strong> Mettre en pratique les notions vues lors du Jigsaw sur le modèle TCP/IP en construisant et en configurant un réseau virtuel complet de bout en bout à l'aide du logiciel éducatif Filius.</p>
+<hr />
+<h2 id="introduction-a-filius">Introduction à Filius</h2>
+<p>Filius est un logiciel qui permet de simuler graphiquement des réseaux informatiques. Il possède deux modes principaux :
+- <strong>Mode Conception (Marteau) :</strong> Pour ajouter des machines, des câbles, et configurer le matériel et les adresses IP.
+- <strong>Mode Simulation (Flèche verte) :</strong> Pour installer des logiciels sur les machines virtuels, tester les connexions (lignes de commande) et observer les échanges de données.</p>
+<blockquote>
+<p>💡 <strong>Conseil :</strong> Passez en mode Simulation pour tester votre réseau, mais n'oubliez pas de revenir en mode Conception si vous devez modifier les adresses IP ou les câbles.</p>
+</blockquote>
+<hr />
+<h2 id="partie-1-creation-dun-reseau-local-couches-acces-reseau-internet">Partie 1 : Création d'un réseau local (Couches Accès Réseau &amp; Internet)</h2>
+<h3 id="11-mise-en-place-du-materiel-couche-acces-reseau">1.1 Mise en place du matériel (Couche Accès Réseau)</h3>
+<ol>
+<li>En mode <strong>Conception</strong>, placez sur l'espace de travail :</li>
+<li>Deux ordinateurs portables (Portable 1 et Portable 2).</li>
+<li>Un commutateur (Switch).</li>
+<li>Reliez les deux portables au commutateur à l'aide de câbles.</li>
+<li>Double-cliquez sur l'un des portables pour voir sa configuration.</li>
+<li><em>Question 1 : Quelle est l'adresse physique (adresse MAC) de cet ordinateur ? En vous rappelant du Jigsaw, à quelle couche du modèle TCP/IP cette adresse appartient-elle ?</em></li>
+</ol>
+<h3 id="12-configuration-logique-couche-internet">1.2 Configuration logique (Couche Internet)</h3>
+<p>Pour que les machines communiquent, l'adresse MAC ne suffit pas, il leur faut une adresse logique.
+1. Toujours dans la configuration du portable, attribuez les adresses IP suivantes :
+   - Portable 1 : <code>192.168.1.10</code>
+   - Portable 2 : <code>192.168.1.20</code>
+   <em>(Laissez le masque de sous-réseau par défaut : <code>255.255.255.0</code>)</em>
+2. Passez en mode <strong>Simulation</strong>.
+3. Cliquez sur le Portable 1, installez le logiciel <strong>Ligne de commande</strong> et démarrez-le.
+4. Tapez la commande <code>ping 192.168.1.20</code> pour tester la connexion vers le Portable 2.
+   - <em>Question 2 : Le test est-il réussi ? À quoi sert concrètement la commande "ping" d'après le résultat affiché ?</em>
+   - <em>Question 3 : À quelle couche du modèle TCP/IP appartient l'adresse IP (192.168.1.20) utilisée ici ?</em></p>
+<hr />
+<h2 id="partie-2-le-routage-couche-internet-approfondie">Partie 2 : Le Routage (Couche Internet approfondie)</h2>
+<p>Nous allons maintenant connecter notre réseau local à un autre réseau extérieur (comme si nous nous connections à Internet).</p>
+<ol>
+<li>Repassez en mode <strong>Conception</strong>.</li>
+<li>Ajoutez un <strong>Routeur</strong> sur l'espace de travail.</li>
+<li>Ajoutez un <strong>Serveur</strong> et reliez-le au routeur.</li>
+<li>Reliez également le commutateur (Switch) de votre premier réseau local au routeur.</li>
+<li><strong>Configuration du Routeur :</strong>
+   Le routeur fait le pont entre deux réseaux, il a donc besoin d'une adresse IP pour chacun d'eux (une "patte" dans chaque réseau) :</li>
+<li>Côté réseau local (Interface 1) : <code>192.168.1.254</code></li>
+<li>Côté serveur (Interface 2) : <code>10.0.0.254</code></li>
+<li><strong>Configuration du Serveur :</strong> </li>
+<li>Adresse IP : <code>10.0.0.50</code></li>
+<li>Passerelle (Gateway) : <code>10.0.0.254</code> <em>(C'est l'adresse du routeur, sa "porte de sortie")</em>.</li>
+<li><strong>Configuration des Portables :</strong></li>
+<li>Retournez dans la configuration des portables 1 et 2 et renseignez l'adresse de la <strong>Passerelle</strong> : <code>192.168.1.254</code>.</li>
+<li>En mode <strong>Simulation</strong>, ouvrez la ligne de commande du Portable 1 et faites un <code>ping 10.0.0.50</code>.</li>
+<li><em>Question 4 : Expliquez avec vos mots le rôle de la "Passerelle" (Gateway) sur un ordinateur. Que se passerait-il si l'on oubliait de la configurer sur le Portable 1 ?</em></li>
+</ol>
+<hr />
+<h2 id="partie-3-service-web-et-ports-couches-transport-et-application">Partie 3 : Service Web et Ports (Couches Transport et Application)</h2>
+<p>L'adresse IP permet de trouver la machine, mais comment trouver le bon logiciel sur le serveur ciblé ? C'est le rôle des ports (Couche Transport).</p>
+<ol>
+<li>En mode <strong>Simulation</strong>, cliquez sur le Serveur (<code>10.0.0.50</code>) et installez le logiciel <strong>Serveur Web</strong>. Démarrez-le.</li>
+<li><em>Observez bien : sur quel numéro de </em><em>port</em><em> le serveur Web est-il en écoute ?</em></li>
+<li>Sur le Portable 1, installez le logiciel <strong>Navigateur Web</strong>.</li>
+<li>Ouvrez le navigateur et tapez l'adresse <code>http://10.0.0.50</code>. Une page d'accueil (le site web du serveur) devrait s'afficher.</li>
+</ol>
+<h3 id="observation-des-echanges-a-la-loupe">Observation des échanges à la loupe</h3>
+<p>Filius permet de regarder "à l'intérieur" des câbles pour analyser les protocoles.
+4. Faites un clic droit sur le Portable 1 et choisissez <strong>Afficher les échanges de données</strong>.
+5. Rechargez la page web dans le navigateur du Portable 1.
+6. Dans la fenêtre d'échange, observez les différentes lignes apparues et cliquez dessus pour explorer le détail des couches sur la droite.
+   - <em>Question 5 : Quel protocole de la couche </em><em>Application</em><em> est utilisé pour récupérer et afficher la page web ?</em>
+   - <em>Question 6 : Quel protocole de la couche </em><em>Transport</em><em> est utilisé pour cet échange web ? (Regardez les détails du segment).</em>
+   - <em>Question 7 : On remarque que la communication commence par 3 messages "à vide" (SYN, SYN+ACK, ACK) avant même que la page web ne soit demandée. Rappelez-vous du rôle du "centre de tri postal" : pourquoi ce protocole spécifique a-t-il besoin de faire cela ?</em></p>
+<hr />
+<h2 id="partie-4-nom-de-domaine-dns-couche-application">Partie 4 : Nom de domaine DNS (Couche Application)</h2>
+<p>Les humains préfèrent retenir des mots (<code>www.google.com</code>) plutôt que des suites de chiffres (<code>10.0.0.50</code>). Nous allons configurer l'annuaire du réseau : un serveur DNS.</p>
+<ol>
+<li>En mode <strong>Conception</strong>, supprimez le câble entre le serveur web et le routeur. Mettez un Switch à la place pour pouvoir relier plusieurs serveurs au routeur.</li>
+<li>Ajoutez un nouveau Serveur et reliez-le à ce switch.</li>
+<li>Configurez ce nouveau serveur : </li>
+<li>IP : <code>10.0.0.53</code></li>
+<li>Passerelle : <code>10.0.0.254</code></li>
+<li>En mode <strong>Simulation</strong>, installez-y le logiciel <strong>Serveur DNS</strong>.</li>
+<li>Dans le Serveur DNS, ajoutez un nouvel enregistrement (Type A) :</li>
+<li>Nom de domaine : <code>www.nsi-lycee.fr</code></li>
+<li>Adresse IP : <code>10.0.0.50</code> (l'adresse de notre serveur Web).</li>
+<li>Cliquez sur "Ajouter" et <strong>démarrez le serveur DNS</strong>.</li>
+<li>Sur vos Portables 1 et 2, en mode <strong>Conception</strong>, configurez enfin le champ <strong>Serveur DNS</strong> avec l'adresse IP de notre annuaire : <code>10.0.0.53</code>.</li>
+<li>En mode <strong>Simulation</strong>, retournez sur le navigateur web du Portable 1. Tapez l'URL <code>http://www.nsi-lycee.fr</code>. La page doit s'afficher magiquement !</li>
+</ol>
+<h3 id="observation-finale">Observation finale</h3>
+<ol>
+<li>Videz la fenêtre <strong>"Afficher les échanges de données"</strong> du Portable 1, puis rechargez la page <code>www.nsi-lycee.fr</code>.</li>
+<li><em>Question 8 : Quel protocole de la couche </em><em>Transport</em><em> est utilisé pour interroger le serveur DNS ? À l'inverse de la question 7, pourquoi utiliser celui-ci pour une requête DNS ?</em></li>
+<li><em>Question 9 : Pour afficher <code>www.nsi-lycee.fr</code>, votre ordinateur a dû envoyer deux requêtes distinctes (faisant appel à deux protocoles de la couche Application différents). Quelles sont-elles et dans quel ordre se déroulent-elles ?</em></li>
+</ol>
+<hr />
+<h2 id="bilan-de-tp-synthese-des-couches">📝 Bilan de TP : Synthèse des Couches</h2>
+<p>À la fin de ce TP, vous devez être capable de relier concrètement ce que vous avez manipulé aux 4 couches du modèle TCP/IP étudiées précédemment :</p>
+<ul>
+<li><strong>Couche Accès Réseau (Matérielle)</strong> : L'utilisation des câbles virtuels, le placement des switchs, la présence des adresses MAC sur chaque carte réseau.</li>
+<li><strong>Couche Internet (Routage)</strong> : La configuration des adresses IP, l'utilisation du routeur et de la notion de "passerelle" pour sortir du réseau local.</li>
+<li><strong>Couche Transport (Connexion)</strong> : L'importance du <strong>port 80</strong> pour cibler le service web, la différence visible entre l'utilisation de <strong>TCP</strong> (fiable, avec la poignée de main SYN/ACK) et <strong>UDP</strong> (rapide, utilisé pour le DNS).</li>
+<li><strong>Couche Application (Usage)</strong> : L'installation de logiciels métiers (Navigateur, Serveur Web, Serveur DNS) discutant via leurs propres langages (<strong>HTTP</strong>, <strong>DNS</strong>).</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <a href="/" class="custom-home-button" title="Accueil">
+  <svg viewBox="0 0 24 24">
+    <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+  </svg>
+  Accueil
+</a>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tabs", "navigation.sections", "navigation.top", "navigation.expand", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      
+        <script src="../../../assets/javascripts/live_editor.js"></script>
+      
+    
+  </body>
+</html>
