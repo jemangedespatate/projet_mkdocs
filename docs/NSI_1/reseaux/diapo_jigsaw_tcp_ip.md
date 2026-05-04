@@ -19,6 +19,16 @@ backgroundColor: #f8f9fa
 
 ---
 
+# Objectifs de l'activité
+
+* Comprendre l'architecture en couches d'Internet.
+* Étudier le rôle de chaque couche du modèle TCP/IP.
+* Développer sa capacité à synthétiser et expliquer un concept technique.
+* Travailler en coopération (méthode Jigsaw).
+
+
+---
+
 # Le principe du Jigsaw (5 min)
 
 Cette activité se déroule en trois grandes étapes :

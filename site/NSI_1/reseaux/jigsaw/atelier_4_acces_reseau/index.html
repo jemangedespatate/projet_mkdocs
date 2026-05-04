@@ -8,24 +8,24 @@
       
       
       
-        <link rel="canonical" href="https://www.prof-leal.fr/NSI_1/reseaux/diapo_jigsaw_tcp_ip/">
+        <link rel="canonical" href="https://www.prof-leal.fr/NSI_1/reseaux/jigsaw/atelier_4_acces_reseau/">
       
       
       
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      <link rel="icon" href="../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.42">
     
     
       
-        <title>Le Modèle TCP/IP - Mr Leal SNT/NSI</title>
+        <title>Atelier 4 : La Couche Accès Réseau - Mr Leal SNT/NSI</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.0253249f.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.0253249f.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -44,9 +44,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/custom_style.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/custom_style.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#le-modele-tcpip" class="md-skip">
+        <a href="#atelier-4-la-couche-acces-reseau" class="md-skip">
           Skip to content
         </a>
       
@@ -86,7 +86,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="Mr Leal SNT/NSI" class="md-header__button md-logo" aria-label="Mr Leal SNT/NSI" data-md-component="logo">
+    <a href="../../../.." title="Mr Leal SNT/NSI" class="md-header__button md-logo" aria-label="Mr Leal SNT/NSI" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M249.6 471.5c10.8 3.8 22.4-4.1 22.4-15.5V78.6c0-4.2-1.6-8.4-5-11C247.4 52 202.4 32 144 32 93.5 32 46.3 45.3 18.1 56.1 6.8 60.5 0 71.7 0 83.8v370.3c0 11.9 12.8 20.2 24.1 16.5C55.6 460.1 105.5 448 144 448c33.9 0 79 14 105.6 23.5m76.8 0C353 462 398.1 448 432 448c38.5 0 88.4 12.1 119.9 22.6 11.3 3.8 24.1-4.6 24.1-16.5V83.8c0-12.1-6.8-23.3-18.1-27.6C529.7 45.3 482.5 32 432 32c-58.4 0-103.4 20-123 35.6-3.3 2.6-5 6.8-5 11V456c0 11.4 11.7 19.3 22.4 15.5"/></svg>
@@ -106,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Le Modèle TCP/IP
+              Atelier 4 : La Couche Accès Réseau
             
           </span>
         </div>
@@ -203,7 +203,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../.." class="md-tabs__link">
+      <a href="../../../.." class="md-tabs__link">
         
   
     
@@ -220,7 +220,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../SNT/" class="md-tabs__link">
+      <a href="../../../../SNT/" class="md-tabs__link">
         
   
     
@@ -237,7 +237,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../" class="md-tabs__link">
+      <a href="../../../" class="md-tabs__link">
         
   
     
@@ -271,7 +271,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="Mr Leal SNT/NSI" class="md-nav__button md-logo" aria-label="Mr Leal SNT/NSI" data-md-component="logo">
+    <a href="../../../.." title="Mr Leal SNT/NSI" class="md-nav__button md-logo" aria-label="Mr Leal SNT/NSI" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M249.6 471.5c10.8 3.8 22.4-4.1 22.4-15.5V78.6c0-4.2-1.6-8.4-5-11C247.4 52 202.4 32 144 32 93.5 32 46.3 45.3 18.1 56.1 6.8 60.5 0 71.7 0 83.8v370.3c0 11.9 12.8 20.2 24.1 16.5C55.6 460.1 105.5 448 144 448c33.9 0 79 14 105.6 23.5m76.8 0C353 462 398.1 448 432 448c38.5 0 88.4 12.1 119.9 22.6 11.3 3.8 24.1-4.6 24.1-16.5V83.8c0-12.1-6.8-23.3-18.1-27.6C529.7 45.3 482.5 32 432 32c-58.4 0-103.4 20-123 35.6-3.3 2.6-5 6.8-5 11V456c0 11.4 11.7 19.3 22.4 15.5"/></svg>
@@ -289,7 +289,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -309,7 +309,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../SNT/" class="md-nav__link">
+      <a href="../../../../SNT/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -329,7 +329,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../" class="md-nav__link">
+      <a href="../../../" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -369,9 +369,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#activite-dintroduction-methode-jigsaw" class="md-nav__link">
+  <a href="#documents-de-travail" class="md-nav__link">
     <span class="md-ellipsis">
-      Activité d'introduction (Méthode Jigsaw)
+      Documents de travail
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#questions-pour-guider-lexpertise" class="md-nav__link">
+    <span class="md-ellipsis">
+      Questions pour guider l'expertise
     </span>
   </a>
   
@@ -392,75 +401,38 @@
                   
 
 
-<h1 id="le-modele-tcpip">Le Modèle TCP/IP</h1>
-<h2 id="activite-dintroduction-methode-jigsaw">Activité d'introduction (Méthode Jigsaw)</h2>
+<h1 id="atelier-4-la-couche-acces-reseau">Atelier 4 : La Couche Accès Réseau</h1>
+<h2 id="documents-de-travail">Documents de travail</h2>
+<p><strong>Texte 1 : Le rôle de la couche Accès Réseau</strong><br />
+Cette couche transforme les données en impulsions électriques, lumineuses ou ondes électromagnétiques pour les envoyer physiquement sur le support (câble, fibre, air). Les données à ce stade sont organisées en <strong>trames</strong>. Elle utilise une adresse physique matérielle fixe sur l'équipement : <strong>l'adresse MAC</strong>.</p>
+<p><strong>Texte 2 : L'analogie des moyens de transport</strong><br />
+Dans la métaphore du courrier, la couche Accès Réseau représente le moyen de locomotion physique lui-même : est-ce que le colis va voyager par un avion cargo (fibre optique), par une camionnette (câble Ethernet) ou par un bateau (Wi-Fi) ?</p>
+<p><strong>Texte 3 : Les supports de transmission et matériels</strong><br />
+Cette couche intègre le matériel électronique des cartes réseaux, des antennes ou des câbles. Elle gère par exemple :
+- <strong>Ethernet</strong> pour les câbles réseau en cuivre.
+- <strong>Wi-Fi</strong> ou <strong>4G/5G</strong> pour les ondes radio.
+- <strong>Fibre optique</strong> pour la transmission par impulsions lumineuses.
+Les équipements typiques sont les câbles, les cartes réseaux de nos PC et les switchs (commutateurs).</p>
 <hr />
-<h1 id="le-theme-du-jour">Le thème du jour</h1>
-<ul>
-<li>Comment les ordinateurs arrivent-ils à communiquer à travers le monde ?</li>
-<li>L'architecture d'Internet est découpée en plusieurs étapes logiques : c'est le <strong>modèle TCP/IP</strong>.</li>
-<li><strong>Votre mission :</strong> Reconstituer le puzzle de ce modèle de manière collaborative !</li>
-</ul>
-<hr />
-<h1 id="objectifs-de-lactivite">Objectifs de l'activité</h1>
-<ul>
-<li>Comprendre l'architecture en couches d'Internet.</li>
-<li>Étudier le rôle de chaque couche du modèle TCP/IP.</li>
-<li>Développer sa capacité à synthétiser et expliquer un concept technique.</li>
-<li>Travailler en coopération (méthode Jigsaw).</li>
-</ul>
-<hr />
-<h1 id="le-principe-du-jigsaw-5-min">Le principe du Jigsaw (5 min)</h1>
-<p>Cette activité se déroule en trois grandes étapes :</p>
+<h2 id="questions-pour-guider-lexpertise">Questions pour guider l'expertise</h2>
 <ol>
-<li><strong>Les Groupes "Maison" :</strong> Vous formez votre équipe de base de 4 personnes.</li>
-<li><strong>Les Groupes Experts :</strong> Vous vous séparez. Chaque membre rejoint un atelier différent pour étudier une couche réseau et en devenir l'expert.</li>
-<li><strong>Le retour "Maison" :</strong> Vous retournez dans votre équipe de départ pour enseigner votre couche aux autres et reconstituer le modèle.</li>
+<li>Sous quelles formes physiques les données peuvent-elles voyager à travers les réseaux ?</li>
+<li>Quelle est la différence de fonction entre une adresse IP et une adresse MAC ?</li>
+<li>Si vous connectez votre ordinateur à une box avec un câble RJ45 au lieu du Wi-Fi, cela change-t-il le fonctionnement de cette couche ? Pourquoi ?</li>
+<li>Pourquoi l'adresse MAC est-elle souvent comparée à la plaque d'immatriculation gravée sur le châssis d'une voiture en usine ?</li>
+<li>Expliquez pourquoi aucune donnée ne pourrait jamais quitter votre ordinateur sans cette couche précise.</li>
 </ol>
-<hr />
-<h1 id="phase-1-separation-en-groupes-experts">Phase 1 : Séparation en Groupes Experts</h1>
-<p><strong>1 minute pour se mettre en place</strong></p>
-<p>Depuis votre Groupe Maison, séparez-vous et rejoignez l'un des 4 groupes d'expertise :
-1. La Couche Application
-2. La Couche Transport
-3. La Couche Internet
-4. La Couche Accès Réseau</p>
-<hr />
-<h1 id="phase-1-deroulement-20-min">Phase 1 : Déroulement (20 min)</h1>
-<ul>
-<li><strong>Lecture individuelle</strong> et silencieuse des documents de votre atelier <em>(5 min)</em>.</li>
-<li><strong>Échange et débat</strong> entre experts pour bien comprendre et savoir l'expliquer <em>(15 min)</em>.</li>
-</ul>
-<blockquote>
-<p><strong>RÈGLE IMPORTANTE : INTERDICTION DE PRENDRE DES NOTES !</strong> 
-L'objectif est de comprendre le maximum. À la fin du temps imparti, les documents vous seront retirés.</p>
-</blockquote>
-<hr />
-<h1 id="phase-2-retour-dans-les-groupes-maison-et-enseignement-15-min">Phase 2 : Retour dans les groupes "Maison" et Enseignement (15 min)</h1>
-<ul>
-<li><strong>Retournez dans votre groupe d'origine.</strong></li>
-<li>Chacun votre tour, <strong>présentez votre partie</strong> aux autres membres du groupe.</li>
-<li>Pendant la présentation, les autres <strong>écoutent activement</strong> puis posent des questions si une notion n'est pas claire <strong>après</strong> la présentation de l'expert.</li>
-</ul>
-<hr />
-<h1 id="phase-3-la-trace-commune-10-min">Phase 3 : La Trace Commune (10 min)</h1>
-<p>En groupe, produisez une synthèse écrite de vos échanges.</p>
-<p><strong>Construisez le schéma du modèle TCP/IP.</strong></p>
-<hr />
-<h1 id="bilan-et-retour-dexperience-5-min">Bilan et Retour d'expérience (5 min)</h1>
-<ul>
-<li>Quelles ont été les difficultés rencontrées lors de cet exercice ?</li>
-<li>Quelles stratégies avez-vous mises en œuvre pour retenir les informations sans prendre de notes ?</li>
-</ul>
+<div class="admonition important">
+<p class="admonition-title">RÈGLE D'OR</p>
+<p><strong>INTERDICTION DE PRENDRE DES NOTES !</strong><br />
+L'objectif est de comprendre le maximum. À la fin du temps imparti, ce document vous sera retiré.</p>
+</div>
 
 
 
 
 
 
-
-  
-  
 
 
 
@@ -498,14 +470,14 @@ L'objectif est de comprendre le maximum. À la fin du temps imparti, les documen
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tabs", "navigation.sections", "navigation.top", "navigation.expand", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.instant", "navigation.tabs", "navigation.sections", "navigation.top", "navigation.expand", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
       
-        <script src="../../../assets/javascripts/live_editor.js"></script>
+        <script src="../../../../assets/javascripts/live_editor.js"></script>
       
     
   </body>
