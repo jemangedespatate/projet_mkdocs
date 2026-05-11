@@ -3,6 +3,7 @@
 ## Exercices
 
 * [💻 URLs et Modèle Client-Serveur](tp/tp_url_client_serveur.md)
+* [💻 Exercices complémentaires](exercices/exo_comp.md)
 
 ## Travaux Pratiques
 

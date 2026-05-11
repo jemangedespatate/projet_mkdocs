@@ -18,7 +18,7 @@
     
     
       
-        <title>exercice complementaire - Mr Leal SNT/NSI</title>
+        <title>Exercices complémentaires : Web et Modèle Client-Serveur - Mr Leal SNT/NSI</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#exercice-complementaire" class="md-skip">
+        <a href="#exercices-complementaires-web-et-modele-client-serveur" class="md-skip">
           Skip to content
         </a>
       
@@ -106,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              exercice complementaire
+              Exercices complémentaires : Web et Modèle Client-Serveur
             
           </span>
         </div>
@@ -375,7 +375,82 @@
                   
 
 
-<h1 id="exercice-complementaire">exercice complementaire</h1>
+<h1 id="exercices-complementaires-web-et-modele-client-serveur">Exercices complémentaires : Web et Modèle Client-Serveur</h1>
+<p>Ces exercices permettent d'approfondir les notions d'URL, de dialogue HTTP et d'arborescence serveur. Ils sont destinés aux élèves ayant déjà terminé le TP de base.</p>
+<hr />
+<div class="admonition question">
+<p class="admonition-title">Exercice 1 : L'URL « tout-en-un » (Ancres et Multi-paramètres)</p>
+<p>On analyse souvent des URLs simples, mais elles peuvent contenir d'autres informations. Observez celle-ci :
+<code>https://fr.wikipedia.org/wiki/Web#Histoire?uselang=fr&amp;action=view</code></p>
+<p><strong>Questions :</strong></p>
+<ol>
+<li><strong>L'Ancre (<code>#</code>) :</strong> À quoi sert la partie <code>#Histoire</code> à votre avis ? Que se passe-t-il à l'écran si on charge cette URL ?</li>
+<li><strong>Multi-paramètres :</strong> Combien de paramètres sont envoyés au serveur ici ? Quel symbole permet de les séparer ?</li>
+<li><strong>Sous-domaine :</strong> Identifiez le sous-domaine de cette URL. Quel est son rôle probable ?</li>
+</ol>
+</div>
+<hr />
+<div class="admonition question">
+<p class="admonition-title">Exercice 2 : Dans la peau d'un administrateur système (Arborescence)</p>
+<p>Un serveur web est avant tout un ordinateur avec des dossiers. L'URL reflète souvent cette organisation.
+Imaginez l'arborescence de fichiers suivante sur le serveur <code>lycee-fictif.fr</code> :</p>
+<ul>
+<li>📂 <code>racine</code><ul>
+<li>📄 <code>index.html</code> (Accueil)</li>
+<li>📂 <code>snt</code><ul>
+<li>📄 <code>cours.pdf</code></li>
+<li>📂 <code>tp</code><ul>
+<li>📄 <code>tp1.html</code></li>
+<li>🖼️ <code>schema.png</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Questions :</strong></p>
+<ol>
+<li>Quelle est l'URL complète pour accéder au fichier <code>tp1.html</code> ?</li>
+<li>Si un élève tape <code>https://lycee-fictif.fr/snt/</code>, quel fichier le serveur va-t-il chercher à envoyer par défaut (même s'il n'est pas précisé dans l'URL) ?</li>
+<li>Un utilisateur tente d'accéder à <code>https://lycee-fictif.fr/snt/tp/photo.jpg</code>. Quel code de statut HTTP le serveur va-t-il renvoyer ? Pourquoi ?</li>
+</ol>
+</div>
+<hr />
+<div class="admonition question">
+<p class="admonition-title">Exercice 3 : L'illusion d'une seule requête (Outils de développement)</p>
+<p><em>Nécessite un ordinateur avec accès au navigateur.</em></p>
+<ol>
+<li>Ouvrez le site <code>https://www.wikipedia.org</code>.</li>
+<li>Appuyez sur <strong>F12</strong> (ou clic droit &gt; Inspecter) et allez dans l'onglet <strong>Réseau (Network)</strong>.</li>
+<li>Actualisez la page (<strong>F5</strong>).</li>
+<li><strong>Observation :</strong> Regardez la liste qui s'affiche.<ul>
+<li>Y a-t-il une seule ligne ou plusieurs dizaines ?</li>
+<li>Trouvez une ligne où le "Type" est <code>png</code>, <code>jpg</code> ou <code>svg</code>. À quoi correspond cette requête ?</li>
+<li><strong>Conclusion :</strong> Expliquez pourquoi on dit qu'afficher une seule page web nécessite en réalité des dizaines de dialogues client-serveur.</li>
+</ul>
+</li>
+</ol>
+</div>
+<hr />
+<div class="admonition question">
+<p class="admonition-title">Exercice 4 : Le mystère de la redirection (Code 301/302)</p>
+<p>Parfois, le serveur répond : <em>"La ressource n'est plus ici, allez là-bas"</em>. C'est une redirection.</p>
+<ol>
+<li>Dans votre navigateur, tapez l'URL suivante exactement : <code>http://google.fr</code> (sans le <code>s</code> de https et sans les <code>www</code>).</li>
+<li>Observez bien la barre d'adresse une fois la page chargée. Que s'est-il passé ?</li>
+<li>Techniquement, quel code de statut le serveur a-t-il probablement envoyé au navigateur pour faire ce changement automatiquement ?</li>
+<li>Pourquoi est-ce indispensable pour la sécurité des utilisateurs que le serveur force le passage de <code>http</code> à <code>https</code> ?</li>
+</ol>
+</div>
+<hr />
+<div class="admonition tip">
+<p class="admonition-title">Défi pour les experts (Vers la NSI)</p>
+<ul>
+<li><strong>User-Agent :</strong> Dans l'onglet Réseau, cliquez sur la toute première requête et cherchez le "User-Agent" dans les en-têtes (Headers). Comment le serveur sait-il si vous utilisez un iPhone ou un PC sous Windows ?</li>
+<li><strong>Stateless :</strong> Si le protocole HTTP ne "garde rien en mémoire", comment se fait-il que vous restiez connecté à votre compte sur un site même si vous changez de page ? (Indice : cherchez le mot "Cookie").</li>
+</ul>
+</div>
 
 
 
