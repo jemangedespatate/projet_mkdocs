@@ -1,0 +1,799 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://www.prof-leal.fr/NSI_1/algorithme/recherche_dichotomique/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>🔍 Cours : La Recherche Dichotomique - Mr Leal SNT/NSI</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/custom_style.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#cours-la-recherche-dichotomique" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Mr Leal SNT/NSI" class="md-header__button md-logo" aria-label="Mr Leal SNT/NSI" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M256 141.3v309.3l.5-.2A449 449 0 0 1 428.8 416H448V96h-19.2c-42.2 0-84.1 8.4-123.1 24.6-16.8 7-33.4 13.9-49.7 20.7m-25.1-79.8L256 72l25.1-10.5C327.9 42 378.1 32 428.8 32H464c26.5 0 48 21.5 48 48v352c0 26.5-21.5 48-48 48h-35.2c-50.7 0-100.9 10-147.7 29.5l-12.8 5.3c-7.9 3.3-16.7 3.3-24.6 0l-12.8-5.3C184.1 490 133.9 480 83.2 480H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h35.2c50.7 0 100.9 10 147.7 29.5"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Mr Leal SNT/NSI
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              🔍 Cours : La Recherche Dichotomique
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="amber"  aria-label="Mode sombre"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Mode sombre" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="amber"  aria-label="Mode clair"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Mode clair" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Accueil
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../SNT/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  SNT
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Première NSI
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Mr Leal SNT/NSI" class="md-nav__button md-logo" aria-label="Mr Leal SNT/NSI" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M256 141.3v309.3l.5-.2A449 449 0 0 1 428.8 416H448V96h-19.2c-42.2 0-84.1 8.4-123.1 24.6-16.8 7-33.4 13.9-49.7 20.7m-25.1-79.8L256 72l25.1-10.5C327.9 42 378.1 32 428.8 32H464c26.5 0 48 21.5 48 48v352c0 26.5-21.5 48-48 48h-35.2c-50.7 0-100.9 10-147.7 29.5l-12.8 5.3c-7.9 3.3-16.7 3.3-24.6 0l-12.8-5.3C184.1 490 133.9 480 83.2 480H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h35.2c50.7 0 100.9 10 147.7 29.5"/></svg>
+
+    </a>
+    Mr Leal SNT/NSI
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Accueil
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SNT/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SNT
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Première NSI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="cours-la-recherche-dichotomique">🔍 Cours : La Recherche Dichotomique</h1>
+<hr />
+<h1 id="1-probleme-de-depart-chercher-dans-une-liste">1. 📌 Problème de départ : chercher dans une liste</h1>
+<p>Imaginez que vous avez une liste de <strong>1 000 prénoms</strong> triés par ordre alphabétique, et on vous demande de retrouver le prénom <code>"Zoé"</code>. Comment procéderiez-vous ?</p>
+<p>Deux stratégies s'opposent :</p>
+<ul>
+<li><strong>Stratégie 1</strong> : Commencer depuis le début et lire chaque prénom un par un jusqu'à trouver <code>"Zoé"</code>.</li>
+<li><strong>Stratégie 2</strong> : Ouvrir directement au milieu, voir si vous êtes avant ou après <code>"Zoé"</code>, puis réduire de moitié la zone de recherche.</li>
+</ul>
+<p>L'informatique a formalisé ces deux idées sous la forme d'algorithmes de recherche.</p>
+<hr />
+<h1 id="2-recherche-sequentielle-ou-lineaire">2. 🔎 Recherche Séquentielle (ou Linéaire)</h1>
+<h2 id="principe">Principe</h2>
+<p>La <strong>recherche séquentielle</strong> consiste à parcourir la liste <strong>élément par élément</strong>, du premier au dernier, jusqu'à trouver la valeur cherchée (ou arriver à la fin sans l'avoir trouvée).</p>
+<details class="example">
+<summary>Illustration</summary>
+<p>On cherche <code>9</code> dans la liste <code>[4, 7, 2, 9, 1, 5]</code> :</p>
+<ul>
+<li>On regarde <code>4</code> → non</li>
+<li>On regarde <code>7</code> → non</li>
+<li>On regarde <code>2</code> → non</li>
+<li>On regarde <code>9</code> → <strong>trouvé !</strong> (à l'index 3)</li>
+</ul>
+</details>
+<h2 id="implementation-python">Implémentation Python</h2>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">recherche_sequentielle</span><span class="p">(</span><span class="n">liste</span><span class="p">,</span> <span class="n">valeur</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Recherche une valeur dans une liste de manière séquentielle.</span>
+<span class="sd">    Retourne l&#39;indice de la valeur si trouvée, -1 sinon.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">liste</span><span class="p">)):</span>
+        <span class="k">if</span> <span class="n">liste</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="n">valeur</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">i</span>
+    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span>
+</code></pre></div>
+<h2 id="caracteristiques">Caractéristiques</h2>
+<ul>
+<li>Fonctionne sur <strong>toute liste</strong>, qu'elle soit triée ou non.</li>
+<li>Simple à comprendre et à implémenter.</li>
+</ul>
+<hr />
+<h1 id="3-la-notion-de-complexite">3. ⏱️ La Notion de Complexité</h1>
+<h2 id="pourquoi-sinteresser-a-la-complexite">Pourquoi s'intéresser à la complexité ?</h2>
+<p>Deux algorithmes qui résouslvent le même problème peuvent avoir des <strong>performances très différentes</strong> selon la taille des données.</p>
+<p>En informatique, on mesure l'<strong>efficacité</strong> d'un algorithme grâce à sa <strong>complexité temporelle</strong> : on évalue le <strong>nombre d'opérations</strong> que l'algorithme doit effectuer en fonction de la taille <strong>n</strong> de la liste.</p>
+<div class="admonition info">
+<p class="admonition-title">Notion clé : la notation O()</p>
+<p>On utilise la notation <strong>O(...)</strong> (lire « grand O ») pour décrire la complexité dans le <strong>pire des cas</strong> :</p>
+<ul>
+<li><strong>O(1)</strong> : complexité constante — le temps ne dépend pas de n</li>
+<li><strong>O(n)</strong> : complexité linéaire — le temps est proportionnel à n</li>
+<li><strong>O(log n)</strong> : complexité logarithmique — le temps croît très lentement</li>
+<li><strong>O(n²)</strong> : complexité quadratique — le temps croît très vite</li>
+</ul>
+</div>
+<h2 id="complexite-de-la-recherche-sequentielle">Complexité de la recherche séquentielle</h2>
+<p>Analysons le pire cas de la recherche séquentielle : la valeur cherchée <strong>n'est pas dans la liste</strong>.</p>
+<p>Dans ce cas, on doit parcourir <strong>tous les n éléments</strong> de la liste.</p>
+<p>👉 La <strong>complexité de la recherche séquentielle est O(n)</strong>.</p>
+<h2 id="illustration-concrete">Illustration concrète</h2>
+<p>Voici combien d'opérations sont nécessaires selon la taille de la liste :</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Taille de la liste (n)</th>
+<th style="text-align: center;">Recherche séquentielle (O(n))</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">10 opérations</td>
+</tr>
+<tr>
+<td style="text-align: center;">100</td>
+<td style="text-align: center;">100 opérations</td>
+</tr>
+<tr>
+<td style="text-align: center;">1 000</td>
+<td style="text-align: center;">1 000 opérations</td>
+</tr>
+<tr>
+<td style="text-align: center;">1 000 000</td>
+<td style="text-align: center;">1 000 000 opérations</td>
+</tr>
+<tr>
+<td style="text-align: center;">1 000 000 000</td>
+<td style="text-align: center;">1 000 000 000 opérations 😱</td>
+</tr>
+</tbody>
+</table>
+<p>Sur une liste d'un milliard d'éléments, la recherche séquentielle peut prendre plusieurs secondes voire minutes !</p>
+<hr />
+<h1 id="4-recherche-dichotomique">4. 🎯 Recherche Dichotomique</h1>
+<h2 id="pre-requis-indispensable">Pré-requis indispensable ⚠️</h2>
+<div class="admonition warning">
+<p class="admonition-title">Attention</p>
+<p>La recherche dichotomique ne fonctionne <strong>que sur une liste triée</strong> !</p>
+</div>
+<h2 id="principe_1">Principe</h2>
+<p>La <strong>recherche dichotomique</strong> (du grec <em>dikha</em> = en deux parties) consiste à :</p>
+<ol>
+<li>Regarder l'<strong>élément au milieu</strong> de la liste.</li>
+<li>Si c'est la valeur cherchée → <strong>trouvé !</strong></li>
+<li>Si la valeur cherchée est <strong>plus petite</strong> → continuer la recherche dans la <strong>moitié gauche</strong>.</li>
+<li>Si la valeur cherchée est <strong>plus grande</strong> → continuer la recherche dans la <strong>moitié droite</strong>.</li>
+<li>Répéter jusqu'à trouver l'élément ou jusqu'à ce que la zone de recherche soit vide.</li>
+</ol>
+<p>👉 À chaque étape, on <strong>divise par 2</strong> la zone de recherche.</p>
+<hr />
+<h2 id="exemple-detaille">🔍 Exemple détaillé</h2>
+<p>On cherche la valeur <code>37</code> dans la liste triée suivante (14 éléments) :</p>
+<div class="highlight"><pre><span></span><code>[2, 5, 8, 12, 16, 23, 37, 42, 56, 72, 84, 91, 95, 99]
+  0  1  2   3   4   5   6   7   8   9  10  11  12  13
+</code></pre></div>
+<h3 id="etape-1">➤ Étape 1</h3>
+<div class="highlight"><pre><span></span><code>gauche = 0       droite = 13
+milieu = (0 + 13) // 2 = 6
+liste[6] = 37
+</code></pre></div>
+<p>🎉 <strong>Trouvé immédiatement à l'index 6 !</strong></p>
+<hr />
+<p>Essayons maintenant de chercher <code>56</code> :</p>
+<h3 id="etape-1_1">➤ Étape 1</h3>
+<div class="highlight"><pre><span></span><code>gauche = 0       droite = 13
+milieu = 6
+liste[6] = 37
+37 &lt; 56 → on cherche dans la moitié DROITE
+</code></pre></div>
+<h3 id="etape-2">➤ Étape 2</h3>
+<div class="highlight"><pre><span></span><code>gauche = 7       droite = 13
+milieu = (7 + 13) // 2 = 10
+liste[10] = 84
+84 &gt; 56 → on cherche dans la moitié GAUCHE
+</code></pre></div>
+<h3 id="etape-3">➤ Étape 3</h3>
+<div class="highlight"><pre><span></span><code>gauche = 7       droite = 9
+milieu = (7 + 9) // 2 = 8
+liste[8] = 56
+</code></pre></div>
+<p>🎉 <strong>Trouvé à l'index 8 en seulement 3 étapes !</strong></p>
+<p>Avec une recherche séquentielle, on aurait parcouru 9 éléments (de l'index 0 à 8).</p>
+<hr />
+<h2 id="schema-de-la-demarche">🧩 Schéma de la démarche</h2>
+<div class="highlight"><pre><span></span><code>[2, 5, 8, 12, 16, 23, 37, 42, 56, 72, 84, 91, 95, 99]
+ ←————————————————[milieu=37]————————————————→
+                            56 &gt; 37
+                  ←——————→ [milieu=84] ←——————→
+                    56 &lt; 84
+                  ←→[milieu=56]←→
+                  ✅ Trouvé !
+</code></pre></div>
+<hr />
+<h1 id="5-complexite-de-la-recherche-dichotomique">5. ⏱️ Complexité de la recherche dichotomique</h1>
+<h2 id="analyse-du-pire-cas">Analyse du pire cas</h2>
+<p>À chaque étape, on <strong>divise la zone de recherche par 2</strong>.</p>
+<ul>
+<li>Départ : <strong>n</strong> éléments</li>
+<li>Après 1 étape : <strong>n/2</strong> éléments</li>
+<li>Après 2 étapes : <strong>n/4</strong> éléments</li>
+<li>Après k étapes : <strong>n/2ᵏ</strong> éléments</li>
+</ul>
+<p>On s'arrête quand il ne reste plus qu'1 élément : n/2ᵏ = 1, soit <strong>k = log₂(n)</strong>.</p>
+<p>👉 La <strong>complexité de la recherche dichotomique est O(log n)</strong>.</p>
+<h2 id="comparaison-des-complexites">Comparaison des complexités</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Taille de la liste (n)</th>
+<th style="text-align: center;">Recherche séquentielle O(n)</th>
+<th style="text-align: center;">Recherche dichotomique O(log₂ n)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">10 opérations</td>
+<td style="text-align: center;">4 opérations</td>
+</tr>
+<tr>
+<td style="text-align: center;">100</td>
+<td style="text-align: center;">100 opérations</td>
+<td style="text-align: center;">7 opérations</td>
+</tr>
+<tr>
+<td style="text-align: center;">1 000</td>
+<td style="text-align: center;">1 000 opérations</td>
+<td style="text-align: center;">10 opérations</td>
+</tr>
+<tr>
+<td style="text-align: center;">1 000 000</td>
+<td style="text-align: center;">1 000 000 opérations</td>
+<td style="text-align: center;">20 opérations</td>
+</tr>
+<tr>
+<td style="text-align: center;">1 000 000 000</td>
+<td style="text-align: center;">1 000 000 000 opérations</td>
+<td style="text-align: center;">30 opérations 🚀</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Bilan</p>
+<p>Sur un milliard d'éléments, la recherche dichotomique ne nécessite que <strong>30 comparaisons</strong> ! Contre 1 milliard pour la recherche séquentielle.</p>
+<p>C'est la puissance du logarithme : <strong>doubler la taille de la liste ne coûte qu'une seule étape de plus</strong>.</p>
+</div>
+<hr />
+<h1 id="6-implementation-python">6. 💻 Implémentation Python</h1>
+<h2 id="version-iterative">Version itérative</h2>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">recherche_dichotomique</span><span class="p">(</span><span class="n">liste</span><span class="p">,</span> <span class="n">valeur</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Recherche une valeur dans une liste TRIÉE par dichotomie.</span>
+<span class="sd">    Retourne l&#39;indice de la valeur si trouvée, -1 sinon.</span>
+
+<span class="sd">    Précondition : la liste doit être triée par ordre croissant.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">gauche</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">droite</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">liste</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
+
+    <span class="k">while</span> <span class="n">gauche</span> <span class="o">&lt;=</span> <span class="n">droite</span><span class="p">:</span>
+        <span class="n">milieu</span> <span class="o">=</span> <span class="p">(</span><span class="n">gauche</span> <span class="o">+</span> <span class="n">droite</span><span class="p">)</span> <span class="o">//</span> <span class="mi">2</span>  <span class="c1"># indice du milieu</span>
+
+        <span class="k">if</span> <span class="n">liste</span><span class="p">[</span><span class="n">milieu</span><span class="p">]</span> <span class="o">==</span> <span class="n">valeur</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">milieu</span>          <span class="c1"># valeur trouvée</span>
+        <span class="k">elif</span> <span class="n">liste</span><span class="p">[</span><span class="n">milieu</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">valeur</span><span class="p">:</span>
+            <span class="n">gauche</span> <span class="o">=</span> <span class="n">milieu</span> <span class="o">+</span> <span class="mi">1</span>    <span class="c1"># on cherche dans la moitié droite</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">droite</span> <span class="o">=</span> <span class="n">milieu</span> <span class="o">-</span> <span class="mi">1</span>    <span class="c1"># on cherche dans la moitié gauche</span>
+
+    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span>  <span class="c1"># valeur non trouvée</span>
+</code></pre></div>
+<h2 id="trace-dexecution">Trace d'exécution</h2>
+<p>Pour <code>recherche_dichotomique([1, 3, 5, 7, 9, 11, 13], 7)</code> :</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Étape</th>
+<th style="text-align: center;">gauche</th>
+<th style="text-align: center;">droite</th>
+<th style="text-align: center;">milieu</th>
+<th style="text-align: center;">liste[milieu]</th>
+<th style="text-align: left;">Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: left;"><strong>Trouvé !</strong> → 3</td>
+</tr>
+</tbody>
+</table>
+<p>Pour <code>recherche_dichotomique([1, 3, 5, 7, 9, 11, 13], 11)</code> :</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Étape</th>
+<th style="text-align: center;">gauche</th>
+<th style="text-align: center;">droite</th>
+<th style="text-align: center;">milieu</th>
+<th style="text-align: center;">liste[milieu]</th>
+<th style="text-align: left;">Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: left;">11 &gt; 7 → gauche = 4</td>
+</tr>
+<tr>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">11</td>
+<td style="text-align: left;"><strong>Trouvé !</strong> → 5</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1 id="7-bilan-et-comparaison">7. ✅ Bilan et comparaison</h1>
+<h2 id="tableau-recapitulatif">Tableau récapitulatif</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Critère</th>
+<th style="text-align: center;">Recherche séquentielle</th>
+<th style="text-align: center;">Recherche dichotomique</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Liste doit être triée ?</td>
+<td style="text-align: center;">❌ Non</td>
+<td style="text-align: center;">✅ Oui</td>
+</tr>
+<tr>
+<td style="text-align: left;">Complexité (pire cas)</td>
+<td style="text-align: center;">O(n)</td>
+<td style="text-align: center;">O(log n)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Efficacité sur grande liste</td>
+<td style="text-align: center;">Lente</td>
+<td style="text-align: center;">Très rapide</td>
+</tr>
+<tr>
+<td style="text-align: left;">Simplicité de code</td>
+<td style="text-align: center;">⭐⭐⭐</td>
+<td style="text-align: center;">⭐⭐</td>
+</tr>
+</tbody>
+</table>
+<h2 id="quand-utiliser-quoi">Quand utiliser quoi ?</h2>
+<ul>
+<li>✅ <strong>Recherche séquentielle</strong> : liste non triée, petite liste, cas simple.</li>
+<li>✅ <strong>Recherche dichotomique</strong> : liste triée, grande liste, performance critique.</li>
+</ul>
+<div class="admonition success">
+<p class="admonition-title">À retenir</p>
+<p>La recherche dichotomique est un exemple classique d'algorithme dit <strong>« diviser pour régner »</strong> (<em>divide and conquer</em>) : on résout un grand problème en le divisant en sous-problèmes plus petits.</p>
+<p>La notation <strong>O(log n)</strong> traduit une croissance extrêmement lente : c'est l'une des meilleures complexités qu'un algorithme de recherche puisse avoir.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <a href="/" class="custom-home-button" title="Accueil">
+  <svg viewBox="0 0 24 24">
+    <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+  </svg>
+  Accueil
+</a>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.instant", "navigation.tabs", "navigation.sections", "navigation.top", "navigation.expand", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      
+        <script src="../../../assets/javascripts/live_editor.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,806 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://www.prof-leal.fr/SNT/Web/tp/tp_url_client_serveur/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>TD : URLs et Modèle Client-Serveur - Mr Leal SNT/NSI</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/custom_style.css">
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#td-urls-et-modele-client-serveur" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="Mr Leal SNT/NSI" class="md-header__button md-logo" aria-label="Mr Leal SNT/NSI" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M256 141.3v309.3l.5-.2A449 449 0 0 1 428.8 416H448V96h-19.2c-42.2 0-84.1 8.4-123.1 24.6-16.8 7-33.4 13.9-49.7 20.7m-25.1-79.8L256 72l25.1-10.5C327.9 42 378.1 32 428.8 32H464c26.5 0 48 21.5 48 48v352c0 26.5-21.5 48-48 48h-35.2c-50.7 0-100.9 10-147.7 29.5l-12.8 5.3c-7.9 3.3-16.7 3.3-24.6 0l-12.8-5.3C184.1 490 133.9 480 83.2 480H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h35.2c50.7 0 100.9 10 147.7 29.5"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Mr Leal SNT/NSI
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              TD : URLs et Modèle Client-Serveur
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="amber"  aria-label="Mode sombre"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Mode sombre" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="amber"  aria-label="Mode clair"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Mode clair" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Accueil
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../" class="md-tabs__link">
+        
+  
+  
+    
+  
+  SNT
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../NSI_1/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Première NSI
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="Mr Leal SNT/NSI" class="md-nav__button md-logo" aria-label="Mr Leal SNT/NSI" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M256 141.3v309.3l.5-.2A449 449 0 0 1 428.8 416H448V96h-19.2c-42.2 0-84.1 8.4-123.1 24.6-16.8 7-33.4 13.9-49.7 20.7m-25.1-79.8L256 72l25.1-10.5C327.9 42 378.1 32 428.8 32H464c26.5 0 48 21.5 48 48v352c0 26.5-21.5 48-48 48h-35.2c-50.7 0-100.9 10-147.7 29.5l-12.8 5.3c-7.9 3.3-16.7 3.3-24.6 0l-12.8-5.3C184.1 490 133.9 480 83.2 480H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h35.2c50.7 0 100.9 10 147.7 29.5"/></svg>
+
+    </a>
+    Mr Leal SNT/NSI
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Accueil
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SNT
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../NSI_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Première NSI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#partie-1-decortiquer-une-url" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Partie 1 : Décortiquer une URL
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Partie 1 : Décortiquer une URL">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rappel-anatomie-dune-url" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rappel : Anatomie d'une URL
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partie-2-le-modele-client-serveur" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Partie 2 : Le Modèle Client-Serveur
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Partie 2 : Le Modèle Client-Serveur">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rappel-le-dialogue-client-serveur" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rappel : Le dialogue Client-Serveur
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partie-3-synthese-et-bilan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Partie 3 : Synthèse et Bilan
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="td-urls-et-modele-client-serveur">TD : URLs et Modèle Client-Serveur</h1>
+<h2 id="partie-1-decortiquer-une-url">Partie 1 : Décortiquer une URL</h2>
+<p>Une URL (<em>Uniform Resource Locator</em>) est l'adresse complète d'une ressource sur le Web. Elle est formée de plusieurs parties, chacune ayant un rôle précis.</p>
+<h3 id="rappel-anatomie-dune-url">Rappel : Anatomie d'une URL</h3>
+<div class="highlight"><pre><span></span><code>https://www.education.gouv.fr/programme-snt.html?lang=fr
+  ↑           ↑                    ↑                 ↑
+protocole  nom de domaine         chemin           paramètre
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Partie</th>
+<th>Rôle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>https://</code></td>
+<td><strong>Protocole</strong> : la « langue » utilisée pour communiquer avec le serveur</td>
+</tr>
+<tr>
+<td><code>www.education.gouv.fr</code></td>
+<td><strong>Nom de domaine</strong> : l'adresse lisible du serveur</td>
+</tr>
+<tr>
+<td><code>/programme-snt.html</code></td>
+<td><strong>Chemin</strong> : le fichier précis demandé sur le serveur</td>
+</tr>
+<tr>
+<td><code>?lang=fr</code></td>
+<td><strong>Paramètre</strong> : une information supplémentaire envoyée au serveur</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<div class="admonition question">
+<p class="admonition-title">Exercice 1 : Identifier les composants d'une URL</p>
+<p>Analysez chacune des URLs ci-dessous et complétez le tableau sur votre feuille (ou cahier) en identifiant le <strong>protocole</strong>, le <strong>nom de domaine</strong>, le <strong>chemin</strong> et les <strong>paramètres</strong> (s'il y en a).</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>URL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><code>https://www.wikipedia.org/wiki/Internet</code></td>
+</tr>
+<tr>
+<td>2</td>
+<td><code>http://moodle.lycee.fr/login/index.php?lang=fr</code></td>
+</tr>
+<tr>
+<td>3</td>
+<td><code>https://www.youtube.com/watch?v=dQw4w9WgXcQ</code></td>
+</tr>
+<tr>
+<td>4</td>
+<td><code>https://maps.google.fr/maps?q=Paris</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Questions :</strong></p>
+<ol>
+<li>Pour l'URL n°2, quel protocole est utilisé ? Est-ce que cela vous semble sécurisé ? Pourquoi ?</li>
+<li>Pour l'URL n°3, à votre avis, à quoi sert le paramètre <code>v=dQw4w9WgXcQ</code> ?</li>
+<li>Pour l'URL n°4, que se passera-t-il probablement si vous remplacez <code>Paris</code> par <code>Lyon</code> dans l'URL ?</li>
+</ol>
+</div>
+<hr />
+<div class="admonition question">
+<p class="admonition-title">Exercice 2 : Le DNS — Traduire un nom en adresse IP</p>
+<p>Comme vu en cours, les ordinateurs ne comprennent pas les noms de domaine : ils travaillent avec des <strong>adresses IP</strong> (une suite de chiffres comme <code>142.251.209.131</code>). C'est le <strong>DNS</strong> (<em>Domain Name System</em>) qui fait la traduction.</p>
+<p><strong>Faites le test suivant :</strong></p>
+<ol>
+<li>Ouvrez un nouvel onglet dans votre navigateur.</li>
+<li>Dans la barre d'adresse, tapez exactement : <code>142.251.209.131</code> puis appuyez sur Entrée.</li>
+<li>Que se passe-t-il ? Quel site s'affiche ?</li>
+</ol>
+<p><strong>Questions :</strong></p>
+<ol>
+<li>Expliquez avec vos propres mots à quoi sert le DNS.</li>
+<li>Pourquoi a-t-on inventé les noms de domaine plutôt que de laisser les utilisateurs taper des adresses IP ?</li>
+<li>Décomposez le nom de domaine <code>www.ac-versailles.fr</code> : que signifie chaque partie (www, ac-versailles, fr) ?</li>
+</ol>
+</div>
+<hr />
+<div class="admonition question">
+<p class="admonition-title">Exercice 3 : Construire ses propres URLs</p>
+<p>À votre tour de créer des URLs ! En vous basant sur la structure vue en cours, <strong>inventez</strong> les URLs correspondant aux descriptions suivantes. Vous pouvez utiliser des noms de domaine fictifs.</p>
+<table>
+<thead>
+<tr>
+<th>Description</th>
+<th>URL à construire</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>La page d'accueil d'un site fictif de cinéma nommé <code>cineclub.fr</code> (protocole sécurisé)</td>
+<td></td>
+</tr>
+<tr>
+<td>La page <code>/films/aventure.html</code> du même site</td>
+<td></td>
+</tr>
+<tr>
+<td>La même page, mais avec un paramètre <code>?annee=2024</code> pour filtrer par année</td>
+<td></td>
+</tr>
+<tr>
+<td>Une recherche du mot <code>Matrix</code> sur un moteur fictif <code>recherche.fr</code> via le paramètre <code>q</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Défi :</strong> Écrivez également l'URL d'un site de votre choix (réel ou fictif), puis échangez avec votre voisin·e pour qu'il ou elle la décompose.</p>
+</div>
+<hr />
+<h2 id="partie-2-le-modele-client-serveur">Partie 2 : Le Modèle Client-Serveur</h2>
+<p>À chaque fois que vous visitez un site web, un <strong>dialogue</strong> invisible se déroule entre votre navigateur (le <strong>client</strong>) et un ordinateur distant (le <strong>serveur</strong>). Comprendre ce dialogue, c'est comprendre comment fonctionne tout le Web.</p>
+<h3 id="rappel-le-dialogue-client-serveur">Rappel : Le dialogue Client-Serveur</h3>
+<div class="highlight"><pre><span></span><code>   [Votre navigateur]          [Serveur du site]
+        CLIENT          →  Requête HTTP  →   SERVEUR
+        CLIENT          ←  Réponse HTTP  ←   SERVEUR
+</code></pre></div>
+<ol>
+<li>Le <strong>client</strong> (votre navigateur) envoie une <strong>requête</strong> : « Donne-moi la page <code>/index.html</code> ! »</li>
+<li>Le <strong>serveur</strong> cherche la ressource et envoie une <strong>réponse</strong> : la page HTML, les images, etc.</li>
+<li>Le navigateur <strong>affiche</strong> le tout à l'écran.</li>
+</ol>
+<hr />
+<div class="admonition question">
+<p class="admonition-title">Exercice 4 : Schématiser le modèle client-serveur</p>
+<p>Lisez le scénario suivant, puis répondez aux questions sur votre feuille.</p>
+<blockquote>
+<p><em>Lucas ouvre Google Chrome sur son ordinateur. Il tape <code>https://www.wikipedia.org/wiki/Jeu_video</code> dans la barre d'adresse et appuie sur Entrée. Quelques instants plus tard, la page Wikipédia s'affiche.</em></p>
+</blockquote>
+<p><strong>Questions :</strong></p>
+<ol>
+<li>Dans ce scénario, qui est le <strong>client</strong> ?</li>
+<li>Qui est le <strong>serveur</strong> ?</li>
+<li>Quelle ressource précise le client demande-t-il au serveur ? (Aidez-vous du chemin dans l'URL.)</li>
+<li><strong>Schéma :</strong> Sur votre feuille, dessinez le dialogue client-serveur correspondant à ce scénario. Représentez l'ordinateur de Lucas, le serveur de Wikipédia, et les deux flèches (requête et réponse) en indiquant ce qui est échangé.</li>
+</ol>
+</div>
+<hr />
+<div class="admonition question">
+<p class="admonition-title">Exercice 5 : Les codes de réponse HTTP</p>
+<p>Quand un serveur répond à un client, il envoie toujours un <strong>code de statut</strong> pour indiquer si tout s'est bien passé (ou pas !).</p>
+<p>Voici les codes les plus courants :</p>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Signification</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>200</strong></td>
+<td>✅ OK — La ressource a été trouvée et envoyée avec succès</td>
+</tr>
+<tr>
+<td><strong>301</strong></td>
+<td>↩️ Redirection — La page a changé d'adresse</td>
+</tr>
+<tr>
+<td><strong>403</strong></td>
+<td>🚫 Interdit — Vous n'avez pas le droit d'accéder à cette ressource</td>
+</tr>
+<tr>
+<td><strong>404</strong></td>
+<td>❌ Introuvable — La ressource demandée n'existe pas sur ce serveur</td>
+</tr>
+<tr>
+<td><strong>500</strong></td>
+<td>💥 Erreur serveur — Le serveur a rencontré un problème</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Questions :</strong></p>
+<ol>
+<li>Vous tapez une URL avec une faute de frappe (ex: <code>/programme-sntt.html</code> au lieu de <code>/programme-snt.html</code>). Quel code de réponse recevrez-vous probablement ? Pourquoi ?</li>
+<li>Vous essayez d'accéder à un espace élève réservé sans vous connecter. Quel code de réponse est le plus probable ?</li>
+<li>Avez-vous déjà rencontré une page avec le message <strong>« 404 Not Found »</strong> ? Dans quel contexte ? Expliquez maintenant ce que cela signifie techniquement.</li>
+<li><strong>Défi :</strong> Que se passe-t-il côté serveur quand il renvoie un code <strong>200</strong> ? Décrivez les étapes depuis la réception de la requête jusqu'à l'envoi de la réponse.</li>
+</ol>
+</div>
+<hr />
+<div class="admonition question">
+<p class="admonition-title">Exercice 6 : Simuler une conversation Client-Serveur</p>
+<p>Vous allez jouer le rôle du client <strong>ET</strong> du serveur.</p>
+<p><strong>Mise en situation :</strong><br />
+Imaginez que vous êtes le serveur du site <code>www.monlycee.fr</code>. Ce serveur contient les fichiers suivants :</p>
+<div class="highlight"><pre><span></span><code>/index.html         → page d&#39;accueil du lycée
+/emploi-du-temps.html → page des emplois du temps
+/cantine.html       → page du menu de la cantine
+/admin/notes.html   → page réservée aux professeurs (accès restreint)
+</code></pre></div>
+<p>Pour chacune des requêtes ci-dessous, indiquez :
+- Le <strong>code de réponse</strong> que le serveur enverrait.
+- Ce que le serveur renverrait (la page, ou un message d'erreur).</p>
+<table>
+<thead>
+<tr>
+<th>Requête reçue par le serveur</th>
+<th>Code réponse</th>
+<th>Ce que le serveur renvoie</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>GET /index.html</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>GET /programme-annuel.html</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>GET /cantine.html</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>GET /admin/notes.html</code> (depuis un élève non connecté)</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr />
+<h2 id="partie-3-synthese-et-bilan">Partie 3 : Synthèse et Bilan</h2>
+<div class="admonition question">
+<p class="admonition-title">Exercice 7 : Questions de synthèse</p>
+<p>Répondez aux questions suivantes en rédigeant des réponses complètes (2 à 3 phrases chacune).</p>
+<ol>
+<li><strong>Expliquez</strong> ce qu'est une URL et à quoi elle sert, comme si vous l'expliquiez à quelqu'un qui ne connaît pas le Web.</li>
+<li><strong>Quelle est la différence</strong> entre le Web et Internet ? Quel lien y a-t-il entre les deux ?</li>
+<li><strong>Décrivez</strong> ce qui se passe, étape par étape, quand vous tapez <code>https://www.google.fr</code> dans votre navigateur et appuyez sur Entrée. Mentionnez au moins : le DNS, la requête HTTP, le serveur et la réponse.</li>
+<li>Pourquoi le protocole <code>https</code> est-il préférable à <code>http</code> ? Dans quelles situations est-il particulièrement indispensable ?</li>
+</ol>
+</div>
+<hr />
+<div class="admonition tip">
+<p class="admonition-title">Pour aller plus loin</p>
+<p>Si vous avez terminé, vous pouvez explorer les outils de développement de votre navigateur :</p>
+<ol>
+<li>Ouvrez une page web (ex: <code>https://www.wikipedia.org</code>).</li>
+<li>Appuyez sur <strong>F12</strong> pour ouvrir les outils développeur.</li>
+<li>Cliquez sur l'onglet <strong>« Réseau »</strong> (<em>Network</em>).</li>
+<li>Rechargez la page (<strong>F5</strong>).</li>
+</ol>
+<p>Vous verrez en temps réel toutes les <strong>requêtes HTTP</strong> envoyées par votre navigateur et les <strong>codes de réponse</strong> renvoyés par les serveurs. Pouvez-vous retrouver des codes <strong>200</strong> ? Des ressources chargées (images, fichiers CSS) ?</p>
+<p>Notez ce que vous observez et partagez vos découvertes avec la classe !</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <a href="/" class="custom-home-button" title="Accueil">
+  <svg viewBox="0 0 24 24">
+    <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+  </svg>
+  Accueil
+</a>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": ["navigation.instant", "navigation.tabs", "navigation.sections", "navigation.top", "navigation.expand", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      
+        <script src="../../../../assets/javascripts/live_editor.js"></script>
+      
+    
+  </body>
+</html>
