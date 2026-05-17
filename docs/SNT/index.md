@@ -11,5 +11,5 @@ Bienvenue dans la section SNT. Voici les thématiques abordées :
 * [📸 Photographie Numérique](Photographie_Numerique/sommaire.md)
 * [📍 Géolocalisation](Geolocalisation/sommaire.md)
 * [📄 Web](Web/sommaire.md)
-* [📊 Données Structurées](Objets_Connectes/sommaire.md)
-* [📡 Objets Connectés]()
+* [📡 Objets Connectés](Objets_Connectes/sommaire.md)
+* [📊 Données Structurées]()
