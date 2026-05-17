@@ -7,12 +7,8 @@
 
 ## Travaux Pratiques
 
-* [🐍 Script : Code Pixel Art](tp/code_pixel_art.py)
-* [🐍 Script : Code Pixel Art Corrige](tp/code_pixel_art_corrige.py)
 * [🚀 Mini-Projet](tp/mini_projet.md)
-* [🐍 Script : Mini Projet](tp/mini_projet.py)
 * [🎨 TP : Pixel Art & Remédiation](tp/tp_pixel_art.md)
-* [💻 TP Pixel Art Corrige](tp/tp_pixel_art_corrige.md)
 
 ## Exercices
 

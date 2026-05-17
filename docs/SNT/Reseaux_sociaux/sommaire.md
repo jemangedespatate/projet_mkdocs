@@ -2,7 +2,6 @@
 
 ## Cours
 
-* [📖 Exo Graphe](cours/exo_graphe.md)
 * [📖 Expo](cours/expo.md)
 * [📖 Graphe](cours/graphe.md)
 
@@ -12,5 +11,6 @@
 
 ## Exercices
 
+* [📖 Exo Graphe](cours/exo_graphe.md)
 * [✏️ Exo Comp](exercices/exo_comp.md)
 

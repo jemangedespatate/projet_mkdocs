@@ -46,6 +46,7 @@ Ce site a pour objectif de guider les élèves tout au long de l'année scolaire
     * [🤖 Algorithme des k plus proches voisins (k-NN)](NSI_1/k_plus_proches_voisins/sommaire.md)
     * [evaluations](NSI_1/evaluations/sommaire.md)
     * [💻 Architecture et Assembleur](NSI_1/Architecture/sommaire.md)
+    * [🌐 Modèle TCP/IP](NSI_1/reseaux/sommaire.md)
 
 === "NSI terminale"
 
