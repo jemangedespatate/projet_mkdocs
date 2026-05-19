@@ -20,8 +20,8 @@ Ce site a pour objectif de guider les élèves tout au long de l'année scolaire
     * [📸 Photographie Numérique](SNT/Photographie_Numerique/sommaire/)
     * [📍 Géolocalisation ](SNT/Geolocalisation/sommaire/)
     * [📄 Web](SNT/Web/sommaire/)
+    * [📡 Objets Connectés](SNT/Objets_Connectes/sommaire.md)
     * 📊 Données Structurées
-    * 📡 Objets Connectés
 
 
 
@@ -47,6 +47,7 @@ Ce site a pour objectif de guider les élèves tout au long de l'année scolaire
     * [evaluations](NSI_1/evaluations/sommaire.md)
     * [💻 Architecture et Assembleur](NSI_1/Architecture/sommaire.md)
     * [🌐 Modèle TCP/IP](NSI_1/reseaux/sommaire.md)
+    * [🖱️ Interfaces Homme-Machine (IHM)](NSI_1/IHM/sommaire.md)
 
 === "NSI terminale"
 

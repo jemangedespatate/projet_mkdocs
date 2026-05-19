@@ -5,6 +5,7 @@ Bienvenue dans la section NSI Première. Voici les différents modules disponibl
 ## 📘 Programme
 
 * [🐍 Programmation Python](Programmation_Python/sommaire.md)
+* [🖱️ Interfaces Homme-Machine (IHM)](IHM/sommaire.md)
 * [🔢 Types et valeurs de base](type_et_valeur_de_base/sommaire.md)
 * [⛓️ Structures linéaires (Listes et Tuples)](type_de_base/sommaire.md)
 * [📊 Traitement de données en tables](traitement_de_donnees/sommaire.md)
