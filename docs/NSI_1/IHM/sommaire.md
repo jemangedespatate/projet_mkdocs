@@ -3,6 +3,7 @@
 ## Cours/TP
 
 * [TP : Découverte avec la création d'un Space Invader](tp_space_invader.md)
+* [jeu finis](test.py){:download="test.py"}
 
 ## Projet
 
