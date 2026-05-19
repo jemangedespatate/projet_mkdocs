@@ -7,8 +7,7 @@ Dans ce TP, nous allons découvrir comment créer une Interface Homme-Machine (I
 
 > **Préparation :**
 > Créez un dossier `Space_Invader` sur votre ordinateur. 
-> Récupérez les 3 images nécessaires (`background.png`, `player.png`, `enemy.png`) (que vous pouvez demander à votre professeur ou trouver dans les ressources) et placez-les dans ce dossier. Créez ensuite un fichier `jeu.py` dans le même dossier.
-
+> Récupérez les 3 images nécessaires ([background.png](background.png){:download="background.png"}, [player.png](player.png){:download="player.png"}, [enemy.png](enemy.png){:download="enemy.png"}) (que vous pouvez demander à votre professeur ou trouver dans les ressources) et placez-les dans ce dossier. Créez ensuite un fichier `jeu.py` dans le même dossier.
 ---
 
 ## Étape 1 : La Fenêtre et la zone de dessin (Canvas)
