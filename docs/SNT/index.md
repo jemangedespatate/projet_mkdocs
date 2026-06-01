@@ -13,3 +13,4 @@ Bienvenue dans la section SNT. Voici les thématiques abordées :
 * [📄 Web](Web/sommaire.md)
 * [📡 Objets Connectés](Objets_Connectes/sommaire.md)
 * [📊 Données Structurées]()
+* [🖥️ Bonus](IHM/sommaire.md)
