@@ -11,6 +11,10 @@ Ce site a pour objectif de guider les élèves tout au long de l'année scolaire
 
     L'objectif de la SNT est de permettre aux élèves de **comprendre les objets numériques** et les **applications qu’ils utilisent au quotidien**. Ils découvriront les fondements du numérique à travers différentes thématiques actuelles.
 
+    ## 📅 Progression 
+    
+    [**Voir le calendrier SNT**](SNT/calendrier.md)
+
     ## 📘 Programme
 
     * [ℹ️ Introduction SNT](SNT/introduction_snt/activiter_introductif/)
@@ -32,6 +36,10 @@ Ce site a pour objectif de guider les élèves tout au long de l'année scolaire
     L'objectif de la Première NSI est de permettre aux élèves de comprendre les principes fondamentaux de l’informatique et de la programmation, et d’apprendre à concevoir, analyser et développer des programmes.
 
     Ils découvriront les notions clés telles que les algorithmes, les structures de données, les fonctions, la programmation orientée objet et les bases de données, tout en développant leur logique et leur capacité à résoudre des problèmes informatiques.
+
+    ## 📅 progression 
+    
+    [**Voir le calendrier NSI Première**](NSI_1/calendrier.md)
 
     ## 📘 Programme
 
@@ -56,9 +64,18 @@ Ce site a pour objectif de guider les élèves tout au long de l'année scolaire
     L'objectif de la Terminale NSI est de permettre aux élèves de maîtriser des concepts avancés en informatique et en programmation, et de mettre en œuvre des projets plus complexes.
     Ils approfondiront les notions de programmation orientée objet, structures de données avancées, algorithmes de tri et de recherche, gestion de bases de données et réseaux, tout en développant leur capacité à concevoir, analyser et optimiser des programmes.
 
+    ## 📅 progression 
+    
+    [**Voir le calendrier NSI Terminale**](NSI_T/calendrier.md)
+
     ## 📘 Programme
 
-    1. 🐍 Programmation Python
+    * [🌟 Programmation Orientée Objet (POO)](NSI_T/POO/sommaire.md)
+    * [📦 Structures de données](NSI_T/Structures_de_donnees/sommaire.md)
+    * [🗄️ Base de données](NSI_T/Base_de_donnees/sommaire.md)
+    * [💻 Architectures matérielles, systèmes d'exploitation et réseaux](NSI_T/Architectures_materielles_SE_reseaux/sommaire.md)
+    * [🧑‍💻 Langages et programmation](NSI_T/Langages_et_programmation/sommaire.md)
+    * [🌟 Algorithmique](NSI_T/Algorithmique/sommaire.md)
 
 ## 🛠️ À propos
 
