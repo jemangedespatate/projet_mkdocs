@@ -521,7 +521,13 @@
     <span class="n">mot</span> <span class="o">=</span> <span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">mot</span><span class="p">)</span>   <span class="c1"># permet d&#39;espacer les lettres</span>
     <span class="k">return</span> <span class="n">mot</span>
 </code></pre></div>
-<p>👉 <strong>Dites, selon vous, ce que fait cette fonction en analysant rapidement son code.</strong></p>
+<ol>
+<li>Dites, selon vous, ce que fait cette fonction en analysant rapidement son code.</li>
+<li>Comment utiliser cette fonction dans votre programme?</li>
+<li>Que renvoie la fonction choix_mot("pendu_dico.txt")? Quel est son type?</li>
+<li>Que fait la commande .strip() et .join() ? (regarder sur internet)</li>
+<li>Que fait la commande random.randint(a, b)? (regarder sur internet)</li>
+</ol>
 <div class="admonition info">
 <p class="admonition-title">informations</p>
 <p>Écrivez vos réponses directement dans le fichier python, juste après <code># réponse</code>.</p>
@@ -534,7 +540,9 @@
 → &quot;_ _ _ _&quot;
 </code></pre></div>
 </details>
-<p>👉 <strong>À vous d’écrire la fonction :</strong></p>
+<ol>
+<li><strong>À vous d’écrire la fonction :</strong></li>
+</ol>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">cacher_mot</span><span class="p">(</span><span class="n">mot</span><span class="p">:</span><span class="nb">str</span><span class="p">)</span><span class="o">-&gt;</span><span class="nb">str</span><span class="p">:</span>
     <span class="s2">&quot;&quot;&quot;</span>
 <span class="s2">    fonction qui renvoie une chaine d&#39;underscores de la même longueur que le paramètre mot</span>
@@ -552,7 +560,9 @@
 </details>
 <h2 id="3-verifier-si-une-lettre-est-presente">3. Vérifier si une lettre est présente</h2>
 <p>On veut une fonction qui renvoie <code>True</code> si une lettre est dans le mot, et <code>False</code> sinon.</p>
-<p>👉 Complètez la fonction :</p>
+<ol>
+<li><strong>À vous d’écrire la fonction :</strong></li>
+</ol>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">verifier_lettre</span><span class="p">(</span><span class="n">mot</span><span class="p">:</span><span class="nb">str</span><span class="p">,</span> <span class="n">caractere</span><span class="p">:</span><span class="nb">str</span><span class="p">)</span><span class="o">-&gt;</span><span class="nb">str</span><span class="p">:</span>
     <span class="s2">&quot;&quot;&quot;</span>
 <span class="s2">    fonction qui renvoie True si caractere est présent dans mot</span>
@@ -579,7 +589,9 @@ caractere   = &quot;E&quot;
 → mot_inconnu = &quot;_ E _ _ _&quot;
 </code></pre></div>
 </details>
-<p>👉 Complètez la fonction :</p>
+<ol>
+<li><strong>À vous d’écrire la fonction :</strong></li>
+</ol>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">lettre</span><span class="p">(</span><span class="n">mot</span><span class="p">:</span><span class="nb">str</span><span class="p">,</span> <span class="n">mot_inconnu</span><span class="p">:</span><span class="nb">str</span><span class="p">,</span><span class="n">caractere</span><span class="p">:</span><span class="nb">str</span><span class="p">)</span><span class="o">-&gt;</span><span class="nb">str</span><span class="p">:</span>
     <span class="s2">&quot;&quot;&quot;</span>
 <span class="s2">    Fonction qui affiche la lettre trouvée à la place de l&#39;unduscore de mot_inconnu</span>
@@ -599,13 +611,14 @@ caractere   = &quot;E&quot;
 </details>
 <h2 id="5-compter-les-erreurs">5. Compter les erreurs</h2>
 <p>On a besoin d’une fonction qui incrémente le nombre d’erreurs du joueur.</p>
-<p>👉 Complètez la fonction :</p>
+<ol>
+<li><strong>À vous d’écrire la fonction :</strong></li>
+</ol>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">nb_erreur</span><span class="p">(</span><span class="n">erreur</span><span class="p">:</span><span class="nb">int</span><span class="p">)</span><span class="o">-&gt;</span><span class="nb">int</span><span class="p">:</span>
     <span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">    fonction qui comptabilise le nombre d&#39;erreurs</span>
-
+<span class="s2">    fonction qui ajoute 1 aux nombre d&#39;erreurs mise en paramètre    </span>
 <span class="s2">    Paramètre:     nb_erreur, de type int</span>
-<span class="s2">    Retour:     nb_erreur, de type int</span>
+<span class="s2">    Retour:     nb_erreur + 1, de type int</span>
 </code></pre></div>
 <details class="success">
 <summary>🧪 <strong>Teste avec doctest :</strong></summary>

@@ -68,10 +68,10 @@ def lettre(mot:str, mot_inconnu:str,caractere:str)->str:
 
 def nb_erreur(erreur:int)->int:
     """
-    fonction qui comptabilise le nombre d'erreurs
+    fonction qui ajoute 1 aux nombre d'erreurs mise en paramètre    
     
     Paramètre:     nb_erreur, de type int
-    Retour:     nb_erreur, de type int
+    Retour:     nb_erreur + 1, de type int
 
     exemple:
 
