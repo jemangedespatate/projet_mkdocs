@@ -47,7 +47,11 @@ def choix_mot(nom_fichier:str)->str:
     return mot
 ```
 
-👉 **Dites, selon vous, ce que fait cette fonction en analysant rapidement son code.**
+1. Dites, selon vous, ce que fait cette fonction en analysant rapidement son code.
+2. Comment utiliser cette fonction dans votre programme?
+3. Que renvoie la fonction choix_mot("pendu_dico.txt")? Quel est son type?
+4. Que fait la commande .strip() et .join() ? (regarder sur internet)
+5. Que fait la commande random.randint(a, b)? (regarder sur internet)
 
 !!! info "informations"
 
@@ -65,7 +69,7 @@ On veut afficher un mot inconnu sous forme de **tirets bas** `_`, un par lettre.
     → "_ _ _ _"
     ```
 
-👉 **À vous d’écrire la fonction :**
+1. **À vous d’écrire la fonction :**
 
 ```python
 def cacher_mot(mot:str)->str:
@@ -89,7 +93,7 @@ def cacher_mot(mot:str)->str:
 
 On veut une fonction qui renvoie `True` si une lettre est dans le mot, et `False` sinon.
 
-👉 Complètez la fonction :
+1. **À vous d’écrire la fonction :**
 
 ```python
 def verifier_lettre(mot:str, caractere:str)->str:
@@ -124,7 +128,7 @@ Quand le joueur propose une lettre correcte, il faut la remplacer à la bonne po
     → mot_inconnu = "_ E _ _ _"
     ```
 
-👉 Complètez la fonction :
+1. **À vous d’écrire la fonction :**
 
 ```python
 def lettre(mot:str, mot_inconnu:str,caractere:str)->str:
@@ -151,15 +155,14 @@ def lettre(mot:str, mot_inconnu:str,caractere:str)->str:
 
 On a besoin d’une fonction qui incrémente le nombre d’erreurs du joueur.
 
-👉 Complètez la fonction :
+1. **À vous d’écrire la fonction :**
 
 ```python
 def nb_erreur(erreur:int)->int:
     """
-    fonction qui comptabilise le nombre d'erreurs
-    
+    fonction qui ajoute 1 aux nombre d'erreurs mise en paramètre    
     Paramètre:     nb_erreur, de type int
-    Retour:     nb_erreur, de type int
+    Retour:     nb_erreur + 1, de type int
 ```
 
 ??? success "🧪 **Teste avec doctest :**"
