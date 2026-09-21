@@ -11,8 +11,8 @@ y = 3.14      # flottant
 nom = "Alice" # chaîne de caractères
 ok = True     # booléen
 ```
-
-⚠️ les variables doivent avoir des noms coherents
+!!! note "Attention"
+    ⚠️ les variables doivent avoir des noms coherents
 
 ---
 

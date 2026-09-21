@@ -1,6 +1,6 @@
 # Exercices pratiques
 
-**1. Variables et affichage**
+### 1. Variables et affichage
 
 Demandez à l’utilisateur son **nom** et son **âge**, puis affiche :
 
@@ -8,20 +8,31 @@ Demandez à l’utilisateur son **nom** et son **âge**, puis affiche :
 Bonjour <nom>, dans 10 ans tu auras <âge+10> ans.
 ```
 
-indice: utiliser la fonction `input()`
+??? example "indice 1"
+    utiliser la fonction `input()` pour demander a un chiffre ou une chaine de caracteres à l'utilisateur. attention la fonction `input()` renvoie toujours une chaine de caracteres, il faudra donc la convertir en entier en utilisant la fonction `int()`.
+
+    exemple:
+    ```python
+    n = input("Entrez un nombre : ")
+    n = int(n)
+    ```
 
 ---
 
-**2. Types de données**
+### 2. Types de données
 
-Créez trois variables : une **entière**, une **décimale** et une **chaîne de caractères**.
+Créez trois variables : 
+- une **entière**
+- une **décimale**
+- une **chaîne de caractères**
+
 Affiche le type de chaque variable avec la fonction `type()`.
 
 ---
 
-**3. Opérations mathématiques**
+### 3. Opérations mathématiques
 
-Écrivez un programme qui demande deux nombres à l’utilisateur et affiche :
+Écrivez un programme qui demande deux nombres à l’utilisateur (avec la fonction `input`) et affiche :
 
 * la somme
 * la différence
@@ -31,7 +42,7 @@ Affiche le type de chaque variable avec la fonction `type()`.
 
 ---
 
-**4. Conditions**
+### 4. Conditions
 
 Écrivait un programme qui demande une **note** à l’utilisateur et affiche :
 
@@ -42,7 +53,7 @@ Affiche le type de chaque variable avec la fonction `type()`.
 
 ---
 
-**5. Boucles**
+### 5. Boucles
 
 Affichez tous les nombres **pairs** de 1 à 20 en utilisant :
 
@@ -51,13 +62,13 @@ Affichez tous les nombres **pairs** de 1 à 20 en utilisant :
 
 ---
 
-**6. Fonctions**
+### 6. Fonctions
 
 créez une fonction `carre(x)` qui renvoie le carré d’un nombre.
 
 Testez-la avec plusieurs nombres et affichez les résultats.
 
-### calcul de moyenne
+## calcul de moyenne
 
 1. Demandez à l’utilisateur combien de notes il veut entrer.
 2. Utilisez une **boucle** pour demander chaque note une par une. (indice: utilisez `input`)

@@ -11,7 +11,7 @@ Un programme est comme une recette de cuisine :
 
 En NSI, on utilise principalement **Python**, un langage simple et très répandu.
 
-!!! note "thonny"
+!!! note "Thonny"
 
     Cette année, nous allons utiliser Thonny, un logiciel spécialement conçu pour apprendre à programmer en Python.
     C’est un environnement de développement (appelé IDE) qui facilite l’écriture, l’exécution et le test des programmes.
@@ -35,6 +35,9 @@ Chaque variable a :
 
 * un **nom** (choisi par le programmeur)
 * une **valeur** (le contenu de la boîte)
+
+!!! note "Attention"
+    ⚠️ les variables doivent avoir des noms coherents
 
 !!! example "Exemple :"
 
