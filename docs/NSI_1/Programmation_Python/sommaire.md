@@ -7,6 +7,7 @@
 ## Exercices
 
 * [exercices](../exercice/)
+* [exercices de remédiation](../exercice_rappel/)
 * [mini-projet](../mini-projet/)
 
 <!--

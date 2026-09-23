@@ -194,7 +194,7 @@ Avec **1 satellite**, on connaît seulement la **distance** au satellite.
 
 ➡️ La position peut être **n'importe où** sur un cercle autour du satellite
 
-![width:500px](../../assets/seconde/geoloc/trilateration_step1.png)
+![width:500px](../../../assets/seconde/geoloc/trilateration_step1.png)
 
 ---
 
@@ -204,7 +204,7 @@ Avec **2 satellites**, on a deux cercles qui se croisent.
 
 ➡️ La position est réduite à **2 points possibles** (intersection des cercles)
 
-![width:500px](../../assets/seconde/geoloc/trilateration_step2.png)
+![width:500px](../../../assets/seconde/geoloc/trilateration_step2.png)
 
 ---
 
@@ -214,7 +214,7 @@ Avec **3 satellites**, les trois cercles se croisent en **un seul point**.
 
 ➡️ C'est votre **position exacte** ! 📍
 
-![width:500px](../../assets/seconde/geoloc/trilateration_step3.png)
+![width:500px](../../../assets/seconde/geoloc/trilateration_step3.png)
 
 ---
 

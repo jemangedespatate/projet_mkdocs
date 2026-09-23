@@ -2,7 +2,7 @@
 
 ## exercice 1
 
-![exo_1](../../assets/seconde/rsx_sociaux/Graphe_exercice.png)
+![exo_1](../../../assets/seconde/rsx_sociaux/Graphe_exercice.png)
 
 Répondez aux questions suivante:
 

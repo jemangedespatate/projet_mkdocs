@@ -10,7 +10,7 @@ C’est pour cela qu’au lycée, nous allons utiliser la programmation en *Pyth
 
 Il est possible de réaliser l’ensemble des choses effectuées avec Scratch dans Python (comme dans l’exemple ci-dessous), et bien plus encore !
 
-![exemple python transformer](../../assets/seconde/introduction_prog/merged_exemple.png)
+![exemple python transformer](../../../assets/seconde/introduction_prog/merged_exemple.png)
 
 ## La programmation en 2 mots
 
@@ -131,7 +131,7 @@ color("blue")
 
     Réalisez l’image suivante, où l’ensemble des traits est de longueur 100 à l'aide de Turtle.  
 
-    ![activité 1](../../assets/seconde/introduction_prog/turtle_act1.png)  
+    ![activité 1](../../../assets/seconde/introduction_prog/turtle_act1.png)  
 
 ### Variables
 
@@ -166,7 +166,7 @@ forward(x)
 
     Réalisez l’image suivante, où le premier trait est égal à 10 et double à chaque nouveau trait à l'aide de Turtle.  
 
-    ![activité 2](../../assets/seconde/introduction_prog/turtle_act2.png)  
+    ![activité 2](../../../assets/seconde/introduction_prog/turtle_act2.png)  
 
     Indice : la multiplication entre deux nombres s’effectue avec l’opérateur `*`  
 
@@ -413,7 +413,7 @@ for i in range(3):
 
     Réalisez l’image suivante en utilisant une boucle `for` à l'aide de Turtle.  
 
-    ![carré](../../assets/seconde/introduction_prog/carée.png)  
+    ![carré](../../../assets/seconde/introduction_prog/carre.png)  
     
 !!! note "activité 10"
 
@@ -469,7 +469,7 @@ $$0 + 1 + 2 + 3 + \dots + 8 + 9 = 45$$
 
     Réalisez l’image suivante en utilisant une boucle `for` et en exploitant la variable `i` à l'aide de Turtle.  
 
-    ![act4](../../assets/seconde/introduction_prog/turtle_act4.png)  
+    ![act4](../../../assets/seconde/introduction_prog/turtle_act4.png)  
 
 !!! note "activité 12"
 
@@ -551,7 +551,7 @@ fonction_1()
 
     Créez une fonction `carre` qui dessine un carré dont les côtés sont de longueur 100, puis utilisez-la afin de refaire l’image suivante à l'aide de Turtle:  
 
-    ![act6](../../assets/seconde/introduction_prog/turtle_act6.png)  
+    ![act6](../../../assets/seconde/introduction_prog/turtle_act6.png)  
 
 !!! note "activité 14"
 
@@ -631,7 +631,7 @@ fonction_3(100, 90)
     Reprenez votre fonction `carre` créée précédemment en y ajoutant un paramètre pour la longueur des côtés.  
     Écrivez ensuite un code permettant de refaire l’image suivante à l'aide de Turtle :  
 
-    ![act7](../../assets/seconde/introduction_prog/turtle_act7.png)  
+    ![act7](../../../assets/seconde/introduction_prog/turtle_act7.png)  
 
 !!! note "activité 16"
 
@@ -670,6 +670,6 @@ fonction_3(100, 90)
 
     reproduisez les dessins suivants:
 
-    ![extra1](../../assets/seconde/introduction_prog/extra_1.png) 
-    ![extra2](../../assets/seconde/introduction_prog/extra_2.png)
+    ![extra1](../../../assets/seconde/introduction_prog/extra_1.png) 
+    ![extra2](../../../assets/seconde/introduction_prog/extra_2.png)
 

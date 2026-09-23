@@ -6,14 +6,14 @@ L'objectif de ce TP est d'apprendre à manipuler des images numériques pixel pa
 
 Les fichiers nécessaires sont :
 
-- [image_tp.jpg](../img/image_tp.jpg){:download="image_tp.jpg"} : image à utiliser pour les tests.
-- [image_cachee.jpg](../img/image_cachee.jpg){:download="image_cachee.jpg"} : image mystère pour l'activité 5. **À mettre dans le même dossier que le code.**
+- [image_tp.jpg](../../img/image_tp.jpg){:download="image_tp.jpg"} : image à utiliser pour les tests.
+- [image_cachee.jpg](../../img/image_cachee.jpg){:download="image_cachee.jpg"} : image mystère pour l'activité 5. **À mettre dans le même dossier que le code.**
 - [code_pillow.py](code_pillow.py){:download="code_pillow.py"} : contient le programme interactif complet.
 
 ### 🖼️ Aperçu de l'image de test
 Voici l'image `image_tp.jpg` que vous allez manipuler (clic droit > Enregistrer sous si besoin) :
 
-![Image de test](../img/image_tp.jpg){ width="300" }
+![Image de test](../../img/image_tp.jpg){ width="300" }
 
 ### 📥 Instructions de lancement
 

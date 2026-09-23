@@ -14,8 +14,8 @@ Dans ce TP, vous compléterez les fonctions manquantes dans le fichier Python do
 Pour que votre projet fonctionne correctement, vous devez placer tous les fichiers dans **un même répertoire** (dossier).  
 
 Les fichiers nécessaires sont :  
-- [pendu.py](../mini_projet/pendu.py){:download="pendu.py"} : contient les fonctions que vous devez compléter.  
-- [pendu_dico.txt](../mini_projet/pendu_dico.txt){:download="pendu_dico.txt"} : dictionnaire de mots utilisés pour le pendu.  
+- [pendu.py](mini_projet/pendu.py){:download="pendu.py"} : contient les fonctions que vous devez compléter.  
+- [pendu_dico.txt](mini_projet/pendu_dico.txt){:download="pendu_dico.txt"} : dictionnaire de mots utilisés pour le pendu.  
 
 👉 Arborescence attendue :  
 
@@ -176,7 +176,7 @@ def nb_erreur(erreur:int)->int:
 
 ## 6. Utilisation de l’interface 🎮
 
-Pour jouer, vous allez maintenant intégrer le fichier [interface.py](../mini_projet/interface.py){:download="interface.py"} dans votre répertoire.
+Pour jouer, vous allez maintenant intégrer le fichier [interface.py](mini_projet/interface.py){:download="interface.py"} dans votre répertoire.
 
 Voici à quoi doit ressembler votre répertoire après avoir ajouté le fichier :
 ```

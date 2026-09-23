@@ -37,8 +37,8 @@ theme:
 
 nav:
   - Accueil: index.md
-  - SNT: SNT/
-  - Première NSI: NSI_1/
+  - SNT: SNT/index.md
+  - Première NSI: NSI_1/index.md
 
 extra_css:
   - assets/stylesheets/custom_style.css

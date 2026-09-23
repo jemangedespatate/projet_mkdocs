@@ -16,10 +16,10 @@ Pour que votre projet fonctionne correctement, vous devez placer tous les fichie
 
 Les fichiers nécessaires sont :
 
-- [logique.py](../snake_demo/logique.py){:download="logique.py"} : contient les fonctions que vous devez compléter.
-- [main.py](../snake_demo/main.py){:download="main.py"} : l'interface graphique (ne pas modifier).
-- [requirements.txt](../snake_demo/requirements.txt){:download="requirements.txt"} : les bibliothèques nécessaires.
-- [console.py](../snake_demo/console.py){:download="console.py"} : contient les fonctions que vous devez compléter.
+- [logique.py](snake_demo/logique.py){:download="logique.py"} : contient les fonctions que vous devez compléter.
+- [main.py](snake_demo/main.py){:download="main.py"} : l'interface graphique (ne pas modifier).
+- [requirements.txt](snake_demo/requirements.txt){:download="requirements.txt"} : les bibliothèques nécessaires.
+- [console.py](snake_demo/console.py){:download="console.py"} : contient les fonctions que vous devez compléter.
 
 
 👉 Arborescence attendue :

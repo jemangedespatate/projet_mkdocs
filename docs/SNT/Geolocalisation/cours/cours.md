@@ -49,7 +49,7 @@ Dans ce cours, nous allons découvrir les principes de la géolocalisation par s
 
 !!! example "Exemple:"
 
-    ![trilateration](../../assets/seconde/geoloc/trilateration.png)
+    ![trilateration](../../../assets/seconde/geoloc/trilateration.png)
     
     Imaginez trois cercles dont les centres sont les satellites. L'intersection de ces trois cercles donne votre position exacte.
 

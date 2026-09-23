@@ -21,7 +21,7 @@ Dans ce cours, nous allons découvrir la structure d'une image matricielle, comm
 
 !!! example "Exemple:"
 
-    ![pixel](../../assets/seconde/photo_num/pixel_zoom.png)
+    ![pixel](../../../assets/seconde/photo_num/pixel_zoom.png)
 
     Si l'on zoom fortement sur une image, on peut apercevoir les petits carrés qui la composent : ce sont les pixels.
 
@@ -82,7 +82,7 @@ Pour qu'un ordinateur stocke une image, il doit transformer chaque pixel en nomb
 
 !!! example "Exemple:"
 
-    ![gris](../../assets/seconde/photo_num/gradient_gris.png)
+    ![gris](../../../assets/seconde/photo_num/gradient_gris.png)
 
     Une ligne de 4 pixels : [Noir, Gris foncé, Gris clair, Blanc]
     S'écrira en machine : `[0, 80, 200, 255]`.

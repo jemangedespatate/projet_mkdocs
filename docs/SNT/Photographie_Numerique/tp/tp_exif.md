@@ -7,9 +7,9 @@ Ces exercices sont destinés aux élèves ayant terminé les activités de base.
 Pour cette enquête, nous allons utiliser une image de test contenant des données de localisation.
 
 1. **Téléchargez les images de test** :
-    - [photo_mystere.jpg](../img/photo_mystere.jpg){:download="photo_mystere.jpg"}
-    - [photo_mystere_2.jpg](../img/photo_mystere_2.jpg){:download="photo_mystere_2.jpg"}
-    - [photo_mystere_3.jpg](../img/photo_mystere_3.jpg){:download="photo_mystere_3.jpg"}
+    - [photo_mystere.jpg](../../img/photo_mystere.jpg){:download="photo_mystere.jpg"}
+    - [photo_mystere_2.jpg](../../img/photo_mystere_2.jpg){:download="photo_mystere_2.jpg"}
+    - [photo_mystere_3.jpg](../../img/photo_mystere_3.jpg){:download="photo_mystere_3.jpg"}
 2. Allez sur le site [jimpl.com](https://jimpl.com/).
 3. Téléversez l'une des images (par exemple `photo_mystere.jpg`).
 

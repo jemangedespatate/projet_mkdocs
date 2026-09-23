@@ -18,7 +18,7 @@ Voyons ensemble les graphes, dans le cadre des réseaux sociaux.
 
 !!! example "Exemple:"
 
-    ![sommets](../../assets/seconde/rsx_sociaux/Graphe_sommets.png)  
+    ![sommets](../../../assets/seconde/rsx_sociaux/Graphe_sommets.png)  
 
     Les sommets sont indiqués en bleu
 
@@ -32,7 +32,7 @@ Voyons ensemble les graphes, dans le cadre des réseaux sociaux.
 
 !!! example "Exemple:"
 
-    ![arretes](../../assets/seconde/rsx_sociaux/Graphe_arretes.png)  
+    ![arretes](../../../assets/seconde/rsx_sociaux/Graphe_arretes.png)  
 
     Les arêtes sont indiquées en bleu
 
@@ -46,7 +46,7 @@ Voyons ensemble les graphes, dans le cadre des réseaux sociaux.
 
 !!! example "Exemple:"
 
-    ![voisins](../../assets/seconde/rsx_sociaux/Graphe_voisins.png)  
+    ![voisins](../../../assets/seconde/rsx_sociaux/Graphe_voisins.png)  
 
     Les voisins du sommet vert sont indiqués en bleu
 
@@ -61,7 +61,7 @@ Voyons ensemble les graphes, dans le cadre des réseaux sociaux.
 
 !!! example "Exemple:"
 
-    ![degrés](../../assets/seconde/rsx_sociaux/Graphe_degre.png)  
+    ![degrés](../../../assets/seconde/rsx_sociaux/Graphe_degre.png)  
 
     Les degrés de chaque sommet sont indiqués en bleu
 
@@ -73,7 +73,7 @@ Voyons ensemble les graphes, dans le cadre des réseaux sociaux.
 
 !!! example "Exemple:"
 
-    ![degrés](../../assets/seconde/rsx_sociaux/Graphe_2.png)  
+    ![degrés](../../../assets/seconde/rsx_sociaux/Graphe_2.png)  
 
     Dans cet exemple :
 
@@ -105,7 +105,7 @@ Voyons ensemble les graphes, dans le cadre des réseaux sociaux.
 
 !!! example "Exemple:"
 
-    ![degrés](../../assets/seconde/rsx_sociaux/Graphe_2.png) 
+    ![degrés](../../../assets/seconde/rsx_sociaux/Graphe_2.png) 
 
     Toujours dans le même exemple, le rayon est de 2, et le diamètre est de 3.
 
@@ -121,7 +121,7 @@ Voyons ensemble les graphes, dans le cadre des réseaux sociaux.
 
 !!! example "Exemple:"
 
-    ![degrés](../../assets/seconde/rsx_sociaux/Graphe_centre.png) 
+    ![degrés](../../../assets/seconde/rsx_sociaux/Graphe_centre.png) 
 
     Les sommets bleus représentent les différents centres du graphe.
 
@@ -149,7 +149,7 @@ Voyons ensemble les graphes, dans le cadre des réseaux sociaux.
 
 !!! example "Exemple : graphe non connexe"
 
-    ![composantes](../../assets/seconde/rsx_sociaux/Graphe_connexe.png)
+    ![composantes](../../../assets/seconde/rsx_sociaux/Graphe_connexe.png)
 
     Dans cet exemple, le graphe comporte **deux composantes connexes**.  
     Chaque groupe est totalement connexe en interne, mais aucun lien n’existe entre les deux groupes.

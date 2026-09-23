@@ -9,4 +9,4 @@ Pour chacun des sommets proposés :
 
 L’objectif n’est pas d’avoir “la bonne réponse”, mais de partager vos idées et vos curiosités.
 
-![carte mentale](../../assets/seconde/introduction_snt/carte_mentale_snt.png)
+![carte mentale](../../../assets/seconde/introduction_snt/carte_mentale_snt.png)

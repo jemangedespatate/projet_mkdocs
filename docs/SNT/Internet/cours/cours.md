@@ -8,7 +8,7 @@ Dans cette leçon, nous allons répondre à cette **question** en découvrant co
 
 ## ⌛ Point historique
 
-![chronologie](../../assets/seconde/internet/chronologie.png)
+![chronologie](../../../assets/seconde/internet/chronologie.png)
 
 ## Définitions
 
@@ -26,7 +26,7 @@ Dans cette leçon, nous allons répondre à cette **question** en découvrant co
 
     <span style="color: #26B260">Exemple : un réseau domestique</span>
 
-    ![réseau local](../../assets/seconde/internet/rsx_local.png)
+    ![réseau local](../../../assets/seconde/internet/rsx_local.png)
 
 <span style="color: #FF0000">Définition : Internet</span>
 
