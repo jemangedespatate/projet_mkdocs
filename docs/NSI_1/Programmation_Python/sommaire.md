@@ -7,11 +7,12 @@
 ## Exercices
 
 * [exercices](../exercice/)
+* [exercices 2](../exercice_2/)
 * [exercices de remédiation](../exercice_rappel/)
 * [mini-projet](../mini-projet/)
 
+
 <!--
-* [exercices 2](../exercice_2/)
 * [exercices 3](../exercice_3/)
 -->
 

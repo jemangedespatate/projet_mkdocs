@@ -1,11 +1,5 @@
 # 🔄 Exercices de remédiation : Rappels de programmation
 
-Cette page propose une série d'exercices progressifs et guidés pour consolider les bases indispensables de la programmation en Python (cours : [Introduction à la programmation](introductions_prog.md)).
-
-Chaque partie rappelle brièvement la notion de cours avant de proposer des exercices d'application directe très accessibles, accompagnés d'indices et de corrections déroulantes pour vous auto-évaluer.
-
----
-
 ## 1. Variables et affichage (`print`)
 
 !!! abstract "Point de cours"
@@ -111,6 +105,7 @@ print("Le double est :", nombre * 2)
 
 ### Exercice 3.1 : Calcul simple de prix
 Un cahier coûte 3 euros et un stylo coûte 2 euros.
+
 1. Créez les variables `nb_cahiers = 4` et `nb_stylos = 5`.
 2. Créez une variable `prix_total` qui calcule automatiquement le montant total de la commande.
 3. Affichez la phrase : `Le montant total est de <prix_total> euros.`
@@ -119,6 +114,7 @@ Un cahier coûte 3 euros et un stylo coûte 2 euros.
 
 ### Exercice 3.2 : Comprendre `//` et `%`
 On souhaite ranger 23 bonbons dans des sachets de 5 bonbons.
+
 1. À l'aide de l'opérateur `//`, calculez le nombre de sachets complets que l'on peut remplir.
 2. À l'aide de l'opérateur `%`, calculez le nombre de bonbons restants.
 3. Affichez les deux résultats avec des messages clairs.
@@ -152,6 +148,7 @@ nb = input("Entrez un nombre : ")
 print(nb + nb)
 ```
 Si l'utilisateur tape `5`, le programme affiche `55` au lieu de `10` !
+
 1. Pourquoi le programme affiche-t-il `55` ?
 2. Corrigez le code pour qu'il effectue une vraie addition mathématique.
 
@@ -290,6 +287,7 @@ Décollage !
 ---
 
 ### Exercice 7.1 : Périmètre d'un rectangle
+
 1. Écrivez une fonction `perimetre(longueur, largeur)` qui prend en paramètres la longueur et la largeur d'un rectangle et renvoie son périmètre ($2 \times (\text{longueur} + \text{largeur})$).
 2. Testez votre fonction dans la console ou le script en affichant le résultat pour un rectangle de longueur 8 et de largeur 5 :
    ```python
