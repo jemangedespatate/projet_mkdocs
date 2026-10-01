@@ -11,6 +11,9 @@
 * [exercices de remédiation](../exercice_rappel/)
 * [mini-projet](../mini-projet/)
 
+## Interrogations
+
+* [interrogation](../interrogation/interrogation_v2)
 
 <!--
 * [exercices 3](../exercice_3/)
