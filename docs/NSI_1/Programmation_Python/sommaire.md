@@ -14,6 +14,7 @@
 ## Interrogations
 
 * [interrogation](../interrogation/interrogation_v2)
+* [entraînement & remédiation](../interrogation/remediation)
 
 <!--
 * [exercices 3](../exercice_3/)

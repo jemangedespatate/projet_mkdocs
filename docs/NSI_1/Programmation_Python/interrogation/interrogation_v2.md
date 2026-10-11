@@ -1,15 +1,3 @@
-
-<script>
-  const password = "mdp1nsi2026"; // mot de passe
-  const userInput = prompt("Entrez le mot de passe pour accéder à cette page :");
-
-  if (userInput !== password) {
-    alert("Mot de passe incorrect !");
-    window.location.href = "/";
-  }
-</script>
-
-
 # Évaluation de Programmation Python (2 heures)
 
 ## Exercice 1 — Analyse et compréhension de code
